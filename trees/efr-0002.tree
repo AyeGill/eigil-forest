@@ -1,0 +1,27 @@
+\date{2024-05-25}
+\author{eigil-rischel}
+\import{macros}
+\title{Bidirectionality in graphical models}
+\p{
+  There is a significant existing literature studying transformations between structural causal models. These have generally been called something like \em{abstractions,} the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say #{X}, and any other variable (or collection of variables) #{Y}, that the diagram
+  \quiver{
+    \begin{tikzcd}
+    \mathcal{A}_X \ar[r] \ar[d] & \mathcal{A}_Y \ar[d]\\
+    \mathcal{A}_{f(X)} \ar[r] & \mathcal{A}_{f(Y)}
+    \end{tikzcd}
+  }
+  of kernels commutes - in other words, given an intervention \em{in the low-level model,} the two possible distributions in the high-level model agree.
+}
+\p{
+  The main problem with this condition is that it is simply too strict. We generally can't ask that \em{every} low-level intervention is well-modeled by the corresponding high-level intervention. Rather, each high-level intervention corresponds to some distribution of the corresponding low-level variables, and we must ask that a diagram of this form:
+  \quiver{
+    \begin{tikzcd}
+    \mathcal{A}_X \ar[r]& \mathcal{A}_Y \ar[d]\\
+    \mathcal{A}_{f(X)} \ar[r] \ar[u] & \mathcal{A}_{f(Y)}
+    \end{tikzcd}
+  }
+  commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that \em{every} set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
+}
+\p{
+  The key here is that control information flows in the opposite direction from measurement information. This dynamic will recur.
+}

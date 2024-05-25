@@ -7,7 +7,43 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="true"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:addr>xxx-0001</fr:addr><fr:route>index.xml</fr:route><fr:title>The root of my forest</fr:title><fr:authors><fr:author><fr:link
-href="my-name.xml"
+root="true"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:addr>efr-0001</fr:addr><fr:route>index.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0001.tree</fr:source-path><fr:title>The Heuristic Control of Complex Systems</fr:title><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
 type="local"
-addr="my-name">My Name</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>This is an example tree in my forest.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
+type="local"
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
+  There is a significant existing literature studying transformations between structural causal models. These have generally been called something like <fr:em>abstractions,</fr:em> the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say <fr:tex>X</fr:tex>, and any other variable (or collection of variables) <fr:tex>Y</fr:tex>, that the diagram
+  
+  <fr:embedded-tex
+hash="56d1d417a8c926379522eaa187dcfab6"><fr:embedded-tex-preamble>\usepackage {quiver, amsopn, amssymb, mathrsfs}</fr:embedded-tex-preamble><fr:embedded-tex-body>
+     \begin {tikzcd}
+     \mathcal {A}_X  \ar [r]  \ar [d] &amp;  \mathcal {A}_Y  \ar [d] \\ 
+     \mathcal {A}_{f(X)}  \ar [r] &amp;  \mathcal {A}_{f(Y)}
+     \end {tikzcd}
+  </fr:embedded-tex-body></fr:embedded-tex>
+
+  of kernels commutes - in other words, given an intervention <fr:em>in the low-level model,</fr:em> the two possible distributions in the high-level model agree.
+</fr:p><fr:p>
+  The main problem with this condition is that it is simply too strict. We generally can't ask that <fr:em>every</fr:em> low-level intervention is well-modeled by the corresponding high-level intervention. Rather, each high-level intervention corresponds to some distribution of the corresponding low-level variables, and we must ask that a diagram of this form:
+  
+  <fr:embedded-tex
+hash="1dba657b6e6d8d3bd28a2cb8942089a3"><fr:embedded-tex-preamble>\usepackage {quiver, amsopn, amssymb, mathrsfs}</fr:embedded-tex-preamble><fr:embedded-tex-body>
+     \begin {tikzcd}
+     \mathcal {A}_X  \ar [r]&amp;  \mathcal {A}_Y  \ar [d] \\ 
+     \mathcal {A}_{f(X)}  \ar [r]  \ar [u] &amp;  \mathcal {A}_{f(Y)}
+     \end {tikzcd}
+  </fr:embedded-tex-body></fr:embedded-tex>
+
+  commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that <fr:em>every</fr:em> set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
+</fr:p><fr:p>
+  The key here is that control information flows in the opposite direction from measurement information. This dynamic will recur.
+</fr:p></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
