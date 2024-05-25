@@ -1,0 +1,29 @@
+
+\title{Causal interpretation of stochastic differential equations}
+\date{2014-01-01}
+\author{Alexander Sokol}\author{Niels Richard Hansen}
+\taxon{reference}
+
+\meta{bibtex}{\startverb
+@article{sokol_causal_2014,
+ abstract = {We give a causal interpretation of stochastic differential equations ({SDEs}) by deﬁning the postintervention {SDE} resulting from an intervention in an {SDE}. We show that under Lipschitz conditions, the solution to the postintervention {SDE} is equal to a uniform limit in probability of postintervention structural equation models based on the Euler scheme of the original {SDE}, thus relating our deﬁnition to mainstream causal concepts. We prove that when the driving noise in the {SDE} is a Lévy process, the postintervention distribution is identiﬁable from the generator of the {SDE}.},
+ author = {Sokol, Alexander and Hansen, Niels Richard},
+ date = {2014-01-01},
+ doi = {10.1214/EJP.v19-2891},
+ eprint = {1304.0217},
+ eprinttype = {arxiv},
+ file = {hansen+sokol - sde causal.pdf:/home/eigil/Dropbox/Matematik/Tekster/hansen+sokol - sde causal.pdf:application/pdf},
+ issn = {1083-6489},
+ issue = {none},
+ journaltitle = {Electronic Journal of Probability},
+ keywords = {Mathematics - Probability, Mathematics - Statistics Theory},
+ langid = {english},
+ shortjournal = {Electron. J. Probab.},
+ title = {Causal interpretation of stochastic differential equations},
+ url = {http://arxiv.org/abs/1304.0217},
+ urldate = {2021-04-04},
+ volume = {19}
+}
+\stopverb}
+\meta{doi}{10.1214/EJP.v19-2891}
+\meta{url}{http://arxiv.org/abs/1304.0217}

@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>eigil-rischel</fr:addr><fr:route>eigil-rischel.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/people/eigil-rischel.tree</fr:source-path><fr:title>Eigil Fjeldgren Rischel</fr:title><fr:meta
+root="false"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>eigil-rischel</fr:addr><fr:route>eigil-rischel.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/people/eigil-rischel.tree</fr:source-path><fr:title>Eigil Fjeldgren Rischel</fr:title><fr:meta
 name="external">https://www.erischel.com/</fr:meta><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -15,11 +15,35 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr>efr-0004</fr:addr><fr:route>efr-0004.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0004.tree</fr:source-path><fr:title>Bidirectionality for control</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
-  There is a significant existing literature studying transformations between structural causal models. These have generally been called something like <fr:em>abstractions,</fr:em> the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say <fr:tex>X</fr:tex>, and any other variable (or collection of variables) <fr:tex>Y</fr:tex>, that the diagram
+  Consider the following control problem:
+</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
+type="local"
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
+  There is a significant existing literature (see <fr:ref
+addr="beckers_abstracting_2019"
+href="beckers_abstracting_2019.xml"
+taxon="Reference"></fr:ref>, <fr:ref
+addr="rischel_compositional_2021"
+href="rischel_compositional_2021.xml"
+taxon="Reference"></fr:ref>, <fr:ref
+addr="rubenstein_causal_2017"
+href="rubenstein_causal_2017.xml"
+taxon="Reference"></fr:ref>. For a survey see <fr:ref
+addr="zennaro_abstraction_2022"
+href="zennaro_abstraction_2022.xml"
+taxon="Reference"></fr:ref>) studying transformations between structural causal models. These have generally been called something like <fr:em>abstractions,</fr:em> the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say <fr:tex>X</fr:tex>, and any other variable (or collection of variables) <fr:tex>Y</fr:tex>, that the diagram
   
   <fr:embedded-tex
 hash="56d1d417a8c926379522eaa187dcfab6"><fr:embedded-tex-preamble>\usepackage {quiver, amsopn, amssymb, mathrsfs}</fr:embedded-tex-preamble><fr:embedded-tex-body>
@@ -43,7 +67,7 @@ hash="1dba657b6e6d8d3bd28a2cb8942089a3"><fr:embedded-tex-preamble>\usepackage {q
 
   commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that <fr:em>every</fr:em> set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
 </fr:p><fr:p>
-  The key here is that control information flows in the opposite direction from measurement information. This dynamic will recur.
+  The key here is that <fr:em>control information flows in the opposite direction from measurement information</fr:em>. This phenomenon repeats in many examples.
 </fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -51,7 +75,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>efr-0003</fr:addr><fr:route>efr-0003.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0003.tree</fr:source-path><fr:title>Structural Causal Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>efr-0003</fr:addr><fr:route>efr-0003.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0003.tree</fr:source-path><fr:title>Structural Causal Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
@@ -63,7 +87,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="true"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:addr>efr-0001</fr:addr><fr:route>index.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0001.tree</fr:source-path><fr:title>The Heuristic Control of Complex Systems</fr:title><fr:authors><fr:author><fr:link
+root="true"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:addr>efr-0001</fr:addr><fr:route>index.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0001.tree</fr:source-path><fr:title>The Heuristic Control of Complex Systems</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
@@ -73,11 +97,23 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
-  There is a significant existing literature studying transformations between structural causal models. These have generally been called something like <fr:em>abstractions,</fr:em> the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say <fr:tex>X</fr:tex>, and any other variable (or collection of variables) <fr:tex>Y</fr:tex>, that the diagram
+  There is a significant existing literature (see <fr:ref
+addr="beckers_abstracting_2019"
+href="beckers_abstracting_2019.xml"
+taxon="Reference"></fr:ref>, <fr:ref
+addr="rischel_compositional_2021"
+href="rischel_compositional_2021.xml"
+taxon="Reference"></fr:ref>, <fr:ref
+addr="rubenstein_causal_2017"
+href="rubenstein_causal_2017.xml"
+taxon="Reference"></fr:ref>. For a survey see <fr:ref
+addr="zennaro_abstraction_2022"
+href="zennaro_abstraction_2022.xml"
+taxon="Reference"></fr:ref>) studying transformations between structural causal models. These have generally been called something like <fr:em>abstractions,</fr:em> the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say <fr:tex>X</fr:tex>, and any other variable (or collection of variables) <fr:tex>Y</fr:tex>, that the diagram
   
   <fr:embedded-tex
 hash="56d1d417a8c926379522eaa187dcfab6"><fr:embedded-tex-preamble>\usepackage {quiver, amsopn, amssymb, mathrsfs}</fr:embedded-tex-preamble><fr:embedded-tex-body>
@@ -101,5 +137,5 @@ hash="1dba657b6e6d8d3bd28a2cb8942089a3"><fr:embedded-tex-preamble>\usepackage {q
 
   commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that <fr:em>every</fr:em> set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
 </fr:p><fr:p>
-  The key here is that control information flows in the opposite direction from measurement information. This dynamic will recur.
+  The key here is that <fr:em>control information flows in the opposite direction from measurement information</fr:em>. This phenomenon repeats in many examples.
 </fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

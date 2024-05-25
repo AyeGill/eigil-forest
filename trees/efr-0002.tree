@@ -3,7 +3,7 @@
 \import{macros}
 \title{Bidirectionality in graphical models}
 \p{
-  There is a significant existing literature studying transformations between structural causal models. These have generally been called something like \em{abstractions,} the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say #{X}, and any other variable (or collection of variables) #{Y}, that the diagram
+  There is a significant existing literature (see \ref{beckers_abstracting_2019}, \ref{rischel_compositional_2021}, \ref{rubenstein_causal_2017}. For a survey see \ref{zennaro_abstraction_2022}) studying transformations between structural causal models. These have generally been called something like \em{abstractions,} the typical examples being the relationship between a high-level and a low-level model of the same system. However, the precise properties that we should ask for in such a transformation have turned out to be somewhat subtle. The most obvious condition to impose is to ask, for any possible variable we could intervene on, say #{X}, and any other variable (or collection of variables) #{Y}, that the diagram
   \quiver{
     \begin{tikzcd}
     \mathcal{A}_X \ar[r] \ar[d] & \mathcal{A}_Y \ar[d]\\
@@ -23,5 +23,5 @@
   commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that \em{every} set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
 }
 \p{
-  The key here is that control information flows in the opposite direction from measurement information. This dynamic will recur.
+  The key here is that \em{control information flows in the opposite direction from measurement information}. This phenomenon repeats in many examples.
 }

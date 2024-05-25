@@ -1,0 +1,541 @@
+[
+  {
+    "DOI": "10.48550/arXiv.1412.2309",
+    "abstract": "We provide a rigorous deﬁnition of the visual cause of a behavior that is broadly applicable to the visually driven behavior in humans, animals, neurons, robots and other perceiving systems. Our framework generalizes standard accounts of causal learning to settings in which the causal variables need to be constructed from micro-variables. We prove the Causal Coarsening Theorem, which allows us to gain causal knowledge from observational data with minimal experimental effort. The theorem provides a connection to standard inference techniques in machine learning that identify features of an image that correlate with, but may not cause, the target behavior. Finally, we propose an active learning scheme to learn a manipulator function that performs optimal manipulations on the image to automatically identify the visual cause of a target behavior. We illustrate our inference and learning algorithms in experiments based on both synthetic and real data.",
+    "author": [
+      {
+        "family": "Chalupka",
+        "given": "Krzysztof"
+      },
+      {
+        "family": "Perona",
+        "given": "Pietro"
+      },
+      {
+        "family": "Eberhardt",
+        "given": "Frederick"
+      }
+    ],
+    "id": "chalupka_visual_2015",
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          6,
+          4
+        ]
+      ]
+    },
+    "language": "en-US",
+    "page": "10",
+    "title": "Visual causal feature learning",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1214/EJP.v19-2891",
+    "ISSN": "1083-6489",
+    "URL": "http://arxiv.org/abs/1304.0217",
+    "abstract": "We give a causal interpretation of stochastic differential equations (SDEs) by deﬁning the postintervention SDE resulting from an intervention in an SDE. We show that under Lipschitz conditions, the solution to the postintervention SDE is equal to a uniform limit in probability of postintervention structural equation models based on the Euler scheme of the original SDE, thus relating our deﬁnition to mainstream causal concepts. We prove that when the driving noise in the SDE is a Lévy process, the postintervention distribution is identiﬁable from the generator of the SDE.",
+    "accessed": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Sokol",
+        "given": "Alexander"
+      },
+      {
+        "family": "Hansen",
+        "given": "Niels Richard"
+      }
+    ],
+    "container-title": "Electronic Journal of Probability",
+    "container-title-short": "Electron. J. Probab.",
+    "id": "sokol_causal_2014",
+    "issued": {
+      "date-parts": [
+        [
+          2014,
+          1,
+          1
+        ]
+      ]
+    },
+    "keyword": "Mathematics - Probability, Mathematics - Statistics Theory",
+    "language": "en-US",
+    "title": "Causal interpretation of stochastic differential equations",
+    "type": "article-journal",
+    "volume": "19"
+  },
+  {
+    "DOI": "10.1613/jair.1.14253",
+    "ISSN": "1076-9757",
+    "URL": "https://jair.org/index.php/jair/article/view/14253",
+    "abstract": "Controllers for dynamical systems that operate in safety-critical settings must account for stochastic disturbances. Such disturbances are often modeled as process noise in a dynamical system, and common assumptions are that the underlying distributions are known and/or Gaussian. In practice, however, these assumptions may be unrealistic and can lead to poor approximations of the true noise distribution. We present a novel controller synthesis method that does not rely on any explicit representation of the noise distributions. In particular, we address the problem of computing a controller that provides probabilistic guarantees on safely reaching a target, while also avoiding unsafe regions of the state space. First, we abstract the continuous control system into a finite-state model that captures noise by probabilistic transitions between discrete states. As a key contribution, we adapt tools from the scenario approach to compute probably approximately correct (PAC) bounds on these transition probabilities, based on a finite number of samples of the noise. We capture these bounds in the transition probability intervals of a so-called interval Markov decision process (iMDP). This iMDP is, with a user-specified confidence probability, robust against uncertainty in the transition probabilities, and the tightness of the probability intervals can be controlled through the number of samples. We use state-of-the-art verification techniques to provide guarantees on the iMDP and compute a controller for which these guarantees carry over to the original control system. In addition, we develop a tailored computational scheme that reduces the complexity of the synthesis of these guarantees on the iMDP. Benchmarks on realistic control systems show the practical applicability of our method, even when the iMDP has hundreds of millions of transitions.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          6
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Badings",
+        "given": "Thom"
+      },
+      {
+        "family": "Romao",
+        "given": "Licio"
+      },
+      {
+        "family": "Abate",
+        "given": "Alessandro"
+      },
+      {
+        "family": "Parker",
+        "given": "David"
+      },
+      {
+        "family": "Poonawala",
+        "given": "Hasan A."
+      },
+      {
+        "family": "Stoelinga",
+        "given": "Marielle"
+      },
+      {
+        "family": "Jansen",
+        "given": "Nils"
+      }
+    ],
+    "container-title": "Journal of Artificial Intelligence Research",
+    "id": "badings_robust_2023",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          21
+        ]
+      ]
+    },
+    "keyword": "markov decision processes, probabilistic reasoning, uncertainty",
+    "language": "en-US",
+    "page": "341-391",
+    "title": "Robust control for dynamical systems with non-gaussian noise via formal abstractions",
+    "type": "article-journal",
+    "volume": "76"
+  },
+  {
+    "DOI": "10.48550/arXiv.1512.07942",
+    "abstract": "We present a domain-general account of causation that applies to settings in which macro-level causal relations between two systems are of interest, but the relevant causal features are poorly understood and have to be aggregated from vast arrays of micro-measurements. Our approach generalizes that of Chalupka et al. (2015) to the setting in which the macro-level effect is not speciﬁed. We formalize the connection between micro- and macro-variables in such situations and provide a coherent framework describing causal relations at multiple levels of analysis. We present an algorithm that discovers macro-variable causes and effects from microlevel measurements obtained from an experiment. We further show how to design experiments to discover macro-variables from observational micro-variable data. Finally, we show that under speciﬁc conditions, one can identify multiple levels of causal structure. Throughout the article, we use a simulated neuroscience multiunit recording experiment to illustrate the ideas and the algorithms.",
+    "author": [
+      {
+        "family": "Chalupka",
+        "given": "Krzysztof"
+      },
+      {
+        "family": "Perona",
+        "given": "Pietro"
+      },
+      {
+        "family": "Eberhardt",
+        "given": "Frederick"
+      }
+    ],
+    "id": "chalupka_multi-level_2015",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "language": "en-US",
+    "page": "13",
+    "title": "Multi-level cause-effect systems",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/s41237-016-0008-2",
+    "ISSN": "0385-7417, 1349-6964",
+    "URL": "http://link.springer.com/10.1007/s41237-016-0008-2",
+    "abstract": "Causal feature learning (CFL) (Chalupka et al., Proceedings of the Thirty-First Conference on Uncertainty in Artiﬁcial Intelligence. AUAI Press, Edinburgh, pp 181–190, 2015) is a causal inference framework rooted in the language of causal graphical models (Pearl J, Reasoning and inference. Cambridge University Press, Cambridge, 2009; Spirtes et al., Causation, Prediction, and Search. Massachusetts Institute of Technology, Massachusetts, 2000), and computational mechanics (Shalizi, PhD thesis, University of Wisconsin at Madison, 2001). CFL is aimed at discovering high-level causal relations from low-level data, and at reducing the experimental effort to understand confounding among the high-level variables. We ﬁrst review the scientiﬁc motivation for CFL, then present a detailed introduction to the framework, laying out the deﬁnitions and algorithmic steps. A simple example illustrates the techniques involved in the learning steps and provides visual intuition. Finally, we discuss the limitations of the current framework and list a number of open problems.",
+    "accessed": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Chalupka",
+        "given": "Krzysztof"
+      },
+      {
+        "family": "Eberhardt",
+        "given": "Frederick"
+      },
+      {
+        "family": "Perona",
+        "given": "Pietro"
+      }
+    ],
+    "container-title": "Behaviormetrika",
+    "container-title-short": "Behaviormetrika",
+    "id": "chalupka_causal_2017",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          1
+        ]
+      ]
+    },
+    "language": "en-US",
+    "page": "137-164",
+    "title": "Causal feature learning: An overview",
+    "title-short": "Causal feature learning",
+    "type": "article-journal",
+    "volume": "44"
+  },
+  {
+    "DOI": "10.48550/arXiv.1906.11583",
+    "URL": "http://arxiv.org/abs/1906.11583",
+    "abstract": "Scientiﬁc models describe natural phenomena at different levels of abstraction. Abstract descriptions can provide the basis for interventions on the system and explanation of observed phenomena at a level of granularity that is coarser than the most fundamental account of the system. Beckers and Halpern (2019), building on work of Rubenstein et al. (2017), developed an account of abstraction for causal models that is exact. Here we extend this account to the more realistic case where an abstract causal model offers only an approximation of the underlying system. We show how the resulting account handles the discrepancy that can arise between low- and highlevel causal models of the same system, and in the process provide an account of how one causal model approximates another, a topic of independent interest. Finally, we extend the account of approximate abstractions to probabilistic causal models, indicating how and where uncertainty can enter into an approximate abstraction.",
+    "accessed": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Beckers",
+        "given": "Sander"
+      },
+      {
+        "family": "Eberhardt",
+        "given": "Frederick"
+      },
+      {
+        "family": "Halpern",
+        "given": "Joseph Y."
+      }
+    ],
+    "container-title": "arXiv:1906.11583 [cs]",
+    "id": "beckers_approximate_2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          6,
+          29
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence",
+    "language": "en-US",
+    "title": "Approximate causal abstraction",
+    "type": "article-journal"
+  },
+  {
+    "URL": "http://arxiv.org/abs/1812.03789",
+    "abstract": "We consider a sequence of successively more restrictive deﬁnitions of abstraction for causal models, starting with a notion introduced by Rubenstein et al. (2017) called exact transformation that applies to probabilistic causal models, moving to a notion of uniform transformation that applies to deterministic causal models and does not allow differences to be hidden by the “right” choice of distribution, and then to abstraction, where the interventions of interest are determined by the map from low-level states to high-level states, and strong abstraction, which takes more seriously all potential interventions in a model, not just the allowed interventions. We show that procedures for combining micro-variables into macro-variables are instances of our notion of strong abstraction, as are all the examples considered by Rubenstein et al.",
+    "accessed": {
+      "date-parts": [
+        [
+          2021,
+          4,
+          4
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Beckers",
+        "given": "Sander"
+      },
+      {
+        "family": "Halpern",
+        "given": "Joseph Y."
+      }
+    ],
+    "container-title": "arXiv:1812.03789 [cs]",
+    "id": "beckers_abstracting_2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          7,
+          9
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence",
+    "language": "en-US",
+    "title": "Abstracting causal models",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.1007/3-540-45657-0_11",
+    "ISBN": "978-3-540-43997-4 978-3-540-45657-5",
+    "URL": "http://link.springer.com/10.1007/3-540-45657-0_11",
+    "abstract": "Generalized model checking is a framework for reasoning about partial state spaces of concurrent reactive systems. The state space of a system is only \\partial\" (partially known) when a full state-space exploration is not computationally tractable, or when abstraction techniques are used to simplify the system’s representation. In the context of automatic abstraction, generalized model checking means checking whether there exists a concretization of an abstraction that satis es a temporal logic formula. In this paper, we show how generalized model checking can extend existing automatic abstraction techniques (such as predicate abstraction) for model checking concurrent/reactive programs and yield the three following improvements: (1) any temporal logic formula can be checked (not just universal properties as with traditional conservative abstractions), (2) correctness proofs and counter-examples are both guaranteed to be sound, and (3) veri cation results can be more precise. We study the cost needed to improve precision by presenting new upper and lower bounds for the complexity of generalized model checking in the size of the abstraction.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          3,
+          31
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Godefroid",
+        "given": "Patrice"
+      },
+      {
+        "family": "Jagadeesan",
+        "given": "Radha"
+      }
+    ],
+    "container-title": "Computer aided verification",
+    "editor": [
+      {
+        "family": "Brinksma",
+        "given": "Ed"
+      },
+      {
+        "family": "Larsen",
+        "given": "Kim Guldstrand"
+      }
+    ],
+    "id": "goos_automatic_2002",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "language": "en-US",
+    "note": "Series Title: Lecture Notes in Computer Science",
+    "page": "137-151",
+    "publisher": "Springer Berlin Heidelberg",
+    "publisher-place": "Berlin, Heidelberg",
+    "title": "Automatic abstraction using generalized model checking",
+    "type": "chapter",
+    "volume": "2404"
+  },
+  {
+    "DOI": "10.48550/arXiv.2103.15758",
+    "URL": "http://arxiv.org/abs/2103.15758",
+    "abstract": "Interventional causal models describe several joint distributions over some variables used to describe a system, one for each intervention setting. They provide a formal recipe for how to move between the different joint distributions and make predictions about the variables upon intervening on the system. Yet, it is difficult to formalise how we may change the underlying variables used to describe the system, say moving from fine-grained to coarse-grained variables. Here, we argue that compositionality is a desideratum for such model transformations and the associated errors: When abstracting a reference model M iteratively, first obtaining M’ and then further simplifying that to obtain M”, we expect the composite transformation from M to M” to exist and its error to be bounded by the errors incurred by each individual transformation step. Category theory, the study of mathematical objects via compositional transformations between them, offers a natural language to develop our framework for model transformations and abstractions. We introduce a category of finite interventional causal models and, leveraging theory of enriched categories, prove the desired compositionality properties for our framework.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Rischel",
+        "given": "Eigil F."
+      },
+      {
+        "family": "Weichwald",
+        "given": "Sebastian"
+      }
+    ],
+    "id": "rischel_compositional_2021",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          8,
+          5
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence, Computer Science - Logic in Computer Science, Computer Science - Machine Learning, Mathematics - Category Theory, Statistics - Machine Learning",
+    "number": "arXiv:2103.15758",
+    "publisher": "arXiv",
+    "title": "Compositional abstraction error and a category of causal models",
+    "type": ""
+  },
+  {
+    "DOI": "10.48550/arXiv.1707.00819",
+    "URL": "http://arxiv.org/abs/1707.00819",
+    "abstract": "Complex systems can be modelled at various levels of detail. Ideally, causal models of the same system should be consistent with one another in the sense that they agree in their predictions of the effects of interventions. We formalise this notion of consistency in the case of Structural Equation Models (SEMs) by introducing exact transformations between SEMs. This provides a general language to consider, for instance, the different levels of description in the following three scenarios: (a) models with large numbers of variables versus models in which the “irrelevant” or unobservable variables have been marginalised out; (b) micro-level models versus macro-level models in which the macro-variables are aggregate features of the micro-variables; (c) dynamical time series models versus models of their stationary behaviour. Our analysis stresses the importance of well specified interventions in the causal modelling process and sheds light on the interpretation of cyclic SEMs.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Rubenstein",
+        "given": "Paul K."
+      },
+      {
+        "family": "Weichwald",
+        "given": "Sebastian"
+      },
+      {
+        "family": "Bongers",
+        "given": "Stephan"
+      },
+      {
+        "family": "Mooij",
+        "given": "Joris M."
+      },
+      {
+        "family": "Janzing",
+        "given": "Dominik"
+      },
+      {
+        "family": "Grosse-Wentrup",
+        "given": "Moritz"
+      },
+      {
+        "family": "Schölkopf",
+        "given": "Bernhard"
+      }
+    ],
+    "id": "rubenstein_causal_2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          4
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Statistics - Methodology",
+    "number": "arXiv:1707.00819",
+    "publisher": "arXiv",
+    "title": "Causal consistency of structural equation models",
+    "type": ""
+  },
+  {
+    "DOI": "10.48550/arXiv.2207.08603",
+    "URL": "http://arxiv.org/abs/2207.08603",
+    "abstract": "Structural causal models (SCMs) are a widespread formalism to deal with causal systems. A recent direction of research has considered the problem of relating formally SCMs at different levels of abstraction, by defining maps between SCMs and imposing a requirement of interventional consistency. This paper offers a review of the solutions proposed so far, focusing on the formal properties of a map between SCMs, and highlighting the different layers (structural, distributional) at which these properties may be enforced. This allows us to distinguish families of abstractions that may or may not be permitted by choosing to guarantee certain properties instead of others. Such an understanding not only allows to distinguish among proposal for causal abstraction with more awareness, but it also allows to tailor the definition of abstraction with respect to the forms of abstraction relevant to specific applications.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Zennaro",
+        "given": "Fabio Massimo"
+      }
+    ],
+    "id": "zennaro_abstraction_2022",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          7,
+          18
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence, Computer Science - Machine Learning",
+    "number": "arXiv:2207.08603",
+    "publisher": "arXiv",
+    "title": "Abstraction between structural causal models: A review of definitions and properties",
+    "title-short": "Abstraction between structural causal models",
+    "type": ""
+  },
+  {
+    "DOI": "10.48550/arXiv.2404.17493",
+    "URL": "http://arxiv.org/abs/2404.17493",
+    "abstract": "Multi-armed bandits (MAB) and causal MABs (CMAB) are established frameworks for decision-making problems. The majority of prior work typically studies and solves individual MAB and CMAB in isolation for a given problem and associated data. However, decision-makers are often faced with multiple related problems and multi-scale observations where joint formulations are needed in order to efficiently exploit the problem structures and data dependencies. Transfer learning for CMABs addresses the situation where models are defined on identical variables, although causal connections may differ. In this work, we extend transfer learning to setups involving CMABs defined on potentially different variables, with varying degrees of granularity, and related via an abstraction map. Formally, we introduce the problem of causally abstracted MABs (CAMABs) by relying on the theory of causal abstraction in order to express a rigorous abstraction map. We propose algorithms to learn in a CAMAB, and study their regret. We illustrate the limitations and the strengths of our algorithms on a real-world scenario related to online advertising.",
+    "accessed": {
+      "date-parts": [
+        [
+          2024,
+          5,
+          25
+        ]
+      ]
+    },
+    "author": [
+      {
+        "family": "Zennaro",
+        "given": "Fabio Massimo"
+      },
+      {
+        "family": "Bishop",
+        "given": "Nicholas"
+      },
+      {
+        "family": "Dyer",
+        "given": "Joel"
+      },
+      {
+        "family": "Felekis",
+        "given": "Yorgos"
+      },
+      {
+        "family": "Calinescu",
+        "given": "Anisoara"
+      },
+      {
+        "family": "Wooldridge",
+        "given": "Michael"
+      },
+      {
+        "family": "Damoulas",
+        "given": "Theodoros"
+      }
+    ],
+    "id": "zennaro_causally_2024",
+    "issued": {
+      "date-parts": [
+        [
+          2024,
+          4,
+          26
+        ]
+      ]
+    },
+    "keyword": "Computer Science - Artificial Intelligence, Computer Science - Machine Learning",
+    "number": "arXiv:2404.17493",
+    "publisher": "arXiv",
+    "title": "Causally abstracted multi-armed bandits",
+    "type": ""
+  }
+]

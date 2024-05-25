@@ -1,0 +1,25 @@
+
+\title{Causally abstracted multi-armed bandits}
+\date{2024-04-26}
+\author{Fabio Massimo Zennaro}\author{Nicholas Bishop}\author{Joel Dyer}\author{Yorgos Felekis}\author{Anisoara Calinescu}\author{Michael Wooldridge}\author{Theodoros Damoulas}
+\taxon{reference}
+
+\meta{bibtex}{\startverb
+@misc{zennaro_causally_2024,
+ abstract = {Multi-armed bandits ({MAB}) and causal {MABs} ({CMAB}) are established frameworks for decision-making problems. The majority of prior work typically studies and solves individual {MAB} and {CMAB} in isolation for a given problem and associated data. However, decision-makers are often faced with multiple related problems and multi-scale observations where joint formulations are needed in order to efficiently exploit the problem structures and data dependencies. Transfer learning for {CMABs} addresses the situation where models are defined on identical variables, although causal connections may differ. In this work, we extend transfer learning to setups involving {CMABs} defined on potentially different variables, with varying degrees of granularity, and related via an abstraction map. Formally, we introduce the problem of causally abstracted {MABs} ({CAMABs}) by relying on the theory of causal abstraction in order to express a rigorous abstraction map. We propose algorithms to learn in a {CAMAB}, and study their regret. We illustrate the limitations and the strengths of our algorithms on a real-world scenario related to online advertising.},
+ author = {Zennaro, Fabio Massimo and Bishop, Nicholas and Dyer, Joel and Felekis, Yorgos and Calinescu, Anisoara and Wooldridge, Michael and Damoulas, Theodoros},
+ date = {2024-04-26},
+ doi = {10.48550/arXiv.2404.17493},
+ eprint = {2404.17493 [cs]},
+ eprinttype = {arxiv},
+ file = {arXiv Fulltext PDF:/home/eigil/Zotero/storage/Q8HZ2A2V/Zennaro et al. - 2024 - Causally Abstracted Multi-armed Bandits.pdf:application/pdf;arXiv.org Snapshot:/home/eigil/Zotero/storage/IUBVPNQP/2404.html:text/html},
+ keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+ number = {{arXiv}:2404.17493},
+ publisher = {{arXiv}},
+ title = {Causally Abstracted Multi-armed Bandits},
+ url = {http://arxiv.org/abs/2404.17493},
+ urldate = {2024-05-25}
+}
+\stopverb}
+\meta{doi}{10.48550/arXiv.2404.17493}
+\meta{url}{http://arxiv.org/abs/2404.17493}

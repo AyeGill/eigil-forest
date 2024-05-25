@@ -48,6 +48,13 @@ TREE_TEMPLATE = r"""
 {original_bibtex}\stopverb}}
 """
 
+##DOI and external url can be missing, handle separately
+def format_doi(doi):
+    return f"\\meta{{doi}}{{{doi}}}\n"
+def format_url(url):
+    return f"\\meta{{url}}{{{url}}}\n"
+
+
 def format_author(author):
     if 'literal' in author:
         return author['literal']
@@ -98,4 +105,8 @@ for i, reference in enumerate(references):
             authors=''.join([f'\\author{{{format_author(author)}}}' for author in reference['author']]),
             original_bibtex=original_bibtex)
         f.write(formatted)
+        if "DOI" in reference:
+            f.write(format_doi(reference["DOI"]))
+        if "URL" in reference:
+            f.write(format_url(reference["URL"]))
         f.flush()

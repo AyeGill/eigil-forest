@@ -1,0 +1,28 @@
+
+\title{Causal feature learning: An overview}
+\date{2017-01}
+\author{Krzysztof Chalupka}\author{Frederick Eberhardt}\author{Pietro Perona}
+\taxon{reference}
+
+\meta{bibtex}{\startverb
+@article{chalupka_causal_2017,
+ abstract = {Causal feature learning ({CFL}) (Chalupka et al., Proceedings of the Thirty-First Conference on Uncertainty in Artiﬁcial Intelligence. {AUAI} Press, Edinburgh, pp 181–190, 2015) is a causal inference framework rooted in the language of causal graphical models (Pearl J, Reasoning and inference. Cambridge University Press, Cambridge, 2009; Spirtes et al., Causation, Prediction, and Search. Massachusetts Institute of Technology, Massachusetts, 2000), and computational mechanics (Shalizi, {PhD} thesis, University of Wisconsin at Madison, 2001). {CFL} is aimed at discovering high-level causal relations from low-level data, and at reducing the experimental effort to understand confounding among the high-level variables. We ﬁrst review the scientiﬁc motivation for {CFL}, then present a detailed introduction to the framework, laying out the deﬁnitions and algorithmic steps. A simple example illustrates the techniques involved in the learning steps and provides visual intuition. Finally, we discuss the limitations of the current framework and list a number of open problems.},
+ author = {Chalupka, Krzysztof and Eberhardt, Frederick and Perona, Pietro},
+ date = {2017-01},
+ doi = {10.1007/s41237-016-0008-2},
+ file = {mscChalupka2017_Article_CausalFeatureLearningAnOvervie.pdf:/home/eigil/Dropbox/Matematik/Tekster/mscChalupka2017_Article_CausalFeatureLearningAnOvervie.pdf:application/pdf},
+ issn = {0385-7417, 1349-6964},
+ journaltitle = {Behaviormetrika},
+ langid = {english},
+ number = {1},
+ pages = {137--164},
+ shortjournal = {Behaviormetrika},
+ shorttitle = {Causal feature learning},
+ title = {Causal feature learning: an overview},
+ url = {http://link.springer.com/10.1007/s41237-016-0008-2},
+ urldate = {2021-04-04},
+ volume = {44}
+}
+\stopverb}
+\meta{doi}{10.1007/s41237-016-0008-2}
+\meta{url}{http://link.springer.com/10.1007/s41237-016-0008-2}

@@ -1,0 +1,25 @@
+
+\title{Causal consistency of structural equation models}
+\date{2017-07-04}
+\author{Paul K. Rubenstein}\author{Sebastian Weichwald}\author{Stephan Bongers}\author{Joris M. Mooij}\author{Dominik Janzing}\author{Moritz Grosse-Wentrup}\author{Bernhard Schölkopf}
+\taxon{reference}
+
+\meta{bibtex}{\startverb
+@misc{rubenstein_causal_2017,
+ abstract = {Complex systems can be modelled at various levels of detail. Ideally, causal models of the same system should be consistent with one another in the sense that they agree in their predictions of the effects of interventions. We formalise this notion of consistency in the case of Structural Equation Models ({SEMs}) by introducing exact transformations between {SEMs}. This provides a general language to consider, for instance, the different levels of description in the following three scenarios: (a) models with large numbers of variables versus models in which the `irrelevant' or unobservable variables have been marginalised out; (b) micro-level models versus macro-level models in which the macro-variables are aggregate features of the micro-variables; (c) dynamical time series models versus models of their stationary behaviour. Our analysis stresses the importance of well specified interventions in the causal modelling process and sheds light on the interpretation of cyclic {SEMs}.},
+ author = {Rubenstein, Paul K. and Weichwald, Sebastian and Bongers, Stephan and Mooij, Joris M. and Janzing, Dominik and Grosse-Wentrup, Moritz and Schölkopf, Bernhard},
+ date = {2017-07-04},
+ doi = {10.48550/arXiv.1707.00819},
+ eprint = {1707.00819 [cs, stat]},
+ eprinttype = {arxiv},
+ file = {arXiv Fulltext PDF:/home/eigil/Zotero/storage/Y9DD5AKU/Rubenstein et al. - 2017 - Causal Consistency of Structural Equation Models.pdf:application/pdf;arXiv.org Snapshot:/home/eigil/Zotero/storage/UNMKRTMX/1707.html:text/html},
+ keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning, Statistics - Machine Learning, Statistics - Methodology},
+ number = {{arXiv}:1707.00819},
+ publisher = {{arXiv}},
+ title = {Causal Consistency of Structural Equation Models},
+ url = {http://arxiv.org/abs/1707.00819},
+ urldate = {2024-05-25}
+}
+\stopverb}
+\meta{doi}{10.48550/arXiv.1707.00819}
+\meta{url}{http://arxiv.org/abs/1707.00819}
