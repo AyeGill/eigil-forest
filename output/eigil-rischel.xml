@@ -86,7 +86,9 @@ href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>G</fr:tex> be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on <fr:tex>G</fr:tex> consists of
-  <fr:ul><fr:li>For each vertex <fr:tex>v  \in  V(G)</fr:tex>, a measurable space.</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree><fr:tree
+  <fr:ul><fr:li>For each vertex <fr:tex>v  \in  V(G)</fr:tex>, measurable spaces <fr:tex>\mathcal {X} _v</fr:tex>, {<fr:tex>\mathcal {E}</fr:tex>_v}</fr:li>
+    <fr:li>A family of independent random variables <fr:tex>E_v  \in   \mathcal {E} _v</fr:tex> - these are called the <fr:em>exogenous variables</fr:em></fr:li>
+    <fr:li>For each <fr:tex>v</fr:tex>, a measurable function <fr:tex>\phi _v:  \mathcal {E} _v   \times   \prod _{v'  \to  v}  \mathcal {X} _{v'}  \to   \mathcal {X} _v</fr:tex> (note that if <fr:tex>v</fr:tex> has no parents, the product is just a singleton)</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"

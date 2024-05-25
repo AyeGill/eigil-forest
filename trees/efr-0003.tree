@@ -6,6 +6,8 @@
 \p{
   Let #{G} be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on #{G} consists of
   \ul{
-    \li{For each vertex #{v \in V(G)}, a measurable space.}
+    \li{For each vertex #{v \in V(G)}, measurable spaces #{\cX_v}, {\cE_v}}
+    \li{A family of independent random variables #{E_v \in \cE_v} - these are called the \em{exogenous variables}}
+    \li{For each #{v}, a measurable function #{\phi_v: \cE_v  \times \prod_{v' \to v} \cX_{v'} \to \cX_v} (note that if #{v} has no parents, the product is just a singleton)}
   }
 }
