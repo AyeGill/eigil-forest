@@ -13,3 +13,6 @@
 \p{
   The trick to building an MDP is to choose #{u(x,i)}, where #{x} is our current state and #{i} is the target region, in such a way that #{x^i := F(x,u(x,i))} does not depend on #{x} - then the distribution on the next state is just the distribution of #{p(x^i + v_n)}, which can be determined ahead of time for each #{i}. #{i \mapsto x^i} is a section of #{p} - this bidirectionality is completely analogous to what we saw for abstractions between graphical models. 
 }
+\p{
+  The datum #{u(-,=): \RR^n \times I \to \RR^p} is the backwards part of a \em{lens} #{\binom{\RR^p}{\RR^n} \to \binom{I}{I}}. Actually, this raises a subtlety we swept under the rug above - it may not be possible to find #{u(x,i)} satisfying #{F(x,u(x,i)) = x_i} for all pairs #{x,i}. Hence we need to restrict ourselves to those where it is possible - and because we're trying to abstract away #{x}, we need to consider those #{i} so that it's possible for all #{x} in our current component. This will bring us to consider \em{dependent} lenses.
+}
