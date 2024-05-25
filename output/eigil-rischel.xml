@@ -19,8 +19,7 @@ root="false"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr>efr-0004</fr:add
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
-  Consider the following control problem:
-</fr:p></fr:mainmatter></fr:tree><fr:tree
+  Consider a <fr:em>discrete-time </fr:em></fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
