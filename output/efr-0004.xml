@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr>efr-0004</fr:addr><fr:route>efr-0004.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0004.tree</fr:source-path><fr:title>Bidirectionality for control</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:addr>efr-0004</fr:addr><fr:route>efr-0004.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0004.tree</fr:source-path><fr:title>Bidirectionality for control</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
@@ -25,7 +25,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="true"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr>efr-0001</fr:addr><fr:route>index.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0001.tree</fr:source-path><fr:title>The Heuristic Control of Complex Systems</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="true"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:addr>efr-0001</fr:addr><fr:route>index.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0001.tree</fr:source-path><fr:title>The Heuristic Control of Complex Systems</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
@@ -35,10 +35,24 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
+type="local"
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>efr-0003</fr:addr><fr:route>efr-0003.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0003.tree</fr:source-path><fr:title>Structural Causal Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>G</fr:tex> be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on <fr:tex>G</fr:tex> consists of
+  <fr:ul><fr:li>For each vertex <fr:tex>v  \in  V(G)</fr:tex>, measurable spaces <fr:tex>\mathcal {X} _v</fr:tex>, {<fr:tex>\mathcal {E}</fr:tex>_v}</fr:li>
+    <fr:li>A family of independent random variables <fr:tex>E_v  \in   \mathcal {E} _v</fr:tex> - these are called the <fr:em>exogenous variables</fr:em></fr:li>
+    <fr:li>For each <fr:tex>v</fr:tex>, a measurable function <fr:tex>\phi _v:  \mathcal {E} _v   \times   \prod _{v'  \to  v}  \mathcal {X} _{v'}  \to   \mathcal {X} _v</fr:tex> (note that if <fr:tex>v</fr:tex> has no parents, the product is just a singleton)</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree><fr:p>
   There is a significant existing literature (see <fr:ref
 addr="beckers_abstracting_2019"
 href="beckers_abstracting_2019.xml"
@@ -83,7 +97,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr>efr-0004</fr:addr><fr:route>efr-0004.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0004.tree</fr:source-path><fr:title>Bidirectionality for control</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:addr>efr-0004</fr:addr><fr:route>efr-0004.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0004.tree</fr:source-path><fr:title>Bidirectionality for control</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>

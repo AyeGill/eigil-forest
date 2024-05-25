@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>rubenstein_causal_2017</fr:addr><fr:route>rubenstein_causal_2017.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/rubenstein_causal_2017.tree</fr:source-path><fr:title>Causal consistency of structural equation models</fr:title><fr:date><fr:year>2017</fr:year><fr:month>7</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author>Paul K. Rubenstein</fr:author><fr:author>Sebastian Weichwald</fr:author><fr:author>Stephan Bongers</fr:author><fr:author>Joris M. Mooij</fr:author><fr:author>Dominik Janzing</fr:author><fr:author>Moritz Grosse-Wentrup</fr:author><fr:author>Bernhard Schölkopf</fr:author></fr:authors><fr:meta
+root="false"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>rubenstein_causal_2017</fr:addr><fr:route>rubenstein_causal_2017.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/rubenstein_causal_2017.tree</fr:source-path><fr:title>Causal consistency of structural equation models</fr:title><fr:date><fr:year>2017</fr:year><fr:month>7</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author>Paul K. Rubenstein</fr:author><fr:author>Sebastian Weichwald</fr:author><fr:author>Stephan Bongers</fr:author><fr:author>Joris M. Mooij</fr:author><fr:author>Dominik Janzing</fr:author><fr:author>Moritz Grosse-Wentrup</fr:author><fr:author>Bernhard Schölkopf</fr:author></fr:authors><fr:meta
 name="bibtex">@misc{rubenstein_causal_2017,
  abstract = {Complex systems can be modelled at various levels of detail. Ideally, causal models of the same system should be consistent with one another in the sense that they agree in their predictions of the effects of interventions. We formalise this notion of consistency in the case of Structural Equation Models ({SEMs}) by introducing exact transformations between {SEMs}. This provides a general language to consider, for instance, the different levels of description in the following three scenarios: (a) models with large numbers of variables versus models in which the `irrelevant' or unobservable variables have been marginalised out; (b) micro-level models versus macro-level models in which the macro-variables are aggregate features of the micro-variables; (c) dynamical time series models versus models of their stationary behaviour. Our analysis stresses the importance of well specified interventions in the causal modelling process and sheds light on the interpretation of cyclic {SEMs}.},
  author = {Rubenstein, Paul K. and Weichwald, Sebastian and Bongers, Stephan and Mooij, Joris M. and Janzing, Dominik and Grosse-Wentrup, Moritz and Schölkopf, Bernhard},
@@ -31,10 +31,24 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
+type="local"
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>efr-0003</fr:addr><fr:route>efr-0003.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0003.tree</fr:source-path><fr:title>Structural Causal Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>G</fr:tex> be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on <fr:tex>G</fr:tex> consists of
+  <fr:ul><fr:li>For each vertex <fr:tex>v  \in  V(G)</fr:tex>, measurable spaces <fr:tex>\mathcal {X} _v</fr:tex>, {<fr:tex>\mathcal {E}</fr:tex>_v}</fr:li>
+    <fr:li>A family of independent random variables <fr:tex>E_v  \in   \mathcal {E} _v</fr:tex> - these are called the <fr:em>exogenous variables</fr:em></fr:li>
+    <fr:li>For each <fr:tex>v</fr:tex>, a measurable function <fr:tex>\phi _v:  \mathcal {E} _v   \times   \prod _{v'  \to  v}  \mathcal {X} _{v'}  \to   \mathcal {X} _v</fr:tex> (note that if <fr:tex>v</fr:tex> has no parents, the product is just a singleton)</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree><fr:p>
   There is a significant existing literature (see <fr:ref
 addr="beckers_abstracting_2019"
 href="beckers_abstracting_2019.xml"

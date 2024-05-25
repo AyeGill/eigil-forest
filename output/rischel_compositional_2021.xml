@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>rischel_compositional_2021</fr:addr><fr:route>rischel_compositional_2021.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/rischel_compositional_2021.tree</fr:source-path><fr:title>Compositional abstraction error and a category of causal models</fr:title><fr:date><fr:year>2021</fr:year><fr:month>8</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author>Eigil F. Rischel</fr:author><fr:author>Sebastian Weichwald</fr:author></fr:authors><fr:meta
+root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>rischel_compositional_2021</fr:addr><fr:route>rischel_compositional_2021.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/rischel_compositional_2021.tree</fr:source-path><fr:title>Compositional abstraction error and a category of causal models</fr:title><fr:date><fr:year>2021</fr:year><fr:month>8</fr:month><fr:day>5</fr:day></fr:date><fr:authors><fr:author>Eigil F. Rischel</fr:author><fr:author>Sebastian Weichwald</fr:author></fr:authors><fr:meta
 name="bibtex">@misc{rischel_compositional_2021,
  abstract = {Interventional causal models describe several joint distributions over some variables used to describe a system, one for each intervention setting. They provide a formal recipe for how to move between the different joint distributions and make predictions about the variables upon intervening on the system. Yet, it is difficult to formalise how we may change the underlying variables used to describe the system, say moving from fine-grained to coarse-grained variables. Here, we argue that compositionality is a desideratum for such model transformations and the associated errors: When abstracting a reference model M iteratively, first obtaining M' and then further simplifying that to obtain M'', we expect the composite transformation from M to M'' to exist and its error to be bounded by the errors incurred by each individual transformation step. Category theory, the study of mathematical objects via compositional transformations between them, offers a natural language to develop our framework for model transformations and abstractions. We introduce a category of finite interventional causal models and, leveraging theory of enriched categories, prove the desired compositionality properties for our framework.},
  author = {Rischel, Eigil F. and Weichwald, Sebastian},
@@ -31,10 +31,24 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:addr>efr-0002</fr:addr><fr:route>efr-0002.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0002.tree</fr:source-path><fr:title>Bidirectionality in graphical models</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="eigil-rischel.xml"
+type="local"
+addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>efr-0003</fr:addr><fr:route>efr-0003.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/efr-0003.tree</fr:source-path><fr:title>Structural Causal Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>G</fr:tex> be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on <fr:tex>G</fr:tex> consists of
+  <fr:ul><fr:li>For each vertex <fr:tex>v  \in  V(G)</fr:tex>, measurable spaces <fr:tex>\mathcal {X} _v</fr:tex>, {<fr:tex>\mathcal {E}</fr:tex>_v}</fr:li>
+    <fr:li>A family of independent random variables <fr:tex>E_v  \in   \mathcal {E} _v</fr:tex> - these are called the <fr:em>exogenous variables</fr:em></fr:li>
+    <fr:li>For each <fr:tex>v</fr:tex>, a measurable function <fr:tex>\phi _v:  \mathcal {E} _v   \times   \prod _{v'  \to  v}  \mathcal {X} _{v'}  \to   \mathcal {X} _v</fr:tex> (note that if <fr:tex>v</fr:tex> has no parents, the product is just a singleton)</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree><fr:p>
   There is a significant existing literature (see <fr:ref
 addr="beckers_abstracting_2019"
 href="beckers_abstracting_2019.xml"
