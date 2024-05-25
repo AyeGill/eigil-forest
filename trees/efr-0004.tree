@@ -3,5 +3,13 @@
 \import{macros}
 \title{Bidirectionality for control}
 \p{
-  Consider a \em{discrete-time }
+  Consider a discrete-time, continuous-space, controlled, nonlinear dynamical system with noise.
+  By this, I mean some transition function #{F(x,u): \RR^n \times \RR^p \to \RR^n,} along with a given "noise distribution" #{\mu} on #{\RR^n}.
+  The intended meaning is that #{x_{n+1} = F(x_n,u_n) + v_n}, where #{u_n \in \RR^p} is a variable which can be controlled (depending on #{x_1, \dots x_n},) and #{(v_n)_{n=0,\dots}} is a sequence of iid random variables distributed according to #{\mu} (for simplicity, we assume everything is time-invariant). Without any assumptions of linearity or the like on #{F}, it is hard to apply traditional control methods. Therefore we'd like to partition #{\RR^n} into a discrete set of components, and apply reinforcement learning algorithms to the resulting dynamics (or just straightforward dynamical programming, depending on the situation).
+}
+\p{
+  Suppose we have such a partition #{p: \RR^n \to I}, with #{I} some discrete index set. We want to build some sort of controlled dynamical system on #{I} (really a Markov Decision Problem). A priori, however, it seems the probability of being able to transition from #{i} to #{j} is highly dependent on where in #{p^{-1}(i)} we are.
+}
+\p{
+  The trick to building an MDP is to choose #{u(x,i)}, where #{x} is our current state and #{i} is the target region, in such a way that #{x^i := F(x,u(x,i))} does not depend on #{x} - then the distribution on the next state is just the distribution of #{p(x^i + v_n)}, which can be determined ahead of time for each #{i}. #{i \mapsto x^i} is a section of #{p} - this bidirectionality is completely analogous to what we saw for abstractions between graphical models. 
 }

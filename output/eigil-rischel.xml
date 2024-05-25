@@ -19,7 +19,14 @@ root="false"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr>efr-0004</fr:add
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
-  Consider a <fr:em>discrete-time </fr:em></fr:p></fr:mainmatter></fr:tree><fr:tree
+  Consider a discrete-time, continuous-space, controlled, nonlinear dynamical system with noise.
+  By this, I mean some transition function <fr:tex>F(x,u):  \mathbb {R} ^n  \times   \mathbb {R} ^p  \to   \mathbb {R} ^n,</fr:tex> along with a given "noise distribution" <fr:tex>\mu</fr:tex> on <fr:tex>\mathbb {R} ^n</fr:tex>.
+  The intended meaning is that <fr:tex>x_{n+1} = F(x_n,u_n) + v_n</fr:tex>, where <fr:tex>u_n  \in   \mathbb {R} ^p</fr:tex> is a variable which can be controlled (depending on <fr:tex>x_1,  \dots  x_n</fr:tex>,) and <fr:tex>(v_n)_{n=0, \dots }</fr:tex> is a sequence of iid random variables distributed according to <fr:tex>\mu</fr:tex> (for simplicity, we assume everything is time-invariant). Without any assumptions of linearity or the like on <fr:tex>F</fr:tex>, it is hard to apply traditional control methods. Therefore we'd like to partition <fr:tex>\mathbb {R} ^n</fr:tex> into a discrete set of components, and apply reinforcement learning algorithms to the resulting dynamics (or just straightforward dynamical programming, depending on the situation).
+</fr:p><fr:p>
+  Suppose we have such a partition <fr:tex>p:  \mathbb {R} ^n  \to  I</fr:tex>, with <fr:tex>I</fr:tex> some discrete index set. We want to build some sort of controlled dynamical system on <fr:tex>I</fr:tex> (really a Markov Decision Problem). A priori, however, it seems the probability of being able to transition from <fr:tex>i</fr:tex> to <fr:tex>j</fr:tex> is highly dependent on where in <fr:tex>p^{-1}(i)</fr:tex> we are.
+</fr:p><fr:p>
+  The trick to building an MDP is to choose <fr:tex>u(x,i)</fr:tex>, where <fr:tex>x</fr:tex> is our current state and <fr:tex>i</fr:tex> is the target region, in such a way that <fr:tex>x^i := F(x,u(x,i))</fr:tex> does not depend on <fr:tex>x</fr:tex> - then the distribution on the next state is just the distribution of <fr:tex>p(x^i + v_n)</fr:tex>, which can be determined ahead of time for each <fr:tex>i</fr:tex>. <fr:tex>i  \mapsto  x^i</fr:tex> is a section of <fr:tex>p</fr:tex> - this bidirectionality is completely analogous to what we saw for abstractions between graphical models. 
+</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
@@ -148,4 +155,11 @@ root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:addr>efr-0004</fr:add
 href="eigil-rischel.xml"
 type="local"
 addr="eigil-rischel">Eigil Fjeldgren Rischel</fr:link></fr:author></fr:authors><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter><fr:p>
-  Consider a <fr:em>discrete-time </fr:em></fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  Consider a discrete-time, continuous-space, controlled, nonlinear dynamical system with noise.
+  By this, I mean some transition function <fr:tex>F(x,u):  \mathbb {R} ^n  \times   \mathbb {R} ^p  \to   \mathbb {R} ^n,</fr:tex> along with a given "noise distribution" <fr:tex>\mu</fr:tex> on <fr:tex>\mathbb {R} ^n</fr:tex>.
+  The intended meaning is that <fr:tex>x_{n+1} = F(x_n,u_n) + v_n</fr:tex>, where <fr:tex>u_n  \in   \mathbb {R} ^p</fr:tex> is a variable which can be controlled (depending on <fr:tex>x_1,  \dots  x_n</fr:tex>,) and <fr:tex>(v_n)_{n=0, \dots }</fr:tex> is a sequence of iid random variables distributed according to <fr:tex>\mu</fr:tex> (for simplicity, we assume everything is time-invariant). Without any assumptions of linearity or the like on <fr:tex>F</fr:tex>, it is hard to apply traditional control methods. Therefore we'd like to partition <fr:tex>\mathbb {R} ^n</fr:tex> into a discrete set of components, and apply reinforcement learning algorithms to the resulting dynamics (or just straightforward dynamical programming, depending on the situation).
+</fr:p><fr:p>
+  Suppose we have such a partition <fr:tex>p:  \mathbb {R} ^n  \to  I</fr:tex>, with <fr:tex>I</fr:tex> some discrete index set. We want to build some sort of controlled dynamical system on <fr:tex>I</fr:tex> (really a Markov Decision Problem). A priori, however, it seems the probability of being able to transition from <fr:tex>i</fr:tex> to <fr:tex>j</fr:tex> is highly dependent on where in <fr:tex>p^{-1}(i)</fr:tex> we are.
+</fr:p><fr:p>
+  The trick to building an MDP is to choose <fr:tex>u(x,i)</fr:tex>, where <fr:tex>x</fr:tex> is our current state and <fr:tex>i</fr:tex> is the target region, in such a way that <fr:tex>x^i := F(x,u(x,i))</fr:tex> does not depend on <fr:tex>x</fr:tex> - then the distribution on the next state is just the distribution of <fr:tex>p(x^i + v_n)</fr:tex>, which can be determined ahead of time for each <fr:tex>i</fr:tex>. <fr:tex>i  \mapsto  x^i</fr:tex> is a section of <fr:tex>p</fr:tex> - this bidirectionality is completely analogous to what we saw for abstractions between graphical models. 
+</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
