@@ -1,0 +1,10 @@
+\date{2024-05-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  A Moore machine in the sense of \ref{efr-0006} is what Myers calls a (open) dynamical system, and they are the central object of study in [[myers-cst]]. Arguably, both Moore machines and Mealy machines (\ref{efr-0005}) deserve the name of "open dynamical system" - the difference is is how they interact with the external world.
+}
+\p{
+  Observe in particular that, if #{A=I}, the categories of Mealy and Moore machines agree, both being equal to the slice of #{T} over the unit #{I}. In other words, the two notions of \em{closed} dynamical system coincide.
+}
