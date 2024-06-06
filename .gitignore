@@ -20,4 +20,3 @@ latex/trees
 *.run.xml
 public
 server
-*.lock
