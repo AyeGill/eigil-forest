@@ -9,27 +9,30 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-22.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
           fetch-depth: 1
 
-#      - name: Cache OCaml files
-#        id: cache-ocaml
-#        uses: actions/cache@v3
-#        with:
-#          path: |
-#            ./ocaml-forester
-#            ~/.opam
-#          key: ${{hashFiles(foresterver.lock)}}
+      - name: Cache OCaml files
+        id: cache-ocaml
+        uses: actions/cache@v3
+        with:
+          path: |
+            ./ocaml-forester
+            ~/.opam
+          key: ${{hashFiles(foresterver.lock)}}
 
-#      - name: Cache TexLive files
-#        id: cache-tex
-#        uses: actions/cache@v3
-#        with:
-#          path: /usr/local/texlive/2024
-#          key: ${{hashFiles(texver.lock)}}
+      - name: Cache TexLive files
+        id: cache-tex
+        uses: actions/cache@v3
+        with:
+          path: /usr/local/texlive/2024
+          key: ${{hashFiles(texver.lock)}}
 
       - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v2
