@@ -32,19 +32,13 @@ jobs:
             ~/.opam
           key: ${{hashFiles('foresterver.lock')}}
 
-      - name: Cache TexLive files
-        id: cache-tex
-        uses: actions/cache@v3
-        with:
-          path: /usr/local/texlive/2024
-          key: ${{hashFiles('texver.lock')}}
-
       - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v2
         with:
           ocaml-compiler: "5.1"
 
-      - name: Install Forester
+      - if: ${{ steps.cache-ocaml.outputs.cache-hit != 'true' }}
+        name: Install Forester
         run: |
           sudo apt install libev-dev
           git clone https://git.sr.ht/~jonsterling/ocaml-forester
