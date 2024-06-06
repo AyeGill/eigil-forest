@@ -1,6 +1,7 @@
 \date{2024-05-25}
 \author{eigil-rischel}
 \import{macros}
+\title{Composition with graded predicates}
 \p{
   Suppose #{T: X \to \Delta(Y)} is a stochastic map, and suppose #{\phi^\epsilon} is a graded predicate on #{Y} (in particular, #{\phi^\epsilon(y) \Rightarrow \phi^{\epsilon'}(y)} if #{\epsilon < \epsilon'}).
 }
@@ -8,5 +9,5 @@
   Then we can define #{T^{-1}(\phi)^\epsilon}, a graded predicate on #{X}, by #{T^{-1}(\phi)^\epsilon(x)} if there exists #{\epsilon_1 + \epsilon_2 = \epsilon} with #{P(\phi^{\epsilon_1}(Tx)) > 1-\epsilon_2} 
 }
 \p{
-  Every graded predicate #{\phi} on #{X} is the pullback of the predicate #{x = \top} on #{\{\bot,\top\}} along a unique stochastic map #{[\phi]: X \to \{\bot,\top\}} (which carries #{x} to the distribution which is #{\bot} with probability #{\inf_{\phi^\epsilon(x)} \epsilon}). Thus a graded predicate is essentially a stochastic version of an ordinary predicate (which is a \em{deterministic} map to #{\{\bot,\top\}}). Under this equivalence, the 
+  Every graded predicate #{\phi} on #{X} is the pullback of the predicate #{x = \top} on #{\{\bot,\top\}} along a unique stochastic map #{[\phi]: X \to \{\bot,\top\}} (which carries #{x} to the distribution which is #{\bot} with probability #{\inf_{\phi^\epsilon(x)} \epsilon}). Thus a graded predicate is essentially a stochastic version of an ordinary predicate (which is a \em{deterministic} map to #{\{\bot,\top\}}). Under this equivalence, the operation #{T^{-1}} is simply precomposition with #{T}.
 }
