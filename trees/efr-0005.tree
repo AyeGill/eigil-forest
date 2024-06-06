@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{definition}
 \p{
-  In a dynamical systems doctrine, a \em{Mealy machine} with state space #{S} and interface #{A} consists of a costate #{TS \otimes A \to I}. The category of Mealy machines with interface #{A} is the comma category of the functor #{T(-) \otimes A} over #{I} - that is, a morphism of Mealy machines is #{S \to S'} so that the obvious triangle commutes.
+  In a dynamical systems theory, a \em{Mealy machine} with state space #{S} and interface #{A} consists of a costate #{TS \otimes A \to I}. The category of Mealy machines with interface #{A} is the comma category of the functor #{T(-) \otimes A} over #{I} - that is, a morphism of Mealy machines is #{S \to S'} so that the obvious triangle commutes.
 }

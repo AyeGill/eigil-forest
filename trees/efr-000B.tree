@@ -1,0 +1,18 @@
+\date{2024-06-06}
+\author{eigil-rischel}
+\title{Controlled Lens}
+\taxon{definition}
+\import{macros}
+\p{
+  Let #{(\cC,\cA,T)} be a [monoidal theory of dynamical systems](efr-000A). Then the \em{double category of controlled lenses} is defined as follows:
+  \ol{
+    \li{The objects are the arenas, objects of #{\int \cA}}
+    \li{The vertical category is simply the category of charts}
+    \li{A horizontal morphism is a \em{controlled lens,} a tuple #{S \in \cC, TS \otimes A \to B}}
+    \li{Horizontal composition is by tensoring}
+    \li{A 2-cell is a map #{S \to S'} so that the induced diagram in the double category of lenses and charts commutes.}
+  }
+}
+\p{
+  We could extend this to a triple category, where the third type of morphism is a bare lens, and a commutative square of controlled lenses and bare lenses must satisfy a different commutativity equation.
+}
