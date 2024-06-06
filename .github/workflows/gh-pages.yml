@@ -39,10 +39,12 @@ jobs:
           key: ${{hashFiles('foresterver.lock')}}
 
       - if: ${{ steps.cache-ocaml.outputs.cache-hit != 'true' }}
-        name: Install Forester
+        name: clone forester
+        run: git clone https://git.sr.ht/~jonsterling/ocaml-forester
+
+      - name: Install Forester
         run: |
           sudo apt install libev-dev
-          git clone https://git.sr.ht/~jonsterling/ocaml-forester
           cd ocaml-forester
           opam pin add -y . --locked
 
