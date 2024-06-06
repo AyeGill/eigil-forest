@@ -15,6 +15,22 @@ jobs:
           submodules: true
           fetch-depth: 1
 
+#      - name: Cache OCaml files
+#        id: cache-ocaml
+#        uses: actions/cache@v3
+#        with:
+#          path: |
+#            ./ocaml-forester
+#            ~/.opam
+#          key: ${{hashFiles(foresterver.lock)}}
+
+#      - name: Cache TexLive files
+#        id: cache-tex
+#        uses: actions/cache@v3
+#        with:
+#          path: /usr/local/texlive/2024
+#          key: ${{hashFiles(texver.lock)}}
+
       - name: Set-up OCaml
         uses: ocaml/setup-ocaml@v2
         with:
@@ -58,14 +74,15 @@ jobs:
       - name: Build with Forester
         run: opam exec -- forester build forest.toml
 
-      - name: Setup upterm session
-        if: failure()
-        uses: lhotari/action-upterm@v1
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
 
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          # Upload entire repository
+          path: './output'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
