@@ -29,15 +29,6 @@ jobs:
         with:
           ocaml-compiler: "5.1"
 
-      - name: Cache OCaml files
-        id: cache-ocaml
-        uses: actions/cache@v3
-        with:
-          path: |
-            ./ocaml-forester
-            ~/.opam
-          key: ${{hashFiles('foresterver.lock')}}
-
       - if: ${{ steps.cache-ocaml.outputs.cache-hit != 'true' }}
         name: clone forester
         run: git clone https://git.sr.ht/~jonsterling/ocaml-forester
