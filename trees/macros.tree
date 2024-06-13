@@ -256,6 +256,7 @@
 
 \def\Arena{#{\dblcat{Arena}}}
 \def\System{#{\dblcat{System}}}
+
 % Poly
 
 \def\lott{#{\mathtt{lott}}}
