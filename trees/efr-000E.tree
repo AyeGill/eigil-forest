@@ -10,7 +10,7 @@
 \ul{
     \li{Wanting to learn a function #{X \to Y}, we choose a parameterized function #{f: X \times P \to Y}, where all these are, in the simplest case, Euclidean spaces #{\RR^k}}
     \li{We take the backwards derivative of #{f,} obtaining a \em{lens:}
-    ##{(f,Df): \arena{TX}{X} \otimes \arena{TP}{P} \lensto \arena{TY,Y}}}
+    ##{(f,Df): `{TX}{X} \otimes \arena{TP}{P} \lensto \arena{TY}{Y}}}
     \li{For each datum #{(x_n,y_n),} we compute the loss gradient #{\nabla L(-,y_n) : Y \to TY}, and combining this with #{x_n \in X} and the current parameter #{p}, we get a gradient on the parameter space which we can use to update
     }
   }
