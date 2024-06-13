@@ -3,7 +3,7 @@
 \date{2024-06-13}
 \title{The triple category of controlled processes}
 
-\transclude{efr-000D}
+\transclude{efr-000C}
 \p{
   It may seem like we should simply identify a process #{TS \lensto X, X \otimes A \to B} in the above sense with the composite #{TS \otimes A \lensto B}. We will see that there is a 2-cell in a suitable higher-dimensional category relating these two processes, and this expresses an important equivalence between them, but there is a distinction between them concerning the set of possible reparametrizations - the morphisms between processes.
 }

@@ -1,6 +1,7 @@
-\title{Machine Learning}
+\title{Machine Learning as a controlled process}
 \taxon{example}
 \author{eigil-rischel}
+\import{macros}
 \date{2024-06-13}
 \p{
 
@@ -23,4 +24,8 @@
     \li{
       In some cases, we may want more complicated update dynamics than merely gradient descent. For example, we may want to use the momentum algorithm, or ADAM. The definition of these algorithms amount to a dynamical system (admittedly, not a continuous but a discrete dynamical system) which has at each step a current choice of parameter value as its output, and depends on a gradient field on the parameters as its input. In other words, these amount to some choice of system with interface #{T^*P}.
     }
+  }
+  \transclude{efr-000F}
+  \p{
+    This 
   }

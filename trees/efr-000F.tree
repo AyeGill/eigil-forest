@@ -1,0 +1,33 @@
+\date{2024-06-13}
+\author{eigil-rischel}
+\import{macros}
+\title{Morphisms of controlled processes}
+\p{
+  There are a few different types of morphisms to consider when thinking about controlled processes.
+}
+\p{
+  First of all, there are of course two other types of morphisms of the endpoints - lenses and arenas.
+  Hence we should ask: given a square of this form:
+  \quiver{
+    A \ar[r, "\shortmid"{marking}] \ar[d] & B\ar[d]\\
+    A' \ar[r, "\shortmid"{marking}] & B',
+  }
+  where the vertical maps are \em{charts} and the horizontal maps systems, what is the datum of a 2-cell filling this square? And we should ask the same question for lenses.
+}
+\p{
+  In fact, we can obtain the answer for lenses - the two-category of lenses and controlled processes - by means of a known construction: this is the double category of parameterized maps for the action of the monoidal category of systems and lenses on the monoidal category of lenses, #{\Para_\System(\Lens)}. \todo{Do some proper background, notation etc, here}
+}
+\p{
+  If we spell this construction out, we find that a 2-cell should consist of #{\phi: S \to S' \in \cC}, so that after composing all the lenses to obtain two lenses #{A \otimes TS \to B', A \otimes TS' \to B',} the square build of these lenses and #{T(\phi): TS \to TS'} (and an identity chart) is a 2-cell in #{\Arena}.
+}
+\p{
+  For charts there is also a notion of square, because of the interplay between charts and lenses. Again, this amounts to asking for a morphism #{\phi: S \to S'} so that a certain square:
+  \quiver{
+    TS \otimes A \ar[r] \ar[d] & B \ar[d]\\
+    TS' \otimes A' \ar[r] & B'
+  }
+  is a 2-cell in \Arena.
+}
+\p{
+  Combining these with the ordinary 2-cells of lenses and charts, we can build a \em{triple category}, where the three types of 1-cells are lenses, charts, and controlled morphisms.
+}

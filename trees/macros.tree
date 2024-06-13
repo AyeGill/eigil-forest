@@ -354,3 +354,8 @@
 \def\Conc{\cat{Conc}}
 
 \def\braket[contents]{#{\langle \contents \rangle}}
+
+
+%Utility
+
+\def\todo[note]{[\note](todo-tree)}
