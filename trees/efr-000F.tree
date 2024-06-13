@@ -18,7 +18,7 @@
   In fact, we can obtain the answer for lenses - the two-category of lenses and controlled processes - by means of a known construction: this is the double category of parameterized maps for the action of the monoidal category of systems and lenses on the monoidal category of lenses, #{\Para_\System(\Lens)}. \todo{Do some proper background, notation etc, here}
 }
 \p{
-  If we spell this construction out, we find that a 2-cell should consist of #{\phi: S \to S' \in \cC}, so that after composing all the lenses to obtain two lenses #{A \otimes TS \to B', A \otimes TS' \to B',} the square build of these lenses and #{T(\phi): TS \to TS'} (and an identity chart) is a 2-cell in #{\Arena}.
+  \todo{Put the right notion here! Note it's justified by considering ML example - a reparam map #{P \to P'} gives a priori a \em{lens} on covectors, can commute with optimization process}
 }
 \p{
   For charts there is also a notion of square, because of the interplay between charts and lenses. Again, this amounts to asking for a morphism #{\phi: S \to S'} so that a certain square:
