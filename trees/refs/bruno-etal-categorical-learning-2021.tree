@@ -1,0 +1,19 @@
+\title{Categorical Foundations of Gradient-Based Learning}
+\date{2021-07-13}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2103.01931}
+\meta{external}{http://arxiv.org/abs/2103.01931}
+\author{G. S. H. Cruttwell}
+\author{Bruno Gavranović}
+\author{Neil Ghani}
+\author{Paul Wilson}
+\author{Fabio Zanasi}
+\meta{bibtex}{\startverb
+ @article
+{Cruttwell_Gavranović_Ghani_Wilson_Zanasi_2021, title={Categorical Foundations of Gradient-Based Learning}, url={http://arxiv.org/abs/2103.01931}, DOI={10.48550/arXiv.2103.01931}, abstractNote={We propose a categorical semantics of gradient-based machine learning algorithms in terms of lenses, parametrised maps, and reverse derivative categories. This foundation provides a powerful explanatory and unifying framework: it encompasses a variety of gradient descent algorithms such as ADAM, AdaGrad, and Nesterov momentum, as well as a variety of loss functions such as as MSE and Softmax cross-entropy, shedding new light on their similarities and differences. Our approach to gradient-based learning has examples generalising beyond the familiar continuous domains (modelled in categories of smooth maps) and can be realized in the discrete setting of boolean circuits. Finally, we demonstrate the practical significance of our framework with an implementation in Python.}, note={arXiv:2103.01931 [cs, math]}, number={arXiv:2103.01931}, publisher={arXiv}, author={Cruttwell, G. S. H. and Gavranović, Bruno and Ghani, Neil and Wilson, Paul and Zanasi, Fabio}, year={2021}, month={Jul} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We propose a categorical semantics of gradient-based machine learning algorithms in terms of lenses, parametrised maps, and reverse derivative categories. This foundation provides a powerful explanatory and unifying framework: it encompasses a variety of gradient descent algorithms such as ADAM, AdaGrad, and Nesterov momentum, as well as a variety of loss functions such as as MSE and Softmax cross-entropy, shedding new light on their similarities and differences. Our approach to gradient-based learning has examples generalising beyond the familiar continuous domains (modelled in categories of smooth maps) and can be realized in the discrete setting of boolean circuits. Finally, we demonstrate the practical significance of our framework with an implementation in Python.
+}}
+
