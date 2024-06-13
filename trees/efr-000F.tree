@@ -9,8 +9,10 @@
   First of all, there are of course two other types of morphisms of the endpoints - lenses and arenas.
   Hence we should ask: given a square of this form:
   \quiver{
+    \begin{tikzcd}
     A \ar[r, "\shortmid"{marking}] \ar[d] & B\ar[d]\\
     A' \ar[r, "\shortmid"{marking}] & B',
+    \end{tikzcd}
   }
   where the vertical maps are \em{charts} and the horizontal maps systems, what is the datum of a 2-cell filling this square? And we should ask the same question for lenses.
 }
@@ -23,8 +25,10 @@
 \p{
   For charts there is also a notion of square, because of the interplay between charts and lenses. Again, this amounts to asking for a morphism #{\phi: S \to S'} so that a certain square:
   \quiver{
+    \begin{tikzcd}
     TS \otimes A \ar[r] \ar[d] & B \ar[d]\\
     TS' \otimes A' \ar[r] & B'
+    \end{tikzcd}
   }
   is a 2-cell in \Arena.
 }
