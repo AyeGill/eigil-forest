@@ -7,8 +7,9 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>beckers_approximate_2019</fr:addr><fr:route>beckers_approximate_2019.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/beckers_approximate_2019.tree</fr:source-path><fr:title>Approximate causal abstraction</fr:title><fr:date><fr:year>2019</fr:year><fr:month>6</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author>Sander Beckers</fr:author><fr:author>Frederick Eberhardt</fr:author><fr:author>Joseph Y. Halpern</fr:author></fr:authors><fr:meta
-name="bibtex">@article{beckers_approximate_2019,
+root="false"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>beckers_approximate_2019</fr:addr><fr:route>beckers_approximate_2019.xml</fr:route><fr:title>Approximate causal abstraction</fr:title><fr:date><fr:year>2019</fr:year><fr:month>6</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author>Sander Beckers</fr:author><fr:author>Frederick Eberhardt</fr:author><fr:author>Joseph Y. Halpern</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[
+@article{beckers_approximate_2019,
  abstract = {Scientiﬁc models describe natural phenomena at different levels of abstraction. Abstract descriptions can provide the basis for interventions on the system and explanation of observed phenomena at a level of granularity that is coarser than the most fundamental account of the system. Beckers and Halpern (2019), building on work of Rubenstein et al. (2017), developed an account of abstraction for causal models that is exact. Here we extend this account to the more realistic case where an abstract causal model offers only an approximation of the underlying system. We show how the resulting account handles the discrepancy that can arise between low- and highlevel causal models of the same system, and in the process provide an account of how one causal model approximates another, a topic of independent interest. Finally, we extend the account of approximate abstractions to probabilistic causal models, indicating how and where uncertainty can enter into an approximate abstraction.},
  author = {Beckers, Sander and Eberhardt, Frederick and Halpern, Joseph Y.},
  date = {2019-06-29},
@@ -22,6 +23,6 @@ name="bibtex">@article{beckers_approximate_2019,
  title = {Approximate Causal Abstraction},
  url = {http://arxiv.org/abs/1906.11583},
  urldate = {2021-04-04}
-}</fr:meta><fr:meta
+}]]></fr:meta><fr:meta
 name="doi">10.48550/arXiv.1906.11583</fr:meta><fr:meta
-name="url">http://arxiv.org/abs/1906.11583</fr:meta><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+name="url">http://arxiv.org/abs/1906.11583</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

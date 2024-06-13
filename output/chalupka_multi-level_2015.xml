@@ -7,8 +7,9 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>350</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>chalupka_multi-level_2015</fr:addr><fr:route>chalupka_multi-level_2015.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/chalupka_multi-level_2015.tree</fr:source-path><fr:title>Multi-level cause-effect systems</fr:title><fr:date><fr:year>2015</fr:year></fr:date><fr:authors><fr:author>Krzysztof Chalupka</fr:author><fr:author>Pietro Perona</fr:author><fr:author>Frederick Eberhardt</fr:author></fr:authors><fr:meta
-name="bibtex">@article{chalupka_multi-level_2015,
+root="false"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>chalupka_multi-level_2015</fr:addr><fr:route>chalupka_multi-level_2015.xml</fr:route><fr:title>Multi-level cause-effect systems</fr:title><fr:date><fr:year>2015</fr:year></fr:date><fr:authors><fr:author>Krzysztof Chalupka</fr:author><fr:author>Pietro Perona</fr:author><fr:author>Frederick Eberhardt</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[
+@article{chalupka_multi-level_2015,
  abstract = {We present a domain-general account of causation that applies to settings in which macro-level causal relations between two systems are of interest, but the relevant causal features are poorly understood and have to be aggregated from vast arrays of micro-measurements. Our approach generalizes that of Chalupka et al. (2015) to the setting in which the macro-level effect is not speciﬁed. We formalize the connection between micro- and macro-variables in such situations and provide a coherent framework describing causal relations at multiple levels of analysis. We present an algorithm that discovers macro-variable causes and effects from microlevel measurements obtained from an experiment. We further show how to design experiments to discover macro-variables from observational micro-variable data. Finally, we show that under speciﬁc conditions, one can identify multiple levels of causal structure. Throughout the article, we use a simulated neuroscience multiunit recording experiment to illustrate the ideas and the algorithms.},
  author = {Chalupka, Krzysztof and Perona, Pietro and Eberhardt, Frederick},
  date = {2015},
@@ -17,5 +18,5 @@ name="bibtex">@article{chalupka_multi-level_2015,
  langid = {english},
  pages = {13},
  title = {Multi-Level Cause-Effect Systems}
-}</fr:meta><fr:meta
-name="doi">10.48550/arXiv.1512.07942</fr:meta><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+}]]></fr:meta><fr:meta
+name="doi">10.48550/arXiv.1512.07942</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

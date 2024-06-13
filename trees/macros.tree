@@ -176,6 +176,9 @@
 \def\longto{#{\longrightarrow}}
 \def\proto{#{\nrightarrow}}
 \def\twoto{#{\Rightarrow}}
+\def\lensto{#{\leftrightarrows}}
+\def\charto{#{\rightrightarrows}}
+
 
 \def\cat[c]{#{\mathsf{\c}}}
 \def\twocat[c]{#{\mathcal{\c}}}
@@ -249,7 +252,10 @@
 \def\Man{#{\cat{Man}}}
 \def\Vect{#{\cat{Vect}}}
 
+% Categorical Systems Theory
 
+\def\Arena{#{\dblcat{Arena}}}
+\def\System{#{\dblcat{System}}}
 % Poly
 
 \def\lott{#{\mathtt{lott}}}

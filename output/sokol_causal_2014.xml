@@ -7,8 +7,9 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>sokol_causal_2014</fr:addr><fr:route>sokol_causal_2014.xml</fr:route><fr:source-path>/home/eigil/eigil-forest/trees/refs/sokol_causal_2014.tree</fr:source-path><fr:title>Causal interpretation of stochastic differential equations</fr:title><fr:date><fr:year>2014</fr:year><fr:month>1</fr:month><fr:day>1</fr:day></fr:date><fr:authors><fr:author>Alexander Sokol</fr:author><fr:author>Niels Richard Hansen</fr:author></fr:authors><fr:meta
-name="bibtex">@article{sokol_causal_2014,
+root="false"><fr:frontmatter><fr:anchor>434</fr:anchor><fr:taxon>Reference</fr:taxon><fr:addr>sokol_causal_2014</fr:addr><fr:route>sokol_causal_2014.xml</fr:route><fr:title>Causal interpretation of stochastic differential equations</fr:title><fr:date><fr:year>2014</fr:year><fr:month>1</fr:month><fr:day>1</fr:day></fr:date><fr:authors><fr:author>Alexander Sokol</fr:author><fr:author>Niels Richard Hansen</fr:author></fr:authors><fr:meta
+name="bibtex"><![CDATA[
+@article{sokol_causal_2014,
  abstract = {We give a causal interpretation of stochastic differential equations ({SDEs}) by deﬁning the postintervention {SDE} resulting from an intervention in an {SDE}. We show that under Lipschitz conditions, the solution to the postintervention {SDE} is equal to a uniform limit in probability of postintervention structural equation models based on the Euler scheme of the original {SDE}, thus relating our deﬁnition to mainstream causal concepts. We prove that when the driving noise in the {SDE} is a Lévy process, the postintervention distribution is identiﬁable from the generator of the {SDE}.},
  author = {Sokol, Alexander and Hansen, Niels Richard},
  date = {2014-01-01},
@@ -26,6 +27,6 @@ name="bibtex">@article{sokol_causal_2014,
  url = {http://arxiv.org/abs/1304.0217},
  urldate = {2021-04-04},
  volume = {19}
-}</fr:meta><fr:meta
+}]]></fr:meta><fr:meta
 name="doi">10.1214/EJP.v19-2891</fr:meta><fr:meta
-name="url">http://arxiv.org/abs/1304.0217</fr:meta><fr:last-changed><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>25</fr:day></fr:date></fr:last-changed></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+name="url">http://arxiv.org/abs/1304.0217</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
