@@ -196,6 +196,8 @@
 % \def\dblCat{#{\dblcat{Cat}}}{[#{\dblcat{Cat}}](equipment-of-cats)}
 % but it doesn't compile!
 
+
+\def\SymMonCat{#{\cat{SymMonCat}}}
 \def\Gpd{#{\cat{Gpd}}}
 \def\Set{#{\cat{Set}}}
 \def\dblSet{#{\dblcat{Set}}} % equipment of spans of sets, i.e. Span(Set)
