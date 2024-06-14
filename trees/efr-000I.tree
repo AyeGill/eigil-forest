@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{definition}
+\title{#{\Ctrl}}
 \p{
   Let #{\cC, \cA(-), T} be a dynamical systems theory, let #{\Arena} be the associated category of arenas. Note that #{\Arena^T_0} is the category of \em{lenses}.
   Consider the (strict) category internal to #{\Arr(\SymMonCat)} given by the following diagram:
