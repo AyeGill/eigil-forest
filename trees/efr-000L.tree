@@ -1,0 +1,6 @@
+\date{2024-06-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Lens reparametrization}
+\p{As in the definition of chart reparametrization, let #{A_1,A_2,B_1,B_2} be arenas, and let #{S_1, f_1: TS_1 \otimes A_1 \lensto B_1, S_2, f_2: TS_2 \otimes A_2 \lensto B_2} be controlled processes. Let \todo{finish this one}}
