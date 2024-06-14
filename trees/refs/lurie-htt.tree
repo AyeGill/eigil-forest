@@ -1,0 +1,9 @@
+\title{Higher topos theory}
+\date{2009}
+\taxon{reference}
+\author{Jacob Lurie}
+\meta{bibtex}{\startverb
+ @book
+{Lurie_2009, address={Princeton, N.J}, series={Annals of mathematics studies}, title={Higher topos theory}, ISBN={978-0-691-14048-3}, callNumber={QA169 .L87 2009}, publisher={Princeton University Press}, author={Lurie, Jacob}, year={2009}, collection={Annals of mathematics studies},language={en} }
+\stopverb}
+

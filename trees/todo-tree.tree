@@ -2,3 +2,8 @@
 \p{
   I've made my todos all link here. This should serve as a repository of unfinished business.
 }
+\ol{
+  \li{
+    Figure out whether working with strict limits in the construction of the triple category would be easier.
+  }
+}

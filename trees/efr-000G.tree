@@ -1,0 +1,10 @@
+\date{2024-06-14}
+\author{eigil-rischel}
+\import{macros}
+\title{Constructing the triple category of controlled processes}
+\p{
+  Triple categories are very complicated objects. And our life is further complicated by the fact that, in one direction, our triple category is not in general strict, in the sense that composition is only associative up to globular isomorphism (because the tensor product is only pseudoassociative, the composition of controlled processes inherets this defect).
+}
+\p{
+  Hence, our life will be greatly simplified if we can approach the construction of this triple category by more conceptual means.
+}

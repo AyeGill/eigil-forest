@@ -1,0 +1,15 @@
+\date{2024-06-14}
+\author{eigil-rischel}
+\title{#{\dblPara} preserves homotopy limits}
+\import{macros}
+\taxon{theorem}
+\p{
+  The pseudofunctor #{\dblPara: \Arr(\SymMonCat) \to \PsDblCat}, which carries a symmetric monoidal functor #{\cC \to \cD} to the pseudo double category #{\dblPara_\cC(\cD)}, preserves homotopy limits.
+}
+\proof{
+  By \ref{lurie-htt}, 4.4.3.2, it suffices to show it preserves (homotopy) equalizers and products.
+  It's clear that #{\dblPara} preserves the strict product - since these are also homotopy products, it suffices to show it also preserves homotopy equalizers. Note that homotopy equalizers on both sides are computed levelwise (using the observation that both are categories of models of (homotopy) limit sketches in the bicategory #{\Cat}.)
+}
+\p{
+  Since #{\dblPara_\cC(\cD)_0 = \cD,} this immediately implies that #{\dblPara(-)_0} preserves homotopy limits. It suffices to verify that #{\dblPara(-)_1} also preserves them. But note that #{\dblPara_\cC(\cD)_1} can be written as the comma object of the cospan #{\cC \times \cD \to \cD = \cD,} and since comma objects are PIE limits, they commute with homotopy limits (pseudolimits). This concludes the proof.
+}

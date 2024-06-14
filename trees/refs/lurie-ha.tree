@@ -1,0 +1,9 @@
+\title{Higher Algebra}
+\taxon{reference}
+\meta{external}{https://www.math.ias.edu/~lurie/papers/HA.pdf}
+\author{Jacob Lurie}
+\meta{bibtex}{\startverb
+ @misc
+{Lurie, title={Higher Algebra}, url={https://www.math.ias.edu/~lurie/papers/HA.pdf}, author={Lurie, Jacob} }
+\stopverb}
+

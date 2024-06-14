@@ -1,0 +1,15 @@
+\date{2024-06-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC, \cA(-), T} be a dynamical systems theory, let #{\Arena} be the associated category of arenas. Note that #{\Arena^T_0} is the category of \em{lenses}.
+  Consider the (strict) category internal to #{\Arr(\SymMonCat)} given by the following diagram:
+  \quiver{
+    \begin{tikzcd}
+    \Arr(\cC)^\simeq \ar[d,shift left] \ar[d, shift right] \ar[r, "T"] & \Arena_1^T \ar[d, shift left] \ar[d, shift right]\\
+    \cC^\simeq \ar[r, "T"] & \Arena_0^T.
+    \end{tikzcd}
+  }
+  By \ref{efr-000H}, the image of this internal category under #{\dblPara(-)} is a pseudocategory internal to #{\PsDblCat} (a triple category). We call this triple category \em{the triple category of controlled processes,} and denote it by #{\Ctrl}, or #{\Ctrl_{T,\cC,\cA}} if we want to disambiguate the choice of doctrine.
+}

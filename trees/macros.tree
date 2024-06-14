@@ -213,6 +213,8 @@
 \def\Org{#{\dblcat{Org}}}
 \def\DOrg{#{\dblcat{DOrg}}}
 
+\def\Arr{#{\mathsf{Arr}}}
+
 \def\horiz{\mathcal{h}}
 
 \def\List{#{\mathbf{List}}}
@@ -256,6 +258,10 @@
 
 \def\Arena{#{\dblcat{Arena}}}
 \def\System{#{\dblcat{System}}}
+\def\dblPara{#{\dblcat{Para}}}
+\def\PsDblCat{#{\dblcat{PsDblCat}}}
+\def\Ctrl{#{\dblcat{Ctrl}}}
+
 
 % Poly
 
