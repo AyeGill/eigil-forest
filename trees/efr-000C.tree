@@ -5,8 +5,8 @@
 \p{
   Fix a monoidal dynamical systems theory #{(\cC,\cA(-),T)}.
   Let #{A,B \in #{\Arena}} be two arenas. A \em{controlled process} #{A \proto B} consists of a tuple
-  ##{(X \in \Arena, C \in \System_X, p: C \otimes A \lensto Y)}
+  ##{(S \in \cC, TS \otimes A \lensto B)}
 }
 \p{
-  In other words: a third arena #{X}, a system on #{X} (that is, an object #{S \in \cC} and a lens #{c: TS \lensto X},) and a parameterized lens #{C \otimes A \to Y}.
+  In other words: a space #{S} and a lens parameterized by #{TS \in \Arena}
 }

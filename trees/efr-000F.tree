@@ -17,21 +17,44 @@
   where the vertical maps are \em{charts} and the horizontal maps systems, what is the datum of a 2-cell filling this square? And we should ask the same question for lenses.
 }
 \p{
-  In fact, we can obtain the answer for lenses - the two-category of lenses and controlled processes - by means of a known construction: this is the double category of parameterized maps for the action of the monoidal category of systems and lenses on the monoidal category of lenses, #{\Para_\System(\Lens)}. \todo{Do some proper background, notation etc, here}
-}
-\p{
-  \todo{Put the right notion here! Note it's justified by considering ML example - a reparam map #{P \to P'} gives a priori a \em{lens} on covectors, can commute with optimization process}
-}
-\p{
-  For charts there is also a notion of square, because of the interplay between charts and lenses. Again, this amounts to asking for a morphism #{\phi: S \to S'} so that a certain square:
+  For charts, we can write down an obvious thing: given #{TS \otimes A \lensto B} and #{TS' \otimes A' \lensto B'}, we ask for a morphism #{\phi: S \to S'} so that the square
   \quiver{
     \begin{tikzcd}
-    TS \otimes A \ar[r] \ar[d] & B \ar[d]\\
-    TS' \otimes A' \ar[r] & B'
+    TS \otimes A \ar[r, shift right] \ar[d, shift left] \ar[d, shift right] & B\ar[d, shift left] \ar[d, shift right] \ar[l, shift right]\\
+    TS' \otimes A' \ar[r, shift right] & B' \ar[l, shift right],
     \end{tikzcd}
   }
-  is a 2-cell in \Arena.
+  is a 2-cell in #{\Arena}. We will call these \em{chart reparametrizations}
 }
 \p{
-  Combining these with the ordinary 2-cells of lenses and charts, we can build a \em{triple category}, where the three types of 1-cells are lenses, charts, and controlled morphisms.
+  For lenses #{A \lensto A', B \lensto B'}, it is not totally obvious - clearly we will want a morphism #{S \to S'} with some property, but it is not immediately obvious what square we can look at.
+}
+\p{
+  One answer is to ask for an \em{isomorphism} #{S \xto{\sim} S'} - this is carried to a lens #{TS \lensto TS'}, and so we can ask for this square of lenses to commute:
+  \quiver{
+    \begin{tikzcd}
+    TS \otimes A \ar[r, shift right] \ar[d, shift right] & B \ar[d, shift right] \ar[l, shift right]\\
+    TS' \otimes A' \ar[r, shift right] \ar[u, shift right] & B'. \ar[l, shift right] \ar[u, shift right]
+    \end{tikzcd}
+  }
+  We will call such a morphism a \em{lens isoparametrization}. This is obviously somewhat restrictive. Instead, we can also consider this square
+  \quiver{
+    \begin{tikzcd}
+    TS \otimes A \ar[r, shift right] \ar[d, shift left] \ar[d, shift right] & B \ar[r, shift right] \ar[l, shift right] & B'\ar[d, equals] \ar[l, shift right]\\
+    TS' \otimes A \ar[r, shift right] & TS' \otimes A' \ar[r, shift right] \ar[l, shift right] & B' \ar[l, shift right],
+    \end{tikzcd}
+  }
+  It's clear that, in the event that #{\phi: S \to S'} is an isomorphism, this being a 2-cell in #{\Arena} is equivalent to the previous square of lenses commuting. Hence this is a generalization of this previous definition. We call a map of this form a \em{lens reparametrization}.
+}
+\p{
+  Note that every lens reparametrization of this form factors as follows:
+  \quiver{
+    \begin{tikzcd}
+    TS \otimes A \ar[r] \ar[d, equals] & B \ar[d]\\
+    TS \otimes A \ar[r] \ar[d] & B' \ar[d, equals]\\
+    TS' \otimes A \ar[d] \ar[r] & B' \ar[d, equals]\\
+    TS' \otimes A' \ar[r] & B',
+    \end{tikzcd}
+  }
+  and here the top and bottom squares are "lens isoparametrizations", and the middle map is a \em{globular} chart reparametrization.
 }

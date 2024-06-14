@@ -10,22 +10,10 @@
 \ul{
     \li{Wanting to learn a function #{X \to Y}, we choose a parameterized function #{f: X \times P \to Y}, where all these are, in the simplest case, Euclidean spaces #{\RR^k}}
     \li{We take the backwards derivative of #{f,} obtaining a \em{lens:}
-    ##{(f,Df): `{TX}{X} \otimes \arena{TP}{P} \lensto \arena{TY}{Y}}}
+    ##{(f,Df): \arena{TX}{X} \otimes \arena{TP}{P} \lensto \arena{TY}{Y}}}
     \li{For each datum #{(x_n,y_n),} we compute the loss gradient #{\nabla L(-,y_n) : Y \to TY}, and combining this with #{x_n \in X} and the current parameter #{p}, we get a gradient on the parameter space which we can use to update
     }
   }
 \p{
-  Thus a machine learning model is a sort of controlled process. There are few interesting things to note here:
+  Thus a machine learning model is a sort of controlled process.
 }
-  \ul{
-    \li{
-      In some cases (usually for reasons of theoretical nicety,) we may wish to treat the spaces involved as general smooth manifolds, rather than merely Euclidean spaces. But the reverse derivative in this case lands in the \em{cotangent space} - the vector bundle dual to the tangent space - and thus does not a priori give an update dynamics on the manifold. We can ask for a choice of isomorphim #{TP \cong T^*P} - this amounts (with a certain extra condition) to asking for #{P} to be a Riemannian manifold. But note that this really boils down to choosing a lens isomorphism #{TP \lensto T^*P,} which is exactly the type of datum in the definition of controlled process.
-    }
-    \li{
-      In some cases, we may want more complicated update dynamics than merely gradient descent. For example, we may want to use the momentum algorithm, or ADAM. The definition of these algorithms amount to a dynamical system (admittedly, not a continuous but a discrete dynamical system) which has at each step a current choice of parameter value as its output, and depends on a gradient field on the parameters as its input. In other words, these amount to some choice of system with interface #{T^*P}.
-    }
-  }
-  \transclude{efr-000F}
-  \p{
-    This 
-  }
