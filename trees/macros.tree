@@ -196,7 +196,7 @@
 % \def\dblCat{#{\dblcat{Cat}}}{[#{\dblcat{Cat}}](equipment-of-cats)}
 % but it doesn't compile!
 
-
+\def\Id{#{\operatorname{Id}}}
 \def\SymMonCat{#{\cat{SymMonCat}}}
 \def\Gpd{#{\cat{Gpd}}}
 \def\Set{#{\cat{Set}}}

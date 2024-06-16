@@ -7,3 +7,9 @@
 \p{
   For example, the terminal coalgebra in #{\Stoch} of #{F(-) = A \otimes (-)} is #{A^\omega} - as usual it can be computed as the inverse limit #{\cdots \to A \otimes A \to A \to I}, which does exist by the extension theorem (and is probably a Kolmogorov limit?). 
 }
+\p{
+  We can't easily use the trick from coalgebraic modal logic of forming cofree coalgebras on objects, however. Normally the cofree #{T}-algebra on an object #{A} is the terminal coalgebra of #{T(-) \times A}, but of course #{\Stoch} doesn't have products! 
+}
+\p{
+  However, we can embed #{\Stoch \subseteq \Set^\Delta}, the full category of convex spaces, which does have products. This makes many other things more complicated, but does help us solve this problem - the convex space #{\prod^\infty \Delta(A)} is, for example, the cofree #{\Id}-coalgebra on #{A}.
+}
