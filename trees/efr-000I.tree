@@ -9,8 +9,9 @@
   \quiver{
     \begin{tikzcd}
     \Arr(\cC)^\simeq \ar[d,shift left] \ar[d, shift right] \ar[r, "T"] & \Arena_1^T \ar[d, shift left] \ar[d, shift right]\\
-    \cC^\simeq \ar[r, "T"] & \Arena_0^T.
+    {\cC^\simeq \ar[r, "T"]} & {\Arena_0^T.}
     \end{tikzcd}
   }
   By \ref{efr-000H}, the image of this internal category under #{\dblPara(-)} is a pseudocategory internal to #{\PsDblCat} (a triple category). We call this triple category \em{the triple category of controlled processes,} and denote it by #{\Ctrl}, or #{\Ctrl_{T,\cC,\cA}} if we want to disambiguate the choice of doctrine.
 }
+\p{(Note the difference between #{\Arr(\cC)^\simeq} and #{\Arr(\cC^\simeq)} - the former has objects all morphisms of #{\cC}, and the morphisms between them given by isomorphisms, whereas the latter has objects only the isomorphisms in #{\cC})}

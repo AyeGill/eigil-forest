@@ -1,0 +1,26 @@
+\date{2024-06-16}
+\author{eigil-rischel}
+\import{macros}
+\title{The Symmetric Monoidal Structure of #{\Ctrl}}
+\p{
+  Since we have assumed that our dynamical systems theory is monoidal, there is an obvious way of tensoring controlled processes: given #{f: TS \otimes A \lensto B} and #{g: TS' \otimes A' \lensto B'}, we can define their tensor product as a morphism #{T(S \otimes S') \otimes A \otimes A' \lensto B \otimes B'} using the isomorphism #{T(S \otimes S') \simeq TS \otimes TS'} and the symmetry:
+  ##{T(S \otimes S') \otimes A \otimes A' \simeq TS \otimes TS' \otimes A \otimes A' \simeq TS \otimes A \otimes TS' \otimes A' \xto{f \otimes g} B \otimes B'}.
+}
+\p{
+  Of course, this is merely a special case of a symmetric monoidal structure that always exists on #{\dblPara_\cC(\cD),} provided the inputs are symmetric monoidal. We will explain this as a consequence of the homotopy continuity of #{\dblPara}, and derive a further result: #{\Ctrl} is a symmetric monoidal triple category.
+}
+\p{
+  Observe that symmetric monoidal categories are exactly the \em{symmetric} (or #{\EE_\infty}, in the language of homotopy theorists) \em{pseudomonoids} of the bicategory of categories. Similarly, symmetric monoidal double categories are the pseudomonoids in double categories, and, although symmetric monoidal triple categories are not exactly widespread in the literature, it is clear that they must be symmetric pseudomonoids in triple categories.
+}
+\p{
+  Now, symmetric pseudomonoids are models of a (homotopy) limit sketch, so they must be preserved by continuous functors. We can actually do this even more simply by describing them in more elementary terms:
+}
+\transclude{efr-000P}
+\p{
+  By the work of Lurie \todo{cite here}, this presents the correct #{\infty,1}-category of symmetric pseudomonoids. Now it's clear that composition with a functor which preserves homotopy products will preserve these. We now consider the following lemmas:
+}
+\transclude{efr-000Q}
+\transclude{efr-000R}
+\p{
+  It follows that the category of morphisms of symmetric monoidal double categories is preadditive, and hence every object admits a unique symmetric pseudomonoid structure. Since #{\dblPara()} is homotopy continuous, its image inherits this structure, so that #{\Ctrl} is a symmetric monoidal triple category.
+}

@@ -215,7 +215,11 @@
 \def\Org{#{\dblcat{Org}}}
 \def\DOrg{#{\dblcat{DOrg}}}
 
-\def\Arr{#{\mathsf{Arr}}}
+\def\Arr{#{\cat{Arr}}}
+\def\Mod{#{\cat{Mod}}}
+\def\Fun{#{\cat{Fun}}}
+\def\CMon{#{\cat{CMon}}}
+
 
 \def\horiz{\mathcal{h}}
 
