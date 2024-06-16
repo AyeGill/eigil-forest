@@ -264,6 +264,8 @@
 
 \def\Arena{#{\dblcat{Arena}}}
 \def\System{#{\dblcat{System}}}
+\def\Lens{#{\cat{Lens}}}
+\def\Para{#{\cat{Para}}}
 \def\dblPara{#{\dblcat{Para}}}
 \def\PsDblCat{#{\dblcat{PsDblCat}}}
 \def\Ctrl{#{\dblcat{Ctrl}}}
@@ -281,6 +283,7 @@
 % Probability
 
 \def\expect{#{\EE}}
+\def\Stoch{#{\cat{Stoch}}}
 
 % Geometry
 

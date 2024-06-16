@@ -1,0 +1,9 @@
+\date{2024-06-16}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  By moving to a stochastic-optics based dynamical systems doctrine, we can create a situation where terminal dynamical systems are, instead of being something very complicated, are just what you expect them to be (and the difference is in what a morphism between systems is allowed to be), and the predicates on their state spaces are [graded predicates](efr-0009) of exactly the relevant kind.
+}
+\p{
+  For example, the terminal coalgebra in #{\Stoch} of #{F(-) = A \otimes (-)} is #{A^\omega} - as usual it can be computed as the inverse limit #{\cdots \to A \otimes A \to A \to I}, which does exist by the extension theorem (and is probably a Kolmogorov limit?). 
+}

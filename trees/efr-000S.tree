@@ -1,0 +1,11 @@
+\date{2024-06-16}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Consider the functor #{A \times \Delta(-)}.
+  Its coalgebras are stochastic dynamical systems that produce an #{a \in A} at each step.
+  The terminal coalgebra is
+  ##{A \times \Delta(A \times \Delta(\dots)),}
+  but there is also the coalgebra #{A \times \Delta(A^\omega),}
+  which at each step samples the next #{A} using the marginal of the distribution of the head, then takes the conditional distribution of the tail, given that observation. This seems "more reduced", but it's not terminal, what's going on there?  
+}
