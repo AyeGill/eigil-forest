@@ -13,3 +13,6 @@
 \p{
   However, we can embed #{\Stoch \subseteq \Set^\Delta}, the full category of convex spaces, which does have products. This makes many other things more complicated, but does help us solve this problem - the convex space #{\prod^\infty \Delta(A)} is, for example, the cofree #{\Id}-coalgebra on #{A}.
 }
+\p{
+  (On the other hand, given #{X \to TX} and #{X \to A}, there is a canonical choice of map #{X \to TX \otimes A} - the independent pairing - and so there is an induced map to the terminal coalgebra)
+}
