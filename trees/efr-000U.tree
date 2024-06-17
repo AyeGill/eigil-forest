@@ -1,0 +1,10 @@
+\date{2024-06-17}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  We can consider two strategies for constructing the "full" triple category of controlled processes:
+  \ol{
+    \li{Give a construction of the double category of controlled processes and all lens reparametrizations, in a functorial way so that we can extend this to a triple category}
+    \li{Prove that freely(?) adding companions, in a suitable sense, of each globular chart reparametrization, gives the right thing (this should amount to checking a composition rule)}
+  }
+}
