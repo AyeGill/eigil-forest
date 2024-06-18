@@ -6,10 +6,13 @@
   Let #{\Ctrl_1 \to \tilde{\Ctrl_1}} be constructed by freely adding companions of every globular chart reparametrization. Then #{\tilde{\Ctrl_1}} admits the following description:
   \ol{
     \li{The objects are the objects of #{\Ctrl_1,} i.e tuples #{A,B,S, TS \otimes A \lensto B}}
-    \li{The vertical morphisms are chart reparametrizations}
-    \li{The horizontal morphisms are lens reparametrizations}
+    \li{The vertical morphisms are [chart reparametrizations](efr-000K)}
+    \li{The horizontal morphisms are [lens reparametrizations](efr-000L)}
     \li{#{\Ctrl_1} is thin, and a square exists if and only if the underlying square in #{\cC} commutes.}
   }
   Moreover, the internal category structure #{\Ctrl_1 \rightrightarrows \Ctrl_0}, and the symmetric monoidal structure, both extend to #{\tilde{\Ctrl_1},} so that we obtain a symmetric monoidal triple category #{\tilde{\Ctrl_1}.}
 }
 \p{\todo{Fix the notation of #{\Ctrl} vs #{\tilde{\Ctrl}}}}
+\proof{
+  It is apparent that the given data describes a double category which receives a functor from #{\Ctrl_1}. It is also apparent that globular chart reparametrizations have companions in this double category, given by the equivalent globular lens reparametrization. Since, as developed in \todo{insert example here}, we have seen that every lens reparametrization factors as a composite of companions of lens isoparametrizations and companions of globular chart reparametrizations... \todo{finish this}.
+}
