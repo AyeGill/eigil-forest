@@ -18,5 +18,8 @@
   The right notion is a map #{\NN \times \Omega \to \Delta(\Omega')} such that the implied distribution on #{\Omega'} is always the given one, and so that the resulting diagram in #{\Stoch} commutes (i.e the two maps #{\NN \to \Delta(X)} agree).
 }
 \p{
+  The idea is that, given a random sequence which satisfies the difference equation, your map #{\NN \times \Omega \to \Delta(\Omega)} takes #{n,\omega'} to the conditional distribution of #{\omega} given all the information necessary to compute the first #{n} elements. More conceptually, we may as well let the sample space be #{X^\NN}, and the map #{\NN \times X^\NN \to \Delta(X^\NN)} just resamples the tail after #{x_n} conditional on the first #{n} elements. Clearly this reproduces the original sampling distribution (that's what conditional distribution means), and also, if our distribution on #{X^\NN} \em{is} a solution of the difference equation, that exactly means that the conditional distribution of #{x_{n+1}} given the first #{n} elements is equal to #{s(x_n)} 
+}
+\p{
   This needs to be generalized to the continuous-time, or general dynamical systems theory, situation.
 }
