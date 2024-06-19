@@ -28,7 +28,7 @@
   But it is not totally clear that this is sufficient - in particular, it's not clear that we're constrained to the resampling strategy "resample everything after #{n} at the conditional probability". For that matter, nothing prevents us from resampling #{x_n} as well!
 }
 \p{
-  For example, let #{X # \{0,1\}}, with the dynamics deterministically walking back and forth.
+  For example, let #{X = \{0,1\}}, with the dynamics deterministically walking back and forth.
   Consider the random sequence where each #{x_n} is uniformly and \em{independently} distributed. This is clearly not a solution. But if we resample by setting #{x'_n := \phi(n,(x_n))} to have each element independent and uniformly random, except #{x'_{n+1}} with is the negation of #{x_n}, then this is seen to be a valid 2-cell. First of all, if we sample a random #{(x_n)}, then compute #{(x'_n)} as described, clearly all the values will be independent, and each will be uniform. It is indeed true that the distribution of #{x'_{n+1}} is the one implied by #{x_n} - but it is not the one implied by #{(x'_n),} which is now different!. 
 }
 \p{
