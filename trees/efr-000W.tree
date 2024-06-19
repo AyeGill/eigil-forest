@@ -1,0 +1,22 @@
+\date{2024-06-19}
+\author{eigil-rischel}
+\import{macros}
+\title{Random trajectories for stochastic dynamical systems}
+\p{
+  Recall that by a "random map", we mean a parameterized (deterministic) map #{\Omega \times X \to Y}, plus some sort of probability distribution #{\mu: I \to \Omega}, probably up to some sort of equivalence relation.
+}
+\p{
+  We would like to develop a notion of 2-cell between random maps and stochastic maps, so that a choice of 2-cell from #{(+1): \NN \to \NN} to a stochastic map #{s: X \to X} is precisely a random trajectory of the dynamical system implied by #{s} - a random sequence so that the conditional distribution of #{x_{n+1}} given #{x_n} is exactly #{s(x_n)}.
+}
+\quiver{
+  \begin{tikzcd}
+  \NN \ar[r, "(+1)"] \ar[d, "x_\bullet"] & \NN \ar[d, "x_\bullet"]\\
+  X \ar[r, "s"] & X
+  \end{tikzcd}
+}
+\p{
+  The right notion is a map #{\NN \times \Omega \to \Delta(\Omega')} such that the implied distribution on #{\Omega'} is always the given one, and so that the resulting diagram in #{\Stoch} commutes (i.e the two maps #{\NN \to \Delta(X)} agree).
+}
+\p{
+  This needs to be generalized to the continuous-time, or general dynamical systems theory, situation.
+}
