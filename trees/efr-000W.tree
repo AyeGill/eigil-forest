@@ -39,7 +39,7 @@
   If we incorporate this into the diagram above, we find that the resampling procedure may not change #{x_n}, which rules out the previous example. This seems to guarantee that the conditional expectation #{P(x_{n+1}|x_n)} obey the equation, but note that this is actually not quite sufficient - we want a Markov property where this doesn't change if we condition on previous #{x_i}s. This may mean that by resampling the \em{previous} #{x_i} we can mess up this property.
 }
 \p{
-  On the other hand, it seems like there is probably no general definition of random trajectory that specializes to Markov processes in the case of #{\NN}. For consider the "cyclic clock" deterministic systems #{\ZZ/n \xto{+1} \ZZ/n}. What would a Markov process with this time-space even mean? It seems that for \emph{Markov} processes, we must use some extra structure on #{\NN}, likely its ordering.
+  On the other hand, it seems like there is probably no general definition of random trajectory that specializes to Markov processes in the case of #{\NN}. For consider the "cyclic clock" deterministic systems #{\ZZ /n \xto{+1} \ZZ /n}. What would a Markov process with this time-space even mean? It seems that for \emph{Markov} processes, we must use some extra structure on #{\NN}, likely its ordering.
 }
 \p{
   This needs to be generalized to the continuous-time, or general dynamical systems theory, situation.
