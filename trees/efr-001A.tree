@@ -1,0 +1,8 @@
+\date{2024-06-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Fiberwise monoidal product}
+\p{
+  Let #{\cC \to \cD} be a Markov fibration. Since #{\cD_\det} is Cartesian, by the work of Shulman and Moeller-Vasilakopoulou, there is a monoidal structure on each fiber #{\cC_X}, which we denote #{A \otimes_X B, I_B}. Concretely, it is given by #{\copy_X^*(A \otimes_\cD B),}
+}

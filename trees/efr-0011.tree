@@ -36,3 +36,21 @@
 \p{
   To go beyond the case of enough points, we may try to use the category of (non-dependent) optics as our category of test objects, but this is more complicated.
 }
+\transclude{efr-0019}
+\p{
+  The minimal paradigmatic example here is the Markov category where objects are (deterministic) maps in #{\FinSet}, and morphisms are commutative squares in #{\FinStoch}. The codomain functor from this to #{\FinStoch} is a Markov fibration, as can be readily verified.
+}
+\transclude{efr-001A}
+\p{
+  In the classical case of the codomain fibration of a Cartesian closed category, the fiberwise tensor is given by pullback. In this case we have a formula for the object (or set) of lenses #{\binom{\bar{A}}{*} \to \binom{\bar{B}}{B}} - it is given by (points of) the fiberwise hom #{[\bar{B},A]_B}, where #{A} is actually denoting the object #{A \times B \to B} - the trivial #{A}-bundle on #{B}. Unfortunately for us, Markov categories are not generally closed, so this avenue is closed to us.
+}
+\p{
+  A few approaches to solving this problem have been tried, with varying degrees of success:
+  \ol{
+    \li{The optics of Riley - although they don't concern themselves with the added complexity of dependency - are a solution to this problem. In the closed case the set of optics #{\binom{A}{X} \to \binom{B}{Y}} is simply the set of morphisms #{X \to Y \otimes [B,A],} and the coend formula generalized this to the non-closed case. Hence one can try to derive a more complicated coend formula to account for the dependent situation. This is the approach of \ref{fibre-optics-2021}.}
+    \li{One can try to find a fully faithful monoidal embedding into a category which is closed. For example, #{\FinStoch} embeds into the category of convex spaces (algebras for the finite distribution monad), which is closed. Objects like this are called \em{linear lenses}. This approach is somewhat hampered by the fact that measure spaces of functions are notoriously complicated to work with, but there are solutions available to these problems, like quasi-borel spaces.}
+    \li{
+      We can try to characterize those copresheaves on the fiber #{\cD_*} which have the form #{\Lens(-,A)}.
+    }
+  }
+}

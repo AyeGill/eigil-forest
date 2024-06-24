@@ -1,0 +1,7 @@
+\date{2024-06-24}
+\author{eigil-rischel}
+\import{macros}
+\title{Stochastic Categorical Systems Theory (The Discrete Case)}
+\p{
+  It will be instructive to work out the theory in the discrete case, which is to say, for the Kleisli category of the discrete (i.e finite-support) distribution monad on #{\Set}. Note that even for discrete-time discrete-space applications, this setup is not really adequate, as we lack the structure to construct terminal systems.
+}
