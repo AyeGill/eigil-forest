@@ -1,0 +1,7 @@
+\date{2024-06-20}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\cC} be a Markov category, and let #{F: \cC \to \cC} be a functor which preserves deterministic morphisms. Suppose the sequence #{I \leftarrow F(I) \leftarrow F^2(I) \leftarrow \cdots} has a Kolmogorov limit #{F^\infty}, and that #{F} preserves this limit. Then the induced map #{F^\infty \to F(F^\infty)} is a terminal coalgebra of #{F: \cC \to \cC}, and simultaneous a terminal coalgebra of the restricted functor #{F: \cC_{\det} \to \cC_{\det}} 
+}

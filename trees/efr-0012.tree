@@ -1,0 +1,10 @@
+\date{2024-06-21}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC} be a Markov category. Let #{\cC^{\to,\det}} denote the full subcategory of the functor category #{\cC^\to} spanned by the deterministic morphisms (so: an object is a deterministic morphism, a morphism is a commutative square, the other sides of which are not necessarily commutative). Note that by ??, this is again a Markov category (this is exactly #{\Fun(\to, \cC)} in his notation).
+}
+\p{
+  Let \todo{find a good symbol} #{= \cC^{\to,\det} \times_\cC \cC_\det} be the further subcategory given by those morphims whose codomain (but not necessarily their domain) are deterministic. It is easy to see that this is stable under the monoidal product and contains the structure maps, and hence is again a Markov category.
+}

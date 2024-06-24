@@ -1,0 +1,16 @@
+\date{2024-06-23}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC} be a Markov category, and suppose #{\cC_\det} admits all pullbacks. Suppose further that, 
+  given a commutative diagram as follows,
+  \quiver{
+    \begin{tikzcd}
+    P \ar[dr, dashed] \ar[rrd] \ar[ddr] & & \\
+     & X \times_A \bar{A} \ar[d] \ar[r] & \bar{A} \ar[d]\\
+     & X \ar[r] & A,
+    \end{tikzcd}
+  }
+  where the inner square and the map #{Z \to X} (but not necessarily the map #{Z \to \bar{A}}) are deterministic, there exists a unique map #{Z \to X \times_A \bar{A}} as indicated by the dashed arrow making the two triangles commute. Then we say #{\cC} \em{has deterministic pullbacks}
+}

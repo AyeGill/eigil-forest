@@ -1,0 +1,7 @@
+\date{2024-06-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  A pseudo double category is equivalently a simplicial object in #{\Cat} so that the diagrams #{X[n] \to X[1]} are \em{homotopy} pullbacks.
+}

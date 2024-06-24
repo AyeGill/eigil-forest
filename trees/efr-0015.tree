@@ -1,0 +1,8 @@
+\date{2024-06-23}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  In a Markov category, a morphism #{f: X \otimes A \to Y \otimes B} is called a \em{comb} if there exists #{g: X \to Y} so that #{g \otimes \del_A = f ; (1_Y \otimes \del_B)}, or in string diagrams:
+  \todo{insert a string diagram here.}
+}

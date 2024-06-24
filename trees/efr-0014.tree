@@ -1,0 +1,8 @@
+\date{2024-06-23}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  A Markov category #{\cC} has deterministic pullbacks if and only if the forgetful functor
+  #{\Bun(\cC) \to \cC_\det} is a fibration.
+}

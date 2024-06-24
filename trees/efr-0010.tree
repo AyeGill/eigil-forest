@@ -1,0 +1,26 @@
+\date{2024-06-21}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  A priori, there seems to be no way of computing the derivative of a map, for example, #{\RR \to \Delta(X)} - we only know the distribution of #{x(t),} not how it relates to #{x(t+h),} so what can we do?
+}
+\p{
+  However, we can actually still ask for such a thing to solve a differential equation!
+  Essentially, given #{X \to \Delta(TX),} we can build a map #{\Delta(X) \to T(\Delta X),} (morally speaking,) a flow on distributions on #{X} (which says - sample #{x} according to the given distribution, let it flow randomly for an infinitesimal amount of time, then look at the distribution of the result). So given #{\RR \to \Delta(X),} I get two maps to #{T(\Delta X),} and I ask for them to be equal.
+}
+\p{
+  The reason this works, even though it looks like it shouldn't, is that subject to a \em{Markov} property, describing the infinitesimal dynamics is sufficient, and these are precisely captured by this solution concept.
+}
+\p{
+  However, it is difficult to describe temporal logic-type properties in terms of these trajectories
+  (for example, given a sequence of probabilities that #{\phi} is true at time #{t}, there's not an easy way to find the probability that it's true at some point).
+}
+\p{
+  To find the behaviour for #{\RR}, let a dirac measure flow for time #{t}, gives you timestep, this is behavior of the system. But for #{S^1,} there may be no solutions which are dirac at any point, so can't do this.
+}
+\p{
+  An observable property is a "formal subterminal object" - a subpresheaf of the terminal object.
+}
+\p{
+  Functional formulation: given #{g(x,t),} can we compute #{E_x \int_t g(x(t),t)}. And, beyond that, how can we compute #{E_x \int_t h(g(x(t),t),t)} - clearly it's different from #{E_x \int_t(h(E_{x'} \int_t g(x',t),t))}.
+}

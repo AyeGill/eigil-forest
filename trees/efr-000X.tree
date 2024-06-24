@@ -1,0 +1,31 @@
+\date{2024-06-20}
+\author{eigil-rischel}
+\import{macros}
+\title{proposition}
+\p{
+  The functor #{A \otimes -: \BorelStoch \to \BorelStoch} has a terminal coalgebra, carried by #{A^\omega} with the deterministic structure map #{\braket{\rm head, tail}: A^\omega \to A \otimes A^\omega}.
+}
+\proof{
+  \p{
+    Observe that this diagram is a Kolmogorov limit in #{\BorelStoch:}
+  }
+  \quiver{
+    \begin{tikzcd}
+    A^\omega \ar[d] \ar[dr] \ar[drr] \ar[drrr] \ar[drrrr] & & & \\
+    I & A \ar[l] & A \otimes A \ar[l] & A \otimes A \otimes A \ar[l] & \cdots \ar[l]
+    \end{tikzcd}
+  }
+  \p{
+    This gives a coalgebra structure on #{A^\omega} in the usual way.
+  }
+  \p{
+    Given #{\xi : X \to X \otimes A}, we can build a cone by iteratively applying #{A \times -} to the unique map #{X \to I}:
+  }
+  \quiver{
+    \begin{tikzcd}
+    X \ar[d] \ar[r, "\xi"] & A \otimes X \ar[r, "A \otimes \xi"] \ar[d] & A \otimes A \otimes X \ar[r] \ar[d] & \cdots \\
+    I & A \ar[l] & A \otimes A \ar[l] & \cdots
+    \end{tikzcd}
+  }
+  This cone induces a map #{X \to A^\omega}. Moreover, for such a map to be a coalgebra map is for two maps into #{A \otimes A^\omega} to agree. Since the tensor product preserves the cofiltered limit defining #{A^\omega}, this is an equation between two cones on the sequence #{A \leftarrow A \otimes A \leftarrow \dots}, which is exactly the coinductive equation defining the cone above.
+}

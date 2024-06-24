@@ -1,0 +1,44 @@
+\date{2024-06-20}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{\phi \subseteq A^\omega} be a subobject - a property of sequences.
+  Then given a coalgebra #{\xi: X \to A \otimes X} and a point #{x \in X}, there is a probability #{P(\phi | x_0 = x),}. The map #{X \to \Delta(\{\bot,\top\})} which describes these probabilities is precisely the composite #{X \to A^\omega \xto{\phi} \{\bot,\top\}}.
+}
+\p{
+  In particular, if #{A = \{\bot,\top\}}, this procedure given an endo-function on #{\Hom(X,\{\bot,\top\})}, which we might denote #{\square_\phi}. For example, if #{\phi \subset \{\bot,\top\}^\omega} is the subset of sequences with at least one occurrence of #{\top}, #{\square_\phi (p: X \to \{\bot,\top\})} takes a predicate to the probability that it will eventually come true.
+}
+\p{
+  There are variations of this idea, coming from the embedding of stochastic maps in convex spaces.
+  For example, a "graded predicate" on #{X} is the same thing as a map #{X \to \Delta(\{\bot,\top\})}, which is the same thing as a coalgebra on #{\Delta(X)} in convex spaces for the functor #{\Delta(\{\bot,\top\}) \times -,} not that this is product, not tensor!
+}
+\p{
+  The terminal coalgebra for this is #{\Delta(\{\bot,\top\})^\omega,} and a "graded predicate" on this is quite different. For example #{\sup} is not affine, multiplication is not affine. 
+}
+\p{
+  Some questions:
+  \ol{
+    \li{How "complete" is this set of operators?}
+    \li{Do the "eventually forever" and "forever eventually" operators, defined as composites, do the right thing? I think there might be an independence problem.}
+  }
+}
+\p{
+  #{\diamond \square \phi(x)} means
+  \ol{
+    \li{
+      Draw a sample sequence #{x_n} starting at #{x}
+    }
+    \li{
+      For each #{n}, draw a bit with probability #{\square \phi (x_n)} - the probability that a sequence starting at #{x_n} would satisfy #{\phi} at all timesteps.
+    }
+    \li{
+      If any of these bits are true, the whole thing is true. That's the probability/value of #{\diamond\square\phi(x)}
+    }
+    \li{
+      Easy problematic example: suppose at state #{0,} you have a 50-50 shot of moving to either #{a} or #{b}, both of which are fixpoint. What's the probability you're eventually always at #{0,a} starting at #{0}? Clearly #{0.5}. But #{\square \{0,a\}} is #{0 \mapsto 0.5, a \mapsto 1, b \mapsto 0}, so #{\diamond \square \{0,a\}} evaluated at #{0} gives you first a 50-50 chance of being true on the first flip, then a 50-50 chance of going to #{a} (and being true), for a total #{0.75} percent probability. Wrong!
+    }
+  }
+}
+\p{
+  This suggests that coalgebraic modal logic, at least naively applied in #{\Stoch}, is no good - the probabilities #{\square \phi(x)} don't contain enough information (unless?) to recover the probability of eventually necessarily #{\phi}.
+}

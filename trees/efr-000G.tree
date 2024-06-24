@@ -6,8 +6,17 @@
   Triple categories are very complicated objects. And our life is further complicated by the fact that, in one direction, our triple category is not in general strict, in the sense that composition is only associative up to globular isomorphism (because the tensor product is only pseudoassociative, the composition of controlled processes inherets this defect).
 }
 \p{
-  Hence, our life will be greatly simplified if we can approach the construction of this triple category by more conceptual means.
+  Hence, our life will be greatly simplified if we can approach the construction of this triple category by more conceptual means. Our strategy will essentially be the following:
+  \ol{
+    \li{We will note that the notion of internal pseudocategory is classified by a limit sketch - that is, there is a bicategory (actually, a 1-category) #{\cI} and class of diagrams #{K} so that a pseudocategory internal in #{\cC} is precisely a pseudofunctor #{\cI \to \cC} which carries all the diagrams in #{K} to \em{homotopy limits}}
+    \li{We will prove that the double categorical #{\Para(-)} construction preserves homotopy limits.}
+    \li{Hence, by the preceding point, applying it to a pseudocategory internal to the bicategory of category actions will produce a pseudocategory internal to pseudo double categories - a triple category.}
+  }
 }
+
+\transclude{efr-0016}
+\transclude{efr-0017}
+\transclude{efr-0018}
 
 \transclude{efr-000H}
 
