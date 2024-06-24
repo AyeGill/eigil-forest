@@ -1,0 +1,17 @@
+\date{2024-06-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The set of indexed stochastic charts is just the set of commutative squares in #{\Kl(\Delta)} of this form:
+
+  \quiver{
+    \bar{X} \ar[d] \ar[r] & \bar{Y} \ar[d]\\
+    X \ar[r] & Y
+  }
+
+  (where the vertical maps are, by assumption, deterministic, but the horizontal ones aren't necessarily)
+}
+\proof{
+  Note that an indexed stochastic chart #{X \to Y} is equivalently a family of stochastic charts #{\binom{\bar{X}_{x}}{\{x\}} \to \binom{\bar{Y}}{Y}} for each #{x \in X}. The analogous statement is true for commutative diagrams of this form (since coproducts in diagram categories are pointwise, and coproducts of sets are again coproducts in Kleisli categories). Hence it suffices to check the case #{X = *}. We are looking at the convex set ##{\sum_{y \in Y}[\Delta(\bar{X}),\Delta(\bar{Y}_y)] = \sum_y \Delta(\bar{Y}_y)^X,} where this exponential denotes the iterated Cartesian product in convex spaces. 
+}

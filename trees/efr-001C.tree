@@ -1,0 +1,13 @@
+\date{2024-06-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\Delta: \Set \to \Set} carry a set #{X} to the set of finite-support probability distributions on #{X}. Recall that #{\Delta} is a monad.
+}
+\p{
+  Given two indexed sets #{\bar{X} \to X, \bar{Y} \to Y,} an \em{indexed stochastic lens} #{\binom{\bar{X}}{X} \to \binom{\bar{Y}}{Y}} is an element of the convex space #{\prod_{x \in X} \sum_{y \in Y} [\Delta(\bar{Y}_y),\Delta(\bar{X}_x)],} where the internal hom, product and coproduct are taken in the category of convex spaces. Note that if each #{\bar{Y}_y} is identical, say #{B}, this is isomorphism to #{\prod_{x \in X} \Delta(Y) \otimes [\Delta(B),\Delta(\bar{X}_x)].} Recall also that an element of #{[\Delta(X),\Delta(Y)]} is equivalently a function #{X \to \Delta(Y),} i.e. a Kleisli map #{X \to Y}.
+}
+\p{
+  An \em{indexed stochastic chart} is an element of the convex space #{\prod_{x \in X} \sum_{y \in Y} [\Delta(\bar{X}_x),\Delta(\bar{Y}_y)]}
+}
