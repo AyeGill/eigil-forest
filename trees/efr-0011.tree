@@ -1,4 +1,38 @@
 \date{2024-06-21}
 \author{eigil-rischel}
 \import{macros}
-\title{Dependent Optics}
+\title{Stochastic arenas}
+\p{
+  For a good theory of stochastic dynamical systems, we must develop a replacement for the double category #{\Arena}. The problem can be explained most clearly by considering discrete-time stochastic systems. Forgetting about the systems theory framework for a moment, and passing to the world of coalgebras, consider a stochastic system which outputs at each step a (possibly random) element of the set #{A}. Such a system is a coalgebra for the functor #{X \mapsto \Delta(X \times A)} in #{\Set}.
+  But the terminal coalgebra of this endofunctor is very hard to describe, involving nested applications of #{\Delta}. We would like to identify behaviours which lead to the same distribution on streams of #{A}. And indeed, we have the following: 
+}
+\transclude{efr-000X}
+\p{
+  The unique homomorphism #{X \to A^\omega} sends each #{X} to the corresponding distribution on streams.
+}
+\p{
+  Attempting to build a categorical systems theory version of this idea, we may try to define the category of charts as the category of squares
+  \quiver{
+    \begin{tikzcd}
+    \bar{A} \ar[d] \ar[r] & \bar{B}\ar[d]\\
+    A \ar[r] & B,
+    \end{tikzcd}
+  }
+  in #{\BorelStoch,} maybe limiting ourselves to those with deterministic vertical maps. This is indeed a good notion of "stochastic chart", as we will see - the problem is that it is not fibred over #{\BorelStoch,} (we may try embedding into a category which is fibred - for example, #{\FinStoch} embeds into #{\Set^\Delta,} which does have pullbacks - but the fiberwise opposite will generally not have the behavior we want.)
+}
+\p{
+  This problem has been studied for a number of years, see eg \ref{fibre-optics-2020}. The challenge is finding a definition which is simple enough to work with (the general "Fibre optics" of \ref{fibre-optics-2020} are complicated enough that even defining the composition is highly nontrivial, let alone proving its associativity,) and which allows the right set of possible correlations between the different variables on the boundary, while at the same time giving the right notion of equivalence between the "stochastic lenses".
+}
+\p{
+  We can take an idea from the theory of polynomial functors. Observe that any stochastic lens #{\phi: X \to Y} should give a postcomposition morphism #{\Lens(-,X) \to \Lens(-,Y).} Restricting our attention to objects over a point #{A = \binom{\bar{A}}{*},} we get a functor #{\cA_* \to \Set,} for each arena (carrying #{\bar{A}} to #{\Lens(\binom{\bar{A}}{*},\binom{\bar{X}}{X})},) and a natural transformation between these for each lens. Hence, if we can
+  \ol{
+    \li{Describe these functors for each arena - that is, give a suitable definition of stochastic lens #{\binom{\bar{A}}{A} \to \binom{\bar{X}}{X}} in the case where #{A = *}}
+    \li{
+      Classify the correct subset of the natural transformations corresponding to stochastic lenses (for polynomial functors, this is all of them)
+    }
+  }
+  We have a good chance of classifying stochastic lenses, at least in the case where the base category has "enough points", in the sense that #{\cC(I,-)} is faithful. 
+}
+\p{
+  To go beyond the case of enough points, we may try to use the category of (non-dependent) optics as our category of test objects, but this is more complicated.
+}
