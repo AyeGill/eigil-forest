@@ -287,6 +287,9 @@
 \def\FinStoch{#{\FinStoch}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
 \def\det{#{\mathrm{det}}}
+\def\copy{#{\mathrm{copy}}}
+\def\del{#{\mathrm{del}}}
+
 
 % Geometry
 
