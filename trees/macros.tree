@@ -237,6 +237,8 @@
 \def\Open{#{\cO}}
 \def\Spec{#{\mathrm{Spec}}}
 
+\def\Simp{#{\cat{Simp}}}
+
 \def\Poly{#{\cat{Poly}}}
 \def\MonPoly{#{\cat{Mon}(\Poly)}}
 

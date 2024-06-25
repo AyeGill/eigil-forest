@@ -1,0 +1,15 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Stochastic Arenas}
+\p{
+  Let #{\cD \to \cC_\det} be a Markov fibration. Since it is a fibration, we may form the ordinary double category of arenas #{\Arena_\cD}. Note that there is a double functor #{\Arena_\cD \to \cC_\det^\square}. This is a double fibration: an internal category in the category of fibrations.
+}
+\p{
+  The double category of \em{stochastic arenas} is obtained by first forming the levelwise stochastic completion of this category. This is another double category, fibred over a double category whose vertical category is #{\cC}, and whose horizontal 1-cells are \em{deterministic} maps in #{\cC}. We now apply stochastic completion in the other direction (transposing, completing, and transposing again) to obtain the category of stochastic arenas
+  ##{\SArena(\cD) = \bar{\bar{\Arena}^T}^T.}
+}
+\p{
+  (Note that the phrase \em{stochastic arenas} is a bit unfortunate, since the arenas are not stochastic, the lenses and charts are).
+}

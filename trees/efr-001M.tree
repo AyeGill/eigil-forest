@@ -1,0 +1,16 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Limit sketch}
+\p{
+  A \em{limit sketch} consists of a (small) category #{\cI} equipped with a collection of cones
+  ##{(J_i \in \Cat, D_i: J_i^\triangleleft \to \cI)}
+  (recall that #{J^\triangleleft} is the "cone on #{J}", the result of freely adjoining an initial object to #{J}).
+}
+\p{
+  If #{\cC} is a category, a \em{model} of the limit sketch is a functor #{M: \cI \to \cC} so that each composite #{J_i^\triangleleft \to \cI \to \cC} is a limit cone. A morphism of models is any natural transformation. In other words, the category of models is the full subcategory of the functor category spanned by the models. It is denoted #{\Mod_\cI(\cC)} (the collection of diagrams is left implicit).
+}
+\p{
+  Given a bicategory or other higher category #{\cC}, a model is a \em{pseudo}functor #{\cI \to \cC} which carries every diagram to a \em{homotopy} limit cone. #{\Mod_\cI(\cC) \subseteq \Fun(\cI,\cC)} is again the full sub-bicategory of the bicategory of pseudofunctors spanned by the models.
+}

@@ -14,6 +14,12 @@
   }
 }
 
+\transclude{efr-001M}
+\p{
+  We will see that there are limit sketches classifying both internal categories (giving double categories) and symmetric pseudomonoids (giving symmetric monoidal categories), which will be important going forward.
+}
+\transclude{efr-001O}
+
 \transclude{efr-0016}
 \transclude{efr-0017}
 \transclude{efr-0018}

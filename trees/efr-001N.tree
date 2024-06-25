@@ -1,0 +1,23 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Consider the simplicial category #{\Delta}.
+  Let #{\rho_i: [1] \to [n],} for #{i = 0, \dots, n-1}, be the map #{k \mapsto i+k}.
+  Picturing #{[1]} as the walking arrow, and #{[n]} as #{n} composable arrows, #{\rho_i} picks out the arrows in sequence.
+}
+\p{
+  Observe that this square:
+}
+\p{
+  \quiver{
+    \begin{tikzcd}
+    [0] \ar[r, "0"] \ar[d, "1"] & [1] \ar[d, "\rho_i"]\\
+    [1] \ar[r, "\rho_{i+1}"] & [n]
+    \end{tikzcd}
+  }
+}
+\p{
+  commutes for every #{i \leq n-2}. Hence there is a cone in #{\Delta^\op} with #{[n]} at its apex, consisting of the maps #{\rho_i} to #{n} copies of 
+}

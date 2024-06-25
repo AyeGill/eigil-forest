@@ -1,0 +1,23 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\title{Pseudocategories and categories of categories}
+\p{
+  We will want to say that the category of pseudo double categories is the category of internal pseudocategories - modeled as Segal objects - in the bicategory of categories. There are two issues with this statement as written.
+}
+\p{
+  First of all, the composition operation in such a pseudocategory is defined on the homotopy pullback: #{\cC_1 \times_{\cC_0} \cC_1 \to \cC_1}. But an object in this homotopy pullback consists of a horizontal morphism #{x \to y}, an \em{vertical} isomorphism #{y \to y'}, and another horizontal morphism #{y' \to y}. Existing definitions of pseudo double category do not typically assume the existence of such a composition operator (they merely assume the composition in the ordinary sense is only associative up to isomorphism in #{\cC_1}, which \em{is} a property of our definition).
+}
+\p{
+  Unpacking this, we eventually find that an internal pseudocategory in categories is a pseudo double category where every vertical isomorphism has a companion. This is arguably a very sensible condition (and it holds for the input to our constructions, so it need not hinder us,) but it should be kept in mind.
+}
+\p{
+  The second question is somewhat subtler. The category of internal pseudocategories, computed in any higher category, has a priori the same homotopy level as the input - just as the category of monoids is a 1-category (like #{\Set},) but the category of monoidal categories is a bicategory. This makes sense if we view categories as just a plain (generalized) algebraic theory, but we usually want to think of categories of categories as having some extra homotopy theory coming from the category structure - the category of categories in #{\Set} is a bicategory (actually a 2-category, i.e it's strict), not a plain category. The preceding construction does not account for this - the homotopy limits implicit in the phrase "a pseudocategory in pseudo double categories" are, for us, merely homotopy limits of plain categories, not accounting for the extra categorical structure in a double category.
+}
+\p{
+  It is not clear what this means in general (and in any case, our output category will actually be strict in two directions,) but it is an important subtlety to remember.
+}
+\p{
+  (A category viewed as an object merely of the 1-category of categories is sometimes called a \em{strict category}, but obviously we can't speak about "strict pseudo double categories")
+}
