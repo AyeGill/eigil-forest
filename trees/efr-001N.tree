@@ -13,8 +13,8 @@
 \p{
   \quiver{
     \begin{tikzcd}
-    [0] \ar[r, "0"] \ar[d, "1"] & [1] \ar[d, "\rho_i"]\\
-    [1] \ar[r, "\rho_{i+1}"] & [n]
+    {[0]} \ar[r, "0"] \ar[d, "1"] & {[1]} \ar[d, "\rho_i"]\\
+    {[1]} \ar[r, "\rho_{i+1}"] & {[n]}
     \end{tikzcd}
   }
 }
