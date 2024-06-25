@@ -1,12 +1,8 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{proposition}
 \p{
-  Let #{\cA \to \cC_\det} be a (Grothendieck) fibration, where #{\cC} is a Markov category.
-  Then the \em{stochastic completion} #{\bar{\cA}} is the category defined as follows:
-}
-\ol{
-  \li{The objects are simply the objects of #{\cA}. We will write these as pairs #{\binom{\bar{A}}{A}}, where #{A \in \cC} and #{\bar{A} \in \cA_A}}
-  \li{A morphism #{\arena{\bar{A}}{A} \to \arena{\bar{B}}{B}} is an element of the coend #{}}
+  Fix a Markov category #{\cC} Observe that there is a functor from [stochastically complete](efr-001F) [markov fibrations](efr-0019) #{\cD \to \cC} to Grothendieck fibrations #{\cD' \to \cC_\det}, given by taking the pullback #{\cD \times_\cC \cC_\det} (which is always a wide subcategory of #{\cD}). It is clear that this restricted functor is always a Markov fibration, hence we get a functor
+  #{\MarkFib^{c}(\cC) \to \MarkFib(\cC_\det)}. This functor admits a left adjoint, which takes a Markov fibration #{\cD \to \cC_\det} to a stochastically complete Markov fibration #{\bar{\cD} \to \cC}
 }
