@@ -1,0 +1,14 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: \cD \to \cC} be a Markov functor. An \em{indexed Markov copresheaf} is a tuple consisting of
+  #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))}, where #{F} is a Markov copresheaf and #{\alpha} is a \em{monoidal} natural transformation. Note that #{\alpha} necessarily preserves deterministic elements. We say #{F} is "over" #{X}, and may suppress #{\alpha} and #{X} from the notation.
+}
+\p{
+  Note that the corepresentable copresheaf #{\cD(A,-)} is canonically indexed over #{p(A)} by the mapping #{p: \cD(A,B) \to \cC(p(A),p(B))}.
+}
+\p{
+  Let #{p: \cD \to \cC_\det} be a Markov fibration, and let #{F: \cD \to \Set} be an indexed Markov copresheaf over #{A} for the composite #{\cD \to \cC_\det \to \cC}. We say it is \em{stochastically complete} if, given a Cartesian map #{X \to Y \in \cD} (Cartesian for the fibration #{p}) and a deterministic element #{h\in F(Y),} there is a bijection between lifts of #{h} to #{F(X)} and maps #{A \to X} making the triangle commute. 
+}

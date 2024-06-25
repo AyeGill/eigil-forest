@@ -1,0 +1,10 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC} be a Markov category. A \em{Markov copresheaf} is a copresheaf #{F: \cC \to \Set} equipped with a lax monoidal structure, so that the map #{* \to F(I)} is an isomorphism.
+}
+\p{
+  An element #{f \in F(Y)} of a Markov copresheaf is called \em{deterministic} if it is in the equalizer of the two maps #{F(Y) \to F(Y \otimes Y)} given by #{F(\copy_Y)} and #{F(Y) \to F(Y) \times F(Y) \to F(Y \otimes Y)}.
+}

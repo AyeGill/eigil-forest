@@ -1,0 +1,12 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Consider the full subcategory of the category of indexed copresheaves spanned by the stochastic completions of corepresentables #{\bar{\cD(X,-)}}. Denote the opposite of this #{\bar{\cD}}
+  \ol{
+    \li{The forgetful functor #{\bar{\cD} \to \cC} is a stochastically complete Markov fibration}
+    \li{A morphism in #{\bar{\cD}} lying over a deterministic map in #{\cC} is always in the image of the inclusion #{\cD \to \bar{\cD}}}
+    \li{If #{\cD' \to \cC} is a stochastically complete Markov fibration, and #{\cD \to \cD'} is a Markov functor over #{\cC_\det \to \cC} which preserves Cartesian morphisms, there is a unique factorization #{\bar{\cD} \to \cD'}}
+  }
+}

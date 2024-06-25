@@ -1,0 +1,7 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The comonoid structure of an object #{X \in \cC} induces a canonical lax monoidal structure on its corepresentable copresheaf #{\cC(X,-)}. This is a Markov presheaf, and its deterministic elements are exactly the deterministic morphisms #{X \to Y}.
+}
