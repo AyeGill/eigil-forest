@@ -1,0 +1,12 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cA \to \cC_\det} be a (Grothendieck) fibration, where #{\cC} is a Markov category.
+  Then the \em{stochastic completion} #{\bar{\cA}} is the category defined as follows:
+}
+\ol{
+  \li{The objects are simply the objects of #{\cA}. We will write these as pairs #{\binom{\bar{A}}{A}}, where #{A \in \cC} and #{\bar{A} \in \cA_A}}
+  \li{A morphism #{\arena{\bar{A}}{A} \to \arena{\bar{B}}{B}} is an element of the coend #{}}
+}

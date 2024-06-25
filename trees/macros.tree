@@ -284,8 +284,9 @@
 
 \def\expect{#{\EE}}
 \def\Stoch{#{\cat{Stoch}}}
+\def\FinStoch{#{\FinStoch}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
-\def\det{#{\operatorname{det}}}
+\def\det{#{\mathrm{det}}}
 
 % Geometry
 

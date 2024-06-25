@@ -38,8 +38,15 @@
 }
 \transclude{efr-0019}
 \p{
-  The minimal paradigmatic example here is the Markov category where objects are (deterministic) maps in #{\FinSet}, and morphisms are commutative squares in #{\FinStoch}. The codomain functor from this to #{\FinStoch} is a Markov fibration, as can be readily verified.
+  The minimal paradigmatic example here is the Markov category where objects are (deterministic) maps in #{\Fin}, and morphisms are commutative squares in #{\FinStoch}. The codomain functor from this to #{\FinStoch} is a Markov fibration, as can be readily verified.
 }
+\transclude{efr-001F}
+
+\p{
+  Markov categories generally do not have pullbacks, for the same reason that they usually don't have products. This issue generally hinders the construction of fibrations, in the ordinary sense, of Markov categories. However, we can go part of the way. The idea behind both of the preceding definitions is that given a pullback in the deterministic category, say #{A \times_Y X}, a map #{P \to A \times_Y X} \em{where the #{X}-coordinate is deterministic} should be uniquely determined by a choice of (deterministic) map #{P \to X} and (nondeterministic) #{P \to A} such that the square commutes. The analogous statement for products - that a map #{P \to A \otimes X} with deterministic #{X}-component is uniquely determined by the projections (or marginals) #{P \to X, P \to A} - is a consequence of the \em{positivity} axiom (see Fritz...), and hence holds in most Markov categories of interest. 
+}
+
+
 \transclude{efr-001A}
 \p{
   In the classical case of the codomain fibration of a Cartesian closed category, the fiberwise tensor is given by pullback. In this case we have a formula for the object (or set) of lenses #{\binom{\bar{A}}{*} \to \binom{\bar{B}}{B}} - it is given by (points of) the fiberwise hom #{[\bar{B},A]_B}, where #{A} is actually denoting the object #{A \times B \to B} - the trivial #{A}-bundle on #{B}. Unfortunately for us, Markov categories are not generally closed, so this avenue is closed to us.

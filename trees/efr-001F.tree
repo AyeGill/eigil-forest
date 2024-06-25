@@ -1,0 +1,28 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Stochastic completeness}
+\p{
+  Let #{p: \cD \to \cC} be a [Markov fibration](efr-0019). We say it is \em{stochastically complete} if, given a Cartesian morphism in the fibration #{f: X \to Y \in \cD \times_\cC \cC_\det}, and a deterministic morphism #{g: Z \to Y \in \cD_\det} (recall that #{\cD_\det} is still fibred over #{\cC_\det}), there is a bijection between the set of morphisms #{h: p(Z) \to p(X) \in \cC} so that the triangle
+}
+\p{
+  \quiver{
+    \begin{tikzcd}
+      p(Z) \ar[dr, "p(g)"] \ar[r, "h"] & p(X) \ar[d, "p(f)"]\\
+        & p(Y)
+    \end{tikzcd}
+  }
+}
+\p{
+  commutes, and the set of morphisms #{\bar{h}: Z \to X \in \cD} so that the triangle
+}
+  \quiver{
+    \begin{tikzcd}
+      Z \ar[dr, "g"] \ar[r, "\bar{h}"] & X \ar[d, "f"]\\
+        & Y
+    \end{tikzcd}
+  }
+\p{
+  commutes, (with the bijection given by applying #{p}).
+}
