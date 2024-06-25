@@ -9,3 +9,13 @@
   This construction extends to a functor from Segal categories into pseudo double categories.
   This functor is fully faithful (in the sense of being an \em{equivalence} on each hom-category), and the essential image consists of those pseudo double categories in which every vertical morphism is gregarious.
 }
+\proof{
+  \p{
+  Every Segal object is equivalent to a strict one, so it suffices to describe the functor restricted to these.
+  }
+
+  
+  \p{
+  Recall that the homotopy pullback #{X[1] \times_{X[0]} X[1]} has objects given by tuples #{f,g \in X[1], \alpha: d_0(f) \simeq d_1(g) \in X[0].} In particular, given an isomorphism #{\alpha: x \simeq x' \in X[0]}, we can form the tuple #{s_0(x), s_0(x'), \alpha} (this amounts to composing two identities with this isomorphism). This gives an object #{\bar{\alpha}} of #{X[1],} whose source and target are #{x} and #{x'}. \todo{finish argument here - apply in morphism space to construct 2-cells necessary, see notes.}
+  } 
+}
