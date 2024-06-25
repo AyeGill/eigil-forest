@@ -1,0 +1,11 @@
+\date{2024-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{X: \Delta^\op \to \Cat} be a Segal category (in the pseudo sense), and suppose the underlying functor is strictly functorial. Then the composition given by the inclusion of the strict pullback in the homotopy pullback, followed by a choice of composition in #{X}, makes #{X[1] \rightrightarrow X[0]} into a pseudo double category.
+}
+\p{
+  This construction extends to a functor from Segal categories into pseudo double categories.
+  This functor is fully faithful (in the sense of being an \em{equivalence} on each hom-category), and the essential image consists of those pseudo double categories in which every vertical morphism is gregarious.
+}

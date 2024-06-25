@@ -2,22 +2,16 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{definition}
+\title{Segal object}
 \p{
-  Consider the simplicial category #{\Delta}.
-  Let #{\rho_i: [1] \to [n],} for #{i = 0, \dots, n-1}, be the map #{k \mapsto i+k}.
-  Picturing #{[1]} as the walking arrow, and #{[n]} as #{n} composable arrows, #{\rho_i} picks out the arrows in sequence.
+  Consider the simplicial category #{\Delta}. For every #{n,m}, the following square commutes:
+}
+\quiver{
+  \begin{tikzcd}
+  {[n+m]} & {[n]} \ar[l, "i \mapsto i+m"]\\
+  {[m]} \ar[u, "i \mapsto i"] & {[0]} \ar[u, "0"] \ar[l, "m"]
+  \end{tikzcd}
 }
 \p{
-  Observe that this square:
-}
-\p{
-  \quiver{
-    \begin{tikzcd}
-    {[0]} \ar[r, "0"] \ar[d, "1"] & {[1]} \ar[d, "\rho_i"]\\
-    {[1]} \ar[r, "\rho_{i+1}"] & {[n]}
-    \end{tikzcd}
-  }
-}
-\p{
-  commutes for every #{i \leq n-2}. Hence there is a cone in #{\Delta^\op} with #{[n]} at its apex, consisting of the maps #{\rho_i} to #{n} copies of 
+  A simplicial object #{X} in a bicategory #{\cC} is called a \em{Segal object} if each of these diagrams goes to a homotopy pullback - in other words, if #{X[n+m] = X[n] \times_{X[0]} X[m]}.
 }
