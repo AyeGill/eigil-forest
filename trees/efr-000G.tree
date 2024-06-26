@@ -18,6 +18,7 @@
 \p{
   We will see that there are limit sketches classifying both internal categories (giving double categories) and symmetric pseudomonoids (giving symmetric monoidal categories), which will be important going forward.
 }
+
 \transclude{efr-001O}
 \transclude{efr-001N}
 \transclude{efr-001P}
@@ -32,6 +33,7 @@
 \transclude{efr-001T}
 
 \transclude{efr-000H}
+
 
 \p{Note that (pseudo-) monoids #{M} equipped with a left module #{C} in a general bicategory #{\cC} are also classified by a limit sketch, and both the underlying object of the module and the map #{C \times M \to M} are in the image of this limit sketch. By instantiating this for #{\cC} being the bicategories of categories (or monoidal categories, etc), we recover alternative versions of \ref{efr-000H} for category actions that are not symmetric. We will mainly concern ourselves with the symmetric case, however.}
 
