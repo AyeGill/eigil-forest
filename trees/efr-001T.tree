@@ -1,0 +1,36 @@
+\date{2024-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  \ol{
+    \li{A pseudo double functor #{\CC \to \DD} is equivalent to a natural transformation #{N(\CC) \to N(\DD)}}
+    \li{If #{\CC} is a double category in which each vertical isomorphism has a companion, #{N(\CC)} is a weak Segal category}
+    \li{Every weak Segal category is equivalent to one of the form #{N(\CC)} for #{\CC} a pseudo double category of this type.}
+  }
+}
+\p{
+  Let #{\CC} be a double category in which every vertical isomorphism has a companion. Then by \todo{reference here, Shulman stuff,} the source and target functors are isofibrant.
+  To prove #{N(\CC)} is a weak Segal category, it therefore suffices to prove that #{N(\CC)[2] \to N(\CC)[1] \times_{N(\CC)[0]} N(\CC)[1]} is an equivalence of categories, and the analogous statement in level 3 (it follows for the higher levels by coskeletality).
+}
+\p{
+  Now, let #{X} be a weak Segal. By \todo{reference}, every simplicial category is equivalent to one which is Reedy fibrant.
+  Note that being a Segal category is preserved by equivalence, so without loss of generality, assume #{X} is Reedy fibrant.
+}
+\p{
+  This means the functor #{X[n] \to X(\partial \Delta^n)} is an isofibration for each #{n}.
+  First, let #{n=1}. This means #{X[1] \to X[0] \times X[0]} is an isofibration. Since such fibrations are stable under pullback, this implies that the projection #{X(\partial \Delta^2) \to X[1] \times_{X[0]} X[1]} is again an isofibration, which means the composite #{X[2] \to X[1] \times_{X[0]} X[1]} is an isofibration. Since this pullback is a homotopy pullback, and #{X} is weak Segal, it is an equivalence, and hence a trivial equivalence. Choose a (strict!) section #{s}. 
+}
+\p{
+  By a completely analogous argument, choose a section of #{X[3] \to X[1] \times_{X[0]} X[1] \times_{X[0]} X[1],} which is again a trivial fibration.
+}
+\p{
+  Let our pseudo double category have #{X[1] \rightrightarrows X[0]} as the underlying reflective graph,
+  composition defined by the composite #{X[1] \times_{X[0]} X[1] \to X[2] \xto{d_1} X[1],}
+  associator defined using the degeneracies, and unitor defined using the section of #{X[3]}.
+  Call this pseudo double category #{\XX}
+}
+\p{
+  It is easy to see there is a functor #{X \to N(\XX)}, which is the identity on the first two levels.
+  Since the higher levels are homotopy pullbacks of the lower levels, this implies it is an equivalence at each level, concluding the proof.
+}

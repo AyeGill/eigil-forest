@@ -1,0 +1,19 @@
+\date{2024-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Coherent nerve of pseudo double category}
+\p{
+  Let #{\CC} be a pseudo double category.
+  Then the \em{coherent nerve} is the simplicial category #{N(\CC)} defined as follows:
+  \ol{
+    \li{#{N(\CC)_0 = \CC_0}}
+    \li{#{N(\CC)_1 = \CC_1}}
+    \li{The objects of #{N(\CC)_2} are tuples #{f: x \proto y, g: y \proto z, h: x \proto z, \alpha: gf \simeq h}, where #{x,y,z} are objects of #{\CC_0}, #{f,g,h} are horizontal morphisms, and #{\alpha} is a \em{globular} isomorphism in #{\CC_1}}
+    \li{The morphisms of #{N(\CC)_2} are triples of 2-cells #{\phi: f \to f', \psi: g \to g', \xi: h \to h'} so that the two possible 2-cells #{gf \to h'} agree}
+    \li{Given four compatible objects of #{\N(\CC)_2} defining a 3-boundary (a tetrahedron), there is a unique objects of #{\N(\CC)_3} filling it if and only if the square of globular isomorphisms commute}
+    \li{Given four compatible morphisms of #{\N(\CC)_2}, there is always a unique morphism in #{\N(\CC)_3} filling the boundary}
+    \li{The face- and degeneracy functors are the obvious ones}
+    \li{#{\N(\CC)} is #{3}-coskeletal, which defines the rest of the structure}
+  }
+}

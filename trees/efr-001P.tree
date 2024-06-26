@@ -1,21 +1,21 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{lemma}
 \p{
-  Let #{X: \Delta^\op \to \Cat} be a Segal category (in the pseudo sense), and suppose the underlying functor is strictly functorial. Then the composition given by the inclusion of the strict pullback in the homotopy pullback, followed by a choice of composition in #{X}, makes #{X[1] \rightrightarrow X[0]} into a pseudo double category.
-}
-\p{
-  This construction extends to a functor from Segal categories into pseudo double categories.
-  This functor is fully faithful (in the sense of being an \em{equivalence} on each hom-category), and the essential image consists of those pseudo double categories in which every vertical morphism is gregarious.
+  Let #{X: \Delta^\op \to \Cat} be a (strict) simplicial category (note that every simplicial category is equivalent to a strict one). Suppose further the face maps #{X[1] \rightrightarrows X[0]} are both isofibrations. Then if #{X} is a Segal category in the strict sense, it is automatically a Segal category in the pseudo sense.
 }
 \proof{
   \p{
-  Every Segal object is equivalent to a strict one, so it suffices to describe the functor restricted to these.
-  }
+    Since, up to \em{isomorphism} of categories, the higher #{X[n]} are pullbacks of the two indicated face maps, and the projections in the diagram
 
-  
-  \p{
-  Recall that the homotopy pullback #{X[1] \times_{X[0]} X[1]} has objects given by tuples #{f,g \in X[1], \alpha: d_0(f) \simeq d_1(g) \in X[0].} In particular, given an isomorphism #{\alpha: x \simeq x' \in X[0]}, we can form the tuple #{s_0(x), s_0(x'), \alpha} (this amounts to composing two identities with this isomorphism). This gives an object #{\bar{\alpha}} of #{X[1],} whose source and target are #{x} and #{x'}. \todo{finish argument here - apply in morphism space to construct 2-cells necessary, see notes.}
-  } 
+    \quiver{
+      \begin{tikzcd}
+      X[n+m] \ar[r] \ar[d] & X[n]\ar[d]\\
+      X[m] \ar[r] & 0
+      \end{tikzcd}
+    } 
+
+    are compositions of pullback projections, and pullbacks and composition of isofibrations are again isofibrations, it follows that all of these squares are pullbacks of two isofibrations. Such a pullback is always also a homotopy pullback, which proves the first statement.
+  }
 }

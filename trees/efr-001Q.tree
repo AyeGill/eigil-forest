@@ -1,0 +1,18 @@
+\date{2024-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\title{Commutativity of internalization}
+\p{
+  Let #{\cI,\cJ} be limit sketches, and let #{\cC} be a bicategory. Then
+  ##{\Mod_\cI(\Mod_\cJ(\cC)) \simeq \Fun'(\cI \times \cJ, \cC) \simeq \Mod_\cJ(\Mod_\cI(\cC)),}
+  where #{\Fun'(\cI \times \cJ,\cC)} denotes the full subcategory of the functor bicategory spanned by those pseudofunctors #{F} so that, for each #{I \in \cI,}, #{F(I,-)} is a model of #{\cJ}, and for each #{J \in \cJ,} #{F(-,J)} is a model of #{\cI}.
+}
+\proof{
+  \p{
+    Each isomorphism is an immediate consequence of the obvious fact that (pseudo)limits in model (bi)categories are computed pointwise, and the standard currying equivalence. 
+  }
+}
+\remark{
+  Note that if #{\cC} is a 2-category, so that we can speak of both pseudolimits and ordinary limits in #{\cC}, taking strict models does not generally commute with taking pseudo models, since it is not generally the case that pseudolimits commute with limits.
+}

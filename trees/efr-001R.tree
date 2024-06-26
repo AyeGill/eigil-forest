@@ -1,0 +1,7 @@
+\date{2024-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  A weak Segal category is similar to a \em{virtual double category}: we don't directly have a composition operator #{\CC_1 \times_{\CC_0} \CC_1} - rather, we have a category of "compositions" #{\CC_2,} each of which contains three faces in #{\CC_1}. Hence we have a \em{choice} of composites for every composable pair, although it is uniquely defined up to contractible choice.
+}
