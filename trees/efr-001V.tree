@@ -1,4 +1,15 @@
 \date{2024-06-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{definition}
+\p{
+  Let #{\alpha: TS \lensto A} be a system with interface #{A}, and let #{P} be another arena.
+  A \em{#{P}-valued predicate} on #{\alpha} is a lift
+  
+  \quiver{
+    \begin{tikzcd}
+    & A \otimes P \ar[d]\\
+    TS \ar[r] \ar[ur] & A
+    \end{tikzcd}
+  }
+}

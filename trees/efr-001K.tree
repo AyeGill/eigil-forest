@@ -14,5 +14,3 @@
 \p{
   We call the functor #{\bar{(-)}} the \em{stochastic completion functor}, and call #{\bar{\cD},} or more generally and stochastically complete Markov fibration #{\cE} receiving a map #{\cD \to \cE} with the same universal property, the \em{stochastic completion of #{\cD}}.
 }
-\proof{
-}
