@@ -15,5 +15,16 @@
   It will be instructive to consider Brownian motion. For each #{t \in \RR}, let #{E_t} be an independent standard Gaussian. There are some issues with defining the integral #{X_r = \int_0^r E_t dt,} since #{t \mapsto E_t} can't be guaranteed to be even measurable, but these can be sidestepped without too many problems. Then #{X_r} is Brownian motion, but with probability #{1} it is nowhere differentiable. The integral equation above describes the sense in which #{X} solves a stochastic differential equation saying it's derivative at each point is standard Gaussian distributed.
 }
 \p{
-  Of course, since not all systems are integrable (this is not even true in the deterministic case,) there is not gonna be an integral operator lying around that we can use to define the solutions of our differential equations. Hence we must use 
+  Of course, since not all systems are integrable (this is not even true in the deterministic case,) there is not gonna be an integral operator lying around that we can use to define the solutions of our differential equations. Hence we must use a different solution concept.
+}
+\p{
+  Recall that, if #{f,g: \RR \to \RR} are differentiable functions, 
+  #{\int_a^b f(x)g'(x)dx = f(a)g(a) - f(b)g(b) - \int_a^b f'(x)g(x)dx,}
+  (integration by parts). Now if we choose #{f} to be zero except on a bounded interval, and let the endpoints to infinity, we get #{\int_\RR f(x)g'(x) dx = - \int_\RR f'(x)g(x)dx}. The trick here is that the right-hand side is defined even if #{g} is not differentiable, and so it gives us a way of talking about "the derivative of #{g}", at least for some purposes, even when it doesn't exist.
+}
+\p{
+  Since two functions have the same integral after multiplication by every differentiable #{f}, if and only if they're equal almost everywhere, this is fairly robust - if #{g} is #{C^1} and satisfies some differential equation "weakly", it follows it must satisfy it on the nose as well, for example.
+}
+\p{
+  Since a sample of independent #{E_t}s is not even measurable in general,
 }
