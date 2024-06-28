@@ -16,3 +16,8 @@
 \p{
   This means, given a predicate on that terminal coalgebra, #{p: (F(-) \times P)^\infty \to P,} by composing these two operations, we get a new predicate on #{X}. Thus, predicates on these cofree coalgebras are a sort of "modal operators" - for example, if #{P = \{\bot,\top\}} is the set of booleans, and #{F(X) = X} (so that coalgebras are just discrete dynamical systems), the cofree coalgebra on #{P} is the set #{\{\bot,\top\}^\omega} of streams of booleans. Then we can take #{p((\phi_i))} to be true if and only if each #{\phi_i} is true. Then the modal operator of #{p} is essentially "necessity" - the composite predicate is true for exactly those #{x \in X} so that #{\phi(x_n)} is true for every #{x_n} on the trajectory.
 }
+\transclude{efr-001X}
+
+\p{
+  In good cases, there will be a monadic adjunction associated to the lens #{A' \lensto A,} and so this operation will give an endomorphism on predicates for each choice of lift of the cofree predice (it can of course lift as itself, which corresponds to the identity operation).
+}

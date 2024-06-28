@@ -1,0 +1,10 @@
+\date{2024-06-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: A' \lensto A} be a lens, let #{T(A')^\infty \lensto A'} be the terminal #{A'}-system, and consider the composite #{T(A')^\infty \lensto A' \lensto A}. A #{A'/A}-modal operator is a factorization of this system over #{A' \lensto A}, i.e some other #{A'}-system with the same state space, #{\alpha: T(A')^\infty \lensto A'} so that the two composites #{T(A')^\infty \lensto A' \lensto A} agree.
+}
+\p{
+  Let #{\xi: TS \to A'} be some other system. It has a unique map to the terminal system. After composing with #{p: A' \lensto A,} we can regard this as a map #{p\xi \to p\alpha}. We can then compose this with the unique map from #{\alpha} to the terminal system, obtaining a new map #{p(\xi) \to p((A')^\infty).} This is the operation corresponding to #{\alpha}.
+}
