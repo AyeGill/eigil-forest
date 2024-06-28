@@ -281,12 +281,12 @@
 % Lenses
 
 \def\arena[E][B]{#{{\E \choose \B}}}
-
+  
 % Probability
 
 \def\expect{#{\EE}}
 \def\Stoch{#{\cat{Stoch}}}
-\def\FinStoch{#{\FinStoch}}
+\def\FinStoch{#{\cat{FinStoch}}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
 \def\det{#{\mathrm{det}}}
 \def\copy{#{\mathrm{copy}}}

@@ -6,3 +6,9 @@
   Let #{p: \cD \to \cC_\det} be a Markov fibration, and let #{X \in \cD} be an object.
   The corepresentable copresheaf #{\cD(X,-)} over #{p(X)} admits a \em{stochastic completion}, that is, a natural transformation #{\cD(X,-) \to \bar{\cD(X,-)}} to a stochastically complete indexed Markov copresheaf #{\bar{\cD(X,-)},} which is initial among such natural transformations. This natural transformation is monoidal.
 }
+\p{
+  Specifically, the stochastic completion is given on #{Y \in \cD} by the following coend:
+  ##{\int^{(M,p_X,p_Y) \in \Span_\det(X,Y)} \cC_{/X}(X,M) \times \cD_{M}(p_X^*\bar{X}, p_Y^*\bar{Y}),}
+  where #{\Span_\det(X,Y)} denotes the category where objects are spans #{X \leftarrow M \to Y} in #{\cC_\det}, and morphisms are maps #{M \to M'} \em{in #{\cC}} making the two squares commute.
+  #{\cC_{/X}(X,M)} is the set of maps in the slice, that is, sections of #{p_X: M \to X}.
+}

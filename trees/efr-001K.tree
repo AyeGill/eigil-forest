@@ -8,5 +8,11 @@
     \li{The forgetful functor #{\bar{\cD} \to \cC} is a stochastically complete Markov fibration}
     \li{A morphism in #{\bar{\cD}} lying over a deterministic map in #{\cC} is always in the image of the inclusion #{\cD \to \bar{\cD}}}
     \li{If #{\cD' \to \cC} is a stochastically complete Markov fibration, and #{\cD \to \cD'} is a Markov functor over #{\cC_\det \to \cC} which preserves Cartesian morphisms, there is a unique factorization #{\bar{\cD} \to \cD'}}
+    \li{The assignment #{\bar{(-)}} is a functor #{\MarkFib(\cC_\det) \to \MarkFib^c(\cC)}, left adjoint to the pullback functor.}
   }
+}
+\p{
+  We call the functor #{\bar{(-)}} the \em{stochastic completion functor}, and call #{\bar{\cD},} or more generally and stochastically complete Markov fibration #{\cE} receiving a map #{\cD \to \cE} with the same universal property, the \em{stochastic completion of #{\cD}}.
+}
+\proof{
 }

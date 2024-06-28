@@ -1,8 +1,0 @@
-\date{2024-06-25}
-\author{eigil-rischel}
-\import{macros}
-\taxon{proposition}
-\p{
-  Fix a Markov category #{\cC} Observe that there is a functor from [stochastically complete](efr-001F) [markov fibrations](efr-0019) #{\cD \to \cC} to Grothendieck fibrations #{\cD' \to \cC_\det}, given by taking the pullback #{\cD \times_\cC \cC_\det} (which is always a wide subcategory of #{\cD}). It is clear that this restricted functor is always a Markov fibration, hence we get a functor
-  #{\MarkFib^{c}(\cC) \to \MarkFib(\cC_\det)}. This functor admits a left adjoint, which takes a Markov fibration #{\cD \to \cC_\det} to a stochastically complete Markov fibration #{\bar{\cD} \to \cC}
-}
