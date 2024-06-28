@@ -1,0 +1,19 @@
+\date{2024-06-28}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  When moving from deterministic, ordinary differential equations, to stochastic differential equations - or, from another point of approach, moving from discrete-time stochastic systems to continuous-time stochastic systems - we are forced to confront the problem that typical stochastic differential equations do not have differentiable solutions.
+}
+\p{
+  A few questions immediately pose themselves when confronted with this statement:
+  \ol{
+    \li{Since a solution of a stochastic differential equation is not merely a function but some sort of distribution of functions, what do you mean by them not being differentiable?}
+    \li{Whatever the solutions are, how can they solve a differential equation if they aren't differentiable?}
+  }
+}
+\p{
+  It will be instructive to consider Brownian motion. For each #{t \in \RR}, let #{E_t} be an independent standard Gaussian. There are some issues with defining the integral #{X_r = \int_0^r E_t dt,} since #{t \mapsto E_t} can't be guaranteed to be even measurable, but these can be sidestepped without too many problems. Then #{X_r} is Brownian motion, but with probability #{1} it is nowhere differentiable. The integral equation above describes the sense in which #{X} solves a stochastic differential equation saying it's derivative at each point is standard Gaussian distributed.
+}
+\p{
+  Of course, since not all systems are integrable (this is not even true in the deterministic case,) there is not gonna be an integral operator lying around that we can use to define the solutions of our differential equations. Hence we must use 
+}
