@@ -25,6 +25,21 @@
 \p{
   Since two functions have the same integral after multiplication by every differentiable #{f}, if and only if they're equal almost everywhere, this is fairly robust - if #{g} is #{C^1} and satisfies some differential equation "weakly", it follows it must satisfy it on the nose as well, for example.
 }
+
+
+\transclude{efr-001Z}
 \p{
-  Since a sample of independent #{E_t}s is not even measurable in general,
+  Let #{\phi: C_c(Y) \to C_c(X)} be a positive linear map. Then dualizing gives a linear map #{\phi^*: C_c(X)^* \to C_c(Y)^*}. If we assume the initial map preserves the constant #{1} function,, this will preserve probability measures, making it a sort of infinity-dimensional stochastic matrix.
+}
+\p{
+  In particular, we get a composite map #{X \to C_c(X)^* \to C_c(Y)^*,} where the first map just includes the dirac measures (or, alternatively, takes #{x} to the "evaluate at #{x}" functional).
+}
+\p{
+  If we further assume #{\phi} is continuous for the uniform convergence topology, #{\phi^*} will be continuous for the pointwise convergence topology. Since every probability measure is a limit of linear combinations of dirac measures in this topology, that means #{\phi^*} will be controlled by the above map, so we really have an injective correspondence between linear, continuous and unit-preserving maps #{C_c(Y) \to C_c(X)} and some subset of the Markov kernels #{X \to Y}.
+}
+\p{
+  If we stare at this sequence of composites a bit, we realize that the linear operation corresponding to a kernel #{pX \to Y} carries a function #{f: Y \to \RR} to the expected value function #{x \mapsto E_{y \sim p(x)} f(y)}. Not all Markov kernels will have the property that this preserves continuity of #{f} (all measurable functions are Markov kernels, even) - but we would probably want to impose some notion of continuity on our kernels in any case.
+}
+\p{
+  Instead of thinking about the classes of Markov kernels with this continuity-of-expectation property, we can simply use the space of continuous, unit-preserving linear maps #{C_c(Y) \to C_c(X)} as our class of stochastic maps #{X \to Y.}
 }
