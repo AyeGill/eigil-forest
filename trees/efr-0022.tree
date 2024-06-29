@@ -1,0 +1,12 @@
+\date{2024-06-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Consider the category of smooth microlinear spaces #{X} equipped with a map #{X \to A} and a vector field #{X \to TX}.
+}
+\ol{
+  \li{This category has a terminal object, given by the colimit taken over a suitable class of small objects. In other words, a point in the terminal system is given by some system #{U \to TU \times A} and a point #{u_0 \in U}, up to an equivalence relation of bisimulation}
+  \li{The mapping space #{A^R}, equipped with the evaluation at #{0} map #{A^R \to A} and the flow #{\frac{du}{dt} = \frac{du}{dx}} is a subterminal object.}
+  \li{A system #{X \to A \times TX} admits a map to #{A^R} if and only if it is integrable in both directions}
+}
