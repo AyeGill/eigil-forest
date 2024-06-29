@@ -1,0 +1,19 @@
+\date{2024-06-29}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  In our study of discrete-time systems, we used the observation that the terminal system with a given interface can be characterized as the set of trajectories of that interface (eg \ref{efr-000X}). This allows us to develop an algebra of predicates on systems in the vein of coalgebraic modal logic.
+}
+\p{
+  However, for continuous-time systems, the situation is much more complicated. In general, we can't expect an ordinary differential equation to have a unique solution for each initial value. There are two basic reasons for this:
+  \ol{
+    \li{A simple system like #{y' = y^2, y \in \RR} experiences \em{finite-time blowup,} escaping to infinity inside a finite time horizon. In this example, the solutions have the form #{y(t) = 1/(t+C),} and so they clearly can't be continued past a certain horizon. Given some function #{\alpha(y),} we can't extend this to a function #{t \mapsto \alpha(y(t))} on all of #{\RR}}
+    \li{The differential equation #{y' = 2 \sqrt{|y|}} has both the solution #{y(t) = 0} and #{y(t) = y^2} (and many others)}
+  }
+}
+\p{
+  The second issue can be solved by assuming our equations are \em{Lipschitz} (which the square root function is not). Since smooth functions are at least Lipschitz on compact domains (with Lipschitz constant bounded by the maximal derivative), there is some hope that we can get rid of this problem (but note that, when studying stochastic processes, there are reasons for wanting to study processes with jumps, complicating the situation).
+}
+\p{
+  However, the first issue is more resilient. One approach is to restrict our attention to compact manifolds - this is enough to guarantee that every smooth differential equation has a (global) solution. The problem with this is that the spaces of trajectories - like the space of smooth functions #{\RR \to A} - will not even be a manifold, but some type of generalized smooth space. Hence we will not a priori be able to extend this class 
+}
