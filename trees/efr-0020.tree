@@ -1,0 +1,19 @@
+\date{2024-06-29}
+\author{eigil-rischel}
+\import{macros}
+\title{SDEs are only diffusion and drift}
+\p{
+  Naively, we would think that a stochastic differential equation on a manifold #{X} should be a stochastic section of the tangent bundle, #{f: X \to \Delta(TX)} (with the understanding that such a thing may not always have a solution). 
+}
+\p{
+  Indeed, we will see that such a thing does lead to a differential equation. But unlike the deterministic case, there is not a 1-1 correspondence - different sections may determine the \em{same} differential equation (in the sense of having the same solutions).
+}
+\p{
+  The issue is that, as we have discussed, by necessity solutions of stochastic differential equations are defined by integration, in a certain sense. The solution concept we have in mind is a Markov process, where each derivative is sampled independently from its distribution. But by the central limit theorem, integrating a family of independent random variables will always give a normal distribution, no matter what those variables are.
+}
+\p{
+  In particular, the only aspect of the assigned distribution of derivatives #{f(x) \in \Delta(T_xX)} is its mean #{Ef(x) \in T_xX} and its covariance matrix, which is the expectation of #{v \otimes v} inside the tensor product #{T_xX \otimes T_xX} when #{v \sim f(x)}.
+}
+\p{
+  (Another way of viewing the covariance is as an operator on the tensor product of the covector space #{T_x^*X \otimes T_x^*X \to \RR}, which carries a simple tensor of two covectors #{\phi \otimes \psi} to the expected value of #{\phi(v)\psi(v)} when #{v} is sampled according to the given distribution).
+}
