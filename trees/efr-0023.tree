@@ -12,6 +12,12 @@
 \transclude{efr-0025}
 
 \p{
+  We will write arenas either as #{\arena{\bar{A} \in \cA(A)}{A \in \cC}}, or, for brevity when there is no need to discuss the two levels separately, simply with a symbol #{A}. We will also write both #{\bar{TS}{S}} and #{TS} as the situation calls for - there should be no confusion resulting from this.
+}
+
+\transclude{efr-0028}
+\transclude{efr-0029}
+\p{
   The fibration #{\int \cA \to \cC} encodes what sort of information can be "indexed over a space", while the section #{T: \cC \to \int \cA} tells us what sort of information (such as a next step, or a gradient vector) must be produced to give a dynamical system. In this respect, the theory is very similar to the coalgebraic approach to dynamical systems, or systems that "do something", and indeed we have the following:
 }
 \transclude{efr-0026}
