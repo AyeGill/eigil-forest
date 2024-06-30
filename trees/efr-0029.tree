@@ -14,5 +14,5 @@
   \end{tikzcd}
 }
 \p{
-  This defines a double functor #{\Sys: \Arena \to \DblCat}.
+  This defines a double functor #{\Sys: \Arena \to \dblCat}.
 }
