@@ -1,0 +1,9 @@
+\date{2024-06-30}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{F: \Set \to \Set} be a functor.
+  Then there is a dynamical systems theory where #{\cC = \Set}, #{\cA} is constant at #{\Set},
+  and #{T(X) = (X,F(X))}. It is easy to see that the category of closed dynamical systems in this theory is precisely an #{F}-coalgebra.
+}

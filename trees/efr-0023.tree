@@ -1,0 +1,24 @@
+\date{2024-06-30}
+\author{eigil-rischel}
+\import{macros}
+\title{Review of Categorical Systems Theory}
+
+\p{
+  We will give a review of the framework called \em{categorical systems theory}. The ideas are laid out by Myers in \ref{myers-cst}.
+}
+
+\transclude{efr-000A}
+\transclude{efr-0024}
+\transclude{efr-0025}
+
+\p{
+  The fibration #{\int \cA \to \cC} encodes what sort of information can be "indexed over a space", while the section #{T: \cC \to \int \cA} tells us what sort of information (such as a next step, or a gradient vector) must be produced to give a dynamical system. In this respect, the theory is very similar to the coalgebraic approach to dynamical systems, or systems that "do something", and indeed we have the following:
+}
+\transclude{efr-0026}
+\p{
+  Of course, coalgebras can already encode systems with input and output - the point of the CST framework is to separate out the input and output of systems so that they can be acted on in a compositional manner.
+}
+\p{
+  Indeed, we have the following due to Spivak:
+}
+\transclude{efr-0027}

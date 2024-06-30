@@ -1,0 +1,23 @@
+\date{2024-06-30}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Arenas}
+\p{
+  Given an indexed category #{\cA: \cC^\op \to \Cat}, the double category \Arena of \em{arenas} has
+}
+\ol{
+  \li{Objects the objects of #{\int \cA} - note that these are the same as the objects of #{\int \cA(-)^\op}}
+  \li{Vertical morphisms the lenses}
+  \li{Horizontal morphisms the charts}
+  \li{The double category is thin. Given a square of this form
+  
+  \quiver{
+    \begin{tikzcd}
+    \arena{\bar{A}_1}{A_1} \ar[r] \ar[d] & \arena{\bar{B}_1}{B_1} \ar[d]\\
+    \arena{\bar{A}_2}{A_2} \ar[r] & \arena{\bar{B}_2}{B_2},
+    \end{tikzcd}
+  }
+  
+  we can first project it to a square in #{\cC}. If this commutes, we can pull the lenses and charts back to a square in #{\cA(A_1)}. The above square of lenses and charts will be said to commute if both of these squares commute.}
+}
