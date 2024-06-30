@@ -8,8 +8,10 @@
   where the set over #{TS \lensto A} and #{TS' \lensto A'} is the set of maps #{S \to S'} so that this square commutes:
 }
 \quiver{
+  \begin{tikzcd}
   TS \ar[d] \ar[r] & A \ar[d]\\
   TS' \ar[r] & A'
+  \end{tikzcd}
 }
 \p{
   This defines a double functor #{\Sys: \Arena \to \DblCat}.

@@ -271,7 +271,7 @@
 \def\dblPara{#{\dblcat{Para}}}
 \def\PsDblCat{#{\dblcat{PsDblCat}}}
 \def\Ctrl{#{\dblcat{Ctrl}}}
-
+\def\Sys{#{\cat{Sys}}}
 
 % Poly
 
