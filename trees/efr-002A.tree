@@ -1,0 +1,23 @@
+\date{2024-07-01}
+\author{eigil-rischel}
+\import{macros}
+\title{Review of coalgebraic modal logic}
+
+\transclude{efr-002B}
+\transclude{efr-002C}
+
+\p{
+  The basic idea is the following: suppose we have a system of formula #{L} we know how to interpret in coalgebras. This interpretation is a relation #{\vDash : L \proto X}, given some coalgebra #{\xi: X \to TX}. Now, given an element #{\alpha \in TL}, we can define its interpretation in #{TX} simply using the lifting #{\bar{T}}. And finally we can take the inverse image of the given subset of #{TX} under #{\xi} to give a subset of #{X}
+}
+\p{
+  For example, let #{T(X) = A \times X,} so that a coalgebra is a simple labeled transition system. Then we get a modal operator #{\nabla_a} for each #{a}. The meaning of #{\nabla_a(\phi)(x)} is that #{\xi(x) = (a,x'),} and #{\phi(x')} holds.
+}
+\p{
+  If we let our basic language be Boolean logic, and our functor #{T} is not too bad (for example, if it's finitary), we get a result called the \em{Hennesy-Milner property}: two states satisfy the same formulae of the logic precisely if they are bisimilar.
+}
+\p{
+  (It is not quite the same as saying formulas up to semantic equivalence are the same as bisimilarity classes - in the above example, we only get to ask about some finite prefix of the stream of outputs produced by #{x}. But of course two streams are equal if all the prefixes agree).
+}
+\p{
+  We would like to move this framework to the setting of categorical systems theory. Of course, we are hampered by two immediate problems: our systems are not, in general, coalgebras of functors, nor are they in general sets.
+}

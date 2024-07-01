@@ -1,0 +1,16 @@
+\date{2024-07-01}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{T: \Set \to \Set} be a functor which preserves weak pullbacks.
+  Then the assignment #{\bar{T}(R: A \proto B) = im(T(R)) \subseteq T(A) \times T(B)} defines a functor #{\Rel \to \Rel} (which just acts as #{T} on the objects).
+}
+\proof{
+  \p{
+    Recall that there is a functor #{\Span(\Set) \to \Rel}, which carries a span #{A \leftarrow R \to B} to its image inside #{A \times B}. Observe that two spans are identified under this mapping precisely if there exist span maps (not necessarily inverses) between them in both directions.
+  }
+  \p{
+    It follows that, given two composable relations #{R: A \proto B, R': B \proto C}, the composite of #{\bar{T}(R)} and #{\bar{T}(R')} can be computed by taking the pullback #{T(R) \times_{T(B)} T(R')}, then taking its image inside #{T(A) \times T(C)}. But since #{T} preserves weak limits, the map from #{T(R \times_B R')} to this pullback admits a section, and hence they go to the same relation. This proves that #{\bar{T}} preserves composition (the claim about identities is straightforward). 
+  }
+}
