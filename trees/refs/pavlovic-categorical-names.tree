@@ -1,0 +1,96 @@
+\title{Categorical logic of names and abstraction in action calculi}
+\date{1997-12}
+\taxon{reference}
+\meta{doi}{10.1017/S0960129597002296}
+\author{DUšKO Pavlović}
+\meta{bibtex}{\startverb
+ @article
+{Pavlović_1997, title={Categorical logic of names and abstraction in action calculi}, volume={7}, rights={https://www.cambridge.org/core/terms}, ISSN={0960-1295, 1469-8072}, DOI={10.1017/S0960129597002296}, abstractNote={Milner’s action calculus implements abstraction in monoidal 
+categories, so that familiar 
+λ-calculi can be subsumed together with the π-calculus and the 
+Petri nets. Variables are 
+generalised to
+              names
+              , which allow only a restricted form of substitution.
+            
+            
+              In the present paper, the well-known categorical semantics of the 
+λ-calculus is generalised to 
+the action calculus. A suitable functional completeness theorem for 
+symmetric monoidal 
+categories is proved: we determine the conditions under which the abstraction 
+is definable. 
+Algebraically, the distinction between the variables and the names boils
+ down to the 
+distinction between the transcendental and the algebraic elements. The
+ former lead to 
+polynomial extensions, like, for example, the ring ℤ[
+              x
+              ]; 
+the latter lead to algebraic 
+extensions like ℤ[√2] or ℤ[
+              i
+              ].
+            
+            
+              Building upon the work of P. Gardner, we introduce
+              action categories
+              , 
+and show that they 
+are related to the static action calculus in exactly the same way as 
+cartesian closed categories 
+are related to the λ-calculus. Natural examples of this structure
+ arise 
+from allegories and cartesian bicategories. On the other hand, the free
+ algebras 
+for any commutative Moggi 
+monad form an action category. The general correspondence of action calculi
+ and Moggi 
+monads will be worked out in a sequel to this work.}, number={6}, journal={Mathematical Structures in Computer Science}, author={Pavlović, DUšKO}, year={1997}, month={Dec}, pages={619–637},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Milner’s action calculus implements abstraction in monoidal 
+categories, so that familiar 
+λ-calculi can be subsumed together with the π-calculus and the 
+Petri nets. Variables are 
+generalised to
+              names
+              , which allow only a restricted form of substitution.
+            
+            
+              In the present paper, the well-known categorical semantics of the 
+λ-calculus is generalised to 
+the action calculus. A suitable functional completeness theorem for 
+symmetric monoidal 
+categories is proved: we determine the conditions under which the abstraction 
+is definable. 
+Algebraically, the distinction between the variables and the names boils
+ down to the 
+distinction between the transcendental and the algebraic elements. The
+ former lead to 
+polynomial extensions, like, for example, the ring ℤ[
+              x
+              ]; 
+the latter lead to algebraic 
+extensions like ℤ[√2] or ℤ[
+              i
+              ].
+            
+            
+              Building upon the work of P. Gardner, we introduce
+              action categories
+              , 
+and show that they 
+are related to the static action calculus in exactly the same way as 
+cartesian closed categories 
+are related to the λ-calculus. Natural examples of this structure
+ arise 
+from allegories and cartesian bicategories. On the other hand, the free
+ algebras 
+for any commutative Moggi 
+monad form an action category. The general correspondence of action calculi
+ and Moggi 
+monads will be worked out in a sequel to this work.
+}}
+
