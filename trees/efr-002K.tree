@@ -1,0 +1,17 @@
+\date{2024-07-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC_(-)} be locally graded over #{\cM}.
+  Then there is a double category where
+  \ol{
+    \li{The objects are the objects of #{\cC}}
+    \li{The horizontal morphisms are morphisms of #{\cC} (with arbitrary grading)}
+    \li{The vertical morphisms are the #{I}-graded morphisms of #{\cC}}
+    \li{A commutative square is a map #{M \to M'} in #{\cM} so that one path around the square is the base-change of the other.}
+  }
+}
+\p{
+  There is an obvious double functor #{\Para(\cC) \to \cM} (the latter regarded as a double category with singleton vertical category). 
+}

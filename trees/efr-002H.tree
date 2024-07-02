@@ -20,7 +20,12 @@
 \p{
   The natural generalization of enrichment and actions is the notion of \em{locally #{\cM} graded category}. 
 }
-
+\transclude{efr-002I}
 \p{
   However, this turns out to be not entirely helpful in defining #{\Para(-),} since the locally graded category corresponding to an enriched category or a category with an action \em{is} the para construction applied to that case. Nevertheless, this does conceptually simplify certain things.
 }
+\transclude{efr-002J}
+\p{
+  Note that a (pseudo) double category with singleton vertical category is equivalent to a monoidal category. Thus we can state:
+}
+\transclude{efr-002K}

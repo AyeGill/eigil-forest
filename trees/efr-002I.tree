@@ -1,0 +1,22 @@
+\date{2024-07-02}
+\author{eigil-rischel}
+\import{macros}
+\title{Locally graded category}
+\taxon{definition}
+\p{
+  Let #{\cM} be a monoidal category. A \em{locally graded #{\cM}-category} is a bicategory #{\cC} equipped with a \em{strict} bifunctor (i.e it preserves composition strictly) #{\cC \to B\cM} so that each functor on mapping categories #{\cC(x,y) \to B\cM(*,*) = \cM} is a \em{discrete} fibration.
+}
+\p{
+  (Recall that monoidal categories are equivalently bicategories with a single object, and #{B\cM} is the bicategory thus corresponding to a monoidal category #{\cM})
+}
+\p{
+  Equivalently, a locally graded #{\cM}-category consists of
+  \ol{
+    \li{A collection of objects}
+    \li{For each pair of objects #{X,Y} and #{M \in \cM}, a collection of #{M}-morphisms #{\cC_M(X,Y)}}
+    \li{For each morphism #{M' \to M}, a function #{\cC_{M'}(X,Y) \to \cC_M(X,Y)}}
+    \li{A composition operation #{\cC_{M}(X,Y) \times \cC_{M'}(Y,Z) \to \cC_{M \otimes M'}(X,Z)}}
+    \li{For each object #{X}, an identity morphism in #{\cC_{I_\cM}(X,X)}}
+    \li{Satisfying evident laws}
+  }
+}
