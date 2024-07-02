@@ -1,0 +1,17 @@
+\title{Towards Foundations of Categorical Cybernetics}
+\date{2022-11-03}
+\taxon{reference}
+\meta{doi}{10.4204/EPTCS.372.17}
+\author{Matteo Capucci}
+\author{Bruno Gavranović}
+\author{Jules Hedges}
+\author{Eigil Fjeldgren Rischel}
+\meta{bibtex}{\startverb
+ @article
+{Capucci_Gavranović_Hedges_Rischel_2022, title={Towards Foundations of Categorical Cybernetics}, volume={372}, ISSN={2075-2180}, DOI={10.4204/EPTCS.372.17}, abstractNote={We propose a categorical framework for processes which interact bidirectionally with both an environment and a “controller”. Examples include open learners, in which the controller is an optimiser such as gradient descent, and an approach to compositional game theory closely related to open games, in which the controller is a composite of game-theoretic agents. We believe that “cybernetic” is an appropriate name for the processes that can be described in this framework.}, note={arXiv:2105.06332 [math]}, journal={Electronic Proceedings in Theoretical Computer Science}, author={Capucci, Matteo and Gavranović, Bruno and Hedges, Jules and Rischel, Eigil Fjeldgren}, year={2022}, month={Nov}, pages={235–248} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We propose a categorical framework for processes which interact bidirectionally with both an environment and a “controller”. Examples include open learners, in which the controller is an optimiser such as gradient descent, and an approach to compositional game theory closely related to open games, in which the controller is a composite of game-theoretic agents. We believe that “cybernetic” is an appropriate name for the processes that can be described in this framework.
+}}
+
