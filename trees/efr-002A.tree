@@ -19,5 +19,19 @@
   (It is not quite the same as saying formulas up to semantic equivalence are the same as bisimilarity classes - in the above example, we only get to ask about some finite prefix of the stream of outputs produced by #{x}. But of course two streams are equal if all the prefixes agree).
 }
 \p{
+  Let #{\Stone} denote the category of \em{stone spaces}, that is topological spaces which are compact, Hausdorff, and totally disconnected (meaning every connected component is a singleton). Then we have the following theorem, due to Stone
+}
+\transclude{efr-002D}
+\p{
+  Now suppose our behaviour is given by an endofunctor #{T: \Stone \to \Stone}.
+  Then we immediately get a corresponding functor #{T^\op: \Bool \to \Bool,} and the category of #{T}-coalgebras is dual to the category ot #{T^\op}-algebras.
+}
+\p{
+  Hence, giving a space the structure of a #{T}-coalgebra #{\xi: X \to TX} is \em{equivalent} to giving its set of clopen subsets a #{T^\op}-algebra structure #{T^\op B(X) \to B(X)}. This algebra structure can be interpreted as a (system of) modal operators - for example, if #{T(X) = A \times X,} giving such a structure amounts to choosing maps #{B(A) \to B(X)} and #{B(X) \to B(X)}, corresponding to the operations "will #{x} produce an output #{a} that satisfies statement #{\phi(a)}?" and "will the next state after #{x} satisfy #{\psi}?"
+}
+
+
+
+\p{
   We would like to move this framework to the setting of categorical systems theory. Of course, we are hampered by two immediate problems: our systems are not, in general, coalgebras of functors, nor are they in general sets.
 }

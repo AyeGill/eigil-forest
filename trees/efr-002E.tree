@@ -1,0 +1,14 @@
+\date{2024-07-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Discrete one-step modal operator}
+\p{
+  Consider the theory of [discrete dynamical systems](efr-002F), and let #{\xi: TS \lensto A = \arena{\bar{A}}{A}} be a system. Let #{\phi: S \to \{\bot,\top\}} be a predicate on #{S}, and let #{p: \bar{A} \to \{\bot,\top\}} be a predicate on #{\bar{A} = \sum_{a \in A} \bar{A}_a}. For clarity, let's write elements of #{\bar{A}} as pairs #{a \in A, a' \in \bar{A}_a}.
+}
+\p{
+  Then the predicate #{\nabla_p(\phi): S \to \{\bot,\top\}} is defined to be true at #{s \in S} if, for any #{a' \in \bar{A}_{\xi(s)}} so that #{p(\xi(s),a')}, we have #{\phi(\xi^\#(s,a'))}.
+}
+\p{
+  In other words, taking #{p} as a subset of the arena #{\arena{\bar{A}}{A},} if the next input and output both lie within that subset, #{\phi} will be true.
+}
