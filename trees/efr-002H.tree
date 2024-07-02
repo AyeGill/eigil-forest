@@ -33,4 +33,11 @@
   Note that a (pseudo) double category with singleton vertical category is equivalent to a monoidal category. Thus we can state:
 }
 \transclude{efr-002K}
+\p{Explicitly, for monoidal actions, we have:}
+\transclude{efr-002M}
 \transclude{efr-002L}
+
+
+\p{
+  We will see that the #{\Para} construction preserves pseudo-limits, which will allow us build a \em{triple category} where one of the directions is parameterized maps, by applying the #{\Para} construction levelwise to a double category internal to actions.
+}

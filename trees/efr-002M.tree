@@ -1,0 +1,15 @@
+\date{2024-07-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cM} be a monoidal category acting on #{\cC}.
+  Then #{\dblPara_\cM(\cC)} is a pseudo double category where
+  \ol{
+    \li{The objects are the objects of #{\cC}}
+    \li{The vertical category is #{\cC}}
+    \li{The horizontal morphisms #{X \to Y} are tuples #{(P \in \cM, P \cdot X \to Y)}}
+    \li{A 2-cell from #{(P,f): X \to Y} to #{(P',f'): X' \to Y'} with vertical boundary #{g: X \to X', h: Y \to Y'} is a map #{P \to P' \in \cM} making the obvious diagram in #{\cC} commute.}
+    \li{The vertical composition of 2-cells in merely composition in #{\cM}. The horizontal composition is given by tensoring objects and morphisms.}
+  }
+}
