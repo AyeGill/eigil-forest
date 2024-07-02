@@ -4,11 +4,14 @@
 \taxon{definition}
 \title{Discrete one-step modal operator}
 \p{
-  Consider the theory of [discrete dynamical systems](efr-002F), and let #{\xi: TS \lensto A = \arena{\bar{A}}{A}} be a system. Let #{\phi: S \to \{\bot,\top\}} be a predicate on #{S}, and let #{p: \bar{A} \to \{\bot,\top\}} be a predicate on #{\bar{A} = \sum_{a \in A} \bar{A}_a}. For clarity, let's write elements of #{\bar{A}} as pairs #{a \in A, a' \in \bar{A}_a}.
+  Consider the theory of [discrete dynamical systems](efr-002F), and let #{\xi: TS \lensto A = \arena{\bar{A}}{A}} be a system. Let #{\phi: S \to \{\bot,\top\}} be a predicate on #{S}, and let #{\arena{\bar{U}}{U} \subseteq \arena{\bar{A}}{A}} be a subobject of #{A} (that is, #{\bar{U} \subset \bar{A}} and #{U \subset A,} and if #{(a,a') \in \bar{U}} then #{a \in A}).
 }
 \p{
-  Then the predicate #{\nabla_p(\phi): S \to \{\bot,\top\}} is defined to be true at #{s \in S} if, for any #{a' \in \bar{A}_{\xi(s)}} so that #{p(\xi(s),a')}, we have #{\phi(\xi^\#(s,a'))}.
+  Then write #{\nabla_{U}(\phi)} for the predicate on #{S} which is true if and only if the following hold: #{\xi(s) \in U,} and if #{a' \in \bar{U} \times_A S,} then #{\xi^\#(s,a')} satisfies #{\phi}. In other words - the output is in #{U}, and if the input is further in #{\bar{U},} then the next step will satisfy #{\phi}.
 }
 \p{
-  In other words, taking #{p} as a subset of the arena #{\arena{\bar{A}}{A},} if the next input and output both lie within that subset, #{\phi} will be true.
+  Note that by taking #{U = A, \bar{U} = \bar{A}} this encodes a simple next-step modality.
+}
+\p{
+  Observe also that, if #{A,\bar{A}} are both finite, we can encode all the classical covering modality operators as (finite) conjunctions of #{\nabla_{\{(a,a_i)\}}\phi_i,} and hence the logic built up of these modal operators and Boolean operations will enjoy the Henessy-Milner property.
 }
