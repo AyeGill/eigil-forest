@@ -59,8 +59,15 @@
 \p{
   In the ordinary Grothendieck construction, this doesn't alter #{\cC}, since for a #{1}-category regarded as a bicategory, #{\cC^\co = \cC}. But in the case where #{\cC} is itself a bicategory, this invariant doesn't hold. Instead, we now have four "directions" of fibration: we can ask for #{\cE \to \cC} to have Cartesian or opCartesian lifts for every #{1}-cell in #{\cC}, and we can ask for the functors #{\cE(x,y) \to \cC(x,y)} to be fibrations or opfibrations.
 }
-
+\p{
+  Somewhat annoyingly, the situation for us is that #{\Para_\cM(\cC) \to B\cM} is a \em{opfibration} on the 1-cells - given #{x \in \cC} and #{m : * \to * \in B\cM}, there is a canonical parameterized map #{x \to m \cdot x} parameterized by #{m} - and a \em{fibration} on the #{2}-cells - given #{m \to m'} and #{x \to y} parameterized by #{m'}, we can reparameterize it to get a map parameterized by #{m}, but we can't go the other way.
+}
+\p{
+  This follows from the fact that #{\Para} requires a \em{right} action, amounting to a functor #{\cM^\op \to \Cat}, to define - given #{m,n \in \cM,} we want #{m \otimes n} to act as #{m} followed by #{n} (this is required for the composition to make sense.)
+}
+\transclude{efr-002N}
 \transclude{efr-002Q}
+\transclude{efr-002R}
 
 
 \p{

@@ -1,0 +1,8 @@
+\date{2024-07-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Every vertical morphism #{f: x \to y} in #{\dblPara_\cM(\cC)} has a companion, given by #{(I, x \cdot I \cong x \to y)}.
+  A horizontal morphism #{(P, x \cdot P \to y)} has a companion if and only if #{P \cong I}.
+}

@@ -1,8 +1,14 @@
 \date{2024-07-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{definition}
 \p{
-  Let #{p: \cC \to B(\cM)} be a locally graded category.
-  Consider the set of morphisms lying over the unit.
+  Let #{\cC \to B\cM} be a functor of bicategories which is locally a discrete fibration.
+  Consider the category #{\cC_I} of morphisms over the unit - this is a locally discrete subcategory (i.e a #{1}-subcategory) of #{\cC}, which contains all the objects. Then there is a pseudo double category where
+  \ol{
+    \li{The vertical category is #{\cC_I}}
+    \li{Horizontal morphisms are simply morphisms in #{\cC}}
+    \li{A 2-cell is a 2-cell in #{\cC} with the given composites as boundary}
+    \li{Composition is just composition of the relevant cells in #{\cC}}
+  }
 }
