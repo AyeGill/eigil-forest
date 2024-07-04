@@ -15,7 +15,7 @@
   In \ref{towards-cybercat}, a bicategorical variant (replacing the quotient by isomorphism in the above variant in the obvious way) is introduced.
 }
 \p{
-  Morally speaking, the input to the Para construction should be a pseudomonoid action, say #{M} acting on #{C}, in some bicategory, and the output is the \em{lax orbits} of this action, the result of formally adding 2-cell from the projection #{M \times C \to C} to the action map (internally, a map #{x \to m \cdot x} for every #{x,m}). 
+  Morally speaking, the input to the Para construction should be a pseudomonoid action, say #{M} acting on #{C}, in some bicategory, and #{\Para_M(C)} is the \em{lax orbits} of this action, the result of formally adding 2-cell from the projection #{M \times C \to C} to the action map (internally, a map #{x \to m \cdot x} for every #{x,m}). 
   Of course, this type of conceptual description is not necessarily the most useful one.
 }
 \p{
@@ -26,9 +26,24 @@
 }
 \transclude{efr-002I}
 \p{
-  However, this turns out to be not entirely helpful in defining #{\Para(-),} since the locally graded category corresponding to an enriched category or a category with an action \em{is} the para construction applied to that case. Nevertheless, this does conceptually simplify certain things.
+  Locally graded categories were introduced by Wood in \ref{locally-graded-cats}, under the name \em{large #{\cM}-categories}. The original motivation was to consider \em{large} presheaves on #{\cM} and use these to describe #{\cM}-enriched categories with possibly large hom-objects. We have not given much thought to size considerations so far, but note that a discrete opfibration a priori describes a presheaf with the same "size" as the categories involved (so if #{\cC(X,Y)} and #{\cM} are not assumed to be small, in general it will be a large presheaf). But size considerations plays no essential role in our construction of #{\Para} - the only thing worth noting is that #{\Para_\cM(\cC)} will not be \em{locally} small, even if #{\cM} and #{\cC} are (because the hom objects involve a sum over #{\cM}). It will, however, be "locally locally small" - every hom \em{category} will be locally small.
+}
+\p{
+  The notion of locally graded categories turns out to be somewhat unhelpful in defining #{\Para(-),} since the locally graded category corresponding to an enriched category or a category with an action \em{is} the bicategorical #{\Para}-construction applied to that case. Nevertheless, this does conceptually simplify certain things.
 }
 \transclude{efr-002J}
+\p{
+  The connection between locally graded categories and category actions derives from the Grothendieck construction for bicategories, in the following sense:
+}
+\transclude{efr-002O}
+\p{
+  By a 2-fibration we will always mean a 2-fibration in a \em{weak} sense, lying over a \em{bicategory} and classifying a weak functor into bicategories (although our functors will always land in #{1}-categories). The correct notion of weak 2-fibration was first introduced by Buckley, \ref{buckley-2-fibrations}. (Recall that \em{bifibration} means a functor which is both a fibration and an opfibration, and so we unfortunately can't use this word.)
+}
+\p{
+  As may be expected, the work of Buckley is extremely complicated, because he treats the full generality and thus must consider the tricategory of bicategories, and the class of trifunctors into it. We only care about actions on ordinary categories, and hence can restrict ourselves to the bicategory #{\Cat}.
+}
+
+
 \p{
   Note that a (pseudo) double category with singleton vertical category is equivalent to a monoidal category. Thus we can state:
 }

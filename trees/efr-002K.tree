@@ -15,3 +15,11 @@
 \p{
   There is an obvious double functor #{\Para(\cC) \to \cM} (the latter regarded as a double category with singleton vertical category). 
 }
+\proof{
+\p{
+  Recall that, in a discrete opfibration #{p: \cE \to \cM}, every morphism #{f: x \to y} is given by base-change by #{p(f)}. Hence our definition of commutative square simply corresponds to a morphism in the bicategory describing #{\cC}.
+}
+\p{
+  So the proposition follows from the general statement that, given a discrete subcategory of a 
+}
+}

@@ -1,0 +1,10 @@
+\title{V-indexed categories}
+\date{1978}
+\taxon{reference}
+\meta{doi}{10.1007/BFb0061362}
+\author{R. J. Wood}
+\meta{bibtex}{\startverb
+ @inproceedings
+{Wood_1978, address={Berlin, Heidelberg}, title={V-indexed categories}, ISBN={978-3-540-35762-9}, DOI={10.1007/BFb0061362}, booktitle={Indexed Categories and Their Applications}, publisher={Springer}, author={Wood, R. J.}, editor={Johnstone, Peter T. and Paré, Robert and Rosebrugh, R. D. and Schumacher, D. and Wood, R. J. and Wraith, G. C.}, year={1978}, pages={126–140},language={en} }
+\stopverb}
+

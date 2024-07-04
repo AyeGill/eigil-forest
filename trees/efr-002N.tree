@@ -1,0 +1,8 @@
+\date{2024-07-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{p: \cC \to B(\cM)} be a locally graded category.
+  Consider the set of morphisms lying over the unit.
+}
