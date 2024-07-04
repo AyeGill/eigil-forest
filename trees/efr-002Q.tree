@@ -1,0 +1,27 @@
+\date{2024-07-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: \cE \to \cC} be a weak 2-fibration of bicategories (in the sense of Buckley).
+  Then the corresponding functor #{\cC^{\co \op} \to \BiCat} factors through #{\Cat \subseteq \BiCat} if and only if each mapping functor #{\cE(x,y) \to \cC(px,py)} is a \em{discrete} fibration.
+}
+\proof{
+  \p{
+    Let #{p} be a 2-fibration with this property.
+    Note that #{\Cat \subseteq \BiCat} is a full sub(tri)category, hence the only question is whether the fibers are categories - that is, whether they have discrete hom-categories. The mapping category in the fiber, #{\cE_x(x',y'),} given #{x \in \cC, x',y' \in \cE_x}, is given by the fiber of #{\cE(x',y') \to \cC(x,x)} over the identity - but by assumption this is a discrete category.
+  }
+  \p{
+    Conversely, let #{F: \cC^{\co \op} \to \Cat} be a bifunctor and consider its Grothendieck construction. By definition, a 2-cell is #{(\alpha,\alpha_-): (f,f_-) \to (g,g_-) : (x,x') \to (y,y')} where #{\alpha: f \to g: x \to y}, and #{\alpha_-} is a 2-cell like this in #{F(x):}
+
+    \quiver{
+      \begin{tikzcd}
+        x_- \ar[rr] \ar[dr] & & Ff(y_-) \ar[dl]\\
+        & Fg(y_-) &
+      \end{tikzcd}
+    }
+
+    but such a 2-cell exists if and only if this diagram commutes. Hence, given the base #{\alpha: f \to g : x \to y} and the lift #{g_- : x' \to y',} there is a unique choice of #{\alpha_-, f_-} completing this lift, namely #{f_-} must be the composite in that triangle. This exactly proves that #{\int F \to \cC} is a discrete fibration on hom-categories.
+  }
+  \p{(Note, we use the notation #{\int} for the Grothendieck construction/category of elements, where Buckley uses #{\mathrm{El}})}
+}

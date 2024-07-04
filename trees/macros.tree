@@ -166,6 +166,7 @@
 \def\colimit{#{\varinjlim}}
 
 \def\op{#{\mathrm{op}}}
+\def\co{#{\mathrm{co}}}
 \def\cc{#{\mathrm{cc}}}
 \def\lex{#{\mathrm{lex}}}
 
@@ -185,6 +186,7 @@
 \def\dblcat[name]{#{\cat{\mathbb \name}}}
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?
+\def\BiCat{#{\cat{BiCat}}}
 \def\CAT{#{\cat{CAT}}}
 \def\TwoCat{#{\cat{2\text{-}Cat}}}
 \def\Gray{#{\cat{Gray}}}

@@ -42,6 +42,25 @@
 \p{
   As may be expected, the work of Buckley is extremely complicated, because he treats the full generality and thus must consider the tricategory of bicategories, and the class of trifunctors into it. We only care about actions on ordinary categories, and hence can restrict ourselves to the bicategory #{\Cat}.
 }
+\p{
+  Recall that in the ordinary Grothendieck construction, there are two noncanonical decisions involved in the construction:
+  \ol{
+    \li{
+      Given an indexed category #{\cC \to \Cat,} we can either construct a \em{fibration} over #{\cC^\op,} or a \em{opfibration} over #{\cC}.
+    }
+    \li{
+      Before taking the construction, we can apply the dualization functor to #{\Cat} - in other words, we can apply the construction to #{\cA(-)^\op: \cC \to \Cat} instead of #{\cA: \cC \to \Cat}.
+    }
+  }
+}
+\p{
+  Since we are going to be using the full bicategorical structure of #{\Cat}, and not just the natural isomorphisms, we had better pay attention to the fact that #{(-)^\op} is a functor #{\Cat \to \Cat^\co} - that is, it reverses the direction of the #{2}-cells (but not the 1-cells).
+}
+\p{
+  In the ordinary Grothendieck construction, this doesn't alter #{\cC}, since for a #{1}-category regarded as a bicategory, #{\cC^\co = \cC}. But in the case where #{\cC} is itself a bicategory, this invariant doesn't hold. Instead, we now have four "directions" of fibration: we can ask for #{\cE \to \cC} to have Cartesian or opCartesian lifts for every #{1}-cell in #{\cC}, and we can ask for the functors #{\cE(x,y) \to \cC(x,y)} to be fibrations or opfibrations.
+}
+
+\transclude{efr-002Q}
 
 
 \p{
