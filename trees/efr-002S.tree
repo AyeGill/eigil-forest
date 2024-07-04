@@ -1,0 +1,21 @@
+\date{2024-07-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Stochastic lens}
+\taxon{definition}
+\p{
+  Let #{\cD \to \cC} be a stochastically complete Markov fibration. 
+  Then a \em{stochastic lens #{\bar{X} \to \bar{Y}}}, where #{\bar{X},\bar{Y} \in \cD}, with #{p(\bar{X}) = X, p(\bar{Y}) = Y}, consists of:
+  \ol{
+    \li{An object #{M \in \cC}, equipped with deterministic maps #{p_X: M \to X, p_Y: M \to Y}}
+    \li{A (non-deterministic) section #{s: X \to M} of #{p_X}}
+    \li{And a map #{\phi: p_Y^*\bar{Y} \to \bar{X}} over #{p_X}}
+    \li{Up to the equivalence relation identifying two such tuples #{(M,p_X,p_Y,s,\phi), (N,q_X,q_Y,t,\psi)} if there exists (non-deterministic) #{\alpha: M \to N} so that the relevant diagrams commute - that is, the projections to #{X} and #{Y} commute with #{\alpha}, #{t= \alpha s}, and #{\phi = \psi \bar{\alpha},} where #{\bar{\alpha}: p_Y^*\bar{Y} \to q_Y*\bar{Y}} is the unique map induced by the stochastic completeness property}
+  }
+}
+\p{
+(This could have been described as a coend, but since we don't find the coend calculus very useful for manipulating the set of stochastic lenses, we choose not to.)
+}
+\p{
+  Given an optic, the \em{forwards part} is the composite map #{X \to M \to Y}. 
+}
