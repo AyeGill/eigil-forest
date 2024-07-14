@@ -69,8 +69,12 @@
 \transclude{efr-002V}
 
 \p{
-  This will serve as a definition of the bicategory of parameterized maps. We can easily go further and define 
+  This will serve as a definition of the bicategory of parameterized maps. From this we can easily describe a \em{double category} of parameterized maps, which we will denote #{\dblPara_\cM(\cC)}
 }
+
+\transclude{efr-002X}
+\transclude{efr-002Y}
+\transclude{efr-002W}
 
 
 \transclude{efr-002R}

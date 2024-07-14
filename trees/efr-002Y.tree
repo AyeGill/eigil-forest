@@ -1,0 +1,17 @@
+\date{2024-07-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be a bicategory, and let #{\cC_0 \to \cC} be an identity-on-objects functor from a #{1}-category. Then there is a pseudo double category where
+  \ol{
+    \li{
+      The objects are the objects of #{\cC}
+    }
+    \li{
+      The vertical category is #{\cC_0}
+    }
+    \li{The horizontal category is #{\cC}}
+    \li{A 2-cell is a 2-cell in #{\cC} filling the square}
+  }
+}
