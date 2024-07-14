@@ -3,14 +3,5 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cC} be enriched in #{\cM}. Then the assignment #{\cC_M(X,Y) = \cM(M,\cC(X,Y))} defines a locally graded category. This extends to a fully faithful embedding of the (ordinary) category of #{\cM} categories in the category of locally graded #{\cM}-categories.
-}
-\p{
-  Let #{\cC} carry an action of #{\cM}. Then the assignment #{\cC_M(X,Y) = \cC(M \cdot X, Y)} defines a locally graded category. As above, this embedding of actegories in locally graded categories is fully faithful.
-}
-\p{
-  A locally graded category is an enriched category (in the sense of being in the image of the embedding) if and only if the presheaf on #{\cM} given by #{M \mapsto \cC_M(X,Y)} is representable for each #{X,Y}, which holds if and only if the discrete opfibration #{\cC(X,Y) \to \cM} classifying it has a terminal object.
-}
-\p{
-  Analogously, a locally graded category is an actegory if and only if, for each #{M\in \cM, X \in \cC,} the functor #{Y \mapsto \cC_M(X,Y) : \cC_I \to \Set} is representable. Here #{\cC_I} is the category of unit-graded morphisms (these are stable under composition).
+  Recall that the Yoneda embedding #{\cM \into [\cM^\op,\Set]} is strong monoidal. Hence it induces a functor from #{\cM}-categories to locally #{\cM}-graded categories, which carries #{\cC} to a locally graded category with #{\cC_M(X,Y) = \cM(M, \cC(X,Y))}
 }

@@ -4,10 +4,7 @@
 \title{Locally graded category}
 \taxon{definition}
 \p{
-  Let #{\cM} be a monoidal category. A \em{locally graded #{\cM}-category} is a bicategory #{\cC} equipped with a \em{strict} bifunctor (i.e it preserves composition strictly) #{\cC \to B\cM} so that each functor on mapping categories #{\cC(x,y) \to B\cM(*,*) = \cM} is a \em{discrete} fibration.
-}
-\p{
-  (Recall that monoidal categories are equivalently bicategories with a single object, and #{B\cM} is the bicategory thus corresponding to a monoidal category #{\cM})
+  Let #{\cM} be a monoidal category. Recall that we may equip the presheaf category #{[\cM^\op, \Set]} with the monoidal structure of Day convolution. A \em{locally graded #{\cM}-category} is a category enrinched in #{[\cM^\op, \Set]}
 }
 \p{
   Equivalently, a locally graded #{\cM}-category consists of

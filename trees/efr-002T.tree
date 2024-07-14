@@ -1,0 +1,21 @@
+\date{2024-07-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be a locally #{\cM}-graded category. Consider the collection of categories #{\int_M \cC_M(X,Y)}, given by taking the category of elements of the presheaf #{M \mapsto \cC_M(X,Y)} for each #{X,Y}. These form the hom-categories of a bicategory #{\int \cC,} with a canonical pseudofunctor to the delooping #{B\cM}. Conversely, given a bicategory with a pseudofunctor #{\cD \to B\cM} so that each functor #{\cD(X,Y) \to B\cM(*,*) = \cM} is a discrete fibration, the presheaves classifying those discrete fibrations form a locally #{\cM}-graded category.
+}
+\p{
+  Moreover, if #{\cC, \cD} are two locally graded categories, a pseudofunctor #{\int \cC \to \int \cD} over #{B\cM} which preserves Cartesian 2-cells is equivalent to an enriched functor #{\cC \to \cD}
+}
+\proof{
+  \p{
+  It suffices to observe that the category of elements construction is monoidal as a functor from #{[\cM^\op,\Set]} to #{(\Cat_{/\cM})}, if the former is equipped with Day convolution and the latter is equipped with the monoidal structure given by #{\cA, \cB \mapsto (\cA \times \cB \to \cM \times \cM \xto{\otimes_\cM} \cM)}. This implies that, forgetting the projection to #{\cM}, we obtain a category enriched in #{\Cat} with the Cartesian product, i.e a 2-category. The fact that the enrichment factors through the above monoidal structure is clearly exactly what it means for this 2-category to carry a pseudofunctor to #{B\cM}.
+  }
+  \p{
+    Conversely, given such a bicategory over #{B\cM}, this corresponds to a category weakly enriched in the subcategory of #{\Cat_{/\cM}} spanned by the discrete fibrations. But this subcategory is (equivalent to) a 1-category, so after observing that the inverse of the category of elements construction (taking fibers) must also be monoidal, we get an ordinary enriched category in #{[\cM^\op,\Set]} 
+  }
+  \p{
+    (Another way of thinking about this last point is to say that, after taking fibers, we are "weakly enriched" in a monoidal 1-category, so the coherence 2-cells implied by the "weak" in "weakly enriched" must be identities)
+  }
+}
