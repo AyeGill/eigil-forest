@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{\cM} act on #{\cC}. Then we denote by #{\dblPara_\cM(\cC)} the double category given by \ref{efr-002Y} applied to #{\Para_\cM(\cC)_* \into \Para_\cM(\cC),} where #{\Para_\cM(\cC)} is the corresponding locally graded category as in \ef{efr-002V}, and #{(-)_*} denotes the fiber over the basepoint as in \ref{efr-002X}.
+  Let #{\cM} act on #{\cC}. Then we denote by #{\dblPara_\cM(\cC)} the double category given by \ref{efr-002Y} applied to #{\Para_\cM(\cC)_* \into \Para_\cM(\cC),} where #{\Para_\cM(\cC)} is the corresponding locally graded category as in \ref{efr-002V}, and #{(-)_*} denotes the fiber over the basepoint as in \ref{efr-002X}.
 }
