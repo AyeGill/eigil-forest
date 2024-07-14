@@ -1,14 +1,26 @@
 \date{2024-07-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{proposition}
 \p{
-  Let #{\cC \to B\cM} be a functor of bicategories which is locally a discrete fibration.
-  Consider the category #{\cC_I} of morphisms over the unit - this is a locally discrete subcategory (i.e a #{1}-subcategory) of #{\cC}, which contains all the objects. Then there is a pseudo double category where
+  There is an equivalence of bicategories between
   \ol{
-    \li{The vertical category is #{\cC_I}}
-    \li{Horizontal morphisms are simply morphisms in #{\cC}}
-    \li{A 2-cell is a 2-cell in #{\cC} with the given composites as boundary}
-    \li{Composition is just composition of the relevant cells in #{\cC}}
+    \li{
+      #{(+,-)}-fibrations #{\cC \to B\cM} which are locally discrete fibrations.
+    }
+    \li{
+      Pseudofunctors #{B\cM \to \Cat}
+    }
+    \li{
+      Actions of #{\cM}
+    }
+  }
+}
+\proof{
+  \p{
+  The latter two are equivalent almost by definition, see eg \ref{actegories-amthematician-capucci-gavranovic}.
+  }
+  \p{
+    By \ref{002U}, clearly pseudofunctors #{B\cM \to \Cat} are equivalent to some subcategory of the #{(+.-)}-fibrations. But a fibration classifies a pseudofunctor into 1-categories if and only if its fibers are equivalent to 1-categories, if and only if the hom-categories of the fibers are equivalent to discrete categories. Since the hom-categories of the fibers are the fibers of #{\cC(X,Y) \to B\cM(*,*)}, this is true if and only if these fibrations are discrete, concluding the proof.
   }
 }

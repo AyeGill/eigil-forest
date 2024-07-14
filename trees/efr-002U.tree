@@ -1,0 +1,26 @@
+\date{2024-07-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: \cD \to \cC} be a homomorphism of bicategories. We say #{p} is
+  \ol{
+    \li{
+      A #{(-,-)}-fibration if it is a weak 2-fibration in the sense of Buckley
+    }
+    \li{
+      A #{(+,-)}-fibration if the 1-cell dual #{\cC^\op \to \cD^\op} is a #{(-,-)}-fibration. Recall that #{\cC^\op(X,Y) = \cC^\op(Y,X),} i.e #{\cC^\op} inverts the direction of the 1-cells but not the 2-cells.
+    }
+    \li{
+      A #{(-,+)}-fibration if the 2-cell dual #{\cC^\co \to \cD^\co} is a #{(-,-)}-fibration. Recall that #{\cC^\co(X,Y) = \cC(X,Y)^\op} 
+    }
+    \li{
+      A #{(+,+)}-fibration if the bidual #{\cC^{\co \op} \to \cD^{\co \op}} is a #{(-,-)}-fibration.
+    }
+  }
+}
+\p{
+  Note that the way these correspond to functors from the various duals of #{\cD} into bicategories is somewhat unintuitive!
+  By the work of Buckley, #{(-,-)}-fibrations classify functors #{\cD^{\co \op} \to \BiCat}.
+  Given for example a #{(+,-)}-fibration, it has a dual #{(-,-)}-fibration which, of course, classifies a functor #{\cD^\co \to \BiCat}. But the values of this functor are not the fibers of the original functor, but the (1-cell) duals - after postcomposing with the #{(-)^\op} functor #{\BiCat^\co \to \BiCat}, we are left with a functor #{\cD \to \Bicat}.
+}
