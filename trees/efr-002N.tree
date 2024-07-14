@@ -21,6 +21,6 @@
   The latter two are equivalent almost by definition, see eg \ref{actegories-amthematician-capucci-gavranovic}.
   }
   \p{
-    By \ref{002U}, clearly pseudofunctors #{B\cM \to \Cat} are equivalent to some subcategory of the #{(+.-)}-fibrations. But a fibration classifies a pseudofunctor into 1-categories if and only if its fibers are equivalent to 1-categories, if and only if the hom-categories of the fibers are equivalent to discrete categories. Since the hom-categories of the fibers are the fibers of #{\cC(X,Y) \to B\cM(*,*)}, this is true if and only if these fibrations are discrete, concluding the proof.
+    By \ref{efr-002U}, clearly pseudofunctors #{B\cM \to \Cat} are equivalent to some subcategory of the #{(+.-)}-fibrations. But a fibration classifies a pseudofunctor into 1-categories if and only if its fibers are equivalent to 1-categories, if and only if the hom-categories of the fibers are equivalent to discrete categories. Since the hom-categories of the fibers are the fibers of #{\cC(X,Y) \to B\cM(*,*)}, this is true if and only if these fibrations are discrete, concluding the proof.
   }
 }
