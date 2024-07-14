@@ -41,9 +41,15 @@
   There is really nothing to show here. In the case of an actegory, conceptually we have the same idea - we want to define #{\cC_M(X,Y) = \cC(M \bullet X, Y)} - but there is a bit more work to do to see that this comes together into a locally graded category. We begin with the following alternative description of locally graded categories:
 }
 \transclude{efr-002T}
+\p{
+  From here, we will abuse terminology and freely refer to a category over #{B\cM} which is locally a discrete fibration as a locally graded category.
+}
+\p{
+  The idea now is that an action of #{\cM} can equivalently be described as a pseudofunctor #{B\cM \to \Cat}, and taking the 2-Grothendieck construction of this (in a suitable sense) will give us the locally graded category corresponding to this action. 
+}
 \transclude{efr-002O}
 \p{
-  By a 2-fibration we will always mean a 2-fibration in a \em{weak} sense, lying over a \em{bicategory} and classifying a weak functor into bicategories (although our functors will always land in #{1}-categories). The correct notion of weak 2-fibration was first introduced by Buckley, \ref{buckley-2-fibrations}. (Recall that \em{bifibration} means a functor which is both a fibration and an opfibration, and so we unfortunately can't use this word.)
+  By a 2-fibration we will always mean a 2-fibration in a \em{weak} sense, lying over a \em{bicategory} and classifying a pseudofunctor into bicategories (although our functors will always land in #{1}-categories). The correct notion of weak 2-fibration was first introduced by Buckley, \ref{buckley-2-fibrations}. (Recall that \em{bifibration} means a functor which is both a fibration and an opfibration, and so we unfortunately can't use this word.)
 }
 \p{
   As may be expected, the work of Buckley is extremely complicated, because he treats the full generality and thus must consider the tricategory of bicategories, and the class of trifunctors into it. We only care about actions on ordinary categories, and hence can restrict ourselves to the bicategory #{\Cat}.

@@ -3,8 +3,5 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cM} be a monoidal category. Then an action of #{\cM} is equivalently a bifunctor #{C: B\cM \to \Cat}, where #{C(*)} is the category which this is an action on.
-}
-\p{
-  The 2-Grothendieck construction of such a bifunctor, #{\int C \to B\cM,} is exactly the locally graded #{\cM}-category corresponding to the action.
+  Let #{\cM} be a monoidal category. Then an action of #{\cM} is equivalently a pseudofunctor #{C: B\cM \to \Cat}, where #{C(*)} is the category which this is an action on.
 }
