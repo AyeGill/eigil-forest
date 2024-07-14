@@ -1,0 +1,21 @@
+\date{2024-07-14}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cM} act on #{\cC}, and consider the double category #{\dblPara_\cM(\cC)}. Consider the underlying directed graph (internal to categories) #{\dblPara_\cM(\cC)_1 \rightrightarrow \dblPara_\cM(\cC)_0}. We have:
+  \ol{
+    \li{#{\dblPara_\cM(\cC)_0 = \cC}}
+    \li{This square exhibits #{\dblPara_\cM(\cC)_1} as the comma object #{ \cM \times \cC \downarrow_{\cC} \cC}:
+      \quiver{
+        \begin{tikzcd}
+        \dblPara_\cM(\cC)_1 \ar[r] \ar[d] & \cC \ar[d, swap, "1_\cC"] \\
+        \cC \times \cM \ar[r, swap, "\bullet"] \ar[ur, Rightarrow, shorten=5mm] & \cC
+        \end{tikzcd}
+      }
+    }
+  }
+}
+\proof{
+  \p{The first claim is a straightforward consequence of the definition.}
+}
