@@ -18,4 +18,8 @@
 }
 \proof{
   \p{The first claim is a straightforward consequence of the definition.}
+  \p{To see the second claim, let us first look at the objects. These are exactly morphisms in the bicategory #{\Para_\cM(\cC)}, which, according to our definition, is obtained by applying the 2-Grothendieck construction to the action #{\cC: B\cM \to \Cat}. The objects of this bicategory are therefore exactly the objects of #{\cC}, and a morphism #{X \to Y} consists of an object of #{\cM} and a map #{M \cdot X \to Y}. In other words, a morphism is a quadruple #{(X,Y,M,\phi: M \cdot X \to Y)}. Clearly this is exactly what an object of the comma category is.}
+  \p{
+    Similarly, the morphisms of the comma category consist of triples of morphisms #{X \to X', Y \to Y', M \to M'} making the obvious square commute. On the other hand, the morphisms of #{\dblPara_\cM(\cC)_1} are, by definition, pairs #{X \to X', Y \to Y'} in #{\cC = \Para_\cM(\cC)_*} and a 2-cell filling the resulting square. But, since #{\Para_\cM(\cC)} is locally discretely fibred over #{B\cM}, such a 2-cell is exactly a 2-cell in #{B\cM}, i.e a morphism in #{\cM}, which is compatible with the square. After unwinding the definitions, this compatibility is equivalent to making the square considered before commute. This finishes the proof.
+  }
 }
