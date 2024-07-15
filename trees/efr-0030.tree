@@ -22,3 +22,6 @@
 \p{
   (Indeed, to consider the right notion of stochastic function between, for example, smooth manifolds, we will in any case want to use the tools of functional analysis to think of these in terms of transformation on integration operators, which is essentially this idea).
 }
+\p{
+  Another way to justify this idea is to note that #{\Omega = \{\bot,\top\}} is the subobject classifier for #{\FinSet \subseteq \FinStoch}. Hence if we want our notion of predicate to transform under stochastic maps, and include the logical predicates in the usual sense, we have to at least consider the stochastic maps #{X \to \Omega}, which of course amount to functions #{X \to [0,1]} in this case. But a positive linear map on functions is determined by what it does to functions like this, so whether we work only with these or all functions #{X \to \RR} is more or less a matter of taste.
+}
