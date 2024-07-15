@@ -16,3 +16,9 @@
 \p{
   This isomorphism merely describes the fact that stochastic maps #{\phi: X \to Y} can also be described as linear maps #{f: \RR\braket{Y} \to \RR\braket{X}} so that #{\sum_x f((a_y))_x = \sum_y a_y}. This map interprets a vector as a function on #{Y}, and carries it to the function on #{X} which finds the expected value if #{y \in Y} is distributed as #{\phi(x)}. The normalization condition merely says a constant function always has that constant as its expectation.
 }
+\p{
+  The self-duality of #{\fdVect} does not generalize to infinite-dimensional vector spaces, so once we move beyond finite state spaces, this story will get somewhat more complicated. However, the basic idea that, to carry the tools of coalgebraic modal logic into the stochastic case, the sort of "predicate" we should consider is actually a \em{function} on the state space, will remain the central idea.
+}
+\p{
+  (Indeed, to consider the right notion of stochastic function between, for example, smooth manifolds, we will in any case want to use the tools of functional analysis to think of these in terms of transformation on integration operators, which is essentially this idea).
+}
