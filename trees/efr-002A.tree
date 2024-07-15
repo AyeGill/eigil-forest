@@ -35,3 +35,5 @@
 \p{
   We would like to move this framework to the setting of categorical systems theory. Of course, we are hampered by two immediate problems: our systems are not, in general, coalgebras of functors, nor are they in general sets.
 }
+
+\transclude{efr-0030}
