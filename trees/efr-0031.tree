@@ -1,0 +1,13 @@
+\date{2024-07-16}
+\author{eigil-rischel}
+\import{macros}
+\title{Curriculum Vitae}
+\subtree{
+  \title{Education}
+  \ul{
+    \li{From 2015-2018, I completed a BSc in Mathematics at the University of Copenhagen. My undergraduate thesis was titled \em{Localizations in higher category theory and algebraic K-theory}, and supervised by [[rune-haugseng]]}
+    \li{From 2018-2020, I completed a MSc in Mathematics at the University of Copenhagen. My thesis was titled \em{The category theory of causal models}, and supervised by [[sebastian-weichwald]]}
+    \li{From 2020-present, I am working on a PhD in Computer Science at the University of Strathclyde. My supervisor is [[radu-mardare]]}
+  }
+}
+\transclude{efr-0032}%List of publications

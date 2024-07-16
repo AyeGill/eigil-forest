@@ -1,0 +1,14 @@
+\date{2024-07-16}
+\author{eigil-rischel}
+\import{macros}
+\title{List of Publications}
+\scope{
+  \open\query
+
+  \def\query/publist[x]{
+    \isect{\author{\x}}{\taxon{reference}}
+  }
+}
+\query{
+  \query/publist{eigil-rischel}
+}
