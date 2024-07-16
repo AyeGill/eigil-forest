@@ -44,3 +44,9 @@
 \p{
   These systems have the same marginals #{X \to A} and #{X \to X}, and hence the two modal operators above have the same behaviour, and hence every modally expressible function is the same. But in the former, the probability of seeing ab output sequence beginning #{1,0,\dots} when starting in state #{0} is proportional to #{\epsilon}, whereas in the latter it is proportional to #{\epsilon^2} (since you have to flip twice), so these systems have very different behaviour.
 }
+\p{
+  Using \ref{efr-000X}, we can deduce a version of Hennesy-Milner for stochastic transition systems (with no input and outputs in finite set #{A}). Namely, fix a system #{\xi: X \to A \otimes X}, and let #{\nabla(u,v),} with #{u: A \to \RR} and #{v: X \to \RR} denote the function which carries #{x \in X} to the expected value of #{u(a)v(x')} when #{(a,x')} are distributed according to the system. Then #{\nabla} is precisely the bilinear function #{C(A) \otimes C(X) \to C(X)} dual to #{\xi}. Since #{A^\omega} is the terminal coalgebra, and the inverse limit of #{A \leftarrow A^2 \leftarrow \dots}, we can infer that #{C(A^\omega)} is the colimit of the sequence #{C(A) \to C(A) \otimes C(A) \to \dots} in some category of #{\RR}-algebras (we must think a little about topology to make this precise.)
+}
+\p{
+  But this should imply that the union  of the images of #{C(A)^{\otimes n}} inside this algebra is dense. So certainly they separate points. But this image consists exactly of formulas given by functions on #{A}, applications of #{\nabla,} and sums and products. So these formulae are sufficiently expressive to separate points of the terminal coalgebra (which are, of course, exactly bisimulation classes).
+}

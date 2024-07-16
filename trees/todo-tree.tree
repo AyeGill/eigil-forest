@@ -17,5 +17,6 @@
     \li{A good account of the construction of the triple category of controlled dynamical systems. The math here is basically done, only the presentation remains. OTOH the presentation is very complicated.}
     \li{A good account of the "coalgebraic modal logic" we can expect for such systems. Currently this is somewhat speculative, but should basically work.}
     \li{Continuous-time stuff: note that for smooth systems, we \em{do} have local uniqueness, so "power series" really are the behaviors of such systems, the only "problem" being lack of convergence (which is of course also exhibited by such systems)}
+    \li{Think enough about topology to make [[efr-0030]] precise}
   }
 }
