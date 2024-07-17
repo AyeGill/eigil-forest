@@ -21,3 +21,9 @@
 \p{
   We can package this data a bit more neatly by observing that, instead of asking for a map defined out of "the" pullback, we should instead ask for a choice of pullback diagram and a map out of the given pullback object. Doing so, we realize that most of the data of a category really consists of a diagram of a certain shape (i.e a functor from a certain index category), such that a certain subdiagram is a pullback. The only thing which is not obvious is how to encode the associativity axiom, but this is easily done by adding another object:
 }
+\transclude{efr-0016}
+\transclude{efr-0037}
+\p{
+  It transpires that, given such a diagram, it automatically extends to the higher simplices in a canonical way. Moreover, taking in these higher simplices matters for higher categorical structures. Thus we introduce the following definition:
+}
+\transclude{efr-001N}
