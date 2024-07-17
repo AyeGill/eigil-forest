@@ -1,0 +1,18 @@
+\date{2024-07-17}
+\author{eigil-rischel}
+\import{macros}
+\title{Triple categories}
+\p{
+  Every category theorist is familiar with the horrible complications associated with higher-dimensional category theory. Even the coherence conditions for essentially two-dimensional objects like monoidal categories or double categories can be annoying to check, and this only becomes more tricky as we pass to higher dimensions. Since the category of controlled processes is a #{\dblPara}-type construction, and should therefore be expected to only be pseudoassociative in at least one of its dimensions, we can't get around confronting this complexity, at least to some extent.
+}
+\p{
+  Since verifying the axioms of a pseudo triple cateogry seems hopeless, we must look for a more conceptual approach. Initially, the following idea seems promising
+  \ol{
+    \li{Observe that categories are models (in sets) of a certain finite limit theory. Internal categories in some other category (for example, the category of categories) are just models in that category.}
+    \li{Intuitively, we expect pseudo double categories to then be \em{weak} models in the category of categories, i.e. functors from the syntactic category which carries the limits to \em{homotopy} limits}
+    \li{Observe that the #{\dblPara} construction preserves homotopy limits. Therefore it will carry a weak internal category in actegories to a weak internal category in pseudo double categories. This will then be a pseudo triple category in a suitable sense.}
+  }
+}
+\p{
+  However, already at step two we encounter serious complications - it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated.
+}
