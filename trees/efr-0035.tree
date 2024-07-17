@@ -16,3 +16,8 @@
 \p{
   However, already at step two we encounter serious complications - it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated.
 }
+
+\transclude{efr-0036}
+\p{
+  We can package this data a bit more neatly by observing that, instead of asking for a map defined out of "the" pullback, we should instead ask for a choice of pullback diagram and a map out of the given pullback object. Doing so, we realize that most of the data of a category really consists of a diagram of a certain shape (i.e a functor from a certain index category), such that a certain subdiagram is a pullback. The only thing which is not obvious is how to encode the associativity axiom, but this is easily done by adding another object:
+}

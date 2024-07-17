@@ -1,0 +1,15 @@
+\date{2024-07-17}
+\author{eigil-rischel}
+\import{macros}
+\title{Internal category}
+\p{
+  Let #{\cC} be a category. An \em{internal category in #{\cC}} consists of the following data:
+  \ol{
+    \li{Objects #{C_0, C_1 \in \cC}}
+    \li{Morphisms #{c,d: C_1 \to C_0} and #{i: C_0 \to C_1}, and #{\circ: C_1 \times_0 C_1 \to C_1}, where this is the pullback of #{c} and #{d} (which is in particular assumed to exist)}
+    \li{Such that \todo{write out the equations here}}
+  } 
+}
+\p{
+  An internal functor consists of two maps #{C_0 \to D_0, C_1 \to D_1,} such that the squares for each operation commutes (where the square involving #{\circ} has one side formed by the map induced on the pullback)
+}
