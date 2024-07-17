@@ -1,0 +1,8 @@
+\date{2024-07-17}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{X,Y} be (extended) metric spaces. Then the \em{Lipschitz number} of a function #{f: X \to Y} is the number
+  ##{\Lip(f) = \inf \{r \geq 0 \mid d_Y(f(x),f(x')) \leq r \cdot d_X(x,x')\},}
+  i.e if #{f} is Lipschitz continuous, it is minimum possible Lipschitz constant for #{f}, whereas if #{f} is not Lipschitz continuous, it is #{\infty}.
+}

@@ -1,0 +1,40 @@
+\date{2024-07-17}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{X} be a set equipped with a function #{p: C(X) \to [0,\infty]} so that, for all #{f,f' \in C(X), r \in \RR}
+  \ol{
+    \li{#{p(r \cdot f) = \abs{r} p(f)}}
+    \li{#{p(x) \geq 0}}
+    \li{#{p(f+g) \leq p(f) + p(g)}}
+    \li{#{p(r) = 0}, where #{r} is interpreted as a constant function}
+    \li{#{p(\max(f,g)) \leq \max(p(f),p(g))}}
+    \li{#{p} preserves the limits of pointwise convergent sequences of functions}
+  }
+}
+\p{
+  Then
+  \ol{
+    \li{For every #{x}, consider the set of functions #{f} with #{p(f) \leq 1} and #{f(x) = 0}. This set has a greatest element (in the pointwise order).}
+    \li{Denoting the greatest element from the previous point #{f_x,} #{d(x,y) = f_x(y)} defines a pseudometric on #{X}}
+    \li{#{p(f)} is equal to the Lipschitz number of #{f} with respect to this pseudometric.}
+  }
+}
+\proof{
+  \p{
+    The pointwise convergence claim, together with Zorn's Lemma, implies that the set #{\{f \mid p(f) \leq 1, f(x) - 0\}} has a maximal element \todo{this may rely on some sort of separability condition, come to think of it}. The claim about maxima implies that such an element must actually be an upper bound. This takes care of the first point.
+  }
+  \p{
+    By definition, #{d(x,x) = f_x(x) = 0} for all #{x}. Fixing #{x,y}, note that #{d(x,z) - d(x,y)} is a function of #{z} which carries #{y} to zero, and since it is a constant plud #{d(x,-),} must have #{p(-) \leq 1}. Hence it is less than #{d(y,z),} but after rearranging this gives the triangle inequality.
+  }
+  \p{
+    Note that the constant function at zero has #{p(0) = 0 \leq 1,} and carries #{x} to zero, so we have #{d(x,y) \geq 0} for all #{x,y}.
+  }
+  \p{
+    To see #{d} is a pseudometric, we only need to show that #{d(x,y) = d(y,x).} To see this, observe that #{d(x,y) - d(x,-)} carries #{y} to zero, and by the argument above, has #{p(-) \leq 1}. So #{d(x,y) - d(x,z) \leq d(y,z).} Taking #{z = x,} we find #{d(x,y) - d(x,x) \leq d(y,x),} hence #{d(x,y) \leq d(y,x).} Since this is true for any #{x,y}, this establishes the symmetry claim.
+  }
+  \p{
+    If #{p(f) \leq 1}, #{f(y) - f(x) \leq d(x,y)} by definition of #{d,} so #{f} is #{1}-Lipschitz. It follows that #{p(f) \geq \Lip(f).} 
+  }
+  \todo{What assumptions, if any, necessary to prove #{p(f) \leq \Lip(f)}}
+}

@@ -20,3 +20,9 @@
     \li{Think enough about topology to make [[efr-0030]] precise}
   }
 }
+
+\p{
+  Notes about metric space = filtration (by Lipschitz constant) on functions. Not clear this is the right way, but eh.
+}
+\transclude{efr-0033}
+\transclude{efr-0034}
