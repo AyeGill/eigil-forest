@@ -39,4 +39,5 @@
 
 \p{
   All this would naturally lead you to believe that a pseudo double category is equivalently a weak Segal object in #{\Cat}. This, however, is not true.
+  One way to see this is that the composition operation is (up to equivalence) defined on the homotopy pullback #{C_1 \times_{C_0} C_1}. An object of this category consists of two horizontal morphisms (i.e objects of #{C_1}) and an \em{isomorphism in #{C_0}} between their respective codomain and domain. This seems logical - if two objects in #{C_0}, say #{x,x'} are supposed to be the same if they are isomorphic, how can we not let you compose a morphism ending in one with one starting in the other? But nevertheless such a composition operation is not implied by the structure of an ordinary double category.
 }
