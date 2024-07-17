@@ -13,13 +13,13 @@
 }
 \quiver{
   \begin{tikzcd}
-  C[3] \ar[r] \ar[d] & C[2] \ar[d]
+  C[3] \ar[r] \ar[d] & C[2] \ar[d]\\
   C[1] \ar[r] & C[0]
   \end{tikzcd}
 }
 \quiver{
   \begin{tikzcd}
-  C[3] \ar[r] \ar[d] & C[1] \ar[d]
+  C[3] \ar[r] \ar[d] & C[1] \ar[d]\\
   C[2] \ar[r] & C[0]
   \end{tikzcd}
 }
