@@ -26,4 +26,17 @@
 \p{
   It transpires that, given such a diagram, it automatically extends to the higher simplices in a canonical way. Moreover, taking in these higher simplices matters for higher categorical structures. Thus we introduce the following definition:
 }
-\transclude{efr-001N}
+\transclude{efr-001N}%STRICT Segal object.
+
+
+
+%%%%%% SOMETHING ABOUT HOMOTOPY LIMITS SOMETHING ABOUT WEAK SEGAL OBJECTS
+
+
+\transclude{efr-0038}
+
+%%SHOULD WE HAVE SOMETHING ABOUT DOUBLE CATEGORIES
+
+\p{
+  All this would naturally lead you to believe that a pseudo double category is equivalently a weak Segal object in #{\Cat}. This, however, is not true.
+}

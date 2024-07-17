@@ -13,5 +13,5 @@
   \end{tikzcd}
 }
 \p{
-  A simplicial object #{X} in a bicategory #{\cC} is called a \em{Segal object} if each of these diagrams goes to a homotopy pullback - in other words, if #{X[n+m] = X[n] \times_{X[0]} X[m]}.
+  A simplicial object #{X} in a category #{\cC} is called a \em{Segal object} if each of these squares goes to a pullback square.
 }
