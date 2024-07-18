@@ -1,0 +1,16 @@
+\date{2024-07-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC} be a model category, and consider a simplicial object #{X: \Delta^\op \to \cC}.
+}
+\p{
+  The \em{latching object of #{X} at stage #{r}}, denoted #{L_rX \in \cC}, is the colimit #{\colim_{s: [r] \to [k]} X[k]} where #{s: [r] \to [k]} runs over all surjections out of #{[r]} except the identity
+}
+\p{
+  The \em{matching object} #{M_r} is the limit #{\lim_{d: [k] \to [r]} X[k]} runs over all injections into #{[r]} except the identity.
+}
+\p{
+  Note that there are canonical maps #{L_rX \to X[r] \to M_rX}. A simplicial object is \em{Reedy cofibrant} if #{L_rX \to X} is always a cofibration, and \em{Reedy fibrant} if #{X \to M_rX} is always a fibration.
+}

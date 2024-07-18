@@ -1,0 +1,21 @@
+\date{2024-07-18}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{C} be a Reedy fibrant simplicial category. Then the functors #{C[n] \to C[m]} induced by injective #{[m] \into [n]} are fibrations.
+  In particular, #{C} is a weak Segal category if and only if the functors #{C[m+n] \to C[n] \times_{C[0]} C[m]} are equivalences (where this is a strict pullback). Moreover, this functor is also a fibration (whether #{C} is weak Segal or not), so that if #{C} is weak Segal, it is in fact a trivial fibration.
+}
+\proof{
+  \p{
+    By assumption, the functor #{C[n] \to L_nC = C[\partial \Delta^n]} is a fibration for each #{n}.
+    Note that #{C[n] \to C[n-1]} factors over this, so it suffices to show that the further map #{C[\partial \Delta^n] \to C[n-1]} is a fibration (since fibrations compose, this proves #{C[n] \to C[n-1]} is a fibration, and composing these we find #{C[n] \to C[m]} is one). Note we can express #{C[\partial \Delta^n]} as an iterated pullback of copies of #{C[n-1]} over copies of #{C[n-2]}. Assuming the maps #{C[n-1] \to C[n-2]} are themselves fibrations, since fibrations are stable under pullback, this proves the result. By induction it suffices to prove the base case #{C[1] \to C[0]}.
+    The two maps of this form are the two projections of #{C[1] \to C[\partial \Delta^1] = C[0] \times C[0],} but note that this is a fibration and a projection out of a product is always a fibration.
+  }
+  \p{
+    Since pullbacks of fibrations are homotopy pullbacks, this proves the claim about #{C} being a weak Segal category.
+    The functor #{C[n+m] \to C[n] \times_{C[0]} C[m]} factors over #{C[\partial \Delta^{n+m}]}. By expressing this as a pullback of copies of #{C[n+m-1]}, iteratively replacing these by their boundaries (each such replacement is a fibration, and a limit of fibrations is a fibration) until we reach dimensions #{n} and #{m}, whereupon we project out the rest of the pullback, suffices to prove that this morphism is a fibration. 
+  }
+  \p{
+    By definition, if #{C} is weak Segal it is also an equivalence, hence a trivial fibration.
+  }
+}

@@ -1,0 +1,7 @@
+\date{2024-07-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{C: \Delta^\op \to \Cat} be a weak Segal category. Given two compatible horizontal morphisms - that is, two objects #{f,g \in C[1],} so that #{d_0(f) = d_1(g),} this (coupled with the identity morphism on this object of #{C[0]}) describes an object in the weak pullback #{C[1] \times_{C[0]}^\sim C[1]}. This object is in the \em{essential} image of #{C[2] \to C[1] \times_{C[0]}^\sim C[1],} (since it is an equivalence, hence essentially surjective,) but not necessarily the \em{image}. This means we can't necessarily find a composite #{f;g} with the same domain as #{f}, for example - the best we can do is ask for the domain to be \em{vertically isomorphic} to #{d(f)}. 
+}

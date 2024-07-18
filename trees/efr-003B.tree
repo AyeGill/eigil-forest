@@ -1,0 +1,13 @@
+\date{2024-07-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  #{C[\partial \Delta^1] = C[0] \times C[0]}, and the inclusion of the boundary in the whole induces a map #{C[\Delta^2] = C[2] \to C[0] \times C[0] = C[\partial \Delta^1],} which is precisely the pairing of the two face maps.
+}
+\p{
+  #{C[\partial \Delta^2]} is the "pullback" of three copies of #{C[1]} over three copies of #{C[0]} - one could write it as #{C[1] \times_{C[0]} C[1] \times{C[0] \times C[0]} C[1],} where the map #{C[1] \times_{C[0]} C[1] \to C[0] \times C[0]} picks out the domain of the first 1-cell and the codomain of the second one, and the map #{C[1] \to C[0]\times C[0]} is the above discussed pairing of the face maps.
+}
+\p{
+  Thus, as expected, an element of #{C[\partial \Delta^2]} consists of a triple of 1-cells with compatible endpoints to make up a triangle (but no 2-cell to fill it). The restriction map #{C[\Delta^2] \to C[\partial \Delta^2]}, as expected, takes this boundary of a 2-cell.
+}

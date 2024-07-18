@@ -41,9 +41,23 @@
   All this would naturally lead you to believe that a pseudo double category is equivalently a weak Segal object in #{\Cat}. This, however, is not true.
   One way to see this is that the composition operation is (up to equivalence) defined on the homotopy pullback #{C_1 \times_{C_0} C_1}. An object of this category consists of two horizontal morphisms (i.e objects of #{C_1}) and an \em{isomorphism in #{C_0}} between their respective codomain and domain. This seems logical - if two objects in #{C_0}, say #{x,x'} are supposed to be the same if they are isomorphic, how can we not let you compose a morphism ending in one with one starting in the other? But nevertheless such a composition operation is not implied by the structure of an ordinary double category.
 }
+
+\transclude{efr-0039}%composition not defined on objects
+
 \p{
   It turns out that the simplifying assumption needed to make sense of these problems is one we're happy to make in the situation at hand. Namely, we would like to assume that the functor #{C_1 \to C_0 \times C_0} picking out the domain and codomain is an \em{isofibration}. Recall that a functor #{p: \cC \to \cD} is an isofibration if, given #{x} in the domain and #{f: p(x) \to y} an \em{isomorphism} in the codomain, there is a lift of #{f} to #{\tilde{f}: x \to \tilde{y}}. (Any Grothendieck fibration or opfibration is automatically an isofibration).
 }
 \p{
   These lifts give us the coposition-with-#{f} operations we need, but they also simplify the notion of weak Segal object significantly. This is because of the fact that a (strict) pullback of isofibrations is automatically also a homotopy pullback. This means we can simplify the Segal condition to asking that the induced maps #{C[2] \to C[1]\times_{C[0]} C[1]} (where this denotes the strict pullback) are equivalences of categories (recall that #{C[2]} would be a strict pullback if this was an \em{isomorphism} of categories), and the analogous statement holds for the higher #{C[n]}.
+}
+
+\transclude{efr-0039}
+
+\transclude{efr-003A}
+\transclude{efr-003B}
+\p{These are of course small parts of the \em{Reedy model structure} on simplicial objects, but we will not need to discuss this in detail.}
+
+\transclude{efr-0030}
+\p{
+  Since trivial fibrations admit \em{strict} sections, this will give us the strict composites we were looking for.
 }
