@@ -1,0 +1,41 @@
+\date{2024-07-19}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{\cM} be a monoidal category which acts on #{\cC}.
+  Let #{\hat{\cC} \to B\cM} be the fibration of bicategories which classifies this action.
+  For each #{[n] \in \Delta}, we have an induced fibration #{\hat{\cC}^{[n]} \to B\cM^{[n]}}.
+  
+
+  Let #{\dblPara_\cM(\cC)[n]} denote the fiber of the composite functor #{\cC^{[n]} \to B\cM^{[n]} \to B\cM^{n+1}} over the unique object #{(*,\dots ,*)}, where the latter functor is just evaluation at the #{n+1} objects of #{[n]} (this is not a 2-fibration in general - although it is an isofibration, so the fiber is still well-behaved).
+ 
+  Then
+  \ol{
+    \li{Each such fiber is actually a 1-category}
+    \li{This construction is functorial in #{[n]}, so that #{\dblPara_\cM(\cC)[-]} is a simplicial category}
+    \li{This simplicial category is a Reedy fibrant weak Segal category. Up to equivalence, it classifies #{\dblPara_\cM(\cC),} so that the notation makes sense.}
+  }
+}
+\proof{
+  \p{
+    Note that, since pullbacks compose, #{\dblPara_\cM(\cC)[n]} can equivalently be computed as the fiber over #{B\cM^{[n]} \times_{B\cM^{n+1}} * \into B\cM^{[n]}}. It is not too hard to see that this pullback is exactly equivalent to #{\cM^n}. Now, by construction, #{\hat{\cC}} is fibred in 1-categories, and it follows that the 2-fibration #{\dblPara_\cM(\cC)[n] \to \cM^n} is also fibred in 1-categories. But since #{\cM^n} is itself an 1-category, the total category must be an 1-category (namely the Grothendieck construction of the functor #{\cM^{n,\op} \to \Cat} classifying the fibration).
+  }
+  \p{
+    The functoriality is clear, since every construction above is functorial in #{[n]}.
+  }
+  \p{
+    By construction, we have the following pullback diagram:
+
+    \quiver{
+      \begin{tikzcd}
+      \dblPara_\cM(\cC)[n] \ar[r] \ar[d] & \hat{\cC}^{[n]} \ar[d]\\
+      \cM^n \ar[r] & B\cM^{[n]}
+      \end{tikzcd}
+    }
+
+    Since the right-hand map is a Buckley fibration, it is an equifibration \todo{make sure these are introduced}, and hence these pullbacks are homotopy pullbacks of bicategories. Since the tautological cosimplicial object #{\Delta \into \BiCat} is coSegal (in that its dual, a simplicial object in #{\BiCat^\op}, is a Segal object), the functor #{[n] \mapsto \cD^{[n]}} is a Segal object of #{[\Delta^\op,\BiCat],} which is weak Segal (with respect to the Lack model structure on bicategories) because the forgetful functors #{\cD^{[n]} \to \cD^{[m]}} are equifibrations. It is easy to see that #{\cM^n} is also a Segal object, and hence #{\dblPara_\cM(\cC)[-],} as a simplicial bicategory, is a weak Segal object. But the subcategory of 1-categories within bicategories is stable under homotopy limits, so that this implies that it is a weak Segal object as a simplicial category as well.
+  }
+  \p{
+    By the same argument, using lemma \ref{efr-003H}, the natural transformation #{\dblPara_\cM(\cC)[n] \to \cM^{n}} is a Reedy fibration - since #{\cM^{n}} is easily seen to be fibrant, this implies #{\dblPara_\cM(\cC)[n]} is fibrant as well.
+  }
+}
