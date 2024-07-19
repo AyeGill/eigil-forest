@@ -14,7 +14,7 @@
   }
 }
 \p{
-  However, already at step two we encounter serious complications - it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated.
+  However, already at step two we encounter serious complications - it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated. However, it will turn out that our particular double and triple categories are of a sufficiently nice type (they are \em{isofibrant}) that this confusion goes away.
 }
 
 \transclude{efr-0036}
