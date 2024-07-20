@@ -31,7 +31,8 @@
   \quiver{
     \begin{tikzcd}
       \alpha_X^*F(X) \ar[r, dashed] \ar[d] & \alpha_Y^*F(Y) \ar[d]\\
-      F(X) \ar[r] & F(Y)
+      F(X) \ar[r] & F(Y),
     \end{tikzcd}
   }
+  which defines the action on morphisms and the naturality squares for the lift of #{\alpha}, and one proceeds like this.
 }

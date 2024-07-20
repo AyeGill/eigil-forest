@@ -80,6 +80,7 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 
 \transclude{efr-003L}
 \p{
+  (See again \ref{johnson-yau-2dim-categories})
   It is not hard to see that the 2-nerve of a bicategory #{\cC} is a weak Segal category, and under the loose identification of weak Segal categories and pseudo double categories, it corresponds to the pseudo double category with horizontal bicategory #{\cC} and \em{discrete} vertical category. Thus, the nerve of the bicategory #{\Para_\cM(\cC)} is not quite the gadget we're after - we need to add some vertical morphisms.
 }
 \p{
@@ -93,6 +94,6 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 }
 
 \transclude{efr-003K}
-
+\transclude{efr-003M}
 \transclude{efr-003G}
 
