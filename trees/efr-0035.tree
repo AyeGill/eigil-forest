@@ -77,5 +77,21 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 }
 
 \transclude{efr-003H}
+
+\transclude{efr-003L}
+\p{
+  It is not hard to see that the 2-nerve of a bicategory #{\cC} is a weak Segal category, and under the loose identification of weak Segal categories and pseudo double categories, it corresponds to the pseudo double category with horizontal bicategory #{\cC} and \em{discrete} vertical category. Thus, the nerve of the bicategory #{\Para_\cM(\cC)} is not quite the gadget we're after - we need to add some vertical morphisms.
+}
+\p{
+  One thing we can consider is the simplicial \em{bicategory} #{\BiCat^\ps([n],\Para_\cM(\cC))}. This has all the morphisms we want - we just need to thin them out so that the vertical components always live inside #{\cC,} i.e. have trivival parameter. It turns out that the way to do this is to consider the pullback of this diagram:
+}
+\quiver{
+  \begin{tikzcd}
+  \cdot \ar[r] \ar[d] & \Para_\cM(\cC)^{[n]} \ar[d]\\
+  N(B\cM)[n] \ar[r] & B\cM^{[n]}
+  \end{tikzcd}
+}
+
+
 \transclude{efr-003G}
 
