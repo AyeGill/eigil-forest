@@ -1,6 +1,7 @@
 \date{2024-07-19}
 \author{eigil-rischel}
 \import{macros}
+\taxon{proposition}
 \p{
   Let #{\cM} be a monoidal category which acts on #{\cC}.
   Let #{\hat{\cC} \to B\cM} be the fibration of bicategories which classifies this action.
@@ -36,6 +37,6 @@
     Since the right-hand map is a Buckley fibration, it is an equifibration \todo{make sure these are introduced}, and hence these pullbacks are homotopy pullbacks of bicategories. Since the tautological cosimplicial object #{\Delta \into \BiCat} is coSegal (in that its dual, a simplicial object in #{\BiCat^\op}, is a Segal object), the functor #{[n] \mapsto \cD^{[n]}} is a Segal object of #{[\Delta^\op,\BiCat],} which is weak Segal (with respect to the Lack model structure on bicategories) because the forgetful functors #{\cD^{[n]} \to \cD^{[m]}} are equifibrations. It is easy to see that #{\cM^n} is also a Segal object, and hence #{\dblPara_\cM(\cC)[-],} as a simplicial bicategory, is a weak Segal object. But the subcategory of 1-categories within bicategories is stable under homotopy limits, so that this implies that it is a weak Segal object as a simplicial category as well.
   }
   \p{
-    By the same argument, using lemma \ref{efr-003H}, the natural transformation #{\dblPara_\cM(\cC)[n] \to \cM^{n}} is a Reedy fibration - since #{\cM^{n}} is easily seen to be fibrant, this implies #{\dblPara_\cM(\cC)[n]} is fibrant as well.
+    By the same argument, using lemma \ref{efr-003M}, and the fact that pullbacks of fibrations preserve fibrations, the natural transformation #{\dblPara_\cM(\cC)[n] \to \cM^{n} = N(B\cM)} is a Reedy fibration. Since #{\cM^n} is easily seen to be Reedy fibrant, the same holds for #{\dblPara_\cM(\cC)}
   }
 }
