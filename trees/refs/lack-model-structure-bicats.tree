@@ -1,0 +1,10 @@
+\title{A Quillen Model Structure for Bicategories}
+\date{2004-11}
+\taxon{reference}
+\meta{doi}{10.1007/s10977-004-6757-9}
+\author{Stephen Lack}
+\meta{bibtex}{\startverb
+ @article
+{Lack_2004, title={A Quillen Model Structure for Bicategories}, volume={33}, ISSN={15730514, 09203036}, DOI={10.1007/s10977-004-6757-9}, number={3}, journal={K-Theory}, author={Lack, Stephen}, year={2004}, month={Nov}, pages={185â€“197} }
+\stopverb}
+

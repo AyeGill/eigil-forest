@@ -62,5 +62,18 @@
   Since trivial fibrations admit \em{strict} sections, this will give us the strict composites we were looking for.
 }
 
+\transclude{efr-003I}
+\p{
+See \ref{lack-model-structure-bicats}. Since we are not really interested in this structure, except as we pass through it to construct the objects we're interested in, we will not dwell too much on it. Note however one important point, observed by Buckley in his work on Grothendieck 2-fibrations: all fibrations in his sense have the equivalence lifting property.} 
+
+\p{
+  Note that there is an obvious inclusion #{\Cat \into \BiCat_s}.
+}
+\transclude{efr-003J}
+\p{
+  See \ref{johnson-yau-2dim-categories}. We will use this to construct, given the 2-fibration #{\Para_\cM(\cC) \to B\cM} corresponding to an action, a simplicial category classifying the double category #{\dblPara_\cM(\cC)}.
+}
+
 \transclude{efr-003H}
 \transclude{efr-003G}
+

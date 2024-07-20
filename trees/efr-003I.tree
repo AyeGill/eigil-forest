@@ -1,0 +1,12 @@
+\date{2024-07-20}
+\author{eigil-rischel}
+\import{macros}
+\title{Lack Model Structure}
+\taxon{theorem}
+\p{
+  There is a model structure on the category #{\BiCat_s} of bicategories and strict functors, in which
+  \ol{
+    \li{The weak equivalences are precisely the biequivalences, i.e. those (strict) functors which are equivalences on each hom-category, and surjective up to equivalence on objects}
+    \li{The fibrations are those functors #{F: \cC \to \cD} with the \em{equivalence lifting property}, namely those that are isofibrations on each hom-category, and where given an object #{x \in \cC} and an equivalence #{f: F(x) \xto{\sim} y}, there is a lift of #{f} to an equivalence #{\tilde{f}: x \xto{\sim} \tilde{y}}. We will also refer to these as \em{equifibrations}.}
+  }
+}

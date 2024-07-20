@@ -1,0 +1,15 @@
+\title{2-Dimensional Categories}
+\date{2020-06-17}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2002.06055}
+\meta{external}{http://arxiv.org/abs/2002.06055}
+\author{Niles Johnson}
+\author{Donald Yau}
+\meta{bibtex}{\startverb
+ @article
+{Johnson_Yau_2020, title={2-Dimensional Categories}, url={http://arxiv.org/abs/2002.06055}, DOI={10.48550/arXiv.2002.06055}, abstractNote={This book is an introduction to 2-categories and bicategories, assuming only the most elementary aspects of category theory. A review of basic category theory is followed by a systematic discussion of 2-/bicategories, pasting diagrams, lax functors, 2-/bilimits, the Duskin nerve, 2-nerve, adjunctions and monads in bicategories, 2-monads, biequivalences, the Bicategorical Yoneda Lemma, and the Coherence Theorem for bicategories. Grothendieck fibrations and the Grothendieck construction are discussed next, followed by tricategories, monoidal bicategories, the Gray tensor product, and double categories. Completely detailed proofs of several fundamental but hard-to-find results are presented for the first time. With exercises and plenty of motivation and explanation, this book is useful for both beginners and experts.}, note={arXiv:2002.06055 [math]}, number={arXiv:2002.06055}, publisher={arXiv}, author={Johnson, Niles and Yau, Donald}, year={2020}, month={Jun} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{This book is an introduction to 2-categories and bicategories, assuming only the most elementary aspects of category theory. A review of basic category theory is followed by a systematic discussion of 2-/bicategories, pasting diagrams, lax functors, 2-/bilimits, the Duskin nerve, 2-nerve, adjunctions and monads in bicategories, 2-monads, biequivalences, the Bicategorical Yoneda Lemma, and the Coherence Theorem for bicategories. Grothendieck fibrations and the Grothendieck construction are discussed next, followed by tricategories, monoidal bicategories, the Gray tensor product, and double categories. Completely detailed proofs of several fundamental but hard-to-find results are presented for the first time. With exercises and plenty of motivation and explanation, this book is useful for both beginners and experts.
+}}
+
