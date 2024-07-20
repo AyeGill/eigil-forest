@@ -30,7 +30,7 @@
   }
   \quiver{
     \begin{tikzcd}
-      \alpha_X^*F(X) \ar[r, dashed] \ar[d] & \alpha_Y^*F(Y) \ar[d]
+      \alpha_X^*F(X) \ar[r, dashed] \ar[d] & \alpha_Y^*F(Y) \ar[d]\\
       F(X) \ar[r] & F(Y)
     \end{tikzcd}
   }
