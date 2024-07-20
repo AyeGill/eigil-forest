@@ -55,9 +55,11 @@
 
 \transclude{efr-003A}
 \transclude{efr-003B}
+
+\transclude{efr-003C}
 \p{These are of course small parts of the \em{Reedy model structure} on simplicial objects, but we will not need to discuss this in detail.}
 
-\transclude{efr-0030}
+\transclude{efr-003D}
 \p{
   Since trivial fibrations admit \em{strict} sections, this will give us the strict composites we were looking for.
 }
