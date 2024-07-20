@@ -3,12 +3,20 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  Let #{p: \cC \to \cD} be an equifibration, and fix a bicategory #{\cK}:
+  Let #{p: \cC \to \cD} be a (strict) 2-fibration, and fix a bicategory #{\cK}:
   \ol{
     \li{The functor object #{\BiCat^\ps(\cK,\cC) \to \BiCat^\ps(\cK,\cD)} is again a 2-fibration}
     \li{If #{\cC} is fibred in 1-categories, so is #{\BiCat^\ps(\cK,\cC)}}
   }
 }
 \proof{
-  
+  \p{
+    First, let #{F, G: \cK \to \cC} be two pseudofunctors, and consider the category #{\Nat(F,G)} of strong natural transformations #{F \Rightarrow G} and modifications between these. We must prove that #{p} is a local fibration, i.e that #{\Nat(F,G) \to \Nat(pF,pG)} is a 1-fibration.
+  }
+  \p{
+    Thus let #{\alpha: F \Rightarrow G} be a strong natural transformation, and let #{\Gamma: p(\alpha) \to \beta'} be a modification, where #{\beta': pF \Rightarrow pG} is some other strong natural transformation. Then #{\Gamma} consists in a family of 2-cells in #{\cD} #{\Gamma_X: p(\alpha)_X \Rightarrow \beta_X'}. These are 2-cells #{p(\alpha_X) \to \beta'_X} and so we can find a family of Cartesian lifts #{\alpha_X \to \beta_X} (where this defines #{\beta_X})
+  }
+  \p{
+    The Cartesian-ness of the lift #{\alpha_X \to \beta_X} suffices to generate the necessary naturality squares \todo{DIAGRAM HERE}, 
+  }
 }
