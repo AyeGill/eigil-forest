@@ -17,6 +17,21 @@
     Thus let #{\alpha: F \Rightarrow G} be a strong natural transformation, and let #{\Gamma: p(\alpha) \to \beta'} be a modification, where #{\beta': pF \Rightarrow pG} is some other strong natural transformation. Then #{\Gamma} consists in a family of 2-cells in #{\cD} #{\Gamma_X: p(\alpha)_X \Rightarrow \beta_X'}. These are 2-cells #{p(\alpha_X) \to \beta'_X} and so we can find a family of Cartesian lifts #{\alpha_X \to \beta_X} (where this defines #{\beta_X})
   }
   \p{
-    The Cartesian-ness of the lift #{\alpha_X \to \beta_X} suffices to generate the necessary naturality squares \todo{DIAGRAM HERE}, 
+    The Cartesian-ness of the lift #{\alpha_X \to \beta_X} suffices to generate the necessary naturality squares \todo{DIAGRAM HERE}, and it is similarly not too hard to see that the equations hold. The equations for being a modification hold by construction, so that the lifted maps #{\alpha_X \to \beta_X} assemble into a modification. The same argument will show that, given some other modification #{\gamma \to \alpha} and a factorization over #{\beta'} in the base, it lifts and lifts uniquely to the total category.
+  }
+  \p{
+    Let us stop here to note that, if the hom-fibrations of #{\cC(X,Y) \to \cD(pX,pY)} are discrete fibrations, then the lifts above will be unique, and hence the modification lifting #{\Gamma} will be unique, and so also #{\BiCat^\ps(\cK,\cC)(F,G) \to \BiCat^\ps(\cK,\cD)(pF,pG)} will be a discrete fibration. Since this is what it means to be fibred in 1-categories, this proves part 2 of the lemma.
+  }
+  \p{
+    Now if #{F: \cK \to \cC} is a functor, and #{\alpha: G' \Rightarrow pF} is a natural transformation, we must construct again a Cartesian lift. As before, since the uniqueness properties making something Cartesian can more or less be checked object-wise, the difficult part is verifying that the individual objects #{\alpha_X^*F(X)} assemble into a pseudofunctor.
+  }
+  \p{
+    But once again, this can be done piecewise. Since the map #{\alpha_Y^*F(Y) \to F(Y)} is Cartesian, given each #{f: X \to Y \in \cK}, there is an essentially unique filler in the below diagram:
+  }
+  \quiver{
+    \begin{tikzcd}
+      \alpha_X^*F(X) \ar[r, dashed] \ar[d] & \alpha_Y^*F(Y) \ar[d]
+      F(X) \ar[r] & F(Y)
+    \end{tikzcd}
   }
 }
