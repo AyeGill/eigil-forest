@@ -64,6 +64,10 @@
   Since trivial fibrations admit \em{strict} sections, this will give us the strict composites we were looking for.
 }
 
+\transclude{efr-003O}
+
+\p{Having found that pseudo double categories are a full subcategory of simplicial categories, we might hope to characterize the essential image. However, they are not all weak Segal objects (as we've seen, this requires isofibrancy), and nor are they strict Segal (this would require discreteness - the strict Segal categories are exactly the strict double categories). There may be a good way of characterizing the image of #{\Dbl}, but the present theorem is suitable for our purposes.}
+
 \transclude{efr-003I}
 \p{
 See \ref{lack-model-structure-bicats}. Since we are not really interested in this structure, except as we pass through it to construct the objects we're interested in, we will not dwell too much on it. Note however one important point, observed by Buckley in his work on Grothendieck 2-fibrations: all fibrations in his sense have the equivalence lifting property.} 

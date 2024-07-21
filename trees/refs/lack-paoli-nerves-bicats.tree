@@ -1,0 +1,15 @@
+\title{2-nerves for bicategories}
+\date{2008-01-11}
+\taxon{reference}
+\meta{doi}{10.1007/s10977-007-9013-2}
+\author{Stephen Lack}
+\author{Simona Paoli}
+\meta{bibtex}{\startverb
+ @article
+{Lack_Paoli_2008, title={2-nerves for bicategories}, volume={38}, ISSN={15730514, 09203036}, DOI={10.1007/s10977-007-9013-2}, abstractNote={We describe a Cat-valued nerve of bicategories, which associates to every bicategory a simplicial object in Cat, called the 2-nerve. This becomes the object part of a 2-functor Nâ€¯: NHom â†’ [ op, Cat], where NHom is a 2-category whose objects are bicategories and whose 1-cells are normal homomorphisms of bicategories. The 2-functor N is fully faithful and has a left biadjoint, and we characterize its image. The 2-nerve of a bicategory is always a weak 2-category in the sense of Tamsamani, and we show that NHom is biequivalent to a certain 2-category whose objects are Tamsamani weak 2-categories.}, number={2}, journal={K-Theory}, author={Lack, Stephen and Paoli, Simona}, year={2008}, month={Jan}, pages={153â€“175},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We describe a Cat-valued nerve of bicategories, which associates to every bicategory a simplicial object in Cat, called the 2-nerve. This becomes the object part of a 2-functor Nâ€¯: NHom â†’ [ op, Cat], where NHom is a 2-category whose objects are bicategories and whose 1-cells are normal homomorphisms of bicategories. The 2-functor N is fully faithful and has a left biadjoint, and we characterize its image. The 2-nerve of a bicategory is always a weak 2-category in the sense of Tamsamani, and we show that NHom is biequivalent to a certain 2-category whose objects are Tamsamani weak 2-categories.
+}}
+

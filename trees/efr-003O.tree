@@ -1,0 +1,58 @@
+\date{2024-07-21}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  The 2-nerve functor of Lack and Paoli #{\BiCat^{\supic} \to [\Delta^\op,\Cat]} factors over the inclusion #{\BiCat^{\supic} \into \PsDbl}.
+  The resulting nerve functor #{N_\Dbl: \PsDbl \to [\Delta^\op,\Cat]} is fully faithful.
+  Moreover, the image of the \em{isofibrant} pseudo double categories consists exactly of the Reedy fibrant, 3-coskeletal, weak Segal categories.
+}
+\proof{
+  \p{
+    First, note that the inclusion #{\BiCat^\supic \to \PsDbl} is fully faithful, and so we may construct our factorization simply by taking #{N_\Dbl(\CC)[n] = \PsDbl([n],\CC),} viewing #{[n]} as a (vertically discrete) double category using the inclusion #{\Cat \into \BiCat^\supic \into \PsDbl}.
+  }
+  \p{
+    Let us quickly observe that, for \em{any} pseudo double category, the nerve is 3-coskeletal. Recall this means #{N_\Dbl(\CC)[n] \to N_\Dbl(\CC)[\partial \Delta^n]} is an isomorphism if #{n>3}. This is clear, since a double category has no four-dimensional information (by contrast, the case #{n=3} is not an isomorphism, but merely a discrete isofibration, since a 3-cell involves a diagram of 2-cells which may or may not commute).
+  }
+  \p{
+    The full faithfulness is more or less immediate. Certainly a pseudo double functor is determined by its action on objects, 1-cells and 2-cells, which are the objects and morphisms of #{N_\Dbl(\CC)[0],N_\Dbl(\CC)[1]}, and its chosen functoriality 2-cells, which are obtained by applying the functor #{N_\Dbl(\CC)[2] \to N_\Dbl(\DD)[2]} to a commutative triangle - this proves faithfulness. Conversely, it's straightforward to verify that the preceding data always assembles into a pseudofunctor, which proves fullness (the action on the higher simplices is determined by the action of the lower simplices due to coskeletality).
+  }
+
+  \p{
+    Let #{\CC} be an isofibrant pseudo double category. We must prove its image is Reedy fibrant and weak Segal.
+    As noted above the only things to check, in order to proove fibrancy, are the cases #{n=1,2,3}.
+    The case #{n=1} is exactly the assumption that #{\CC} is isofibrant, since #{N_\Dbl(\CC)[0] = \CC[0]} and #{N_\Dbl(\CC)[1] = \CC_1}.
+  }
+  \p{
+    In the case #{n=2}, the matching category consists of triangles (not necessarily commutative) in the horizontal category, and a lift is a choice of globular isomorphism rendering it commutative. Given a triple of (not necessarily globular) isomorphisms in the base, we can clearly compose these with this commutator to get another 2-cells rendering the target triangle commutative, which is the desired lift.
+  }
+  \p{
+    In the case #{n=3}, the matching category consists of tetrahedra, that is, quadruples of triangles choosing compositions for a triple of morphisms #{f,g,h}. There is a unique lift of such an object if and only if the implied square of globular 2-cells commute. Clearly this commutativity is stable under isomorphism, which implies we have isomorphism lifting in this case also.
+  }
+  \p{
+    To see that it's weakly Segal, consider the functor #{N_\Dbl(\cC)[n] \to N_\Dbl(\cC)[1]^{\times_{N_\Dbl(\cC)[0]}n}}, where this denotes the n-fold pullback in the obvious way. It suffices to show that these are all equivalences (since equivalences have the 2-of-3 property). By coskeletality it suffices to do this for #{n=2} and #{n=3}. In both cases it is easy to see that the functor is essentially surjective (since you can lift any object by choosing composites, and associator cells). The full faithfulness can be observed by considering the following diagram:
+    \quiver{
+      % https://q.uiver.app/#q=WzAsNixbMCwxLCJcXGJ1bGxldCJdLFsyLDEsIlxcYnVsbGV0Il0sWzEsMCwiXFxidWxsZXQiXSxbMCw0LCJcXGJ1bGxldCJdLFsxLDMsIlxcYnVsbGV0Il0sWzIsNCwiXFxidWxsZXQiXSxbMCwxLCJmJyIsMix7ImxhYmVsX3Bvc2l0aW9uIjo3MH1dLFswLDJdLFsyLDFdLFszLDRdLFs0LDVdLFszLDUsImYnIl0sWzAsM10sWzIsNF0sWzEsNV1d
+\[\begin{tikzcd}
+	& \bullet \\
+	\bullet && \bullet \\
+	\\
+	& \bullet \\
+	\bullet && \bullet
+	\arrow["{f'}"'{pos=0.7}, from=2-1, to=2-3]
+	\arrow[from=2-1, to=1-2]
+	\arrow[from=1-2, to=2-3]
+	\arrow[from=5-1, to=4-2]
+	\arrow[from=4-2, to=5-3]
+	\arrow["{f'}", from=5-1, to=5-3]
+	\arrow[from=2-1, to=5-1]
+	\arrow[from=1-2, to=4-2]
+	\arrow[from=2-3, to=5-3]
+\end{tikzcd}\]
+    }
+    A morphism in #{N_\Dbl(\cC)[2]} is a commutative diagram such as this, with each face filled with a 2-cell, so that the triangular faces are isomorphisms, and so that the resulting diagram of 2-cells commutes also. But clearly, if we forget the 2-cell between the morphisms labeled #{f,f'}, there is a unique way to reconstruct it - it must be the composite of the other two square 2-cells with the globular 2-isomorphisms in the triangle. This proves the full faithfulness in the case #{n=2}. The case #{n=3} is completely analogous.
+  }
+  \p{
+    Now conversely, given a weakly Segal Reedy fibrant simplicial category #{C}, it is the nerve of a pseudo double category with vertical category #{C[0]}, category of #{1}-cells #{C[1],} and composition given by choosing a section #{C[1] \times_{C[0]} C[1] \to C[2]}. By considering the category #{C[3]}, we find a unique choice of associator 2-cell, and looking at #{C[4]} proves coherence - the details are exactly as in \ref{lack-paoli-nerves-bicats} for bicategories.
+  }
+}
