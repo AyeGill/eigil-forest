@@ -32,8 +32,9 @@
   \p{
     To see that it's weakly Segal, consider the functor #{N_\Dbl(\cC)[n] \to N_\Dbl(\cC)[1]^{\times_{N_\Dbl(\cC)[0]}n}}, where this denotes the n-fold pullback in the obvious way. It suffices to show that these are all equivalences (since equivalences have the 2-of-3 property). By coskeletality it suffices to do this for #{n=2} and #{n=3}. In both cases it is easy to see that the functor is essentially surjective (since you can lift any object by choosing composites, and associator cells). The full faithfulness can be observed by considering the following diagram:
     \quiver{
+
       % https://q.uiver.app/#q=WzAsNixbMCwxLCJcXGJ1bGxldCJdLFsyLDEsIlxcYnVsbGV0Il0sWzEsMCwiXFxidWxsZXQiXSxbMCw0LCJcXGJ1bGxldCJdLFsxLDMsIlxcYnVsbGV0Il0sWzIsNCwiXFxidWxsZXQiXSxbMCwxLCJmJyIsMix7ImxhYmVsX3Bvc2l0aW9uIjo3MH1dLFswLDJdLFsyLDFdLFszLDRdLFs0LDVdLFszLDUsImYnIl0sWzAsM10sWzIsNF0sWzEsNV1d
-\[\begin{tikzcd}
+\begin{tikzcd}
 	& \bullet \\
 	\bullet && \bullet \\
 	\\
@@ -48,8 +49,9 @@
 	\arrow[from=2-1, to=5-1]
 	\arrow[from=1-2, to=4-2]
 	\arrow[from=2-3, to=5-3]
-\end{tikzcd}\]
+\end{tikzcd}
     }
+
     A morphism in #{N_\Dbl(\cC)[2]} is a commutative diagram such as this, with each face filled with a 2-cell, so that the triangular faces are isomorphisms, and so that the resulting diagram of 2-cells commutes also. But clearly, if we forget the 2-cell between the morphisms labeled #{f,f'}, there is a unique way to reconstruct it - it must be the composite of the other two square 2-cells with the globular 2-isomorphisms in the triangle. This proves the full faithfulness in the case #{n=2}. The case #{n=3} is completely analogous.
   }
   \p{
