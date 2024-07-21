@@ -66,7 +66,7 @@
 
 \transclude{efr-003O}
 
-\p{Having found that pseudo double categories are a full subcategory of simplicial categories, we might hope to characterize the essential image. However, they are not all weak Segal objects (as we've seen, this requires isofibrancy), and nor are they strict Segal (this would require discreteness - the strict Segal categories are exactly the strict double categories). There may be a good way of characterizing the image of #{\Dbl}, but the present theorem is suitable for our purposes.}
+\p{Having found that pseudo double categories are a full subcategory of simplicial categories, we might hope to characterize the essential image. However, they are not all weak Segal objects (as we've seen, this requires isofibrancy), and nor are they strict Segal (this would require discreteness - the strict Segal categories are exactly the strict double categories). There may be a good way of characterizing the image of #{\Dbl}, but the present theorem is suitable for our purposes}
 
 \transclude{efr-003I}
 \p{
@@ -101,3 +101,6 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \transclude{efr-003M}
 \transclude{efr-003G}
 
+\p{
+  Thus we have a functor from monoidal category actions to isofibrant pseudo double categories (in their guise as Reedy fibrant weakly Segal simplicial categories). Moreover, as it is given as a limit - and, since the limit in question is a pullback of a fibration, and hence a homotopy limit - it will be fairly straightforward to show that this construction preserves internal categories. Hence we will be able to use it to construct a pseudo triple category, as we wanted.
+}
