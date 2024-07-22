@@ -12,6 +12,6 @@
     {\cC^\simeq \ar[r, "T"]} & {\Arena_0.}
     \end{tikzcd}
   }
-  By \ref{efr-000H}, the image of this internal category under #{\dblPara(-)} is a pseudocategory internal to #{\PsDblCat} (a triple category). We call this triple category \em{the triple category of controlled processes,} and denote it by #{\Ctrl}, or #{\Ctrl_{T,\cC,\cA}} if we want to disambiguate the choice of doctrine.
+  By \ref{efr-000H}, the image of this internal category under #{\dblPara(-)} is a pseudocategory internal to #{\PsDbl} (a triple category). We call this triple category \em{the triple category of controlled processes,} and denote it by #{\Ctrl}, or #{\Ctrl_{T,\cC,\cA}} if we want to disambiguate the choice of doctrine.
 }
 \p{(Note the difference between #{\Arr(\cC)^\simeq} and #{\Arr(\cC^\simeq)} - the former has objects all morphisms of #{\cC}, and the morphisms between them given by isomorphisms, whereas the latter has objects only the isomorphisms in #{\cC})}

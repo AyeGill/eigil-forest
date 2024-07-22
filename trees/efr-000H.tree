@@ -4,7 +4,7 @@
 \import{macros}
 \taxon{theorem}
 \p{
-  The pseudofunctor #{\dblPara: \Arr(\SymMonCat) \to \PsDblCat}, which carries a symmetric monoidal functor #{\cC \to \cD} to the pseudo double category #{\dblPara_\cC(\cD)}, preserves homotopy limits.
+  The pseudofunctor #{\dblPara: \Arr(\SymMonCat) \to \PsDbl}, which carries a symmetric monoidal functor #{\cC \to \cD} to the pseudo double category #{\dblPara_\cC(\cD)}, preserves homotopy limits.
 }
 \proof{
 \p{

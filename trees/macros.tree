@@ -164,11 +164,18 @@
 
 \def\limit{#{\varprojlim}}
 \def\colimit{#{\varinjlim}}
+\def\colim{#{\operatorname{colim}}}
+
+%Kan extension
+\def\Ran{#{\mathrm{Ran}}}
+\def\Lan{#{\mathrm{Lan}}}
 
 \def\op{#{\mathrm{op}}}
 \def\co{#{\mathrm{co}}}
 \def\cc{#{\mathrm{cc}}}
 \def\lex{#{\mathrm{lex}}}
+\def\ps{#{\mathrm{ps}}}
+\def\supic{#{\mathrm{supic}}}
 
 \def\into{#{\hookrightarrow}}
 \def\onto{#{\twoheadrightarrow}}
@@ -193,6 +200,12 @@
 \def\Graph{#{\cat{Graph}}}
 \def\dblCat{#{\dblcat{Cat}}} % equipment of cats, not to be confused with DblCat
 \def\Mult{#{\cat{Mult}}}
+\def\PsDbl{#{\cat{PsDbl}}}
+\def\Dbl{#{\cat{Dbl}}}
+\def\sSet{#{\cat{sSet}}}
+\def\Nat{#{\operatorname{Nat}}}
+\def\Kl{#{\cat{Kl}}}
+
 
 % it'd be cool to have it automatically linked, like so:
 % \def\dblCat{#{\dblcat{Cat}}}{[#{\dblcat{Cat}}](equipment-of-cats)}
@@ -263,6 +276,7 @@
 \def\Traj{#{\cat{Traj}}}
 \def\Man{#{\cat{Man}}}
 \def\Vect{#{\cat{Vect}}}
+\def\fdVect{#{\cat{fdVect}}}
 
 % Categorical Systems Theory
 
@@ -271,7 +285,6 @@
 \def\Lens{#{\cat{Lens}}}
 \def\Para{#{\cat{Para}}}
 \def\dblPara{#{\dblcat{Para}}}
-\def\PsDblCat{#{\dblcat{PsDblCat}}}
 \def\Ctrl{#{\dblcat{Ctrl}}}
 \def\Sys{#{\cat{Sys}}}
 
@@ -293,6 +306,15 @@
 \def\det{#{\mathrm{det}}}
 \def\copy{#{\mathrm{copy}}}
 \def\del{#{\mathrm{del}}}
+\def\MarkFib{#{\cat{MarkFib}}}
+\def\Markov{#{\cat{Markov}}}
+
+\def\abs[x]{#{|\x|}}
+\def\Lip{#{\operatorname{Lip}}}
+
+% Logic
+\def\Stone{#{\cat{Stone}}}
+\def\Bool{#{\cat{Bool}}}
 
 
 % Geometry
