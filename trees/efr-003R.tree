@@ -1,0 +1,9 @@
+\date{2024-07-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\MM} be a monoidal strict double category, which acts on a strict double category #{\CC}.
+  Then for each #{n \in \Delta^\op}, we have an actegory #{\MM[n]} acting on #{\CC[n]}.
+  This yields a bisimplicial category #{[n,m] \mapsto \dblPara_{\MM[m]}(\CC[m])[n]}. This is an [iwss triple category](efr-003Q), denoted #{\Ctrl = \Ctrl[n,m]}
+}

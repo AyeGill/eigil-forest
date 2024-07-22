@@ -7,16 +7,19 @@
 
 \transclude{efr-002H}
 
+
+%Controlled processes - probably factor these things into a section?
 \transclude{efr-000C}
 
 \example{Mealy and Moore}{
   It is obvious that a controlled process #{I \to A} amounts to a [Moore machine](efr-0006), and that a controlled process #{A \to I} dually amounts to a [Mealy machine](efr-0005).
 }
-
+%Example: ML
 \transclude{efr-000E}
-
+%Morphisms of controlled processes
 \transclude{efr-000F}
-
+%Triple categories
 \transclude{efr-0035}
 
+%Symmetric monoidal structure
 \transclude{efr-000O}

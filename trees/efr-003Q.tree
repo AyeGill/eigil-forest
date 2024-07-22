@@ -1,0 +1,20 @@
+\date{2024-07-22}
+\author{eigil-rischel}
+\import{macros}
+\title{Iwss triple cateogry}
+\taxon{definition}
+\p{
+  \todo{Need a good name here!}
+  An \defcase{iwss triple category} (isofibrant weak-strict-strict) is a bisimplicial category #{\CC: \Delta^\op \times \Delta^\op \to \Cat} so that for each #{n}, #{\CC[n,-]} is a fibrant \em{strict} Segal category, and #{\CC[-,n]} is a fibrant weak Segal category.
+}
+\ol{
+  \li{A \defcase{object} of the triple category #{\CC} is an object of #{\CC[0,0]}.}
+  \li{The morphisms of #{\CC[0,0]} are called the \defcase{vertical morphisms} of \CC. They form a category denoted #{\CC_{0,0,-}}}
+  \li{The objects of #{\CC[0,1]} are called the \defcase{horizontal morphisms} of \CC. They form a category denoted #{\CC_{0,-,0}}}
+  \li{The objects of #{\CC[1,0]} are called the \defcase{transverse morphisms} of \CC, or the \defcase{protomorphisms}.}
+  \li{The vertical and horizontal morphisms form a strict double category (the one with nerve #{\CC[0,-]}), whose 2-cells are the morphisms of #{\CC[0,1]}. We call this the \em{planar} double category, and denote it #{\CC_{0,-,-}}}
+  \li{The vertical and transverse morphisms form a pseudo double category (the one with nerve #{\CC[-,0]}), whose 2-cells are the morphisms of #{\CC[1,0]}. We call this the vertical double category, and denote it #{\CC_{-,0,-}}}
+  \li{The horizontal transverse morphisms also form a pseudo double category, which has nerve #{\ob \CC[-,-]} - its 2-cells are the \em{objects} of #{\CC[1,1]}. We call this the horizontal double category, and denote it #{\CC_{-,-,0}}}
+  \li{For each of the three classes of morphism, there is a double category with it as the objects, the two classes of 2-cells involving it as the 1-cells, and the morphisms of #{\CC[1,1]} as the 2-cells. These are denoted #{\CC_{1,-,-}}, etc. There is no good way to name them.}
+  \li{The globular horizontal 2-cell isomorphisms, and the globular vertical 2-cell isomorphisms, are the same (in the sense that each has a companion in #{\CC_{1,-,-},} and hence the two sets of isomorphisms between any two transverse morphisms are canonically and functorially in bijection). Taking either of these sets as the 2-cells, there is a bicategory with the transverse morphisms as its morphisms, denoted #{\CC_{0,-,0}}}
+}

@@ -104,3 +104,9 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \p{
   Thus we have a functor from monoidal category actions to isofibrant pseudo double categories (in their guise as Reedy fibrant weakly Segal simplicial categories). Moreover, as it is given as a limit - and, since the limit in question is a pullback of a fibration, and hence a homotopy limit - it will be fairly straightforward to show that this construction preserves internal categories. Hence we will be able to use it to construct a pseudo triple category, as we wanted.
 }
+
+
+\transclude{efr-003Q}
+\remark{
+  One could replace each category #{\CC} with its nerve, obtaining a \em{trisimplicial set} #{\CC[n,m,k]} - the notations #{\CC_{-,0,-}} and so on for the sub-double categories should be understood in this way. Of course, analogously we could restrict to a simplicial strict double category. However, the homotopy theory of diagram categories is in some ways easier to think about, so we prefer this presentation.
+}
