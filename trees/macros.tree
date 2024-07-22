@@ -406,3 +406,4 @@
 %Utility
 
 \def\todo[note]{[\note](todo-tree)}
+\def\rparen{\startverb)\stopverb}
