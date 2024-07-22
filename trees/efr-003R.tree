@@ -5,5 +5,8 @@
 \p{
   Let #{\MM} be a monoidal strict double category, which acts on a strict double category #{\CC}.
   Then for each #{n \in \Delta^\op}, we have an actegory #{\MM[n]} acting on #{\CC[n]}.
-  This yields a bisimplicial category #{[n,m] \mapsto \dblPara_{\MM[m]}(\CC[m])[n]}. This is an [iwss triple category](efr-003Q), denoted #{\Ctrl = \Ctrl[n,m]}
+  This yields a bisimplicial category #{[n,m] \mapsto \dblPara_{\MM[m]}(\CC[m])[n]}. This is an [iwss triple category](efr-003Q)
+}
+\p{
+  In particular, let #{\MM \to \CC} be a functor of symmetric monoidal strict double categories. Then the canonical action of #{\MM} on #{\CC} gives a double category as above.
 }

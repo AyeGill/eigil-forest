@@ -114,3 +114,7 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
   The functoriality ensures every type of coherence between these objects that you could wish for. Since there is only one dimension of weakness, writing down coherence equations would probably be feasible - nevertheless, given the huge number of different data involved, the compact presentation of \ref{efr-003Q} seems preferable. In general, because of this huge amount of data, we expect mostly to work with fragments of this triple category.
 }
 \transclude{efr-003R}
+\transclude{efr-000I}
+\remark{
+  By construction, #{\Ctrl_{0,-,-} = \Arena}, #{\Ctrl_{-,0,-}} is a double category consisting of parameterized lenses and chart reparametrizations between them, and #{\Ctrl_{-,-,0}} is a double category consisting of parameterized lenses and lens isoparametrizations between them.
+}
