@@ -324,6 +324,7 @@
 \def\Subm{#{\cat{Subm}}}
 \def\CPoly{#{\cat{CPoly}}}
 \def\SPoly{#{\cat{SPoly}}}
+\def\Euc{#{\cat{Euc}}}
 
 % C-sets
 
@@ -360,7 +361,7 @@
 }
 
 \def\proof[body]{
-  \subtree{\title{Proof.} \body}
+  \subtree{\taxon{proof} \body}
 }
 
 \def\definition[head][body]{
