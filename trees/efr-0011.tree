@@ -3,22 +3,17 @@
 \import{macros}
 \title{Stochastic arenas}
 \p{
-  For a good theory of stochastic dynamical systems, we must develop a replacement for the double category #{\Arena}. The problem can be explained most clearly by considering discrete-time stochastic systems. Forgetting about the systems theory framework for a moment, and passing to the world of coalgebras, consider a stochastic system which outputs at each step a (possibly random) element of the set #{A}. Such a system is a coalgebra for the functor #{X \mapsto \Delta(X \times A)} in #{\Set}.
-  But the terminal coalgebra of this endofunctor is very hard to describe, involving nested applications of #{\Delta}. We would like to identify behaviours which lead to the same distribution on streams of #{A}. And indeed, we have the following: 
+  For a good theory of stochastic dynamical systems, we must develop a replacement for the double category #{\Arena}. The ordinary framework of categorical systems theory does accomodate stochastic dynamical systems, by choosing the tangent bundle functor #{T} to be some form of probability monad.
 }
-\transclude{efr-000X}
+
+\transclude{efr-003U}
+
 \p{
-  The unique homomorphism #{X \to A^\omega} sends each #{X} to the corresponding distribution on streams.
+  However, part of the purpose of categorical systems theory is to study the composition of dynamical systems. And part of our objective here is to treat the environment that produces the input itself as a system. Hence we would like to, for example, be able to compose an open stochastic dynamical system #{TS \lensto \arena{A}{X}} with a stochastic section #{s: A \to \Delta(X)} to obtain a closed stochastic dynamical system. Formally, this makes sense because #{\Delta} is a (commutative) monad - we are composing in the Kleisli category, essentially. But the ordinary theory does not contain such objects as stochastic sections. In fact, since a section is a special case of a lens, it is not totally clear what this is supposed to mean, since the definition of "stochastic lens" is somewhat mysterious.
 }
+
 \p{
-  Attempting to build a categorical systems theory version of this idea, we may try to define the category of charts as the category of squares
-  \quiver{
-    \begin{tikzcd}
-    \bar{A} \ar[d] \ar[r] & \bar{B}\ar[d]\\
-    A \ar[r] & B,
-    \end{tikzcd}
-  }
-  in #{\BorelStoch,} maybe limiting ourselves to those with deterministic vertical maps. This is indeed a good notion of "stochastic chart", as we will see - the problem is that it is not fibred over #{\BorelStoch,} (we may try embedding into a category which is fibred - for example, #{\FinStoch} embeds into #{\Set^\Delta,} which does have pullbacks - but the fiberwise opposite will generally not have the behavior we want.)
+  We will introduce a suitable category of stochastic lenses, and show that it forms a double category of "stochastic arenas" along with the category of (ordinary) charts. It is also possible to define stochastic charts (in fact, there is at least a candidate definition which is much simpler than the definition of stochastic lens), but forming a double category of stochastic lenses and stochastic charts is somewhat problematic. Moreover, the right notion of stochastic morphism between stochastic dynamical systems is somewhat mysterious.
 }
 \p{
   This problem has been studied for a number of years, see eg \ref{fibre-optics-2021}. The challenge is finding a definition which is simple enough to work with (the general "Fibre optics" of \ref{fibre-optics-2021} are complicated enough that even defining the composition is highly nontrivial, let alone proving its associativity,) and which allows the right set of possible correlations between the different variables on the boundary, while at the same time giving the right notion of equivalence between the "stochastic lenses".

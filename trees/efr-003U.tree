@@ -1,0 +1,12 @@
+\date{2024-07-30}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\title{Stochastic dynamical system in classical CST}
+\p{
+  Let #{\cC = \Set,} and let #{\cA(X) = \Set_{/X}}, so that arenas are indexed sets, charts are commutative squares and lenses are dependent lenses in the classical sense. Let #{T(S) = S \times \Delta(S) \xto{\pi_0} S}, where #{\Delta(S)} is the set of finite-support distributions on #{S}. Then:
+}
+\ol{
+  \li{A dynamical system with interface #{\arena{A}{X}} is equivalently a coalgebra for the functor #{S \mapsto \sum_{x: X} \Delta(X)^{A_x}}, that is, a system which produces (deterministically) an output #{x \in X}, accepts an input of type #{A_x}, then stochastically produces a new state.}
+  \li{In particular, a dynamical system with interface #{I} (a closed dynamical system) is simply a set equipped with a function #{S \to \Delta(S)}}
+}
