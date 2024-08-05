@@ -1,0 +1,10 @@
+\date{2024-08-05}
+\author{eigil-rischel}
+\import{macros}
+\tag{newsletter}
+\p{
+  Me, on advanced AI-guided proof assistants: [The Age of Proofs is over, the Time of the Definition has come](https://www.localcharts.org/t/the-age-of-proofs-is-over-the-time-of-the-definition-has-come/29096).
+}
+\p{
+  Related, Terry Tao: [A Computation-outsourced discussion of zero-density theorems for the Riemann zeta function](https://terrytao.wordpress.com/2024/07/07/a-computation-outsourced-discussion-of-zero-density-theorems-for-the-riemann-zeta-function/). Proofs often involve a certain amount of "conceptual" arguments and a certain amount of "raw calculation". In order to make the calculations simpler, so that they can be understood by human readers, we are often obliged to arrange the proof in a way that obscures the conceptual part. (A very elementary example of this is the "#{\epsilon /2} arguments" common at the start of real analysis classes - to prove continuity of #{f(x) + g(x)}, given #{\epsilon,} we find #{\delta_1, \delta_2} guaranteeing #{|f(x) - f(x_0)| < \epsilon /2} when #{|x - x_0| < \delta_1} and the same for #{g}, then take #{\delta = \min(\delta_1,\delta_2)}. The choice of #{\epsilon /2} appears arbitrary until we reach the end of the proof - of course it could have been \em{calculated} that this is the bound we need to end up under #{\epsilon}, but the proof is easier to read (in the sense of being easier to \em{verify as correct}) if we simply make the correct choice at the start).
+}
