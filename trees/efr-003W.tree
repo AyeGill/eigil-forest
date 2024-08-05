@@ -1,0 +1,17 @@
+\date{2024-08-05}
+\author{eigil-rischel}
+\import{macros}
+\date{2024-08-05}
+\author{eigil-rischel}
+\import{macros}
+\title{Newsletter}
+\scope{
+  \open\query
+
+  \def\query/newsletter[x]{
+    \isect{\author{\x}}{\tag{newsletter}}
+  }
+}
+\query{
+  \query/newsletter{eigil-rischel}
+}
