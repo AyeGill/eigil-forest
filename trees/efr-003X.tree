@@ -20,5 +20,5 @@
   An obvious problem class is something like the [Atari 57 Games](https://paperswithcode.com/sota/atari-games-on-atari-57), formally specified by their source code (represented symbolically, one assumes), an Atari 2600 emulator coded in Lean, and some "bridge code" specifiying the reward, etc.
 }
 \p{
-  My initial guess is that this is fairly ambitious problem class, and so perhaps it would be good to look for simpler things.
+  My initial guess is that this is fairly ambitious problem class, and so perhaps it would be good to look for simpler things. A conceptually very simple example would be "learn to play Pong and prove that your policy never lets the ball through". This can probably be simplified further by giving an simpler formal specification of Pong than the original source code, which presumably contains a lot of incidental complexity - but ultimately extracting simple concepts amenable to proof from a complex specification is part of what we want these algorithms to do here.
 }
