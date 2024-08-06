@@ -16,20 +16,10 @@
   We will introduce a suitable category of stochastic lenses, and show that it forms a double category of "stochastic arenas" along with the category of (ordinary) charts. It is also possible to define stochastic charts (in fact, there is at least a candidate definition which is much simpler than the definition of stochastic lens), but forming a double category of stochastic lenses and stochastic charts is somewhat problematic. Moreover, the right notion of stochastic morphism between stochastic dynamical systems is somewhat mysterious.
 }
 \p{
-  This problem has been studied for a number of years, see eg \ref{fibre-optics-2021}. The challenge is finding a definition which is simple enough to work with (the general "Fibre optics" of \ref{fibre-optics-2021} are complicated enough that even defining the composition is highly nontrivial, let alone proving its associativity,) and which allows the right set of possible correlations between the different variables on the boundary, while at the same time giving the right notion of equivalence between the "stochastic lenses".
+  This problem has been studied for a number of years, see eg \ref{fibre-optics-2021}. The challenge is finding a definition which is simple enough to work with (the general "Fibre optics" of \ref{fibre-optics-2021} are complicated enough that even defining the composition is highly nontrivial, let alone proving its associativity or saying anything useful about it,) and which allows the right set of possible correlations between the different variables on the boundary, while at the same time giving the right notion of equivalence between the "stochastic lenses".
 }
 \p{
-  We can take an idea from the theory of polynomial functors. Observe that any stochastic lens #{\phi: X \to Y} should give a postcomposition morphism #{\Lens(-,X) \to \Lens(-,Y).} Restricting our attention to objects over a point #{A = \binom{\bar{A}}{*},} we get a functor #{\cA_* \to \Set,} for each arena (carrying #{\bar{A}} to #{\Lens(\binom{\bar{A}}{*},\binom{\bar{X}}{X})},) and a natural transformation between these for each lens. Hence, if we can
-  \ol{
-    \li{Describe these functors for each arena - that is, give a suitable definition of stochastic lens #{\binom{\bar{A}}{A} \to \binom{\bar{X}}{X}} in the case where #{A = *}}
-    \li{
-      Classify the correct subset of the natural transformations corresponding to stochastic lenses (for polynomial functors, this is all of them)
-    }
-  }
-  We have a good chance of classifying stochastic lenses, at least in the case where the base category has "enough points", in the sense that #{\cC(I,-)} is faithful. 
-}
-\p{
-  To go beyond the case of enough points, we may try to use the category of (non-dependent) optics as our category of test objects, but this is more complicated.
+  Ordinary dependent lenses in set can be described as the fiberwise opposite of the codomain fibration #{\Set^\to \to \Set}. If we attempt to adapt this to Markov categories, we immediately run into the problem that the codomain fibration is hardly ever a fibration, since hardly any Markov categories have pullbacks. However, we can make the following definition:
 }
 \transclude{efr-0019}
 \p{
