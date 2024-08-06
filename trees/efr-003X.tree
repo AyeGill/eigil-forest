@@ -1,0 +1,24 @@
+\date{2024-08-06}
+\author{eigil-rischel}
+\import{macros}
+\title{
+  Verified Reinforcement Learning
+}
+\p{
+  Recall that the goal of \em{reinforcement learning} is, given a Markov Decision Problem (MDP), to find a policy which achieves a high total reward #{r} (usually in the sense of expected value, i.e optimizing #{E(r)}, and sometimes different variations on MDPs are taken as the problems).
+}
+\p{
+  The goal of \em{verified reinforcement learning} is, given an MDP, paired with a formal specification of said MDP, to produce both a policy #{\pi} and a formal proof #{\phi} of some lower bound #{r_0} on the expected value (i.e #{\phi} must prove #{E_\pi(r) \geq r_0}).
+}
+\p{
+  Obviously not only the formal specification, but also the language in which the formal specification is given and in which the proof must be given, is part of the problem information. A good starting point would be to take Lean as the language here, but it's also possible an even simpler case should be studied first.
+}
+\p{
+  It might also be interesting to consider the "underspecified" case, i.e the input formal specification of the problem does not pin the problem down completely - hence the proof (using those as preconditions) must give a lower bound for our policy on all problems satisfying those conditions, not just the given one.
+}
+\p{
+  An obvious problem class is something like the [Atari 57 Games](https://paperswithcode.com/sota/atari-games-on-atari-57), formally specified by their source code (represented symbolically, one assumes), an Atari 2600 emulator coded in Lean, and some "bridge code" specifiying the reward, etc.
+}
+\p{
+  My initial guess is that this is fairly ambitious problem class, and so perhaps it would be good to look for simpler things.
+}
