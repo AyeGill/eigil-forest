@@ -1,0 +1,8 @@
+\date{2024-11-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cD \to \cC} be a Markov fibration. Then we may form the completion of #{\cD \times_\cC \cC_{\det} \to \cC_{\det}.} By the universal property, there is a canonical induced functor #{\bar{\cD} \to \cD}.
+  We say the Markov fibration #{\cD} \em{admits conditionals} if this functor is an equivalence of categories.
+}
