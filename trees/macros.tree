@@ -296,7 +296,7 @@
 % Lenses
 
 \def\arena[E][B]{#{{\E \choose \B}}}
-  
+
 % Probability
 
 \def\expect{#{\EE}}
@@ -388,7 +388,9 @@
 % Figures
 
 \def\quiver[body]{
+  \figure{
   \tex{\usepackage{quiver, amsopn, amssymb, mathrsfs}}{\body}
+  }
 }
 
 \def\image[source]{
