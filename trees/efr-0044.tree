@@ -5,16 +5,17 @@
 \p{
     Let #{\cC} be a Markov category. Suppose #{\cC_\det} has pullbacks. Suppose furthermore, given a diagram as below:
 
-    \quiver{
+
+ \quiver{
         \begin{tikzcd}
             P \ar["f", rrd] \ar["g", ddr] & & \\
             & X \times_Z Y \ar[r] \ar[d] & Y \ar[d]\\
             & X \ar[r] & Z,
         \end{tikzcd}
     }
-
-    where the pullback is in #{\cC_\det}, and #{f} is deterministic (but not necessarily #{g}), that there exists a unique (not necessarily deterministic= factorization #{P \to X \times_Z Y} making the diagram commute. Then the codomain functor #{\cC^\to \to \cC} is a Markov fibration.
+    where the pullback is in #{\cC_\det}, and #{f} is deterministic (but not necessarily #{g}), that there exists a unique (not necessarily deterministic)  factorization #{P \to X \times_Z Y} making the diagram commute. Then the codomain functor #{\cC^\to \to \cC} is a Markov fibration.
 }
+
 \proof{
     \p{
         (Fill this out) it is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - the above property is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts are always in particular deterministic, the second condition also follows from this assumption, simply taking the other leg to be deterministic.
