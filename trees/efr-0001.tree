@@ -3,49 +3,12 @@
 \author{eigil-rischel}
 \import{macros}
 
-\transclude{efr-0002}
-\transclude{efr-0004}
-\transclude{efr-0009}
-\transclude{efr-0011}
-
+%Review of categorical CT
 \transclude{efr-0023}
 
-\transclude{efr-000D}
-
+%Stochastic arenas
 \transclude{efr-0011}
 
+
+%Triple cat. of controlled processes
 \transclude{efr-000D}
-\transclude{efr-001B}
-
-\transclude{efr-001W}
-
-\transclude{efr-001Y}
-
-\transclude{efr-0020}
-
-\transclude{efr-0021}
-
-\transclude{efr-0022}
-
-\transclude{efr-002A}
-
-\transclude{efr-002E}
-
-\transclude{efr-002P}
-
-\transclude{efr-003T}
-
-\subtree{
-  \title{Cutting board}
-  \transclude{efr-002Q}
-  
-  \transclude{efr-000G}
-  \transclude{efr-000X}
-
-  \transclude{efr-001L}
-  \transclude{efr-002S}
-  \transclude{efr-0030}
-
-}
-
-\transclude{todo-tree}
