@@ -13,18 +13,30 @@
 }
 
 \p{
-  We will introduce a suitable category of stochastic lenses, and show that it forms a double category of "stochastic arenas" along with the category of (ordinary) charts. It is also possible to define stochastic charts (in fact, there is at least a candidate definition which is much simpler than the definition of stochastic lens), but forming a double category of stochastic lenses and stochastic charts is somewhat problematic. Moreover, the right notion of stochastic morphism between stochastic dynamical systems is somewhat mysterious.
+  We will introduce a suitable category of stochastic lenses, and show that it forms a double category of "stochastic arenas" along with the category of (ordinary) charts. It is also possible to define stochastic charts (in fact, there is at least a candidate definition which is much simpler than the definition of stochastic lens), but forming a double category of stochastic lenses and stochastic charts is somewhat problematic.
 }
 \p{
   This problem has been studied for a number of years, see eg \ref{fibre-optics-2021}. The challenge is finding a definition which is simple enough to work with (the general "Fibre optics" of \ref{fibre-optics-2021} are complicated enough that even defining the composition is highly nontrivial, let alone proving its associativity or saying anything useful about it,) and which allows the right set of possible correlations between the different variables on the boundary, while at the same time giving the right notion of equivalence between the "stochastic lenses".
 }
 \p{
-  Ordinary dependent lenses in set can be described as the fiberwise opposite of the codomain fibration #{\Set^\to \to \Set}. If we attempt to adapt this to Markov categories, we immediately run into the problem that the codomain fibration is hardly ever a fibration, since hardly any Markov categories have pullbacks. However, we can make the following definition:
+  Ordinary dependent lenses in set can be described as the fiberwise opposite of the codomain fibration #{\Set^\to \to \Set} (or, more generally, #{\cC \to \cC} if #{\cC} has pullbacks). If we attempt to adapt this to Markov categories, we immediately run into the problem that the codomain fibration is hardly ever a fibration, since a Markov category has pullbacks if and only if it is Cartesian (ie if every morphism is deterministic).
 }
+
+
+%Markov fib def'n
 \transclude{efr-0019}
-\p{
-  The minimal paradigmatic example here is the Markov category where objects are (deterministic) maps in #{\Fin}, and morphisms are commutative squares in #{\FinStoch}. The codomain functor from this to #{\FinStoch} is a Markov fibration, as can be readily verified.
-}
+
+%Rmk on positivity
+\transclude{efr-0040}
+
+%Lemma on restricting
+\transclude{efr-0042}
+
+%BorelStoch is fibration
+\transclude{efr-0041}
+%FinStoch is fibration
+\transclude{efr-0043}
+
 \transclude{efr-001F}
 
 \transclude{efr-002S}
@@ -38,7 +50,7 @@
 
 
 \p{
-  Markov categories generally do not have pullbacks, for the same reason that they usually don't have products. This issue generally hinders the construction of fibrations, in the ordinary sense, of Markov categories. However, we can go part of the way. The idea behind both of the preceding definitions is that given a pullback in the deterministic category, say #{A \times_Y X}, a map #{P \to A \times_Y X} \em{where the #{X}-coordinate is deterministic} should be uniquely determined by a choice of (deterministic) map #{P \to X} and (nondeterministic) #{P \to A} such that the square commutes. The analogous statement for products - that a map #{P \to A \otimes X} with deterministic #{X}-component is uniquely determined by the projections (or marginals) #{P \to X, P \to A} - is a consequence of the \em{positivity} axiom (see Fritz...), and hence holds in most Markov categories of interest. 
+  Markov categories generally do not have pullbacks, for the same reason that they usually don't have products. This issue generally hinders the construction of fibrations, in the ordinary sense, of Markov categories. However, we can go part of the way. The idea behind both of the preceding definitions is that given a pullback in the deterministic category, say #{A \times_Y X}, a map #{P \to A \times_Y X} \em{where the #{X}-coordinate is deterministic} should be uniquely determined by a choice of (deterministic) map #{P \to X} and (nondeterministic) #{P \to A} such that the square commutes. The analogous statement for products - that a map #{P \to A \otimes X} with deterministic #{X}-component is uniquely determined by the projections (or marginals) #{P \to X, P \to A} - is a consequence of the \em{positivity} axiom (see Fritz...), and hence holds in most Markov categories of interest.
 }
 
 

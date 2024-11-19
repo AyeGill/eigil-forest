@@ -1,0 +1,13 @@
+\date{2024-11-19}
+\taxon{proposition}
+\author{eigil-rischel}
+\import{macros}
+\p{
+    Let #{p: \cD \to \cC} be a Markov fibration, let #{\cC' \subseteq \cC, \cD' \subseteq \cD} be full subcategories so that #{p(\cD') \subseteq \cC'},
+    and suppose #{\cC'} is a monoidal subcategory. Suppose finally #{\cD'} is stable under pullback along deterministic morphisms in #{\cC'}. Then #{\cD' \to \cC'} is again a Markov fibration.
+}
+\proof{
+    \p{
+        By assumption, given #{Y \in \cD'} and {f: X \to p(Y) \in \cC'}, the Cartesian lift #{X' \to Y} is again in #{\cD'}. The fullness of the subcategory inclusions suffices to prove the existence and uniqueness of the required lifts so that this is still Cartesian after restricting. For the same reason, since we have just observed that the Cartesian lifts are the same as in #{\cD \to \cC}, the second part of the definition also holds.
+    }
+}

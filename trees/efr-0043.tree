@@ -1,0 +1,7 @@
+\date{2024-11-19}
+\taxon{corollary}
+\author{eigil-rischel}
+\import{macros}
+\p{
+    #{\FinStoch^\to \to \FinStoch} is a Markov fibration.
+}
