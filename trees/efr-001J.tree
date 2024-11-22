@@ -3,12 +3,18 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{p: \cD \to \cC_\det} be a Markov fibration, and let #{X \in \cD} be an object.
-  The corepresentable copresheaf #{\cD(X,-)} over #{p(X)} admits a \em{stochastic completion}, that is, a natural transformation #{\cD(X,-) \to \bar{\cD(X,-)}} to a stochastically complete indexed Markov copresheaf #{\bar{\cD(X,-)},} which is initial among such natural transformations. This natural transformation is monoidal.
+    Let #{\cD_0 \to \cC_0} be a fibration, and let #{\bar{X} \in \cD_0} be an object. Let #{\cC_0 \to \cC} be any faithful and bijective on objects functor.
+    Then the corepresentable copresheaf associated to #{\bar{X}} admits a completion, that is, an initial natural transformation to a complete functor.
+    The elements of #{C(\bar{X},\bar{Y})} are given by the following set: [todo-list](write this out).
 }
 \p{
-  Specifically, the stochastic completion is given on #{Y \in \cD} by the following coend:
-  ##{\int^{(M,p_X,p_Y) \in \Span_\det(X,Y)} \cC_{/X}(X,M) \times \cD_{M}(p_X^*\bar{X}, p_Y^*\bar{Y}),}
-  where #{\Span_\det(X,Y)} denotes the category where objects are spans #{X \leftarrow M \to Y} in #{\cC_\det}, and morphisms are maps #{M \to M'} \em{in #{\cC}} making the two squares commute.
-  #{\cC_{/X}(X,M)} is the set of maps in the slice, that is, sections of #{p_X: M \to X}.
+
+}
+\proof{
+    \p{
+        [[todo-list]]
+    }
+    \p{
+        By the universal property, natural transformations out of the completion are given by natural transformation out of #{[\bar{X},-]}. By the (dual) Yoneda Lemma, these are given exactly by the completion of #{\bar{Y}} evaluated at #{\bar{X}}, which was precisely the claim.
+    }
 }

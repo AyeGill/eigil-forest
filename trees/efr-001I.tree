@@ -3,12 +3,14 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{p: \cD \to \cC} be a Markov functor. An \em{indexed Markov copresheaf} is a tuple consisting of
-  #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))}, where #{F} is a Markov copresheaf and #{\alpha} is a \em{monoidal} natural transformation. Note that #{\alpha} necessarily preserves deterministic elements. We say #{F} is "over" #{X}, and may suppress #{\alpha} and #{X} from the notation.
+    Let #{p: \cD \to \cC} be a functor. An \em{indexed copresheaf} on #{\cD} is a tuple #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))} consisting of a copresheaf, an object of #{\cC}, and a natural transformation #{\alpha} as indicated. We say the indexed copresheaf is \em{over} #{X}, and we will abuse the terminology by referring to #{F} itself as an indexed copresheaf, leaving the transformation #{\alpha} implicit (for example, "let #{F} be an indexed copresheaf over #{X}").
 }
 \p{
-  Note that the corepresentable copresheaf #{\cD(A,-)} is canonically indexed over #{p(A)} by the mapping #{p: \cD(A,B) \to \cC(p(A),p(B))}.
+    If #{F} is an indexed copresheaf over #{X}, we say it \em{respects Cartesian morphisms} if, whenever #{f: \bar{A} \to \bar{B}} is morphism in #{\cD}, Cartesian for #{p}, and #{s: X \to p(\bar{A})}, there is a bijection between elements of #{F(\bar{B})} over #{p(f)s} and elements of #{F(\bar{A})} over #{s} - note that when #{F} is (co)representable, this is precisely the defining property of a Cartesian morphism.
 }
 \p{
-  Let #{p: \cD \to \cC_\det} be a Markov fibration, and let #{F: \cD \to \Set} be an indexed Markov copresheaf over #{A} for the composite #{\cD \to \cC_\det \to \cC}. We say it is \em{stochastically complete} if, given a Cartesian map #{X \to Y \in \cD} (Cartesian for the fibration #{p}) and a deterministic element #{h\in F(Y),} there is a bijection between lifts of #{h} to #{F(X)} and maps #{A \to X} making the triangle commute. 
+    Let #{p: \cD_0 \to \cC_0}, #{\cC_0 \to \cC} be two functors, where #{\cC_0 \to \cC} is faithful and bijective on objecys. Let #{F} be an indexed copresheaf on #{\cD \to \cC}. Then there is a subcopresheaf #{F_0 \subseteq F} indexed on #{\cD_0 \to \cC_0}, given simply by the preimage of #{\cC_0} under #{\alpha} (this is a subfunctor by naturality).
+}
+\p{
+    We say #{F} is \em{complete} in this situtation if, given a map #{f: A \to X} and a #{p}-Cartesian lift #{\bar{f}: \bar{A} \to \bar{X}}, and a \em{universal} element #{\eta \in F_0(\bar{X})} over #{1_X}, every section #{s: X \to A \in \cC} admits a unique lift to an element #{\bar{s} \in F(\bar{A})} so that #{F(\bar{f})(\bar{s}) = \bar{\eta}
 }

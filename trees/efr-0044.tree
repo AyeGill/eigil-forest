@@ -18,6 +18,6 @@
 
 \proof{
     \p{
-        (Fill this out) it is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - the above property is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts are always in particular deterministic, the second condition also follows from this assumption, simply taking the other leg to be deterministic.
+        [todo-tree](Fill this out) it is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - the above property is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts are always in particular deterministic, the second condition also follows from this assumption, simply taking the other leg to be deterministic.
     }
 }
