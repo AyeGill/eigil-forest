@@ -12,5 +12,5 @@
     Let #{p: \cD_0 \to \cC_0}, #{\cC_0 \to \cC} be two functors, where #{\cC_0 \to \cC} is faithful and bijective on objecys. Let #{F} be an indexed copresheaf on #{\cD \to \cC}. Then there is a subcopresheaf #{F_0 \subseteq F} indexed on #{\cD_0 \to \cC_0}, given simply by the preimage of #{\cC_0} under #{\alpha} (this is a subfunctor by naturality).
 }
 \p{
-    We say #{F} is \em{complete} in this situtation if, given a map #{f: A \to X} and a #{p}-Cartesian lift #{\bar{f}: \bar{A} \to \bar{X}}, and a \em{universal} element #{\eta \in F_0(\bar{X})} over #{1_X}, every section #{s: X \to A \in \cC} admits a unique lift to an element #{\bar{s} \in F(\bar{A})} so that #{F(\bar{f})(\bar{s}) = \bar{\eta}
+    We say #{F} is \em{complete} in this situtation if, given a map #{f: A \to X} and a #{p}-Cartesian lift #{\bar{f}: \bar{A} \to \bar{X}}, and a \em{universal} element #{\eta \in F_0(\bar{X})} over #{1_X}, every section #{s: X \to A \in \cC} admits a unique lift to an element #{\bar{s} \in F(\bar{A})} so that #{F(\bar{f})(\bar{s}) = \bar{\eta}}
 }
