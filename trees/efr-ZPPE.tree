@@ -1,0 +1,5 @@
+\date{2025-01-16}
+\title{Moloch and Goodhart error terms}
+\p{
+  Two sources of social coordination issues: Prisoner's Dilemma-type externalities where incentives are misaligned (Moloch), and Goodhart's law-type specification problems where agents communicate through a low-dimensional interface, and so you can't properly specify what you truly want to optimize.
+}
