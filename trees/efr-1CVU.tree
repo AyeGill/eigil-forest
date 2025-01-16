@@ -1,0 +1,6 @@
+\date{2025-01-16}
+\title{Laplace domain}
+\import{macros}
+\p{
+  The \em{Laplace transform} of a function #{f} is #{Lf(s) = \int_0^\infty f(t)e^{-st}dt}. This transformation turns differentiation into multiplication by #{s}, and is therefore useful for studying differential equations.
+}

@@ -1,0 +1,10 @@
+\date{2025-01-16}
+\title{Quantitative sheaves for probability}
+\import{macros}
+\p{
+  Given a topological space, its points are in bijection with a certain class of functors #{Sh(X) \to \Set}.
+  I have the idea that some quantitative version of this can encode information about a probability measure on #{X}, thus giving us a categorical language for probability spaces.
+}
+\p{
+  The inspiration for this idea is that, for \em{deterministic} continuous-time dynamical systems, the family of "interval systems" gives a full subcategory equivalent to the interval category, and thus a functor from systems to temporal sets describing the "ordinary" trajectories. We would like to extend this idea to stochastic systems as in [[efr-SKTW]].
+}
