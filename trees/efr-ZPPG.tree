@@ -1,0 +1,30 @@
+\date{2025-02-13}
+\import{macros}
+\author{eigil-rischel}
+\p{
+  Let #{\cC} be a monoidal category.
+  Recall that a \em{state} is a morphism #{I \to X}, a \em{costate} is a morphism #{X \to I}, and a \em{scalar} is an endomorphism of #{I}.
+}
+\p{
+  We say \cC has \em{enough states} if, given two parallel morphisms #{f,g: X \to Y}, if #{f\psi = g\psi} for every state #{\psi: I \to X}, then #{f = g}. In the dual case, we say #{\cC} has \em{enough costates}. If, given #{f,g} as above, so that for every pair of state and costate #{\psi,\phi}, #{\phi f \psi = \phi g \psi}, then #{f=g}, we say the category has \em{enough simple contexts}. Note that if #{\cC} has enough states and enough costates, then it has enough simple contexts (but the converse is not true in general).
+}
+\p{
+  We may also use these terms in restricted forms - for example, if there is some class of "good" morphisms so that probing with good states suffices to distinguish morphisms, we may say \cC has "enough good states", and so on.
+}
+\p{
+  We say #{\cC} has enough independent states (resp. costates, simple contexts) if, given a pair of "multimorphisms" #{f,g: \otimes_i X_i \to \otimes_j Y_j,} it suffices to test with every state (resp costate, pair of state and costate) of the form #{\otimes_i \psi_i, \psi_i: I \to X_i} (here we suppress the structure isomorphisms).
+}
+\proposition{
+  \p{
+    #{\Stoch} has enough independent deterministic states (but not costates). #{\Stoch_{\leq 1}} has enough independent deterministic states and costates (and hence simple contexts).
+  }
+  \p{
+    In both cases it suffices, for the state part, to observe that deterministic states (which are always independent, when joint) are simply points, and a (sub)Markov kernel is determined by its value on points.
+  }
+  \p{
+    A costate in #{\Stoch_{\leq 1}} is equivalently a measurable function #{f: X \to [0,1]}. It is deterministic if #{f(x)^2 = f(x)} for all #{x}, which is equivalent to saying #{f(x) \in \{0,1\}}. In other words, #{f} is an indicator function for a measurable set. It is clear then that there are enough deterministic costates, since a measure is determined by its value on such sets.
+  }
+  \p{
+    The independent case is not trivial, since all deterministic costates with multiple inputs are not independent in the same sense. A costate #{f: X \otimes Y \to I} is independent if and only if it classifies a subset of the form #{A \times B}. But by the Caratheodory extension theorem (since the measures here are subprobability measures, hence finite), this suffices to determine the measure on all (measurable) sets, finishing the proof.
+  }
+}
