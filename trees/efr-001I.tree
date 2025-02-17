@@ -6,6 +6,9 @@
     Let #{p: \cD \to \cC} be a functor. An \em{indexed copresheaf} on #{\cD} is a tuple #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))} consisting of a copresheaf, an object of #{\cC}, and a natural transformation #{\alpha} as indicated. We say the indexed copresheaf is \em{over} #{X}, and we will abuse the terminology by referring to #{F} itself as an indexed copresheaf, leaving the transformation #{\alpha} implicit (for example, "let #{F} be an indexed copresheaf over #{X}").
 }
 \p{
+A map of indexed copresheaves #{(X,F,\alpha) \to (Y,G,\beta)} is a natural transformation #{F \to G} and a map #{Y \to X \in \cC} so that the obvious square commutes.
+}
+\p{
     If #{F} is an indexed copresheaf over #{X}, we say it \em{respects Cartesian morphisms} if, whenever #{f: \bar{A} \to \bar{B}} is morphism in #{\cD}, Cartesian for #{p}, and #{s: X \to p(\bar{A})}, there is a bijection between elements of #{F(\bar{B})} over #{p(f)s} and elements of #{F(\bar{A})} over #{s} - note that when #{F} is (co)representable, this is precisely the defining property of a Cartesian morphism.
 }
 \p{

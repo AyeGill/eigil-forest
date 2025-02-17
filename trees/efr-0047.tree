@@ -1,0 +1,16 @@
+\date{2024-11-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    Let #{\cC} be a Markov category. Suppose #{\cC} is positive, and has deterministic pullbacks along diagonals.
+    Then #{\cC^\to \to \cC} is a Markov fibration.
+}
+
+\proof{
+\p{
+As noted above, #{\cC^\to \to \cC} is a Markov fibration if and only if every pullback #{X \times_Z Y} in #{\cC_\det} exists, and every pair of compatible maps with #{f: A \to X} deterministic has a unique pairing. We saw that for #{\cC} to be positive is equivalent to the statement that this holds whenever #{Z = *}, i.e for all ordinary products. Now consider a pullback #{X \times_Z Y} and let #{f,g} be compatible maps with #{f} deterministic. Then there is a unique pairing #{A \to X \otimes Y}. The claim is that this admits a unique lift to #{X \times_Z Y}. Note that this is isomorphically the pullback #{(X \otimes Y) \times_{Z \otimes Z} Z} of the product of the two maps to #{Z} along the diagonal. Hence we must show that the composite #{A \to X \otimes Y \to Z \otimes Z} has a unique lift over the diagonal.
+}
+\p{Since the diagonal is split by either projection, clearly any such lift is unique if it exists, so existence suffices. Since #{A \to X} is deterministic, and by assumption the two composites #{A \to Z} agree, they are in particular both deterministic. But for #{A \to Z} to be deterministic is precisely for the independent pairing #{A \to Z \otimes Z} to lift over the diagonal, which is what we wanted. This concludes the proof.}
+
+}

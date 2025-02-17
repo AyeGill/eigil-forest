@@ -1,0 +1,7 @@
+\date{2024-12-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+    #{\cD \to \cC} is a [Markov fibration](efr-0019) if and only if #{\cD \times_\cC \cC_\det \to \cC_\det} is a fibration and each representable copresheaf #{\cD(X,-)} is complete in the sense of \ref{efr-001I}.
+}

@@ -1,0 +1,16 @@
+\date{2024-11-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    Let #{\cC} be a Markov category.
+    Then #{\cC} is positive if and only if, given #{f: A \to X} deterministic and #{g: A \to Y} (not necessarily deterministic), there is a unique #{h: A \to X \otimes Y} so that the marginals equal #{f,g}.
+}
+\p{
+    For the forwards direction,
+    clearly such a map exist, given by composing the tensor product of #{f} and #{g} with the copy map of #{A} (the independent pairing of the two maps).
+    To see it  is unique, let #{h: A \to X \otimes Y} be some other candidate map, and apply the positivity axiom to the maps #{h: A \to X \otimes Y, \pi_X: X \otimes Y \to X}. By assumption their composite is deterministic, so by positivity, we have [string diagram equation](todo-tree). This implies #{h} equals the independent pairing of its projections, and in particular is uniquely determined by them.
+}
+\p{
+    For the backwards direction, let #{X \to Y \to Z} be two maps with deterministic composite, and form the integral #{X \to Y \otimes Z}. The #{Z}-marginal is deterministic, which means this map is equal to the independent pairing of its marginals. But this is precisely what positivity asserts.
+}
