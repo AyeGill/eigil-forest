@@ -5,10 +5,7 @@
 \p{
     Let #{\cD_0 \to \cC_0} be a fibration, and let #{\bar{X} \in \cD_0} be an object. Let #{\cC_0 \to \cC} be any faithful and bijective on objects functor.
     Then the corepresentable copresheaf associated to #{\bar{X}} admits a completion, that is, an initial natural transformation to a complete functor.
-    The elements of #{C(\bar{X},\bar{Y})} are given by the following set: [todo-list](write this out).
-}
-\p{
-
+    The elements of #{C(\bar{X},\bar{Y})} are given by the following set: [write this out](todo-list).
 }
 \proof{
     \p{
@@ -21,7 +18,7 @@
             A map #{g: \bar{Y} \to \bar{Z} \in \cD_0} acts on such a tuple by simply composing #{p(g): Y \to Z} with the right leg #{p_Y} and composing #{g} with #{f^#} to obtain the map #{p_X^*\bar{X} \to \bar{Y} \to \bar{Z}} over this. It's easy to see that this respects the equivalence relation.
         }
         \li{
-            Given an element of #{C(\bar{X})(\bar{Y}), compose #{s: X \to M} with #{p_Y} to obtain the map #{X \to Y}. Clearly this is natural given the above defined structure.
+            Given an element of #{C(\bar{X})(\bar{Y})}, compose #{s: X \to M} with #{p_Y} to obtain the map #{X \to Y}. Clearly this is natural given the above defined structure.
         }
         }
     }
@@ -29,8 +26,11 @@
         There is an obvious natural transformation #{\cD_0(\bar{X,-}) \to C(\bar{X}),} which takes #{\bar{f}: \bar{X} \to \bar{Y}} to #{M = X, p_X = 1_X, p_Y = p(\bar{f}, f^# = \bar{f})}.
     }
     \p{
-        First, let #{F} be some complete indexed copresheaf, say over #{A}, and let #{\cD_0(\bar{X},-) \to F} be some natural transformation.
-        Then
+        First, let #{F} be some complete indexed copresheaf, say over #{A}, and let #{\cD_0(\bar{X},-) \to F} be some (indexed) natural transformation.
+        Then any natural transformation #{C(\bar{X}) \to F} has its value determined uniquely. To see this, first note that any tuple is given by acting on an element of #{C(\bar{X})(p_X^*\bar{X})}, with its right leg given by identities, by the map #{p_X^*\bar{X} \to \bar{Y} \in \cD_0}. Hence by naturality it suffices to determine the value of the natural transformation on tuples with right leg the identity. These are uniquely determined as the sections of the Cartesian map #{p_X^*\bar{X} \to \bar{X}} with base #{s: X \to M} - since an indexed natural transformation preserves the base, and since such a lift is uniquely determined by completenss of #{F}, this is again uniquely determined. The uniqueness also implies this respects the equivalence relation, and since this is seen to be natural, there is a unique natural transformation  #{C(\bar{X}) \to F} extending the given one.
+    }
+    \p{
+        It remains to show that #{C(\bar{X})} is unique. As the above argument indicated, we have essentially constructed it so that it is - the only nontrivial part is to show that #{C(\bar{X})_0 = \cD_0(\bar{X},-)}. This amounts to the claim that, if #{p_Ys: X \to Y} is in #{\cC_0}, the tuple has a representative of the form #{M = X}.
     }
     \p{
         By the universal property, natural transformations out of the completion are given by natural transformation out of #{[\bar{X},-]}. By the (dual) Yoneda Lemma, these are given exactly by the completion of #{\bar{Y}} evaluated at #{\bar{X}}, which was precisely the claim.
