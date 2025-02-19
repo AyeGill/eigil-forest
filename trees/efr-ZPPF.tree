@@ -1,0 +1,6 @@
+\date{2025-02-19}
+\title{Notions of pseudocategory}%Possibly change title
+\p{Recall that a double category is a category internal to (the 1-category) #{\Cat} (what's the problem?). However, it has always been clear that this notion is often too strict to be natural, and that it is in some sense more natural (and in any case, simpler) to consider \em{pseudo double categories}, which satisfy the associativity and unitality law only up to a chosen (naturaL) family of globular 2-cells, which must in turn satisfy a coherence equation.}
+\p{
+    The defect of this definition, from our point of view, is that it is in some sense too \em{algebraic}, that is,
+}
