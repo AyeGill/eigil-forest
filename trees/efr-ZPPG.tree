@@ -14,7 +14,7 @@
 \p{
   We say #{\cC} has enough independent states (resp. costates, simple contexts) if, given a pair of "multimorphisms" #{f,g: \otimes_i X_i \to \otimes_j Y_j,} it suffices to test with every state (resp costate, pair of state and costate) of the form #{\otimes_i \psi_i, \psi_i: I \to X_i} (here we suppress the structure isomorphisms).
 }
-\proposition{
+\proposition{Stoch has enough states}{
   \p{
     #{\Stoch} has enough independent deterministic states (but not costates). #{\Stoch_{\leq 1}} has enough independent deterministic states and costates (and hence simple contexts).
   }
