@@ -1,0 +1,7 @@
+\date{2025-02-22}
+\taxon{corollary}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  There is a model structure on #{[\Delta^\op,\Cat]} for which the cofibrations are the levelwise injective-on-objects maps, the fibrant objects are the Reedy fibrant (weak) Segal categories, and the weak equivalences between fibrant objects are the levelwise equivalences of categories.
+}

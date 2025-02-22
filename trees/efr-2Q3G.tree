@@ -1,0 +1,24 @@
+\date{2025-02-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\cC} be any 2-category . Then the coherent nerve defines a functor #{N : \PsCat(\cC)_\ps \to [\Delta^\op, \cC]}. Moreover,
+  \ol{
+    \li{
+      The coherent nerve carries fibrant pseudocategories to Reedy fibrant Segal objects.
+    }
+    \li{
+      A pseudofunctor of pseudocategories is an equivalence of pseudocategories if and only if it is carried to an equivalence by #{N}.
+    }
+    \li{
+      Given two pseudocategories #{X,Y}, the nerve induces a map #{\PsCat(X,Y) \to [\Delta^\op, \cC](N(X),N(Y))} on the hom-objects in #{\cC}. For any fibrant #{X,Y}, this is an equivalence. (Do we need fibrant here?)
+    }
+    \li{
+      Up to weak equivalence, every Reedy fibrant Segal object is the nerve of a fibrant pseudocategory.
+    }
+  }
+  \p{
+    In particular, the 2-functor #{N: \PsCat(\cC)_{\ps,\fib} \to [\Delta^\op,\cC]_\Segal^\circ} is a biequivalence.
+  }
+}

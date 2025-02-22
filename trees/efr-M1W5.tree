@@ -1,0 +1,20 @@
+\date{2025-02-22}
+\author{eigil-rischel}
+\taxon{proposition}
+\p{
+  Let #{I} be a small category, let #{\cC} be a combinatorial model category, and let #{L} be a class of cones in #{I}. Then the injective model structure on #{[I,\cC]} admits a Bousfield localization where the local fibrant objects are exactly those functors which are injectively fibrant and carry the cones in #{L} to homotopy limits.
+}
+\proof{
+  \p{
+    Note that if #{X} is injectively fibrant, the homotopy limit of any cone that factors through it can be computed as a strict limit. Hence, carrying the cones of #{L} to homotopy limits is equivalent to the statement that, for each cone in #{L}, the map #{X(-\infty) \to \lim_k X(k)} is a weak equivalence.
+  }
+  \p{
+    Let #{A \in \cC} be any cofibrant object, and let #{d: K \to I} be any diagram in #{I}. Then by homotopy left Kan extension of the constant diagram #{\Delta A: K \to \cC} along #{d}, we obtain a functor #{Ld_!\Delta A} so that the space of maps #{[Ld_!\Delta A \to X]} in the presheaf category is equivalent to the space of maps #{A \to \lim (X\circ d)} in #{\cC} (note as above that this limit is a homotopy limit).
+  }
+  \p{
+    Analogously, by homotopy left Kan extension along the inclusion of a point, we find for each #{i \in I} an object #{Li_!A \in [I,\cC]} which represents maps #{A \to X(i)}.
+  }
+  \p{
+    Given a cone in #{I}, we obtain a map #{Ld_!\Delta A \to Li_!A,} and it is clear that a fibrant object is local with respect to this family of maps (for all cofibrant #{A}) if and only if it carries the requisite diagrams to homotopy limits. But since #{\cC} is combinatorial, there is some small set of (without loss of generality, cofibrant) objects which jointly detect weak equivalences, so we can reduce this family of maps to a small set of maps. Then the Bousfield localization exists by general nonsense.
+  }
+}
