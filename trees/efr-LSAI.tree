@@ -1,0 +1,21 @@
+\date{2025-02-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cC} be a model category, and suppose there exists a family of functors #{F_i: \cC \to \Set}, which each preserve colimits, and so that a morphism #{f \in \cC} is a cofibration if and only if each #{F_i(f)} is an injection. Then on the category of simplicial objects in #{\cC}, the injective and Reedy model structures coincide.
+}
+\p{
+  By definition, they have the same weak equivalences. Hence it suffices to prove they have the same cofibrations.
+}
+\p{
+  Observe that each #{F_i} induces a functor from simplicial objects in #{\cC} to simplicial sets, which we also denote #{F_i}. The latching object functors #{L_r} commute with these #{F_i} in that #{L_rF_i = F_iL_r}, since the #{F_i} preserve colimits. But recall that #{L_rX_\bullet} for a simplicial set #{X} is simply the subset of degenerate #{r}-simplices.
+}
+\p{
+  Now suppose #{f: X_\bullet \to Y_\bullet} is a morphism of simplicial objects in #{\cC}. Suppose it is an injective cofibration. This means each #{F_iX_n \to F_iY_n} is an injection. We must show that, for each #{i}, #{F_iX_n \coprod_{F_iL_nX} F_iL_nY \to F_iY_n} is an injection.
+  By assumption the map #{F_iX_n \to F_iY_n} is injective, and the inclusion of the degenerate simplices is also an injection. So this is an injection as long as, whenever #{\sigma \in F_iX} and #{\sigma' \in F_iL_nY} are sent to the same element, they are identified in the pushout. This amounts to the claim that if #{\sigma} is sent to a degenerate simplex of #{F_iY}, it is already degenerate in #{F_iX}. This follows from the injectivity of the simplicial map #{F_iX \to F_iY} assumed.
+
+}
+\p{
+  Conversely, suppose #{f} is a Reedy cofibration. Suppose for induction that the maps #{F_iX_n \to F_iY_n} are injective for all #{n<k} and all #{i}. Then the inclusion #{F_iX_k \coprod_{F_iL_kX} F_iL_kY} is injective, since the map #{F_iL_kX \to F_iL_kY} is the action of #{F_if} on degenerate simplices, and hence is determined by those injective maps on lower-dimensional simplices. Hence as the composite of two injective maps, #{F_iX_k \to F_iY_k} is also injective. (Note that #{L_0 = \emptyset} so there is no problem starting the induction).
+}
