@@ -12,10 +12,10 @@
       A pseudofunctor of pseudocategories is an equivalence of pseudocategories if and only if it is carried to an equivalence by #{N}.
     }
     \li{
-      Given two pseudocategories #{X,Y}, the nerve induces a map #{\PsCat(X,Y) \to [\Delta^\op, \cC](N(X),N(Y))} on the hom-objects in #{\cC}. For any fibrant #{X,Y}, this is an equivalence. (Do we need fibrant here?)
+      Given two pseudocategories #{X,Y}, the nerve induces a map #{\PsCat(X,Y) \to [\Delta^\op, \cC](N(X),N(Y))} on the hom-objects in #{\cC}. For any fibrant #{X,Y}, this is an equivalence. Moreover, there is a canonical \em{strict} retract. (Do we need fibrant here?)
     }
     \li{
-      Up to weak equivalence, every Reedy fibrant Segal object is the nerve of a fibrant pseudocategory.
+      Up to weak equivalence, every Reedy fibrant Segal object is the nerve of a fibrant pseudocategory, whose underlying reflexive graph is given by the restriction of 
     }
   }
   \p{

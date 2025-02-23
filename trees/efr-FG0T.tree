@@ -1,0 +1,10 @@
+\date{2025-02-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Coherent Nerve}
+\p{
+  Let #{\cC} be a 2-category with finite 2-limits and 2-colimits.
+  Let #{X} be a pseudocategory object in #{\cC}.
+  Then, viewing the finite ordinals #{[n]} as categories, we obtain for each #{n} an object of #{\cC} classifying (normal) pseudofunctors #{[n] \to X}. These assemble into a (strict) simplicial object which we denote #{N(X) \in [\Delta^\op,\cC]} and call the \em{coherent nerve} of #{X}.
+}

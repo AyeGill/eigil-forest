@@ -1,0 +1,15 @@
+\date{2025-02-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be any 2-category. Consider the 2-category #{\PsCat(\cC)_{\ps,\nm}} of pseudocategories, normal pseudofunctors and natural transformations in #{\cC}.
+  \ol{
+    \li{
+      For every #{X \in \cC}, there is a functor #{(-)^X: \PsCat(\cC) \to \PsCat(\Cat)} which simply applies #{(-)^X} to all the data of the internal pseudocategory. This is contravariant functorial in #{X}.
+    }
+    \li{
+      If #{\cC} has finite strict 2-limits, for every finite pseudo double category #{K} there is a functor #{(-)^K: \PsCat(\cC)_\ps \to \cC} defined by the universal property that #{\cC(A,C^K) \cong \PsCat(\Cat)(K,C^A)}
+    }
+  }
+}
