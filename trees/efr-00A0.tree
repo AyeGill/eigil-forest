@@ -1,0 +1,31 @@
+\date{2025-02-20}
+\author{eigil-rischel}
+\import{macros}
+\title{
+    Segal objects
+}
+\p{
+    To motivate this approach, let us for a moment consider monoidal categories, rather than double categories. Note that, just as a monoid is essentially the same thing as a category with a single object, so a monoidal category is essentially the same thing as a pseudo double category with the vertical category equal to #{*} (i.e, one object, one morphism).
+}
+\p{
+    Many monoidal categories are most naturally seen as representing an underlying promonoidal category. For example, the defining universal property of the vector product #{U \otimes V} of vector spaces is that it represents bilinear functions on #{f: U \times V \to W}. This only determines the tensor product up to isomorphism, but to make vector spaces into a monoidal category, we must choose a particular model for the tensor product for each #{U,V}. The same phenomenon occurs for Cartesian products.
+}
+\p{
+    Hence, instead of considering a category equipped with a specific choice of tensor products, plus structural isomorphisms, it may be more natural to consider the family of all such choices, and the relationships between them. Of course, this system of data is, at least a priori, more complicated than the alternative, but we will see that it can be presented in a conceptually simple way, and that this approach has a number of advantages.
+}
+
+%DEF: SEGAL OBJECT
+\transclude{efr-001N}
+\p{
+    It is an old result that Segal objects in #{\Set} are exactly those simplicial sets arising as nerves of categories, and simplicial maps between them are exactly functors. In fact more is true: Segal objects in any 1-category #{\cC} are equivalent to internal categories in #{\cC}, for exactly the same reason.
+}
+%proposition: Segal = internal cat.
+\transclude{efr-ZPPI}
+%proposition: internal cat with one object = internal monoid
+\transclude{efr-ZPPJ}
+\p{
+    \ref{efr-ZPPI} and \ref{efr-ZPPJ} together imply that a Segal object with #{X[0]} terminal is equivalently an internal monoid.
+}
+
+%rmk: assumptions about existence of limits
+\transclude{efr-ZPPK}
