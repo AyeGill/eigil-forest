@@ -3,8 +3,9 @@
 \author{eigil-rischel}
 \import{macros}
 \p{
-    Let #{p: \cD \to \cC} be a Markov fibration, let #{\cC' \subseteq \cC, \cD' \subseteq \cD} be full subcategories so that #{p(\cD') \subseteq \cC'},
-    and suppose #{\cC'} is a monoidal subcategory. Suppose finally #{\cD'} is stable under pullback along deterministic morphisms in #{\cC'}. Then #{\cD' \to \cC'} is again a Markov fibration.
+    Let #{p: \cD \to \cC} be a [[efr-0019]], %markov prefibration
+    let #{\cC' \subseteq \cC, \cD' \subseteq \cD} be full subcategories so that #{p(\cD') \subseteq \cC'},
+    and suppose #{\cC'} is a monoidal subcategory (which is then automatically a sub-Markov category). Suppose finally #{\cD'} is stable under pullback along deterministic morphisms in #{\cC'}. Then #{\cD' \to \cC'} is again a [[efr-0019]].
 }
 \proof{
     \p{

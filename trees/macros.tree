@@ -158,6 +158,7 @@
 \def\codom{#{\operatorname{\mathrm{codom}}}}
 \def\yoneda{#{\operatorname{\mathbf{y}}}}
 
+
 \def\id{#{\mathrm{id}}}
 \def\then{#{\mathbin{⨟}}}
 \def\hcomp{#{\mathbin{\odot}}}
@@ -192,6 +193,14 @@
 \def\cat[c]{#{\mathsf{\c}}}
 \def\twocat[c]{#{\mathcal{\c}}}
 \def\dblcat[name]{#{\cat{\mathbb \name}}}
+
+\def\Free{#{\operatorname{Free}}}
+
+\def\PSh{#{\cat{PSh}}}
+\def\coPSh{#{\cat{coPSh}}}
+\def\IPSh{#{\cat{IPSh}}}
+\def\IcoPSh{#{\cat{IcoPSh}}}
+
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?
 \def\BiCat{#{\cat{BiCat}}}
@@ -231,6 +240,7 @@
 \def\Org{#{\dblcat{Org}}}
 \def\DOrg{#{\dblcat{DOrg}}}
 
+\def\Fib{#{\cat{Fib}}}
 \def\Arr{#{\cat{Arr}}}
 \def\Mod{#{\cat{Mod}}}
 \def\Fun{#{\cat{Fun}}}
@@ -310,7 +320,10 @@
 \def\copy{#{\mathrm{copy}}}
 \def\del{#{\mathrm{del}}}
 \def\MarkFib{#{\cat{MarkFib}}}
+\def\MarkPreFib{#{\cat{MarkPreFib}}}
 \def\Markov{#{\cat{Markov}}}
+\def\MAr[C]{#{\C^\to}}
+
 
 \def\abs[x]{#{|\x|}}
 \def\Lip{#{\operatorname{Lip}}}
@@ -386,6 +399,10 @@
 
 \def\proposition[head][body]{
   \subtree{\title{\head} \taxon{proposition} \body}
+}
+
+\def\corollary[body]{
+  \subtree{\taxon{corollary} \body}
 }
 
 % Figures

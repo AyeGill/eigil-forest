@@ -1,0 +1,8 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Markov Fibration}
+\p{
+  A Markov prefibration #{\cD \to \cC} is called a \em{Markov fibration} if it's in the image of the inclusion #{\Alg(\Free_\MarkPreFib) \into \MarkPreFib}
+}

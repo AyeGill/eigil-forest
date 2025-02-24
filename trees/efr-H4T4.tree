@@ -1,7 +1,7 @@
 \date{2025-02-22}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{definition}
 \p{
-  Any 
+  Let #{\cC} be a model category. We say #{\cC} is \em{quasi-Cisinski} if there exist a family of functors #{F_i: \cC \to \Set}, each of which preserve colimits, and which \em{jointly detect cofibrations} in the sense that #{f: X \to Y \in \cC} is a cofibration if and only if each #{F_if : F_iX \to F_iY} is an injection.
 }

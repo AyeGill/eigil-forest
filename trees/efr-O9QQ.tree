@@ -1,0 +1,20 @@
+\date{2025-02-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+    \ol{
+        \li{
+            Any presheaf category #{[I, \Set]} equipped with a Cisinski model structure is also [quasi-Cisinski](efr-H4T4) (consider the evaluation functors).
+        }
+        \li{
+            The folk model structure on #{\Cat} is quasi-Cisinski, with the single functor #{\ob: \Cat \to \Set} detecting the cofibrations.
+        }
+        \li{
+            If #{\cT} is any topos \em{with enough points}, equipped with a Cisinki model structure, then the family of stalk functors jointly detect monomorphisms, and hence cofibrations.
+        }
+    }
+}
+\p{
+    Note that \ref{efr-ZPPM} only depends on the property that, given a presheaf #{I^\op \to \Set} with #{I} elegant Reedy, any levelwise monomorphism is automatically a "Reedy monomorphism" (in the sense that the maps #{X[i] \coprod_{L_iX} L_iY \to Y[i]} are monomorphisms). This holds not just for #{\Set} but for any topos with a Cisinki model structure, see eg [nlab](https://ncatlab.org/nlab/show/elegant+Reedy+category). Hence we could have required instead a family of functors #{F_i: \cC \to \cT_i} into arbitrary toposes which jointly detect cofibrations. Since this would have made \em{all} Cisinski model categories quasi-Cisinski, arguably this would have made more sense.
+}

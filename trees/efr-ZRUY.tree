@@ -1,0 +1,15 @@
+\date{2025-03-21}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\ol{
+    \li{
+        An internal pseudocategory in #{\Cat} is simply a pseudo double category.
+    }
+    \li{
+        An internal pseudocategory #{A} with #{A_0} terminal is the same thing as an internal pseudomonoid. If we fix a specific terminal object #{*} and require #{A_0 = *}, this is an \em{isomorphism} of 2-categories (both for the categories of pseudomorphisms and homomorphisms).
+    }
+    \li{
+        An internal pseudocategory with #{\alpha,\lambda,\rho} identities is the same thing as a (strict) internal category. In particular, internal pseudocategories in discrete 2-categories are merely internal categories.
+    }
+}

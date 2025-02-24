@@ -7,7 +7,6 @@
 }
 
 \transclude{efr-003U}
-
 \p{
   However, part of the purpose of categorical systems theory is to study the composition of dynamical systems. And part of our objective here is to treat the environment that produces the input itself as a system. Hence we would like to, for example, be able to compose an open stochastic dynamical system #{TS \lensto \arena{A}{X}} with a stochastic section #{s: A \to \Delta(X)} to obtain a closed stochastic dynamical system. Formally, this makes sense because #{\Delta} is a (commutative) monad - we are composing in the Kleisli category, essentially. But the ordinary theory does not contain such objects as stochastic sections. In fact, since a section is a special case of a lens, it is not totally clear what this is supposed to mean, since the definition of "stochastic lens" is somewhat mysterious.
 }

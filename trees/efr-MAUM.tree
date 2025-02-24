@@ -1,0 +1,15 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The canonical functor #{\MarkPreFib(\cC) \to \Alg(\Free_\MarkPreFib(\Fib(\cC_\det)))} admits a left adjoint. This left adjoint is fully faithful.
+}
+\proof{
+  \p{
+    Let #{\Free(\cD_0) \to \cD_0} be an algebra. By general nonsense, its left adjoint can be computed as a coequalizer in #{\MarkPreFib} of two maps #{\overline{\Free(\cD_0)} \to \bar{\cD_0},} the first given by applying the functor #{\overline{(-)}} to the structure map, the second by observing that #{\overline{\Free(\cD_0)} = \overline{\bar{\cD_0} \times_\cC \cC_\det}} and applying the counit of the adjunction. (If apply the pullback to #{\cC_\det} to this map, we get the multiplication of the monad). These two functors are both, by construction, identity-on-objects. It is apparent that #{\MarkPreFib} is stable under reflexive coequalizers of such (they are just computed on each hom-set), and hence the left adjoint exists. Given an algebra, we call its image under the left adjoint the Markov prefibration presented by it.
+  }
+  \p{
+    Now the claim is that the monad of this adjunction on #{\Alg(\Free)} is the identity (this implies that the left adjoint is fully faithful, by the general theory of reflexive adjunctions - this is a coreflection). Let #{\alpha: \Free(\cD_0) \to \cD_0} be an algebra again. Since pullback to #{\cC_\det} preserves reflexive coequalizers of identity-on-objects functors (since they are, again, simply computed hom-set wise), it follows that the underlying object of the markov prefibration presented by #{\alpha} is #{\cD_0} itself, since for algebras for any monad we have a coequalizer diagram #{T^2X \rightrightarrow TX \to X}. But if the underlying map in #{\Fib(\cC_\det)} of the unit of the monad on #{\Alg(\Free)} is an isomorphism, so is the unit itself because the forgetful functor here is conservative. Hence the monad is idempotent as desired.
+  }
+}

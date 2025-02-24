@@ -1,0 +1,14 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Recall that the deterministic maps in #{\Stoch} are those kernels valued in #{\{0,1\}}-valued measures. (And that these are \em{not} the same thing as the measurable maps).
+  Given a cospan #{f: X \to Z \leftarrow Y:g} of such maps, we claim that the subset of #{X \times Y} given by those points where #{f(x) = g(y)} as measures on #{Z}, equipped with the subset #{\sigma}-algebra and its inclusions into #{X} and #{Y}, is a pullback in #{\Stoch_\det}.
+}
+\p{
+  To see this, it suffices to observe that #{\Stoch_\det} is the Kleisli category for the submonad of the Giry monad on #{\Meas} given by the #{\{0,1\}}-valued measures, and that this monad preserves finite limits. But checking that it preserves products and equalizers is a straightforward excercise. Hence #{\Stoch_\det} has pullbacks.
+}
+\p{
+  Since #{\Stoch} is known to be positive, this implies #{\MAr{\Stoch} \to \Stoch} is a Markov prefibration.
+}

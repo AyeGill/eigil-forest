@@ -7,10 +7,6 @@
 }
 \proof{
     \p{
-        We apply \ref{efr-0044}. Observe that #{\BorelStoch_\det}, due to a result of Fritz [[todo-tree]], is the full subcategory of measurable spaces spanned by the standard Borel spaces. This has pullbacks given by the pullback in #{\Set} equipped with the subspace #{\sigma}-algebra (with the product having the product #{\sigma}-algebra). First consider the case of products (pullbacks over a point). Given #{f: P \to X, g: P \to G(Y)} measurable maps (where #{G} denotes the Giry monad), we can form #{(f,g): P \to G(X \times Y)} as the pairing of the Dirac measure at #{f(p)} and #{g(p)}. This is clearly measurable.
-        On the other hand, suppose #{h: P \to G(X \times Y)} is some pairing. Consider the measure #{\mu = h(p)} applied to some generating measurable set #{A \times B} with #{A \subset X, B \subset Y}. If #{x \notin A}, then the measure of this product set, which is less than the measure of #{A \times Y}, must be zero. On the other hand, if #{x \in A}, then #{\mu(A \times B) + \mu(A^c \times B) = \mu(X \times B) = g(p)(B)}. By the above, since #{x \notin A^c}, this implies #{\mu(A \times B) = g(p)(B)}. In total this proves that #{\mu} equals the product measure on these measurable subsets, which means it equals the product measure everywhere. Hence the pairing is unique in this case.
-    }
-    \p{
-        For a general pullback, it suffices to observe that the above pairing factors through the inclusion #{X \times_Z Y \to X \times Y}, which is easy to see. That proves existence - since this is a monomorphism in #{\BorelStoch}, uniqueness follows from the above,
+        Recall that #{\BorelStoch} is representable and positive, and apply \ref{efr-0YP1}, \ref{efr-DSGS}, \ref{efr-0044}.
     }
 }

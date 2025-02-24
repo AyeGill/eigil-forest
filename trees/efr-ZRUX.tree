@@ -1,0 +1,24 @@
+\date{2025-03-21}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Internal pseudocategory}
+\p{
+    Let #{\cC} be a 2-category with pullbacks. Then an \em{internal pseudocategory in #{\cC}} (or simply a pseudocategory in #{\cC}) consists of the following data:
+}
+\ol{
+    \li{Two objects #{A_0, A_1 \in \cC}}
+    \li{Morphisms #{s,t: A_1 \to A_0, i: A_0 \to A_1} so that #{si = ti = 1_{A_0}}}.
+    \li{A morphism #{m: A_1 \times_{A_0} A_1 \to A_1}, so that #{sm = s\pi_2, tm = t\pi_1}}
+    \li{Isomorphism 2-cells #{\alpha: m(1_{A_1} \times_{A_0} m) \to m(m \times_{A_0} 1_{A_1})}, #{\lambda: m \braket{it, 1_{A_1}} \to 1_{A_1}}, and #{\rho: m\braket{1_{A_1}, is} \to 1_{A_1}}}
+    \li{Satisfying the following equations: \ol{
+        \li{   #{s \circ \lambda = 1_s = s \circ \rho}}
+        \li{ #{t \circ \lambda = 1_t = t \circ \rho}}
+        \li{ #{s \circ \alpha = 1_{s\pi_3}}, #{d \circ \alpha = 1_{d\pi_1}}}
+        \li{ #{\lambda \circ i = \rho \circ i}}
+    }}
+    \li{And so that the following diagrams commute:}
+}
+\p{
+    A \em{homomorphism} of pseudocategories #{A \to B} is a pair of morphisms #{F_1: A_1 \to B_1, F_0: A_0 \to B_0} which commute with all the structure - that is, #{dF_1 = F_0d}, #{F_1 \alpha = \alpha (F_1 \times F_1 \times F_1)}, and so on.
+}

@@ -1,0 +1,20 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proof}
+\title{Proof of \ref{efr-LGOA}}
+\p{
+  First observe that, by \ref{efr-OH7U}, the pullback #{\bar{\cD_0}\times_\cC \cC_\det \to \cC_\det} is indeed a fibration, with the image of the Cartesian lifts under the functor #{\cD_0 \to \bar{\cD_0}} being Cartesian again. (This also establishes that #{\bar{\cD_0}} really does receive a map of fibrations from #{\cD_0})
+}
+\p{
+  Given Cartesian #{f: \bar{A} \to \bar{B} \leftarrow \bar{C}}, and a stochastic lift #{A \to C (= p\bar{A} \to p\bar{C}),} consider the pullback #{A \times_B C}, and the pullback of #{\bar{A}} to it. There is a unique lift of #{A \to C} to a section #{A \to A \times_B C}, and this induces a unique lift #{\bar{A} \to (f\pi_1)^*\bar{A}} using the stochastic module structure. The composite of this with the projection to #{B} is a lift of #{\bar{A \to \bar{B}}} over #{A \to C}, as required by a Markov prefibration.
+}
+\p{
+  Analogously to the proof of \ref{efr-OH7U}, given some other lift #{A \leftarrow N \to C, h: A \to N, h^*\bar{A} \to \bar{C}}, the fact this is a factorization implies the existence of some #{M} with maps #{M \to A, M \to N} and a lift #{A \to M} of the section #{A \to N}, so that the induced map between the pullbacks over #{M} and #{N} of #{\bar{A}} makes the triangle into #{\bar{B}} commute. But then since this is a triangle over \em{deterministic} bases, this implies the lifted triangle to #{\bar{C}} also commutes, hence this #{M} lifts to another representative of the lift we started with. But then it's not hard to see that this #{M} maps to #{A \times_B C} and exhibits an equation with the previously constructed "canonical" lift.
+}
+\p{
+  Hence #{\bar{\cD_0}} is a Markov prefibration, and by the above, the induced stochastic module structure on the corepresentable presheaves #{\bar{\cD_0}(\bar{A},-) = T(\cD_0(\bar{A},-))} is exactly the one given by #{T} (in other words this equation is not merely a bijection of sets, but an isomorphism of stochastic modules).
+}
+\p{
+  Let #{\phi: \cD_0 \to \cD'} be a functor over #{\cC_\set \to \cC} into some other Markov prefibration which preserves Cartesian maps. Using the algebra structure on #{\cD'(\phi\bar{B},-),} we see there is a unique extension of #{\phi} to #{\bar{\cD_0}(\bar{X},-)} which respects the stochastic module structure. By chasing the diagram around it's easy to see that this is functorial, and hence gives a map of Markov prefibrations - conversely, any such map extending #{\phi} must be a stochastic module homomorphism. Thus there is a unique functor, proving initiality.
+}

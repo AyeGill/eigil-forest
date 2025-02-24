@@ -1,0 +1,7 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  If a Markov category #{\cC} satisfies the condition of \ref{efr-0044}, we say #{\cC} has \em{good deterministic pullbacks}.
+}

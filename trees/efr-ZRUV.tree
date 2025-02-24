@@ -8,7 +8,7 @@
 }
 \ol{
  \li{For all tuples #{g: X \to A, h: Y \to A, \alpha: hf \simeq g}, there exists a second map #{h' : Y \to A} and isomorphism #{\beta: h \simeq h'} so that #{h'f = g} and #{\beta f = \alpha}.}
- \li{For all #{A}, the functor #{X^B \to X^A} is an isofibration}
+ \li{For all #{A}, the functor #{A^Y \to A^X} is an isofibration}
 }
 \p{Furthermore #{f} is a trivial cofibration if and only if there exists #{g: Y \to X} so that #{gf = 1_X} and #{fg \simeq 1_Y}}
 

@@ -1,0 +1,26 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cD_0 \to \cC_\det} be a fibration. Let #{T} be the free stochastic module monad on #{\IcoPSh(\cD_0 / \cC)}.
+  Consider the full subcategory of #{Kl(T)} spanned by the corepresentable copresheaves (or, equivalently, the full subcategory of stochastic modules spanned by the free modules on the corepresentables). Denote the opposite of this category #{\bar{\cD_0}}. Clearly there is a commutative diagram
+  \quiver{
+    \begin{tikzcd}
+    \cD_0 \ar[d] \ar[r] & \bar{\cD_0} \ar[d]\\
+    \cC_\det \ar[r] & \cC
+    \end{tikzcd}
+  }
+  We claim:
+}
+\ol{
+  \li{
+    #{\bar{\cD_0} \to \cC} is a Markov prefibration.
+  }
+  \li{
+    There is a bijection #{\bar{\cD_0}(\bar{A},-) \cong T(\cD_0(\bar{A},-))}. When the left-hand side is equipped with the canonical stochastic module structure, and the right is equipped with the free one, this is moreover a homomorphism (hence isomorphism) of stochastic modules.
+  }
+  \li{
+    #{\bar{\cD_0} \to \cC} is initial among Markov prefibrations receiving a map from #{\cD_0}. In other words, this construction gives a left adjoint to the pullback functor #{\MarkPreFib(\cC) \to \Fib(\cC_\det)}
+  }
+}

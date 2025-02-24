@@ -6,17 +6,11 @@
     Let #{p: \cD \to \cC} be a functor. An \em{indexed copresheaf} on #{\cD} is a tuple #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))} consisting of a copresheaf, an object of #{\cC}, and a natural transformation #{\alpha} as indicated. We say the indexed copresheaf is \em{over} #{X}, and we will abuse the terminology by referring to #{F} itself as an indexed copresheaf, leaving the transformation #{\alpha} implicit (for example, "let #{F} be an indexed copresheaf over #{X}").
 }
 \p{
-    A map of indexed copresheaves #{(X,F,\alpha) \to (Y,G,\beta)} is a natural transformation #{F \to G} and a map #{Y \to X \in \cC} so that the obvious square of natural transformations commutes.
+    We denote the subset #{\alpha^{-1}(\{f\}) \subseteq F(\bar{A}),} for #{f: X \to p(\bar{A})} by #{F(\bar{A})_f}.
 }
 \p{
-    Observe that for each object #{A \in \cD}, there is a corepresentable copresheaf #{(p(A), \cD(A,-), p)}. Maps between these obey the Yoneda lemma, in the sense that they are in bijection between maps of the underlying objects in #{\cD}.
+    A map of indexed copresheaves #{(X,F,\alpha) \to (Y,G,\beta)} is a natural transformation #{F \to G} and a map #{Y \to X \in \cC} so that the obvious square of natural transformations commutes. We denote the category of indexed copresheaves by #{\IcoPSh(\cC / \cD)}. Note that there is an obvious forgetful functor #{\IcoPSh(\cD / \cC)^\op \to \cC}
 }
 \p{
-    Let #{p: \cD_0 \to \cC_0}, #{\cC_0 \to \cC} be two functors, where #{\cC_0 \to \cC} is faithful and bijective on objects. Let #{F} be an indexed copresheaf on the composite #{\cD_0 \to \cC}. Then there is a subcopresheaf #{F_0 \subseteq F} indexed on #{\cD_0 \to \cC_0}, given simply by the preimage of #{\cC_0} under #{\alpha} (this is a subfunctor by naturality).
-}
-\p{
-    Suppose #{F} is such that #{F_0} is representable, say by #{\bar{A}}, and let  #{F} be over #{A = p(\bar{A})}. Then we say #{F} is \em{complete} if, given #{f: B \to X \in \cC} with a Cartesian lift #{\bar{f}: \bar{B} \to \bar{X}}, and #{\eta \in F_0(\bar{X})} such that the corresponding map #{\bar{A} \to \bar{X}} is also Cartesian, for each #{h: A \to B} in #{\cC}, there is a unique element #{\bar{h} \in F(\bar{B})} over #{h} so that #{\bar{f}(\bar{h}) = \eta}.
-}
-\p{
-    (Note that if #{h} is \em{deterministic} there is a unique such element in #{F_0(\bar{B})}, simply by Cartesianness of #{\bar{f}} and representability.)
+    Observe that for each object #{A \in \cD}, there is a corepresentable copresheaf #{(p(A), \cD(A,-), p)}. Maps between these obey the Yoneda lemma, in the sense that they are in bijection with maps between the underlying objects in #{\cD}. This defines a fully faithful functor #{\cD \to \IcoPSh(\cD / \cC)^\op} over #{\cC}. 
 }

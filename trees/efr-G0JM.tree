@@ -1,0 +1,10 @@
+\date{2025-03-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cD \to \cC} be a Markov fibration. Given #{X \in \cC}, #{\bar{X}, \bar{X}' \in \cD_X}, we say a map #{[\bar{X},\bar{X'}]_X \to X} is a \em{mapping object} if it satisfies the following universal property: Given any deterministic map #{f:A \to X}, there is a bijection between lifts #{A \to [\bar{X},\bar{X'}]} and maps #{f^*\bar{X} \to \bar{X'}} lying over #{f}. (Note that this is really a property of the fibration #{\cD \times_\cC \cC_\det}).
+}
+\p{
+  Suppose #{\cD} admits mapping objects for every pair of objects (in the same fiber), and suppose 
+}

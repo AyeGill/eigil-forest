@@ -1,0 +1,12 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Pullbacks of split monomorphisms are absolute limits - in other words, given #{A \to B}, #{p: C \to B} and #{a: B \to C} with #{ap = 1_B}, the pullback #{A \times_C B} is preserved by any functor #{F}.
+}
+\p{
+  Let #{A \to C \leftarrow B} be a cospan with #{B \to C} split mono. This split induces a split of #{A \times_C B \to A}.
+  Let #{P \to F(A), P \to F(B)} be two maps so that their composites #{P \to F(C)} agree. This implies that #{P \to F(B)} equals the composite #{P \to F(A) \to F(C) \to F(B)}.
+  Hence the composite #{P \to F(A) \to F(A \times_C B)} is a common factorization of these two maps. Moreover, since #{F(A \times_C B) \to F(A)} is a split monomorphism, and in particular a monomorphism, this map is uniquely determined by its projection to #{F(A)}, and so unique.
+}

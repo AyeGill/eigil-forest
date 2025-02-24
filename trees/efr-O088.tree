@@ -1,0 +1,11 @@
+\date{2025-03-26}
+\author{eigil-rischel}
+\import{macros}
+\title{Markov Fibrations and Stochastic Lenses}
+
+
+%Markov Prefibrations
+\transclude{efr-2IMZ}
+
+%Markov fibrations
+\transclude{efr-GO6R}

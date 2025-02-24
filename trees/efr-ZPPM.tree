@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-    The Reedy model structure on #{[\Delta^\op,\Cat]} coincides with the injective model structure.
+    Let #{\cC} be a quasi-Cisinski model category. Let #{I} be an excellent Reedy category. Then the Reedy and injective model structures coincide.
 }
 \proof{
     \p{

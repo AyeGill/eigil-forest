@@ -2,10 +2,10 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{definition}
-\title{Markov fibration}
+\title{Markov prefibration}
 \p{
     Let #{\cC} be a Markov category, and let #{p: \cD \to \cC} be a functor into it.
-    Then we call #{p} a \em{Markov fibration} if the following two conditions hold:
+    Then we call #{p} a \em{Markov prefibration} if the following two conditions hold:
     \ol{
         \li{The pullback #{\cD \times_\cC \cC_\det \to \cC_\det} is a (Grothendieck) fibration}
         \li{Given maps #{f: A \to C}, #{g:B \to C} in #{\cD}, such that #{p(f),p(g)} are deterministic and #{f,g} are Cartesian for the above fibration, #{p} induces a bijection between maps #{h: A \to B \in \cC} such that #{gh = f}, and maps #{h': p(A) \to p(B)} so that #{p(g)h' = p(f)}. Note that when restricted to those maps where #{p(h)} is deterministic, this being a bijection is the defining property of #{g} being Cartesian (for any #{f}, not necessarily a Cartesian one).}

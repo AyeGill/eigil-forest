@@ -6,9 +6,8 @@
 %Review of categorical CT
 \transclude{efr-0023}
 
-%Stochastic arenas
-\transclude{efr-0011}
-
+%Markov Fibrations
+\transclude{efr-O088}
 
 %Triple cat. of controlled processes
 \transclude{efr-000D}

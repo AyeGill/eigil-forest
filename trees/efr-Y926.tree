@@ -1,0 +1,29 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Stochastic Module}
+\p{
+  Let #{\cC} be a positive Markov category with good pullbacks, and let #{\cD_0 \to \cC_\det} be a fibration.
+  Then a \em{stochastic module} consists of
+  \ol{
+    \li{An indexed copresheaf #{F = (A,F,\alpha) \in \IcoPSh(\cD_0 / \cC)}}
+    \li{For each #{\bar{X} \in \cD_0} and stochastic section #{f: M \to p\bar{X}: \alpha \in \cC},a function #{ \alpha_*: F(\bar{X}) \to F(f^*\bar{X})}, which acts on the underlying morphisms in #{\cC} as composition with #{\alpha}}
+    \li{
+      Whenever #{\bar{Y} \in \cD_0} with #{Y = p(\bar{Y})}, #{g: N \to Y:\alpha} is a stochastic section, #{f: M \to Y} is a deterministic map, and #{f^*g: M \times_Y N \to M: f^*\alpha} is the induced stochastic section,
+      the square
+
+      \quiver{
+        \begin{tikzcd}
+        F(f^*\bar{Y}) \ar[r] \ar[d] & F((f^*g)^*\bar{Y}) \ar[d]\\
+        F(\bar{Y}) \ar[r] & F(g^*\bar{Y})
+        \end{tikzcd}
+      }
+
+      commutes.
+    }
+  }
+}
+\p{
+  A morphism of stochastic modules is an indexed natural transformation which preserves the operations #{\alpha_*}. The category of stochastic modules is denotes #{\cat{SMod}(\cD_0 / \cC)}. There is an apparent forgetful functor #{\cat{SMod}(\cD_0 / \cC) \to \IcoPSh(\cD_0 / \cC)}.
+}

@@ -1,0 +1,31 @@
+\date{2025-03-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\ol{
+  \li{The free stochastic module on a corepresentable presheaf is given by ...}
+  \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\set}, in the sense that given a Cartesian map...}
+  
+}
+  \p{
+    To show point 1., we must exhibit Cartesian lifts of each deterministic map in #{\cC}, and show furthermore that this gives a Markov prefibration. Note that there is a map #{\cD_o(\bar{A},\bar{B}) \to T(\cD_0(\bar{A},-))(\bar{B})} given by the unit of the monad. We claim the image of the Cartesian lifts under this inclusion are again Cartesian. 
+  }
+  \p{
+    So let #{\bar{A} \to \bar{B}} be a given Cartesian map in #{\cD_0}, and let #{f: \bar{X} \to \bar{B}} be a map in #{\bar{\cD_0}} with deterministic base (remember that the Cartesian lifts only need to \em{be} Cartesian for the pullback over #{\cC_\det}). Then the claim is there is a unique factorization #{g: \bar{X} \to \bar{A}}. Consider first the following diagram:
+  }
+  \quiver{
+    \begin{tikzcd}
+    & M \times_B X  \ar[ldd] \ar[rdd] & \\
+    & M \ar[ld] \ar[rd] & \\
+    X \ar[rr] \ar[ru] \ar[ruu, dashed] & & B
+    \end{tikzcd}
+  }
+  \p{
+    Since the composite #{X \to B} is assumed deterministic, we can form the pullback with #{M}, and lift the map #{X \to M} over this. We can pull back the map #{p^*\bar{X} \to \bar{B}} over this. The key point is that the composite #{M \times_B X \to X \to B} is equal to the other projection #{M \times_B X (\to M) \to B,} which is not automatically the case for the starting #{M}. (If it is, the map #{M \times_B X \to M} will be an isomorphism).
+  }
+  \p{
+    So without loss of generality, take a representative where the triangle #{M \to X \to B} commutes. Then let #{X \to A} be given lifting #{X \to B}. Now the composite #{M \to X \to A} is a lifting of #{M \to B}. By the Cartesian property of #{\bar{A} \to \bar{B}}, there is a unique map #{p^*\bar{X} \to \bar{A}} over #{M \to A} lifting the given map #{p^*\bar{X} \to \bar{Y}}. This establishes the existence of factorizations.
+  }
+  \p{
+    Now suppose given some factorization, and choose a representative with residual #{N}. Again, 
+  }

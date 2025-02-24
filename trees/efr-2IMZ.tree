@@ -1,0 +1,35 @@
+\date{2025-03-26}
+\author{eigil-rischel}
+\import{macros}
+\title{Markov Prefibrations}
+
+\transclude{efr-0045}
+
+\transclude{efr-SP6H}%Example: discrete dist. monad
+
+\transclude{efr-0019}% Markov *prefib* defn
+
+\p{
+  \ref{efr-SP6H} contains the argument that #{\MAr{Kl(\Delta)} \to Kl(\Delta)} is a Markov prefibration. This is a key motivating example.
+  We will now give a few results about these. 
+}
+
+\transclude{efr-0044} %theorem on pullbacks
+\transclude{efr-0040} %warning/remark
+\transclude{efr-T3HM}
+\p{
+  Note that if #{\cC} has good deterministic pullbacks, it doesn't follow that #{\cC} has pullbacks of deterministic morphisms, only that #{\cC_\det} has pullbacks.
+}
+
+
+\transclude{efr-0YP1} % split pbacks are absolute
+\transclude{efr-DSGS} %Pullbacks of split monos + positivity = good pullbacks
+\p{
+  The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories, although we only need it for \em{split} monomorphisms. (The split hypothesis does play a role, since we can't in general guarantee even that the inclusion #{\cC_\det \into \cC} preserves monomorphisms in general).
+}
+
+
+\transclude{efr-0042}%subcategory property
+\transclude{efr-NC7D}%Stoch example.
+\transclude{efr-0041}%Borelstoch example
+\transclude{efr-0043}%FinStoch example

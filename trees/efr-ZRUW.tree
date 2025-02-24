@@ -1,0 +1,19 @@
+\date{2025-03-21}
+\author{eigil-rischel}
+\import{macros}
+\title{Pseudocategories}
+\p{
+    Given a 2-category #{\cC}, there is a natural loosening of the notion of "internal category in #{\cC}", given by requiring that associativity and unitality hold only up to chosen coherent isomorphism 2-cells. This is the notion of \em{pseudocategory}. We refer to \ref{pseudocategories} for a thorough description of this concept (as well as a review of the earlier literature). However, we will review the basic facts here for convenience.
+}
+
+\transclude{efr-ZRUX} % Def of pseudocategory, homomorphism.
+\p{
+    Note that the equations between \em{objects} - that is, between cells ending in #{A_0} - are all required to hold on the nose. The domain of the identity morphism on #{X} must be \em{equal} to #{X}, not merely isomorphic to it, and so on. In particular, the pullback which is the domain of the composition operation is a \em{strict} pullback.
+}
+\p{
+    Homomorphisms are the strict morphisms of pseudocategories (although calling them "strict functors" seems too confusing). Of course there are also \em{pseudofunctors} between pseudocategories - these still preserve the domain and codomain strictly, but preserve the composition and unit only up to a given isomorphism 2-cell, which satisfy a coherence condition involving the associator and unitors respectively. The desire to avoid working with this mess of 2-cells and coherences is a large part of the motivation for the Segal approach to weak categories.
+}
+\transclude{efr-ZRUY} % Examples, including pseudomonoids.
+\p{
+    It's worth pointing out that our problems with the notion of pseudocategory do not arise for pseudomonoids - essentially, this is because strict products are always homotopy products as well. And indeed, we will see that our correspondence between weak Segal objects and pseudocategories, when restricted to pseudomonoids, is an equivalence in a suitable sense.
+}

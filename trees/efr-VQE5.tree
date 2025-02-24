@@ -1,12 +1,17 @@
 \date{2025-02-24}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{lemma}
 \p{
-    Let #{\cC} be a model category. Then the strict nerve functor #{N: \Cat(\cC) \to [\Delta^\op, \cC]} carries fibrant categories to Reedy fibrant Segal objects.
+    Let #{I} be an excellent Reedy category, and let #{\cC} be a quasi-Cisinki model category. Then the functor category #{[I,\cC]} equipped with the Reedy model structure is again quasi-Cisinski.
 }
 \proof{
-    \p{
-        Recall that the nerve admits a left adjoint, which we will denote #{\fC(-)} (somewhat abusing the notation of Lurie, \ref{lurie-htt}). To prove #{N(X)} injectively fibrant, we must solve this extension problem for any injective cofibration:
-    }
+\p{
+    Let #{F_\alpha: \cC \to \Set, \alpha \in A} be a class of functors which jointly detect cofibrations. Then the functors #{X \mapsto F_\alpha X(i), (\alpha, i) \in A \times I} jointly detect cofibrations for the injective model structure on #{[I,\cC]}, which coincides with the Reedy model structure.
+}
+}
+\corollary{
+\p{
+    Let #{I_1 \dots I_n} be a finite set of excellent Reedy categories. Then the injective model structure on #{[I_1 \times \cdots I_n, \cC] \cong [I_1, [I_2, \dots [I_n, \cC] \dots ]]} coincides with the iterated Reedy model structure.
+}
 }
