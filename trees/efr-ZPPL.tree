@@ -1,0 +1,14 @@
+\date{2025-02-20}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    The trivial model structure on #{\Cat}, in its self-enrichment, admits the following characterization:
+    \ol{
+        \li{The cofibrations are those functors which are injective on objects}
+        \li{The fibrations are the isofibrations}
+        \li{The acyclic fibrations are those Grothendieck fibrations where each fiber is a contractible groupoid}
+        \li{Every category is fibrant and cofibrant}
+    }
+    Moreover, this is the unique model structure on #{\Cat} where the weak equivalences are exactly the equivalences.
+}

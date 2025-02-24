@@ -1,6 +1,13 @@
 \date{2025-02-19}
-\title{Notions of pseudocategory}%Possibly change title
-\p{Recall that a double category is a category internal to (the 1-category) #{\Cat} (what's the problem?). However, it has always been clear that this notion is often too strict to be natural, and that it is in some sense more natural (and in any case, simpler) to consider \em{pseudo double categories}, which satisfy the associativity and unitality law only up to a chosen (naturaL) family of globular 2-cells, which must in turn satisfy a coherence equation.}
+\title{Notions of pseudocategory}
+\import{macros}
+\p{Recall that a double category is a category internal to (the 1-category) #{\Cat} (what's the problem?). However, it has always been clear that this notion is often too strict to be natural, and that it is in some sense more natural (and in any case, simpler) to consider \em{pseudo double categories}, which satisfy the associativity and unitality law only up to a chosen (natural) family of globular 2-cells, which must in turn satisfy a coherence equation.}
 \p{
-    The defect of this definition, from our point of view, is that it is in some sense too \em{algebraic}, that is,
+    The defect of this definition, from our point of view, is that it is in some sense too \em{algebraic}. Just like the definition of internal category, it consists of objects equipped with operations and equations required to hold exactly, the only difference being that it operates on the 2-cells of #{\Cat}, not merely the one-cells. In particular, it is not invariant under equivalence, in the sense that, given a pseudo double category #{\CC} with underlying graph of categories #{\CC_1 \to \CC_0}, given equivalent categories #{\CC_0',\CC_1'}, there is not necessarily an induced (pseudo) double category structure on #{\CC_1' \to \CC_0'}.
 }
+\transclude{efr-00A1}
+\p{
+    This problem prevents us from using certain "high-tech" methods to reason about pseudo double categories. While our eventual construction will have an "underlying" pseudo double category in the classical sense, we will introduce a different notion of "weak internal category" to enable a more conceptual approach. Especially once it comes time to construct a "symmetric monoidal weak triple category", this approach will be invaluable.
+}
+
+\transclude{efr-00A0}

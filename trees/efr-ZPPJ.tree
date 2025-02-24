@@ -1,0 +1,7 @@
+\date{2025-02-20}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    Let #{\cC} be any category with finite limits, and consider the full subcategory of #{\Cat(\cC)} spanned by those internal categories where #{\CC_0} is terminal. This is equivalent to the category of internal monoids in #{\cC}.
+}
