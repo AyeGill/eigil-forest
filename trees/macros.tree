@@ -175,6 +175,7 @@
 \def\cc{#{\mathrm{cc}}}
 \def\lex{#{\mathrm{lex}}}
 \def\ps{#{\mathrm{ps}}}
+\def\nm{#{\mathrm{nm}}}
 \def\supic{#{\mathrm{supic}}}
 
 \def\into{#{\hookrightarrow}}
@@ -260,6 +261,8 @@
 \def\Cospan{#{\cat{Cospan}}}
 \def\Csp{#{\cat{Csp}}}
 \def\Edit{#{\dblcat{Edit}}}
+
+\def\Segal{#{\mathrm{Segal}}}
 
 
 % Universal Algebra

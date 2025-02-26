@@ -4,11 +4,18 @@
 \taxon{proposition}
 \p{
   Let #{\cC} be a 2-category equipped with Lack's trivial model structure.
-  Then a map #{f:X \to Y} is a cofibration if and only if, for all tuples #{g: X \to A, h: Y \to A, \alpha: hf \simeq g}, there exists a second map #{h' : Y \to A} and isomorphism #{\beta: h \simeq h'} so that #{h'f = g} and #{\beta f = \alpha}.
+  Then a map #{f:X \to Y} is a cofibration if and only if it satisfies any of the following equivalent conditions:
 }
+\ol{
+ \li{For all tuples #{g: X \to A, h: Y \to A, \alpha: hf \simeq g}, there exists a second map #{h' : Y \to A} and isomorphism #{\beta: h \simeq h'} so that #{h'f = g} and #{\beta f = \alpha}.}
+ \li{For all #{A}, the functor #{X^B \to X^A} is an isofibration}
+}
+\p{Furthermore #{f} is a trivial cofibration if and only if there exists #{g: Y \to X} so that #{gf = 1_X} and #{fg \simeq 1_Y}}
+
 \proof{
+  \p{It's not hard to see that the two conditions are equivalent. Let us prove that the first is equivalent to #{f} being a cofibration.}
   \p{
-    For the "only if" part, consider the power of #{A} by the walking isomorphism, #{A^I}. Note that this exists because #{\cC} has finite limits. The map #{A^I \to A} which picks out the first object is a trivial fibration. 
+    For the "only if" part, consider the power of #{A} by the walking isomorphism, #{A^I}. Note that this exists because #{\cC} has finite limits. The map #{A^I \to A} which picks out the first object is a trivial fibration.
   }
   \quiver{
     \begin{tikzcd}
@@ -26,7 +33,7 @@
     Now let #{p: A \to B} be a trivial fibration in #{\cC}. Then also #{A^I \to B^I} is a trivial fibration, and hence the pullback #{A^I \times_{B^I} B \to B} is a trivial fibration. This classifies "vertical" isomorphisms in #{A}, i.e those that become identities in #{B}.
   }
   \p{
-    Consider some lifting problem given by #{f: X \to Y, p, h_1: X \to A, h_2: Y \to B}. Note that #{p: A \to B} admits a \em{strict} section (as remarked by Lack), and so we can find #{\bar{h_2}: Y \to A}, defined as the composite of #{h_2} with this section, which makes the lower triangle commute strictly, and the upper commute up to equivalence. 
+    Consider some lifting problem given by #{f: X \to Y, p, h_1: X \to A, h_2: Y \to B}. Note that #{p: A \to B} admits a \em{strict} section (as remarked by Lack), and so we can find #{\bar{h_2}: Y \to A}, defined as the composite of #{h_2} with this section, which makes the lower triangle commute strictly, and the upper commute up to equivalence.
   }
   \quiver{
     \begin{tikzcd}
@@ -38,6 +45,9 @@
     Hence the two maps #{\bar{h_2}f,h_1} and the equivalence between them describe a map #{X \to A^I \times_{B^I} B} (a diagram chase shows that both of these maps, and the equivalence between them, goes to the same map #{X \to B}, namely the diagonal composite in the square).
   }
   \p{
-    By construction this map admits an extension over #{Y} up to equivalence, which by assumption means it admits a strict extension over #{Y}. But after unwinding the definitions this is seen to be exactly a solution to the lifting problem (strictly). 
+    By construction this map admits an extension over #{Y} up to equivalence, which by assumption means it admits a strict extension over #{Y}. But after unwinding the definitions this is seen to be exactly a solution to the lifting problem (strictly).
+  }
+  \p{
+    Finally, if #{f} is a weak equivalence, it admits a pseudoinverse #{g'} so that #{fg' \simeq 1_Y, g'f \simeq 1_X}. Applying the property above gives a #{g \simeq g'} so that #{gf = 1_X}.
   }
 }

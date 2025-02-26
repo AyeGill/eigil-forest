@@ -1,6 +1,7 @@
 \date{2025-02-22}
 \author{eigil-rischel}
 \taxon{proposition}
+\import{macros}
 \p{
   Let #{I} be a small category, let #{\cC} be a combinatorial model category, and let #{L} be a class of cones in #{I}. Then the injective model structure on #{[I,\cC]} admits a Bousfield localization where the local fibrant objects are exactly those functors which are injectively fibrant and carry the cones in #{L} to homotopy limits.
 }

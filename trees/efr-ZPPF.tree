@@ -1,7 +1,9 @@
 \date{2025-02-19}
 \title{Notions of pseudocategory}
 \import{macros}
-\p{Recall that a double category is a category internal to (the 1-category) #{\Cat} (what's the problem?). However, it has always been clear that this notion is often too strict to be natural, and that it is in some sense more natural (and in any case, simpler) to consider \em{pseudo double categories}, which satisfy the associativity and unitality law only up to a chosen (natural) family of globular 2-cells, which must in turn satisfy a coherence equation.}
+\p{
+    Recall that a double category is a category internal to (the 1-category) #{\Cat}. However, it has always been clear that this notion is often too strict, and that it is in some sense more natural to consider \em{pseudo double categories}, which satisfy the associativity and unitality law only up to a chosen (natural) family of globular 2-cells, which must in turn satisfy a coherence equation.
+}
 \p{
     The defect of this definition, from our point of view, is that it is in some sense too \em{algebraic}. Just like the definition of internal category, it consists of objects equipped with operations and equations required to hold exactly, the only difference being that it operates on the 2-cells of #{\Cat}, not merely the one-cells. In particular, it is not invariant under equivalence, in the sense that, given a pseudo double category #{\CC} with underlying graph of categories #{\CC_1 \to \CC_0}, given equivalent categories #{\CC_0',\CC_1'}, there is not necessarily an induced (pseudo) double category structure on #{\CC_1' \to \CC_0'}.
 }
@@ -10,4 +12,41 @@
     This problem prevents us from using certain "high-tech" methods to reason about pseudo double categories. While our eventual construction will have an "underlying" pseudo double category in the classical sense, we will introduce a different notion of "weak internal category" to enable a more conceptual approach. Especially once it comes time to construct a "symmetric monoidal weak triple category", this approach will be invaluable.
 }
 
+%SEGAL OBJECTS
 \transclude{efr-00A0}
+
+
+%FOLK MODEL STRUCTURE
+\transclude{efr-ZPPL}
+
+%THE LACK MODEL STRUCTURE
+\transclude{efr-MRQ3}
+\p{
+    This model structure is due to Lack \ref{lack-model-2-categories}. Since it is not exactly trivial, the name may be poorly chosen, but the idea is that it contains no "extra homotopy" except that implies by the #{\Cat}-enrichment. For example, as Lack shows, the weak equivalences are exactly those morphisms which are invertible up to a 2-cell.
+}
+\p{
+    Note that, trivially, we have
+}
+\transclude{efr-OKKW} %folk is trivial on Cat
+\p{
+    We will now prove some new results about the trivial model structure
+}
+\transclude{efr-ZRUV}%Characterization of cofibrations in trivial model structure
+\transclude{efr-37LL}%self-duality
+\p{
+    We may phrase this as saying the trivial model structure is self-dual.
+}
+\p{
+    If #{\cC} is a 2-category and #{I} is a small category, the functor category #{[I,\cC]} acquires a #{\Cat}-enrichment. Separately from that, there are a number of model structures we may put on the functor category - the main ones being the injective and projective model structures, and the Reedy model structure in case #{I} comes with a Reedy structure. Since one can easily verify that all objects in the trivial model structure are both fibrant and cofibrant, it is clear that none of these model structures can be expected to coincide with the trivial model structure in general.
+}
+\p{
+    In fact, this difference is at the core of the problem with pseudo double categories noted above. Namely, in a functor 2-category #{[I,\cC]}, a weak equivalence is not the same thing as a functor which is levelwise a weak equivalence. Returning to \ref{efr-00A1}, note that if we attempt to choose inverses #{\{A,B,C\} \to \{A,B,B',B\}} and #{\CC_1' \to \CC_1} which respect the vertical maps, we will be forced to carry #{B} to either #{B} or #{B'}, and hence to carry the two maps which became composable in the codomain back into composable maps in the domain (but this is impossible). We can summarize by saying that the free pseudo double category monad on #{[\bullet \rightrightarrow \bullet, \Cat]} does not preserve levelwise equivalences, but does preserve equivalences in the 2-category.
+}
+\p{
+    (Note that this is contrary to the case for 1-categories, where a natural transformation is a natural isomorphism if and only if it is levelwise an isomorphism.)
+}
+
+\transclude{efr-LSAI}
+\transclude{efr-JD5V}
+\transclude{efr-2Q3G}
+\transclude{efr-FG0T}

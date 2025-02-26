@@ -1,0 +1,12 @@
+\date{2025-02-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    Let #{\cC} be a model category. Then the strict nerve functor #{N: \Cat(\cC) \to [\Delta^\op, \cC]} carries fibrant categories to Reedy fibrant Segal objects.
+}
+\proof{
+    \p{
+        Recall that the nerve admits a left adjoint, which we will denote #{\fC(-)} (somewhat abusing the notation of Lurie, \ref{lurie-htt}). To prove #{N(X)} injectively fibrant, we must solve this extension problem for any injective cofibration:
+    }
+}

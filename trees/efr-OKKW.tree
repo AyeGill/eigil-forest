@@ -1,0 +1,7 @@
+\date{2025-02-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+    The trivial model structure on #{\Cat} coincides with the folk model structure.
+}

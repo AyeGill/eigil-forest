@@ -1,0 +1,7 @@
+\date{2025-02-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+    Let #{\cC} be a 2-category. Then the cofibrations, weak equivalences, and fibrations of the trivial model structure on #{\cC} are exactly the fibrations, weak equivalences, and cofibrations, respectively, in the trivial model structure on #{\cC^\op}.
+}

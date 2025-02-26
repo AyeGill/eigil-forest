@@ -3,8 +3,14 @@
 \date{2024-06-13}
 \title{The triple category of controlled processes}
 
+
+%Introduction
 \transclude{efr-003P}
 
+%Notions of double category
+
+
+%Para construction
 \transclude{efr-002H}
 
 

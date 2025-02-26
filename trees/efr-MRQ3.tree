@@ -1,0 +1,16 @@
+\date{2025-02-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\title{Trivial Model Structure}
+\p{
+    Let #{\cC} be a 2-category.
+    Then the underlying category #{\cC_0} carries a model structure defined as follows:
+    \ol{
+        \li{A morphism #{A \to B} is a weak equivalence, respectively a fibration if, for each #{X \in \cC}, the induced functor #{\cC(X,A) \to \cC(X,B)} is a weak equivalence, respectively an isofibration}
+        \li{A morphism is a cofibration if and only if it has the left lifting property against every morphism which is both a weak equivalence and a fibration}
+    }
+}
+\p{
+    Moreover, when #{\Cat} is equipped with its [folk model structure](efr-ZPPL), and #{\cC} is considered as enriched over #{\Cat}, this is an enriched model structure in the usual sense.
+}
