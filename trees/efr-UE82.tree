@@ -18,7 +18,7 @@
     \begin{tikzcd}
     \overline{\cD \times_\cC \cC_\det} \ar[r] \ar[rd] & \cD' \ar[d]\\
     & \cD
-    \end{tikzcd }
+    \end{tikzcd}
   }
   \p{
     This implies the equivalence in point 1.
