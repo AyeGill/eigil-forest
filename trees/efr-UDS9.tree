@@ -1,0 +1,10 @@
+\date{2025-04-03}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{\cC} be a positive Markov category with supports. Then #{\Optic(\cC) \to \cC} is a Markov prefibration.
+}
+\p{
+  As above, we see that the deterministic part is a fibration, so take #{X \to Y \leftarrow Z} deterministic maps, and let #{\binom{A}{X} \to \binom{A}{Z}} be an optic so that the induced triangle with the two Cartesian lifts to #{\binom{A}{Y}} commutes. Let the two parts be #{f: X \to M \otimes Y, g: M \otimes A \to A}. The implication is that #{X \to M \otimes Y \to M} -almost surely, #{g} is equal to the projection to #{A} (and #{X \to M \otimes Y \to Y} renders the triangle in #{\cC} commutative). Note that #{f} factors over the support of this map, hence we can assume the marginal #{X \to M} has full support. Hence up to sliding equivalene, #{g} is strictly equal to the projection. This implies the lift is uniquely determined as desired.
+}

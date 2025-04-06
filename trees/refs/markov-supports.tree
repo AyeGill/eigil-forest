@@ -1,0 +1,19 @@
+\title{Absolute continuity, supports and idempotent splitting in categorical probability}
+\date{2023-09-06}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2308.00651}
+\meta{external}{http://arxiv.org/abs/2308.00651}
+\author{Tobias Fritz}
+\author{TomÃ¡Å¡ Gonda}
+\author{Antonio Lorenzin}
+\author{Paolo Perrone}
+\author{Dario Stein}
+\meta{bibtex}{\startverb
+ @article
+{Fritz_Gonda_Lorenzin_Perrone_Stein_2023, title={Absolute continuity, supports and idempotent splitting in categorical probability}, url={http://arxiv.org/abs/2308.00651}, DOI={10.48550/arXiv.2308.00651}, abstractNote={Markov categories have recently turned out to be a powerful high-level framework for probability and statistics. They accommodate purely categorical definitions of notions like conditional probability and almost sure equality, as well as proofs of fundamental results such as the Hewitt-Savage 0/1 Law, the de Finetti Theorem and the Ergodic Decomposition Theorem. In this work, we develop additional relevant notions from probability theory in the setting of Markov categories. This comprises improved versions of previously introduced definitions of absolute continuity and supports, as well as a detailed study of idempotents and idempotent splitting in Markov categories. Our main result on idempotent splitting is that every idempotent measurable Markov kernel between standard Borel spaces splits through another standard Borel space, and we derive this as an instance of a general categorical criterion for idempotent splitting in Markov categories.}, note={arXiv:2308.00651 [math]}, number={arXiv:2308.00651}, publisher={arXiv}, author={Fritz, Tobias and Gonda, TomÃ¡Å¡ and Lorenzin, Antonio and Perrone, Paolo and Stein, Dario}, year={2023}, month={Sep} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Markov categories have recently turned out to be a powerful high-level framework for probability and statistics. They accommodate purely categorical definitions of notions like conditional probability and almost sure equality, as well as proofs of fundamental results such as the Hewitt-Savage 0/1 Law, the de Finetti Theorem and the Ergodic Decomposition Theorem. In this work, we develop additional relevant notions from probability theory in the setting of Markov categories. This comprises improved versions of previously introduced definitions of absolute continuity and supports, as well as a detailed study of idempotents and idempotent splitting in Markov categories. Our main result on idempotent splitting is that every idempotent measurable Markov kernel between standard Borel spaces splits through another standard Borel space, and we derive this as an instance of a general categorical criterion for idempotent splitting in Markov categories.
+}}
+

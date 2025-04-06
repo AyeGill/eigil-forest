@@ -4,8 +4,8 @@
 \taxon{lemma}
 \ol{
   \li{The free stochastic module on a corepresentable presheaf is given by ...}
-  \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\set}, in the sense that given a Cartesian map...}
-  
+  \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\Set}, in the sense that given a Cartesian map...}
+
 }
   \p{
     To show point 1., we must exhibit Cartesian lifts of each deterministic map in #{\cC}, and show furthermore that this gives a Markov prefibration. Note that there is a map #{\cD_o(\bar{A},\bar{B}) \to T(\cD_0(\bar{A},-))(\bar{B})} given by the unit of the monad. We claim the image of the Cartesian lifts under this inclusion are again Cartesian. 

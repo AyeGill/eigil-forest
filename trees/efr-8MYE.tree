@@ -1,0 +1,10 @@
+\date{2025-04-03}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\ol{
+  \li{
+    The support of #{p: X \to A} is equipped with a canonical deterministic monomorphism #{S_p \into A}, so that a map into #{A} is absolutely continuous with respect to #{p} if and only if it factors over the support.
+  }
+  \li{Two maps #{A \otimes W \to B} are #{p}-almost surely equal if and only if they are strictly equal on the support.}
+}

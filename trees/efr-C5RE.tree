@@ -1,0 +1,8 @@
+\date{2025-04-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  #{\MAr{\BorelStoch}}, as we have noted, is a Markov prefibration, and hence induces a prefibration algebra structure on #{\MAr{\BorelStoch}|_\det}. This prefibration algebra structure does not present a Markov fibration. For example, consider the stocastic section #{* \to \RR} given by a standard Gaussian measure (or any continuous measure). 
+  \ref{efr-TBZZ} now says that for this to present a Markov fibration, it must be the case for any map #{f: A \times \RR \to A} that if #{P(f(a,x) = a) = 1,} when #{x} is normally distributed, then the subset #{\{x \mid f(a,x) = a\}} has measure #{1}. But take #{A = \RR, f(a,x) = 0} if #{a=x,} #{a} otherwise, for a counterexample.
+}

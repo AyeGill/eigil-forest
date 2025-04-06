@@ -1,0 +1,30 @@
+\date{2025-04-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{\cC} be a Markov category with supports. Then the prefibration algebra induced by #{\MAr{\cC} \to \cC} presents a Markov fibration. If #{\cC} has conditionals, this Markov fibration is isomorphic to #{\MAr{\cC}}.
+}
+\p{
+  Given a section #{s: X \to M:p} and #{\phi: A \times_X M \to A \times_X A}, simply take the pullback to the support of #{s}. It must be the case that #{\phi(a,m) = (a,m)} #{s}-almost surely, which implies strict equality on the support. Hence by \ref{efr-TBZZ}, #{\MAr{\cC}} presents a Markov fibration.
+}
+\p{
+  There is an induced map #{\SChart(\MAr{\cC}|_\det) \to \MAr{\cC}}, which we claim is an isomorphism. So consider a map in #{\MAr{\cC}}:
+  
+  \quiver{
+    \begin{tikzcd}
+      \bar{X} \ar[r] \ar[d] & \bar{Y}\ar[d]\\
+      X \ar[r] & Y.
+    \end{tikzcd}
+  }
+
+  This map is in the image of
+  \quiver{
+    \begin{tikzcd}
+      \bar{X} \ar[r, bend left=30] \ar[d] & \bar{X} \times Y \ar[r] \ar[d] & \bar{Y} \ar[d]\\
+      X \ar[r, bend left= 30] & X \times Y \ar[l] \ar[r] & Y,
+    \end{tikzcd}
+  }
+  where the map #{\bar{X} \times Y \to \bar{Y}} is taken to be a conditional. Note that every map in #{\SChart(\MAr{\cC}|_\det)} can be represented in this form, by taking a conditional of #{M} given #{Y} to build a section to #{M \to X \otimes Y}. Since conditionals are almost-surely equal, by restricting to the support of #{X \to X \otimes Y}, we can find a representative which only depends on the overall map #{\bar{X} \to \bar{Y},} which proves that the map from #{\SChart} is faithful, concluding the proof.
+
+}

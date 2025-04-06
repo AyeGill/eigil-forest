@@ -1,0 +1,13 @@
+\date{2025-03-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  The functor #{\Optic(\BorelStoch) \to \BorelStoch} is not a Markov prefibration, although its pullback over #{\BorelStoch_\det} is a Grothendieck fibration.
+}
+\p{
+  To see this, first consider the deterministic pullback. It is not hard to see that an optic #{\binom{A}{X} \to \binom{B}{Y}} with deterministic base can be identified with a map #{X \otimes B \to A} (and the base deterministic map #{X \to Y}). Hence this part is a fibration with the fiber over #{X} being the coKleisli category of the #{X \times -} monad, and the pullback functors given by reindexing these parameterized maps. The Cartesian lift of a map #{X \to Y} at #{\binom{B}{Y}} is given by the optic #{\binom{B}{X} \to \binom{B}{Y}} with unit residual and identity backwards component.
+}
+\p{
+  Now, let #{g: I \to \RR} denote the standard Gaussian distribution, let #{f: \RR \otimes \RR \to \RR} be the function given by #{f(x,y) = 0} if #{x=y} and #{y} otherwise, and consider the two optics #{\binom{\RR}{*} \to \binom{\RR}{\RR}} given by #{(I, g: I \to \RR, 1_\RR: \RR \to \RR), (\RR, \copy_\RR g : I \to \RR \otimes \RR, f: \RR \otimes \RR \to \RR)} (where we recall that the first argument is the residual). They cannot be equal, as postcomposition with the optic #{\binom{\RR}{\RR} \to \binom{*}{*}} given by the identity #{\RR \to \RR} yields, for the former, the standard Gaussian #{g: I \to \RR}, and for the latter, the constant zero map. But postcomposition with the projection #{\binom{\RR}{\RR} \to \binom{\RR}{*}} does give the same optic (the identity), because, for every fixed #{y \in \RR}, when #{x} is normally distributed, #{f(x,y) = y} with probability one. Hence the unique lifting of Cartesian maps over Cartesian maps cannot hold.
+}

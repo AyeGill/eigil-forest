@@ -1,7 +1,7 @@
 \date{2025-03-26}
 \author{eigil-rischel}
 \import{macros}
-\title{Markov Fibrations}
+\title{Free Markov Prefibrations}
 \p{
   Because every map in #{\MAr{Kl(\Delta)}} factors into arrows which are "induced" from arrows in #{\MAr{Kl(\Delta)}|_\det} and the Markov prefibration property, it may initially be hoped that #{\MAr{Kl(\Delta)}} is in some sense "free" on the data of the fibration #{\MAr{Kl(\Delta)}|_\det \to \Set} and the inclusion #{\Set \to Kl(\Delta)}. If that was true, we may further hope that taking the fiberwise opposite of the fibration and applying the same free generation principle would generate a good notion of stochastic lens.
 }
@@ -43,23 +43,3 @@
 \p{
   This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}. We will show that the category of algebras of this monad is equivalent to a full subcategory of #{\MarkPreFib(\cC),} with the canonical #{\MarkPreFib(\cC) \to \Alg(\Free_\MarkPreFib)} being left adjoint to the inclusion.
 }
-\transclude{efr-HVUT}
-\transclude{efr-MAUM}
-
-\p{
-  We now turn to the problem of characterizing the Markov fibrations. In fact it is somewhat difficult to give a non-tautological description in full generality, but we can take a stab at it:
-}
-\transclude{efr-UE82}
-\p{
-  Thus, to prove a given prefibration is a Markov fibration, if suffices to verify:
-  \ol{
-    \li{Every map factors into maps freely induced by the deterministic part.}
-    \li{Given two such factorizations of the same map, their equality can be proven using only the Markov prefibration structure and equations between maps with deterministic base.}
-  }
-  This is much like the procedure we carried out in \ref{efr-SP6H} to identify optics with certain maps in #{\MAr{Kl(\Delta)}}. It is instructive to consider how to prove that this is a Markov fibration.
-}
-\transclude{efr-IAFO}
-\p{
-  This is fine as far as it goes, but the technique used at the end hardly generalizes - for example, for continuous probability measures, there is no such thing as "the support" so that almost-certainly equal maps must be strictly equal on the support. We will see some variations on this to prove that a few other prefibrations are fibrations, but we must admit the lack of an easy, general technique.
-}
-\transclude{efr-G0JM}

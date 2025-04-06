@@ -1,0 +1,45 @@
+\date{2025-03-29}
+\author{eigil-rischel}
+\import{macros}
+\title{Markov Fibrations}
+
+\p{
+  Recall that, given a functor #{R: \cC \to \cD} with left adjoint #{L}, there is a "standard resolution" of any object #{X \in \cC}, given by the "cofork" #{LRLRX \rightrightarrows LRX \to X}, where the two parallel maps are the two possible applications of the adjunction counit. The adjunction is monadic if and only if this is always a coequalizer, in which case the algebra corresponding to #{X} is #{RLRX \to RX} - conversely, given an algebra #{\alpha: RLA \to A}, there are two parallel maps #{LRLA \rightrightarrows LA} (given by #{L(\alpha)} and the counit,) and the object in #{\cC} corresponding to this algebra is given by this coequalizer.
+}
+\p{
+  As a generalization of this, if this coequalizer exists for every algebra, they form a left adjoint to the canonical functor #{\cC \to \Alg_\cD(RL)}. Since we have seen that the monad of free Markov prefibrations commutes with taking fiberwise opposites, we may hope that such a left adjoint exists - a simple argument shows that, if it is, it is fully faithful, and we may say that those prefibrations in the image are the "fibrations" and define their fiberwise opposite as the fiberwise opposite applied to their underlying algebras.
+}
+
+\transclude{efr-HVUT}
+\transclude{efr-MAUM}
+
+\transclude{efr-UE82}
+\transclude{efr-TBZZ}
+\transclude{efr-XDQ9}
+
+
+
+\transclude{efr-C5RE}
+\transclude{efr-8SXB}
+\p{
+  It is worth noting that, even in the case where #{\SChart(\cD_0^\fop)} is not a prefibration, it may still deserve the name "stochastic lenses". For example the stochastic lenses in #{\BorelStoch} can be seen to contain #{\Optic(\BorelStoch)} as a full subcategory.
+}
+
+\transclude{efr-TT39}
+\transclude{efr-Y73O}
+\p{
+  This is not very surprising. What is perhaps surprising is that this result holds for #{\BorelStoch}, despite its lack of supports, although the proof is rather involved, involving some nontrivial measure theory.
+}
+\transclude{efr-W3B5}
+\p{
+  Note that this argument certainly fails for #{\Stoch} - the measurable projection and section properties are very special for Borel measurable sets. It can't be ruled out that some more general technique, using a different class of sections, could establish the result in higher generality, but a general comparison theorem seems out of reach.
+}
+
+\p{
+  Part of the motivation for the theory of dependent optics is to identify a category of stochastic optics which admits all coproducts. If #{\cC} is distributive, #{\Optic(\cC)} satisfies #{\binom{A}{X} + \binom{A}{Y} = \binom{A}{X+Y},} but this coproduct fails to exist in general if the two secondary objects are distinct. The idea is that this coproduct #{\binom{A}{X} + \binom{A'}{Y}} should exist as a family indexed by #{X + Y}, where #{E_x = A} for #{x \in X}, and #{E_y = A'} for #{y \in Y}. Our theory acommodates this example under the mild additional hypothesis of \em{extensiveness}
+}
+\transclude{efr-B2P7}
+\transclude{efr-QAV2}
+\p{
+  In particular, #{\SChart(\MAr{\cC}|_\det), \SLens(\MAr{\cC}|_\det)} both admit coproducts given simply as coproducts in #{\MAr{\cC}}, if #{\cC} is extensive.
+}

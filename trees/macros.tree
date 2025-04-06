@@ -200,6 +200,8 @@
 \def\coPSh{#{\cat{coPSh}}}
 \def\IPSh{#{\cat{IPSh}}}
 \def\IcoPSh{#{\cat{IcoPSh}}}
+\def\SChart{#{\cat{SChart}}}
+\def\SLens{#{\cat{SLens}}}
 
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?

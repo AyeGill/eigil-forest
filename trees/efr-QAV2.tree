@@ -1,0 +1,10 @@
+\date{2025-04-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{Let #{\cC} be an extensive Markov category, let #{\cD_0 \to \cC_\det} be a fibration which satisfies #{\cD_{0,X+Y} = \cD_{0,X} \times \cD_{0,Y}}. Note that this implies #{\cD_0} admits finite coproducts, and they're given exactly by this pairing. Suppose #{\cD_0} is equipped with a prefibration algebra structure. Then #{\cD_0 \into \SChart(\cD_0)} preserves the finite coproducts. In particular, #{\cD_0^\fop} has the same coproducts as #{\cD_0,} and #{\cD_0^\fop \to \SLens(\cD_0)} preserves them as well.}
+\proof{
+  \p{
+    This is straighforward to check - the residual #{M \to X_1 + X_2} splits into #{M_1 + M_2} by extensivity of #{\cC}, which also implies the section must split as the copairing of a section #{s_1: X_1 \to M_1, s_2: X_2 \to M_2}. By the condition on the fibration, the map in the fiber over #{M} splits into a map over #{M_1} and a map over #{M_2}. Using the extensivity again, it is straightforward to see that this decomposition respects the equivalence relation. 
+  }
+}

@@ -2,28 +2,11 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{lemma}
-\ol{
-\li{
-  Let #{\cD} be a Markov prefibration and let #{\cD' \to \cD} be its coreflection into #{\MarkFib}. Then #{\cD' \to \cC} is full if and only if the functor #{\overline{\cD \times_\cC \cC_\det} \to \cD} is full - in other words, if every map #{\bar{X} \to \bar{Y}} in #{\cD} arises as an element of the free prefibration on the deterministic part.
-}
-\li{
-  The functor #{\cD' \to \cD} is faithful on maps over #{\cC_\det}.
-}
+\p{
+  Let #{\alpha: \Free(\cD_0) \to \cD_0} be an algebra, and suppose there exists some full and bijective on objects functor #{\overline{\cD_0} \to \cD} to a Markov prefibration so that the induced map #{\cD_0 \to \cD|_\det} is an isomorphism. Then #{\cD} equalizes the two maps #{\overline{\Free(\cD_0)} \rightrightarrow \overline{\cD_0}}. Hence to prove #{\alpha} presents a Markov fibration (which must be #{\cD}), it suffices to prove that every two elements identified by the map #{\overline{\cD_0} \to \cD} are also identified by the coequalizer.
 }
 \proof{
   \p{
-    By construction, #{\cD'} arises as a coequalizer of #{\overline{\cD \times_\cC \cC_\det}}, moreover the two maps in the coequalizer are identity-on-objects. Hence the horizontal map in this commutative triangle is full:
-  }
-  \quiver{
-    \begin{tikzcd}
-    \overline{\cD \times_\cC \cC_\det} \ar[r] \ar[rd] & \cD' \ar[d]\\
-    & \cD
-    \end{tikzcd}
-  }
-  \p{
-    This implies the equivalence in point 1.
-  }
-  \p{
-    For point 2, note that if we apply the coreflection to the map #{\cD' \to \cD}, we obtain an isomorphism. Since the left adjoint is fully faithful, that means the induced map in #{\Alg(\Free_\MarkPreFib)} must be an isomorphism, which means the underlying map in #{\Fib(\cC_\det)} is an isomorphism. This exactly the claim that the original map is faithful on maps over #{\cC_\det} (plus fullness, but this was already established).
+    The statement mostly contains the proof - as noted at the start of this section, any object equalizes its own resolution #{LRLRX \rightrightarrows LRX \to X,} this is simply a general fact about adjunctions. This proves that there is a map from the coequalizer to #{\cD}, and we only need to prove that this is an isomorphism - fullness and bijectiveness on objects is automatic by the assumptions, and faithfulness is exactly the claim about identifications.
   }
 }

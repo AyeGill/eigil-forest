@@ -1,0 +1,14 @@
+\date{2025-04-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{F,G: \cD \rightrightarrows \cD'} be a parallel pair in #{\Cat_{/\cC}}, and suppose both are identity on objects. Suppose moreover this is a reflexive pair, i.e there is some #{S: \cD' \to \cD} so that #{FS = GS = 1_{\cD'}}. Then the coequalizer in #{\Cat_{/\cC}} is again identity on objects, and is given on hom-sets simply by the coequalizer of the parallel pair #{\cD(x,y) \rightrightarrows \cD'(x,y)}
+}
+\proof{
+  \p{
+    The only nontrivial part is to verify that composition is well-defined on the equivalence classes in #{\cD'(x,y)/\sim}. It suffices to see that post- and precomposition with a fixed morphism both preserve this equivalence relation. Take some #{f: x \to y \in \cC}, and #{h : y \to z \in \cC'}. We must show that #{hF(f) = hG(f)}. But simply write
+    ##{hF(f) = F(S(h)f) \sim G(S(h)f) = hG(f),}
+    and we are done. Clearly the other side follows by duality, finishing the proof.
+  }
+}

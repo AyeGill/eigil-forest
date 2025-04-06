@@ -1,0 +1,10 @@
+\date{2025-04-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be a Markov category. Then there is a functor #{\Optic(\cC) \to \SLens(\MAr{\cC}|_\det)} over #{\cC}. This functor is full.
+}
+\p{
+  The functor takes an object #{\binom{A}{X}} to #{A \otimes X \to X}, and takes an optic #{l: X \to M \otimes Y, r: M \otimes B \to A} to the map represented by #{X \leftarrow M \times X \times Y \to Y} and the obvious map #{B \times M \times X \times Y \to A \times M \times X \times Y}. It is easy to check that this preserves the sliding equations, and is functorial. To see that this functor is full, consider a map with underlying span #{X \leftarrow M \to Y} and a map #{B \times M \to A \times M}. We can always extend this to a map #{M \times X \times Y \times B \to M \times X \times Y \times A} which cimply ignores the #{X,Y} coordinates. This is then in the image of the functor from optics, and our original map is the result of pulling this back along #{M \to M \times X \times Y} - hence they are representatives of the same stochastic lens.
+}
