@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{definition}
 \p{
-  If a Markov category #{\cC} satisfies the condition of \ref{efr-0044}, we say #{\cC} has \em{good deterministic pullbacks}.
+  If #{\cC_\det} admits pullbacks, we say #{\cC} \em{admits deterministic pullbacks} (note that this is distinct from #{\cC} admitting pullbacks of deterministic morphisms.)
 }

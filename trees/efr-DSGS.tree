@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cC} be a positive Markov category. Suppose #{\cC_\det} admits pullbacks of split monomorphism. Then #{\cC} has good deterministic pullbacks.
+  Let #{\cC} be a positive Markov category. Suppose #{\cC_\det} admits pullbacks of split monomorphism. Then #{\cC} satisfies the hypothesis of \ref{efr-0044}.
 }
 \proof{
   \p{

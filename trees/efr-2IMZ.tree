@@ -18,17 +18,14 @@
 
 \transclude{efr-0044} %theorem on pullbacks
 \transclude{efr-0040} %warning/remark
-\transclude{efr-T3HM}
-\p{
-  Note that if #{\cC} has good deterministic pullbacks, it doesn't follow that #{\cC} has pullbacks of deterministic morphisms, only that #{\cC_\det} has pullbacks.
-}
-
+\transclude{efr-T3HM} %defn: good deterministic pullbacks
 
 \transclude{efr-0YP1} % split pbacks are absolute
 \transclude{efr-DSGS} %Pullbacks of split monos + positivity = good pullbacks
 \p{
   The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories, although we only need it for \em{split} monomorphisms. (The split hypothesis does play a role, since we can't in general guarantee even that the inclusion #{\cC_\det \into \cC} preserves monomorphisms in general).
 }
+\p{The assumption that #{\cC} is positive and has deterministic pullbacks will play a key role, not merely to establish that #{\MAr{\cC} \to \cC} is a prefibration, but for the development of the theory of Markov fibrations over #{\cC} in general.}
 
 \p{
   We will need the notion of \em{support} in a Markov category, introduced in \ref{markov-supports}, for certain examples, so we briefly record the definition and a few of its properties here.
