@@ -32,6 +32,7 @@
   \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\Set}, in the sense that given a Cartesian map #{\bar{A} \to \bar{B}} and an element #{\phi \in T\cD_0(\bar{X},-)(\bar{B})} lying over a deterministic map #{X \to B,} the natural map from lifts #{\psi \in T\cD_0(\bar{X},-)(\bar{A})} to lifts #{X \to A} is a bijection.}
 
 }
+\proof{
 \p{
   First, observe that the equations for a stochastic module follow by a straightforward diagram chase around something with this shape:
   \quiver{
@@ -71,4 +72,5 @@
 }
 \p{
   Finally, given two distinct lifts (again, we can assume their maps #{M \to A} factor over #{X},) clearly any map #{N \to M} witnessing an identity between their composites #{\bar{X} \to \bar{Y}} would likewise exhibit an identity between their lifts (since pullbacks compose). This proves uniqueness, and finishes the proof.
+}
 }

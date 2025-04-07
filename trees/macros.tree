@@ -172,6 +172,7 @@
 \def\Lan{#{\mathrm{Lan}}}
 
 \def\op{#{\mathrm{op}}}
+\def\fop{#{\mathrm{fop}}}
 \def\co{#{\mathrm{co}}}
 \def\cc{#{\mathrm{cc}}}
 \def\lex{#{\mathrm{lex}}}
