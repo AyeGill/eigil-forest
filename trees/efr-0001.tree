@@ -1,7 +1,10 @@
-\title{The Heuristic Control of Complex Systems}
+\title{Stochastic Categorical Systems Theory}
 \date{2024-05-25}
 \author{eigil-rischel}
 \import{macros}
+
+%Introduction
+\transclude{efr-X0ZV}
 
 %Review of categorical CT
 \transclude{efr-0023}

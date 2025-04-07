@@ -2,29 +2,14 @@
 \author{eigil-rischel}
 \title{Acknowledgements}
 \p{
-  Advisors
-  Neil Ghani
-  Radu Mardare
+  I would like to extend a great thanks to the Mathematically Structured Programming group at the University of Strathclyde, my fellow PhD students in particular, for making my time there such a great one. A good chunk of this work was completed while I worked at the Compositional Systems Laboratory at the Tallinn University of Technology - I owe everyone there a great thanks as well.
 }
 \p{
-  MSP group
-  Alasdair Lambert
-  Andre Videla
-  Guillaume Allais
-  Ezra Schoen
-  Malin Altenmuller
-
+  For conversations which contributed to this work, and to my mathematical development in general, I would like to thank Dylan Braithwaite, Matteo Capucci, Elena di Lavore, Tobias Fritz, Davidad, Tomáš Gonda, Bruno Gavranović, Diana Kessler, Owen Lynch, Jade Master, David Jaz Myers, Riu Nakamura, Chad Nester, Evan Patterson, Paolo Perrone, Mario Roman, Brandon Shapiro, Toby Smithe, Pawel Sobocinski, and David Spivak. A special thanks to Dylan, Matteo, and Bruno, for serving their time with me in the dependent optics mines.
 }
 \p{
-  Conversations
-  Matteo Capucci, Jules Hedges, Bruno Gavranovic, David Spivak, Brandon Shapiro, Toby Smithe, Riu Nakamura, Dylan Braithwaite, Davidad, Evan Patterson, Owen Lynch, Jade Master
+  To Neil Ghani, Radu Mardare, and Jules Hedges, a massive thanks for serving as my advisors during the somewhat tumultuous process that was the production of this thesis.
 }
 \p{
-  Tobias Fritz, Paolo Perrone, Tomas Gonda. 
-}
-\p{
-  Pawel Sobocinski, Chad Nester, Mario Roman, Elena di Lavore, Diana Kessler
-}
-\p{
-  Benjamin Bumpus
+  Finally, I thank my wonderful family.
 }
