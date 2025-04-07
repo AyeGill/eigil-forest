@@ -8,7 +8,7 @@
 \ol{
   \li{This equivalence relation respects composition, and so defines a category #{\SChart(\cD_0)}}
   \li{In #{\Cat_{/\cC}}, #{\overline{\Free(\cD_0)} \rightrightarrows \overline{\cD_0} \to \SChart(\cD_0)} is a coequalizer diagram. In particular, #{\cD_0} presents a Markov fibration if and only if #{\SChart(\cD_0)} is a Markov prefibration (in which case #{\SChart(\cD_0)} is the fibration it presents)}
-  \li{\SChart(\cD_0) is a prefibration if and only if, given a stochastic section #{s: X \to M: f \in \cC} and #{\phi: p^*\bar{X} \to p^*\bar{X} \in \cD_{0,M}} so that the algebra structure carries this to the identity #{1_\bar{X}}, there is a deterministic #{h: M' \to M} and factorization #{s': X \to M'} so that the pullback #{h^*\phi} is the identity.}
+  \li{#{\SChart(\cD_0)} is a prefibration if and only if, given a stochastic section #{s: X \to M: f \in \cC} and #{\phi: p^*\bar{X} \to p^*\bar{X} \in \cD_{0,M}} so that the algebra structure carries this to the identity #{1_{\bar{X}}}, there is a deterministic #{h: M' \to M} and factorization #{s': X \to M'} so that the pullback #{h^*\phi} is the identity.}
 }
 \p{
   Recall that the fibration #{\Free(\cD_0)} has fibers whose morphisms #{\bar{X} \to \bar{X}'} are given by tuples #{s: X \to M: p,} #{p^*\bar{X} \to p^*\bar{X}'} (up to a certain equivalence relation). Forming the free Markov prefibration #{\overline{\Free(\cD_0)}} on this fibration, we find that the morphisms are given by diagrams

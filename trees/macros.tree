@@ -202,7 +202,7 @@
 \def\IcoPSh{#{\cat{IcoPSh}}}
 \def\SChart{#{\cat{SChart}}}
 \def\SLens{#{\cat{SLens}}}
-
+\def\Optic{#{\cat{Optic}}}
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?
 \def\BiCat{#{\cat{BiCat}}}
@@ -316,6 +316,7 @@
 
 \def\expect{#{\EE}}
 \def\Stoch{#{\cat{Stoch}}}
+\def\Meas{#{\cat{Meas}}}
 \def\FinStoch{#{\cat{FinStoch}}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
 \def\det{#{\mathrm{det}}}

@@ -6,7 +6,7 @@
   Let #{\alpha: \Free(\cD_0) \to \cD_0} be an algebra of the free Markov prefibration monad which presents a Markov fibration. Then the underlying algebra of the Markov prefibration obtained as the coequalizer of #{\overline{\Free(\cD_0)} \rightrightarrows \bar{\cD_0}} is isomorphic to #{\alpha}, and in particular this prefibration \em{is} a Markov fibration.
 }
 \p{
-  This correspondence determines an equivalence of categories between the full subcategory #{\MarkFib(\cC)} of #{\MarkPreFib(\cC)} spanned by the Markov fibrations, and the full subcategory #{\Alg(\Free_\MarkPreFib)^p \Alg(\Free_\MarkPreFib)} spanned by those algebras which present a Markov fibration.
+  This correspondence determines an equivalence of categories between the full subcategory #{\MarkFib(\cC)} of #{\MarkPreFib(\cC)} spanned by the Markov fibrations, and the full subcategory #{\Alg(\Free_\MarkPreFib)^p \subseteq \Alg(\Free_\MarkPreFib)} spanned by those algebras which present a Markov fibration.
 }
 \proof{
   \p{

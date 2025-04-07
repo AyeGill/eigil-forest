@@ -11,3 +11,7 @@
         \li{Given maps #{f: A \to C}, #{g:B \to C} in #{\cD}, such that #{p(f),p(g)} are deterministic and #{f,g} are Cartesian for the above fibration, #{p} induces a bijection between maps #{h: A \to B \in \cC} such that #{gh = f}, and maps #{h': p(A) \to p(B)} so that #{p(g)h' = p(f)}. Note that when restricted to those maps where #{p(h)} is deterministic, this being a bijection is the defining property of #{g} being Cartesian (for any #{f}, not necessarily a Cartesian one).}
     }
 }
+
+\p{
+  Given a Markov prefibration #{\cD,} we write #{\cD|_\det} for #{\cD \times_\cC \cC_\det}. We will refer to this as the \em{deterministic part} of #{\cD} - note that this does have the potential for confusion, as when #{\cD} is itself a Markov category, this is not necessarily the same as the deterministic subcategory of #{\cD}. When #{f \in \cD} lies inside #{\cD|_\det}, and is Cartesian for that fibration, we will simply refer to it as a Cartesian map in #{\cD} (there are no other types of Cartesian maps, so this should not lead to confusion). A \em{morphism of Markov prefibrations} is a functor #{\cD \to \cD'} over #{\cC} which preserves Cartesian maps. The category of Markov prefibrations over #{\cC} thus defined is denoted #{\MarkPreFib(\cC)}. Taking the deterministic part defines a functor #{(-)|_\det: \MarkPreFib(\cC) \to \Fib(\cC_\det)}.
+}

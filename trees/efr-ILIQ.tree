@@ -1,0 +1,7 @@
+\date{2025-04-07}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  The free Markov prefibration monad #{\overline{(-)}|_\det} commutes with fiberwise opposites. In particular, algebra structures on #{\cD_0} are in bijection with algebra structures on #{\cD_0^\fop,} and fiberwise opposites lifts to an involution of #{\Alg(\overline{(-)}|_\det)}.
+}

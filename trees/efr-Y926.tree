@@ -22,6 +22,9 @@
 
       commutes.
     }
+    \li{
+      Given two stochastic sections #{\alpha:X \to M,} #{\beta: M \to N,} we have #{(\beta\alpha)_* = \beta_*\alpha_*} (note that this makes sense because pullbacks compose).
+    }
   }
 }
 \p{

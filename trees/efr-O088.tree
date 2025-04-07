@@ -3,6 +3,11 @@
 \import{macros}
 \title{Markov Fibrations and Stochastic Lenses}
 
+%Introduction
+\transclude{efr-HQ73}
+
+%Preliminaries on Markov categories and optics
+\transclude{efr-M386}
 
 %Markov Prefibrations
 \transclude{efr-2IMZ}

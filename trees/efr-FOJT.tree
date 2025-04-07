@@ -4,5 +4,5 @@
 \taxon{proposition}
 \p{
   Let #{p: \cD \to \cC} be any functor and let #{\cC_0 \to \cC} be an identity-on-objects functor. Write #{\cD_0 = \cD \times_\cC \cC_0} for the pullback. If #{F: \cD \to \Set} is a copresheaf indexed over #{X \in \cC},
-  the pullback #{\bar{A} \mapsto F(\bar{A}) \times_{\cC(X,p\bar{A})} \cC_0(X,p\bar{A})} is a copresheaf on #{\cD_0} indexed over #{X} again in a unique way. This defines a functor #{\IcoPSh(\cD / \cC) \to \IcoPSh(\cD_0 / \cC_0)}. Moreover, this functor preserves the corepresentable copresheaves (since #{\c_0 \to \cC} is identity on objects, so is #{\cD_0 \to \cD}, so this statement makes sense).
+  the pullback #{\bar{A} \mapsto F(\bar{A}) \times_{\cC(X,p\bar{A})} \cC_0(X,p\bar{A})} is a copresheaf on #{\cD_0} indexed over #{X} again in a unique way. This defines a functor #{\IcoPSh(\cD / \cC) \to \IcoPSh(\cD_0 / \cC_0)}. Moreover, this functor preserves the corepresentable copresheaves (since #{\cC_0 \to \cC} is identity on objects, so is #{\cD_0 \to \cD}, so this statement makes sense).
 }

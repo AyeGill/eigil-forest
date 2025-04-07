@@ -6,16 +6,13 @@
   Because every map in #{\MAr{Kl(\Delta)}} factors into arrows which are "induced" from arrows in #{\MAr{Kl(\Delta)}|_\det} and the Markov prefibration property, it may initially be hoped that #{\MAr{Kl(\Delta)}} is in some sense "free" on the data of the fibration #{\MAr{Kl(\Delta)}|_\det \to \Set} and the inclusion #{\Set \to Kl(\Delta)}. If that was true, we may further hope that taking the fiberwise opposite of the fibration and applying the same free generation principle would generate a good notion of stochastic lens.
 }
 \p{
-  Unfortunately, this is not the case. One way to see that we need some additional structure of some kind is to observe that, in order to cover all the maps in #{\MAr{Kl(\Delta)},} we do not even need all the maps in #{\MAr{Kl(\Delta)}|_\det}. Because of randomness pushback, every map can be factored into a random section followed by a \em{deterministic} map #{p^*\bar{X} \to \bar{Y}} - we can always do all the random choices while choosing the residual. This argument implies that #{\Set^\to \to \Set} "generates" #{\MAr{Kl(\Delta)}} in the same way. [It's actually not completely obvious how to finish this argument - thhey could generate the same thing, right? My thought is you can't have an implied sliding equivalence with no stochastic stuff in the top, but maybe you can.](todo-tree)
+  Unfortunately, this is not the case. We will see that the free prefibration is given by gadgets which look a bit like an indexed version of optics, up to a sliding equivalence for \em{deterministic} maps on the 
 }
 \p{
-  The extra structure turns out to come from a monad on #{\Fib(\cC_\det)}, induced by an adjunction between this and a category of Markov prefibrations. The adjunction is not algebraic, but the induced functor #{\MarkovPreFib(\cC) \to \Alg(T)} admits a fully faithful left adjoint - in other words, the algebras of this functor are a equivalently a subset of the prefibrations. These are what we'll call "Markov fibrations".
-}
-\p{
-  With this monad in hand, it only remains to observe that it commutes with fiberwise opposites, and we may easily lift the fiberwise opposite to the category of algebras, and hence to the Markov Fibrations.
+  The extra structure turns out to come from a monad on #{\Fib(\cC_\det)}, induced by the adjunction between this and the category of Markov prefibrations. The adjunction is not algebraic, but the induced functor #{\MarkovPreFib(\cC) \to \Alg(T)} admits a partial left adjoint which is fully faithful. The image of this partial left adjoint are what we will call "Markov fibrations". Once we've seen that the monad commutes with fiberwise opposites, and the domain of the partial left adjoint is stable under taking fiberwise opposites, we have a reasonable notion of "the fiberwise opposite of a Markov fibration".
 }
 
-\p{First, we will give a description of the free Markov prefibration on a fibration #{\cD_0 \to \cC_{\det}}. There is a fairly simple description of the hom-sets, but their composition is a bit tricky, and verifying associativity even more so. Hence we will employ a technical trick: by characterizing the hom-sets as "freely generated" in a certain sense from the hom-sets in #{\cD_0}, we can identify them with sets of natural transformations using a Yoneda-type argument, and infer composition and associativity from there.}
+\p{In this section, we will give a description of the free Markov prefibration on a fibration #{\cD_0 \to \cC_{\det}}. There is a fairly simple description of the hom-sets, but their composition is a bit tricky, and verifying associativity even more so. Hence we will employ a technical trick: by characterizing the hom-sets as "freely generated" in a certain sense from the hom-sets in #{\cD_0}, we can identify them with sets of natural transformations using a Yoneda-type argument, and infer composition and associativity from there.}
 
 \transclude{efr-001I}%Indexed (co)presheaves
 \p{
@@ -41,5 +38,7 @@
 \transclude{efr-OH7U}%Cartesians proof
 \transclude{efr-0BES}%Proof of left adjoint
 \p{
-  This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}. We will show that the category of algebras of this monad is equivalent to a full subcategory of #{\MarkPreFib(\cC),} with the canonical #{\MarkPreFib(\cC) \to \Alg(\Free_\MarkPreFib)} being left adjoint to the inclusion.
+  This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}.
 }
+\transclude{efr-A08L}%Free thing
+\transclude{efr-ILIQ}%Free thing commutes with fiberwise opposites.

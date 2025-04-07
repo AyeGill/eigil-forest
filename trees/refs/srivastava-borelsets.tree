@@ -1,0 +1,13 @@
+\title{A Course on Borel Sets}
+\date{2008-01-09}
+\taxon{reference}
+\author{S. M. Srivastava}
+\meta{bibtex}{\startverb
+ @book
+{Srivastava_2008, title={A Course on Borel Sets}, ISBN={978-0-387-22767-2}, abstractNote={A Course on Borel sets provides a thorough introduction to Borel sets and measurable selections and acts as a stepping stone to descriptive set theory by presenting important techniques such as universal sets, prewellordering, scales, etc. It is well suited for graduate students exploring areas of mathematics for their research and for mathematicians requiring Borel sets and measurable selections in their work. It contains significant applications to other branches of mathematics and can serve as a self- contained reference accessible by mathematicians in many different disciplines. It is written in an easily understandable style and employs only naive set theory, general topology, analysis, and algebra. A large number of interesting exercises are given throughout the text.}, publisher={Springer Science & Business Media}, author={Srivastava, S. M.}, year={2008}, month={Jan},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+A Course on Borel sets provides a thorough introduction to Borel sets and measurable selections and acts as a stepping stone to descriptive set theory by presenting important techniques such as universal sets, prewellordering, scales, etc. It is well suited for graduate students exploring areas of mathematics for their research and for mathematicians requiring Borel sets and measurable selections in their work. It contains significant applications to other branches of mathematics and can serve as a self- contained reference accessible by mathematicians in many different disciplines. It is written in an easily understandable style and employs only naive set theory, general topology, analysis, and algebra. A large number of interesting exercises are given throughout the text.
+}}
+

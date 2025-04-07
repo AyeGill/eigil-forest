@@ -8,6 +8,8 @@
 \transclude{efr-SP6H}%Example: discrete dist. monad
 
 \transclude{efr-0019}% Markov *prefib* defn
+\transclude{efr-EQ41}
+
 
 \p{
   \ref{efr-SP6H} contains the argument that #{\MAr{Kl(\Delta)} \to Kl(\Delta)} is a Markov prefibration. This is a key motivating example.
@@ -41,7 +43,7 @@
 \transclude{efr-0043}%FinStoch example
 \transclude{efr-8B5X}%Optics counterexample
 \p{
-  This counterexample indicateas that we can't expect the Markov fibrational approach to stochastic lenses to work for #{\BorelStoch} - in fact, since over deterministic maps #{\Optic(\BorelStoch)} \em{is} the fiberwise dual of (the restriction to trivially-indexed objects of) #{\MAr{\BorelStoch},} this example shows that there is \em{no Markov prefibration whose deterministic part is the fiberwise dual of #{\BorelStoch}}. Moreover, as the example indicates, this is not a mere technical issue, but an unavoidable fact about optics in general measurable spaces - even up to behavioral equivalence, they simply don't satisfy the conditions of being a Markov prefibration.
+  This counterexample indicates that we can't expect to construct a reasonable notion of stochastic optics by dualizing a Markov fibration that looks like #{\MAr{\BorelStoch}} - in fact, since over deterministic maps #{\Optic(\BorelStoch)} \em{is} the fiberwise dual of (the restriction to trivially-indexed objects of) #{\MAr{\BorelStoch},} this example shows that there is \em{no Markov prefibration whose deterministic part is the fiberwise dual of #{\BorelStoch}}. Moreover, as the example indicates, this is not a mere technical issue, but an unavoidable fact about optics in general measurable spaces - even up to behavioral equivalence, they simply don't satisfy the conditions of being a Markov prefibration. (But see \ref{efr-W3B5})
 }
 \p{
   On the other hand, we have:
