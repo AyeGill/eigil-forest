@@ -1,0 +1,10 @@
+\date{2025-03-03}
+\author{eigil-rischel}
+\import{macros}
+\tag{Research idea}
+\p{
+  In some sense string diagrams are just generalized monoidal words, and in that sense a lot of Markov category stuff is just generalized rings, at which point it's not so surprising that you can capture the generality of probability theory - that's just operator algebra!
+}
+\p{
+  There may be something to flesh out here, especially in terms of conditional expectation.
+}

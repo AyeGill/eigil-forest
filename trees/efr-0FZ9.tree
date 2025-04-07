@@ -1,0 +1,7 @@
+\date{2025-03-03}
+\author{eigil-rischel}
+\import{macros}
+\tag{Research idea}
+\p{
+  Conditional expectation in Markov categories, there may be something interesting to say if generalized first to general morphisms out, then to general #{\cat{Conv}}-presheaves. 
+}
