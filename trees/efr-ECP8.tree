@@ -1,0 +1,13 @@
+\date{2025-04-07}
+\author{eigil-rischel}
+\import{macros}
+\tag{Research idea}
+\p{
+  Let #{f: A \to A} be a sup-preserving endomorphism of a domain. Then we can find a fixpoint by defining #{T(x) = x \vee f(x)} and iterating this starting at #{\bot} - this is "Tarski iteration"
+}
+\p{
+  Now if #{f} is instead a map between convex sets in a vector space, we can do #{Tx = \frac{1}{2}(x + f(x)),} and iterate this. Under some continuity assumptions this converges weakly to a fixpoint - this is Krasonelskii-Mann iteration.
+}
+\p{
+  Now, recall that defining #{\alpha x + (1-\alpha)y = x \vee y} for #{\alpha \in (0,1)} gives a convex structure to any semilattice. This provides a unification of these two ideas.
+}

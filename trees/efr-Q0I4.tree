@@ -3,6 +3,6 @@
 \import{macros}
 \tag{Research idea}
 \p{
-  Stochastic behaviors "relative" to a deterministic clock system $T$ are somehow classified by spans
-  $T \leftarrow T^\Omega \to S$, where the middle system draws a new random sample at each step, and the left leg has some special property detecting these things.
+  Stochastic behaviors "relative" to a deterministic clock system #{T} are somehow classified by spans
+  #{T \leftarrow T^\Omega \to S}, where the middle system draws a new random sample at each step, and the left leg has some special property detecting these things.
 }
