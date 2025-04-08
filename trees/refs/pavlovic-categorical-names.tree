@@ -5,7 +5,7 @@
 \author{DUšKO Pavlović}
 \meta{bibtex}{\startverb
  @article
-{Pavlović_1997, title={Categorical logic of names and abstraction in action calculi}, volume={7}, rights={https://www.cambridge.org/core/terms}, ISSN={0960-1295, 1469-8072}, DOI={10.1017/S0960129597002296}, abstractNote={Milner’s action calculus implements abstraction in monoidal 
+{pavlovic-categorical-names, title={Categorical logic of names and abstraction in action calculi}, volume={7}, rights={https://www.cambridge.org/core/terms}, ISSN={0960-1295, 1469-8072}, DOI={10.1017/S0960129597002296}, abstractNote={Milner’s action calculus implements abstraction in monoidal 
 categories, so that familiar 
 λ-calculi can be subsumed together with the π-calculus and the 
 Petri nets. Variables are 

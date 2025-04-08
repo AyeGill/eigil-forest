@@ -6,7 +6,7 @@
 \author{Joachim Kock}
 \meta{bibtex}{\startverb
  @article
-{Gambino_Kock_2013, title={Polynomial functors and polynomial monads}, volume={154}, ISSN={0305-0041, 1469-8064}, DOI={10.1017/S0305004112000394}, abstractNote={We study polynomial functors over locally cartesian closed categories. After setting up the basic theory, we show how polynomial functors assemble into a double category, in fact a framed bicategory. We show that the free monad on a polynomial endofunctor is polynomial. The relationship with operads and other related notions is explored.}, note={arXiv:0906.4931 [math]}, number={1}, journal={Mathematical Proceedings of the Cambridge Philosophical Society}, author={Gambino, Nicola and Kock, Joachim}, year={2013}, month={Jan}, pages={153–192} }
+{kock-poly-classical, title={Polynomial functors and polynomial monads}, volume={154}, ISSN={0305-0041, 1469-8064}, DOI={10.1017/S0305004112000394}, abstractNote={We study polynomial functors over locally cartesian closed categories. After setting up the basic theory, we show how polynomial functors assemble into a double category, in fact a framed bicategory. We show that the free monad on a polynomial endofunctor is polynomial. The relationship with operads and other related notions is explored.}, note={arXiv:0906.4931 [math]}, number={1}, journal={Mathematical Proceedings of the Cambridge Philosophical Society}, author={Gambino, Nicola and Kock, Joachim}, year={2013}, month={Jan}, pages={153–192} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

@@ -4,5 +4,5 @@
 \meta{external}{https://bartoszmilewski.com/2021/12/07/polylens/}
 \meta{bibtex}{\startverb
  @misc
-{PolyLens_2021, url={https://bartoszmilewski.com/2021/12/07/polylens/}, journal={Bartosz Milewski's Programming Cafe}, year={2021}, month={Dec},language={en} }
+{milewski-polylens, url={https://bartoszmilewski.com/2021/12/07/polylens/}, journal={Bartosz Milewski's Programming Cafe}, year={2021}, month={Dec},language={en} }
 \stopverb}
