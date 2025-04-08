@@ -3,6 +3,6 @@
 \author{David Jaz Myers}
 \meta{bibtex}{\startverb
  @article
-{myers-cst, title={Categorical Systems Theory}, author={Myers, David Jaz},language={en} }
+{myers-cst, title={Categorical Systems Theory}, author={Myers, David Jaz},language={en} , url={http://davidjaz.com/Papers/DynamicalBook.pdf}}
 \stopverb}
 \meta{external}{http://davidjaz.com/Papers/DynamicalBook.pdf}
