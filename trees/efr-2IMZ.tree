@@ -3,10 +3,9 @@
 \import{macros}
 \title{Markov Prefibrations}
 
-\transclude{efr-0045}
-
 \transclude{efr-SP6H}%Example: discrete dist. monad
 
+\transclude{efr-0045}
 \transclude{efr-0019}% Markov *prefib* defn
 \transclude{efr-EQ41}
 
@@ -26,6 +25,7 @@
   The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories, although we only need it for \em{split} monomorphisms. (The split hypothesis does play a role, since we can't in general guarantee even that the inclusion #{\cC_\det \into \cC} preserves monomorphisms in general).
 }
 \p{The assumption that #{\cC} is positive and has deterministic pullbacks will play a key role, not merely to establish that #{\MAr{\cC} \to \cC} is a prefibration, but for the development of the theory of Markov fibrations over #{\cC} in general.}
+
 
 \p{
   We will need the notion of \em{support} in a Markov category, introduced in \ref{markov-supports}, for certain examples, so we briefly record the definition and a few of its properties here.

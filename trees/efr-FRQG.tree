@@ -5,5 +5,5 @@
 \p{
   Let #{\cD_0 \to \cC_0} be a functor and let #{\cC_0 \to \cC} be identity-on-objects and faithful.
   Then the pullback of the composite #{\cD_0 \to \cC} and the inclusion #{\cC_0 \to \cC} is identical to #{\cD_0}.
-  Therefore, \ref{efr-FOJT} gives a functor #{\IcoPsh(\cD_0 / \cC) \to \IcoPsh(\cD_0 / \cC_0)}.
+  Therefore, \ref{efr-FOJT} gives a functor #{\IcoPSh(\cD_0 / \cC) \to \IcoPSh(\cD_0 / \cC_0)}.
 }
