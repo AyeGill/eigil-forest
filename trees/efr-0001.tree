@@ -9,5 +9,8 @@
 %Markov Fibrations
 \transclude{efr-O088}
 
-%Triple cat. of controlled processes
+%Triple cat. of parameterized morphisms
 \transclude{efr-000D}
+
+%Stochastic dynamical systems
+\transclude{efr-ZRUZ}
