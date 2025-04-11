@@ -1,0 +1,23 @@
+\date{2025-04-11}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Suppose #{\cC} admits weak conditionals, and let #{\cD \to \cC_\det} fibration.
+  Then two morphisms #{f_0,f_1: \bar{X} \to \bar{Y}} in #{\overline{\cD}}, represented by commutative diagrams
+  \quiver{
+    \begin{tikzcd}
+    & M_{i} \ar[dl] \ar[dr] &
+    X \ar[ru, bend left=30] & & Y,
+    \end{tikzcd}
+  }
+  as well as #{\phi_i: \bar{X}_{M_i} \to \bar{Y}_{M_i}}, for #{i=0,1}, are equal if and only if there exists a span #{M_0 \leftarrow K \to M_1} over #{X,Y}, with a stochastic section #{X \to K} lifting both the sections to #{M_0,M_1}, so that the pullbacks of #{\phi_0,\phi_1} to #{K} agree.
+}
+\proof{
+  \p{
+    The relation here described clearly implies identity, and contains all the generating identities, so it suffices to show it is an equivalence relation. Reflexivity and symmetry are clear, so transitivity is the only issue. It suffices to show that, given a span #{X \leftarrow S \to Y} and maps #{M_0 \to S \lefarrow M_1} so that the triangles commute, and so that the two induced sections #{X \to S} agree, and a map #{\bar{X}_S \to \bar{Y}_S} which pulls back to #{\phi_0,\phi_1}, we can find #{K} as above.
+  }
+  \p{
+    To do this, take #{K = M_0 \times_S M_1}. Clearly the maps to #{M_0, M_1} are over #{X,Y}, and by the existence of weak conditionals there exists a common lift of the sections to #{X \to K}. By functoriality of pullbacks, the pullbacks of #{\phi_0,\phi_1} to #{K} agree.
+  }
+}
