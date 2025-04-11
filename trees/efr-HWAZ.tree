@@ -66,7 +66,8 @@
 \p{
   The reader can look forward to meeting this problem again in \ref{efr-000D}. For now, we will simply observe that limits computed using \em{fibrations} are generally well-behaved. This will suffice to study the examples we will be interested in here
 }
-\transclude{efr-OMMA}
-\transclude{efr-G0AN}
-\transclude{efr-PUYQ}
-\transclude{efr-FXBP}
+\transclude{efr-OMMA}%Limits of Markov categories exist
+\transclude{efr-G0AN}%Limits of Markov prefibrations exist
+\transclude{efr-PUYQ}%SChart functor....
+\transclude{efr-FXBP}%Free preserves limits assuming weak conditionals
+\transclude{efr-UF7B}%Weak supports stable under limits assuming weak conditionals

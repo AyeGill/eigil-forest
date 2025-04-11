@@ -1,0 +1,19 @@
+\date{2025-04-11}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  The property of having weak supports is stable under equalizers in prefibration algebras over #{\cC}. If #{\cC} has weak conditionals, it is also stable under finite products (hence all finite limits).
+}
+\proof{
+  \p{
+    (Note that prefibration algebras themselves do not admit all finite limits, requiring some sort of isofibration property - we merely claim here that if the limit exists, it again admits weak supports)
+  }
+  \p{
+    It is clear that the terminal object #{1_\cC: \cC \to \cC} has weak supports (regardless of #{\cC}).
+    Given an equalizer #{\cE \into \cD \rightrightarrows \cD'}, if #{M \to X} is a deterministic map with a stochastic section and #{\phi: \bar{X}_M \to \bar{X}_M} is a map in #{\cE_M} which goes to the identity in #{\cE_X}, find a factorization #{X \to N \to M} so that the image in #{\cD} pulls back to the identity over #{N}. Then clearly the same is true for #{\phi} itself.
+  }
+  \p{
+    Now consider a product #{\cD \times_{\cC} \cD'}. The point is that given a pair of maps that go to the identity, we can find #{N_0 \to M, N_1 \to M} where the pullbacks are the identity. We form the pullback #{N_0 \times_M N_1,} and use the weak conditionals to find a common lift of the two given sections to this. This gives the required weak supports.
+  }
+}
