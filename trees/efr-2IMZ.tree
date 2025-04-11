@@ -15,6 +15,8 @@
   We will now give a few results about these. 
 }
 
+\transclude{efr-CJTH}
+
 \transclude{efr-0044} %theorem on pullbacks
 \transclude{efr-0040} %warning/remark
 \transclude{efr-T3HM} %defn: good deterministic pullbacks
