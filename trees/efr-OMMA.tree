@@ -1,0 +1,20 @@
+\date{2025-04-09}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\ol{
+  \li{
+    #{\Markov} and #{\Markov^\oplax} admit all products, computed simply as products in #{\Cat}.
+  }
+  \li{
+    #{\Markov} admits pullbacks along \em{isofibrations}, and these are preserved by the inclusion into #{\Markov^\oplax}
+  }
+}
+\proof{
+  \p{
+    The first point is clear -- simply equip #{\prod_i \cC_i} with the coordinatewise monoidal structure and coordinatewise comonoid structure.
+  }
+  \p{
+    Now consider #{\cC \to \cD} a Markov functor, and #{\cE \to \cD} an isofibration Markov functor. Consider the pullback #{\cC \times_\cD \cE}. 
+  }
+}

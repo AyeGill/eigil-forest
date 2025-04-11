@@ -1,0 +1,32 @@
+\date{2025-04-10}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The functor #{\overline{(-)}: \Fib \times_\Cat \Markov^\oplax \to \MarkPreFib} preserves products. 
+}
+\p{
+  For each Markov category #{\cC} with weak conditionals, #{\overline{(-)}: \Fib(\cC_\det) \to \MarkPreFib(\cC)} preserves the terminal object, and pullbacks along isofibrations.
+}
+\proof{
+  \p{
+    The product-preservation is clear from the description of #{\overline{(-)}}. Let #{\cC} admit weak conditionals. It suffices to show that #{\overline{(-)}} preserves the terminal object and pullbacks in #{\Fib(\cC_\det)}
+  }
+  \p{
+    The terminal fibration is #{\cC_\det \to \cC_\det}. Clearly the terminal Markov prefibration is #{\cC \to \cC,} so we must show that #{\overline{\cC_\det} \to \cC} is an isomorphism.
+  }
+  \p{
+    Its morphisms are simply spans #{X \leftarrow M \to Y} with the left leg equipped with a stochastic section #{s:X \to M}, which goes to the composite #{X \to Y}. As noted before, this is clearly \em{full,} by taking #{M = X \otimes Y}, and faithful because the pairing #{M \to X \otimes Y} exhibits the equality of this canonical representative with any other.
+  }
+  \p{
+    Now let #{\cD \to \cE \leftarrow \cD'} be a cospan of fibrations over #{\cC_\det}, with #{\cD \to \cE} an isofibration, and consider the pullback #{\cD \times_\cE \cD'}. There is a natural transformation
+    ##{\overline{\cD \times_\cE \cD'} \to \overline{\cD} \times_{\overline{\cE} \overline{\cD'}}}
+    which we must show to be an isomorphism.
+  }
+  \p{
+    Maps on the left-hand side are given by a span #{X \leftarrow M \to Y}, a stochastic section #{X \to M}, and a map in the pullback of the fibers #{\cD_M \times_{\cE_M} \cD'_M}. A map on the right-hand side is given by two spans each equipped with a map, so that they become identified in #{\overline{\cE}}. Let the apexes of the two spans be #{M, M'}. It suffices to consider the case of a span #{M \leftarrow K \to M'} with a common lifting #{X \to K}, so that the pullbacks of the two maps to #{\cE_K} agree. But then the original maps may also be pulled back to have #{K} as the underlying span, and thus are in the completion of the pullback.
+  }
+  \p{
+    Similarly, given two maps which become identified in the image, we can again use the identifying maps in #{\cC} to identify the original maps, proving faithfulness. This finishes the proof.
+  }
+}

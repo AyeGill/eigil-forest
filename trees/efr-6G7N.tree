@@ -1,0 +1,24 @@
+\date{2025-04-08}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cD \to \cC} be a Markov prefibration. Recall that by #{\MAr{\cC}} we denote the category of \em{deterministic} arrows in #{\cC}. Let now #{\MAr{\cD}} denote the category #{\Ar(\cD) \times_{\Ar(\cC)} \MAr{\cC}} consisting of those arrows in #{\cD} which lie over a deterministic base (but again, where the morphisms consist of commutative squares whose other sides do not necessarily have deterministic bases). Then #{\MAr{\cD} \to \MAr{\cC}} is a Markov prefibration.
+}
+\p{
+  This yields functor #{\MarkPreFib(\cC) \to \MarkPreFib(\MAr{\cC})}, so that #{(\MAr{\cD})|_\det = \MAr{(\cD|_\det)}}. This equation induces a natural transformation #{\overline{(\MAr{\cD_0})}|_\det \to \MAr{(\overline{\cD_0}|_\det)}}, which in turns gives a lift of #{\MAr{(-)}} to the category of prefibration algebras, where the induced algebra structure acts pointwise.
+}
+\proof{
+  \p{
+    Noting that #{\MAr{\cC}} is a Markov category with the "pointwise" structure, and the deterministic maps consist precisely of the pointwise deterministic maps, clearly #{\MAr{\cD}|_\det = \MAr{\cD|_\det}}, and fibrations are stable under the formation of arrow categories, with Cartesian maps formed pointwise.
+  }
+  \p{
+    It is \em{not} trivial that this is a prefibration, because given a triangle in #{\MAr{\cC_\det}} - a "prism" - and a Cartesian lifting, we only know that the maps "at the ends" are Cartesian, not the maps between the triangles.
+
+%% DIAGARAM HERE
+    Therefore we can not immediately apply the unique lifting property to say that the square between the induced lifts #{\bar{Y_i}_{X_i} \to \bar{Y_i}_{Z_i}} commute, given some map #{\bar{Y}_0 \to \bar{Y}_1} over #{Y_0 \to Y_1}. However, by taking the pullback on both sides (and noting that pullbacks are functorial,) we can factor this square into two which live entirely over a deterministic base, and where the Cartesian property therefore imply commutativity.
+  }
+  \p{
+    We have already argued that this commutes with restriction to the deterministic part. The natural transformation is induced for completely abstract reasons, by applying #{\MAr{(-)}} to the unit to obtain a map #{\MAr{\cD_0} \to \MAr{(\overline{\cD_0}|_\det)} = (\MAr{\overline{\cD_0}})|_\det,} which by the universal property of #{\overline{(-)}} induces the desired map #{\overline{(\MAr{\cD_0})}|_\det \to \MAr{(\overline{\cD_0}|_\det)}}.
+  }
+}

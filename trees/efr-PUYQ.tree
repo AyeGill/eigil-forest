@@ -1,0 +1,9 @@
+\date{2025-04-09}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  #{\SChart} assembles into a functor #{\Alg() \to \int_{\cC \in \Markov^\oplax}\Cat_{/ \cC}}.
+}
+\p{
+}

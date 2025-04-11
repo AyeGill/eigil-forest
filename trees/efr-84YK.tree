@@ -1,0 +1,14 @@
+\date{2025-04-09}
+\author{eigil-rischel}
+\taxon{definition}
+\import{macros}
+\p{
+  Let #{\cD} be a  Markov fibration over #{\cC}. Suppose given a (deterministic) commutative square in #{\cC}
+  \quiver{
+    \begin{tikzcd}
+      {M_0} \ar[r] \ar[d] & {M_1} \ar[d]\\
+      {X_0} \ar[r, "f"] & {X_1}
+    \end{tikzcd}
+  }
+  along with sections #{\alpha_i: X_i \to M_i, i=0,1}, a map #{\bar{X}_0 \to \bar{X}_1} in #{\cD} and an endomorphism of its pullback to #{M_0 \to M_1} - that is, a map #{\phi_i: \bar{X}_{i,M} \to \bar{X}_{i,M}, i=0,1} so that the obvious square commutes. We say #{\cD} has \em{functorial} weak supports if we can find #{N_i \to M_i, i=0,1}, along with lifts of #{\alpha_i,}, with a map #{N_0 \to N_1} making the squares commute, so that the pullback of #{\phi_i} to #{N_i} is an identity.
+}

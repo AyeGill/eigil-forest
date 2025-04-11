@@ -1,0 +1,18 @@
+\date{2025-04-11}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The category #{\MarkPreFib(\cC)} admits all products, and pullbacks along isofibrations. These are simply computed as limits in #{\Cat_{/\cC}}
+}
+\proof{
+  \p{
+    It is immediately apparent that products (that is, pullbacks over #{\cC}) of prefibrations are again prefibrations, since the Cartesian lifts can simply be computed coordinatewise, and the uniqueness property checked coordinatewise.
+  }
+  \p{
+    Let #{\cD \times_\cE \cD'} be a pullback of Markov prefibrations, with #{\cD \to \cE} an isofibration. (Note that their pullback in #{\Cat_{/\cC}} is simply their pullback in #{\Cat}). First note that since limits commute, the deterministic part is given by #{\cD_\det \times_{\cE_\det} \cD'_\det}. Thus to prove this is a fibration, it suffices to note that fibrations are stable under pullback along isofibrations. Given #{f: X \to Y \in \cC} and two lifts #{\bar{Y},\bar{Y}'} which are identified in #{\bar{E},} we get two Cartesian lifts #{f^*\bar{Y} \to \bar{Y}, f^*\bar{Y}' \to \bar{Y}'}. These go to two Cartesian lifts in #{\cE}, and are therefore identified \em{up to isomorphism,} but we can lift this isomorphism to #{\cD} and obtain a pair of lifts in the strict pullback - this is a Cartesian lift.
+  }
+  \p{
+    Since Cartesian lifts are given by pointwise Cartesian lifts, given a triangle #{X \to Y \leftarrow Z} and a stochastic lift #{X \to Y,} we have a unique lift in both #{\cD, \cD'}. These both go to lifts in #{\cE} - since such a lift is also unique, they are identified. Hence there is a unique lift in the pullback.
+  }
+}
