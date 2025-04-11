@@ -16,13 +16,21 @@
 \transclude{efr-HVUT}
 \transclude{efr-MAUM}
 
-\transclude{efr-TBZZ}
+\transclude{efr-YFV2}
+\transclude{efr-TBZZ}%BIG theorem
 \transclude{efr-XDQ9}
 
 
 
 \transclude{efr-C5RE}
 \transclude{efr-8SXB}
+
+
+\p{
+  Continuing from \ref{efr-CJTH}, we have the following trivial case: 
+}
+\transclude{efr-Z75A}
+
 \p{
   It is worth noting that, even in the case where #{\SChart(\cD_0^\fop)} is not a prefibration, it may still deserve the name "stochastic lenses". For example the stochastic lenses in #{\BorelStoch} can be seen to contain #{\Optic(\BorelStoch)} as a full subcategory.
 }

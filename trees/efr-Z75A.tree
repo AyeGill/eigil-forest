@@ -1,0 +1,12 @@
+\date{2025-04-08}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  If #{\cC} is Cartesian (even if it does not admit pullbacks), the definition of Markov fibration over #{\cC} still makes sense, the Markov fibrations are exactly the Grothendieck fibrations, and their fiberwise opposites are simply their fiberwise opposites in the usual sense.
+}
+\proof{
+  \p{
+    This is trivial because #{\MarkPreFib(\cC) \to \Fib(\cC_\det = \cC)} is simply the identity functor, hence it is monadic (with the identity monad,) hence every fibration/prefibration presents a Markov fibration, namely itself, and is in particular a Markov fibration. The fiberwise opposite is simply given by applying the identity (taking the prefibration algebra on the deterministic part), taking the fiberwise opposite, then applying the identity again (passing to the presented markov fibration).
+  }
+}

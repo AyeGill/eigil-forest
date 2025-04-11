@@ -173,6 +173,7 @@
 
 \def\op{#{\mathrm{op}}}
 \def\fop{#{\mathrm{fop}}}
+\def\oplax{#{\mathrm{oplax}}}
 \def\co{#{\mathrm{co}}}
 \def\cc{#{\mathrm{cc}}}
 \def\lex{#{\mathrm{lex}}}
