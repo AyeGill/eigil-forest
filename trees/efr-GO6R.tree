@@ -49,3 +49,9 @@
 }
 \transclude{efr-A08L}%Free thing
 \transclude{efr-ILIQ}%Free thing commutes with fiberwise opposites.
+
+\transclude{efr-2MH5}%defn: weak conditionals
+\p{
+  Observe that, if #{\cC} admits conditionals, it certainly admits weak conditionals: given a pullback #{X \times_Z Y,} and maps #{P \to X,Y,} form a Bayesian inverse of #{Y \to Z} with respect to the given measure, and use that to build a lifting #{X \to Y}, which gives #{X \to X \times_Z Y} - then a diagram chase verifies that this map has the desired properties.
+}
+\transclude{efr-TZ3Y}%Lemma on free thing given weak conditionals
