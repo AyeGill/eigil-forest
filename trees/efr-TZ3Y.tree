@@ -7,7 +7,7 @@
   Then two morphisms #{f_0,f_1: \bar{X} \to \bar{Y}} in #{\overline{\cD}}, represented by commutative diagrams
   \quiver{
     \begin{tikzcd}
-    & M_{i} \ar[dl] \ar[dr] &
+    & M_{i} \ar[dl] \ar[dr] & \\
     X \ar[ru, bend left=30] & & Y,
     \end{tikzcd}
   }
