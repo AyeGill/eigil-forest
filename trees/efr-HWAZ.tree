@@ -68,6 +68,7 @@
 }
 \transclude{efr-OMMA}%Limits of Markov categories exist
 \transclude{efr-G0AN}%Limits of Markov prefibrations exist
-\transclude{efr-PUYQ}%SChart functor....
 \transclude{efr-FXBP}%Free preserves limits assuming weak conditionals
 \transclude{efr-UF7B}%Weak supports stable under limits assuming weak conditionals
+
+\transclude{efr-PUYQ}%SChart functor....

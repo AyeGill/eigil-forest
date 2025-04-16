@@ -16,7 +16,7 @@
 \transclude{efr-HVUT}
 \transclude{efr-MAUM}
 
-\transclude{efr-YFV2}
+\transclude{efr-YFV2}%Weak supports definition
 \transclude{efr-TBZZ}%BIG theorem
 \transclude{efr-XDQ9}
 

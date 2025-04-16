@@ -3,7 +3,38 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  #{\SChart} assembles into a functor #{\Alg() \to \int_{\cC \in \Markov^\oplax}\Cat_{/ \cC}}.
+  #{\SChart} preserves limits.
 }
-\p{
+\proof{
+  \p{
+    By \ref{efr-FXBP}, and since reflexive coequalizers commute with products, #{\SChart} preserves finite products.
+  }
+  \p{
+    Now let #{F,G: \cD \to \cD'} and consider an equalizer diagram of prefibration algebras #{\cE \to \cD \rightrightarrows \cD'}. There is a map #{\SChart(\cE) \to \Eq(\SChart(\cD) \rightrightarrows \SChart(\cD)),} we must show it is an isomorphism. Since #{\SChart(-)|_\det \cong (-)|_\det,} the map is clearly an isomorphism on the deterministic part - in particular, it is identity on objects.
+  }
+  \p{
+    The morphisms in #{\SChart(\cE)} are represented by spans decorated by a morphism in #{\cE = \Eq(\cD \rightrightarrows \cD'),} whereas the morphisms in the equalizer is a span decorated with a morphism, so that its two images in #{\SChart(\cD)} are equal \em{as charts}.
+  }
+  \p{
+    First, let us show fullness. Let #{\bar{X},\bar{Y}} be objects in the equalizer over #{X,Y}. We are given a span
+    \quiver{
+      \begin{tikzcd}
+      & M \ar[dr] \ar[dl] & \\
+      X \ar[ur, bend left=30] & & Y
+      \end{tikzcd}  
+    }
+    and a map #{\phi: \bar{X}_M \to \bar{Y}_M,}, so that the two resulting charts in #{\SChart(\cD')} agree. We must show that there exists some equivalent chart in #{\SChart(\cD)} with #{F(\phi)=G(\phi) \in \cD'_M}.
+  }
+  \p{
+    Recall that chart equivalence is given by zigzags of two types of equations:
+    \ol{
+      \li{Given #{f: N \to M} and a lifting of the section over #{N}, identify the charts #{(\psi,M,\dots), (f^*\psi,N,\dots)}}
+      \li{
+        Given instead #{f: M \to N} and a factorization of the maps #{M \to X,Y} over #{N}, as well as a stochastic section #{\alpha}, identify the charts #{(\psi,M,\dots)} and #{(\alpha^*\psi,N,\dots)}
+      }
+    }
+    \p{
+      Suppose given a #{f: M \to N} equipped with a stochastic section. Since #{F,G} induce homomorphisms of algebras, we see that #{\alpha^*F(\phi) = F(\alpha^*\phi)}, and analogously for #{G}. Thus we may 
+    }
+  }
 }
