@@ -328,7 +328,7 @@
 \def\MarkPreFib{#{\cat{MarkPreFib}}}
 \def\Markov{#{\cat{Markov}}}
 \def\MAr[C]{#{\C^\to}}
-
+\def\supp{#{\operatorname{supp}}}
 
 \def\abs[x]{#{|\x|}}
 \def\Lip{#{\operatorname{Lip}}}

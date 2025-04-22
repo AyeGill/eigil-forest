@@ -2,27 +2,27 @@
 \p{
   I've made my todos all link here. This should serve as a repository of unfinished business.
 }
-\ol{
-  \li{
-    Figure out whether working with strict limits in the construction of the triple category would be easier.
-  }
+
+\def\query/transclusion-coslice[x]{
+ \open\query
+ \rel{\paths}{\outgoing}{\rel/transclusion}{\x}
 }
 
-\p{
-  Overview of where I want the project to end up:
-  \ol{
-    \li{A good account of the stochastic version of categorical systems theory}
-    \li{(Currently totally undone): a good account of the \em{metric} addition to this! Probably, the error of a morphism of system is the sup (modal operator, but not that sort) over the domain of the #{-\log} of the probability that it fails to preserve the behaviour. There is something interesting to say here, especially about Wasserstein versus total variation-type metrics.}
-    \li{Interestingly, asking what sort of function on the endpoints generalize the chart between endpoints normally implicated in a morphism here may be a good way of figuring out the right inputs to modal operators.}
-    \li{A good account of the construction of the triple category of controlled dynamical systems. The math here is basically done, only the presentation remains. OTOH the presentation is very complicated.}
-    \li{A good account of the "coalgebraic modal logic" we can expect for such systems. Currently this is somewhat speculative, but should basically work.}
-    \li{Continuous-time stuff: note that for smooth systems, we \em{do} have local uniqueness, so "power series" really are the behaviors of such systems, the only "problem" being lack of convergence (which is of course also exhibited by such systems)}
-    \li{Think enough about topology to make [[efr-0030]] precise}
-  }
+\def\query/listed[x]{
+  \open\query
+  \rel{\edges}{\outgoing}{\rel/links}{\x}
 }
 
-\p{
-  Notes about metric space = filtration (by Lipschitz constant) on functions. Not clear this is the right way, but eh.
+
+\def\query/orphans{
+  \open\query
+  \isect{\isect{
+    \author{eigil-rischel}
+  }{
+    \compl{\union-fam{\listed{eigil-rischel}}{\transclusion-coslice}}
+  }}{\compl{\taxon{reference}}}
 }
-\transclude{efr-0033}
-\transclude{efr-0034}
+
+\query{
+  \query/orphans
+}
