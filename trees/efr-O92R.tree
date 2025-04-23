@@ -1,0 +1,9 @@
+\date{2025-04-19}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\ol{
+  \li{Sliding equivalence implies behavioural equivalence}
+  \li{For charts over a deterministic base, sliding equivalence and behavioural equivalence coincide}
+  \li{Given a faithful Markov functor #{\cC \to \cC'} and a faithful map of modules #{\cD \to \cD'} over it, the induced map on precharts in well-defined with respect to sliding equivalence, and injective with respect to behavioural equivalence, in the sense that precharts which become behavioural equivalent in the image are already behavioural equivalent, but not necessarily the other way around}
+}
