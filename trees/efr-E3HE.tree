@@ -1,0 +1,13 @@
+\date{2025-04-18}
+\author{eigil-rischel}
+\import{macros}
+\title{Markov categories}
+\parent{efr-HQ73}
+\p{
+  We will have need of the following property of certain Markov categories. 
+}
+
+\transclude{efr-AMFR}%Bayesian image factorization
+\p{
+  
+}
