@@ -1,0 +1,20 @@
+\date{2025-04-17}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cC} be a Markov category with good deterministic pullbacks, and let #{X \in \cC}
+}
+\ol{
+  \li{
+    If #{\cC} is causal, so is #{\cC_{/X}}.
+  }
+  \li{
+    If #{P \to A \in \cC_{/X}} admits a support #{S \subseteq A} in #{\cC}, then this is also a support in #{\cC_{/X}}
+  }
+}
+\proof{
+  \p{
+    Since the inclusions #{A \times_X B \to A \times B} are all monomorphisms, it is easy to verify causality. Similarly, it is easy to see that being a support in #{\cC} is simply stronger than being a support in #{\cC_{/X}}.
+  }
+}
