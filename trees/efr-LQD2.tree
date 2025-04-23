@@ -1,0 +1,15 @@
+\date{2025-04-22}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cD} be a stochastic module over a Markov category #{\cC}.
+  Given a square
+  \quiver{
+    \begin{tikzcd}
+    X_0 \ar[d] \ar[r] & Y_0 \ar[d]\\
+    X_1 \ar[r] & Y_1
+    \end{tikzcd}
+  }
+  where the horizontal maps are morphisms in #{\SLens(\cD),} and the vertical maps are morphisms in #{\cD}, we say the square is \em{behaviourally commutative} if, given a lens #{A_1 \to B_1}, deterministic maps #{A_0 \to B_0}, and a pair of chart-lens commutative squares #{W_i \to A_i \otimes X_i, B_i \otimes Y_i \to Z_i} over deterministic bases, so that the resulting maps #{W_i \to Z_i} are deterministic, the resulting square commutes.
+}
