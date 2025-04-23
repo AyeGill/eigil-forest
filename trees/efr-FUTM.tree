@@ -1,0 +1,34 @@
+\date{2025-04-17}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cC} be a \em{causal} Markov category with supports and deterministic pullbacks. Suppose #{\cC} admits [relative Bayesian inverses](efr-88JF) of maps with full support. Then any stochastic module over #{\cC} has simple chart equations. In particular, this holds if #{\cC} admits conditionals, supports and deterministic pullbacks.
+}
+\proof{
+\p{
+  Let #{f: X \to Y \in \cC} be a map, and let #{(M,\phi)}  be a stochastic chart over it.
+  Let #{s: X \to M} be the section, and observe that we may pull back #{\phi} an equivalent chart on #{\supp(s) \subseteq M}.}
+\p{The map #{\supp(s) \to M \to X \otimes Y} factors over #{\supp(\braket{1,f}) \subseteq X \otimes Y}. Taking a Bayesian inverse of the map #{\supp(s) \to \supp(\braket{1,f})}, note that this map must be #{\braket{1,f}-}almost surely a section, hence (by the property of the support) an actual stochastic section. Hence we may pull back again to an equivalent chart on #{\supp(\braket{1,f})}.
+}
+\p{
+  It suffices to show that this final map does not depend on the initial choice of representative. Hence suppose first #{M \to M'} is a deterministic map over #{X,Y} and #{\phi} is pulled back from #{\phi'} on #{M'}. Then it suffices to observe that the following diagram is commutative and pullback is functorial:
+  \quiver{
+    \begin{tikzcd}
+    \supp(\braket{1,f}) \ar[r, bend left=20] \ar[rd, bend left=20] & \supp(s) \ar[l] \ar[d] \ar[r] & M \ar[d]\\
+    & \supp(s') \ar[ul] \ar[r] & M'
+    \end{tikzcd}
+  }
+  Now suppose instead #{M \to M'} is a stochastic section (again, compatible with given spans on #{M,M'}). Then again, we simply apply commutativity of the following diagram:
+  \quiver{
+    \begin{tikzcd}
+    & \supp(s) \ar[r] \ar[ld] \ar[d, bend left=20] & M \ar[d, bend left=20] \\
+    \supp(\braket{1,f}) \ar[r, bend left=20] \ar[rd, bend left=20] \ar[ur, bend left=20] & \supp(s) \times_M M' \ar[u] \ar[r] \ar[l] & M' \ar[u] \\
+    & \supp(s') \ar[u] \ar[ur] \ar[ul]
+    \end{tikzcd}
+  }
+  \p{
+    The key point is that the stochastic sections on #{\supp(\braket{1,f}),} being Bayesian inverses, are uniquely determined (and in particular the triangles starting in #{\supp(\braket{1,f})} always commute)
+  }
+}
+}

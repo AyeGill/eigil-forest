@@ -20,6 +20,20 @@
 \transclude{efr-TBZZ}%BIG theorem
 \transclude{efr-XDQ9}
 
+\transclude{efr-M1U8}
+\p{
+  Note that this holds if and only if the presented equation is transitive (since it clearly contains the generators and is contained in the generated equivalence relation).
+}
+\transclude{efr-FUTM}
+\p{
+  This is analogous to the conclusion of \ref{efr-TZ3Y}. In that case, the assumption of weak conditionals sufficed to prove the lemma. For the category of stochastic charts, we have so far not identified a similarly simple argument - \ref{efr-FUTM} gives something workable, but since many Markov categories of interest lack either conditionals or supports, it is not necessarily satisfactory (hence the decision to factor simple chart equations out as a definition).
+}
+\p{
+  The basic utility of simple chart equations, in reducing the complexity of the equivalence relation involved in defining #{\SChart(\cD),} is obvious. However, there is a point to the specific form of the definition: it involves no existential quantification over #{\cD}, only #{\cC}. For example, if #{\cD' \to \cD} is a faithful functor of modules, #{\SChart(\cD') \to \SChart(\cD)} is not in general faithful - because it may be there is some zigzag of relations identifying two charts which pass through a representative outside the image of #{\overline{\cD'} \to \overline{\cD}}. However, if #{\cD} has simple chart equations, this functor is necessarily faithful. We will return to this point in \ref{efr-HWAZ}.
+}
+\p{
+  We do not have a particular example in mind which admits the restricted conditionals required for \ref{efr-FUTM} but not conditionals in general. The reason to prove this stronger lemma is that this condition is stable under the formation of arrow categories, as we will use later.
+}
 
 
 \transclude{efr-C5RE}

@@ -1,0 +1,63 @@
+\date{2025-04-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be a Markov category. Suppose #{\cC} admits [Bayesian image factorizations](efr-AMFR) and pullbacks of monomorphisms. Then any stochastic module over #{\cC} admits [simple chart equations](efr-M1U8).
+}
+\proof{
+  \p{
+    Let #{\cD} be a module on #{\cC}. Let #{(M,\phi), (M',\phi')} be two charts. It suffices to prove the following cases:
+  }
+  \ol{
+    \li{Given deterministic maps #{M \to N \leftarrow M'} between spans, and a map #{\psi \in \cD_N} which pulls back to #{\phi,\phi'}. Then there exists a span #{M \leftarrow N' \to M'}} (with #{N} a span equipped with a section, and all these maps over #{X,Y}, etc) so that #{\psi,\psi'} pull back to the same map over #{N'}.
+    \li{
+      Given a diagram
+      \quiver{
+        \begin{tikzcd}
+        M \ar[r, bend left=30] & N \ar[l] & M' \ar[l]
+        \end{tikzcd}
+      }
+      of spans, and #{\psi} over #{N} which again pulls back to #{\phi,\phi'}, there exists again a span
+      \quiver{
+        \begin{tikzcd}
+        M & N' \ar[l] \ar[r, bend left=30] & M' \ar[l]
+        \end{tikzcd}
+      }
+      so that #{\phi,\phi'} pull back to the same map over #{N'}
+    }
+    \li{
+      Given a pair
+    }
+  }
+  \p{
+    Assuming these, it is a straightforward induction (induct on the maximal number of left-pointing relations to the right of a right-pointing relation) to turn a zigzag into a sequence of left-pointing equations followed by a sequence of right-pointing equations, which can then be composed to yield something of the right form.
+  }
+  \p{
+    The first point is covered by the fact that #{\cC} has weak conditionals (simply take the pullback).
+  }
+  \p{
+    Given a diagram as in the second point, first form the image factorization #{M \twoheadrightarrow V \into K}. Take the pullback of the stochastic map #{M' \to K} along this inclusion (note that the map from #{X} clearly factors over this pullback, giving it a span structure). Take the pullback of #{V \to M'} along the inclusion #{V \times_K M'} - call this #{V'}. Note that map from #{M' \times_K V} to #{V} factors over this inclusion, giving a stochastic section. Finally take the pullback of #{M} and #{V'} over #{V} (labeled #{S}) to get a stochastic section #{V' \to S}. 
+  }
+  \quiver{
+    \begin{tikzcd}
+    & V' \ar[r] \ar[dl, bend left=30] & M' \times_N V \ar[r] \ar[d, bend left=30] \ar[l, bend right=30] & M' \ar[d, bend left=30]\\
+    S \ar[r] & M \ar[r] & V \ar[r] & K\ar[u]
+    \end{tikzcd}
+  }
+  \p{
+    Finally, consider two stochastic sections to #{N}.
+    By taking the image of the map #{N \to X \times Y} and forming the pullback of that image an #{M, M' \to N}, we reduce to the case where the maps #{M, M' \to X \times Y} factor over this image. Call the image #{K}
+  }
+  \quiver{
+    \begin{tikzcd}
+    & K & \\
+    M \ar[ru] \ar[dr, bend right=30] & & M' \ar[lu] \ar[dl, bend left=30] \\
+    & N \ar[ru] \ar[rl]
+    \end{tikzcd}
+  }
+  Now the claim is that we can find stochastic sections #{K \to M, M'} making the "downwards" square commute. But this is clear: simply form a strict Bayesian inverse of #{N \to K} and compose it with the maps #{N \to M,M'}. It is clear by diagram chase that this gives sections, which must be measure-preserving as a composite of measure-preserving maps.
+}
+\p{
+  Now the two composite maps #{K \to N} do not automatically agree - however, since they are both conditional distributions, they agree almost surely. Hence by restricting to their equalizer, we can make them agree strictly, finishing the proof.
+}

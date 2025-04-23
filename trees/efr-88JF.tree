@@ -1,0 +1,19 @@
+\date{2025-04-17}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Relative bayesian inverses}
+\p{
+  Let #{\cC} be a Markov category. Suppose given a diagram:
+  \quiver{
+    \begin{tikzcd}
+    X \ar[r, "f"] \ar[dr, "p_X"] & Y\ar[d, "p_Y"]\\
+    & P \ar[ul, bend left=20, "m"]
+    \end{tikzcd}
+  }
+  where #{m} is a stochastic section, and the other three maps are deterministic and commute.
+  We say a (not necessarily deterministic) map #{f^\#: Y \to X} is a \em{relative Bayesian inverse} if the two distributions #{P \to X \xto{\braket{1,f}} X \otimes Y} and #{P \to Y \xto{\braket{f^\#,1}} X \otimes Y} agree (where the map #{P \to Y} is simply the composite). 
+}
+\p{
+  We say #{\cC} admits relative Bayesian inverses of maps with full support if such an inverse exists whenever #{Y} is the support of #{fm} (that is, whenever #{fm}-almost certain equality implies strict equality for maps out of #{Y}) (Note that this is a slight abuse of terminology as it is #{fm} that muts have full support, not #{f})
+}
