@@ -1,0 +1,15 @@
+\date{2025-04-19}
+\author{eigil-rischel}
+\import{macros}
+\title{Notions of prechart equivalence}
+\transclude{efr-X2S5}
+\transclude{efr-O92R}
+\p{
+  The defect of behavioural equivalence is that #{\cD} may not have enough test charts to distinguish things which are "really" supposed to be different, while the defect of sliding equivalence is that there may not be enough maps to prove that two objects which are supposed to be equivalent, are.
+}
+\p{
+}
+\transclude{efr-CTIK} 
+\p{
+  Note that by the above, sliding equivalence implies absolute equivalence implies behavioural equivalence.
+}
