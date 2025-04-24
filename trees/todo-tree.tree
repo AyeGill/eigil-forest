@@ -2,6 +2,15 @@
 \p{
   I've made my todos all link here. This should serve as a repository of unfinished business.
 }
+\ol{
+  \li{
+    Introduce monoidal Markov fibrations and all that jazz, for behavioural equivalences' sake.
+    (Debate cutting this!! Behavioural equivalence turns out not to be maximally helpful)
+  }
+  \li{
+    Fix the "good pullbacks" stuff since split mono pullbacks are not absolute!
+  }
+}
 
 \def\query/transclusion-coslice[x]{
  \open\query
