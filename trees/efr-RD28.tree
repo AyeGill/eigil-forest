@@ -1,0 +1,33 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cC} be a Markov category and let #{\cD \to \cC} be a Markov prefibration.
+  Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be precharts in , and let #{f: \bar{X_1} \chartto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
+   \quiver{
+    \begin{tikzcd}
+    \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
+    \bar{X_2} \ar[r, "\phi_2"] \ar[d] & \bar{Y_2}
+    \end{tikzcd} 
+  }
+}
+\p{
+  A \em{2-cell of precharts} for this data consists of a sectioned span #{M_1 \leftarrow K \to M_2, s: M_1 \to K}, so that the squares
+  \quiver{
+    \begin{tikzcd}
+    K \ar[r] \ar[d] & M_2 \ar[d]\\
+    X_1 \otimes Y_1 \ar[r] & X_2 \otimes Y_2
+    \end{tikzcd}
+  }
+
+  \quiver{
+    \begin{tikzcd}
+    X_1 \ar[d] \ar[r] & X_2 \ar[dd] \\
+    M_1 \ar[d] & \\
+    K \ar[r]& M_2
+    \end{tikzcd}
+  }
+
+  both commute, and so that the square over #{M_0} obtained by pulling back #{f,g} into maps #{f_{M_1}: \bar{X_1}_{M_1} \to \bar{X_2}_{M_1}, g_{M_1} : \bar{Y_1}_{M_1} \to \bar{Y_2}_{M_1}} and pulling back #{\phi_2} to #{K} then along #{s} to obtain #{s^*(\phi_{2,K}) : \bar{X_2}_{M_1} \to \bar{Y_2}_{M_1}}, commutes. (Note that this makes sense because pullbacks compose and the square under #{K} commutes.)
+}

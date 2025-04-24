@@ -1,0 +1,28 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  2-cells of precharts compose - that is, given a diagram
+  \quiver{
+    \begin{tikzcd}
+    \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
+    \bar{X_2} \ar[r, "\phi_2"] \ar[d] & \bar{Y_2} \ar[d]\\
+    \bar{X_3} \ar[r, "\phi_3"]        & \bar{Y_3}
+    \end{tikzcd} 
+  }
+  where the horizontal maps are precharts, and the vertical maps are maps in #{\cD} with deterministic base, and given maps of precharts #{\phi_1 \xto{\alpha} \phi_2 \xto{\beta} \phi_3,} there is a prechart #{\phi_1 \to \phi_3}
+}
+\proof{
+  \p{
+    We can easily compose the two maps to get #{M_1 \to M_3}. Now, the question is whether the perimeter of this diagram commutes:
+    \quiver{
+      \begin{tikzcd}
+      \bar{X_1}_{M_1} \ar[d] \ar[r] & \bar{Y_1}_{M_1}\ar[d]\\
+      \bar{X_2}_{M_1} \ar[r] \ar[d] & \bar{Y_2}_{M_1} \ar[d]\\
+      \bar{X_3}_{M_1} \ar[r] & \bar{Y_3}_{M_1}
+      \end{tikzcd}
+    }
+    Note that the top square is commutative by assumption, since pullbacks compose (even along stochastic maps) and this is the assumption that #{\alpha} is a cell. The bottom square is the result of pulling back a commutative square over #{M_2} again along #{\alpha}. Note that pullback along stochastic morphisms is not in general functorial - but since the vertical parts of this square are themselves pulled back from #{X_2,Y_2}, this composition is preserved by pullback along #{\alpha: M_1 \to M_2}. This finishes the proof. 
+  }
+}

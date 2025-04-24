@@ -3,6 +3,30 @@
 \import{macros}
 \title{Double categories of stochastic charts}
 
+\p{
+  When #{\cD \to \cC} is an ordinary Grothendieck fibration, there is a double category #{\Arena(\cD)} where the vertical category is the fiberwise opposite #{\cD^\fop}, and the horizontal category is #{\cD}. Recall that the category of 2-cells can be constructed very simply as #{(\cD^\to)^\fop,} using the observation that #{\cD^\to \to \cC^\to} is automatically a Grothendieck fibration again. This double category is the basis for Myers' abstract approach to open dynamical systems.
+}
+\p{
+  If #{\cD \to \cC} is instead a Markov fibration, we may attempt to apply the same method. However, we quickly run into unavoidable problems stemming from the fact that #{\SChart(-)} does not preserve limits of stochastic modules. There is a functor #{\SLens(\cD^\to \times_\cD \cD^\to) \to \SLens(\cD^\to) \times_{\SLens(\cD)} \SLens(\cD^\to),} but in general it is neither full nor faithful.
+}
+\p{
+  There are various ways we might attempt to remedy this problem. One approach would be to formulate a behavioural notion of "commutativity" for squares of stochastic lenses and charts, but the problem with this is that it is not obvious whether this property is stable under composition.
+}
+\p{
+  The basic problem stems from the fact that chart equivalences have a "directed" nature, and given a morphism of precharts #{(M,\phi) \to (N,\psi)} and an equivalence #{(N,\psi) \leftarrow (N',\psi')} (for example given by a stochastic section #{N' \to N} satisfying suitable conditions), there is not in general a way to lift this back into an equivalent #{(M',\phi')} with a map to #{N'}. 
+}
+\p{
+  This observation leads to the idea that we might define a double category of precharts which has the directed equivalences among its morphisms (going only in one direction). We will begin by constructing this double category.
+}
+
+
 \transclude{efr-KO4T}
+\transclude{efr-RD28}
+\transclude{efr-DRU6}
+\transclude{efr-L7X0}
+
+\transclude{efr-10CM}
+
 
 \transclude{efr-LQD2}%behavioural commutativity
+

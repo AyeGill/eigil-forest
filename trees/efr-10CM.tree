@@ -1,0 +1,23 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Suppose given a square 
+
+   \quiver{
+    \begin{tikzcd}
+    \bar{X_1} \ar[d, "f"] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d, "g"]\\
+    \bar{X_2} \ar[r, "\phi_2"] \ar[d] & \bar{Y_2} \ar[d]
+    \end{tikzcd} 
+  }
+  where the vertical maps are in #{\cD|_\det} and the horizontal maps are precharts. Suppose further the underlying square in #{\cC} is deterministic. Then:
+}
+\ol{
+  \li{
+    If there exists a filling prechart 2-cell, the image in #{\Arena(\cD|_\det)} commutes.
+  }
+  \li{
+    If #{M_1} is the carrier of #{\phi_1} and the left leg #{M_1 \to X_1} is an isomorphism, then this implication is an equivalence.
+  }
+}

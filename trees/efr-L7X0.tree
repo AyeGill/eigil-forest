@@ -1,0 +1,21 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Prechart cells compose horizontally: Given a square
+  \quiver{
+    \begin{tikzcd}
+    \bar{X_1} \ar[r, "\phi_1"] \ar[d] & \bar{Y_1} \ar[r, "\psi_1"] \ar[d] & \bar{Z_1} \ar[d]\\
+    \bar{X_2} \ar[r, "\phi_2"] & \bar{Y_2} \ar[r, "\psi_2"] & \bar{Z_2}
+    \end{tikzcd}
+  }
+  where the horizontal maps are precharts and the vertical maps are morphisms in #{\cD|_\det}, and given #{\alpha: \phi_1 \to \phi_2} and #{\beta: \psi_1 \to \psi_2}, there is a prechart morphism #{\psi_1\phi_1 \to \psi_2\phi_2}.
+}
+\proof{
+  \p{
+    Unlike the proof of \ref{efr-DRU6}, this is straightforward: If the carrier of #{\phi_i} is #{M_i}, and of #{\psi_i,} #{N_i} (for #{i=1,2}), then by definition the composites are carried by the pullback #{M_i \times_{Y_i} N_i}. There is a canonical map #{M_1 \times_{Y_1} N_1 \to M_2 \times_{Y_2} N_2} over #{M_2, N_2}, given by the independent pairing of #{\alpha} and #{\beta}.
+  }
+  \p{Since pullbacks compose, the square over #{M_1 \times_{Y_1} N_1} that must commute is given by the two commutative squares induced by #{\alpha,\beta}, pulled back and composed with each other. Here we are pulling back along the deterministic projections from the pullback, and hence these commutative squares are preserved, and hence the composite square commutes as well.
+  }
+}
