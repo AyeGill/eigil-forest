@@ -10,7 +10,7 @@
     & & K \ar[dl, bend right=30] \ar[dr, bend left=30] & &\\
     & N \ar[ur] \ar[dl] & & N' \ar[ul] \ar[dr] & \\
     M & & & & M
-    \end{tikzcd}
+    \end{tikzcd}  
   }
   of spans (i.e every object is equipped with maps to #{X,Y}, and a section from #{X}, so that everything commutes) so that the pullbacks of #{\phi} and #{\psi} to #{K} agree.
 }
