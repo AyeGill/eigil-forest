@@ -3,6 +3,5 @@
 \import{macros}
 \title{Double Categories of Stochastic Dynamical System}
 \p{
-  We will use the results of \ref{efr-HWAZ} to construct a double category of stochastic dynamical systems. This runs into an obvious limitation, namely that our category of "squares", #{\SLens(\MAr{\cD_0}),} is really only stochastic in one direction - the "charts" direction only has deterministic maps in the base. This collides with a limitation on the side of dynamical systems theory, which is that tangent bundles can usually not be taken to be functorial in stochastic maps - if #{X \to \Delta(Y)} is some sort of smoothly parameterized measure on a manifold, there isn't really a good lifting to #{TX \to \Delta(TY)}. Conveniently, these two problems cancel out: the chart fibration is forced to have deterministic maps as its base, and the tangent bundle (from the base to charts) is only functorial in deterministic maps. (One is almost tempted to pretend this was arranged on purpose).
+  
 }
-\transclude{efr-281R}%Find a better home for this
