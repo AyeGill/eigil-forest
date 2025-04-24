@@ -8,7 +8,7 @@
    \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
-    \bar{X_2} \ar[r, "\phi_2"] \ar[d] & \bar{Y_2}
+    \bar{X_2} \ar[r, "\phi_2"]  & \bar{Y_2}
     \end{tikzcd} 
   }
 }

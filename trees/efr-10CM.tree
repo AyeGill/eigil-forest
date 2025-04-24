@@ -8,7 +8,7 @@
    \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d, "f"] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d, "g"]\\
-    \bar{X_2} \ar[r, "\phi_2"] \ar[d] & \bar{Y_2} \ar[d]
+    \bar{X_2} \ar[r, "\phi_2"]  & \bar{Y_2}
     \end{tikzcd} 
   }
   where the vertical maps are in #{\cD|_\det} and the horizontal maps are precharts. Suppose further the underlying square in #{\cC} is deterministic. Then:
