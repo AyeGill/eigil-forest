@@ -1,0 +1,8 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\title{Double categories of stochastic charts}
+
+\transclude{efr-KO4T}
+
+\transclude{efr-LQD2}%behavioural commutativity
