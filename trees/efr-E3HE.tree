@@ -8,6 +8,7 @@
 }
 
 \transclude{efr-AMFR}%Bayesian image factorization
+\transclude{efr-88JF}%Relative Bayesian inverse
 \p{
   
 }

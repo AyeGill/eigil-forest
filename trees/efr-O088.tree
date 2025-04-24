@@ -6,9 +6,6 @@
 %Introduction
 \transclude{efr-X0ZV}
 
-%Preliminaries on Markov categories and optics
-\transclude{efr-M386}
-
 %Markov Prefibrations
 \transclude{efr-2IMZ}
 
@@ -18,5 +15,11 @@
 %Markov fibrations
 \transclude{efr-U4RA}
 
+%Notions of prechart equivalence
+\transclude{efr-3NFX}
+
 %Operations on Markov fibrations
 \transclude{efr-HWAZ}
+
+%Future work
+\transclude{efr-3C8C}
