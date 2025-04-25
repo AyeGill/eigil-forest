@@ -1,0 +1,10 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Stochastic Module Fibration}
+\p{
+  Let #{\cC} be a Markov category.
+  The adjunction #{\overline{(-)} \dashv (-)|_\det} induces a monad on #{\Fib(\cC_\det)}.
+  A module for this monad is called a \em{stochastic module over #{\cC}}.
+}

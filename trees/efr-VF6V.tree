@@ -1,0 +1,25 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cD} be a stochastic module over #{\cC}, and let 
+  \quiver{
+    \begin{tikzcd}
+    P \ar[rrd, "h"] \ar[ddr] & & \\
+    & X \times_Z Y \ar[r, "\pi_Y"] \ar[d] & Y \ar[d, "f"]\\
+    & X \ar[r, "g"] \ar[ur, "s"] \ar[u, bend left=20, "s'"] \ar[uul, bend left=20, "t"] & Z
+    \end{tikzcd}
+  }
+  be given, so that every map except #{s,s',t} is deterministic. Suppose the deterministic part of the diagram commutes, #{fs = g}, #{s'} is the induced section, and #{t} is a section. Let #{\bar{A},\bar{B}} be two objects over #{Z}. Suppose given a map #{\phi: f^*\bar{A} \to f^*\bar{B}}. Then #{t^*h^*(P) = (s')^*\pi_Y^*(P) : g^*\bar{A} \to g^*\bar{B}} 
+}
+\p{
+  In particular, this operation depends only on #{s}. Moreover, it is functorial, in the sense that given a diagram
+  \quiver{
+    \begin{tikzcd}
+    X \ar[dr] \ar[r, "s" ] & Y \ar[d] \ar[r, "t"] & Z \ar[dl] \\
+    & W
+    \end{tikzcd}
+  }
+  with the downwards maps deterministic, #{s^*t^* = (ts)^*}
+}
