@@ -14,7 +14,7 @@
   The first problem with this is that #{\cC^\cA} does not generally inherit a Markov structure from #{\cC}. Rather, one has to restrict to the full subcategory spanned by functors landing in #{\cC_\det} but considering natural transformations which are potentially nondeterministic. This is what we did when introducing the notation #{\MAr{\cC}}.
 }
 \p{
-  First, we will see that this indeed works for Markov \em{prefibrations}. This implies that #{(-)^\cA} lifts from fibrations to prefibration algebras.
+  First, we will see that this indeed works for Markov \em{prefibrations}. This implies that #{(-)^\cA} lifts from fibrations to stochastic modules.
 
 }
 
@@ -25,7 +25,7 @@
 }
 
 \ol{
-  \li{If #{\cD} is a Markov fibration, we get a prefibration algebra on #{\cD|_\det^\cA} - does this algebra have weak supports?}
+  \li{If #{\cD} is a Markov fibration, we get a stochastic module structure on #{\cD|_\det^\cA} - does this algebra have weak supports?}
   \li{There is an induced map #{\SChart{\cD|_\det^\cA} \to \cD^\cA} (where the latter is taken by convention to mean the full subcategory of functors whose image in #{\cC} consists of deterministic arrows). Is this an isomorphism? (If it is, clearly this implies point 1)}
 }
 \p{
@@ -58,7 +58,7 @@
   There is an obvious functor #{\MarkPreFib \to \Fib \times_\Cat \Markov^\oplax,} which carries a prefibration to the pair of its Markov category and its underlying fibration onto the deterministic part. On each fiber, this admits a left adjoint, as constructed in \ref{efr-GO6R}. By abstract nonsense these left adjoints commute \em{laxly} with the pullbacks - that is, given an oplax Markov functor #{f: \cC \to \cC'} and a map of fibrations #{\cD \to \cD'} over the deterministic part, there is an induced functor #{\overline{\cD} \to \overline{\cD'}} over #{f}, although this assignment does not preserve Cartesian squares.
 }
 \p{
-  However this does give a functor #{\Fib \times_\Cat \Markov^\oplax \to \MarkPreFib}, left adjoint to the restriction. The category of algebras over this monad is fibred over #{\Markov^\oplax,} with each fiber being the category of prefibration algebras over that markov category, and we get a global functor from #{\MarkPreFib}. In the same way, we get a global functor #{\SChart(-)} to #{\Cat^\to} which carries each prefibration algebra #{\cD_0 \to \cC_\det \to \cC} to the functor #{\SChart(\cD_0) \to \cC}
+  However this does give a functor #{\Fib \times_\Cat \Markov^\oplax \to \MarkPreFib}, left adjoint to the restriction. The category of algebras over this monad is fibred over #{\Markov^\oplax,} with each fiber being the category of stochastic modules over that markov category, and we get a global functor from #{\MarkPreFib}. In the same way, we get a global functor #{\SChart(-)} to #{\Cat^\to} which carries each stochastic module #{\cD_0 \to \cC_\det \to \cC} to the functor #{\SChart(\cD_0) \to \cC}
 }
 \p{
   We would like to study the limits in here. At this point, we are forced to consider for a moment a bit of higher category theory. Structures on a category defined "up to isomorphism" generally don't play well together with limits in the category #{\Cat}, since they are defined "up to equality". For example, we cannot infer from the fact that #{\cC,\cD} have products and the functors #{F,G: \cC \rightrightarrows \cD} preserve them that the equalizer of #{F,G} has products, since given #{A,B} in the equalizer, we have #{F(A \times B) \cong G(A \times B), but not necessarily equality!} 

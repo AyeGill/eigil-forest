@@ -3,11 +3,11 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  The property of having weak supports is stable under equalizers in prefibration algebras over #{\cC}. If #{\cC} has weak conditionals, it is also stable under finite products (hence all finite limits).
+  The property of having weak supports is stable under equalizers in stochastic module fibrations over #{\cC}. If #{\cC} has weak conditionals, it is also stable under finite products (hence all finite limits).
 }
 \proof{
   \p{
-    (Note that prefibration algebras themselves do not admit all finite limits, requiring some sort of isofibration property - we merely claim here that if the limit exists, it again admits weak supports)
+    (Note that stochastic modules themselves do not admit all finite limits, requiring some sort of isofibration property - we merely claim here that if the limit exists, it again admits weak supports)
   }
   \p{
     It is clear that the terminal object #{1_\cC: \cC \to \cC} has weak supports (regardless of #{\cC}).

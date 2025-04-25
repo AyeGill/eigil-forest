@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{example}
 \p{
-  Let #{\cC} be a Markov category with supports. Then the prefibration algebra induced by #{\MAr{\cC} \to \cC} presents a Markov fibration. If #{\cC} has conditionals, this Markov fibration is isomorphic to #{\MAr{\cC}}.
+  Let #{\cC} be a Markov category with supports. Then the stochastic module induced by #{\MAr{\cC} \to \cC} presents a Markov fibration. If #{\cC} has conditionals, this Markov fibration is isomorphic to #{\MAr{\cC}}.
 }
 \p{
   Given a section #{s: X \to M:p} and #{\phi: A \times_X M \to A \times_X A}, simply take the pullback to the support of #{s}. It must be the case that #{\phi(a,m) = (a,m)} #{s}-almost surely, which implies strict equality on the support. Hence by \ref{efr-TBZZ}, #{\MAr{\cC}} presents a Markov fibration.

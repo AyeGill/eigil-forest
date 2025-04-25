@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cD_0} be a fibration equipped with a prefibration algebra structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two morphisms if there exists a stochastic section #{M \to N} so that.. Then:
+  Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two morphisms if there exists a stochastic section #{M \to N} so that.. Then:
 }
 \ol{
   \li{This equivalence relation respects composition, and so defines a category #{\SChart(\cD_0)}}

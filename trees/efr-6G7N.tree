@@ -6,7 +6,7 @@
   Let #{\cD \to \cC} be a Markov prefibration. Recall that by #{\MAr{\cC}} we denote the category of \em{deterministic} arrows in #{\cC}. Let now #{\MAr{\cD}} denote the category #{\Ar(\cD) \times_{\Ar(\cC)} \MAr{\cC}} consisting of those arrows in #{\cD} which lie over a deterministic base (but again, where the morphisms consist of commutative squares whose other sides do not necessarily have deterministic bases). Then #{\MAr{\cD} \to \MAr{\cC}} is a Markov prefibration.
 }
 \p{
-  This yields functor #{\MarkPreFib(\cC) \to \MarkPreFib(\MAr{\cC})}, so that #{(\MAr{\cD})|_\det = \MAr{(\cD|_\det)}}. This equation induces a natural transformation #{\overline{(\MAr{\cD_0})}|_\det \to \MAr{(\overline{\cD_0}|_\det)}}, which in turns gives a lift of #{\MAr{(-)}} to the category of prefibration algebras, where the induced algebra structure acts pointwise.
+  This yields functor #{\MarkPreFib(\cC) \to \MarkPreFib(\MAr{\cC})}, so that #{(\MAr{\cD})|_\det = \MAr{(\cD|_\det)}}. This equation induces a natural transformation #{\overline{(\MAr{\cD_0})}|_\det \to \MAr{(\overline{\cD_0}|_\det)}}, which in turns gives a lift of #{\MAr{(-)}} to the category of stochastic module fibrations, where the induced algebra structure acts pointwise.
 }
 \proof{
   \p{
