@@ -1,0 +1,8 @@
+\date{2025-04-24}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: \cD \to \cC} be a functor so that #{\cD \times_\cC \cC_\det} is a fibration.
+  We say a morphism #{\bar{X} \to \bar{Y} \in \cD} is \em{deterministic in the fiber} if, given a Cartesian #{\bar{Y'} \to \bar{Y} \in \cD \times_\cC \cC_\det} and a factorization #{p(\bar{X}) \to p(\bar{Y})}, there is a unique lifting to a commutative triangle in #{\cD}
+}
