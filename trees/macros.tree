@@ -185,6 +185,7 @@
 \def\onto{#{\twoheadrightarrow}}
 \def\from{#{\leftarrow}}
 \def\xto[f]{#{\xrightarrow{\f}}}
+\def\xfrom[f]{#{\xleftarrow{\f}}}
 \def\longto{#{\longrightarrow}}
 \def\proto{#{\nrightarrow}}
 \def\twoto{#{\Rightarrow}}
