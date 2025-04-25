@@ -1,0 +1,21 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  There is a thin double category #{\widetilde{Arena}(\cD)} where
+}
+\ol{
+  \li{
+    The objects are the objects of #{\cD}
+  }
+  \li{
+    The horizontal morphisms are the morphisms of #{\cD}
+  }
+  \li{
+    The vertical morphisms are prelenses for the stochastic module induced by #{\cD}
+  }
+  \li{
+    A 2-cell commutes if and only if there is a prelens 2-cell filling it (for any 2 representatives of the given prelenses) 
+  }
+}

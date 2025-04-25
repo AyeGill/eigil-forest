@@ -1,0 +1,22 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cD} be a Markov prefibration. Then there is a double functor #{\Arena(\cD|_\det) \to \widetilde{\Arena}(\cD),} which acts as identity on the morphisms of #{\cD}, and carries each lens #{(f: X \to Y, \phi: f^*\bar{Y} \to \bar{X})} to the prelens #{(X \leftarrow X \to Y, \phi)}. This double functor is full on 2-cells.
+}
+\p{
+  The restriction to #{\Arena(\cD|_\det) \to \Arena(\cD)_\det} admits a right adjoint, which carries every prelens to its equivalence class.
+}
+\proof{
+  \p{
+    First we must verify functorialty with respect to lens composition. To that end, let #{X \xto{f} Y \xto{g} Z} be deterministic morphisms and #{\phi,\psi} be lenses over them.
+    Their composite as prelenses has carrier #{X \times_Y Y = X} and #{f^*(\psi)\phi} as the morphism in the fiber, which is exactly the prelens associated to their composite as lenses.
+  }
+  \p{
+    Second, we must verify fullness on 2-cells. But this is a special case of \ref{efr-10CM}.
+  }
+  \p{
+    Finally, \ref{efr-10CM} is precisely the statement that assigning a prelens to its equivalence class lens is right adjoint to this (and in particular that it forms a functor) 
+  }
+}

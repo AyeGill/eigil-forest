@@ -1,0 +1,20 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{T,\cD} be a stochastic dynamical systems theory.
+  Then #{T,\cD|_\det} is an ordinary dynamical systems theory.
+  There is a double functor #{\Sys(T,\cD|_\det) \to \Sys(T,\cC)}. This functor is full on vertical morphisms, and on 2-cells.
+}
+\p{
+  Let #{\Sys(T,\cD)_\det} denote the subcategory spanned by systems with deterministic readout, prelenses with deterministic base, and all the morphisms of #{\cD}. Then the restricted functor #{\Sys(T,\cD|_\det) \to \Sys(T,\cD)_\det} admits a chartwise right adjoint, which assigns to each system or prelens its equivalence class.
+}
+\proof{
+  \p{
+    The functor simply acts as the functor in \ref{efr-JQI9}. Since that inclusion is full on 2-cells, this one is full on vertical morphisms, and since a 2-cell in #{\Sys} is merely a 2-cell in #{\Arena} between specific objects, it is also full on 2-cells.
+  }
+  \p{
+    The right adjoint property likewise follows from the analogous property of the inclusion functor on arenas.
+  }
+}

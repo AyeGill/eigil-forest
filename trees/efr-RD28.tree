@@ -4,7 +4,7 @@
 \taxon{definition}
 \p{
   Let #{\cC} be a Markov category and let #{\cD \to \cC} be a Markov prefibration.
-  Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be precharts in , and let #{f: \bar{X_1} \chartto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
+  Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be precharts in , and let #{f: \bar{X_1} \charto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
    \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
