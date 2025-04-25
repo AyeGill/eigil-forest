@@ -1,6 +1,7 @@
 \date{2025-04-07}
 \author{eigil-rischel}
 \import{macros}
+\taxon{proposition}
 \p{
   Let #{\cD_0} be a fibration. Then the underlying fibration of the free Markov prefibration, #{\overline{\cD_0}|_\det,} has fiber over #{X \in \cC} given by
 }
