@@ -5,6 +5,6 @@
 \author{Christina Vasilakopoulou}
 \meta{bibtex}{\startverb
  @article
-{Moeller_Vasilakopoulou_2020, title={Monoidal Grothendieck Construction}, volume={35}, number={31}, journal={Theory and Applications of Categories}, author={Moeller, Joe and Vasilakopoulou, Christina}, year={2020}, month={Jul}, pages={1159-1207},language={en} }
+{moeller-vasilakopoulou, title={Monoidal Grothendieck Construction}, volume={35}, number={31}, journal={Theory and Applications of Categories}, author={Moeller, Joe and Vasilakopoulou, Christina}, year={2020}, month={Jul}, pages={1159-1207},language={en} }
 \stopverb}
 
