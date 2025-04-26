@@ -2,7 +2,6 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Markov categories}
-\parent{efr-HQ73}
 
 \p{
   Recall that \em{Markov categories} (\ref{fritz-synthetic-markov-cats}) are semicartesian symmetric monoidal categories equipped with a suitably coherent system of comonoids #{(\copy_X: X \to X \otimes X, \del_X: X \to I)} for each object #{X \in \cC}. These have been used as the basis for the categorical analysis of probability theory for a number of years, see eg \ref{rischel-fritz-infinite-products}, \ref{markov-supports}, \ref{law-large-nums-fritz-etal}, \ref{moss-perrone-ergodic}. See \ref{fritz-synthetic-markov-cats} for the basic theory, and \ref{fritz-gonda-perrone-rischel-rep} for the theory of representable Markov categories. We assume familiarity with this theory in general, but we will review some theory below, as well as a few new minor results which are helpful for the theory of Markov fibrations.
