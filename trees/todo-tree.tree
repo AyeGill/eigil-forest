@@ -4,11 +4,22 @@
 }
 \ol{
   \li{
-    Introduce monoidal Markov fibrations and all that jazz, for behavioural equivalences' sake.
-    (Debate cutting this!! Behavioural equivalence turns out not to be maximally helpful)
+    Fix the "good pullbacks" stuff since split mono pullbacks are not absolute!
   }
   \li{
-    Fix the "good pullbacks" stuff since split mono pullbacks are not absolute!
+    Finish triple categories stuff (hack as much as you want!!)
+  }
+  \li{
+    Write intro to Markov categories
+  }
+  \li{
+    Look at extensive stuff and do game theory example
+  }
+  \li{
+    Fix up global structure, limits stuff.
+  }
+  \li{
+    Sort out the Bayesian strict inverses stuf
   }
 }
 
