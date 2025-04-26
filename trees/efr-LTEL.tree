@@ -1,0 +1,27 @@
+\date{2025-04-26}
+\author{eigil-rischel}
+\import{macros}
+\title{Monoidal Markov Fibrations}
+\p{
+  Recall that if #{\cC} is symmetric monoidal, #{\Optic(\cC)} inherits a symmetric monoidal structure. At the same time, if #{\cD \to \cC} is a monoidal fibration, the fiberwise opposite retains a monoidal structure. Since these monoidal structures play an important role both in compositional game theory (where it would not be much of an exaggeration to say the entire point is to use string diagrammatic syntax to work with games) and in categorical systems theory, it is clearly important to understand the monoidal structure on Markov fibrations. Luckily, as we will see in this section, there are essentially no difficulties in accounting for the monoidal structure.
+}
+\p{
+  The theory of monoidal fibrations has been developed by Moeller and Vasilakopoulou, \ref{moeller-vasilakopoulou}, and Shulman \ref{shulman-monfibs}. We briefly sketch it here for convenience. There are essentially two available notions of monoidal fibration:
+}
+\ol{
+  \li{
+    For any category #{\cC}, the 2-category #{\Fib(\cC)} admits products, and we can ask for an internal pseudomonoid in this 2-category. This is equivalent to asking for a functor #{\cC^\op \to \MonCat} - in other words, for a monoidal structure on each fiber so that the base-change functors become (strong) monoidal.
+  }
+  \li{
+    The global category of fibrations #{\Fib} admits products, and we may ask for an internal pseudomonoid here. This is what Shulman calls a monoidal fibration: a fibration where #{\cD, \cC} both come equipped with monoidal structures, the fibration is a \em{strict} monoidal functor, and Cartesian maps are stable under monoidal product.
+  }
+}
+\p{
+  By a result of Moeller and Vasilakopoulou, these notions coincide in the case where #{\cC} is Cartesian monoidal. Since we are only interested in ordinary fibrations over #{\cC_\det,} which is indeed Cartesian, we may apply this result. However, our notion of monoidal Markov fibration will be a modified version of the latter.
+}
+\transclude{efr-CSLQ}
+\p{
+  Note that a monoidal Markov prefibration is the same thing as an internal pseudomonoid in the global category of prefibrations. We will not delve further into this point, however.
+}
+\transclude{efr-85DX}
+\transclude{efr-KMX6}

@@ -18,5 +18,20 @@
 }
 \proof{
   \p{By \ref{moeller-vasilakopoulou}, \MonFib(\cC_\det) is equivalent to the category of pseudomonoids in #{\Fib(\cC_det)}. Since the monad preserves products, it must preserve pseudomonoids, which is all we need.}
-  \p{Now suppose #{\cD \to \cC}}
+  \p{Now suppose #{\cD \to \cC} is a monoidal prefibration. Then its underlying fibration is a monoidal fibration, hence an object of #{\MonFib(\cC_\det)}. The claim is that the functor #{\overline{\cD|_\det}|_\det \to \cD|_\det} is monoidal. The induced monoidal structure is given on objects by #{\otimes_\cD} and atakes a pair of morphisms in the fiber represented by sections #{(s: X \to M, \phi: \bar{X_0}_M) \to \bar{X_1}_M} and #{s': X \to M', \phi': \bar{X'_0}_M \to \bar{X'_1}_M} to #{\braket{s,s'} : X \to M \times_X M', #{\pi_M^*\phi \otimes_\cD \pi_{M'}^*\phi'}}. Recalling that the algebra structure is defined by taking #{(s,\phi)} to the composite #{\bar{X_0} \to \bar{X_0}_M \xto{\phi} \bar{X_1}_M \to \bar{X_1},} and chasing the below diagram around, it is apparent that the algebra structure preserves the monoidal structure.
+  }
+  \quiver{
+    & M\times_X M' \ar[dr] \ar[dl] & \\
+    M \ar[dr] \ar[ur, bend left=20] & & M' \ar[dl] \ar[ul, bend right=20]\\
+    & X \ar[ur, bend right=20] \ar[ul, bend left=20]
+  }
+  \p{
+    Now let #{\cD_0} be a monoidal stochastic module in this sense. It suffices to show that the free prefibration #{\overline{\cD_0}} is a monoidal prefibration, since a reflexive coequalizer of identity-on-objects monoidal functors will again be monoidal, and the induced functor #{\SChart(\cD_0) \to \cC} will clearly be strict monoidal if #{\overline{\cD_0} \to \cC} is.
+  }
+  \p{
+    To construct this monoidal structure on #{\cD_0}, simply note that since #{\overline{(-)}} preserves global limits as well, there is an induced monoidal structure on #{\overline{\cD_0}} so that the forgetful functor is strict monoidal. Recalling that the Cartesian lifts of #{f: X \to Y \in \cC} to #{\overline{\cD_0}} are given by the span #{X = X \to Y} and the morphism #{1_{f^*\bar{Y}}}, it is easy to see by unwinding the definition that these are stable under tensor.
+  }
+  \p{
+    Finally, for the last point, we have already proven that #{\SChart(\cD_0) \to \cC} is a strict monoidal functor, and weak supports are equivalent to the claim that it is a prefibration. Since the Cartesian lifts are just the equivalence classes of the Cartesian lifts in #{\overline{\cD_0},} the preceding claim that they are stable under tensor implies the same for #{\SChart(\cD_0),} finishing the proof.
+  }
 }

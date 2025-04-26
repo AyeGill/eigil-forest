@@ -1,0 +1,14 @@
+\date{2025-04-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  Since #{\overline{(-)}} preserves both global products and fiberwise ones, it induces both a fiberwise monoidal structure and a "global" monoidal structure on #{\overline{\cD_0}}. Here we only use the global one. If #{\cC} were Cartesian, the global one would be induced from the local one by, given maps #{\bar{X_1} \to \bar{X_2}, \bar{Y_1} \to \bar{Y_2},} pulling each of them back along the square
+  \quiver{
+    \begin{tikzcd}
+    X_1 \otimes Y_1 \ar[d] \ar[r] & X_2 \otimes Y_2 \ar[d]\\
+    X_1 \ar[r]& X_2
+    \end{tikzcd}
+  }
+  (and the analogous one for #{Y}) and tensoring them over #{X_1\otimes Y_1}. In a Markov prefibration, of course, these pullbacks are not unique unless #{X_1 \to X_2} is deterministic, but there are "canonical" lifts given by tensoring globally with the (fiberwise) unit map over #{Y_1 \to Y_2}, and the global tensor is indeed given by the tensor of these canonical lifts (this doesn't provide a noncircular definition of the global tensor, of course). This provides a consistency relation between the two tensor products. Again, we will not dwell on this point.
+}
