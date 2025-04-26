@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  Let #{F,G: \cC' \rightrightarrow \cC}, #{S: \cC \to \cC'} be a reflexive pair of identity-on-objects, strict monoidal functors.
+  Let #{F,G: \cC' \rightrightarrows \cC}, #{S: \cC \to \cC'} be a reflexive pair of identity-on-objects, strict monoidal functors.
   Let #{E: \cC \to \cD} be the coequalizer in #{\Cat}. Then #{\cD} inherits a monoidal structure making #{E} strict monoidal.
   Moreover, if #{\cC} is symmetric or braided, #{\cD} inherits this structure making #{E} a braided functor.
 }

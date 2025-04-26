@@ -6,10 +6,12 @@
 \p{
   Let #{\cC} be a Markov category. We say #{\cC} is \em{pullback-positive} if #{\cC_\det} admits pullbacks and, given a diagram of this form where #{P \to X} is deterministic, there is a unique map #{P \to X \times_Z Y} making the squares commute.
 }
+\p{
 \quiver{
   \begin{tikzcd}
   P \ar[dr, dashed] \ar[rrd] \ar[ddr] & & \\
   & X \times_Z Y \ar[r] \ar[d] & Y \ar[d]\\
   & X \ar[r] & Z
   \end{tikzcd}
+}
 }

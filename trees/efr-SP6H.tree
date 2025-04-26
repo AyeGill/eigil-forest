@@ -18,11 +18,13 @@
 \p{
   It is clear that the codomain functor is not a (Grothendieck) fibration, since this would require #{Kl(\Delta)} to have pullbacks, which can only hold for a Cartesian Markov category. However, we can do some things. Namely, given a Cartesian (pullback) square in #{\Set}
 }
+\p{
 \quiver{
   \begin{tikzcd}
   \bar{A} \ar[r] \ar[d] & \bar{B} \ar[d]\\
   A \ar[r] & B,
   \end{tikzcd}
+}
 }
 \p{
   and a map #{\arena{\bar{X}}{X} \to \arena{\bar{B}}{B}} where the base map #{X \to B} is deterministic, for each deterministic factorizing map #{X \to A} there is a unique lift #{\bar{X} \to \bar{A}}. In other words, the pullback over #{\Set \into Kl(\Delta)} is a fibration.

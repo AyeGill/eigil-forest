@@ -15,7 +15,7 @@
 }
 \proof{
   \p{
-    The relation here described clearly implies identity, and contains all the generating identities, so it suffices to show it is an equivalence relation. Reflexivity and symmetry are clear, so transitivity is the only issue. It suffices to show that, given a span #{X \leftarrow S \to Y} and maps #{M_0 \to S \lefarrow M_1} so that the triangles commute, and so that the two induced sections #{X \to S} agree, and a map #{\bar{X}_S \to \bar{Y}_S} which pulls back to #{\phi_0,\phi_1}, we can find #{K} as above.
+    The relation here described clearly implies identity, and contains all the generating identities, so it suffices to show it is an equivalence relation. Reflexivity and symmetry are clear, so transitivity is the only issue. It suffices to show that, given a span #{X \leftarrow S \to Y} and maps #{M_0 \to S \leftarrow M_1} so that the triangles commute, and so that the two induced sections #{X \to S} agree, and a map #{\bar{X}_S \to \bar{Y}_S} which pulls back to #{\phi_0,\phi_1}, we can find #{K} as above.
   }
   \p{
     To do this, take #{K = M_0 \times_S M_1}. Clearly the maps to #{M_0, M_1} are over #{X,Y}, and by the existence of weak conditionals there exists a common lift of the sections to #{X \to K}. By functoriality of pullbacks, the pullbacks of #{\phi_0,\phi_1} to #{K} agree.

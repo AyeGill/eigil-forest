@@ -7,12 +7,14 @@
   Consider a map in #{\overline{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set}}, given by a diagram
 
 }
+\p{
   \quiver{
     \begin{tikzcd}
     \bar{X} \ar[d] \ar[r, bend right=20] & M \times_X \bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \\
     X \ar[r, bend right=20] & M \ar[l] \ar[r] & Y
     \end{tikzcd}
   }
+}
 \p{
   We can factor the section #{X \to M} as #{X \to X \times Y \to M}, where the first map is just the pairing and the second is a conditional distribution.
   This induces a factorization of the lift #{\bar{X} \to M \times_X \bar{X}} over #{\bar{X} \to \bar{X} \times Y}. By composing the map #{M \times_X \bar{X} \to \bar{Y}} with this factorization to build the map #{\bar{X} \times Y \to \bar{Y}}, we have found a new representative for the same map.
@@ -21,5 +23,5 @@
   Hence every map over #{X \to Y} has a representative where the residual is #{X \times Y}. We would like to argue that, since the map #{\bar{X} \times Y \to \bar{Y}} is given by the conditional distribution of the composite map #{\bar{X} \to \bar{Y},} it is uniquely determined by it, and thus if two distinct maps in #{\overline{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set}} have the same underlying map in #{\MAr{Kl(\Delta)},} they must have equal representatives of this form, and so be identified in the coreflection (which must therefore be isomorphic to #{\MAr{Kl(\Delta)}}). But of course, the two maps may only be \em{almost certainly} equal.
 }
 \p{
-  In this case, there is a simple fix: instead of taking #{X \times Y} as the residual, take the subset #{S} given by those pairs #{(x,y)} where #{y} has positive probability given #{x}. The pairing factors over this, of course, and two maps #{\bar{X} \times_X S \to \bar{Y}} which give the same distribution #{\bar{X} \to \bar{Y}} really must have the same value on every point. This proves that #{\MAr{Kl(\Delta)}' \to \MAr{(Kl(\Delta))}} is faithful and hence an isomorphism.
+  In this case, there is a simple fix: instead of taking #{X \times Y} as the residual, take the subset #{S} given by those pairs #{(x,y)} where #{y} has positive probability given #{x}. The pairing factors over this, of course, and two maps #{\bar{X} \times_X S \to \bar{Y}} which give the same distribution #{\bar{X} \to \bar{Y}} really must have the same value on every point. This proves that #{\SChart(\MAr{Kl(\Delta)}) \to \MAr{(Kl(\Delta))}} is faithful and hence an isomorphism.
 }

@@ -12,6 +12,6 @@
     }
     \p{
         Conversely, suppose #{\MAr{\cC} \to \cC} is a Markov prefibration and suppose the Cartesian maps are given by the deterministic pullback squares.
-        Let #{Y \to Z} be an object of #{\MAr{\cC}} and let #{X \to Z} be a deterministic map, and form the pullback #{X \time_Z Y}, which is Cartesian. Let #{P \to X} be deterministic and let #{P \to Y} be any map. Expanding the latter into a map from the object #{P \to P} to #{Y \to Z,} the Cartesian property of the square implies there is a unique pairing #{P \to X \times_Z Y}
+        Let #{Y \to Z} be an object of #{\MAr{\cC}} and let #{X \to Z} be a deterministic map, and form the pullback #{X \times_Z Y}, which is Cartesian. Let #{P \to X} be deterministic and let #{P \to Y} be any map. Expanding the latter into a map from the object #{P \to P} to #{Y \to Z,} the Cartesian property of the square implies there is a unique pairing #{P \to X \times_Z Y}
     }
 }
