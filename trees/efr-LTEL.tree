@@ -23,6 +23,10 @@
 \p{
   Note that a monoidal Markov prefibration is the same thing as an internal pseudomonoid in the global category of prefibrations. We will not delve further into this point, however.
 }
+\p{
+  We will need this lemma:
+}
+\transclude{efr-7GH5}
 \transclude{efr-85DX}
 \transclude{efr-T9F4}
 \transclude{efr-KMX6}

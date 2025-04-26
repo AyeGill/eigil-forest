@@ -15,6 +15,9 @@
   \li{
     If #{\cD_0} moreover has weak supports, this forgetful functor is a monoidal prefibration.
   }
+  \p{
+    Every statement holds also for braided or symmetric fibrations.
+  }
 }
 \proof{
   \p{By \ref{moeller-vasilakopoulou}, \MonFib(\cC_\det) is equivalent to the category of pseudomonoids in #{\Fib(\cC_det)}. Since the monad preserves products, it must preserve pseudomonoids, which is all we need.}
@@ -28,12 +31,15 @@
     \end{tikzcd}
   }
   \p{
-    Now let #{\cD_0} be a monoidal stochastic module in this sense. It suffices to show that the free prefibration #{\overline{\cD_0}} is a monoidal prefibration, since a reflexive coequalizer of identity-on-objects monoidal functors will again be monoidal, and the induced functor #{\SChart(\cD_0) \to \cC} will clearly be strict monoidal if #{\overline{\cD_0} \to \cC} is.
+    Now let #{\cD_0} be a monoidal stochastic module in this sense. It suffices to show that the free prefibration #{\overline{\cD_0}} is a monoidal prefibration, by \ref{efr-7GH5}, and the induced functor #{\SChart(\cD_0) \to \cC} will clearly be strict monoidal if #{\overline{\cD_0} \to \cC} is.
   }
   \p{
     To construct this monoidal structure on #{\cD_0}, simply note that since #{\overline{(-)}} preserves global limits as well, there is an induced monoidal structure on #{\overline{\cD_0}} so that the forgetful functor is strict monoidal. Recalling that the Cartesian lifts of #{f: X \to Y \in \cC} to #{\overline{\cD_0}} are given by the span #{X = X \to Y} and the morphism #{1_{f^*\bar{Y}}}, it is easy to see by unwinding the definition that these are stable under tensor.
   }
   \p{
-    Finally, for the last point, we have already proven that #{\SChart(\cD_0) \to \cC} is a strict monoidal functor, and weak supports are equivalent to the claim that it is a prefibration. Since the Cartesian lifts are just the equivalence classes of the Cartesian lifts in #{\overline{\cD_0},} the preceding claim that they are stable under tensor implies the same for #{\SChart(\cD_0),} finishing the proof.
+    If #{\cD_0} has weak supports, we have already proven that #{\SChart(\cD_0) \to \cC} is a strict monoidal functor, and weak supports are equivalent to the claim that it is a prefibration. Since the Cartesian lifts are just the equivalence classes of the Cartesian lifts in #{\overline{\cD_0},} the preceding claim that they are stable under tensor implies the same for #{\SChart(\cD_0),} finishing the proof.
+  }
+  \p{
+    The last point is mostly trivial. The product preservation still establishes the lifting to #{\BrMonFib(\cC_\det)} and #{\SymMonFib(\cC_\det)}. Given a braided or symmetric monoidal prefibration, the braidings are Cartesian and in the deterministic part, so the underlying fibration is braided/symmetric and they are preserves by the stochastic module structure. The braiding/symmetry on #{\SChart} follows again from \ref{efr-7GH5}, and there is nothing to show for the last point.
   }
 }
