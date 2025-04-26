@@ -1,0 +1,14 @@
+\title{Framed bicategories and monoidal fibrations}
+\date{2009-01-09}
+\taxon{reference}
+\meta{external}{http://arxiv.org/abs/0706.1286}
+\author{Michael A. Shulman}
+\meta{bibtex}{\startverb
+ @article
+{Shulman_2009, title={Framed bicategories and monoidal fibrations}, url={http://arxiv.org/abs/0706.1286}, note={arXiv: 0706.1286}, journal={arXiv:0706.1286 [math]}, author={Shulman, Michael A.}, year={2009}, month={Jan},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+In some bicategories, the 1-cells are 'morphisms' between the 0cells, such as functors between categories, but in others they are 'objects' over the 0-cells, such as bimodules, spans, distributors, or parametrized spectra. Many bicategorical notions do not work well in these cases, because the 'morphisms between 0-cells', such as ring homomorphisms, are missing. We can include them by using a pseudo double category, but usually these morphisms also induce base change functors acting on the 1-cells. We avoid complicated coherence problems by describing base change 'nonalgebraically', using categorical fibrations. The resulting 'framed bicategories' assemble into 2categories, with attendant notions of equivalence, adjunction, and so on which are more appropriate for our examples than are the usual bicategorical ones.
+}}
+

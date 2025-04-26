@@ -246,6 +246,7 @@
 \def\DOrg{#{\dblcat{DOrg}}}
 
 \def\Fib{#{\cat{Fib}}}
+\def\MonFib{#{\cat{MonFib}}}
 \def\Arr{#{\cat{Arr}}}
 \def\Mod{#{\cat{Mod}}}
 \def\Fun{#{\cat{Fun}}}
