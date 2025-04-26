@@ -3,12 +3,51 @@
 \import{macros}
 \title{Markov categories}
 \parent{efr-HQ73}
+
 \p{
-  We will have need of the following property of certain Markov categories. 
+  Recall that \em{Markov categories} (\ref{fritz-synthetic-markov-cats}) are semicartesian symmetric monoidal categories equipped with a suitably coherent system of comonoids #{(\copy_X: X \to X \otimes X, \del_X: X \to I)} for each object #{X \in \cC}. These have been used as the basis for the categorical analysis of probability theory for a number of years, see eg \ref{rischel-fritz-infinite-products}, \ref{markov-supports}, \ref{law-large-nums-fritz-etal}, \ref{moss-perrone-ergodic}. See \ref{fritz-synthetic-markov-cats} for the basic theory, and \ref{fritz-gonda-perrone-rischel-rep} for the theory of representable Markov categories. We assume familiarity with this theory in general, but we will review some theory below, as well as a few new minor results which are helpful for the theory of Markov fibrations.
+}
+
+\p{
+  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels} - that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure - the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two - the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence - as in, non-indpendence - of one variable on another.
+}
+
+\p{
+  Recall that the codomain functor #{\cC^\to \to \cC} is a fibration if and only if #{\cC} admits pullbacks. Since Markov categories have terminal objects but not, in general, products, they clearly cannot be expected to have pullbacks.
+  However, if #{\cC} is positive, given #{f: P \to X} \em{deterministic}, every #{g: P \to Y} has a unique pairing #{P \to X \otimes Y} with #{f}.
+  Computing pullbacks #{X \otimes_Z Y} in the subcategory #{\cC_\det,} we usually have a similar property. This will be the basic idea behind Markov prefibrations.
+}
+\p{
+  By the following straightforward proposition, this property of having unique deterministic pairings is in fact equivalent to positivity:
+}
+\transclude{efr-OYB6} %unique pairings=> positivity.
+
+
+\transclude{efr-T3HM} %defn: pullback-positive.
+\p{
+  Note that a pullback-positive category is in particular positive by taking #{Z = I}.
+}
+\transclude{efr-0YP1} % lemma on pullbacks
+\p{
+  The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories.
+}
+\p{The assumption that #{\cC} is pullback-positive will play a key role in the development of the theory of Markov fibrations. Moreover, the property of having pullbacks of deterministic monomorphisms will also be useful.}
+
+
+\p{
+  We will need the notion of \em{support} in a Markov category, introduced in \ref{markov-supports}, for certain examples, so we briefly record the definition and a few of its properties here.
+}
+\transclude{efr-AB57}
+\transclude{efr-8MYE}
+
+
+\p{
+  Finally, recall that conditionals in a Markov category are defined only up to almost certain equality. If we have supports as well, we are generally fine restricting to the support and observing that they are strictly determined there, but assuming the existence of both supports and conditionals is a very stringent requirement on our Markov category. In some cases it will be useful to make merely the assumption that conditionals \em{may be chosen} to be one-sided inverses, strictly. We thus introduce the following notions:
 }
 
 \transclude{efr-AMFR}%Bayesian image factorization
 \transclude{efr-88JF}%Relative Bayesian inverse
+
 \p{
-  
+  It should also be noted that, given two conditionals #{X \to Y} of the same joint distribution, if #{\cC} is representable we can still form the equalizer of the two maps #{X \rightrightarrows PY} - and this will generally be a subset of full measure where the two kernels agree. (Note that this is distinct from the equalizer of the two maps #{X \to Y \in \cC}, which may not exist.)
 }
