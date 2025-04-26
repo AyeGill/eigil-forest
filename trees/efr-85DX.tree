@@ -1,0 +1,22 @@
+\date{2025-04-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\ol{
+  \li{
+    The free prefibration monad on #{\Fib(\cC_\det)} has a canonical lifting to #{\MonFib(\cC_\det)}
+  }
+  \li{
+    Given a monoidal prefibration, its underlying stochastic module acquires the structure of an algebra of this lifted monad.
+  }
+  \li{
+    Given an algebra for the lifted monad #{\cD_0}, #{\SChart(\cD_0)} acquires a monoidal structure so that #{\SChart(\cD_0) \to \cC} is a strict monoidal functor.
+  }
+  \li{
+    If #{\cD_0} moreover has weak supports, this forgetful functor is a monoidal prefibration.
+  }
+}
+\proof{
+  \p{By \ref{moeller-vasilakopoulou}, \MonFib(\cC_\det) is equivalent to the category of pseudomonoids in #{\Fib(\cC_det)}. Since the monad preserves products, it must preserve pseudomonoids, which is all we need.}
+  \p{Now suppose #{\cD \to \cC}}
+}
