@@ -1,0 +1,29 @@
+\date{2025-04-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} be a Markov category. The following are equivalent:
+}
+\ol{
+  \li{
+    In #{\cC}, if #{f: P \to X \otimes Y} has deterministic marginal #{P \to X,} then #{X \indep Y \mid P}. In other words, anything is independent of a deterministic variable.
+  }
+  \li{
+    Given a deterministic morphism #{P \to X} and any morphism #{P \to Y,} there is a unique #{P \to X \otimes Y} with those marginals.
+  }
+  \li{
+    #{\cC} is positive.
+  }
+}
+\proof{
+  \p{
+    Clearly 1 and 2 are equivalent, since independence just means #{f} is the independent pairing of the marginals - if it is uniquely determined by its marginals, it must be equal to the independent pairing, and conversely if it is necessarily independent, it is determined by its marginals. Now let us show this is equivalent to positivity.
+  }
+  \p{
+    First suppose #{\cC} has unique pairings in this sense. Let #{f,g} be as in the definition of positivity. Then the two maps #{X \to Y \otimes Z} indicated are pairings of #{gf} and #{f}, and since #{gf} is deterministic, they are identical by hypothesis.
+  }
+  \p{
+    Finally, the implication #{3 \Rightarrow 1} is precisely \ref{fritz-synthetic-markov-cats}, prop. 12.14.
+  }
+}

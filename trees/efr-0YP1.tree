@@ -5,7 +5,7 @@
 \ol{
   \li{Suppose #{\cC'} admits products and pullbacks along monomorphisms. Then it admits all finite limits.}
   \li{
-    Suppose #{\cC_\det} admits and #{\cC_\det \to \cC} preserves pullbacks along monomorphisms. Suppose further #{\cC} is positive. Then it admits good deterministic pullbacks.
+    Suppose #{\cC_\det} admits and #{\cC_\det \to \cC} preserves pullbacks along monomorphisms. Suppose further #{\cC} is positive. Then it is pullback-positive.
   }
 }
 \p{

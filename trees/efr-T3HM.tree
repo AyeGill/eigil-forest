@@ -2,6 +2,14 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{definition}
+\title{Pullback-positive}
 \p{
-  If #{\cC_\det} admits pullbacks, we say #{\cC} \em{admits deterministic pullbacks} (note that this is distinct from #{\cC} admitting pullbacks of deterministic morphisms.)
+  Let #{\cC} be a Markov category. We say #{\cC} is \em{pullback-positive} if #{\cC_\det} admits pullbacks and, given a diagram of this form where #{P \to X} is deterministic, there is a unique map #{P \to X \times_Z Y} making the squares commute.
+}
+\quiver{
+  \begin{tikzcd}
+  P \ar[dr, dashed] \ar[rrd] \ar[ddr] & & \\
+  & X \times_Z Y \ar[r] \ar[d] & Y \ar[d]\\
+  & X \ar[r] & Z
+  \end{tikzcd}
 }

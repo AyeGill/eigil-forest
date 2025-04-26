@@ -7,6 +7,6 @@
 }
 \proof{
     \p{
-        Recall that #{\BorelStoch} is representable and positive, and apply \ref{efr-0YP1}, \ref{efr-DSGS}, \ref{efr-0044}.
+        Recall that #{\BorelStoch} is representable and positive, and apply \ref{efr-0YP1}, \ref{efr-0044}.
     }
 }

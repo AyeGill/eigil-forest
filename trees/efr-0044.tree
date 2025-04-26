@@ -3,21 +3,15 @@
 \author{eigil-rischel}
 \import{macros}
 \p{
-    Let #{\cC} be a Markov category. Suppose #{\cC_\det} has pullbacks. Suppose furthermore, given a diagram as below:
-
-
- \quiver{
-        \begin{tikzcd}
-            P \ar["f", rrd] \ar["g", ddr] & & \\
-            & X \times_Z Y \ar[r] \ar[d] & Y \ar[d]\\
-            & X \ar[r] & Z,
-        \end{tikzcd}
-    }
-    where the pullback is taken in #{\cC_\det}, and #{f} is deterministic (but not necessarily #{g}), that there exists a unique (not necessarily deterministic)  factorization #{P \to X \times_Z Y} making the diagram commute. Then the codomain functor #{\cC^\to \to \cC} is a [[efr-0019]]%markov prefibration.
+    Let #{\cC} be a Markov category. Then #{\MAr{\cC} \to \cC} is a Markov prefibration with Cartesian maps given by pullback squares, if and only if #{\cC} is pullback-positive.
 }
 
 \proof{
     \p{
-        It is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - the above property is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts can be taken to be deterministic (we have just constructed deterministic Cartesian lifts, and such lifts are unique up to unique isomorphism), the second condition also follows from this assumption, simply taking the other leg to be deterministic.
+        Assume first #{\cC} is pullback-positive. It is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - pullback positivity is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts can be taken to be deterministic (we have just constructed deterministic Cartesian lifts, and such lifts are unique up to unique isomorphism), the second condition also follows from this assumption, simply taking the other leg to be deterministic.
+    }
+    \p{
+        Conversely, suppose #{\MAr{\cC} \to \cC} is a Markov prefibration and suppose the Cartesian maps are given by the deterministic pullback squares.
+        Let #{Y \to Z} be an object of #{\MAr{\cC}} and let #{X \to Z} be a deterministic map, and form the pullback #{X \time_Z Y}, which is Cartesian. Let #{P \to X} be deterministic and let #{P \to Y} be any map. Expanding the latter into a map from the object #{P \to P} to #{Y \to Z,} the Cartesian property of the square implies there is a unique pairing #{P \to X \times_Z Y}
     }
 }
