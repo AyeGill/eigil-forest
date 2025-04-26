@@ -1,0 +1,17 @@
+\title{A category-theoretic proof of the ergodic decomposition theorem}
+\date{2023-12}
+\taxon{reference}
+\meta{doi}{10.1017/etds.2023.6}
+\author{Sean Moss}
+\author{Paolo Perrone}
+\meta{bibtex}{\startverb
+ @article
+{Moss_Perrone_2023, title={A category-theoretic proof of the ergodic decomposition theorem}, volume={43}, ISSN={0143-3857, 1469-4417}, DOI={10.1017/etds.2023.6}, number={12}, journal={Ergodic Theory and Dynamical Systems}, author={Moss, Sean and Perrone, Paolo}, year={2023}, month={Dec}, pages={4166â€“4192},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Abstract
+            
+              The ergodic decomposition theorem is a cornerstone result of dynamical systems and ergodic theory. It states that every invariant measure on a dynamical system is a mixture of ergodic ones. Here, we formulate and prove the theorem in terms of string diagrams, using the formalism of Markov categories. We recover the usual measure-theoretic statement by instantiating our result in the category of stochastic kernels. Along the way, we give a conceptual treatment of several concepts in the theory of deterministic and stochastic dynamical systems. In particular, ergodic measures appear very naturally as particular cones of deterministic morphisms (in the sense of Markov categories), and the invariant $sigma $-algebra of a dynamical system can be seen as a colimit in the category of Markov kernels. In line with other uses of category theory, once the necessary structures are in place, our proof of the main theorem is much more intuitive than traditional approaches. In particular, it does not use any quantitative limiting arguments, and it does not rely on the cardinality of the group or monoid indexing the dynamics. We hope that this result paves the way for further applications of category theory to dynamical systems, ergodic theory, and information theory.
+}}
+

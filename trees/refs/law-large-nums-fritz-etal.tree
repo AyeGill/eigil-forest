@@ -1,0 +1,19 @@
+\title{Empirical Measures and Strong Laws of Large Numbers in Categorical Probability}
+\date{2025-03-27}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2503.21576}
+\meta{external}{http://arxiv.org/abs/2503.21576}
+\author{Tobias Fritz}
+\author{TomÃ¡Å¡ Gonda}
+\author{Antonio Lorenzin}
+\author{Paolo Perrone}
+\author{Areeb Shah Mohammed}
+\meta{bibtex}{\startverb
+ @article
+{Fritz_Gonda_Lorenzin_Perrone_Mohammed_2025, title={Empirical Measures and Strong Laws of Large Numbers in Categorical Probability}, url={http://arxiv.org/abs/2503.21576}, DOI={10.48550/arXiv.2503.21576}, note={arXiv:2503.21576 [math]}, number={arXiv:2503.21576}, publisher={arXiv}, author={Fritz, Tobias and Gonda, TomÃ¡Å¡ and Lorenzin, Antonio and Perrone, Paolo and Mohammed, Areeb Shah}, year={2025}, month={Mar} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+The Glivenko-Cantelli theorem is a uniform version of the strong law of large numbers. It states that for every IID sequence of random variables, the empirical measure converges to the underlying distribution (in the sense of uniform convergence of the CDF). In this work, we provide tools to study such limits of empirical measures in categorical probability. We propose two axioms, permutation invariance and empirical adequacy, that a morphism of type $X^mathbb{N} to X$ should satisfy to be interpretable as taking an infinite sequence as input and producing a sample from its empirical measure as output. Since not all sequences have a well-defined empirical measure, such empirical sampling morphisms live in quasi-Markov categories, which, unlike Markov categories, allow partial morphisms. Given an empirical sampling morphism and a few other properties, we prove representability as well as abstract versions of the de Finetti theorem, the Glivenko-Cantelli theorem and the strong law of large numbers. We provide several concrete constructions of empirical sampling morphisms as partially defined Markov kernels on standard Borel spaces. Instantiating our abstract results then recovers the standard Glivenko-Cantelli theorem and the strong law of large numbers for random variables with finite first moment. Our work thus provides a joint proof of these two theorems in conjunction with the de Finetti theorem from first principles.
+}}
+
