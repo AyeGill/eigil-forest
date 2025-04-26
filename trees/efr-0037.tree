@@ -5,24 +5,27 @@
 \p{
   Let #{\Delta^{\leq 3} \subseteq \Delta} be the subcategory consisting of the objects #{[0],[1],[2],[3]}. Suppose #{\cC} admits pullbacks. Then an internal category in #{\cC} is equivalently a functor #{c: \Delta^{\leq 3, \op} \to \cC} so that the following diagrams are pullbacks:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   C[2] \ar[r] \ar[d] & C[1] \ar[d]\\
   C[1] \ar[r] & C[0]
   \end{tikzcd}
-}
+}}
+\p{
 \quiver{
   \begin{tikzcd}
   C[3] \ar[r] \ar[d] & C[2] \ar[d]\\
   C[1] \ar[r] & C[0]
   \end{tikzcd}
-}
+}}
+\p{
 \quiver{
   \begin{tikzcd}
   C[3] \ar[r] \ar[d] & C[1] \ar[d]\\
   C[2] \ar[r] & C[0]
   \end{tikzcd}
-}
+}}
 \proof{
   \p{
     It is easy to see that giving the restriction of this functor to #{[0],[1]} precisely amount to choosing objects #{C_0,C_1} and morphisms #{c,d,i} between them obeying the relevant equations. Given this, #{C[2]} must be chosen as the relevant pullback, and the only datum not automatically specified is the choice of #{d_1: C[2] \to C[1],} which is precisely the composition operation. Defining #{C_3} as the pullback it has to be and unwinding the equations, we see that the only thing not automatic is the equation between two different orders of composition (applying internal face maps) that this implies, which is associativity.

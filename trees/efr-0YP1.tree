@@ -8,6 +8,7 @@
     Suppose #{\cC_\det} admits and #{\cC_\det \to \cC} preserves pullbacks along monomorphisms. Suppose further #{\cC} is positive. Then it is pullback-positive.
   }
 }
+\proof{
 \p{
   The first point is clear, since #{X \times_Z Y = (X \times Y) \times_{Z \times Z} Z} (where the second map is the diagonal), and the diagonal is always a monomorphism (since it is split by either projection).
 }
@@ -16,4 +17,5 @@
 }
 \p{
   This implies in particular such a lift is always unique. Since if #{\cC} is positive, given #{P \to X, P \to Y}, if the latter is deterministic there is a unique pairing #{P \to X \otimes Y,} this implies there is at most one map #{P \to X \times_Z Y} factoring the two. On the other hand, since the composite #{P \to Y \to Z} is deterministic and equal to the composite #{P \to X \to Z}, they are both deterministic, and hence the pairing #{P \to Z \otimes Z} does factor over the diagonal, so there is a lift.
+}
 }

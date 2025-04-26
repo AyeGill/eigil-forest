@@ -6,11 +6,13 @@
 \p{
   Consider the simplicial category #{\Delta}. For every #{n,m}, the following square commutes:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   {[n+m]} & {[n]} \ar[l, "i \mapsto i+m"]\\
   {[m]} \ar[u, "i \mapsto i"] & {[0]} \ar[u, "0"] \ar[l, "m"]
   \end{tikzcd}
+}
 }
 \p{
   A simplicial object #{X} in a category #{\cC} is called a \em{Segal object} if each of these squares goes to a pullback square.

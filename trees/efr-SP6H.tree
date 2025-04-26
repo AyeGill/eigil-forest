@@ -35,12 +35,13 @@
 \p{
   Moreover, we can factor any map in #{\MAr{Kl(\Delta)}} as such an induced map followed by a map over a deterministic base, as follows:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   \bar{X} \ar[r, dashed, bend left=10] \ar[d] & p^*\bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \ar[d]\\
   X \ar[r, dashed, bend left=10] & M \ar[l, "p"] \ar[r, "p'"], & Y
   \end{tikzcd}
-}
+}}
 \p{
   This gives us a hope that we can, in some way, control the category #{\MAr{Kl(\Delta)}} using the pullback over #{\Set}, which \em{is} a fibration, and some information somehow given by these extra maps. Note also that the diagram above is equivalent to giving: a span #{X \leftarrow M \to Y} and a section #{X \to M}, which all lives in the base, and a map #{p^*\bar{X} \to p^{'*}\bar{Y}} in the fiber over #{M}. Thus it would seem to be very amenable to fiberwise dualization.
 }

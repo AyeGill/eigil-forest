@@ -90,11 +90,13 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \p{
   One thing we can consider is the simplicial \em{bicategory} #{\BiCat^\ps([n],\Para_\cM(\cC))}. This has all the morphisms we want - we just need to thin them out so that the vertical components always live inside #{\cC,} i.e. have trivival parameter. It turns out that the way to do this is to consider the pullback of this diagram:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   \cdot \ar[r] \ar[d] & \Para_\cM(\cC)^{[n]} \ar[d]\\
   N(B\cM)[n] \ar[r] & B\cM^{[n]}
   \end{tikzcd}
+}
 }
 
 \transclude{efr-003K}

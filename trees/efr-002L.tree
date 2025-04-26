@@ -6,9 +6,11 @@
   Let #{\cC_(-)} be a locally graded category given by an action #{\cM \times \cC \to \cC}.
   Then the category of horizontal morphisms #{\dblPara_\cM(\cC)_1} is given by the comma object of this cospan:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   & \cC \ar[d, equals]\\
   \cM \times \cC \ar[r, "\cdot"] & \cC
   \end{tikzcd}
+}
 }

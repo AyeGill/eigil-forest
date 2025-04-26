@@ -4,11 +4,13 @@
 \taxon{definition}
 \title{Dynamical system with interface #{A}}
 \p{Let #{A} be an arena. A \em{dynamical system} with interface #{A} is an object #{S \in \cC} and a lens #{TS \lensto A}. A morphism of systems is a map #{S \to S'} so that this square commutes in #{\Arena}:}
+\p{
 \quiver{
   \begin{tikzcd}
   TS \ar[d] \ar[r] & A \ar[d, equals]\\
   TS' \ar[r] & A
   \end{tikzcd}
+}
 }
 \p{
   The category of systems with interface #{A} is denoted #{\Sys(A)}

@@ -11,11 +11,13 @@
 \p{
   Now consider a triangle in #{\cC'}:
 }
+\p{
 \quiver{
   \begin{tikzcd}
   & A \ar[d]\\
   X \ar[ur, "f"] \ar[r] & B,
   \end{tikzcd}
+}
 }
 \p{
   with #{X, A \to B} deterministic, and let #{\bar{B}_X \to \bar{B} \leftarrow \bar{B}_A} be Cartesian maps lying over these. We must show there is a unique lift #{\bar{f}: \bar{B}_X \to \bar{B}_A} rendering the lifted triangle commutative. By definition, to give such a morphism is to given one over #{F(f)}, and the triangle commutes if and only if its image in #{\cD} commutes.

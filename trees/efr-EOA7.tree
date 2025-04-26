@@ -39,16 +39,19 @@
   \p{
     Given a diagram as in the second point, first form the image factorization #{M \twoheadrightarrow V \into K}. Take the pullback of the stochastic map #{M' \to K} along this inclusion (note that the map from #{X} clearly factors over this pullback, giving it a span structure). Take the pullback of #{V \to M'} along the inclusion #{V \times_K M'} - call this #{V'}. Note that map from #{M' \times_K V} to #{V} factors over this inclusion, giving a stochastic section. Finally take the pullback of #{M} and #{V'} over #{V} (labeled #{S}) to get a stochastic section #{V' \to S}. 
   }
+  \p{
   \quiver{
     \begin{tikzcd}
     & V' \ar[r] \ar[dl, bend left=30] & M' \times_N V \ar[r] \ar[d, bend left=30] \ar[l, bend right=30] & M' \ar[d, bend left=30]\\
     S \ar[r] & M \ar[r] & V \ar[r] & K\ar[u]
     \end{tikzcd}
   }
+  }
   \p{
     Finally, consider two stochastic sections to #{N}.
     By taking the image of the map #{N \to X \times Y} and forming the pullback of that image an #{M, M' \to N}, we reduce to the case where the maps #{M, M' \to X \times Y} factor over this image. Call the image #{K}
   }
+  \p{
   \quiver{
     \begin{tikzcd}
     & K & \\
@@ -56,8 +59,10 @@
     & N \ar[ru] \ar[rl]
     \end{tikzcd}
   }
+  }
   Now the claim is that we can find stochastic sections #{K \to M, M'} making the "downwards" square commute. But this is clear: simply form a strict Bayesian inverse of #{N \to K} and compose it with the maps #{N \to M,M'}. It is clear by diagram chase that this gives sections, which must be measure-preserving as a composite of measure-preserving maps.
-}
+
 \p{
   Now the two composite maps #{K \to N} do not automatically agree - however, since they are both conditional distributions, they agree almost surely. Hence by restricting to their equalizer, we can make them agree strictly, finishing the proof.
+}
 }
