@@ -21,5 +21,8 @@
 %Operations on Markov fibrations
 \transclude{efr-HWAZ}
 
+%Monoidal Markov Fibrations
+\transclude{efr-LTEL}
+
 %Future work
 \transclude{efr-3C8C}
