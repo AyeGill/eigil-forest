@@ -2,8 +2,9 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{definition}
+\title{Weak supports}
 \p{
-  Let #{\cD_0 \to \cC_\det} be a fibration equipped with a stochastic algebra structure. 
+  Let #{\cD_0 \to \cC_\det} be a stochastic module fibration.
 }
 \p{
   Let #{\alpha: X \to M} be a stochastic section, let #{\bar{X} \in \cD_{0,X}} be an object, and let #{\phi: \bar{X}_M \to \bar{X}_M \in \cD_{0,M}} be an endomorphism of its pullback. Observe that if there exists #{f: N \to M} so that #{f^*(\phi) = 1} and #{\alpha} factors over #{f}, then #{\alpha_*(\phi) = 1}. We say #{\cD_0} has \em{weak supports} if this implication is an equivalence
