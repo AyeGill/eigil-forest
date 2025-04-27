@@ -1,0 +1,17 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  Note that #{\alpha_*} of course depends on #{f}, not just #{\alpha}.
+}
+\p{
+  If #{f: M \to X} is a deterministic map, #{\alpha:X \to M} is a stochastic section, and #{\bar{X}_M, \bar{X}_M' \to \bar{X}} are two Cartesian lifts of #{f} to #{\bar{X} \in \cD_X}, then applying the commutativity axiom for stochastic modules implies that the triangle
+  \quiver{
+    \begin{tikzcd}
+    F(\bar{X}) \ar[r, "\alpha_*"] \ar[dr, "\alpha_*"] & F(\bar{X}_M) \ar[d, cong] \\
+    & F(\bar{X}_M')
+    \end{tikzcd}
+  }
+  commutes. In what follows, we will simply write #{f^*\bar{X}} for some choice of cartesian lift, and speak of #{\alpha_* : F(\bar{X}) \to F(f^*\bar{X})}. The above shows that this is a harmless abuse -- the actions #{\alpha_*} are preserved by the identification of different Cartesian lifts. In particular, we will often make arguments as if pullbacks compose strictly, although in general they only compose up to isomorphism. The above triangle means this is harmless.
+}
