@@ -10,7 +10,7 @@
   As a generalization of this, if this coequalizer exists for every algebra, they form a left adjoint to the canonical functor #{\cC \to \Alg_\cD(RL)}. Since we have seen that the monad of free Markov prefibrations commutes with taking fiberwise opposites, we may hope that such a left adjoint exists - a simple argument shows that, if it is, it is fully faithful, and we may say that those prefibrations in the image are the "fibrations" and define their fiberwise opposite as the fiberwise opposite applied to their underlying algebras.
 }
 \p{
-  In what follows, we will denote the monad #{\overline{(-)}|_\det} by #{\Free_\MarkPreFib} or simply #{\Free} for brevity.
+  In what follows, we will denote the monad #{\overline{(-)}|_\det} simply by #{\Free} to avoid too many complicated nestings of overlines and parentheses.
 }
 
 \transclude{efr-HVUT}
@@ -22,6 +22,12 @@
 }
 \transclude{efr-L7L2}%Lemma on coequalizers
 \transclude{efr-TBZZ}%BIG theorem
+
+\p{
+  It is not apparent whether weak supports are necessary for #{\SChart(\cD_0)} to be a prefibration. We have not found any counterexample, but in general the equivalence relation on charts is fairly complicated, so it is not apparent how to prove the necessity. We will generally not be too bothered about assuming weak supports instead of the more nebulous assumption that #{\cD_0} presents a Markov fibration.
+}
+\transclude{efr-1YS9}
+
 \transclude{efr-XDQ9}
 \transclude{efr-ANBC}
 
