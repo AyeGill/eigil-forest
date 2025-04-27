@@ -3,3 +3,46 @@
 \import{macros}
 \title{Introduction}
 \parent{efr-O088}
+
+\p{
+  Let #{\Delta: \Set \to \Set} be the discrete distribution monad, and let #{Kl(\Delta)} be the Kleisli category of #{\Delta} - which we think of as the category of \em{discrete} probability kernels. Then the objects of #{\MAr{Kl(\Delta)}} are the objects of #{\Set^\to} - that is, they are indexed families of sets. A map in #{\MAr{Kl(\Delta)}} is a stochastic map in the base #{X \to Y \in Kl(\Delta)}, and a stochastic map on the total spaces #{\bar{X} \to \bar{Y}} which is compatible with it. Note that if #{\bar{X} \to X} is surjective, the map on the base is fully determined by the map on the fibers, which must merely satisfy the condition that the distribution of the indexing point in #{Y} depends only on the indexing point in #{X}, not the specific point in the fiber #{\bar{X}_x}.
+}
+\p{
+  #{\MAr{Kl(\Delta)}} is a reasonable notion of "stochastic charts". For example, for "constant indexed sets" - those of the form #{X' \times X \to X} - we expect the set of stochastic charts to be given by an optic-like formula #{\int^M \Hom(X, M \otimes Y) \times \Hom(M \otimes X', Y')}. And in fact this is the case:  Clearly there is a map from this coend to maps in #{\MAr{Kl(\Delta)}}. By taking #{M = X \otimes Y} and conditioning on #{Y}, we see this is surjective. Finally, by restricting to the support of the forwards part inside #{X \otimes Y}, we obtain a representative for each element of the coend which is uniquely determined by #{X \to Y} and #{X' \times X \to Y'} (since the conditional is well-defined on the support).
+}
+\p{
+  Note: This relies both on the fact that #{Kl(\Delta)} has conditionals, which is a mostly harmless assumption which holds in most Markov categories of interest, and the existence of supports, which is much more stringent. Neither will be essential to the theory, but both will play a role in certain theorems - we will see more of this later.
+}
+\p{
+  The goal of the theory of Markov fibrations is to give a notion of "fiberwise opposite" which can be applied to the codomain functor #{\MAr{Kl(\Delta)} \to Kl(\Delta)} to give a reasonable notion of "stochastic lenses". In particular, we should recover the usual category of optics in the previous case.
+}
+\p{
+  It is clear that the codomain functor is not a (Grothendieck) fibration, since this would require #{Kl(\Delta)} to have pullbacks, which can only hold for a Cartesian Markov category. However, we can do some things. Namely, given a Cartesian (pullback) square in #{\Set}
+}
+\p{
+\quiver{
+  \begin{tikzcd}
+  \bar{A} \ar[r] \ar[d] & \bar{B} \ar[d]\\
+  A \ar[r] & B,
+  \end{tikzcd}
+}
+}
+\p{
+  and a map #{\arena{\bar{X}}{X} \to \arena{\bar{B}}{B}} where the base map #{X \to B} is deterministic, for each deterministic factorizing map #{X \to A} there is a unique lift #{\bar{X} \to \bar{A}}. In other words, the pullback over #{\Set \into Kl(\Delta)} is a fibration.
+}
+\p{
+  Furthermore, if #{\bar{X} \to \bar{B}} is itself deterministic, there is such a unique lift even without assuming that the factorization #{X \to A} is deterministic.
+}
+\p{
+  Moreover, we can factor any map in #{\MAr{Kl(\Delta)}} as such an induced map followed by a map over a deterministic base, as follows:
+}
+\p{
+\quiver{
+  \begin{tikzcd}
+  \bar{X} \ar[r, dashed, bend left=10] \ar[d] & p^*\bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \ar[d]\\
+  X \ar[r, dashed, bend left=10] & M \ar[l, "p"] \ar[r, "p'"], & Y
+  \end{tikzcd}
+}}
+\p{
+  This gives us a hope that we can, in some way, control the category #{\MAr{Kl(\Delta)}} using the pullback over #{\Set}, which \em{is} a fibration, and some information somehow given by these extra maps. Note also that the diagram above is equivalent to giving: a span #{X \leftarrow M \to Y} and a section #{X \to M}, which all lives in the base, and a map #{p^*\bar{X} \to p^{'*}\bar{Y}} in the fiber over #{M}. Thus it would seem to be very amenable to fiberwise dualization.
+}

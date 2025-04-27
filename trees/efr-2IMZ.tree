@@ -3,8 +3,6 @@
 \import{macros}
 \title{Markov Prefibrations}
 
-\transclude{efr-SP6H}%Example: discrete dist. monad
-
 \transclude{efr-0045}
 \transclude{efr-0019}% Markov *prefib* defn
 \transclude{efr-EQ41}
