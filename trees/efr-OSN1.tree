@@ -1,0 +1,25 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\title{Commonly used Markov Categories}
+\p{
+  Here are some important Markov categories:
+}
+\ol{
+  \li{
+    #{\Stoch} (\ref{fritz-synthetic-markov-cats}, section 4) is the category whose objects are measurable spaces, whose morphisms are Markov kernels, with composition given by the Chapman-Kolmogorov equation and monoidal structure given by product measures.
+  }
+  \li{
+    #{\BorelStoch \subseteq \Stoch} (\ref{fritz-synthetic-markov-cats}, section 4) is the full subcategory of #{\Stoch} spanned by the \em{standard Borel spaces,} that is by those measurable spaces arising as the Borel #{\sigma}-algebra on separable, complete metric space.
+  }
+  \li{
+    #{\FinStoch} is the subcategory of #{\Stoch} spanned by finite sets in the powerset #{\sigma}-algebra. A morphism #{X \to Y} in #{\FinStoch} is equivalently a matrix #{f_{xy} : x \in X, y \in Y} with entries in #{\RR_{\geq 0}} and with #{\sum_y f_{xy} = 1} for each #{x} (this is what is called a \em{stochastic matrix}).
+  }
+  \li{
+    Let #{\Delta: \Set \to \Set} be the monad which assigns to #{X \in \Set} the set #{\Delta(X)} of countably-supported probability measures. Then the Kleisli category #{Kl(\Delta)} is a Markov category, sometimes called the category of \em{discrete} probability.
+  }
+  \li{
+    #{\TychStoch} (\ref{markov-supports}, example A.1.4) is the category of \em{Tychonoff} topological spaces and kernels which are valued in Radon probability measures, and where the measure #{f(- \mid x)} varies continuous in #{x \in X} with respect to the weak topology - in other words, given any continuous function #{u \in C(Y),} the resulting function on #{X} given by #{E_{y \sim f(- \mid x)}u(y)} is continuous. (A space #{X} is \em{Tychonoff} if it is Hausdorff and, given #{K \subset X} closed and #{x_0} not in #{K}, there exists continuous #{f: X \to [0,1]} with #{f(x_0)=0, f(k) =1} for #{k \in K}. Every locally compact Hausdorff space is Tychonoff).
+  }
+}

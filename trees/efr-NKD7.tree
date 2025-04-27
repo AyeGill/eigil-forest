@@ -1,0 +1,11 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\title{Diagram Markov Categories}
+\p{
+  If #{\cC} is a Markov category and #{I} is any ordinary category, there is a Markov category #{\Fun(I,\cC)} whose objects are functors #{I \to \cC_\det,} and whose morphisms are natural transformations between these considered as functors into #{\cC} (i.e natural transformations with stochastic components). The monoidal and Markov structure is defined simply component-wise.
+}
+\p{
+  In particular, taking #{I = \to = \{0 \to 1\}} the walking arrow, we obtain a Markov category of deterministic arrows #{\Fun(\to, \cC)}. We will denote this category simply #{\cC^\to}. Again, the objects of this category are the deterministic morphisms of #{\cC}, while the morphisms are the commutative squares with not-necessarily-deterministic sides
+}

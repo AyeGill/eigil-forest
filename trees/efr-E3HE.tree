@@ -11,9 +11,15 @@
   The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels} - that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure - the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two - the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence - as in, non-indpendence - of one variable on another.
 }
 
+\transclude{efr-OSN1}
+
+\transclude{efr-NKD7}
+
+\transclude{efr-4VOU}
+
 \p{
   Recall that the codomain functor #{\cC^\to \to \cC} is a fibration if and only if #{\cC} admits pullbacks. Since Markov categories have terminal objects but not, in general, products, they clearly cannot be expected to have pullbacks.
-  However, if #{\cC} is positive, given #{f: P \to X} \em{deterministic}, every #{g: P \to Y} has a unique pairing #{P \to X \otimes Y} with #{f}.
+  However, if #{\cC} is \em{positive} (\ref{fritz-synthetic-markov-cats}, def. 11.22 - but see \ref{efr-OYB6} below), given #{f: P \to X} \em{deterministic}, every #{g: P \to Y} has a unique pairing #{P \to X \otimes Y} with #{f}.
   Computing pullbacks #{X \otimes_Z Y} in the subcategory #{\cC_\det,} we usually have a similar property. This will be the basic idea behind Markov prefibrations.
 }
 \p{
@@ -30,7 +36,7 @@
 \p{
   The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories.
 }
-\p{The assumption that #{\cC} is pullback-positive will play a key role in the development of the theory of Markov fibrations. Moreover, the property of having pullbacks of deterministic monomorphisms will also be useful.}
+\p{The assumption that #{\cC} is pullback-positive will play a key role in the development of the theory of Markov fibrations. Although the theory could possibly be developed without assuming the base category has deterministic pullbacks, positivity seems to be an essential part. }
 
 
 \p{
