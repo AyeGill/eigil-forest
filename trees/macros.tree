@@ -335,6 +335,7 @@
 \def\del{#{\mathrm{del}}}
 \def\MarkFib{#{\cat{MarkFib}}}
 \def\MarkPreFib{#{\cat{MarkPreFib}}}
+\def\SFib{#{\cat{SFib}}}
 \def\Markov{#{\cat{Markov}}}
 \def\MAr[C]{#{\C^\to}}
 \def\supp{#{\operatorname{supp}}}

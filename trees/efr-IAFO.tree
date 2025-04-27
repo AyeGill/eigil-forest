@@ -10,7 +10,7 @@
 \p{
   \quiver{
     \begin{tikzcd}
-    \bar{X} \ar[d] \ar[r, bend right=20] & M \times_X \bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \\
+    \bar{X} \ar[d] \ar[r, bend right=20] & M \times_X \bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \ar[d]\\
     X \ar[r, bend right=20] & M \ar[l] \ar[r] & Y
     \end{tikzcd}
   }

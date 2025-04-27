@@ -6,6 +6,6 @@
   Let #{\cD \to \cC} be a Markov prefibration, and let #{\cD_0 = \cD \times_\cC \cC_\det}. Then the corepresentable copresheaf #{\cD(\bar{A},-)}, restricted to #{\cD_0}, (but not pulled back - that is, we remember the whole set #{\cD(\bar{A},\bar{X})}, even the part over stochastic #{f}, but only the \em{composition} with maps in #{\cD_0}) is a stochastic module in a canonical way, with #{\alpha_*: F(\bar{X}) \to F(f^*\bar{X})} given by composition with the unique induced lift of #{\alpha}. Moreover, any morphism of Markov prefibrations #{\phi: \cD \to \cD'} induces a homomorphism of stochastic modules #{\cD(\bar{A},-) \to \cD'(\phi(\bar{A}),-)}
 }
 \proof{
-  The only thing to verify for the stochastic module structure is the equation, but this is an easy consequence of the uniqueness property for Markov prefibrations - both of the given maps are given by composing with the unique lift of the composite #{M \to Y \to N}.
+  The only thing to verify for the stochastic module structure is the equation, but this is an easy consequence of the uniqueness property for Markov prefibrations - both of the given maps are given by composing with the unique lift of the map #{X \to N}.
   To prove the homomorphism property, note that a morphism of prefibrations preserves Cartesian morphisms, and hence (by uniqueness) must preserve the unique lifts of stochastic sections. Then by functoriality it must preserve composition with these, which finishes the proof.
 }

@@ -3,12 +3,12 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two morphisms if there exists a stochastic section #{M \to N} so that.. Then:
+  Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two morphisms #{(M, \phi), (N, \phi')} if there exists a map #{f: M \to N} over #{X,Y} and a stochastic section #{s} of #{f} which preserves the section from #{X}, so that #{s^*\phi' = \phi} (note that this makes sense because pullbacks compose). Then:
 }
 \ol{
   \li{This equivalence relation respects composition, and so defines a category #{\SChart(\cD_0)}}
   \li{In #{\Cat_{/\cC}}, #{\overline{\Free(\cD_0)} \rightrightarrows \overline{\cD_0} \to \SChart(\cD_0)} is a coequalizer diagram. In particular, #{\cD_0} presents a Markov fibration if and only if #{\SChart(\cD_0)} is a Markov prefibration (in which case #{\SChart(\cD_0)} is the fibration it presents)}
-  \li{#{\SChart(\cD_0)} is a prefibration if and only if, given a stochastic section #{s: X \to M: f \in \cC} and #{\phi: p^*\bar{X} \to p^*\bar{X} \in \cD_{0,M}} so that the algebra structure carries this to the identity #{1_{\bar{X}}}, there is a deterministic #{h: M' \to M} and factorization #{s': X \to M'} so that the pullback #{h^*\phi} is the identity.}
+  \li{If #{\cD_0} has [weak supports](efr-YFV2), #{\SChart(\cD_0)} is a prefibration}
 }
 \proof{
 \p{
@@ -25,7 +25,7 @@
   equipped with a map #{\phi: p^*q^*\bar{X} \to p^*r^*\bar{Y}}. The two maps #{\overline{\Free(\cD_0)} \to \overline{\cD_0}} carry such a thing to first, the map resulting from forgetting #{M} and just composing #{q,r} with #{p} to get a span (and composing the sections to get a new section), and secondly, the map with apex #{M} obtained by using the algebra structure to push #{\phi} down into a map over #{M}. It is clear that this is equivalently the equation described in the theorem. This establishes points 1. and 2., since by \ref{efr-L7L2} we can compute such coequalizers hom-set by hom-set.
 }
 \p{
-  Now we wish to prove that #{\SChart(\cD_0)} is a Markov prefibration given the hypothesis. Since by the coequalizer presentation, its deterministic part is isomorphic to #{\cD_0}, the fibration property is automatic. It remains to verify that, given a triangle
+  Now we wish to prove that #{\SChart(\cD_0)} is a Markov prefibration given weak supports. Since by the coequalizer presentation, its deterministic part is isomorphic to #{\cD_0}, the fibration property is automatic. It remains to verify that, given a triangle
   \quiver{
     \begin{tikzcd}
     & Z\ar[d]\\
@@ -42,7 +42,7 @@
     X \ar[ru, bend left=30] & & Z\\ 
     \end{tikzcd}
   }
-  equipped with #{p^*\bar{A}_X \to q^*\bar{A}_Z}. By taking the equalizer of the two maps #{M \to Y} (the section factors over this), we may assume these two are equal, which implies that the pulled-back objects are equal - denote this object #{\bar{A}_M} Now the hypothesis is that after postcomposing with the Cartesian map #{\bar{A}_Z \to \bar{A},} this gives the map #{\bar{A}_X \to \bar{A}}. This postcomposition is given simply by postcomposing the leg #{M \to Z} with the map #{Z \to Y} (and observing that, by functoriality of pullbacks, this does not alter the pulled-back object). Then the claim is that integrating this map #{\bar{A}_M \to \bar{A}_M} down into a map #{\bar{A}_X \to \bar{A}_X,} it gives the identity. But by assumption this means we can pull back to some object #{M' \to M} (lifting the section from #{X}) where the two maps are already equal to the identity. But this pull-back can be applied to the original map #{\bar{A}_X \to \bar{A}_Z} as well. But this implies every such map is equal to the one represented by the diagram 
+  equipped with #{p^*\bar{A}_X \to q^*\bar{A}_Z}. By taking the equalizer of the two maps #{M \to Y} (the section factors over this), we may assume these two are equal, which implies that the pulled-back objects are equal - denote this object #{\bar{A}_M}. Now the hypothesis is that after postcomposing with the Cartesian map #{\bar{A}_Z \to \bar{A},} this gives the map #{\bar{A}_X \to \bar{A}}. This postcomposition is given simply by postcomposing the leg #{M \to Z} with the map #{Z \to Y} (and observing that, by functoriality of pullbacks, this does not alter the pulled-back object). Then the claim is that integrating this map #{\bar{A}_M \to \bar{A}_M} down into a map #{\bar{A}_X \to \bar{A}_X,} it gives the identity. But by assumption this means we can pull back to some object #{M' \to M} (lifting the section from #{X}) where the two maps are already equal to the identity. But this pull-back can be applied to the original map #{\bar{A}_X \to \bar{A}_Z} as well. But this implies every such map is equal to the one represented by the diagram 
 
   \quiver{
     \begin{tikzcd}
@@ -51,6 +51,6 @@
     \end{tikzcd}
   }
 
-  and the identity on #{\bar{A}_{X \otimes Y},} with the map #{M' \to X \otimes Y} giving the witness, since identities pull back. This map only depends on the underlying #{X \to Y,} finishing our proof.
+  and the identity on #{\bar{A}_{X \otimes Y},} with the map #{M' \to X \otimes Y} giving the witness, since identities pull back. This map only depends on the underlying #{X \to Y,} hence #{\SChart(\cD_0)} is indeed a prefibration.
 }
 }

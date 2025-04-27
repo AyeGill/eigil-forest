@@ -14,7 +14,7 @@
 
     \quiver{
       \begin{tikzcd}
-      & N \ar[ddl, swap, "{f'}"] \ar[ddr] & \\
+      & N \ar[ddl, swap, "{f'}"] \ar[d, "h"] \ar[ddr] & \\
       & M \ar[dl, "f"] \ar[dr] & \\ 
       X \ar[ruu, bend left=30, "{s'}"] \ar[ru, bend right=30, swap, "s"] & & Y
       \end{tikzcd}
@@ -29,7 +29,7 @@
       \end{tikzcd}
     } 
   }
-  \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\Set}, in the sense that given a Cartesian map #{\bar{A} \to \bar{B}} and an element #{\phi \in T\cD_0(\bar{X},-)(\bar{B})} lying over a deterministic map #{X \to B,} the natural map from lifts #{\psi \in T\cD_0(\bar{X},-)(\bar{A})} to lifts #{X \to A} is a bijection.}
+  \li{The underlying copresheaf of this respects Cartesian maps in #{\cD_0 \to \cC_\det}, in the sense that given a Cartesian map #{\bar{A} \to \bar{B}} and an element #{\phi \in T\cD_0(\bar{X},-)(\bar{B})} lying over a deterministic map #{X \to B,} the natural map from lifts #{\psi \in T\cD_0(\bar{X},-)(\bar{A})} to lifts #{X \to A} is a bijection.}
 
 }
 \proof{

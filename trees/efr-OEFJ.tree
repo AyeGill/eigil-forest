@@ -4,7 +4,8 @@
 \taxon{definition}
 \title{Stochastic Module Fibration}
 \p{
-  Let #{\cC} be a Markov category.
+  Let #{\cC} be a pullback-positive Markov category.
   The adjunction #{\overline{(-)} \dashv (-)|_\det} induces a monad on #{\Fib(\cC_\det)}.
-  A module for this monad is called a \em{stochastic module over #{\cC}}.
+  A module for this monad is called a \em{stochastic module over #{\cC}} (or, to distinguish it from the copresheaves of \ref{efr-Y926}, a stochastic module fibration).
+  The category of stochastic module fibrations is denoted #{\SFib(\cC)}
 }

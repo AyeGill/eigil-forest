@@ -3,16 +3,16 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\alpha: \Free(\cD_0) \to \cD_0} be an algebra of the free Markov prefibration monad which presents a Markov fibration. Then the underlying algebra of the Markov prefibration obtained as the coequalizer of #{\overline{\Free(\cD_0)} \rightrightarrows \bar{\cD_0}} is isomorphic to #{\alpha}, and in particular this prefibration \em{is} a Markov fibration.
+  Let #{\alpha: \Free(\cD_0) \to \cD_0} be stochastic module which presents a Markov fibration. Then the underlying algebra of the Markov prefibration obtained as the coequalizer of #{\overline{\Free(\cD_0)} \rightrightarrows \bar{\cD_0}} is isomorphic to #{\alpha}, and in particular this prefibration \em{is} a Markov fibration.
 }
 \p{
-  This correspondence determines an equivalence of categories between the full subcategory #{\MarkFib(\cC)} of #{\MarkPreFib(\cC)} spanned by the Markov fibrations, and the full subcategory #{\Alg(\Free_\MarkPreFib)^p \subseteq \Alg(\Free_\MarkPreFib)} spanned by those algebras which present a Markov fibration.
+  This correspondence determines an equivalence of categories between the full subcategory #{\MarkFib(\cC)} of #{\MarkPreFib(\cC)} spanned by the Markov fibrations, and the full subcategory #{\SFib(\cC)^p \subseteq \SFib(\cC)} spanned by those algebras which present a Markov fibration.
 }
 \proof{
   \p{
     Let #{\alpha} be an algebra as assumed, and let #{\cD_0^\alpha \in \MarkPreFib} denote the coequalizer given. By general nonsense there is an induced functor #{\cD_0 \to \cD_0^\alpha|_\det} which is moreover an algebra homomorphism - the claim is that this is an isomorphism. By \ref{efr-L7L2}, pullback to the deterministic part preserves these coequalizers, so this amounts to the claim that the diagram #{\Free^2(\cD_0) \rightrightarrows \Free(\cD_0) \to \cD_9} is a coequalizer. But this is true for any algebra of any monad (in fact, the unit gives a splitting of this coequalizer).
   }
   \p{
-    By general nonsense the fibration associated to an algebra which presents a fibration forms a partial left adjoint to #{\MarkPreFib \to \Alg(\Free_\MarkPreFib)}. This left adjoint, by the above, has its image inside #{\MarkFib,} and hence there is an adjunction #{\MarkFib \lensto \Alg(\Free_\MarkPreFib)^p}. The preceding furthermore proves that the unit of this adjunction is the identity, which implies that the left adjoint is fully faithful - but by definition it is essentially surjective, finishing the argument.
+    By general nonsense the fibration associated to an algebra which presents a fibration forms a partial left adjoint to #{\MarkPreFib(\cC) \to \SFib(\cC)}. This left adjoint, by the above, has its image inside #{\MarkFib,} and hence there is an adjunction #{\MarkFib(\cC) \lensto \SFib(\cC)^p}. The preceding furthermore proves that the unit of this adjunction is the identity, which implies that the left adjoint is fully faithful - but by definition it is essentially surjective, finishing the argument.
   }
-}
+} 

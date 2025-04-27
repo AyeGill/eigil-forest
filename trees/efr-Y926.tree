@@ -4,23 +4,33 @@
 \taxon{definition}
 \title{Stochastic Module}
 \p{
-  Let #{\cC} be a positive Markov category with good pullbacks, and let #{\cD_0 \to \cC_\det} be a fibration.
+  Let #{\cC} be a Markov category, and let #{\cD_0 \to \cC_\det} be a fibration.
   Then a \em{stochastic module} consists of
   \ol{
-    \li{An indexed copresheaf #{F = (A,F,\alpha) \in \IcoPSh(\cD_0 / \cC)}}
-    \li{For each #{\bar{X} \in \cD_0} and stochastic section #{f: M \to p\bar{X}: \alpha \in \cC},a function #{ \alpha_*: F(\bar{X}) \to F(f^*\bar{X})}, which acts on the underlying morphisms in #{\cC} as composition with #{\alpha}}
-    \li{Satisfying, whenever given a square of this form
+    \li{An indexed copresheaf #{F = (A,F,\rho) \in \IcoPSh(\cD_0 / \cC)}}
+    \li{For each #{\bar{X} \in \cD_0}, Cartesian morphism #{\bar{a}: \bar{X}_M \to \bar{X}} lying over #{a: M \to X}, and stochastic section #{\alpha: X \to M}, a function #{ \alpha_*: F(\bar{X}) \to F(\bar{X}_M)}, which acts on the underlying morphisms in #{\cC} as composition with #{\alpha}}
+    \li{Satisfying, whenever given a commutative square of Cartesian morphisms:
+
       \quiver{
         \begin{tikzcd}
-        M \ar[r, "g"] \ar[d,"a"] & N \ar[d,"b"] \\
+        \bar{Y}_M \ar[r, "\bar{f}"] \ar[d, "\bar{a}"] & \bar{Y}_N \ar[d, "\bar{b}"] \\
+        \bar{Y}_X \ar[r, "\bar{g}"] & \bar{Y}
+        \end{tikzcd}
+      }
+
+      and stochastic sections #{\alpha,\beta} lying over #{a = p(\bar{a}), b = p(\bar{b}),} so that we have a digram in #{\cC}:
+
+      \quiver{
+        \begin{tikzcd}
+        M \ar[r, "f"] \ar[d,"a"] & N \ar[d,"b"] \\
         X \ar[r, "g"] \ar[u, "\alpha", bend left=30] & Y \ar[u, "\beta", bend left=30]
         \end{tikzcd}
       }
       Where the maps except #{\alpha,\beta} are deterministic, #{\alpha} and #{\beta} are sections of #{a} and #{b}, and both the square of deterministic maps and the square involving #{\alpha,\beta} commute, the condition that the square
       \quiver{
         \begin{tikzcd}
-        {F(a^*g^*\bar{Y} = f^*b^*\bar{Y})} \ar[r, "F(\bar{f})"] & F(b^*\bar{Y})\\
-        F(g^*\bar{Y}) \ar[r, "F(\bar{g})"] \ar[u, "\alpha_*"] & F(\bar{Y}) \ar[u, "\beta_*"]
+        {F(\bar{Y}_M)} \ar[r, "F(\bar{f})"] & F(\bar{Y}_N)\\
+        F(\bar{Y}_X) \ar[r, "F(\bar{g})"] \ar[u, "\alpha_*"] & F(\bar{Y}) \ar[u, "\beta_*"]
         \end{tikzcd}
       }
       commutes.
@@ -31,5 +41,5 @@
   }
 }
 \p{
-  A morphism of stochastic modules is an indexed natural transformation which preserves the operations #{\alpha_*}. The category of stochastic modules is denotes #{\cat{SMod}(\cD_0 / \cC)}. There is an apparent forgetful functor #{\cat{SMod}(\cD_0 / \cC) \to \IcoPSh(\cD_0 / \cC)}.
+  A morphism of stochastic modules is an indexed natural transformation which preserves the operations #{\alpha_*}. The category of stochastic modules is denoted #{\cat{SMod}(\cD_0 / \cC)}. There is an apparent forgetful functor #{\cat{SMod}(\cD_0 / \cC) \to \IcoPSh(\cD_0 / \cC)}.
 }

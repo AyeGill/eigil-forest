@@ -6,17 +6,15 @@
   Because every map in #{\MAr{Kl(\Delta)}} factors into arrows which are "induced" from arrows in #{\MAr{Kl(\Delta)}|_\det} and the Markov prefibration property, it may initially be hoped that #{\MAr{Kl(\Delta)}} is in some sense "free" on the data of the fibration #{\MAr{Kl(\Delta)}|_\det \to \Set} and the inclusion #{\Set \to Kl(\Delta)}. If that was true, we may further hope that taking the fiberwise opposite of the fibration and applying the same free generation principle would generate a good notion of stochastic lens.
 }
 \p{
-  Unfortunately, this is not the case. We will see that the free prefibration is given by gadgets which look a bit like an indexed version of optics, up to a sliding equivalence for \em{deterministic} maps on the 
-}
-\p{
-  The extra structure turns out to come from a monad on #{\Fib(\cC_\det)}, induced by the adjunction between this and the category of Markov prefibrations. The adjunction is not algebraic, but the induced functor #{\MarkPreFib(\cC) \to \Alg(T)} admits a partial left adjoint which is fully faithful. The image of this partial left adjoint are what we will call "Markov fibrations". Once we've seen that the monad commutes with fiberwise opposites, and the domain of the partial left adjoint is stable under taking fiberwise opposites, we have a reasonable notion of "the fiberwise opposite of a Markov fibration".
+  Unfortunately, this is not the case. We will see that the free prefibration is given by gadgets which look a bit like an indexed version of optics, up to a sliding equivalence for \em{deterministic} maps on the residual. This prompts us to look for some extra structure on the fibration #{\cD|_\det \to \cC_\det} which describes sliding equivalences for stochastic maps on the residual. In the next section, we will see that this is exactly the structure of an Eilenberg-Moore algebra for the free prefibration monad on #{\Fib(\cC_\det)}. 
 }
 
-\p{In this section, we will give a description of the free Markov prefibration on a fibration #{\cD_0 \to \cC_{\det}}. There is a fairly simple description of the hom-sets, but their composition is a bit tricky, and verifying associativity even more so. Hence we will employ a technical trick: by characterizing the hom-sets as "freely generated" in a certain sense from the hom-sets in #{\cD_0}, we can identify them with sets of natural transformations using a Yoneda-type argument, and infer composition and associativity from there.}
+\p{In this section, we will give a description of the free Markov prefibration on a fibration #{\cD_0 \to \cC_{\det}} (assuming #{\cC} is pullback positive). There is a fairly simple description of the hom-sets, but their composition is a bit tricky, and verifying associativity even more so. Hence we will employ a technical trick: by characterizing the hom-sets as "freely generated" in a certain sense from the hom-sets in #{\cD_0}, we can identify them with sets of natural transformations using a Yoneda-type argument, and infer composition and associativity from there.}
+
 
 \transclude{efr-001I}%Indexed (co)presheaves
 \p{
-  Of course, there is a dual notion of indexed presheaf (which may be complete with respect to \em{coCartesian} lifts), but this will not interest us.
+  Of course, there is a dual notion of indexed presheaf, but this will not interest us.
 }
 \transclude{efr-FOJT}
 \transclude{efr-FRQG}
@@ -32,12 +30,13 @@
   Note that, given a stochastic section #{Y \to M} and a deterministic map #{X \to Y}, if #{\cC} is positive with deterministic pullbacks, there is a unique lifting of this to a section of the projection #{Y \times_X M \to Y}. We will use this fact several times.
 }
 \transclude{efr-Y926}
+\transclude{efr-GL6R}
 \p{
   The term "stochastic module" is not very good, but this is mostly a nonce definition in any case, so we won't worry too much about it. It is immediately apparent that we have:
 }
 \transclude{efr-GK62}
 \transclude{efr-2XPE}
-%%PUT CHARACTERIZATION OF FREE STOCH MODULE HERE!!
+
 \p{
   We will now begin proving:
 }
@@ -49,15 +48,23 @@
 }
 \transclude{efr-A08L}%Free thing
 
+\p{
+  It is immediately obvious that we have:
+}
+\transclude{efr-ILIQ}%Free thing commutes with fiberwise opposites.
+
 \transclude{efr-OEFJ}%Stochastic module fibration
 
-\transclude{efr-ILIQ}%Free thing commutes with fiberwise opposites.
+\transclude{efr-VF6V}
+\transclude{efr-U436}
+
+
+\p{
+  By construction, two morphisms in #{\overline{\cD}_0} represented by spans with apex #{M,M',} are identified if there exists a zig-zag #{M \to K_0 \leftarrow K_1 \cdots \leftarrow M'} of spans (decorated with sections from the domain #{X} and morphisms in the fiber, satisfying equations, etc). We will now prove a lemma that allows us to cut this down to a smaller set in many conditions. We will need the following hypothesis:
+}
 
 \transclude{efr-2MH5}%defn: weak conditionals
 \p{
   Observe that, if #{\cC} admits conditionals, it certainly admits weak conditionals: given a pullback #{X \times_Z Y,} and maps #{P \to X,Y,} form a Bayesian inverse of #{Y \to Z} with respect to the given measure, and use that to build a lifting #{X \to Y}, which gives #{X \to X \times_Z Y} - then a diagram chase verifies that this map has the desired properties.
 }
 \transclude{efr-TZ3Y}%Lemma on free thing given weak conditionals
-
-\transclude{efr-VF6V}
-\transclude{efr-U436}

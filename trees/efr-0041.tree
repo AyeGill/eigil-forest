@@ -7,6 +7,7 @@
 }
 \proof{
     \p{
-        Recall that #{\BorelStoch} is representable and positive, and apply \ref{efr-0YP1}, \ref{efr-0044}.
+        We wish to apply \ref{efr-0042}. The only thing to check is that standard Borel spaces are stable under pullbacks in #{\Meas}.
+        But standard Borel spaces are known to be stable under products and measurable subsets, and this is enough (see eg. \ref{srivastava-borelsets} propositions 3.1.23 and 3.3.15)
     }
 }
