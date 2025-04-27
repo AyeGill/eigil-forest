@@ -1,0 +1,32 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cD_0} be a stochastic module fibration. Then #{\cD_0} presents a Markov fibration if and only if #{\cD_0^\fop} does it. 
+}
+\proof{
+  \p{
+    Consider a triangle of this for in #{\cC}:
+  \quiver{
+    \begin{tikzcd}
+    & Y \ar[d]\\
+    X \ar[ur, "f"] \ar[r] & Z
+    \end{tikzcd}
+  }
+  where the maps to #{Z} are deterministic. Suppose given Cartesian lifts #{\bar{X} \to \bar{Z}, \bar{Y} \to \bar{Z}} of the cospan. These are the same in both cases, coming from Cartesian maps in #{\cD_0 \cD_0^\fop} (which are the same). We must show that there is a unique lift of #{f} to a chart in #{\SChart(\cD_0)} if and only if there is a unique lift to a chart in #{\SChart(\cD_0^\fop)}. Clearly it suffices to prove the "only if" implication, so suppose #{\SChart(\cD_0)} is a prefibration.
+  }
+  \p{
+    By passing to the equalizer as in the proof that #{\overline{\cD_0}} is a prefibration, we may assume that any such lift is represented by a diagram
+    \quiver{
+      \begin{tikzcd}
+      M \ar[r] \ar[d] & Y \ar[d]\\
+      X \ar[u, bend left=20, "f'"] \ar[ur] \ar[r] & Z
+      \end{tikzcd}
+    }
+    where the outer square and the triangle #{X \to M \to Y} commutes, and #{f'} is a section.
+  }
+  \p{
+    Take such a diagram and let #{\phi: \bar{Z}_M \to \bar{Z}_M} be the map representing a chart. Then the claim is there exists some zig-zag of chart equivalences identifying #{(M,\phi)} with #{(M,1)}. But clearly this is invariant under passing to the fiberwise opposite, and so #{\cD^\fop} is also a prefibration.
+  }
+}
