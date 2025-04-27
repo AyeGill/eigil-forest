@@ -1,7 +1,37 @@
 \date{2025-04-24}
 \author{eigil-rischel}
 \import{macros}
-\title{Double categories of stochastic charts}
+\title{Double categories of stochastic charts and lenses}
+
+
+
+\p{
+  If #{\cD \to \cC} is a Grothendieck fibration and #{\cA} is any category, then #{\cD^\cA \to \cC^\cA} is again a fibration (which classifies the lax limits of the composite #{\cA^\op \to \cC^\op \to \Cat}), and a natural transformation is Cartesian iff it is levelwise Cartesian. It would be neat to obtain a similar result for Markov fibrations.
+}
+
+\p{
+  The first problem with this is that #{\cC^\cA} does not generally inherit a Markov structure from #{\cC}. As we noted when we introduced diagram Markov categories, one has to consider the category #{\Fun(\cA,\cC)} of deterministic diagrams instead.
+}
+\p{
+  First, we will see that this indeed works for Markov \em{prefibrations}. This implies that #{(-)^\cA} lifts from fibrations to stochastic modules.
+
+}
+
+\transclude{efr-6G7N}
+
+\p{
+  The question is now
+}
+
+\ol{
+  \li{If #{\cD} is a Markov fibration, we get a stochastic module structure on #{\cD|_\det^\cA} - does it present a markov fibration?}
+  \li{There is an induced map #{\SChart{\Fun(\cA,\cD|_\det)} \to \Fun(\cA,\cD)} (where the latter is taken by convention to mean the full subcategory of functors whose image in #{\cC} consists of deterministic arrows). Is this an isomorphism? (If it is, clearly this implies point 1)}
+}
+\p{
+  Unfortunately this is by no means obvious - the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these - we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. However, if the base category admits conditionals, we will be able to make this work.
+}
+
+\transclude{efr-84YK}
 
 \p{
   When #{\cD \to \cC} is an ordinary Grothendieck fibration, there is a double category #{\Arena(\cD)} where the vertical category is the fiberwise opposite #{\cD^\fop}, and the horizontal category is #{\cD}. Recall that the category of 2-cells can be constructed very simply as #{(\cD^\to)^\fop,} using the observation that #{\cD^\to \to \cC^\to} is automatically a Grothendieck fibration again. This double category is the basis for Myers' abstract approach to open dynamical systems.

@@ -2,37 +2,8 @@
 \author{eigil-rischel}
 \import{macros}
 \title{
-  Operations on Markov fibrations
+  Limits of Markov fibrations
 }
-
-
-\p{
-  If #{\cD \to \cC} is a Grothendieck fibration and #{\cA} is any category, then #{\cD^\cA \to \cC^\cA} is again a fibration (which classifies the lax limits of the composite #{\cA^\op \to \cC^\op \to \Cat}), and a natural transformation is Cartesian iff it is levelwise Cartesian. It would be neat to obtain a similar result for Markov fibrations.
-}
-
-\p{
-  The first problem with this is that #{\cC^\cA} does not generally inherit a Markov structure from #{\cC}. Rather, one has to restrict to the full subcategory spanned by functors landing in #{\cC_\det} but considering natural transformations which are potentially nondeterministic. This is what we did when introducing the notation #{\MAr{\cC}}.
-}
-\p{
-  First, we will see that this indeed works for Markov \em{prefibrations}. This implies that #{(-)^\cA} lifts from fibrations to stochastic modules.
-
-}
-
-\transclude{efr-6G7N}
-
-\p{
-  The question is now
-}
-
-\ol{
-  \li{If #{\cD} is a Markov fibration, we get a stochastic module structure on #{\cD|_\det^\cA} - does this algebra have weak supports?}
-  \li{There is an induced map #{\SChart{\cD|_\det^\cA} \to \cD^\cA} (where the latter is taken by convention to mean the full subcategory of functors whose image in #{\cC} consists of deterministic arrows). Is this an isomorphism? (If it is, clearly this implies point 1)}
-}
-\p{
-  Unfortunately this is by no means obvious - the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these - we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. However, if the base category admits conditionals, we will be able to make this work.
-}
-
-\transclude{efr-84YK}
 
 
 
