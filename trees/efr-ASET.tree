@@ -1,0 +1,7 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  In a Markov category #{\cC}, let #{p: I \to X} be a distribution and let #{f: X \to Y} be a map. Then a map #{f^\dagger : Y \to X} is called a \em{Bayesian inverse} of #{f} if it satisfies 
+}

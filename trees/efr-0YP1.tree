@@ -3,19 +3,19 @@
 \import{macros}
 \taxon{lemma}
 \ol{
-  \li{Suppose #{\cC'} admits products and pullbacks along monomorphisms. Then it admits all finite limits.}
+  \li{Suppose any category #{\cC'} admits products and \em{intersections} - that is, pullbacks #{U \times_X V} whenever #{U,V} are subobjects of #{X}. Then it admits all finite limits.}
   \li{
     Suppose #{\cC_\det} admits and #{\cC_\det \to \cC} preserves pullbacks along monomorphisms. Suppose further #{\cC} is positive. Then it is pullback-positive.
   }
 }
 \proof{
 \p{
-  The first point is clear, since #{X \times_Z Y = (X \times Y) \times_{Z \times Z} Z} (where the second map is the diagonal), and the diagonal is always a monomorphism (since it is split by either projection).
+  To see the first point, let #{f: X \to Z, g: Y \to Z} be arbitrary maps. Note that #{X \times_Z Y = (X \times Y) \times_{X \times Y \times Z \times Z} X \times Y \times Z}, where the horizontal map is given by #{(x,y) \mapsto (x,y,f(x),g(y)),} and the top by #{(x,y,z) \mapsto (x,y,z,z)} -- in the sense that the universal property of this intersection is exactly the universal property of the given pullback.
 }
 \p{
-  Now suppose #{\cC_\det \to \cC} preserves this pullback, and #{\cC} is positive. This amounts to the claim that a map #{P \to X \otimes Y} lifts to the pullback if and only if the composite #{P \to Z \otimes Z} lifts over the diagonal (note that the pullback of a monomorphism is a monomorphism).
+  Now suppose #{\cC_\det \to \cC} preserves this intersection, and #{\cC} is positive. (Note that it doesn't follow that the inclusion preserves the pullback #{X \times_Z Y}, because it doesn't preserve the products). This amounts to the claim that a map #{P \to X \otimes Y} lifts to the pullback if and only if the composite #{P \to X \otimes Y \otimes Z \otimes Z} lifts over the map #{1_X \otimes 1_Y \otimes \copy_Z} (note that the pullback of a monomorphism is a monomorphism).
 }
 \p{
-  This implies in particular such a lift is always unique. Since if #{\cC} is positive, given #{P \to X, P \to Y}, if the latter is deterministic there is a unique pairing #{P \to X \otimes Y,} this implies there is at most one map #{P \to X \times_Z Y} factoring the two. On the other hand, since the composite #{P \to Y \to Z} is deterministic and equal to the composite #{P \to X \to Z}, they are both deterministic, and hence the pairing #{P \to Z \otimes Z} does factor over the diagonal, so there is a lift.
+  This implies in particular such a lift is always unique. Since if #{\cC} is positive, given #{P \to X, P \to Y}, if the latter is deterministic there is a unique pairing #{P \to X \otimes Y,} this implies there is at most one map #{P \to X \times_Z Y} pairing the two. On the other hand, since the composite #{P \to Y \to Z} is deterministic and equal to the composite #{P \to X \to Z}, they are both deterministic, and hence the pairing #{P \to Z \otimes Z} factors over the diagonal. Applying positivity again, to the tensor product #{(X \otimes Y) \otimes (Z \otimes Z),} since the latter component is deterministic, this pairing is indepdendent, and hence the map #{P \to X \otimes Y \to X \otimes Y \otimes Z \otimes Z} does indeed lift, finishing the proof.
 }
 }
