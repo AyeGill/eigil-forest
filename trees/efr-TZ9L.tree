@@ -1,0 +1,12 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  For any (pullback-positive) #{\cC}, the monad #{\overline{(-)}|_\det} on #{\Fib(\cC_\det)} preserves products.
+}
+\proof{
+  \p{
+    There is a canonical map #{\overline{\cD \times_\cC \cD'}|_\det \to \bar{\cD}|_\det \times_\cC \bar{\cD}|_\det}. Clearly the deterministic parts are both isomorphic to #{\cD \times_\cC \cD'}, and so on this part it is an isomorphism - in particular, bijective on objects. To see it is full, consider an morphism in the codomain, given by a pair of maps #{M', M \to X}, sections #{s: X \to M, s': X\to M',} and maps #{\phi ,\phi'} in #{\cD_M, \cD'_{M'}}. Then this pair is equivalent to #{M \times_X M'} equipped with the pairing #{\braket{s,s'}: X \to M \times_X M'} and the pullbacks of #{\phi,\phi'}, which is in the image. Given two maps #{M \to N, M' \to N'} witnessing equations with another pair of maps, it's easy to see that this lifts to a map #{M \times_X M' \to N \times_X N'} witnessing the identity between these, so it's faithful. This concludes the proof.
+  }
+}

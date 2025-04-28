@@ -4,7 +4,7 @@
 \taxon{example}
 \p{
   #{\MAr{Kl(\Delta)}} is a Markov fibration. We have already seen that it is a Markov prefibration, and that the map from the coreflection is full. So it suffices to prove faithfulness.
-  Consider a map in #{\overline{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set}}, given by a diagram
+  Consider a map in #{{\MAr{Kl(\Delta)}|_\det}}, given by a diagram
 
 }
 \p{
@@ -20,7 +20,7 @@
   This induces a factorization of the lift #{\bar{X} \to M \times_X \bar{X}} over #{\bar{X} \to \bar{X} \times Y}. By composing the map #{M \times_X \bar{X} \to \bar{Y}} with this factorization to build the map #{\bar{X} \times Y \to \bar{Y}}, we have found a new representative for the same map.
 }
 \p{
-  Hence every map over #{X \to Y} has a representative where the residual is #{X \times Y}. We would like to argue that, since the map #{\bar{X} \times Y \to \bar{Y}} is given by the conditional distribution of the composite map #{\bar{X} \to \bar{Y},} it is uniquely determined by it, and thus if two distinct maps in #{\overline{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set}} have the same underlying map in #{\MAr{Kl(\Delta)},} they must have equal representatives of this form, and so be identified in the coreflection (which must therefore be isomorphic to #{\MAr{Kl(\Delta)}}). But of course, the two maps may only be \em{almost certainly} equal.
+  Hence every map over #{X \to Y} has a representative where the residual is #{X \times Y}. We would like to argue that, since the map #{\bar{X} \times Y \to \bar{Y}} is given by the conditional distribution of the composite map #{\bar{X} \to \bar{Y},} it is uniquely determined by it, and thus if two distinct maps in #{\overline{\MAr{Kl(\Delta)}|_\det}} have the same underlying map in #{\MAr{Kl(\Delta)},} they must have equal representatives of this form, and so be identified in the coreflection (which must therefore be isomorphic to #{\MAr{Kl(\Delta)}}). But of course, the two maps may only be \em{almost certainly} equal.
 }
 \p{
   In this case, there is a simple fix: instead of taking #{X \times Y} as the residual, take the subset #{S} given by those pairs #{(x,y)} where #{y} has positive probability given #{x}. The pairing factors over this, of course, and two maps #{\bar{X} \times_X S \to \bar{Y}} which give the same distribution #{\bar{X} \to \bar{Y}} really must have the same value on every point. This proves that #{\SChart(\MAr{Kl(\Delta)}) \to \MAr{(Kl(\Delta))}} is faithful and hence an isomorphism.

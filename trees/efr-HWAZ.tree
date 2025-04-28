@@ -20,7 +20,7 @@
   where the top map preserves Cartesian morphisms.
 }
 \p{
-  By considering universal constructions like limits and colimits in #{\Fib}, additional fibrations can be constructed. 
+  By considering universal constructions like limits and colimits in #{\Fib}, additional fibrations can be constructed. It would similarly be useful to study limits in the category of Markov fibrations. Moreover, the products in #{\Fib} allow one to express notions of internal pseudomonoid - these turn out to be \em{monoidal fibrations}, and this is a key part of Moeller and Vasilakopoulou's treatment of the monoidal Grothendieck construction, \ref{moeller-vasilakopoulou}. Since we want to study monoidal Markov fibrations, we should study their limits.
 }
 \transclude{efr-9VAH}%thm: prefibrations are preserved by pullback
 \transclude{efr-Z8X4}%remark
@@ -40,4 +40,5 @@
 \transclude{efr-OMMA}%Limits of Markov categories exist
 \transclude{efr-G0AN}%Limits of Markov prefibrations exist
 \transclude{efr-FXBP}%Free preserves limits assuming weak conditionals
+\transclude{efr-TZ9L}%monad always preserves limits.
 \transclude{efr-UF7B}%Weak supports stable under limits assuming weak conditionals
