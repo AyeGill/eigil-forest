@@ -1,0 +1,19 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\title{Examples}
+\parent{efr-O088}
+\p{
+  We have already noted several examples throughout. We'll gather a few more here, and also collect a few scattered throughout to make the picture more clear.
+}
+
+\p{First, let us make explicit the example of optics, as strongly as it can be stated}
+\transclude{efr-A6YR}
+
+\p{
+  We also have some examples of an analytic flavor:
+}
+\transclude{efr-TO9K}
+\p{
+  Note that, as in this example, we do not generally expect #{\Optic_\cC(\cC,\cD)} to yield a Markov fibration if #{\cD} is not another Markov category (and not even then in general, as the case of #{\BorelStoch} shows). - for these, we expect to need a sort of positivity in the fiber as well, which restricts us to things that look like probability kernels.
+}

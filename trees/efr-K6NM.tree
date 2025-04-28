@@ -1,0 +1,22 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\cC} be any pullback-positive Markov category. Then #{\MAr{\cC} \to \cC} is a Markov prefibration which thus induces a stochastic module structure on #{\MAr{\cC}|_\det}.
+  Writing simply #{\SChart(\cC), \SLens(\cC)} for #{\SChart(\MAr{\cC}|_\det), \SLens(\MAr{\cC}|_\det)}, we have:
+}
+\ol{
+  \li{
+    There is a functor #{\Optic(\cC) \to \SLens(\cC),} which is fully faithful. Dually there is a functor #{\coOptic(\cC) \to \SChart(\cC)} which is fully faithful.
+  }
+  \li{
+    #{\SLens(\cC)} and #{\SChart(\cC)} both admit symmetric monoidal structures, which make the functors #{\SChart(\cC), \SLens(\cC) \to \cC} strict symmetric monoidal, as well as the functors #{\Optic(\cC) \to \SLens(\cC), \coOptic(\cC) \to \SChart(\cC)} strong symmetric monoidal.
+  }
+  \li{
+    If #{\cC} is extensive, this functor preserves the coproducts #{\arena{A}{X} + \arena{A}{Y} = \arena{A}{X+Y},} and #{\SChart(\cC),\SLens(\cC)} both admit all finite coproducts.
+  }
+  \li{
+    If #{\cC} moreover has conditionals and supports, #{\SChart(\cC) = \MAr{\cC}}
+  }
+}

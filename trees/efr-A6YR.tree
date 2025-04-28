@@ -1,0 +1,27 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\cC} act on #{\cD}. Then #{\Optic_\cC(\cD) := \Optic_\cC(\cC,\cD)} has a functor to #{\cC}. The deterministic part #{\Optic_\cC(\cD)|_\det} admits the structure of a stochastic module fibration. There is an isomorphism #{\Optic_\cC(\cD) \to \SChart(\Optic_\cC(\cD)|_\det)}. 
+}
+\p{
+  If #{\cD} is itself symmetric monoidal and the action is symmetric (meaning it is given by #{M \cdot A = F(M) \otimes A} for some symmetric monoidal functor #{F: \cC \to \cD}, see \ref{actegories-amthematician-capucci-gavranovic} 5.4.3 and 5.5.12), this stochastic module is symmetric monoidal and the isomorphism is an isomorphism of symmetric monoidal categories.
+}
+\proof{
+  \p{
+    We have essentially already seen that the deterministic part #{\Optic_\cC(\cD)|_\det \to \cC_\det} is a fibration, with maps #{\arena{A}{X} \lensto \arena{B}{X}} over #{X} given by #{X \cdot B \to A}, and with the pullback functors acting by reparametrization. Since a map #{X \to M \otimes Y} with deterministic marginal on #{Y} is always equal to the independent pairing of #{X \to M, X \to Y,} we can slide the former through and identify each optic over a given #{X \to Y} with a map #{X \times B \to A,} and note that this map is conversely an invariant of an optic, since it is obtained by postcomposing with #{\arena{B}{Y} \to \arena{B}{*}}.
+  }
+  \p{
+    Given #{M \to X}, objects #{\arena{A}{X}, \arena{B}{X},} and a map over #{M} classified by #{M \cdot B \to A,} a section #{s :X \to M} act by reparametrization. It is clear that this gives the structure of a stochastic module.
+  }
+  \p{
+    The functor from optics takes #{f: X \to M \otimes Y, g: M \cdot B \to A} to the span #{X \from M \otimes X \otimes Y \to Y} equipped with the obvious map #{(M \otimes X \otimes Y) \cdot B \to A} that simply forgets #{X,Y}. Note that every chart is equivalent to one of this form (given #{X \from M' \to Y} and #{\phi: M' \cdot B \to A,} the map #{M' \to M' \otimes X \otimes Y} exhibits the required equivalence), hence the functor is full.
+  }
+  \p{
+    Moreover, note that each chart is associated with a well-defined optic, given by the maps #{X \to M \to M \otimes Y, M \cdot B \to A}. Is is straightforward to see both of these maps are preserved by chart equivalence. This gives an inverse to the functor, proving it is faithful. Since it is identity on objects, this finishes the argument.
+  }
+  \p{
+    In the symmetric monoidal case, it is immediately clear that the fibration on #{\cC_\det} is symmetric monoidal. Since the action is symmetric monoidal, given maps #{X \to M, X \to M'} and #{M \cdot B \to A,} #{M' \cdot B' \to A',} it is clear that composing to get maps #{X \cdot B \to A, X \cdot B' \to A',} then tensoring and composing with the diagonal to get #{X \cdot (B \otimes B' ) \to A \otimes A',} gives the same map as tensoring, then using the map #{X \to M \otimes M'}. Hence we have a symmetric monoidal module. It's straightforward to see the functor is symmetric monoidal, and that finishes the argument.
+  }
+}

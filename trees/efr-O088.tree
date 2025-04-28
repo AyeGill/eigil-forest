@@ -23,5 +23,8 @@
 %Monoidal Markov Fibrations
 \transclude{efr-LTEL}
 
+%Examples
+\transclude{efr-IMLW}
+
 %Future work
 \transclude{efr-3C8C}
