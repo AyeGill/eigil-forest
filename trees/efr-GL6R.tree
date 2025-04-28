@@ -9,7 +9,7 @@
   If #{f: M \to X} is a deterministic map, #{\alpha:X \to M} is a stochastic section, and #{\bar{X}_M, \bar{X}_M' \to \bar{X}} are two Cartesian lifts of #{f} to #{\bar{X} \in \cD_X}, then applying the commutativity axiom for stochastic modules implies that the triangle
   \quiver{
     \begin{tikzcd}
-    F(\bar{X}) \ar[r, "\alpha_*"] \ar[dr, "\alpha_*"] & F(\bar{X}_M) \ar[d, cong] \\
+    F(\bar{X}) \ar[r, "\alpha_*"] \ar[dr, "\alpha_*"] & F(\bar{X}_M) \ar[d, "\mathbin{\rotatebox[origin=c]{90}{$\sim$}}"] \\
     & F(\bar{X}_M')
     \end{tikzcd}
   }

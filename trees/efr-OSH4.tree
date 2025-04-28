@@ -1,0 +1,13 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  There exists a (strong) symmetric monoidal functor #{\Optic(Kl(\Delta)) \to \SLens(\MAr{Kl(\Delta)})} which
+  \ol{
+    \li{Is fully faithful.}
+    \li{Preserves the good coproducts.}
+    \li{So that the image has all coproducts, and every object of the image is a coproduct of objects in #{\Optic(Kl(\Delta))}}
+    \li{And so that moreover the monoidal structure on the image is distributive}
+  }
+}

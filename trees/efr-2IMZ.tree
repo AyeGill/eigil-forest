@@ -9,10 +9,8 @@
 
 
 \p{
-  \ref{efr-SP6H} contains the argument that #{\MAr{Kl(\Delta)} \to Kl(\Delta)} is a Markov prefibration. This is a key motivating example.
-  We will now give a few results about these. 
+  The introduction to this chapter contains the argument that #{Kl(\Delta)} is a Markov prefibration. This is a key motivating example.
 }
-
 \transclude{efr-CJTH}
 
 \transclude{efr-0044} %theorem on pullbacks

@@ -38,6 +38,7 @@
 }
 \p{The assumption that #{\cC} is pullback-positive will play a key role in the development of the theory of Markov fibrations. Although the theory could possibly be developed without assuming the base category has deterministic pullbacks, positivity seems to be an essential part. }
 
+\transclude{efr-MW29}
 
 \p{
   We will need the notion of \em{support} in a Markov category, introduced in \ref{markov-supports}, for certain examples, so we briefly record the definition and a few of its properties here.

@@ -1,7 +1,0 @@
-\date{2025-03-29}
-\author{eigil-rischel}
-\import{macros}
-\taxon{corollary}
-\p{
-  Let #{\cD_0} be a stochastic module which presents a Markov fibration. Then #{\cD_0^\fop} also presents a Markov fibration.
-}

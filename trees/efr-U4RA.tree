@@ -28,8 +28,9 @@
 }
 \transclude{efr-1YS9}
 
-\transclude{efr-XDQ9}
 \transclude{efr-ANBC}
+
+\transclude{efr-IAFO}%Example: Kl(Delta)
 
 \transclude{efr-M1U8}
 \p{
@@ -78,5 +79,3 @@
 }
 
 \transclude{efr-XFAO}
-
-\transclude{efr-IAFO}%Example: Kl(Delta)

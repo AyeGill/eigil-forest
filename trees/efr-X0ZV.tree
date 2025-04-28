@@ -3,15 +3,26 @@
 \import{macros}
 \title{Introduction}
 \parent{efr-O088}
-
 \p{
-  Let #{\Delta: \Set \to \Set} be the discrete distribution monad, and let #{Kl(\Delta)} be the Kleisli category of #{\Delta} - which we think of as the category of \em{discrete} probability kernels. Then the objects of #{\MAr{Kl(\Delta)}} are the objects of #{\Set^\to} - that is, they are indexed families of sets. A map in #{\MAr{Kl(\Delta)}} is a stochastic map in the base #{X \to Y \in Kl(\Delta)}, and a stochastic map on the total spaces #{\bar{X} \to \bar{Y}} which is compatible with it. Note that if #{\bar{X} \to X} is surjective, the map on the base is fully determined by the map on the fibers, which must merely satisfy the condition that the distribution of the indexing point in #{Y} depends only on the indexing point in #{X}, not the specific point in the fiber #{\bar{X}_x}.
+  Let #{Kl(\Delta)} denote the Kleisli category of the discrete (countable) distribution monad on #{\Set}. This is a simple setting for working with probability theory - sufficient for many applications. In order to study compositional Bayesian game theory (\ref{hedges-etal-bayesian-games}, \ref{towards-cybercat}) one studies the category #{\Optic(Kl(\Delta))} of optics in #{Kl(\Delta)}. These have the right level of expressivity to talk about players taking random actions, and where payoff depends stochastically on players' decisions.
 }
 \p{
-  #{\MAr{Kl(\Delta)}} is a reasonable notion of "stochastic charts". For example, for "constant indexed sets" - those of the form #{X' \times X \to X} - we expect the set of stochastic charts to be given by an optic-like formula #{\int^M \Hom(X, M \otimes Y) \times \Hom(M \otimes X', Y')}. And in fact this is the case:  Clearly there is a map from this coend to maps in #{\MAr{Kl(\Delta)}}. By taking #{M = X \otimes Y} and conditioning on #{Y}, we see this is surjective. Finally, by restricting to the support of the forwards part inside #{X \otimes Y}, we obtain a representative for each element of the coend which is uniquely determined by #{X \to Y} and #{X' \times X \to Y'} (since the conditional is well-defined on the support).
+  In #{\Optic(Kl(\Delta)),} #{\arena{R}{X} + \arena{R}{Y} \cong \arena{R}{X+Y}}. Games with this codomain naturally describe the situation of a player who has a binary choice between #{X} or #{Y}. We call coproducts of this form the "good" coproducts - note that also #{\arena{*}{*} + \arena{\emptyset}{*} = \arena{\emptyset}{2}}, but this is considered somewhat pathological, since it relies on the nonexistence of any morphism #{\arena{\emptyset}{X} \to \arena{A}{Y}} when #{A} and #{X} are nonempty.
 }
 \p{
-  Note: This relies both on the fact that #{Kl(\Delta)} has conditionals, which is a mostly harmless assumption which holds in most Markov categories of interest, and the existence of supports, which is much more stringent. Neither will be essential to the theory, but both will play a role in certain theorems - we will see more of this later.
+  In order to describe this structure on #{\Optic(Kl(\Delta)),} it would be useful if it had all coproducts. Unfortunately this is not the case. #{\Optic(\Set) = \Lens(\Set)} has a well-known extension with all coproducts, given by the fiberwise opposite of the fibration #{\Fam(\Set) \to \Set}. Extending this to stochastic maps would be the obvious way of constructing such a category of "dependent optics".
+}
+\p{
+  Consider a category #{\MAr{Kl(\Delta)}} defined as follows. Its objects are the objects of #{\Set^\to} - that is, they are indexed families of sets. A map in #{\MAr{Kl(\Delta)}} is a stochastic map in the base #{X \to Y \in Kl(\Delta)}, and a stochastic map on the total spaces #{\bar{X} \to \bar{Y}} which is compatible with it. Note that if #{\bar{X} \to X} is surjective, the map on the base is fully determined by the map on the fibers, which must merely satisfy the condition that the distribution of the indexing point in #{Y} depends only on the indexing point in #{X}, not the specific point in the fiber #{\bar{X}_x}.
+}
+\p{
+  We claim #{\MAr{Kl(\Delta)}} is a reasonable notion of "stochastic charts". Recall that by "chart" we mean something like "lenses where both maps go forward". If stochastic \em{lenses} are supposed to include optics as the full subcategory spanned by the "non-dependent" objects, then the charts should include "co-optics" - that is, maps beteween #{X' \otimes X \to X} and #{Y' \otimes Y \to Y} should be given by the coend #{\int^M \Hom(X, M \otimes Y) \times \Hom(X' \otimes M, Y')}
+}
+\p{
+  And in fact this is the case:  Clearly there is a map from this coend to maps in #{\MAr{Kl(\Delta)}}. By taking #{M = X \otimes Y} and conditioning on #{Y}, we see this is surjective. Finally, by restricting to the support of the forwards part inside #{X \otimes Y}, we obtain a representative for each element of the coend which is uniquely determined by #{X \to Y} and #{X' \times X \to Y'} (since the conditional is well-defined on the support).
+}
+\p{
+  Note: This relies both on the fact that #{Kl(\Delta)} has conditionals, and on the existence of supports. We will discuss these in abstract Markov categories in a minute. Note that the existence of \em{both} conditionals and supports is a very strong assumption - the only categories we are aware of with both properties are those whose probability distributions have a discrete character, like #{Kl(\Delta)} and #{\FinStoch}. Neither will be essential to the theory, but both will play a role in certain theorems - we will see more of this later.
 }
 \p{
   The goal of the theory of Markov fibrations is to give a notion of "fiberwise opposite" which can be applied to the codomain functor #{\MAr{Kl(\Delta)} \to Kl(\Delta)} to give a reasonable notion of "stochastic lenses". In particular, we should recover the usual category of optics in the previous case.
@@ -19,16 +30,14 @@
 \p{
   It is clear that the codomain functor is not a (Grothendieck) fibration, since this would require #{Kl(\Delta)} to have pullbacks, which can only hold for a Cartesian Markov category. However, we can do some things. Namely, given a Cartesian (pullback) square in #{\Set}
 }
+  \quiver{
+    \begin{tikzcd}
+      {p_0^*\bar{X}} \ar[r] \ar[dr] & {p_1^*\bar{X}} \ar[d]\\
+      & \bar{Y} 
+    \end{tikzcd}
+  }
 \p{
-\quiver{
-  \begin{tikzcd}
-  \bar{A} \ar[r] \ar[d] & \bar{B} \ar[d]\\
-  A \ar[r] & B,
-  \end{tikzcd}
-}
-}
-\p{
-  and a map #{\arena{\bar{X}}{X} \to \arena{\bar{B}}{B}} where the base map #{X \to B} is deterministic, for each deterministic factorizing map #{X \to A} there is a unique lift #{\bar{X} \to \bar{A}}. In other words, the pullback over #{\Set \into Kl(\Delta)} is a fibration.
+  and a map #{\arena{\bar{X}}{X} \to \arena{\bar{B}}{B}} where the base map #{X \to B} is deterministic, for each deterministic factorizing map #{X \to A} there is a unique lift #{\bar{X} \to \bar{A}}. In other words, the pullback over #{\Set \into Kl(\Delta)} is a fibration - in fact, it is simply the family fibration #{\Fam(\Kl(\Delta))}.
 }
 \p{
   Furthermore, if #{\bar{X} \to \bar{B}} is itself deterministic, there is such a unique lift even without assuming that the factorization #{X \to A} is deterministic.
@@ -39,10 +48,39 @@
 \p{
 \quiver{
   \begin{tikzcd}
-  \bar{X} \ar[r, dashed, bend left=10] \ar[d] & p^*\bar{X} \ar[l] \ar[r] \ar[d] & \bar{Y} \ar[d]\\
+  \bar{X} \ar[r, dashed, bend left=10] \ar[d] & p^*\bar{X} \ar[l] \ar[r, "\phi"] \ar[d] & \bar{Y} \ar[d]\\
   X \ar[r, dashed, bend left=10] & M \ar[l, "p"] \ar[r, "p'"], & Y
   \end{tikzcd}
 }}
 \p{
   This gives us a hope that we can, in some way, control the category #{\MAr{Kl(\Delta)}} using the pullback over #{\Set}, which \em{is} a fibration, and some information somehow given by these extra maps. Note also that the diagram above is equivalent to giving: a span #{X \leftarrow M \to Y} and a section #{X \to M}, which all lives in the base, and a map #{p^*\bar{X} \to p^{'*}\bar{Y}} in the fiber over #{M}. Thus it would seem to be very amenable to fiberwise dualization.
 }
+
+\p{
+  Analogous to our argument above that "co-optics" are equivalent to maps in #{\MAr{Kl(\Delta)},} we can do the following:
+}
+\p{
+  Suppose given two tuples #{(M_0,p_0,p_0',s_0,\phi_0), (M_1,p_1,p_1',s_1,\phi_1)} as above. Suppose there exists a map #{f: M_0 \to M_1} over #{X,Y}, so that #{f s_0 = s_1}.
+  Then there is a canonical map #{p_0^*\bar{X} \to p_1^*\bar{X}} over #{f}, because pullbacks commute. If the triangle
+  \quiver{
+    \begin{tikzcd}
+      {p_0^*\bar{X}} \ar[r] \ar[dr] & {p_1^*\bar{X}} \ar[d]\\
+      & \bar{Y} 
+    \end{tikzcd}
+  }
+  moreover commutes, then these two triples represent the same map in #{\MAr{Kl(\Delta)}}
+}
+\p{
+  These equivalence relations correspond to "sliding" for \em{deterministic} morphisms #{M \to M'}. Note that the condition here can be checked just on the fibration #{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set \to \Set}.
+}
+\p{
+  To obtain the full set of sliding equations, we will need to use stochastic maps #{M \to M'}, and thus leave that fibration behind. However, we are tantalizingly close to realizing #{\MAr{Kl(\Delta)}} as being presented by some sort of additional structure on the fibration #{\Fam(\Kl(\Delta))}. 
+}
+
+\p{
+  In this chapter we will indeed provide an analysis of this structure. We will begin by reviewing some Markov category theory that we will need. In \ref{efr-2IMZ}, we'll axiomatize the lifting property of #{\MAr{Kl(\Delta)}} discussed above into a property we call a \em{Markov prefibration} (\ref{efr-0019}). In \ref{efr-GO6R}, we exhibit a free Markov prefibration associated to a fibration - its morphisms are precisely spans of the form seen above. Naturally, given a prefibration #{\cD \to \cC}, its underlying fibration on #{\cC_\det} becomes an algebra for the monad of this adjunction. In \ref{efr-U4RA}, we characterize the class of prefibrations which are presented by their underlying algebra in this way - these are the \em{Markov fibrations} (\ref{efr-HVUT}). Since the monad commutes with fiberwise opposites, this yields a notion of fiberwise opposite for Markov fibrations.
+}
+\p{
+  Following this, we review a few properties of the theory of Markov fibrations, including the existence of coproducts in the fibration (\ref{efr-QAV2}), the stability of Markov fibrations under limits (\ref{efr-HWAZ}), and induced monoidal structures (\ref{efr-LTEL}). Combining these, we can prove:
+}
+\transclude{efr-OSH4}

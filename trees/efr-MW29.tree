@@ -1,0 +1,12 @@
+\date{2025-04-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  If #{\cC} is representable and positive, #{\cC_\det} has limits, and the monad #{P} preserves intersections, then #{\cC} is pullback-positive.
+}
+\proof{
+  \p{
+    This is clear, since if the monad #{P} preserves a given limit, so does the inclusion into the Kleisli category (for completely abstract reasons), hence by \ref{efr-0YP1} we are done.
+  }
+}
