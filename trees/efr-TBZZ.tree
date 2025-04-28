@@ -2,8 +2,19 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{proposition}
+\title{Construction of #{\SChart(\cD_0)}}
 \p{
-  Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two morphisms #{(M, \phi), (N, \phi')} if there exists a map #{f: M \to N} over #{X,Y} and a stochastic section #{s} of #{f} which preserves the section from #{X}, so that #{s^*\phi' = \phi} (note that this makes sense because pullbacks compose). Then:
+  Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two precharts #{(M, \phi), (N, \phi')} if there exists a map #{f: N \to M} over #{X,Y} and a stochastic section #{s} of #{f} which preserves the section from #{X}, so that #{s^*\phi' = \phi} (note that this makes sense because pullbacks compose). 
+  
+  \quiver{
+    \begin{tikzcd}
+    & N \ar[d, "p"] \ar[ddr] \ar[ddl] & \\
+    & M \ar[ld, "q"] \ar[rd, "r"] \ar[u, bend left=30, "s"] & \\
+    X \ar[ur, bend left=30] \ar[uur, bend left=30] & & Y
+    \end{tikzcd}
+  }
+  
+  Then:
 }
 \ol{
   \li{This equivalence relation respects composition, and so defines a category #{\SChart(\cD_0)}}

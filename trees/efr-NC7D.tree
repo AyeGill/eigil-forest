@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{example}
+\title{#{\MAr{\Stoch}} as Markov prefibration}
 \p{
   Recall that the deterministic maps in #{\Stoch} are those kernels valued in #{\{0,1\}}-valued measures. (And that these are \em{not} the same thing as the measurable maps).
   Given a pair #{f:X \to Z, g: Y \to Z} of such maps, we claim that the subset of #{X \times Y} given by those points where #{f(x) = g(y)} as measures on #{Z}, equipped with the subset #{\sigma}-algebra and its inclusions into #{X} and #{Y}, is a pullback in #{\Stoch_\det}.

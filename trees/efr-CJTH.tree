@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{example}
+\title{Markov prefibrations over Cartesian base}
 \p{
   Let #{\cC} be a Markov category which is Cartesian (that is, one where all morphisms are deterministic). Then a Markov prefibration over #{\cC} is simply a Grothendieck fibration.
 }
