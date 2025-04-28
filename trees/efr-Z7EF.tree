@@ -1,0 +1,21 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{p: \cD \to \cC} be a functor. Let #{f: X \to Y \in \cC} be a morphism. 
+}
+\ol{
+  \li{
+    A map #{\bar{f}: \bar{X} \to \bar{Y}} with #{p(\bar{f}) = f} is \em{locally Cartesian} if for each #{\bar{X}'} with #{p(\bar{X}') = X}, postcomposition with #{\bar{f}} induces a bijection 
+    ##{\{g: \bar{X}' \to \bar{X} \mid p(g) = 1_X\} \xto{\sim} \{g' : \bar{X'} \to \bar{Y} \mid p(g') = f\}}
+  }
+  \li{
+    A map is \em{Cartesian} if for every #{g: Z \to X} and #{\bar{Z}} with #{p(\bar{Z}) = Z,} there is a bijection
+    ##{\{\bar{g} : \bar{Z} \to \bar{X} \mid p(\bar{g}) = g\} \to \{\bar{g}' : \bar{Z} \to \bar{Y} \mid p(\bar{g'} = fg)\}}
+    note that every Cartesian map is locally Cartesian (take #{g = 1_X})
+  }
+  \li{
+    #{p} is a \em{Grothendieck fibration} (or just fibration) if, for every #{\bar{Y} \in \cD} such that #{p(\bar{Y}) = Y}, there exists a Cartesian map #{\bar{f}: \bar{X} \to \bar{Y}} (for some #{\bar{Y}}) so that #{p(\bar{f}) = f}
+  }
+}

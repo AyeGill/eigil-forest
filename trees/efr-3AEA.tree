@@ -1,0 +1,34 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\title{Fibrations}
+\p{
+  In category theory, there are many families of categories indexed by the objects of some other category. For example, for each commutative ring, we have the category #{\Mod(R)}.
+  Given a ring homomorphism #{\phi: R \to S,} there is an induced \em{restriction of scalars} functor #{\phi^*: \Mod(S) \to \Mod(R)} (given simply by composing the module structure by #{\phi}), and this is (contravariant) functorial, assembling into a functor #{\Mod(-): \CRing^\op \to \Cat}.
+}
+\p{
+  In most cases, one can not expect strict functoriality as above. From an abstract point of view, it makes sense that one should really ask only for a natural isomorphism #{\phi^*\psi^* \simeq (\psi\phi)^*}, up to some coherence conditions. This assembles into a so-called \em{pseudofunctor} into the 2-category #{\Cat}.
+}
+\p{
+  From a concrete point of view, there are many natural families of categories which arise as pseudofunctors. For example, restriction of scalars always has a left adjoint (extesion of scalars, given by #{M \mapsto M \otimes_R S,} viewing #{S} as an #{R}-module via the map #{\phi}) - since adjoints compose (that is, if #{F \vdash G} and #{F' \vdash G',} then #{FF' \vdash GG'}) this must be functorial up to natural isomorphism, but this is the best we can promise. 
+}
+\p{
+  To avoid the higher categorical algebra involved in working with pseudofunctors, Grothendieck introduced the notion of \em{fibration} in \ref{grothendieck-descent-fibrations}.
+}
+
+\transclude{efr-Z7EF}
+\transclude{efr-Z4L4}
+\transclude{efr-QHXA}
+
+\p{
+  We will now give a short sketch of the theory of fibrations. Nothing here is novel, nor will we use anything unfamiliar to experts. For a textbook treatment, see eg. \ref{jacobs-categorical-logic} (chapters 1, 9), or \ref{borceux-handbook} (chapter 8). 
+}
+
+\transclude{efr-KUW7}
+\transclude{efr-TQ3W}
+
+\p{
+  Given a pseudofunctor #{\cA: \cC^\op \to \Cat,} it is obvious that the assignment #{\cA(-)^\op} is pseudofunctorial as well (the required natural isomorphisms are just the inverses of the ones for #{\cA}). Applying this through the equivalence of fibrations and pseudofunctors leads to the \em{fiberwise opposite} of a fibration. Explicitly:
+}
+
+\ref{efr-8LGE}

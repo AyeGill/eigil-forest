@@ -1,0 +1,7 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  #{p: \cD \to \cC} is a Grothendieck fibration if and only if every #{f} admits a locally Cartesian lift, and the class of locally Cartesian morphisms in #{\cD} is stable under composition.
+}

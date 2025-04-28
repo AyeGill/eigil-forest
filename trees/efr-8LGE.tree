@@ -1,0 +1,8 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  Let #{p: \cD \to \cC} be a fibration.
+  Then there exists a category #{\cD^\fop}, called the \em{fiberwise opposite of #{\cD}}, whose objects are the same as #{\cD}, and where a morphism #{X \to Y} is a tuple #{(f: p(X) \to p(Y), f^\#: f^*Y \to X \in \cD_{p(X)})}.
+}

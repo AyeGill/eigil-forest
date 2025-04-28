@@ -1,0 +1,15 @@
+\date{2025-04-28}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\cD \to \cC} be a Grothendieck fibration. For every #{f: X \to Y, \bar{Y} \in \cD_Y,} select a Cartesian lift #{f^*\bar{Y} \to \bar{Y}} of #{f}.
+  Then there is a unique extension of #{f^*} to a functor #{\cD_Y \to \cD_X} so that the squares
+  \quiver{
+    \begin{tikzcd}
+    f^*\bar{Y} \ar[r] \ar[d] & \bar{Y} \ar[d]\\
+    f^*\bar{Y}' \ar[r] & \bar{Y}'
+    \end{tikzcd}
+  }
+  commute. With this, the assignment #{X \mapsto \cD_X, f \mapsto f^*} assembles into a pseudofunctor #{\cC^\op \to \Cat}.
+}

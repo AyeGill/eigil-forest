@@ -207,6 +207,8 @@
 \def\SChart{#{\cat{SChart}}}
 \def\SLens{#{\cat{SLens}}}
 \def\Optic{#{\cat{Optic}}}
+\def\coOptic{#{\cat{coOptic}}}
+
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?
 \def\BiCat{#{\cat{BiCat}}}
@@ -347,6 +349,12 @@
 \def\Stone{#{\cat{Stone}}}
 \def\Bool{#{\cat{Bool}}}
 
+%Analysis
+
+\def\Ban{#{\cat{Ban}}}
+\def\BanBun{#{\cat{BanBun}}}
+\def\CHaus{#{\cat{CHaus}}}
+\def\CHausStoch{#{\cat{CHausStoch}}}
 
 % Geometry
 
