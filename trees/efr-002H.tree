@@ -23,73 +23,35 @@
   The notation #{\Para} was introduced in\ref{backprop-as-functor}, where the special case of parameterized morphisms of euclidean spaces was used to study gradient descent.
   In \ref{towards-cybercat}, a bicategorical variant (replacing the quotient by isomorphism in the above variant in the obvious way) is introduced.
 }
-\p{
-  There is also a para construction for enriched categories (say enriched in #{\cM}), where a parameterized morphism is defined in the evident curried way as a map #{P \to \cC(A,B)} in #{\cM}. 
-}
-\p{
-  The natural generalization of enrichment and actions is the notion of \em{locally #{\cM} graded category}. 
-}
-\transclude{efr-002I}
-\p{
-  Locally graded categories were introduced by Wood in \ref{locally-graded-cats}, under the name \em{large #{\cM}-categories}. The original motivation was to consider \em{large} presheaves on #{\cM} and use these to describe #{\cM}-enriched categories with possibly large hom-objects. We have not given much thought to size issues yet - our definition above should possibly be called "locally small locally graded categories". This is sufficient for us, since they capture all the #{\cM}-enriched categories and the locally small #{\cM}-actegories (as we will see in a bit,) which is what we're after.
-}
-\p{
-  The notion of locally graded categories turns out to be somewhat unhelpful in defining #{\Para(-),} since the locally graded category corresponding to an category with an action \em{is} (a bicategorical version of) the #{\Para}-construction applied to that case. Nevertheless, this does conceptually simplify certain things.
-}
-\transclude{efr-002J}
-\p{
-  There is really nothing to show here. In the case of an actegory, conceptually we have the same idea - we want to define #{\cC_M(X,Y) = \cC(M \bullet X, Y)} - but there is a bit more work to do to see that this comes together into a locally graded category. We begin with the following alternative description of locally graded categories:
-}
-\transclude{efr-002T}
-\p{
-  From here, we will abuse terminology and freely refer to a category over #{B\cM} which is locally a discrete fibration as a locally graded category.
-}
-\p{
-  The idea now is that an action of #{\cM} can equivalently be described as a pseudofunctor #{B\cM \to \Cat}, and taking the 2-Grothendieck construction of this (in a suitable sense) will give us the locally graded category corresponding to this action. 
-}
-\transclude{efr-002O}
-\p{
-  By a 2-fibration we will always mean a 2-fibration in a \em{weak} sense, lying over a \em{bicategory} and classifying a pseudofunctor into bicategories (although our functors will always land in #{1}-categories). The correct notion of weak 2-fibration was first introduced by Buckley, \ref{buckley-2-fibrations}. (Recall that \em{bifibration} means a functor which is both a fibration and an opfibration, and so we can't use this word.)
-}
-\p{
-  As may be expected, the work of Buckley is extremely complicated, because he treats the full generality and thus must consider the tricategory of bicategories, and the class of trifunctors into it. We only care about actions on ordinary categories, and hence can restrict ourselves to the bicategory #{\Cat}.
-}
-\p{
-  Recall that in the ordinary Grothendieck construction, there are actually two ways to turn a functor #{\cC^\op \to \Cat} into a category - we can either turn it into a fibration over #{\cC} or an opfibration over #{\cC^\op}. In the bicategorical case, there are two independent choices - we can be either contravariant or covariant both in the 1-cells and in the 2-cells. Somewhat annoyingly, the bicategorical structure usually put on #{\Para} corresponds to being covariant in the 1-cells but contravariant in the 2-cells, forcing us to deal with this sort of "mixed-variance fibration" (#{\co \Para}, consisting instead of morphisms #{X \to M \bullet Y}, instead has the 2-cells going in the opposite direction, so there's no help there).
-}
-\transclude{efr-002U}
-\transclude{efr-002N}
+
+\transclude{efr-MN7C}
 
 \p{
-  Hence, we have characterized both the actions of and the enrichments in #{\cM} as subcategories of the locally graded #{\cM}-categories. 
+  There is a very natural \em{double} categorical version of #{\Para}, where the vertical morphisms are just the unparameterized morphisms of #{\cC}, and the 2-cells with this boundary:
+  \quiver{
+    \begin{tikzcd}
+	X & Y \\
+	{X'} & {Y'}
+	\arrow[""{name=0, anchor=center, inner sep=0}, from=1-1, to=1-2, "f"]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[""{name=1, anchor=center, inner sep=0}, from=2-1, to=2-2]
+	\arrow[shorten <=4pt, shorten >=4pt, Rightarrow, from=0, to=1, "g"]
+\end{tikzcd}
+  }
+  are morphisms #{M \to N} (if #{f} is parameterized by #{M}, #{g} by #{N}) so that the square
+  \quiver{
+    \begin{tikzcd}
+	{M \cdot X} & Y \\
+	{M \cdot X'} & {Y'}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}
+  }
+  commutes.
 }
 \p{
-  Let us observe first that, as discussed above, the locally graded #{\cM}-category corresponding to an action or enrichment is really a bicategorical version of #{\Para}
-}
-\transclude{efr-002V}
-
-\p{
-  This will serve as a definition of the bicategory of parameterized maps. From this we can easily describe a \em{double category} of parameterized maps, which we will denote #{\dblPara_\cM(\cC)}
-}
-
-\transclude{efr-002X}
-\transclude{efr-002Y}
-\transclude{efr-002W}
-
-
-\transclude{efr-002R}
-
-
-\p{
-  Note that a (pseudo) double category with singleton vertical category is equivalent to a monoidal category. Thus we can state:
-}
-\transclude{efr-002K}
-\p{Explicitly, for monoidal actions, we have:}
-\transclude{efr-002M}
-\transclude{efr-002L}
-
-
-\transclude{efr-002Z}
-\p{
-  We will see that the #{\Para} construction preserves pseudo-limits, which will allow us build a \em{triple category} where one of the directions is parameterized maps, by applying the #{\Para} construction levelwise to a double category internal to actions.
+  This notion is not original - we learned of it from Matteo Capucci - but it seems to have remained somewhat on the level of folklore. Our main goal for this section will be to construct this (pseudo) double category, and show that is is functorial - that is, given a homomorphism of actions, there is an induced functor between double categories. In fact, we will show that this construction works in any 2-category. Later we will apply it to a pseudomonoid action in (strict) double categories to construct a pseudocategory internal to double categories - our triple category of bimachines.
 }
