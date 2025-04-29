@@ -1,0 +1,13 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\title{Optics and Lenses}
+\p{
+
+}
+
+\transclude{efr-MMQZ}
+\p{
+  Note that if #{\cM} is symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
+}
+\transclude{efr-CRYH}

@@ -1,0 +1,23 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Optic}
+\p{
+  Let #{\cM} be a monoidal category which acts on two categories #{\cC, \cD}. Then the category of \em{optics} #{\Optic_\cM(\cC,\cD)} has
+  \ol{
+    \li{
+      Objects pairs #{\arena{A \in \cD}{X \in \cC}}
+    }
+    \li{
+      The set of morphisms #{\arena{A}{X} \to \arena{B}{Y}} given by the coend #{\int^{M \in \cM} \cC(X, M \cdot Y) \times \cD(M \cdot B,A)}
+    }
+    \li{
+      Given two optics with representatives #{(M,f: X \to M \cdot Y,g : M \cdot B \to A), (N, f': Y \to N \cdot Z, g': N \cdot C \to B),} their composite is given
+      by #{(M \otimes N, (1_M \cdot f')f, g (1_M \cdot g')),} where we omit coherence morphisms.
+    }
+  }
+}
+\p{
+  When #{\cC} is a monoidal category acting on itself by tensor, we write #{\Optic_\cC(\cC,\cC) =: \Optic(\cC)}
+}
