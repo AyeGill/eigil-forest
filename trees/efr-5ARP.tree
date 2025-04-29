@@ -27,7 +27,7 @@
     First note that, given some monoidal functor #{\cM' \to \cM,} forming the pullback #{\CC \times_{B\cM} B\cN} gives another locally graded double category of action type. By pulling back along a strictification of #{\cM,} and noting that this is an isofibration and so the pullback is an equivalence, we may assume #{\cM} is strict.
   }
   \p{
-    Now to see #{M \cdot X} is functorial in #{X} is a straightforward application of the universal property. Given #{f: X \to Y}, the map #{X \to Y \to M \cdot Y} is over #{M} and hence must come from a map {M \cdot X \to M \cdot Y} over #{I}, whose companion we take as #{M \cdot f}. It is straightforward to verify that this is functorial.
+    Now to see #{M \cdot X} is functorial in #{X} is a straightforward application of the universal property. Given #{f: X \to Y}, the map #{X \to Y \to M \cdot Y} is over #{M} and hence must come from a map #{M \cdot X \to M \cdot Y} over #{I}, whose companion we take as #{M \cdot f}. It is straightforward to verify that this is functorial.
   }
   \p{
     Given #{\phi: N \to M,} the map #{\phi^*\rho_{M,X}: X \to M \cdot X} over #{N} must be classified by some #{N \cdot X \to M \cdot X.} Again, this is clearly functorial in #{\phi}.

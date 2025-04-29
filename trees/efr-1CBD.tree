@@ -16,7 +16,7 @@
   A functor of locally graded double categories is a (pseudo-) commutative square of double functors.
   \quiver{
     \begin{tikzcd}
-    \CC \ar[d] \ar[d] & \CD \ar[d]\\
+    \CC \ar[d] \ar[d] & \DD \ar[d]\\
     B\cM \ar[r] & B\cN
     \end{tikzcd}
   }
