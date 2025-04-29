@@ -6,7 +6,7 @@
 \transclude{efr-0045}
 \transclude{efr-0019}% Markov *prefib* defn
 \transclude{efr-EQ41}
-
+\transclude{efr-DINO}%vertical maps etc
 
 \p{
   The introduction to this chapter contains the argument that #{Kl(\Delta)} is a Markov prefibration. This is a key motivating example.
