@@ -17,7 +17,7 @@
   Then:
 }
 \ol{
-  \li{This equivalence relation respects composition, and so defines a category #{\SChart(\cD_0)}}
+  \li{This equivalence relation respects composition, and so defines a category which we denote #{\SChart(\cD_0)}}
   \li{In #{\Cat_{/\cC}}, #{\overline{\Free(\cD_0)} \rightrightarrows \overline{\cD_0} \to \SChart(\cD_0)} is a coequalizer diagram. In particular, #{\cD_0} presents a Markov fibration if and only if #{\SChart(\cD_0)} is a Markov prefibration (in which case #{\SChart(\cD_0)} is the fibration it presents)}
   \li{If #{\cD_0} has [weak supports](efr-YFV2), #{\SChart(\cD_0)} is a prefibration}
 }
@@ -33,7 +33,7 @@
     \end{tikzcd}
   }
 
-  equipped with a map #{\phi: p^*q^*\bar{X} \to p^*r^*\bar{Y}}. The two maps #{\overline{\Free(\cD_0)} \to \overline{\cD_0}} carry such a thing to first, the map resulting from forgetting #{M} and just composing #{q,r} with #{p} to get a span (and composing the sections to get a new section), and secondly, the map with apex #{M} obtained by using the algebra structure to push #{\phi} down into a map over #{M}. It is clear that this is equivalently the equation described in the theorem. This establishes points 1. and 2., since by \ref{efr-L7L2} we can compute such coequalizers hom-set by hom-set.
+  equipped with a map #{\phi: p^*q^*\bar{X} \to p^*r^*\bar{Y}}. The two maps #{\overline{\Free(\cD_0)} \to \overline{\cD_0}} carry such a thing to first, the map resulting from forgetting #{M} and just composing #{q,r} with #{p} to get a span (and composing the sections to get a new section), and secondly, the map with apex #{M} obtained by using the stochastic module structure to push #{\phi} down into a map over #{M}. It is clear that this is equivalently the equation described in the theorem. This establishes points 1. and 2., since by \ref{efr-L7L2} we can compute such coequalizers hom-set by hom-set.
 }
 \p{
   Now we wish to prove that #{\SChart(\cD_0)} is a Markov prefibration given weak supports. Since by the coequalizer presentation, its deterministic part is isomorphic to #{\cD_0}, the fibration property is automatic. It remains to verify that, given a triangle
