@@ -1,0 +1,7 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  Note that #{\dblPara_\cM(\cC)} comes equipped with a strict functor to #{B\cM} (viewed as a double category). In fact, one can recover the action #{\cdot : \cM \times \cC \to \cC} from this data: the object #{M \cdot X} is characterized up to isomorphism by its universal property: parameterized maps #{M \cdot X \proto Y} with parameter #{N} are in bijection with maps #{X \to Y} parameterized by #{N \otimes M}.
+}
