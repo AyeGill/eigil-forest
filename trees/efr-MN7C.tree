@@ -1,0 +1,13 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{\cC} be a monoidal category, and let #{S: \cC \to \Set} be any functor. Recall that #{\int S} is the category whose objects are pairs #{(X \in \cC, s \in S(X))} and whose morphisms #{(X,s) \to (Y,s')} are #{f: X \to Y} so that #{S(f)(s) = s'}. If #{S} is lax monoidal (for #{(\Set,\times)},) #{\int S} acquires a lax monoidal structure making the forgetful functor #{\int S \to \cC} strong (even strict) monoidal.
+}
+\p{
+  With the action induced by this functor, the bicategory #{\Para_{\int S}(\cC)} has morphisms given by maps #{M \otimes X \to Y, m \in S(M),} and maps given by reparametrizations which preserve the decoration #{s}.
+}
+\p{
+  For example, let #{\cC} be a Markov category and let #{S(X) = \cC(I,X)}. Then morphisms are parameterized maps equipped with a measure on the parameter space.
+}
