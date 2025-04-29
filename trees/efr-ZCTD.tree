@@ -3,7 +3,7 @@
 \import{macros}
 \title{Optics and Lenses}
 \p{
-
+  We have already given somewhat of an account of lenses, optics, and their applications in the introduction. We briefly review the theory here, especially to normalize the notation and definitions. The best general source for this material is still \ref{riley-optics}.
 }
 
 \transclude{efr-MMQZ}
@@ -11,3 +11,11 @@
   Note that if #{\cM} is symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
 }
 \transclude{efr-CRYH}
+\p{
+  By definition, the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot B, A)} consists of triples #{(M, f: X \to M \cdot Y, g: M \cdot B \to A)} up to the equivalence relation which, for every #{\phi: M \to M', f: X \to M \cdot Y, g: M' \cdot B \to A,} identifies the two tuples #{(M', (\phi \cdot 1_Y) f, g)} and #{(M, f, g (\phi \cdot 1_B))}. Note that this relation is not assumed to be inherently an equivalence relation - one takes the transitive-symmetric closure as usual.
+}
+\p{
+  We call this relation the \em{sliding} relation (because we slide the map #{\phi} from the backwards part to the forwards part).
+}
+
+\transclude{efr-G0YN}%COOPTICS

@@ -1,0 +1,8 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Co-Optics}
+\p{
+  Given #{\cM} acting on #{\cC, \cD}, the category of \em{co-optics}, #{\coOptic_\cM(\cC,\cD)} has objects pair #{\arena{A \in \cD}{X \in \cC},} and morphisms given by the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot A, B)}
+}
