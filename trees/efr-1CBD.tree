@@ -1,0 +1,29 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\cM} be a monoidal category.
+  A \em{locally #{\cM}-graded double category} is a pseudo double category #{\CC} equipped with a strict double functor #{\CC \to \cM}, such that
+  \ol{
+    \li{
+      Every vertical morphism, and all horizontal morphisms over #{* \xto{I} *,} admits a companion.
+    }
+    \li{
+      For every #{X,Y \in \CC}, the functor #{\Hom_h(X,Y) \to \Hom_h(*,*) = \cM} is a fibration.
+    }
+  }
+  A functor of locally graded double categories is a (pseudo-) commutative square of double functors.
+  \quiver{
+    \begin{tikzcd}
+    \CC \ar[d] \ar[d] & \CD \ar[d]\\
+    B\cM \ar[r] & B\cN
+    \end{tikzcd}
+  }
+}
+\p{
+  Given a locally graded double category we write #{\CC(X,Y)_M} for the set of horizontal morphisms over #{M} between #{X} and #{Y}.
+}
+\p{
+  A locally graded double category is said to be \em{of action type} if, for each #{X \in \CC, M \in \cM}, there exists a morphism #{\rho_{M,X}: X \to M \cdot X} over #{M} so that #{\CC(M \cdot X,Y)_N \to \CC(X,Y)_{N \otimes M}} is a bijection.
+}

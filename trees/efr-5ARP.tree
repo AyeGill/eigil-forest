@@ -1,0 +1,55 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  For every locally #{\cM}-graded double category of action type #{\CC}, choosing a representative #{X \to M \cdot X} for each #{(M,X)}, this assignment extends to an action of #{\cM} on #{\CC_v}. With this action there is a bijection between maps #{X\to Y} over #{M}, and maps #{M \cdot X \to Y}. Under this bijection
+  \ol{
+    \li{
+      The composition of two morphisms #{M \cdot X \to Y, N \cdot Y \to Z} is given by the composite #{(N \otimes M) \cdot X \simeq N \cdot M \cdot X \to N \cdot Y \to Z}
+    }
+    \li{
+      Given #{M \cdot X \to Y, N \cdot X' \to Y',} there exists a commutative square over #{M \to N} with boundaries #{X \to X', Y \to Y'} if and only if this diagram commutes:
+      \quiver{
+        \begin{tikzcd}
+        M \cdot X \ar[r] \ar[d] & Y \ar[d]\\
+        N \cdot X' \ar[r] & Y'
+        \end{tikzcd}
+      }
+    }
+  }
+}
+\p{
+  Moreover, every category action up to equivalence arises in this way, and this correspondence gives a biequivalence between the bicategory #{\Act} of category actions, and the full sub-bicategory of #{\PsDblCat^\to} spanned by the objects #{\CC \to B\cM} that are locally graded double categories of action type.
+}
+\proof{
+  \p{
+    First note that, given some monoidal functor #{\cM' \to \cM,} forming the pullback #{\CC \times_{B\cM} B\cN} gives another locally graded double category of action type. By pulling back along a strictification of #{\cM,} and noting that this is an isofibration and so the pullback is an equivalence, we may assume #{\cM} is strict.
+  }
+  \p{
+    Now to see #{M \cdot X} is functorial in #{X} is a straightforward application of the universal property. Given #{f: X \to Y}, the map #{X \to Y \to M \cdot Y} is over #{M} and hence must come from a map {M \cdot X \to M \cdot Y} over #{I}, whose companion we take as #{M \cdot f}. It is straightforward to verify that this is functorial.
+  }
+  \p{
+    Given #{\phi: N \to M,} the map #{\phi^*\rho_{M,X}: X \to M \cdot X} over #{N} must be classified by some #{N \cdot X \to M \cdot X.} Again, this is clearly functorial in #{\phi}.
+  }
+  \p{
+    To verify compatibility with the monoidal structure, note that #{N \cdot M \cdot X} and #{(N \otimes M) \cdot X} both classify maps #{X \to Y} over #{N \otimes M}, hence must be isomorphic.
+  }
+  \p{
+    Conversely, given an action of #{\cM} on #{\cC}, which we may assume wlog to be strict, there is a corresponding (strict) double category whose horizontal maps are #{\Para_\cM(\cC),} vertical maps are just #{\cC}, and squares are given by #{\phi: M \to N} so that the square
+    \quiver{
+      \begin{tikzcd}
+      M \cdot X \ar[r] \ar[d] & Y \ar[d]\\
+      N \cdot X' \ar[r] & Y'
+      \end{tikzcd}
+    }
+    commutes. This clearly gives a double category of action type (when equipped with the obvious forgetful functor to #{B\cM})
+  }
+
+  \p{
+    Now, by construction #{\Act \to \MonCat} is a bifibration. It is clear that the same is true for the bicategory described above, of locally graded double categories of action type, commutative squares, vertical natural transformations. Hence it suffices to show this result for a fixed #{\cM}.
+  }
+  \p{
+    As before, we may assume #{\cM} strict. Since the subcategory of strict actions is equivalent to the full category, we may assume the action is strict as well. Then the construction
+  }
+}
