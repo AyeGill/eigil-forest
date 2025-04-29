@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{definition}
 \p{
-  In a Markov prefibration #{p: \cD \to \cC} (as previously noted), a morphism #{f: \bar{X} \to \bar{Y}} in #{\cD} is called \em{Cartesian} if #{p(f)} is deterministic and #{f} is Cartesian in the fibration #{\cD|_\det \to \cC_\det}. It is called \em{vertical} if #{p(f)} is an identity. It is called a \em{induced} if there exists a Cartesian map #{r: \bar{Y} \to \bar{X}} so that #{rf = 1_{\bar{X}}} (recall that in this case #{f} is uniquely determined by #{r} and #{p(f)})
+  In a Markov prefibration #{p: \cD \to \cC} (as previously noted), a morphism #{f: \bar{X} \to \bar{Y}} in #{\cD} is called \em{Cartesian} if #{p(f)} is deterministic and #{f} is Cartesian in the fibration #{\cD|_\det \to \cC_\det}. It is called \em{vertical} if #{p(f)} is an identity. It is called a \em{stochastic-Cartesian} if there exists a Cartesian map #{r: \bar{Y} \to \bar{X}} so that #{rf = 1_{\bar{X}}} (recall that in this case #{f} is uniquely determined by #{r} and #{p(f)}). Note that if #{f} is stochastic-Cartesian and #{p(f)} is deterministic, then #{f} is Cartesian.
 }
