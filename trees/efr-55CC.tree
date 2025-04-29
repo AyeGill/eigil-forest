@@ -1,0 +1,37 @@
+\date{2025-04-29}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  In a 2-category #{\CC,} with finite 2-limits, let #{\cM} be a pseudomonoid, and let #{\cC} be an object with an action of #{\cM}.
+}
+\p{
+  Then there is an internal pseudocategory #{\dblPara_\cM(\cC),} with
+  \ol{
+    \li{
+      #{\dblPara_\cM(\cC)_0 = \cC}}
+    \li{
+      #{\dblPara_\cM(\cC)_1 = \cM \times \cC \downarrow \cC}, with domain and codomain given by the two projections to #{\cC}
+    }
+    \li{
+      The identities map #{\cC \to \cM \times \cC \downarrow \cC} is given by #{(I, 1_\cC, 1_\cC, \lambda),} where #{\lambda: I \cdot - \to -} is the left unitor of #{\cM}.
+    }
+    \li{
+      The horizontal composition map is the composition in #{\Para:} given #{M \cdot X \to Y, N \cdot Y \to Z,} their composite is given by #{(N \otimes M) \cdot X \cong N \cdot (M \cdot X) \to N \cdot Y \to Z.} The horizontal composition of 2-cells is defined analogously.
+    }
+  }
+}
+\p{
+  Moreover, if #{\cC \to \cD} is a homomorphism of #{\cM}-modules, there is an induced pseudofunctor #{\dblPara_\cM(\cC) \to \dblPara_\cM(\cD)}. If #{\cN \to \cM} is a morphism of pseudomonoids, then regarding #{\cC} as an #{\cN}-module along this map, there is an induced pseudofunctor #{\dblPara_\cN(\cC) \to \dblPara_\cM(\cC)}. These combine into a 2-functor #{\Act(\CC) \to \PsCat(\CC)}. This functor preserves (strict) limits.
+}
+\proof{
+  \p{
+    Note that by \ref{efr-59XF}, it suffices to do this for #{\CC = \Cat,} (since the comma object is preserved by #{(-)^A}). The only nontrivial part is to show that composition is pseudounital and pseudoassociative. But the composition of 1-cells is simply the composition in the ordinary bicategorical version of #{\Para,} which is known to enjoy these properties - and the isomorphism 2-cells witnessing this clearly give globular 2-cells in #{\dblPara_\cM(\cC)}. The pseudoassociativity (and unitality) of 2-cell composition follows in the same way (to be slick, we can apply this argument to the action of #{\cM^\to} on #{\cC^\to}, then use the pseudoassociativity from before).
+  }
+  \p{
+    Since #{\Act} is a Grothendieck construction, every map has a unique factorization as a Cartesian map - that is, one given by #{\cN \to \cM} and #{\cC \xto{=} \cC}, regarding #{\cC} an an #{\cN}-module using the functor - and a vertical map, that is a homomorphism of #{\cN}-modules #{\cD \to \cC}. To construct a functor out of the total category it suffices to define the functor on these morphisms, as we have done, and 
+  }
+  \p{
+    Since limits in #{\PsCat(\CC)} and #{\Act} are computed levelwise, it suffices to observe that the slice category also preserves limits, being a weighted limit itself.
+  }
+}
