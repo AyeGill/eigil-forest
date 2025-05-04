@@ -1,0 +1,13 @@
+\title{Monoidal Kleisli Category as a Background for Information Transformers Theory}
+\date{2002}
+\taxon{reference}
+\author{Peter V Golubtsov}
+\meta{bibtex}{\startverb
+ @article
+{Golubtsov_2002, title={Monoidal Kleisli Category as a Background for Information Transformers Theory}, abstractNote={We consider any uniform class of information transformers (ITs) as a family of morphisms of a monoidal category that contains a subcategory (of deterministic ITs) with finite products and satisfies certain set of axioms. Besides, many IT-categories can be constructed as Kleisli categories. The ingredients for this construction are: a base category (of deterministic ITs); a functor, producing objects of â€œdistributionsâ€; a natural transformation, representing â€œindependent product of distributionsâ€. The paper also generalizes Bayesian approach to decision-making problems and studies informativeness of ITs. It shows that classes of equivalent ITs form a partially ordered bounded Abelian monoid. Several examples of concrete IT-categories are examined.}, author={Golubtsov, Peter V}, year={2002}, pages={24},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We consider any uniform class of information transformers (ITs) as a family of morphisms of a monoidal category that contains a subcategory (of deterministic ITs) with finite products and satisfies certain set of axioms. Besides, many IT-categories can be constructed as Kleisli categories. The ingredients for this construction are: a base category (of deterministic ITs); a functor, producing objects of â€œdistributionsâ€; a natural transformation, representing â€œindependent product of distributionsâ€. The paper also generalizes Bayesian approach to decision-making problems and studies informativeness of ITs. It shows that classes of equivalent ITs form a partially ordered bounded Abelian monoid. Several examples of concrete IT-categories are examined.
+}}
+

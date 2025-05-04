@@ -1,0 +1,12 @@
+\date{2025-05-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Diffeo-Topological space}
+\p{
+  A \em{diffeo-topological space} is a diffeological space #{X} equipped with a topology #{\tau} so that all the smooth plots are continuous.
+  A map of diffeo-topological spaces is a smooth map (for the diffeology) which is also continuous (for the topology).
+}
+\p{
+  Given a subset #{X' \subset X,} there is an obvious canonical diffeo-topology on #{X'} given by taking the plots to be those functions whose image in #{X} is smooth, and equipping #{X'} with the subspace topology.
+}

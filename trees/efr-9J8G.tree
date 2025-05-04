@@ -1,0 +1,15 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{A Markov category of smooth manifolds}
+
+\transclude{efr-CBBU}%CartSp
+
+\transclude{efr-E1SZ}%Diffeological spaces
+\transclude{efr-DX6S}%Diffeo-topological space
+\transclude{efr-42SC}%diffeo has limits
+\transclude{efr-7RS2}%probability measures on diffeo-topological spaces
+\transclude{efr-S87B}%TychDiffStoch properties
+
+\transclude{efr-LPX2} %Remark on C\infty algebras, may need more context.
+\transclude{efr-IMZ3}%TychDiffStoch smooth systems (move??)

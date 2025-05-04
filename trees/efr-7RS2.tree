@@ -1,0 +1,22 @@
+\date{2025-05-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{X} be a diffeo-topological space whose underlying space is Tychonoff. Then the space of probability measures #{P(X)} has a canonical diffeology given by those plots #{f: U \to P(X)} so that for each continuous function #{g} on #{X,} the resulting map #{u \mapsto E_{f(u)g}} is continuous, and if #{g} is smooth, then this is smooth as well. With this diffeology, and the topology of weak convergence, #{P(X)} is a diffeo-topological space. This defines a commutative affine monad on #{\TychDiff,} the category of such diffeo-topological spaces. 
+}
+\proof{
+  \p{
+    The topology of weak convergence on #{P(X)} is such that #{A \to P(X)} is continuous if and only if the expectation map carries continuous functions to continuous functions. But this is part of the requirement to be a smooth plot, so certainly this is a diffeo-topological space.
+  }
+  \p{
+    Since the linear operator associated to #{x \in X} under the unit #{X \to P(X)} is merely evaluation at #{x,} the unit is clearly smooth.
+    Consider #{\mu: PPX \to PX}. To test this is smooth, let #{f: U \to PP(X)} be a plot. We must show #{\mu f} is a plot. So let #{v: X \to \RR} be a continuous (resp. smooth) function. We must show its expectation a is continuous (resp. smooth) function of #{u \in U}. 
+  }
+  \p{
+    By construction #{E(v) : PX \to \RR} is continuous (resp. smooth), and so since #{f} is a plot, the map #{u \mapto E_{f(u)}E(v)} is continuous (resp. smooth). But this is exactly what we wanted.
+  }
+  \p{
+    The monad laws follow from their holding in #{\Tych}. Since a commutative monad is equivalently a strong monad satisfying a certain equation (which holds for this monad in #{\Tych} and therefore also here), it suffices to show that the strength #{P(X) \times Y \to P(X \times Y)} is smooth. This follows by a completely analogous argument.
+  }
+}
