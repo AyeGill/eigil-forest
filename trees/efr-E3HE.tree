@@ -4,11 +4,21 @@
 \title{Markov categories}
 
 \p{
-  Recall that \em{Markov categories} (\ref{fritz-synthetic-markov-cats}) are semicartesian symmetric monoidal categories equipped with a suitably coherent system of comonoids #{(\copy_X: X \to X \otimes X, \del_X: X \to I)} for each object #{X \in \cC}. These have been used as the basis for the categorical analysis of probability theory for a number of years, see eg \ref{rischel-fritz-infinite-products}, \ref{markov-supports}, \ref{law-large-nums-fritz-etal}, \ref{moss-perrone-ergodic}. See \ref{fritz-synthetic-markov-cats} for the basic theory, and \ref{fritz-gonda-perrone-rischel-rep} for the theory of representable Markov categories. We assume familiarity with this theory in general, but we will review some theory below, as well as a few new minor results which are helpful for the theory of Markov fibrations.
+  Recall that \em{Markov categories} (Fritz, \ref{fritz-synthetic-markov-cats}) are semicartesian symmetric monoidal categories equipped with a suitably coherent system of comonoids #{(\copy_X: X \to X \otimes X, \del_X: X \to I)} for each object #{X \in \cC}. These have been used as the basis for the categorical analysis of probability theory for a number of years, see eg \ref{rischel-fritz-infinite-products}, \ref{markov-supports}, \ref{law-large-nums-fritz-etal}, \ref{moss-perrone-ergodic}. See \ref{fritz-synthetic-markov-cats} for the basic theory, and \ref{fritz-gonda-perrone-rischel-rep} for the theory of representable Markov categories. We assume familiarity with this theory in general, but we will review some theory below, as well as a few new minor results which are helpful for the theory of Markov fibrations.
 }
 
 \p{
   The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels} - that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure - the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two - the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence - as in, non-indpendence - of one variable on another.
+}
+
+\p{
+  We first note the following alternative characterization of Markov categories in terms of their deterministic morphisms.
+}
+
+\transclude{efr-5B0J}
+\transclude{efr-10HQ}
+\p{
+  This basic idea was already noted by Fritz (and goes back to Golubtsov's work in \ref{golubtsov-kleisli}, an important part of the prehistory of Markov categories), although the precise statement above appears to be novel. Since the coherence conditions required of the comonoids in a Markov structure can be somewhat hard to remember, this characterization may be easier to understand.
 }
 
 \transclude{efr-OSN1}
