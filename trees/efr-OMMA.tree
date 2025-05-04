@@ -2,19 +2,14 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{proposition}
+\p{
+  Let #{\Markov_s \subseteq \Markov^\oplax} denote the subcategory of \em{strictly monoidal} Markov functors (i.e those where the oplaxator #{F(X \otimes Y) \to F(X) \otimes F(Y)} is the \em{identity}).
+}
 \ol{
   \li{
     #{\Markov} and #{\Markov^\oplax} admit all products, computed simply as products in #{\Cat}.
   }
   \li{
-    #{\Markov} admits pullbacks along \em{isofibrations}, and these are preserved by the inclusion into #{\Markov^\oplax}
-  }
-}
-\proof{
-  \p{
-    The first point is clear -- simply equip #{\prod_i \cC_i} with the coordinatewise monoidal structure and coordinatewise comonoid structure.
-  }
-  \p{
-    Now consider #{\cC \to \cD} a Markov functor, and #{\cE \to \cD} an isofibration Markov functor. Consider the pullback #{\cC \times_\cD \cE}. 
+    #{\Markov} admits all finite limits, and these are preserved by the inclusion into #{\Markov^\oplax}
   }
 }

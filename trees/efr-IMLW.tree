@@ -9,11 +9,22 @@
 
 \p{First, let us make explicit the example of optics, as strongly as it can be stated}
 \transclude{efr-A6YR}
-
+\p{Slightly orthogonally, we have the following comparison between #{\SLens(\MAr{\cC})} and #{\Optic(\cC)}:}
+\transclude{efr-K6NM}
+\p{
+  Thus we have our previous claim that #{\SLens(\MAr{\BorelStoch}|_\det)} contains #{\Optic(\BorelStoch)}.
+}
 \p{
   We also have some examples of an analytic flavor:
 }
 \transclude{efr-TO9K}
 \p{
   Note that, as in this example, we do not generally expect #{\Optic_\cC(\cC,\cD)} to yield a Markov fibration if #{\cD} is not another Markov category (and not even then in general, as the case of #{\BorelStoch} shows). - for these, we expect to need a sort of positivity in the fiber as well, which restricts us to things that look like probability kernels.
+}
+\transclude{efr-O6GQ}
+\p{
+  As in \ref{efr-TO9K}, this cannot be expected to come from a Markov prefibration in general.
+}
+\p{
+  The vast majority of examples seem to occur as subcategories of stochastic modules of the form given by \ref{efr-O6GQ} (of course, #{\MAr{\cC}} is just the subcategory spanned fiberwise by the free algebras). In fact, since a stochastic module necessitates in some sense an action of #{P} on the objects of the fiber, it seems they do all have this form in a generalized way, although we have not found a better way to make this precise than the existing definition of stochastic module.
 }

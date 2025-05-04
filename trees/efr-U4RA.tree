@@ -57,17 +57,7 @@
 \transclude{efr-Z75A}
 
 \p{
-  It is worth noting that, even in the case where #{\SChart(\cD_0^\fop)} is not a prefibration, it may still deserve the name "stochastic lenses". For example the stochastic lenses in #{\BorelStoch} can be seen to contain #{\Optic(\BorelStoch)} as a full subcategory.
-}
-
-\transclude{efr-TT39}
-\transclude{efr-Y73O}
-\p{
-  This is not very surprising. What is perhaps surprising is that this result holds for #{\BorelStoch}, despite its lack of supports, although the proof is rather involved, involving some nontrivial measure theory.
-}
-\transclude{efr-W3B5}
-\p{
-  Note that this argument certainly fails for #{\Stoch} - the measurable projection and section properties are very special for Borel measurable sets. It can't be ruled out that some more general technique, using a different class of sections, could establish the result in higher generality, but a general comparison theorem seems out of reach.
+  It is worth noting that, even in the case where #{\SChart(\cD_0^\fop)} is not a prefibration, it may still deserve the name "stochastic lenses". For example the stochastic lenses in #{\BorelStoch} can be seen to contain #{\Optic(\BorelStoch)} as a full subcategory, even though it does not form a Markov fibration (see \ref{efr-K6NM} below).
 }
 
 \p{

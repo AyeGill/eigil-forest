@@ -3,8 +3,7 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cC} be a [pullback-positive](efr-T3HM) Markov category and let #{\cD_0 \to \cC_\det} be a fibration. Let #{T} be the free stochastic module monad on #{\IcoPSh(\cD_0 / \cC)}.
-  Consider the full subcategory of #{Kl(T)} spanned by the corepresentable copresheaves (or, equivalently, the full subcategory of stochastic modules spanned by the free modules on the corepresentables). Denote the opposite of this category #{\bar{\cD_0}}. Clearly there is a commutative diagram
+  Let #{\cC} be a [pullback-positive](efr-T3HM) Markov category and let #{\cD_0 \to \cC_\det} be a fibration. Consider the full subcategory of stochastic modules spanned by the free modules on the corepresentables. Denote the opposite of this category #{\bar{\cD_0}}. Clearly there is a commutative diagram
   \quiver{
     \begin{tikzcd}
     \cD_0 \ar[d] \ar[r] & \bar{\cD_0} \ar[d]\\

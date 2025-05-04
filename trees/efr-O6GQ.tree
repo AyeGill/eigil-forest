@@ -1,0 +1,78 @@
+\date{2025-05-02}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\title{Stochastic module of #{P}-algebras}
+\p{
+  Let #{\cC} be a representable, positive Markov category so that #{\cC_\det} admits intersections and the probability monad #{P} preserves them.
+  Then each slice #{(\cC_\det)_{/X}} inherits a monad structure given by #{P_X(B \to X) = P(B) \times_{P(X)} X}. This is pseudofunctorial in #{X}. Moreover, the stochastic module structure on #{\MAr{\cC}|_\det} extends to a stochastic module structure on the fibration representing the pseudofunctor #{X \mapsto \Alg(P_X)}.
+}
+\proof{
+  \p{
+    The monad is induced by the adjunction #{\cC_\det{/X} \lensto \Alg(P)_{PX}}. Let #{f: X \to Y} (deterministic). For abstract reasons there is a natural transformation #{P_Yf^* \to f^*P_X}. Writing this out, we find
+    ##{P(A \times_Y X) \times_{PX} X \to P(A) \times_{PY} X}
+  }
+  \p{
+    By representability, the unit #{X \to PX} is a monomorphism. Hence a map into #{P(A \times_Y X) \times_{PX} X} is precisely a map in #{\cC} into #{A \times_Y X} so that the marginal on #{X} is deterministic. But by pullback-positivity this is precisely a map (in #{\cC_\det}) into #{P(A) \times_{PY} X}.
+  }
+  \p{
+    Let #{M \to X}, two #{P_X}-algebras #{A, B}, and a map #{M \times_X A \to M \times_X B} which is a homomorphism for the induced #{P_M}-algebras,
+    and a map #{X \to PM} be given. Note that by the above, #{P_M(M \times_X A) \cong M \times_X P_XA}. Then the induced map #{A \to B} is given by
+    ##{A \to PM \times_{PX} A \cong P_X(M) \times_X A \into P_X(M \times_X A) \to P_X(B) \to B}
+  }
+  \p{
+    We must show this is a #{P_X}-homomorphism. Let us simplify by working internall to #{(\cC_{\det})_{/X}} - thus we have a Cartesian category equipped with a strong commutative monad #{P}, a map #{* \to PM}, and a map #{M \times A \to B} which is a parameterized algebra homomorphism, in the sense that the diagram 
+  }
+
+  \p{
+    \quiver{
+      \begin{tikzcd}
+	{M \times PA} & {P(M \times A)} & {P(B)} \\
+	{M \times A} && B
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=2-1, to=2-3]
+\end{tikzcd}
+    }
+  }
+  \p{
+    commutes. Now we must show the map #{A \to PM \times A \to P(M \times A) \to PB \to B} is a #{P}-homomorphism. Write #{E_A,E_B} for the structure maps of the two algebras. Consider this diagram:
+  }
+  \quiver{
+\begin{tikzcd}
+	PA & {P(PM \times A)} && {P^2(M\times A)} & {P^2(B)} & PB \\
+	& {PM \times PA} &&& {} \\
+	&& {P(M \times P(A))} \\
+	\\
+	A & {PM \times A} & {P(M \times A)} && {P(B)} & B
+	\arrow["{P(m \times A)}"{pos=0.2}, from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-2]
+	\arrow["{E_A}", from=1-1, to=5-1]
+	\arrow[from=1-2, to=1-4]
+	\arrow[from=1-4, to=1-5]
+	\arrow["{P(E_B)}", from=1-5, to=1-6]
+	\arrow["\mu", from=1-5, to=5-5]
+	\arrow["{E_B}", from=1-6, to=5-6]
+	\arrow[from=2-2, to=1-2]
+	\arrow[from=2-2, to=3-3]
+	\arrow["{PM \times E_A}", from=2-2, to=5-2]
+	\arrow[from=3-3, to=1-4]
+	\arrow[from=3-3, to=5-3]
+	\arrow["{m \times A}", from=5-1, to=5-2]
+	\arrow[from=5-2, to=5-3]
+	\arrow[from=5-3, to=1-6]
+	\arrow[from=5-3, to=5-5]
+	\arrow["{E_B}"', from=5-5, to=5-6]
+\end{tikzcd}
+  }
+  \p{
+    The triangle at the top left commutes because #{P} is strong. The square to the right does not commute in general - however, since #{P} is commutative, the composite maps #{PM \times PA \to P^2(M \times A) \xto{\mu} P(X \times A)} agree. Since the map #{P^2(M \times A) \to B} factors over this, we may replace one edge of this square with another. The square to the right of that is simply #{P(-)} applied to the previous diagram, and so commmutes by assumption. The "triangle" under that is just two copies of the same maps, so commutes. The square on the left of the diagram commutes by functoriality of product. The square to the right of that commutes again because #{P} is strong. Hence the outer square commutes, which is precisely the homomorphism property we wanted.
+  }
+
+
+  \p{
+    It is apparent that, if #{A, B = P_XA', P_B'} are free algebras, this restricts to the stochastic module structure of #{\MAr{\cC}|_\det} (viewing #{\cC} as the Kleisli category of #{P}). But since every algebra is a coequalizer of free algebras, it follows that the action on general algebras is determined uniquely by this. This implies the equations of a stochastic module.
+  }
+}

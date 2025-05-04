@@ -32,9 +32,16 @@
 \transclude{efr-Y926}
 \transclude{efr-GL6R}
 \p{
-  The term "stochastic module" is not very good, but this is mostly a nonce definition in any case, so we won't worry too much about it. It is immediately apparent that we have:
+  The term "stochastic module" is not very good, but this is mostly a nonce definition in any case, so we won't worry too much about it.
 }
-\transclude{efr-GK62}
+
+\p{
+  Stochastic modules over a given #{X \in \cC} can be seen to be monadic over the category of indexed copresheaves over that #{X}. However, the compatibility of these local left adjoints with the structure of the rest of the category is somewhat subtle. However, we do have free stochastic modules on \em{representable} indexed copresheaves, as we now show:
+}
+
+\transclude{efr-A08L}%Free thing
+
+
 \transclude{efr-2XPE}
 
 \p{
@@ -46,8 +53,6 @@
 \p{
   This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}.
 }
-\transclude{efr-A08L}%Free thing
-
 \transclude{efr-ACIV}%Remark on terminology
 
 \p{

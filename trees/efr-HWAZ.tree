@@ -35,7 +35,7 @@
   We would like to study the limits in here. At this point, we are forced to consider for a moment a bit of higher category theory. Structures on a category defined "up to isomorphism" generally don't play well together with limits in the category #{\Cat}, since they are defined "up to equality". For example, we cannot infer from the fact that #{\cC,\cD} have products and the functors #{F,G: \cC \rightrightarrows \cD} preserve them that the equalizer of #{F,G} has products, since given #{A,B} in the equalizer, we have #{F(A \times B) \cong G(A \times B), but not necessarily equality!} 
 }
 \p{
-  The reader can look forward to meeting this problem again in \ref{efr-000D}. For now, we will simply observe that limits computed using \em{fibrations} are generally well-behaved. This will suffice to study the examples we will be interested in here
+  For the moment we will restrict ourselves to limits of \em{strict} (and in particular, strong) monoidal Markov functors, since these always exist. In general one should probably consider some form of homotopy limit, but we will not go into that now. We clearly have:
 }
 \transclude{efr-OMMA}%Limits of Markov categories exist
 \transclude{efr-G0AN}%Limits of Markov prefibrations exist

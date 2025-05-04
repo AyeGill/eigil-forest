@@ -3,6 +3,9 @@
 \import{macros}
 \taxon{lemma}
 \ol{
+  \li{
+    Let #{\bar{X} \in \cD_0} be an object. Then there is a free stochastic module #{T\cD_0(\bar{X},-)} on its representable copresheaf, in the sense that if #{F} is another stochastic module, homomorphisms #{T\cD_0(\bar{X},-)} are in bijection with indexed natural transformations #{\cD_0(\bar{X},-) \to F}
+  }
   \li{The free stochastic module on a corepresentable presheaf is given as follows: an element of #{T\cD_0(\bar{X},-)(\bar{Y})} consists of a diagram in #{\cC} of the form
     \quiver{
       \begin{tikzcd}
@@ -37,11 +40,28 @@
   First, observe that the equations for a stochastic module follow by a straightforward diagram chase around something with this shape:
   \quiver{
     \begin{tikzcd}
-    & & K \ar[dl] \ar[dr] & & \\
-    & M \ar[dl] \ar[dr] \ar[ur, bend left=20] & & N \ar[dl] \ar[dr] & \\
-    X \ar[ur, bend left=20] & & Y \ar[dr] \ar[ur, bend left=20] & & W \ar[dl] \\
-    & & & Z, \ar[ur, bend left=20] &
-    \end{tikzcd}
+	&& {M \times_Z W} \\
+	&& {M \times_Y N} \\
+	& M && N \\
+	X && Y && W \\
+	&&& {Z,}
+	\arrow[from=1-3, to=3-2]
+	\arrow[from=1-3, to=4-5]
+	\arrow[from=2-3, to=1-3]
+	\arrow[from=2-3, to=3-2]
+	\arrow[from=2-3, to=3-4]
+	\arrow[shift left=3, curve={height=-12pt}, from=3-2, to=1-3]
+	\arrow[curve={height=-6pt}, from=3-2, to=2-3]
+	\arrow[from=3-2, to=4-1]
+	\arrow[from=3-2, to=4-3]
+	\arrow[from=3-4, to=4-3]
+	\arrow[from=3-4, to=4-5]
+	\arrow[curve={height=-6pt}, from=4-1, to=3-2]
+	\arrow[curve={height=-6pt}, from=4-3, to=3-4]
+	\arrow[from=4-3, to=5-4]
+	\arrow[from=4-5, to=5-4]
+	\arrow[curve={height=-6pt}, from=5-4, to=4-5]
+\end{tikzcd}
   }
 
   noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X} - given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to tthe map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.

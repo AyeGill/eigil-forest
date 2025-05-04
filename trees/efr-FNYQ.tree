@@ -11,7 +11,7 @@
     \cC \ar[r, "F"] & \cC'
     \end{tikzcd}
   }
-  where #{\bar{F}} preserves Cartesian maps, and #{F} preserves deterministic maps.
+  where #{\bar{F}} preserves Cartesian maps, and #{F} is an oplax Markov functor.
 }
 \p{
   We will let #{\Markov^\oplax} denote the category of Markov categories and oplax Markov functors. Note that by \ref{efr-9VAH}, the forgetful functor #{\MarkPreFib \to \Markov^\oplax} is a fibration.
