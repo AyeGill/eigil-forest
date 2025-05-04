@@ -1,0 +1,16 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\cT} be a 2-limit sketch.
+  Then the functor #{\Mod(\cT,\CC) \to [\CC^\op,\Mod(\cT)]} given by #{A \in \Mod(\cT,\CC) \mapsto (C \mapsto (S \in \cT \mapsto \CC(C,A(S))))} is fully faithful, and its essential image consists of those functors #{F} so that each #{F(-)(S) : \CC^\op \to \Cat, S \in \cT} is representable,
+}
+\proof{
+  \p{
+    First note that the codomain can be identified with the subcategory of #{[\CC^\op \times \cT, \Cat]} spanned by those #{F} where each #{F(C,-)} is a model. Since the Yoneda embedding preserves limits, the functor #{A \mapsto \Hom(-, A(=))} from #{\Mod(\cT)} clearly lands inside here. Since #{\Mod(\cT,\CC)} is itself a full subcategory of the functor category #{[\cT,\CC],} this is fully faithful.
+  }
+  \p{
+    Clearly for each model #{A} and for each #{S \in \cT,} the functor #{\CC(-,A(S))} is representable, by #{A(S)}. Conversely, if #{F(C,S)} is such that each #{F(-,S)} is representable, then the currying of #{F} #{\cT \to [\CC^\op,\Cat]} factors over #{\CC}, and since the Yoneda embedding preserves those limits that exist, this factorization must be a model as well.
+  }
+}

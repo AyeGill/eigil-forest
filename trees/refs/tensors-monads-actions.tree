@@ -1,0 +1,15 @@
+\title{Tensors, monads and actions}
+\date{2013-06-25}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.1205.0101}
+\meta{external}{http://arxiv.org/abs/1205.0101}
+\author{Gavin J. Seal}
+\meta{bibtex}{\startverb
+ @article
+{Seal_2013, title={Tensors, monads and actions}, url={http://arxiv.org/abs/1205.0101}, DOI={10.48550/arXiv.1205.0101}, abstractNote={We exhibit sufficient conditions for a monoidal monad T on a monoidal category C to induce a monoidal structure on the Eilenberg--Moore category C^T that represents bimorphisms. The category of actions in C^T is then shown to be monadic over the base category C.}, note={arXiv:1205.0101 [math]}, number={arXiv:1205.0101}, publisher={arXiv}, author={Seal, Gavin J.}, year={2013}, month={Jun} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We exhibit sufficient conditions for a monoidal monad T on a monoidal category C to induce a monoidal structure on the Eilenberg--Moore category C^T that represents bimorphisms. The category of actions in C^T is then shown to be monadic over the base category C.
+}}
+

@@ -1,0 +1,34 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Pseudolinear map}
+\p{
+  Let #{\CC} be a 2-category, and let #{(M,C,\cdot), (N,D,\star)} be internal pseudomonoid actions. A \em{pseudolinear map} (or just \em{linear}) is a pair of maps #{F_m: M \to N, F_c: C \to D}, equipped with a pseudomonoid pseudohomomorphism structure #{\phi, \tau} on #{F_m} and a natural isomorphism #{l: F_m(-) \cdot F_c(=) \to F_c(- \cdot =)} satisfying the following coherence conditions (note that writing functors using element-notation like this is well-defined)
+}
+\p{
+  \quiver{
+    \begin{tikzcd}
+	{F_m(M)\star(F_m(N)\star F_c(C))} && {F_m(M) \star F_c(N \cdot C)} \\
+	{(F_m(M) \otimes F_m(N)) \star F_c(C)} \\
+	{F_m(M\otimes N)\star F_c(C)} && {F_c(M \cdot (N \cdot C))} \\
+	& {F_c((M \otimes N)\cdot C)}
+	\arrow["{F_m(M)\star l_{N,C}}"', from=1-1, to=1-3]
+	\arrow["{\mu^\star_{F_m(M),F_m(N),F_c(C)}}", from=1-1, to=2-1]
+	\arrow["{l_{M,N \cdot C}}"', from=1-3, to=3-3]
+	\arrow["{\phi_{M,N}\star F_c(C)}", from=2-1, to=3-1]
+	\arrow["{l_{M\otimes N, C}}", from=3-1, to=4-2]
+	\arrow["{F_c(\mu^\cdot_{M,N,C})}"', from=3-3, to=4-2]
+\end{tikzcd}
+  }
+  \quiver{
+    \begin{tikzcd}
+	{F_m(I)\star F_c(C)} & {F(I\cdot C)} \\
+	{I'\star F_c(C)} & {F_c(C)}
+	\arrow["{l_{I,C}}", from=1-1, to=1-2]
+	\arrow["\tau", from=2-1, to=1-1]
+	\arrow["{\eta^\star_{F_c(C)}}"', from=2-1, to=2-2]
+	\arrow["{F_c(\eta_C)}"', from=2-2, to=1-2]
+\end{tikzcd}
+  }
+}

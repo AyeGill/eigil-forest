@@ -225,6 +225,10 @@
 \def\Kl{#{\cat{Kl}}}
 
 
+\def\PsMon{#{\cat{PsMon}}}
+\def\PsCat{#{\cat{PsCat}}}
+\def\Act{#{\cat{Act}}}
+
 % it'd be cool to have it automatically linked, like so:
 % \def\dblCat{#{\dblcat{Cat}}}{[#{\dblcat{Cat}}](equipment-of-cats)}
 % but it doesn't compile!
@@ -332,6 +336,8 @@
 \def\FinStoch{#{\cat{FinStoch}}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
 \def\TychStoch{#{\cat{TychStoch}}}
+\def\TychDiff{#{\cat{TychDiff}}}
+\def\TychDiffStoch{#{\cat{TychDiffStoch}}}
 \def\det{#{\mathrm{det}}}
 \def\copy{#{\mathrm{copy}}}
 \def\del{#{\mathrm{del}}}

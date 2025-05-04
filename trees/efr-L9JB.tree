@@ -1,0 +1,9 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Weighted limit}
+\p{
+  Let #{\CC} be a 2-category, let #{D: \II \to \CC} be a 2-diagram in it, and let #{W: \II \to \Cat} be another 2-functor.
+  A \em{limit of #{D} weighted by {W}} is an object #{\lim^W D \in \CC} equipped with a natural isomorphism of categories #{\CC(X,\lim^W D) \cong [ {\II }, {\CC} ] (W, \CC(X,D(-)))} (natural in #{X \in \CC}).
+}

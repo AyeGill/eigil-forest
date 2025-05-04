@@ -1,0 +1,11 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Pseudomonoid action}
+\taxon{definition}
+\p{
+  Let #{\CC} be a 2-category. A pseudomonoid action internal to #{\CC} consists of the following data: An internal pseudomonoid #{M}, an object #{C}, a morphism #{\cdot: M \times C \to C,} natural isomorphisms #{\mu: \cdot (\otimes \times 1_C) \to \cdot (1_M \times \cdot)} and #{\eta: \cdot \braket{e, 1_C} \to 1_C}, satisfying the coherence equations from \ref{efr-OFNV}.
+}
+\p{
+  A \em{strict homomorphism of actions} is a pair #{F_m: M \to M', F_c: C \to C'} so that #{F_m} is a strictly monoidal functor and #{F_c} preserves the action strictly, i.e #{F_m(M) \cdot F_c(C) = F_c(M \cdot C)}, #{F_c(\eta) = \eta',} etc. Note that this makes sense even if the monoidal category or action is not itself strict.
+}

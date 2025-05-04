@@ -1,0 +1,14 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\title{Particular weighted limits}
+\p{
+  If #{W(-) = *} is constant at the point, and #{\II} is an 1-category, then a weighted limit is simply a #{L \to D(i)} in the underlying category #{\CC_0} so that there is additionally an isomorphism of categories #{\CC(X,L) \xto{\sim} \lim_i \CC(X,D(I))}. Note that this \em{is} stronger than just a limit in #{\CC_0}. We will refer to limits of this form by their ordinary names - speaking for example of pullbacks, products, and so on.
+}
+\p{
+  If #{I = *}, #{D(*) = D \in \CC}, and #{W(*) = C \in \Cat,} the universal property of the weighted limit is that #{\CC(X, \lim^W D) = \Cat(C, \CC(X,D))}. In this case we write #{C \pitchfork D} for this limit if it exists, and call it a \em{power} of #{D} by #{C}.
+}
+\p{
+  If #{\II = \{A \to B \leftarrow C\}} and the weighting is given by #{W(B) = \{1 \to 2\}, W(A) = \{1\}, W(B) = \{2\}} (with the obvious inclusions), then the weighted limit is called the \em{comma object} and will be denoted #{D(A) \downarrow_{D(B)} D(C)}. Note that if #{\CC = \Cat} this is precisely the ordinary comma category.
+}

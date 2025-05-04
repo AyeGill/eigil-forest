@@ -1,0 +1,21 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  The functor #{\dblPara: \Act_s(\CC) \to \PsCat_s(\CC)} extends to a functor #{\Act(\CC) \to \PsCat(\CC)}
+}
+\proof{
+  \p{
+    Under the identification of #{\Mod(\cT,\CC)} with a subcategory of #{[\CC^\op \times \cT, \Cat],} it is clear that the pseudonatural transformations of models correspond to those pseudonatural transformations which are strict on morphisms in #{\CC^\op}. This implies the full category #{\Mod_p(\CC)} of models and pseudonatural transformations can be identified with the subcategory of #{[\CC^\op,\Mod_p(\cT,\Cat)]} spanned by those 2-functors which come from models --  that is, #{A: \CC^\op \to \Mod_p(\cT) = \Mod_p(\cT,\Cat)} must factor over #{\Mod(\cT) \into \Mod_p(\cT)}. 
+  }
+  \p{
+    (To be clear: the morphisms in #{[\CC^\op, \Mod_p(\cT)]} are strictly natural transformations between functors #{\CC^\op \to \Mod_p(\cT)}, but each component #{A(C) \to B(C)} of such a natural transformation is a pseudonatural transformation of models).
+  }
+  \p{
+    Under \em{this} identification, it is clear that pseudofunctors correspond to those natural transformations in #{[\CC^\op, \Mod_p(\cT_\PsCat)]} which are valued in pseudofunctors, and analogously for pseudolinear morphisms and maps #{[\CC^\op, \Mod_p(\cT_\Act)]}. Hence it suffices to observe that the #{\Cat}-valued version #{\Mod(\cT_\Act) \to \Mod(\cT_\PsCat)} carries pseudolinear maps to pseudofunctors.
+  }
+  \p{
+    But recall that this is given by #{(M,C) \mapsto \Hom_{\Mod(\cT_\Act)(L(-), (M,C))}} where #{L: \cT_\PsCat^\op \to [\cT_\Act,\Cat]} is the restriction of the left adjoint of #{\dblPara}. Both forming the hom-category #{\Hom(-, (M,C))} and precomposing with #{L} are 2-functors, and as such preserve pseudonatural transformations. Thus it only remains to observe that #{\dblPara} also preserves the partial strictness property, but this clear.
+  }
+}

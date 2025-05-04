@@ -1,0 +1,13 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{2-Limit sketches}
+\transclude{efr-L9JB}
+\transclude{efr-K3YI}
+\p{
+  The analogue for a cone on an object #{C} in the setting of weighted limits is called a \em{cylinder:} it is a natural transformation #{W(-) \to \CC(C, D(-))}.
+  A cylinder on #{C} induces a natural transformation #{\CC(X,C) \to [ {\II }, {\CC} ] (W(-),\CC(X,D(-))),} and we say it's a limit cylinder if this is an isomorphism.
+}
+\transclude{efr-40Q5}
+\transclude{efr-D7EH}
+\transclude{efr-9O7K}

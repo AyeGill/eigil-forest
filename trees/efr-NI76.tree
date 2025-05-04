@@ -1,0 +1,26 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Actegories}
+
+\transclude{efr-OFNV}
+
+\p{
+  Actegories are a very natural concept, and as one would expect their history goes back a long way. The concept has been considered by Benabou all the way back in \ref{benabou-bicategories}, and used many times since them. We will not delve too deeply into their theory here - see \ref{actegories-amthematician-capucci-gavranovic} for a thorough treatment. 
+}
+\p{
+  Just as pseudo double categories, actegories really make sense in every 2-category, as a weakening of monoid actions.
+}
+\transclude{efr-IOLJ}
+\transclude{efr-6S13}
+
+\transclude{efr-I33G}
+\transclude{efr-ARIX}
+
+\p{
+  Again, as expected, the notion of strict linear morphism is usually too strict. One can expect an equation like #{F_m(M) \cdot F_c(C) = F_c(M \cdot C)} to hold only up to coherent isomorphism. Let us now make this clear:
+}
+\transclude{efr-L5QG}
+\p{
+  In \ref{actegories-amthematician-capucci-gavranovic}, these are defined in two steps: first linear functors for the same #{\cM} (those with #{F_m = 1_\cM}) are considered. Then, given a strong monoidal #{\cM \to \cN,} a functorial assignment of an #{\cM}-action to every #{\cN}-action is constructed, and the full category of actions is defined as the Grothendieck construction of this. There is nothing preventing this from working in the setting of a general 2-category, and it is straightforward to verify that our notion of linear morphism of actions agrees with theirs.
+}

@@ -1,0 +1,8 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{\CC} be a 2-category which admits pullbacks, products and comma objects.
+  Then there is a functor #{\dblPara: \Act(\CC) \to \PsCat(\CC)} from the category of pseudomono
+}

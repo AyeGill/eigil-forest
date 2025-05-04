@@ -1,0 +1,10 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{2-limit sketch}
+\p{
+  A \em{2-limit sketch} is a small 2-category #{\cT} equipped with a (small) set of cylinders #{\Theta}.
+  A \em{model} of the sketch in #{\CC} is a 2-functor #{\cT \to \CC} which carries each cylinder in #{\Theta} to a limit cylinder.
+  We write the category of models and natural transformations #{\Mod(\cT,\CC)} (leaving the set of cylinders implicit).
+  If #{\CC = \Cat,} we write simply #{\Mod(\cT)}.
+}
