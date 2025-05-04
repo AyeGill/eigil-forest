@@ -1,0 +1,10 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Examples}
+\parent{efr-000D}
+
+\transclude{efr-WEST}
+\transclude{efr-37F7}
+\transclude{efr-KL7V}
+\transclude{efr-AIT8}

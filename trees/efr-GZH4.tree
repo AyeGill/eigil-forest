@@ -2,3 +2,22 @@
 \author{eigil-rischel}
 \import{macros}
 \title{#{\dblPara} for a general 2-category}
+\p{
+  We are now almost ready to prove:
+}
+\transclude{efr-I897}
+\p{
+  The main ingredient missing is a characterization of the respective notions of pseudomorphism in terms of the limit sketches. This we do now:
+}
+\transclude{efr-NZ0X}
+\transclude{efr-T667}
+
+\transclude{efr-0BHI}
+
+\p{
+  We have not yet given any thought to functoriality in #{\CC}, but passing through the constructions, it is apparent that we have:
+}
+\transclude{efr-TY4G}
+\p{
+  (It may seem wrong that, after working strictly all this time, this square commutes only up to natural isomorphism, but in fact that is the strict notion - the weak version of this statement would be that it commuted up to natural \em{equivalence}. Note that eg. the comma objects #{M \times C \downarrow C} are only characterized up to isomorphism, so this is really the best we can hope for)
+}

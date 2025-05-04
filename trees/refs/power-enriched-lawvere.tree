@@ -1,0 +1,9 @@
+\title{Enriched Lawvere Theories}
+\date{1999}
+\taxon{reference}
+\author{John Power}
+\meta{bibtex}{\startverb
+ @article
+{Power_1999, title={Enriched Lawvere Theories}, volume={6}, journal={Theory and Applications of Categories}, author={Power, John}, year={1999}, pages={83-93},language={English} }
+\stopverb}
+

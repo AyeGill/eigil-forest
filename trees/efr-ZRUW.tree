@@ -11,6 +11,10 @@
     It is important to note that, although this is a weakening of the definition of internal category, pseudocategories are themselves a strict concept - they are defined in terms of equations that must hold up to \em{strict} equality. Thus for example there is an enriched monad (a 2-monad) on #{\Cat} whose \em{strict} algebras are the pseudo double categories.
 }
 \transclude{efr-ZRUY} % Examples, including pseudomonoids.
+\transclude{efr-LTJQ} %Example, monoidal double cats
+\p{
+    Here we are already beginning to feel the limitations of this internalization a bit -- really we should ask for #{m}, at least, to be only a strong monoidal functor. But we move on for now with this problematic definition.
+}
 \p{
     Of course, there is a very crucial notion of \em{pseudofunctor} between pseudo double categories. This has an internal formulation in terms of \em{pseudomorphisms:}
 }
@@ -23,5 +27,5 @@
 }
 \transclude{efr-7ZZG}
 \p{
-    An explicit description of this sketch seems not to have appeared in the literature until \ref{varkor-bourke-sketches-ko} (example 5.13). Note that they construct a richer object, what they term an \em{#{\cF}-sketch,} which includes the information that the domain and codomain are "tight" and must be preserved strictly by pseudofunctors, but composition and identities are "loose" and may be preserved only up to natural isomorphism. This idea will be highly useful later, although we will not go into a full treatment of their theory.
+    An explicit description of this sketch seems not to have appeared in the literature until \ref{varkor-bourke-ko-sketches} (example 5.13). Note that they construct a richer object, what they term an \em{#{\cF}-sketch,} which includes the information that the domain and codomain are "tight" and must be preserved strictly by pseudofunctors, but composition and identities are "loose" and may be preserved only up to natural isomorphism. This idea will be highly useful later, although we will not go into a full treatment of their theory.
 }

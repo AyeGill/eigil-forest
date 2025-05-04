@@ -1,31 +1,22 @@
 \author{eigil-rischel}
 \import{macros}
 \date{2024-06-13}
-\title{The triple category of controlled processes}
+\title{The #{\Para} construction in generic 2-categories}
 
 
 %Introduction
 \transclude{efr-003P}
 
-%Notions of double category
-
-
-%Para construction
+%Para construction normally
 \transclude{efr-002H}
 
+%Pseudocategories in general
+\transclude{efr-ZRUW}
 
-%Controlled processes - probably factor these things into a section?
-\transclude{efr-000C}
+%Pseudomonoid actions in general
+\transclude{efr-NI76}
 
-\example{Mealy and Moore}{
-  It is obvious that a controlled process #{I \to A} amounts to a [Moore machine](efr-0006), and that a controlled process #{A \to I} dually amounts to a [Mealy machine](efr-0005).
-}
-%Example: ML
-\transclude{efr-000E}
-%Morphisms of controlled processes
-\transclude{efr-000F}
-%Triple categories
-\transclude{efr-0035}
+%Para in generic 2-categories
+\transclude{efr-GZH4}
 
-%Symmetric monoidal structure
-\transclude{efr-000O}
+%Examples

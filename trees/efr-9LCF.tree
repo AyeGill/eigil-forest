@@ -1,0 +1,8 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Actegories as pseudomonoid actions}
+\taxon{example}
+\p{
+  As discussed above, #{\Act(\Cat)} is the locally full subcategory of the 2-category of actegories and pairs of strong monoidal and lax linear functors constructed in \ref{actegories-amthematician-capucci-gavranovic} (see Proposition 3.6.5) spanned by the pseudolinear (or "strongly linear") functors.
+}

@@ -1,0 +1,17 @@
+\title{Enhanced 2-categorical structures, two-dimensional limit sketches and the symmetry of internalisation}
+\date{2024-12-10}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2412.07475}
+\meta{external}{http://arxiv.org/abs/2412.07475}
+\author{Nathanael Arkor}
+\author{John Bourke}
+\author{Joanna Ko}
+\meta{bibtex}{\startverb
+ @article
+{Arkor_Bourke_Ko_2024, title={Enhanced 2-categorical structures, two-dimensional limit sketches and the symmetry of internalisation}, url={http://arxiv.org/abs/2412.07475}, DOI={10.48550/arXiv.2412.07475}, abstractNote={Many structures of interest in two-dimensional category theory have aspects that are inherently strict. This strictness is not a limitation, but rather plays a fundamental role in the theory of such structures. For instance, a monoidal fibration is - crucially - a strict monoidal functor, rather than a pseudo or lax monoidal functor. Other examples include monoidal double categories, double fibrations, and intercategories. We provide an explanation for this phenomenon from the perspective of enhanced 2-categories, which are 2-categories having a distinguished subclass of 1-cells representing the strict morphisms. As part of our development, we introduce enhanced 2-categorical limit sketches and explain how this setting addresses shortcomings in the theory of 2-categorical limit sketches. In particular, we establish the symmetry of internalisation for such structures, entailing, for instance, that a monoidal double category is equivalently a pseudomonoid in an enhanced 2-category of double categories, or a pseudocategory in an enhanced 2-category of monoidal categories.}, note={arXiv:2412.07475 [math]}, number={arXiv:2412.07475}, publisher={arXiv}, author={Arkor, Nathanael and Bourke, John and Ko, Joanna}, year={2024}, month={Dec} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Many structures of interest in two-dimensional category theory have aspects that are inherently strict. This strictness is not a limitation, but rather plays a fundamental role in the theory of such structures. For instance, a monoidal fibration is - crucially - a strict monoidal functor, rather than a pseudo or lax monoidal functor. Other examples include monoidal double categories, double fibrations, and intercategories. We provide an explanation for this phenomenon from the perspective of enhanced 2-categories, which are 2-categories having a distinguished subclass of 1-cells representing the strict morphisms. As part of our development, we introduce enhanced 2-categorical limit sketches and explain how this setting addresses shortcomings in the theory of 2-categorical limit sketches. In particular, we establish the symmetry of internalisation for such structures, entailing, for instance, that a monoidal double category is equivalently a pseudomonoid in an enhanced 2-category of double categories, or a pseudocategory in an enhanced 2-category of monoidal categories.
+}}
+

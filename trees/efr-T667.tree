@@ -1,0 +1,11 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  This characterization of the notions of pseudomorphism cannot help but seem a little ad hoc.
+  The basic idea here seems to go back to Power in \ref{power-enriched-lawvere}. After constructing an enriched Lawvere theory (which is just a special kind of limit sketch) corresponding to any finitary enriched monad, he notes that in the #{\Cat}-enriched case the pseudomorphisms of monad algebras correspond to exactly those pseudonatural transformations which preserve the products strictly.
+}
+\p{
+  An elegant theory which generalizes this basic idea has recently been developed by Bourke, Ko, and Varkor in \ref{varkor-bourke-ko-sketches} (as we mentioned briefly before). Their theory involves decorating the sketch with a set of \em{tight} morphisms, which the transformations must be strictly natural with respect to. Beyond developing a general theory of this (not specialized to a few examples as above,) they also show how to construct the categories of \em{(op)lax} homomorphisms, and develop a commutativity of internalization principle for their models. This could be profitably applied in our case to understand better, for example, the implied notion of monoidal triple category, but we will not pursue this here.
+}
