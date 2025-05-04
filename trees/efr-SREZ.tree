@@ -1,0 +1,17 @@
+\date{2025-04-30}
+\author{eigil-rischel}
+\import{macros}
+\title{Open Games with External Choice}
+
+
+\transclude{efr-98DR}
+
+\p{
+  The idea behind the external choice operator is that, for all the contexts which can actually occur as a result of pasting a game #{G \oplus G'} into a larger string diagram, the map #{X \times X' \to \bar{X} + \bar{X}'} has the given form - that is, the probability of landing in each of the two fibers does not depend on the chosen #{x,x'} and the conditional distributions on the #{\bar{X}} component of the fiber depend only on #{x \in X}. Hence we need only concern ourselves with which states are equilibria for contexts of this form. The choice of the empty set of equilibria for other contexts is merely a convention.
+}
+
+\transclude{efr-VB6A}
+\transclude{efr-P4T0}
+\transclude{efr-N0ZV}
+\transclude{efr-FT8J}
+\transclude{efr-4CSL}

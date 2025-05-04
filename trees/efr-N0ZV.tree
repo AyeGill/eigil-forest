@@ -1,0 +1,12 @@
+\date{2025-04-30}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{\cC} be any monoidal category. The category of \em{open games in #{\cC}} has as objects the objects of #{\cC},
+  and as morphisms #{X \to Y} tuples #{(\Sigma, p, E)}, where
+  \ol{
+    \li{#{\Sigma} is a set. The elements of #{\Sigma} are called \em{strategies}}
+    \li{#{p: \Sigma \to \cC(X,Y)} is a function.}
+    \li{#{E \subseteq #{\Ctx(X,Y) \times \Sigma}} is a relation between contexts and strategiess} 
+  }
+}

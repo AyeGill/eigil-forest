@@ -1,0 +1,14 @@
+\date{2025-04-30}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  ##{(\argmax_\Sigma^\Omega: \bar{X} \to \bar{Y}) \oplus (\argmax_{\Sigma'}^\Omega : \bar{X}' \to \bar{Y}') \cong \argmax_{\Sigma \otimes \Sigma'}{\Omega} : \bar{X}\oplus \bar{X}' \to \bar{Y} \oplus \bar{Y}'}
+}
+\p{
+  In other words, two players who play in disjoint cases, each maximizing a given utility function, is equivalent to one player who plays in both cases, and maximizes a utility function which depends on the case.
+}
+\proof{
+  \p{
+  }
+}

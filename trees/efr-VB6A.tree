@@ -1,0 +1,11 @@
+\date{2025-04-30}
+\author{eigil-rischel}
+\import{macros}
+
+
+\p{
+  Given a state #{I \to A + B} in a Markov category with coproducts, we say a pair #{I \to A, I \to B} form a pair of conditionals if the copairing #{I + I \to A + B} is a Bayesian inverse of the map #{A + B \to I + I}.
+}
+\p{
+  Given a state #{I \to \bar{X} + \bar{Y}} in #{\SLens(\cD)}, we say a pair of maps #{I \to \bar{X}, I \to \bar{Y}} form a pair of conditionals if the underlying maps do. 
+}

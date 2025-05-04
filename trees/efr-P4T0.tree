@@ -1,0 +1,24 @@
+\date{2025-04-30}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\title{Markov structure on stochastic charts}
+\p{
+  Let #{\cD} be a monoidal stochastic module fibration over #{\cC} and suppose each fiber #{\cD_X} is a Markov category, and this structure is preserved by the pullback functors #{f^*}.
+  Then #{\SChart(\cD)} carries the structure of a Markov category, so that #{\SChart(\cD) \to \cC} is a Markov functor.
+}
+\p{
+  If #{\cD \to \cC} is a Markov prefibration which is also a strict Markov functor, the induced monoidal structure on #{\cD|_\det} acquires a fiberwise Markov structure.
+}
+\proof{
+  \p{
+    Every equation in the definition of Markov category involves only deterministic maps, so this can be verified entirely over #{\cC_\det}. Thus this reduces to the claim: given a monoidal fibration over a Cartesian base, if each fiber has a Markov structure, the global monoidal structure has one as well.
+    Given an object #{\bar{X} = \arena{\bar{X}}{X},} a map #{\bar{X} \to \bar{X} \otimes \bar{X}} is by definition a map #{f: X \to X \otimes X} plus a map #{\bar{X} \to f^*(\bar{X} \otimes \bar{X})}. Taking #{f} to be the copy map, the codomain there is by definition the monoidal product in the fiber #{\cD_X,} and so we simply use the copying map of the fiberwise monoidal structure.
+  }
+  \p{
+    Given a Markov structure on the total category #{\cD,} we simply apply this idea in reverse and take the map #{\bar{X} \to \copy_X^*(\bar(X) \otimes \bar{X}) =: \bar{X} \otimes_X \bar{X}} to be the copy map.
+  }
+  \p{
+    The deletion maps can be handled in an analogous way.
+  }
+}
