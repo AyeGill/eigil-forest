@@ -1,0 +1,13 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  Since #{\SS} is lax monoidal, its Grothendieck construction #{\int \SS_\cC} acquires a monoidal structure (\ref{moeller-vasilakopoulou}).
+  We write this category #{\cC_\SS} - explicitly, it is given as follows:
+}
+\ol{
+  \li{The objects are pairs #{(X,\epsilon)} where #{X \in \cC} and #{\epsilon \in \SS(X)} is a selection relation on it}
+  \li{The morphisms are morphisms #{f: X \to Y} so that, for every #{x: I \to X, k: Y \to I}, #{\epsilon(x, kf) \Rightarrow \epsilon(fx, k)}}
+  \li{The monoidal structure is given by #{(X,\epsilon) \otimes (Y,\epsilon') = (X \otimes Y, \epsilon \boxtimes \epsilon')}}
+}

@@ -1,0 +1,20 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\ol{
+  \li{
+  Let #{\cC = \Optic(\Set)}. There is a selection function #{\argmax_X \in \SS(\arena{\RR}{X})} defined by #{\argmax(x,f)} if and only if #{x} is a maximum of #{f}. (Identifying maps #{I \to \arena{\RR}{X}} with points #{x \in X,} and maps #{\arena{\RR}{X} \to I} with functions #{X \to \RR})}
+  \li{
+    In the same category, for each #{r \in \RR,} there is a selection function given by #{\epsilon(x,f) \Leftrightarrow f(x) \geq r}. This corresponds to \em{satisficing} at the value #{r} (\ref{simon-environment-satisficing}) - that is - selecting any strategy which achieves this value or greater.
+  }
+  \li{
+    For #{\cC = \Optic(\cC'),} with #{\cC'} semiCartesian, there is a selection function #{\epsilon(x,k) \Leftrightarrow kx = x} (using the same identification as above). The agents with this selection function are called \em{predicting agents} in \ref{bolt-hedges-winschel-predicting}. These agents attempt to predict the value the environment will return to them. 
+  }
+  \li{
+    For #{\cC = \Bun^\fop,} the fiberwise opposite of manifolds and smooth bundles -- that is, the category of lenses between smooth manifolds -- there is a selection function on the tangent bundle #{TX} given by #{\epsilon(x,k)} if and only if #{k(x) = 0} - that is, if #{x} is a fixpoint of the dynamical system identified by #{k: X \to TX}.
+  }
+  \li{
+    Let #{\cA \to \cC} be a dynamical systems theory and work in the category of lenses. Suppose the monoidal structure on #{\cA} is Cartesian, so that a lens #{I \to \arena{A}{X}} is the same as a map #{* \to X}. Note that #{I = T(*)} has a distinguished section given by the identity. Then there is a selection function on each object #{TX} where a lens #{I \to TX}, given by #{x: * \to X,} is in equilibrium with respect to a lens #{TX \lensto I} if #{x} is a trajectory between those systems - that is, if it is an equilibrium in #{TX \lensto I}. This subsumes the two previous definitions.
+  }
+}

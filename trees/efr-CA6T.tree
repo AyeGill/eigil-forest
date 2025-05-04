@@ -1,0 +1,22 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\title{Open games in Monoidal categories}
+
+\transclude{efr-EGK8}
+\transclude{efr-YKR3}
+
+\transclude{efr-BNB2}
+
+\transclude{efr-PTAE}
+
+\transclude{}
+\transclude{efr-Z2BR}
+\transclude{efr-UI90}
+\p{
+  Now we are ready to make the slick definition of open games:
+}
+\transclude{efr-1WGM}
+\p{
+  Note that in this case, #{\Optic(\cC)(I, \arena{A}{X}) = \cC(I,X),} and #{\Optic(\cC)(\arena{A}{X},I) = \cC(X,A)}. Thus a selection function decides, for each \em{payoff function #{X \to A}}, which of the states #{I \to X} are suitable equilibria.
+}

@@ -1,0 +1,18 @@
+\date{2025-05-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The [Nash product](efr-PTAE) #{\SS(X) \times \SS(Y) \to \SS(X \otimes Y),} along with the map #{* \to \SS(I)} given by the full set #{S(I) \times S(I)} equips #{\SS} with a lax monoidal structure.
+}
+\proof{
+  \p{
+    It is trivial to verify associativity and unitality of the monoidal structure. The only hard part is to verify that #{\boxtimes} is actually a natural transformation. To that end, let #{f: X \to Y} and #{g: X' \to Y'} be morphisms of #{\cC}. Let #{\epsilon \in \SS(X), \epsilon' \in \SS(Y)}.
+  }
+  \p{
+    First consider the statement #{(f \otimes g)_*(\epsilon \boxtimes \epsilon')(s,k)}. This holds if and only if #{s: I \to X \otimes Y} factors as #{(f \otimes g)s'} so that #{(\epsilon \boxtimes \epsilon')(s', k(f \otimes g))}. This in turn means #{s' = x \otimes x'} and #{\epsilon(x, k(f \otimes f')(1_X \otimes x'))} and analogously for #{\epsilon'}.
+  }
+  \p{
+    Now consider the statement #{f_*\epsilon \boxtimes g_*\epsilon'}. This means that #{s} factors as #{y \otimes y'} so that #{f_*\epsilon(y, k(1_Y \otimes y'))} and analogously for #{y'}, which in turn means that #{y} factors as #{fx} so that #{\epsilon(x, k(1_Y \otimes y')f)}. Using the axioms of a monoidal category, it is straightforward to see that these two requirements on #{x, x'} are equivalent, hence we have our naturality.
+  }
+}
