@@ -4,6 +4,6 @@
 \author{Jacob Lurie}
 \meta{bibtex}{\startverb
  @misc
-{Lurie, title={Higher Algebra}, url={https://www.math.ias.edu/~lurie/papers/HA.pdf}, author={Lurie, Jacob} }
+{lurie-ha, title={Higher Algebra}, url={https://www.math.ias.edu/~lurie/papers/HA.pdf}, author={Lurie, Jacob} }
 \stopverb}
 

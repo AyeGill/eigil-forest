@@ -5,6 +5,6 @@
 \author{John Nash}
 \meta{bibtex}{\startverb
  @article
-{Nash_1951, title={Non-Cooperative Games}, volume={54}, ISSN={0003-486X}, DOI={10.2307/1969529}, number={2}, journal={Annals of Mathematics}, publisher={[Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}, author={Nash, John}, year={1951}, pages={286â€“295} }
+{nash-noncoop-games, title={Non-Cooperative Games}, volume={54}, ISSN={0003-486X}, DOI={10.2307/1969529}, number={2}, journal={Annals of Mathematics}, publisher={[Annals of Mathematics, Trustees of Princeton University on Behalf of the Annals of Mathematics, Mathematics Department, Princeton University]}, author={Nash, John}, year={1951}, pages={286-295} }
 \stopverb}
 
