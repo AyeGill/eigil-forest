@@ -3,17 +3,21 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{\cC} be an extensive Markov category. Let #{\cD} be a monoidal stochastic module fibration with Markov structure, which has coproducts which are preserved by the pullbacks.
-  Recall that #{\SLens(\cD)} acquires two monoidal structures: one from dualizing the given monoidal structure on #{\cD,} which we simply denote #{\otimes,I}, and one from taking the coCartesian monoidal structure (which is Cartesian after taking the fiberwise dual, of course), which we denote #{&,\top}. Note that #{(\SLens(\cD), &)} is a Markov category.
-}
-\p{
-  Then the category #{\Game(\Slens(\cD))} acquires a monoidal structure which we call \em{external choice,} and write #{\oplus}, given on objects by the coproduct #{+} in #{\SLens(\cD),}
+  When #{\cC, \cD} as above, #{\widetilde{\Game}(\SLens(\cD))} acquires a monoidal structure which we call \em{external choice,} and write #{\oplus}, given on objects by the coproduct #{+} in #{\SLens(\cD),}
   and on morphisms by the following formula:
 }
 \p{
-  Given two open games #{G_1 = (\Sigma_1, p_1: \Sigma_1 \to \SLens(\cD)(\bar{X}_1,\bar{Y}_1), E_1), G_2 = (\Sigma_2,p_2,E_2),} we define #{G_1 \oplus G_2 = (\Sigma_1 \times \Sigma_2, p_1 \oplus p_2, E_1 \oplus E_2),}
-  where
-  #{(p_1 \oplus p_2)(\sigma_1,\sigma_2) = p_1(\sigma_1) + p_2(\sigma_2) : \bar{X}_1 + \bar{X}_2 \to \bar{Y}_1 + \bar{Y}_2},
-  and given a context #{s: I \to M \otimes (\bar{X_1} + \bar{X_2}), k: M \otimes (\bar{Y_1} + \bar{Y_2}),}
-  #{E_1\oplus E_2(\sigma_1,\sigma_2,s,k)} if and only if there exist conditionals #{s_1: I \to M \otimes \bar{X_1}, s_2: I \to M \otimes \bar{X_2}} so that #{E_i(\sigma_i,s_i,k\iota_{M \otimes \bar{Y_i}})}, #{i=1,2} 
+  Given two open games #{G_1 = (\bar{\Sigma_A} \otimes \bar{A_1} \to \bar{A_2}, \epsilon_A), G_2 = (\bar{\Sigma_B} \otimes \bar{B_1} \to \bar{B_2}, \epsilon_B),} their external choice is has parameter #{\Sigma_A \amp \Sigma_B}. The play map is given by 
+  ##{(\Sigma_A \amp \Sigma_B) \otimes (A_1 + B_1) \cong (\Sigma_A \amp \Sigma_B) \otimes A_1 + (\Sigma_A \amp \Sigma_B) \otimes B_1 \to \Sigma_A \otimes A_1 + \Sigma_B \otimes B_1 \to A_2 + B_2}
+
+  The selection relation #{\epsilon_A \oplus \epsilon_A} is given (up to equivalence) as follows:
+  Given a context #{k: \bar{\Sigma_A} \amp \bar{\Sigma_B} \to I,} and a deterministic state #{I \to \bar{\Sigma_A} \amp \bar{\Sigma_B}}, they are in equilibrium if
+  \ol{
+    \li{
+      #{k} factors over the canonical #{\bar{\Sigma_A} \amp \bar{\Sigma_B} \to \bar{\Sigma_A} + \bar{\Sigma_B}} for some #{c: I \to I + I}.
+    }
+    \li{
+      The factorization being given by #{k_A, k_B : \bar{\Sigma_A}, \bar{\Sigma_B} \to I} ,and #{I \to \bar{\Sigma_A} \amp \bar{\Sigma_B}} being given by #{\sigma_A, \sigma_B : I \to \bar{\Sigma_A}, \bar{\Sigma_B}}, we have #{\epsilon_A(\sigma_A,k_A), \epsilon_B(\sigma_B, k_B)}
+    }
+  }
 }

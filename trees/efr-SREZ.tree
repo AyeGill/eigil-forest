@@ -3,7 +3,15 @@
 \import{macros}
 \title{Open Games with External Choice}
 
+\p{
+  Let #{\cC} be an extensive Markov category. Let #{\cD} be a monoidal stochastic module fibration with Markov structure, which has coproducts which are preserved by the pullbacks.
+  Recall that #{\SLens(\cD)} acquires two monoidal structures: one from dualizing the given monoidal structure on #{\cD,} which we simply denote #{\otimes,I}, and one from taking the coCartesian monoidal structure (which is Cartesian after taking the fiberwise dual, of course), which we denote #{\amp, \top}. Note that #{(\SLens(\cD), \amp)} is a Markov category. For the rest of this section, fix #{\cD, \cC} like this.
+}
 
+\transclude{efr-Y2ZN}
+\p{
+  With the interpretation that #{\bar{X} \amp \bar{Y}} is the object #{\bar{X}_X + \bar{Y}_y} indexed over #{X \otimes Y,} this map simply selects one branch randomly and marginalizes to that coordinate in #{X \otimes Y,} then includes the returned value into the coproduct.
+}
 \transclude{efr-98DR}
 
 \p{
@@ -11,7 +19,5 @@
 }
 
 \transclude{efr-VB6A}
-\transclude{efr-P4T0}
-\transclude{efr-N0ZV}
-\transclude{efr-FT8J}
+\transclude{efr-MLF1}
 \transclude{efr-4CSL}

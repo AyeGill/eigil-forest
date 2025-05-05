@@ -460,3 +460,8 @@
 
 \def\todo[note]{[\note](todo-tree)}
 \def\rparen{\startverb)\stopverb}
+\def\amp{\startverb\&\stopverb}
+
+
+% Game Theory
+\def\Game{\cat{Game}}

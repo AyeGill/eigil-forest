@@ -1,0 +1,23 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  As defined above, #{\oplus} is a symmetric monoidal structure on #{\widetilde{\Game}(\SLens(\cD))}.
+}
+\proof{
+  \p{
+    The monoidal cohereces come from the monoidal structure of #{+,} and it is trivial to see that they preserve the selection relations. The only nontrivial part is proving that #{\oplus} is functorial. Hence let #{G_1: A_1 \to B_1, G_1' : B_1 \to C_1, G_2: A_2 \to B_2, G_2' : B_2 \to C_2} be games.
+    The strategy set of #{(G_1' \oplus G_2')\circ(G_1 \oplus G_2)} is given by #{(\Sigma_1 \amp \Sigma_2) \otimes (\Sigma_1' \otimes \Sigma_2')}
+    For #{(G_1' \circ G_1) \oplus (G_2' \circ G_2),} by #{(\Sigma_1 \otimes \Sigma_1') \amp (\Sigma_2 \otimes \Sigma_2')}.
+  }
+  \p{
+    In the base, these are the same object #{\Sigma_1 \otimes \Sigma_2 \otimes \Sigma_1' \otimes \Sigma_2'}. In the fiber, they are given respectively by 
+    ##{(\bar{\Sigma_1} + \bar{\Sigma_2}) \otimes (\bar{\Sigma_1}' + \bar{\Sigma_2'})} and 
+    ##{(\bar{\Sigma_1} \otimes \bar{\Sigma_1'}) + (\bar{\Sigma_2} \otimes \bar{\Sigma_2}').}
+    Note the coproducts here are the fiberwise ones. There is an obvious lens from the former to the latter (given by the identity map on the base, and the inclusion of two summands in a fourfold coproduct -- note that lenses go backwards in the fiber). Letting #{I \to (A_1 \oplus A_2) \otimes M, (C_1 \oplus C_2) \otimes M \to I} be a context, and going through the definitions, it is clear that the resulting contexts for the former game factors as this lens followed by the context for the latter game. In other words, this lens is a reparametrization map between the two games. It suffices to verify it is an equivalence.
+  }
+  \p{
+    Unpacking the equivalence relation on #{(G_1' \oplus G_2')(G_1 \oplus G_2)}, note that (in all the possible contexts,) the signal to #{G_1} does not depend on the action of #{G_2'} and vice versa, and so for #{G_1'} and #{G_2}. Hence they are in equilibrium if and only if they are in equilibrium in #{G_1'G_1} for the given context (conditioned on that branch), and similarly the other two. This proves the desired equivalence.
+  }
+}

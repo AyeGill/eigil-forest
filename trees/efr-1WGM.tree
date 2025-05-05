@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{\cC} be a semiCartesian symmetric monoidal category. The symmetric monoidal double category of \em{open games in #{\cC}} is #{\dblPara_{\Optic(\cC)_\SS}(\Optic(\cC))}.
+  Let #{\cC} be a semiCartesian symmetric monoidal category. The symmetric monoidal double category of \em{open games in #{\cC}} is #{\Game(\cC) = \dblPara_{\Optic(\cC)_\SS}(\Optic(\cC))}.
 }

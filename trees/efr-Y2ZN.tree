@@ -1,0 +1,13 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\bar{X},\bar{Y}} be objects in #{\SLens(\cD)}, and let #{I \to I + I} be a morphism in #{\cC}.
+  Then there is a canonical map #{\bar{X} \amp \bar{Y} \to \bar{X} + \bar{Y},} so that the underlying map is #{X \otimes Y \to (X \otimes Y) \otimes (I + I) \cong X \otimes Y + X \otimes Y \to X + Y}
+}
+\proof{
+  \p{
+  The first map in the factorization has a deterministic retract (deleting the #{I+I} component,) and using the coproduct-preservation, the coproduct over #{X + Y} and #{\bar{X} \amp \bar{Y}} pull back to the same object over #{X \otimes Y \otimes (I + I)}. Composing the induced stochastic-Cartesian map and the Cartesian map gives the canonical map we wanted.
+  }
+}
