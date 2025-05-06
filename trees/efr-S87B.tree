@@ -3,6 +3,6 @@
 \import{macros}
 \taxon{corollary}
 \p{
-  The category #{\TychDiffStoch} of Tychonoff diffeological spaces and Kleisli maps for the monad #{P} described in \ref{efr-7RS2} is a pullback-positive Markov category. Its deterministic category is #{\TychDiff}. There is a fully faithful functor #{\SmMdf \to \TychDiff} which preserves transverse pullbacks.
+  The category #{\TychDiffStoch} of Tychonoff diffeological spaces and Kleisli maps for the monad #{P} described in \ref{efr-7RS2} is a pullback-positive Markov category. Its deterministic category is #{\TychDiff}. There is a fully faithful functor #{\SmMfd \to \TychDiff} which preserves transverse pullbacks.
   The maps between smooth manifolds are given by weakly continuous families of Radon probability measures, so that the expectation operator carries smooth maps to smooth maps.
 }

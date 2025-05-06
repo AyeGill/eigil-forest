@@ -4,7 +4,7 @@
 \taxon{example}
 \p{
   Let #{\CartSp} denote the category of Cartesian spaces #{\RR^n} and smooth maps between them, which acts on itself by Cartesian product.
-  Then there is a functor #{\SmMfd \to \Optic(\SmMfd) (= \Lens(\SmMdf))} which carries #{\RR^n} to the pair #{\arena{\RR^n}{\RR^n}} and a smooth map #{f: \RR^n \to \RR^m} to the pair #{(f, Rf)} where #{Rf: \RR^n \times \R^m \to \RR^n} is the \em{reverse derivative}, where #{Rf(x,-) : \RR^m \to \RR^n} is the linear map given by the transpose of the Jacobian.
+  Then there is a functor #{\SmMfd \to \Optic(\SmMfd) (= \Lens(\SmMfd))} which carries #{\RR^n} to the pair #{\arena{\RR^n}{\RR^n}} and a smooth map #{f: \RR^n \to \RR^m} to the pair #{(f, Rf)} where #{Rf: \RR^n \times \R^m \to \RR^n} is the \em{reverse derivative}, where #{Rf(x,-) : \RR^m \to \RR^n} is the linear map given by the transpose of the Jacobian.
 }
 \p{
   Moreover this is monoidal for the Hancock tensor on #{\Optic(\CartSp)}. 

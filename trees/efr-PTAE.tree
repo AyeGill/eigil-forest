@@ -4,6 +4,6 @@
 \taxon{definition}
 \title{The Nash Product}
 \p{
-  Let #{\epsilon \in \SS(X), \epsilon' \in \SS(Y)} be equilibrium relations.
+  Let #{\epsilon \in \SS(X), \epsilon' \in \SS(Y)} be selection relations.
   Their \em{Nash product} #{\epsilon \boxtimes \epsilon' \in \SS(X \otimes Y)} is given by #{\{(x \otimes y, k) \mid \epsilon(x,k(1_X \otimes y)), \epsilon'(y, k(x \otimes 1_Y))\}}
 }

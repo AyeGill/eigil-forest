@@ -8,6 +8,6 @@
 \proof{
   \p{
     As above, there is nothing difficult about this.
-    Let #{\cT_\Act} contain as a subcategory the sketch of pseudomonoids #{\cT_\PsMon}, along with three additional objects #{C, MC, MMC,} projections #{\pi^1_M, \pi^1_C_ MC \to M,C,} #{\pi^2_{M_1}, \pi^2_{M_2}, \pi^2_{C} : MMC \to M, M, C}, and limit cones expressing these as the products #{M \times C} and #{M \times M \times C} respectively, a morphism #{\cdot: MC \to C,} and isomorphism 2-cells #{\eta: 1_C \Rightarrow \cdot \braket{I, 1_C}} and #{\mu: \cdot \braket{\pi^2_{M_1}, \cdot \braket{\pi^2_{M_2}, \pi^2_C}} \to \cdot \braket{ \otimes \braket{\pi^2_{M_1}, \pi^2_{M_2}}, \pi^2_C}}, subject to the coherence equations in \ref{efr-OFNV}.
+    Let #{\cT_\Act} contain as a subcategory the sketch of pseudomonoids #{\cT_\PsMon}, along with three additional objects #{C, MC, MMC,} projections #{\pi^1_M, \pi^1_C: MC \to M,C,} #{\pi^2_{M_1}, \pi^2_{M_2}, \pi^2_{C} : MMC \to M, M, C}, and limit cones expressing these as the products #{M \times C} and #{M \times M \times C} respectively, a morphism #{\cdot: MC \to C,} and isomorphism 2-cells #{\eta: 1_C \Rightarrow \cdot \braket{I, 1_C}} and #{\mu: \cdot \braket{\pi^2_{M_1}, \cdot \braket{\pi^2_{M_2}, \pi^2_C}} \to \cdot \braket{ \otimes \braket{\pi^2_{M_1}, \pi^2_{M_2}}, \pi^2_C}}, subject to the coherence equations in \ref{efr-OFNV}.
   }
 }

@@ -7,7 +7,7 @@
   Observe that whenever #{M} is a smooth manifold, the tangent bundle #{TM} is a fiberwise #{P}-algebra, with the multiplication given by taking the mean. 
 }
 \p{
-  Thus we do obtain a stochastic module with a section, and can form a theory of dynamical systems. Given a lens #{(f, f^\#) TS \lensto \bar{A}} and a stochastic section #{k: A \to \bar{A},} the resulting dynamics on #{S} are given by taking the derivative to be the \em{expected value} of #{f^#(s, k(f(s)))}
+  Thus we do obtain a stochastic module with a section, and can form a theory of dynamical systems. Given a lens #{(f, f^\#) TS \lensto \bar{A}} and a stochastic section #{k: A \to \bar{A},} the resulting dynamics on #{S} are given by taking the derivative to be the \em{expected value} of #{f^\#(s, k(f(s)))}
 }
 \p{
   We can imagine discrete approximations of this system which draw from the distribution at times #{0, h, 2h, \dots} and move in the direction given until the next timestep (this is not quite well-defined, since it depends on a choice of trivialization of the tangent bundle, but let us ignore that for the moment).  Then intuitively, when #{h \to 0,} by the law of large numbers we end up with the deterministic dynamics given by moving according to the expected derivative.

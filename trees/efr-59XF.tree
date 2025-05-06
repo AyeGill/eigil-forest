@@ -5,5 +5,5 @@
 \p{
   Let #{\CC} be a bicategory.
   To give a (strictly) reflexive quiver #{(c,d): X_1 \rightrightarrows X_0, s: X_0 \to X_1} the structure of a pseudocategory object in #{\CC}
-  is equivalent to giving, for each object #{A \in \CC,} a pseudo double category structure to #{X_1^A \rightright X_0^A,}, so that the precomposition for #{A \to B} is strictly functorial. Moreover the category of internal pseudo double functors and vertical natural transformations between #{X = (X_1,X_0)} and #{Y = (Y_1,Y_0)} is equivalent to the category consisting of strictly natural transformations of pseudo double functors #{X^{(-)} \to Y^{(-)}}
+  is equivalent to giving, for each object #{A \in \CC,} a pseudo double category structure to #{X_1^A \rightrightarrows X_0^A,}, so that the precomposition for #{A \to B} is strictly functorial. Moreover the category of internal pseudo double functors and vertical natural transformations between #{X = (X_1,X_0)} and #{Y = (Y_1,Y_0)} is equivalent to the category consisting of strictly natural transformations of pseudo double functors #{X^{(-)} \to Y^{(-)}}
 }

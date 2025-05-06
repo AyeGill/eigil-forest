@@ -7,6 +7,7 @@
 }
 \p{
   However, the above isomorphism seems to be \em{lax natural}, in that when #{G_A, G_B, G_C} are games, there is a 2-cell
+\quiver{
   \begin{tikzcd}
 	{A \otimes(B+C)} & {A\otimes B + A \otimes C} \\
 	\\
@@ -17,6 +18,7 @@
 	\arrow[from=3-1, to=3-2]
 	\arrow["{\lambda_{A,B,C}}"', shorten <=14pt, shorten >=14pt, Rightarrow, from=0, to=1]
 \end{tikzcd}
+}
 }
 \p{
   Given by copying the strategy for #{G_A}. Whether this is in fact a lax natural transformation, we have not explored.

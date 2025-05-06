@@ -208,6 +208,8 @@
 \def\SLens{#{\cat{SLens}}}
 \def\Optic{#{\cat{Optic}}}
 \def\coOptic{#{\cat{coOptic}}}
+\def\lens{#{\mathrm{lens}}}
+\def\chart{#{\mathrm{chart}}}
 
 
 \def\Cat{#{\cat{Cat}}} %should perhaps be a 2-category by default...or double?
@@ -219,6 +221,8 @@
 \def\dblCat{#{\dblcat{Cat}}} % equipment of cats, not to be confused with DblCat
 \def\Mult{#{\cat{Mult}}}
 \def\PsDbl{#{\cat{PsDbl}}}
+\def\PsDblCat{\cat{PsDblCat}}
+\def\DblCat{\cat{DblCat}}
 \def\Dbl{#{\cat{Dbl}}}
 \def\sSet{#{\cat{sSet}}}
 \def\Nat{#{\operatorname{Nat}}}
@@ -236,6 +240,7 @@
 \def\Id{#{\operatorname{Id}}}
 \def\MonCat{#{\cat{MonCat}}}
 \def\SymMonCat{#{\cat{SymMonCat}}}
+\def\SymMon{\cat{SymMon}}
 \def\Gpd{#{\cat{Gpd}}}
 \def\Set{#{\cat{Set}}}
 \def\dblSet{#{\dblcat{Set}}} % equipment of spans of sets, i.e. Span(Set)
@@ -316,6 +321,7 @@
 \def\dblPara{#{\dblcat{Para}}}
 \def\Ctrl{#{\dblcat{Ctrl}}}
 \def\Sys{#{\cat{Sys}}}
+\def\BiSys{#{\cat{BiSys}}}
 
 % Poly
 
@@ -361,15 +367,20 @@
 \def\BanBun{#{\cat{BanBun}}}
 \def\CHaus{#{\cat{CHaus}}}
 \def\CHausStoch{#{\cat{CHausStoch}}}
+\def\norm[x]{#{\left \lVert \x \right\rVert}}
 
 % Geometry
 
 \def\Top{#{\cat{Top}}}
 \def\Mfld{#{\cat{Mfld}}}
+\def\SmMfd{\cat{SmMfd}}
+\def\CartSp{\cat{CartSp}}
+\def\Bun{\cat{Bun}}
 \def\Subm{#{\cat{Subm}}}
 \def\CPoly{#{\cat{CPoly}}}
 \def\SPoly{#{\cat{SPoly}}}
 \def\Euc{#{\cat{Euc}}}
+\def\Tych{\cat{Tych}}
 
 % C-sets
 
@@ -463,5 +474,8 @@
 \def\amp{\startverb\&\stopverb}
 
 
+
 % Game Theory
 \def\Game{\cat{Game}}
+\def\argmax{#{\mathrm{argmax}}}
+\def\Ctx{#{\mathrm{Ctx}}}

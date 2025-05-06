@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  Let #{\cD \to \cC} be a Markov prefibration, and let #{F: \cC' \to \cC} be any functor from another Markov category which preserves deterministic maps. Then the pullback #{\cD' = \cD \times_{\cC} \cC' \to \cC'} is again a Markov fibration, and the functor #{\cD' \to \cD} preserves Cartesian maps.
+  Let #{\cD \to \cC} be a Markov prefibration, and let #{F: \cC' \to \cC} be any functor from another Markov category which preserves deterministic maps. Then the pullback #{\cD' = \cD \times_{\cC} \cC' \to \cC'} is again a Markov prefibration, and the functor #{\cD' \to \cD} preserves Cartesian maps.
 }
 \proof{
 \p{
