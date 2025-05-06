@@ -25,7 +25,7 @@
   Before we proceed to the case of stochastic lenses, we will pause briefly to make a small modification to the preceding theory as presented in \ref{towards-cybercat}. In a game with forwards play function #{\Sigma \times X \to Y,} there are two ways to talk about the player's "choice" -- we may say that the player chooses a strategy #{\sigma \in \Sigma,} which then has some effect. Or we may say that the choice is really the #{y \in Y,} and the strategy #{\sigma} is the "precommitment" of choosing what to do given each possible #{x \in X}.
 }
 \p{
-  Once we introduce randomness, we see that there are two \em{distinct} ways for a player to make a random choice: first, his strategy #{I \to \Delta(\Sigma)} may be stochastic - that is, he is choosing a random strategy. Or the morphism #{\Sigma \times X \to Y} may be stochastic - this means each strategy #{\sigma} contains a specification of how to randomly choose #{y} given each possible #{x}.
+  Once we introduce randomness -- working in #{Kl(\Delta)}, for example -- we see that there are two \em{distinct} ways for a player to make a random choice: first, his strategy #{I \to \Delta(\Sigma)} may be stochastic - that is, he is choosing a random strategy. Or the morphism #{\Sigma \times X \to \Delta(Y)} may be stochastic - this means each strategy #{\sigma} contains a specification of how to randomly choose #{y} given each possible #{x}.
 }
 \p{
   In the case where #{X = *}, the distinction is between taking #{\Sigma = Y} and letting the play function be the identity, and taking #{\Sigma = \Delta(Y)} and letting the play function be the \em{sampling map} which stochastically draws an element from a distribution.

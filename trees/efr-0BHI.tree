@@ -4,7 +4,7 @@
 \taxon{proof}
 \title{Proof of \ref{efr-I897}}
 \p{
-  First recall that #{\Mod(\cT,\CC)} can be identified with the subcategory of #{[\CC^op, \Mod(\cT)]} spanned by the levelwise representable presheaves.
+  First recall that #{\Mod(\cT,\CC)} can be identified with the subcategory of #{[\CC^\op, \Mod(\cT)]} spanned by the levelwise representable presheaves.
   Note that for #{\cT = \cT_\PsCat,} it suffices to verify representability for #{C_0,C_1 \in \cT_\PsCat,} since the rest are pullbacks of these, and pullbacks of representable presheaves are again representable since #{\CC} admits pullbacks.
 }
 \p{

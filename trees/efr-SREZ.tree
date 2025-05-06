@@ -10,7 +10,7 @@
 
 \transclude{efr-Y2ZN}
 \p{
-  With the interpretation that #{\bar{X} \amp \bar{Y}} is the object #{\bar{X}_X + \bar{Y}_y} indexed over #{X \otimes Y,} this map simply selects one branch randomly and marginalizes to that coordinate in #{X \otimes Y,} then includes the returned value into the coproduct.
+  With the interpretation that #{\bar{X} \amp \bar{Y}} is the object #{\bar{X}_x + \bar{Y}_y} indexed over #{X \otimes Y,} this map simply selects one branch randomly and marginalizes to that coordinate in #{X \otimes Y,} then includes the returned value into the coproduct.
 }
 \transclude{efr-98DR}
 

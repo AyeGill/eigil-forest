@@ -4,11 +4,15 @@
 \taxon{proposition}
 \p{
   If #{\CC \to \DD} is a 2-functor that preserves finite 2-limits, the square
+}
+\p{
   \quiver{
     \begin{tikzcd}
     \Act(\CC) \ar[d] \ar[r] & \Act(\DD) \ar[d]\\
     \PsCat(\CC) \ar[r] & \PsCat(\DD)
     \end{tikzcd}
   }
+}
+\p{
   commutes up to strict natural isomorphism. (In particular, the square involving the subcategories of strict homomorphisms also commutes up to natural isomorphism).
 }
