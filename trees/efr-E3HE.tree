@@ -21,6 +21,9 @@
   This basic idea was already noted by Fritz (and goes back to Golubtsov's work in \ref{golubtsov-kleisli}, an important part of the prehistory of Markov categories), although the precise statement above appears to be novel. Since the coherence conditions required of the comonoids in a Markov structure can be somewhat hard to remember, this characterization may be easier to understand.
 }
 
+\transclude{efr-38FR}
+
+
 \transclude{efr-OSN1}
 
 \transclude{efr-NKD7}

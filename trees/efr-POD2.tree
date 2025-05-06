@@ -1,0 +1,27 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\title{Preliminaries}
+\subtree{
+  \title{Introduction}
+  \p{
+    We will begin by reviewing some theory that plays a key role in this thesis. With a very few exceptions, nothing here is novel, but we find it useful to include these here -- both for the convenience of the reader, to familiarize them with theory that we will make constant reference to, but also to set the stage for our contributions.
+  }
+  \p{
+    First, we will give an overview of \em{optics} and \em{lenses}, in a bit more detail than the introduction. We have already given a review of the sources here, but we will find it useful to put this on proper footing.
+  }
+  \p{
+    Second, the theory of (Grothendieck) fibrations. There is far too much to say about these for such a brief space, so we will limit ourselves to what we need for the rest of the thesis, especially for the section on Markov fibrations.
+  }
+  \p{
+    Next, we will review the theory of Markov categories. This is a synthetic approach to probability theory, introduced by Fritz \ref{fritz-synthetic-markov-cats}, and since developed further by many authors, including the author. Here we note the only exceptions to the claim that nothing in this chapter is novel. First, the notion of \em{representable Markov category} \ref{efr-38FR} was introduced by Fritz, Gonda, Perrone, and the author in \ref{fritz-gonda-perrone-rischel-rep}. We will not give a thorough treatment here, but since representable Markov categories are so ubiquitous, we will frequently note how different properties or structure on a Markov category relates to representability. We will also introduce a few new concepts which play a role in the theory of Markov fibrations in \ref{efr-O088}. These are of no great independent interest, as far as we can tell, nor are they difficult, but this seemed the best place to put them.
+  }
+  \p{
+    Finally, we give a brief review of Myers' \em{categorical systems theory}. This will mainly be to set the stage for \ref{efr-ZRUZ}, where we develop a triple categorical version of the theory.
+  }
+}
+
+\transclude{efr-ZCTD}%Optics and lenses
+\transclude{efr-3AEA}%Fibrations
+\transclude{efr-E3HE}%Markov categories
+\transclude{efr-0023}%Review of categorical systems theory

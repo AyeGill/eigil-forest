@@ -6,6 +6,9 @@
 %Introduction
 \transclude{efr-HQ73}
 
+%Preliminaries
+\transclude{efr-POD2}
+
 %Markov Fibrations
 \transclude{efr-O088}
 

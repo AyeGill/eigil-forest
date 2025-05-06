@@ -31,4 +31,4 @@
   Given a pseudofunctor #{\cA: \cC^\op \to \Cat,} it is obvious that the assignment #{\cA(-)^\op} is pseudofunctorial as well (the required natural isomorphisms are just the inverses of the ones for #{\cA}). Applying this through the equivalence of fibrations and pseudofunctors leads to the \em{fiberwise opposite} of a fibration. Explicitly:
 }
 
-\ref{efr-8LGE}
+\transclude{efr-8LGE}

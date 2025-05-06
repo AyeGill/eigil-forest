@@ -1,0 +1,8 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\title{Representable Markov category}
+\taxon{definition}
+\p{
+  A Markov category is \em{representable} if the inclusion #{\cC_\det \into \cC} admits a right adjoint. In this case we denote the right adjoint #{P} and call the object #{PX} for #{X \in \cC} a \em{distribution object} for #{X}. Observe that #{\cC(X,Y) = \cC_\det(X,PY)} (by definition,) and hence #{\cC = Kl(P)} where we denote the induced monad on #{\cC_\det} #{P} by an abuse of notation.
+}

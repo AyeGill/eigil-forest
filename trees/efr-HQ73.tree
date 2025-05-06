@@ -40,5 +40,4 @@
     There have been a number of attempts at this - see eg \ref{fibre-optics-2021}, \ref{hedges-braithwaite-dep}, \ref{milewski-polylens}, \ref{vertechi-dep-optics}. While these efforts have to some extent succeeded in describing a theory that is general enough to contain the desired examples, it is generally very ad hoc. The construction of optics as a special case of Vertechi's dependent optics (\ref{vertechi-dep-optics}) gives them as fibre optics with the indexing bicategory being (the delooping of) a monoidal category #{\cM}, but embeds lenses using a bicategory of spans. Thus simple lenses admit two distinct encodings in this theory. Moreover, Vertechi's example of dependent monoidal optics fails to describe a supercategory of #{\Optic(\cC)} when applied to Markov categories, and are thus not suitable for, for example, game theory.
   }
 }
-\transclude{efr-0023}%Review of categorical systems theory
 \transclude{efr-0008}%Acknowledgements
