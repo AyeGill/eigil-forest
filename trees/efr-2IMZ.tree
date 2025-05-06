@@ -23,7 +23,7 @@
 \transclude{efr-0043}%FinStoch example
 \transclude{efr-8B5X}%Optics counterexample
 \p{
-  This counterexample indicates that we can't expect to construct a reasonable notion of stochastic optics by dualizing a Markov fibration that looks like #{\MAr{\BorelStoch}} - in fact, since over deterministic maps #{\Optic(\BorelStoch)} \em{is} the fiberwise dual of (the restriction to trivially-indexed objects of) #{\MAr{\BorelStoch},} this example shows that there is \em{no Markov prefibration whose deterministic part is the fiberwise dual of #{\BorelStoch}}. Moreover, as the example indicates, this is not a mere technical issue, but an unavoidable fact about optics in general measurable spaces - even up to behavioral equivalence, they simply don't satisfy the conditions of being a Markov prefibration. (But see \ref{efr-W3B5})
+  This counterexample indicates that, although #{\MAr{\BorelStoch}} is a Markov prefibration, we can not expect a dual version of this prefibration - in fact, since over deterministic maps #{\Optic(\BorelStoch)} \em{is} the fiberwise dual of (the restriction to trivially-indexed objects of) #{\MAr{\BorelStoch},} this example shows that there is \em{no Markov prefibration whose deterministic part is the fiberwise dual of #{\BorelStoch}}. Moreover, as the example indicates, this is not a mere technical issue, but an unavoidable fact about optics in general measurable spaces - even up to behavioral equivalence, they simply don't satisfy the conditions of being a Markov prefibration. (But see \ref{efr-K6NM})
 }
 \p{
   On the other hand, we have:
