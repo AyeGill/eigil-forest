@@ -1,0 +1,21 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{#{\BiSys}}
+\p{
+  Let #{\cA \to \cC, T: \cC \to \cA} be a symmetric monoidal dynamical systems theory. Then this diagram:
+  \quiver{
+    \begin{tikzcd}
+	{(\mathcal{C}^\to)^\simeq} & {\mathsf{Arena}(\mathcal{A})_1} \\
+	{\mathcal{C}^\simeq} & {\mathsf{Arena}(\mathcal{A})_0}
+	\arrow["{(T^\to)}"', from=1-1, to=1-2]
+	\arrow[shift right, from=1-1, to=2-1]
+	\arrow[shift left, from=1-1, to=2-1]
+	\arrow[shift right, from=1-2, to=2-2]
+	\arrow[shift left, from=1-2, to=2-2]
+	\arrow["T"', from=2-1, to=2-2]
+\end{tikzcd}
+  }
+  depicts two strict double categories, each with a symmetric monoidal structure, and a strict double functor between them which is (non-strictly) a symmetric monoidal functor. This induces an object of #{\SymMon(\Act(\DblCat))}. We denote by #{\BiSys(T)} this induced object.
+}

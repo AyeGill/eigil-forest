@@ -1,0 +1,15 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\phi, \psi: \bar{A} \to \bar{B}} be parallel decorated spans in #{\widetilde{\Span(\cD)^\chart}} (or #{\widetilde{\Span(\cD)^\lens}} ).
+}
+\p{
+  They represent the same stochastic chart (lens) if and only if there exists a zig-zag of globular 2-cells between them.
+}
+\proof{
+  \p{
+    Unwinding the definitions, a 2-cell #{M_\phi \leftarrow K \to M_\psi,} #{s: M_\phi \to K} is precisely a pair of an equation from #{\overline{\cD}} (given by the map #{K \to M_\psi}) and an equation from #{\SChart(\cD)} (given by the map #{K \to M_\phi} and the section #{s}). 
+  }
+}

@@ -3,10 +3,23 @@
 \import{macros}
 \title{Double categories of stochastic charts and lenses}
 
-
+\p{
+  To construct the double category #{\Arena(\cA)} of charts and lenses for an ordinary fibration #{\cA \to \cC}, one can use the following procedure:
+}
+\ol{
+  \li{
+    Form the square double cateogry #{\cA^\to \rightrightarrows \cA}
+  }
+  \li{
+    Take the fiberwise opposite of these objects: #{(\cA^\to)^\fop \rightrightarrows \cA^\fop}.
+  }
+  \li{
+    Observe that fiberwise opposite preserves pullbacks, and hence this is again a double category.
+  }
+}
 
 \p{
-  If #{\cD \to \cC} is a Grothendieck fibration and #{\cA} is any category, then #{\cD^\cA \to \cC^\cA} is again a fibration (which classifies the lax limits of the composite #{\cA^\op \to \cC^\op \to \Cat}), and a natural transformation is Cartesian iff it is levelwise Cartesian. It would be neat to obtain a similar result for Markov fibrations.
+  Here we used the following result: If #{\cD \to \cC} is a Grothendieck fibration and #{\cA} is any category, then #{\cD^\cA \to \cC^\cA} is again a fibration (which classifies the lax limits of the composite #{\cA^\op \to \cC^\op \to \Cat}), and a natural transformation is Cartesian iff it is levelwise Cartesian. It would be neat to obtain a similar result for Markov fibrations.
 }
 
 \p{
@@ -14,11 +27,10 @@
 }
 \p{
   First, we will see that this indeed works for Markov \em{prefibrations}. This implies that #{(-)^\cA} lifts from fibrations to stochastic modules.
-
 }
 
 \transclude{efr-6G7N}
-
+\transclude{efr-DXJR}
 \p{
   The question is now
 }
@@ -28,17 +40,12 @@
   \li{There is an induced map #{\SChart{\Fun(\cA,\cD|_\det)} \to \Fun(\cA,\cD)} (where the latter is taken by convention to mean the full subcategory of functors whose image in #{\cC} consists of deterministic arrows). Is this an isomorphism? (If it is, clearly this implies point 1)}
 }
 \p{
-  Unfortunately this is by no means obvious - the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these - we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. However, if the base category admits conditionals, we will be able to make this work.
-}
-
-\transclude{efr-84YK}
-
-\p{
-  When #{\cD \to \cC} is an ordinary Grothendieck fibration, there is a double category #{\Arena(\cD)} where the vertical category is the fiberwise opposite #{\cD^\fop}, and the horizontal category is #{\cD}. Recall that the category of 2-cells can be constructed very simply as #{(\cD^\to)^\fop,} using the observation that #{\cD^\to \to \cC^\to} is automatically a Grothendieck fibration again. This double category is the basis for Myers' abstract approach to open dynamical systems.
+  Unfortunately this is by no means obvious - the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these - we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. 
 }
 \p{
-  If #{\cD \to \cC} is instead a Markov fibration, we may attempt to apply the same method. However, we quickly run into unavoidable problems stemming from the fact that #{\SChart(-)} does not preserve limits of stochastic modules. There is a functor #{\SLens(\cD^\to \times_\cD \cD^\to) \to \SLens(\cD^\to) \times_{\SLens(\cD)} \SLens(\cD^\to),} but in general it is neither full nor faithful.
+  We may attempt to ignore this issue and simply try to form a double category #{\SLens(\MAr{\cD}) \rightrightarrows \SLens(\cD),} given a stochastic module #{\cD}, but here the problem is that #{\SLens} does not commute with limits in general. Hence we can not easily define a composition on the 2-cells of lenses obtained this way.
 }
+
 \p{
   There are various ways we might attempt to remedy this problem. One approach would be to formulate a behavioural notion of "commutativity" for squares of stochastic lenses and charts, but the problem with this is that it is not obvious whether this property is stable under composition.
 }
@@ -51,11 +58,25 @@
 
 
 \transclude{efr-KO4T}
+\p{
+  Naturally, we are interested in the case of #{\Span_{\cC}(\cD / \cC_\det)} for a stochastic module #{\cD}. Then the decorated spans are representatives for stochastic charts. We will start by introducing a loosed notion of 2-cell for these spans, which combines the directed equivalences with the ordinary deterministic 2-cells of spans.
+}
 \transclude{efr-RD28}
 \transclude{efr-DRU6}
 \transclude{efr-L7X0}
 
+\transclude{efr-MUNG}
+\p{
+  (The modification of everything above to lenses instead of charts is obvious).
+}
+
+\p{
+  In fact, the globular 2-cells are in a sense exactly the equations defining the set of charts:
+}
+\transclude{efr-CU3J}
+
+
+\p{
+  The following straightforward lemma shows that charts over deterministic bases have initial representatives as spans. This will be important later:
+}
 \transclude{efr-10CM}
-
-\transclude{efr-LQD2}%behavioural commutativity
-

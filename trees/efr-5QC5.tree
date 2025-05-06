@@ -1,0 +1,18 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\parent{efr-ZRUZ}
+\title{Introduction}
+
+
+\transclude{efr-0007}
+
+\transclude{efr-000E}
+
+\p{
+  In this chapter, we will put together the ingredients we have assembled so far and construct a triple category of stochastic dynamical systems. We will also give the construction of triple categories of systems in the ordinary case.
+}
+\p{
+  Note that the theory of Markov fibrations does not quite generalize the ordinary theory of fibrations - only fibrations with a Cartesian base (\ref{efr-CJTH} and \ref{efr-Z75A}). Since the pullbacks in #{\cC_\det} play such a key role in the theory, it is not clear that this can be dispensed with. Although Cartesian bases certainly cover the vast majority of examples from the literature on categorical systems, it is of course worth noting that they are not a requirement. Moreover, we will see that the construction of the double category of lenses and charts encounters certain problems for a general Markov fibration not seen for ordinary fibrations. Hence we will give a separate description of the triple categories in each of the two cases.
+}
+

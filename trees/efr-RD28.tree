@@ -3,8 +3,8 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{\cC} be a Markov category and let #{\cD \to \cC} be a Markov prefibration.
-  Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be precharts in , and let #{f: \bar{X_1} \charto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
+  Let #{\cC} be a Markov category and let #{\cD} be a stochastic module over #{\cC}.
+  Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be decorated spans in #{\Span_{\cC}(\cD / \cC_\det)}, and let #{f: \bar{X_1} \charto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
    \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
@@ -13,7 +13,7 @@
   }
 }
 \p{
-  A \em{2-cell of precharts} for this data consists of a sectioned span #{M_1 \leftarrow K \to M_2, s: M_1 \to K}, so that the squares
+  A \em{2-cell of decorated spans} for this data consists of a span #{M_1 \leftarrow K \to M_2} with a section #{s: M_1 \to K}, so that the squares
   \quiver{
     \begin{tikzcd}
     K \ar[r] \ar[d] & M_2 \ar[d]\\

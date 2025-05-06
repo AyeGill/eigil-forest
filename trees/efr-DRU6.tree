@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  2-cells of precharts compose - that is, given a diagram
+  2-cells of decorated spans compose - that is, given a diagram
   \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
@@ -11,7 +11,7 @@
     \bar{X_3} \ar[r, "\phi_3"]        & \bar{Y_3}
     \end{tikzcd} 
   }
-  where the horizontal maps are precharts, and the vertical maps are maps in #{\cD} with deterministic base, and given maps of precharts #{\phi_1 \xto{\alpha} \phi_2 \xto{\beta} \phi_3,} there is a prechart #{\phi_1 \to \phi_3}
+  where the horizontal maps are decorated spans, and the vertical maps are maps in #{\cD} with deterministic base, and given maps of decorated spans #{\phi_1 \xto{\alpha} \phi_2 \xto{\beta} \phi_3,} there is a map of decorated spans #{\phi_1 \to \phi_3}
 }
 \proof{
   \p{

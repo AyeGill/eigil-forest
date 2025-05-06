@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Prechart cells compose horizontally: Given a square
+  2-cells of decorated spans compose horizontally: Given a square
   \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[r, "\phi_1"] \ar[d] & \bar{Y_1} \ar[r, "\psi_1"] \ar[d] & \bar{Z_1} \ar[d]\\

@@ -1,0 +1,10 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  Let #{\cD} be a stochastic module over #{\cC}. There is a double category #{\widetilde{\Span(\cD)^\chart}} which has decorated spans as its horizontal maps, morphisms in #{\cD|_\det} as its vertical maps, and decorated span 2-cells as its 2-cells.
+}
+\p{
+  Moreover, there is another double category #{\widetilde{\Span(\cD)^\lens}} which has decorated spans \em{in #{\cD^\fop}} as its horizontal maps instead.
+}

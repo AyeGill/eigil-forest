@@ -6,9 +6,9 @@
   Let #{\cD \to \cC} be a (Grothendieck) fibration, and let #{\cC \to \cC'} be a faithful, identity-on-objects functor. Suppose #{\cC} admits pullbacks, and given a pair of morphisms #{P \to X,Y \in \cC'} over #{Z}, where #{P \to X} is in #{\cC}, there is a unique common factorization #{P \to X \times_Z Y}.
 }
 \ol{
-  \li{The double category #{\Span_{\cC'}(\cC)} has #{\cC} as the vertical category, spans #{X \leftarrow P \to Y} in #{\cC} equipped with a section #{X \to P \in {\cC'}} as horizontal cells, and maps of spans which commute with the sections as 2-cells. The horizontal cells are called \em{sectioned spans}.}
+  \li{The double category #{\Span_{\cC'}(\cC)} has #{\cC} as the vertical category, spans #{X \leftarrow P \to Y} in #{\cC} equipped with a section #{X \to P \in {\cC'}} as horizontal cells, and maps of spans which commute with the sections as 2-cells.}
   \li{
-    The double category #{\Span_{\cC'}(\cD / \cC)} lying over #{\Span_{\cC'}(\cC)} has #{\cD} as the vertical category, and spans #{\bar{X} \xfrom{f} \bar{P} \xto{g} \bar{Y}} where #{f} is Cartesian, decorated with a section #{X \to P} in #{\cC'} as the horizontal cells, and maps of such spans (so that the underlying thing commutes with the sections) as the 2-cells. The horizontal cells are called \em{precharts}.
+    The double category #{\Span_{\cC'}(\cD / \cC)} lying over #{\Span_{\cC'}(\cC)} has #{\cD} as the vertical category, and spans #{\bar{X} \xfrom{f} \bar{P} \xto{g} \bar{Y}} where #{f} is Cartesian, decorated with a section #{X \to P} in #{\cC'} as the horizontal cells, and maps of such spans (so that the underlying thing commutes with the sections) as the 2-cells. We will call the horizontal cells \em{decorated spans}.
   }
   \li{
     There is an apparent forgetful functor #{\Span_{\cC'}(\cD / \cC) \to \Span_{\cC'}(\cC)}

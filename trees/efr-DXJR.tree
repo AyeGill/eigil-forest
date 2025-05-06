@@ -1,0 +1,12 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{corollary}
+\p{
+  Let #{\cA} be a small category, and let #{\cD \to \cC} be a Markov prefibration. Let #{\Fun(\cA,\cD) := \cD^\cA \times_{\cC^\cA} \Fun(\cA,\cC)}. Then the functor #{\Fun(\cA,\cD) \to \Fun(\cA,\cC)} is a Markov prefibration.
+}
+\proof{
+  \p{
+    Note that #{\Fun(\cA,\cD)} is a limit of the categories #{\MAr{\cD}} and prefibrations are stable under these limits.
+  }
+}

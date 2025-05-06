@@ -1,0 +1,67 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\title{The Structure of #{\BiSys}}
+\p{
+  #{\BiSys(T)} has the following structure: The objects are simply the objects of #{\cA} -- the bundles.
+}
+\p{
+  There are three types of 1-cell: Lenses, that is morphism in #{\cA^\fop}, which we write #{A \lensto B}, charts, that is morphisms in #{\cA}, which we write #{A \charto B}, and \em{bisystems,} which are pairs #{(S \in \cC, TS \otimes A \lensto B)}, and which we write #{A \proto B}.
+}
+\p{
+  Moreover there are three types of 2-cell:
+  \ol{
+  \li{
+    Lens-chart cells, which are the 2-cells of #{\Arena(\cA)}. Note that this double category is thin. We will say a square of lenses and charts \em{commutes} if it is filled by such a 2-cell.
+  }
+  \li{
+    Chart-bisystem cells - given charts #{A_1 \charto B_1, A_2 \charto B_2} and systems #{TS \otimes A_1 \lensto A_2, TS' \otimes A_2 \lensto B_2,} a square filling this is a choice of map #{S \to S' \in \cC} so that the resulting lens-chart square
+    \quiver{
+      \begin{tikzcd}
+	{TS \otimes A_1} & {A_2} \\
+	{TS'\otimes B_1} & {B_2}
+	\arrow[shift right, from=1-1, to=1-2]
+	\arrow[shift right, from=1-1, to=2-1]
+	\arrow[shift left, from=1-1, to=2-1]
+	\arrow[shift right, from=1-2, to=1-1]
+	\arrow[shift right, from=1-2, to=2-2]
+	\arrow[shift left, from=1-2, to=2-2]
+	\arrow[shift right, from=2-1, to=2-2]
+	\arrow[shift right, from=2-2, to=2-1]
+\end{tikzcd}
+    }
+    commutes.
+  }
+  \li{
+    Lens-bisystem cells. Given lenses #{A_1 \lensto B_1, A_2 \lensto B_2,} and systems #{TS' \otimes A_1 \lensto A_2, TS' \otimes B_1 \lensto B_2,} a 2-cell consists of an \em{isomorphism #{S' \xto{\sim} S'}} so that the resulting square of lenses commutes (recall that isomorphism charts are the same as isomorphism lenses).
+    \quiver{
+      \begin{tikzcd}
+	{TS \otimes A_1} & {A_2} \\
+	{TS'\otimes B_1} & {B_2}
+	\arrow[shift right, from=1-1, to=1-2]
+	\arrow[shift right, from=1-1, to=2-1]
+	\arrow[shift right, from=1-2, to=1-1]
+	\arrow[shift right, from=1-2, to=2-2]
+	\arrow[shift right, from=2-1, to=1-1]
+	\arrow[shift right, from=2-1, to=2-2]
+	\arrow[shift right, from=2-2, to=1-2]
+	\arrow[shift right, from=2-2, to=2-1]
+\end{tikzcd}
+    }
+  }
+  }
+}
+\p{
+  The charts, bisystems and chart-bisystem cells form a pseudo double category with the obvious composition. So do the lenses, bisystems and lens-bisystem cells. Finally, there is a notion of 3-cell given by a box whose sides are 2-cells of each kind, so that the resulting diagram in #{\cC} (with isomorphisms on two sides) commutes.
+}
+\p{
+  The lens-bisystem double category is #{\dblPara_{\cC^\simeq}(\Arena{\cA}_0)} (recall that #{\Arena{\cA}_0 = \cA^\fop}), with the action given by the functor #{T} (restricted to isomorphisms). The chart-bisystem double category is the result of taking #{\BiSys(T)}, a pseudocategory in double categories, and applying #{\PsCat((-)_h) : \PsCat(\DblCat) \to \PsCat(\Cat)} where #{(-)_h} takes the \em{horizontal} category of a (strict) double category.
+}
+\p{
+  The 3-cells, of course, are the 2-cells of #{\dblPara_{(\cC^\to)^\simeq}(\Arena(\cA)_1)}. Analogously to the above, for each class of 1-cells, there is a 
+  double category with those as the objects, the two types of cell as the two morphisms, and the 3-cells as the 2-cells.
+}
+\p{
+  All of these six double categories admit a symmetric monoidal structure.
+}
