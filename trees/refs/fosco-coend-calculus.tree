@@ -1,0 +1,15 @@
+\title{(Co)end Calculus}
+\date{2021-06-30}
+\taxon{reference}
+\meta{doi}{10.1017/9781108778657}
+\meta{external}{https://www.cambridge.org/core/product/identifier/9781108778657/type/book}
+\author{Fosco Loregian}
+\meta{bibtex}{\startverb
+ @book
+{fosco-coend-calculus, edition={1}, title={(Co)end Calculus}, rights={https://www.cambridge.org/core/terms}, ISBN={978-1-108-77865-7}, url={https://www.cambridge.org/core/product/identifier/9781108778657/type/book}, DOI={10.1017/9781108778657}, abstractNote={The language of ends and (co)ends provides a natural and general way of expressing many phenomena in category theory, in the abstract and in applications. Yet although category-theoretic methods are now widely used by mathematicians, since (co)ends lie just beyond a first course in category theory, they are typically only used by category theorists, for whom they are something of a secret weapon. This book is the first systematic treatment of the theory of (co)ends. Aimed at a wide audience, it presents the (co)end calculus as a powerful tool to clarify and simplify definitions and results in category theory and export them for use in diverse areas of mathematics and computer science. It is organised as an easy-to-cite reference manual, and will be of interest to category theorists and users of category theory alike.}, publisher={Cambridge University Press}, author={Loregian, Fosco}, year={2021}, month={Jun} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+The language of ends and (co)ends provides a natural and general way of expressing many phenomena in category theory, in the abstract and in applications. Yet although category-theoretic methods are now widely used by mathematicians, since (co)ends lie just beyond a first course in category theory, they are typically only used by category theorists, for whom they are something of a secret weapon. This book is the first systematic treatment of the theory of (co)ends. Aimed at a wide audience, it presents the (co)end calculus as a powerful tool to clarify and simplify definitions and results in category theory and export them for use in diverse areas of mathematics and computer science. It is organised as an easy-to-cite reference manual, and will be of interest to category theorists and users of category theory alike.
+}}
+

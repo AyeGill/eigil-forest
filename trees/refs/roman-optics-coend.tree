@@ -1,0 +1,10 @@
+\title{Open Diagrams via Coend Calculus}
+\date{2021-02-08}
+\taxon{reference}
+\meta{doi}{10.4204/EPTCS.333.5}
+\author{Mario Román}
+\meta{bibtex}{\startverb
+ @article
+{roman-optics-coend, title={Open Diagrams via Coend Calculus}, volume={333}, ISSN={2075-2180}, DOI={10.4204/EPTCS.333.5}, journal={Electronic Proceedings in Theoretical Computer Science}, author={Román, Mario}, year={2021}, month={Feb}, pages={65-78},language={en} }
+\stopverb}
+

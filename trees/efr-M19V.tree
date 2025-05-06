@@ -1,0 +1,15 @@
+\date{2025-05-07}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  If #{\cC} is Cartesian monoidal, #{\Optic(\cC)(\arena{A}{X},\arena{B}{Y}) \cong \cC(X,Y) \times \cC(X \times B,A)}
+}
+\proof{
+  \p{
+    ##{\int^M \cC(X, M \times Y) \times \cC(M \times B,A) = \int^M \cC(X,Y) \times \cC(X,M) \times \cC(M \times B,A) = \cC(X,Y) \times \cC(X \times B,A).}
+  }
+  \p{
+    Here we use a general fact about coends, that #{\int^M \cC(X,M) \times F(M) \cong F(X)} -- this has been called the \em{ninja Yoneda lemma}. See \ref{fosco-coend-calculus} for more on coends.
+  }
+}

@@ -296,6 +296,8 @@
 \def\Segal{#{\mathrm{Segal}}}
 
 
+\def\CRing{\cat{CRing}}
+
 % Universal Algebra
 
 \def\Terms{#{\operatorname{\mathbf{Terms}}}}

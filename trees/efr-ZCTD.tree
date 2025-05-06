@@ -8,7 +8,7 @@
 
 \transclude{efr-MMQZ}
 \p{
-  Note that if #{\cM} is symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
+  Note that if #{\cM,\cC,\cD} are symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
 }
 \transclude{efr-CRYH}
 \p{
@@ -17,5 +17,27 @@
 \p{
   We call this relation the \em{sliding} relation (because we slide the map #{\phi} from the backwards part to the forwards part).
 }
+\p{
+  Of course, we can also let the arrows in #{\cD} go in the same direction as #{\cC}. This does not seem to have played any role in the literature, but we will give this a name, as it is a useful example to have in mind for Markov fibrations (where we will construct our dependent optics, conceptually, as a fiberwise opposite)
+}
 
 \transclude{efr-G0YN}%COOPTICS
+
+\transclude{efr-J0WW}
+\transclude{efr-UNIN}
+\p{
+  The fact that in #{\Optic(\cM),} states (maps from the monoidal unit) on #{\arena{A}{X}} are given by states on #{X}, while costates are given by maps #{X \to A} plays an important role in the use of optics to describe open games. See \ref{efr-GFG0} for more on this.
+}
+
+\p{
+  Let us say a few things about lenses.
+}
+\transclude{efr-M19V}
+\p{
+  In this case we sometimes write #{\Lens(\cC)} for the category #{\Optic(\cC)}. We have the following fact:
+}
+\transclude{efr-2793}
+\transclude{efr-VTPS}
+\p{
+  This is the first way to see the maps of #{(\cC^\to)^\fop} as dependent lenses - they receive the category of lenses as a full subcategory. 
+}

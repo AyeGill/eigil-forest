@@ -1,0 +1,10 @@
+\date{2025-05-07}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Suppose #{\cM} is semicartesian -- in other words, that #{I \in \cM} is terminal. Then there is a functor #{\Optic_\cM(\cC,\cD) \to \cC}, which takes a #{\arena{A}{X}} to #{X}, and pair #{\braket{f: X \to M \cdot Y, g}} to the composite #{X \to M \cdot Y \to I \cdot Y \cong Y}.
+}
+\p{
+  In the case of #{\Optic(\cM),} the map #{\Optic(\cM)(\arena{I}{I}, \arena{A}{X}) \to \cM(I,X)} is a bijection.
+}
