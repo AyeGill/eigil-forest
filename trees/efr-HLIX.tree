@@ -1,0 +1,18 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Strategic equivalence is compatible with composition and tensor in #{\widetilde{\Game}(\SLens(\cD))}.
+}
+\proof{
+  \p{
+    Let #{\alpha: (G_1 \to G_1'): \bar{X} \to \bar{Y}, \beta : (G_2 \to G_2') : \bar{Y} \to \bar{Z}} be strategic equivalences. By 2-cell composition there is a map #{G_2G_1 \to G_2'G_1'}, which we must show is a strategic equivalence.
+  }
+  \p{
+    Let #{c = s,k} be a context in #{\Ctx(\bar{X},\bar{Z})}. Now a pair of strategies #{\sigma_1, \sigma_2} for #{G_1,G_2} are in Nash equilibrium for the costate induced by this context if and only if #{\sigma_1} is in equilibrium for the costate induced by the context #{s: I \to \bar{X} \otimes \bar{M}, k(p_2(\sigma_2) \otimes 1_{\bar{M}}),} where #{p_2} is the play function of #{G_2}, and the analogous condition holds for #{\sigma_2}.
+  }
+  \p{
+    But if #{\alpha,\beta} are equivalences, this is clearly equivalent to asking that #{\sigma_1,\sigma_2} be in Nash equilibrium for the costate induced by #{c} on #{\overline{\Sigma_1'} \otimes \overline{\Sigma_2}'}. This concludes the proof.
+  }
+}

@@ -1,0 +1,11 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Context}
+\p{
+  Let #{X,Y} be objects of a symmetric monoidal category #{\cC}. A \em{context} for #{X,Y} is a tuple #{M \in \cC, s: I \to X \otimes M, k: Y \otimes M \to I}. We denote the set of contexts #{\Ctx(X,Y)}.
+}
+\p{
+  Given a morphism #{f: P \otimes X \to Y,} and a context #{c = (M,s,k),} the costate #{k(f \otimes 1_M)(1_{P} \otimes s)} will be called the induced costate.
+}

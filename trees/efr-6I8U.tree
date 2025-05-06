@@ -1,0 +1,14 @@
+\date{2025-05-06}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Open games in a stochastic module}
+\p{
+  Let #{\cD} be a symmetric monoidal stochastic module fibration over the Markov category #{\cC}. Recall that #{\SLens(\cD)} acquires a symmetric monoidal structure. Denote as usual #{\SLens(\cD)|_\det = \SLens(\cD) \times_{\cC} \cC_\det}. Note that this is stable under the monoidal product, and acts on #{\SLens(\cD)} via the inclusion.
+}
+\p{
+  Then the category of \em{open games in #{\cD}} is the category #{\widetilde{\Game} = \Para_{(\SLens(\cD)|_\det)_\SS}(\SLens(\cD))}.
+}
+\p{
+  When #{\cD \to \cC} is a Markov prefibration, we overload the notation by writing #{\widetilde{\Game}(\cD) = \Game(\cD|_\det)}.
+}
