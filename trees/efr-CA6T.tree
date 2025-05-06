@@ -13,9 +13,47 @@
 \transclude{efr-Z2BR}
 \transclude{efr-UI90}
 \p{
-  Now we are ready to make the slick definition of open games:
+  Now we are ready to make the slick definition of open games.
 }
 \transclude{efr-1WGM}
 \p{
   Note that in this case, #{\Optic(\cC)(I, \arena{A}{X}) = \cC(I,X),} and #{\Optic(\cC)(\arena{A}{X},I) = \cC(X,A)}. Thus a selection function decides, for each \em{payoff function #{X \to A}}, which of the states #{I \to X} are suitable equilibria.
+}
+
+
+\p{
+  Before we proceed to the case of stochastic lenses, we will pause briefly to make a small modification to the preceding theory as presented in \ref{towards-cybercat}. In a game with forwards play function #{\Sigma \times X \to Y,} there are two ways to talk about the player's "choice" -- we may say that the player chooses a strategy #{\sigma \in \Sigma,} which then has some effect. Or we may say that the choice is really the #{y \in Y,} and the strategy #{\sigma} is the "precommitment" of choosing what to do given each possible #{x \in X}.
+}
+\p{
+  Once we introduce randomness, we see that there are two \em{distinct} ways for a player to make a random choice: first, his strategy #{I \to \Delta(\Sigma)} may be stochastic - that is, he is choosing a random strategy. Or the morphism #{\Sigma \times X \to Y} may be stochastic - this means each strategy #{\sigma} contains a specification of how to randomly choose #{y} given each possible #{x}.
+}
+\p{
+  In the case where #{X = *}, the distinction is between taking #{\Sigma = Y} and letting the play function be the identity, and taking #{\Sigma = \Delta(Y)} and letting the play function be the \em{sampling map} which stochastically draws an element from a distribution.
+}
+\p{
+  We take the view that the latter is the proper presentation of this game - this goes along with the terminology in the classical game theory literature, which would certainly regard a distribution on the set of possible moves as a (mixed) strategy. Having represented our games like this, we may restrict ourselves to considering \em{deterministic} maps #{I \to \Sigma} as strategies. This also fixes the awkwardness in the definition of the Nash product, since now every strategy in #{\Sigma_1 \otimes \Sigma_2} decomposes uniquely as a pair of strategies.
+}
+\p{
+  We quickly modify the preceding definitions to make sense of this. Note that we also modify the reparametrization maps to be deterministic (in the base).
+}
+\transclude{efr-6I8U}
+
+
+\p{
+  We now introduce the notion of \em{strategic equivalence,} which identified two open games if they have the same equilibria for every costate #{\overline{\Sigma} \to I} which can actually occur as a result of pasting the game #{\overline{\Sigma} \otimes \bar{X} \to \bar{Y}} into some larger diagram.
+}
+
+\transclude{efr-K0Y8}
+\transclude{efr-I1K5}
+
+\transclude{efr-R46X}
+
+\p{
+  Note that a game up to strategic equivalence is determined by a relation between strategies #{I \to \Sigma} and contexts. This brings us closer to Hedges' original definition of open game from \ref{hedges-etal-comp-gametheory}. The chief difference is that a game in our sense is prevented from "inspecting" the context #{Y \to \bar{Y}} for those #{y \in Y} which are not in the image of #{X \times \Sigma \to Y}, in the sense that whether a given strategy is in equilibrium or not cannot depend on this (since we only see a certain costate on #{\Sigma}).
+}
+
+\transclude{efr-HLIX}
+\transclude{efr-U99C}
+\p{
+  Note that this category of open games retains a 2-categorical structure, given by deterministic maps #{\Sigma_1 \to \Sigma_2} which preserve equilibria in every context. However, we will leave a deeper investigation of this structure for future work.
 }
