@@ -1,0 +1,15 @@
+\date{2025-05-07}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  The squares
+  \quiver{
+    \begin{tikzcd}
+    A \times X \ar[d] \ar[r] & A \times Y \ar[d]\\
+    X \ar[r] Y
+    \end{tikzcd}
+  }
+  are pullbacks in any category with products, even if it does not admit pullbacks in general.
+  It follows that the full subcategory of #{\cC^\to} spanned by objects of this form is always a fibration over #{\cC}, which is isomorphic to #{\coOptic(\cc)} -- the fiberwise dual is isomorphic to #{\Lens(\cC)}.
+}

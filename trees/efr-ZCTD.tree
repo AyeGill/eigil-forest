@@ -41,3 +41,4 @@
 \p{
   This is the first way to see the maps of #{(\cC^\to)^\fop} as dependent lenses - they receive the category of lenses as a full subcategory. 
 }
+\transclude{efr-TZ0P}
