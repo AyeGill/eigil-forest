@@ -38,3 +38,21 @@
 \p{
   The notions of Mealy and Moore machine are both quite old, going back to \ref{mealy-circuits}, \ref{moore-gendanken-sequential}. While we do obtain finite-state automata of these types as special cases, our interest is primarily in the analysis of dynamical systems, which tends to ask rather different questions than automata theory. Thus, despite using the terminology, we will not be particularly interested in the actual theory of Mealy and Moore machines. We do mention one recent paper, \ref{semibicategory-of-moore-automata}, which has a category-theoretic approach similar in spirit to our own. Their category of Mealy machines can be obtained, not as our category of Mealy machines above, but by considering maps #{TS \otimes A \to B} in the case where #{A = \arena{*}{A}, B = \arena{*}{B}} are trivial in the secondary component. In the discrete case, such a map is given by #{A \times S \to B \times S}.
 }
+
+\p{
+  It should also be noted that the idea of embedding Mealy machines as the morphisms #{TS \otimes A \to I} is not original, but was communicated to the author by Matteo Capucci. It seems not to have appeared in the literature so far. The idea that there "should" be a triple category of systems, like the one we will construct, has also circulated as folklore for a few years, although again an explicit construction has yet to appear. Very similar ideas appear in the work of Shapiro and Spivak, see for example \ref{shapiro-spivak-dynamic-operads}. 
+}
+
+\p{
+  We begin this chapter with a treatment of double categories of charts and lenses in the context of Markov fibrations (and [stochastic modules](efr-OEFJ)). The construction does not work quite as well as in the classical case -- the difficulty is essentially that the equivalence relation which defines [stochastic charts](efr-TBZZ) has a directed nature, and given a 2-cell defined in an obvious way #{\phi \to \psi,} and an equation #{\psi \xfrom{\sim} \psi',} there is not (apparently) in general a way to lift this to an arrow #{\phi' \to \psi'} (with #{\phi' \simeq \phi}). However, we can construct a double category whose globular horizontal 2-category have \em{connected components} given by the stochastic charts (or lenses).
+}
+
+\p{
+  We proceed to give an account of categorical systems theory for these double categories. The chief problem posed by the above is that we may not have any good [clock systems](efr-9WQU). Since two equivalent charts should represent the same system, but they may receive different sets of maps from the supposed clock system (and thus have different sets of trajectories). We resolve this by proving that, for lenses with a deterministic base, every equivalence class of lenses has an initial representative. Moreover, mapping out of this initial representative to a representative of some other lens, a 2-cell exists filling a given square if and only if it commutes as a map of lenses and charts in the classical case (recall that over deterministic bases, Markov fibrations become ordinary fibrations). In particular the trajectories of a system with respect to such a clock system depend only on their equivalence class.
+}
+\p{
+  We follow this up by constructing the above discussed triple categories of "bimachines", that is systems which combine Mealy and Moore machines. We do this both for stochastic and the ordinary case -- the procedure is exactly the same, but of course they are different objects, neither generalizing the other.
+}
+\p{
+  After constructing a stochastic dynamical systems theory for \em{smooth} dynamical systems -- requiring a brief detour to construct a suitable Markov category of smooth kernels -- we end by giving a few examples of the theory.
+}
