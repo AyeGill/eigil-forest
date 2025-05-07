@@ -54,5 +54,5 @@
   We follow this up by constructing the above discussed triple categories of "bimachines", that is systems which combine Mealy and Moore machines. We do this both for stochastic and the ordinary case -- the procedure is exactly the same, but of course they are different objects, neither generalizing the other.
 }
 \p{
-  After constructing a stochastic dynamical systems theory for \em{smooth} dynamical systems -- requiring a brief detour to construct a suitable Markov category of smooth kernels -- we end by giving a few examples of the theory.
+  We end by constructing a stochastic dynamical systems theory for \em{smooth} dynamical systems -- requiring a brief detour to construct a suitable Markov category of smooth kernels.
 }
