@@ -1,0 +1,7 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  If #{\cD \to \cC} is such that each morphism admits merely a locally Cartesian lift (but these do not compose,) it is called a \em{prefibration}. Note that this is unrelated to our notion of [Markov prefibration](efr-0019) (reading ahead a bit, the "Cartesian" maps in a Markov prefibration do compose, but they enjoy the unique lifting property only for a subset of morphisms). This clash of terminology is perhaps unfortunate, but other potential prefixes seemed inferior (quasi-, pseudo-, semi-).
+}

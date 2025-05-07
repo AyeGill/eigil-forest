@@ -1,0 +1,10 @@
+\date{2025-05-05}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let {G: \arena{*}{X} \to \arena{R}{Y}} be a game, representing an agent who is optimizing the return value #{r \in R} in some sense. Then #{G \otimes (1_I \oplus 1_I = 1_{I + I})} represents the same agent, whose payoff may now depend on an additional bit (a value in #{I + I}), but whose decisions may not depend on that bit (his selection function may still depend on its distribution).
+}
+\p{
+  On the other hand, #{G \oplus G (\cong G \otimes 1_I \oplus G \otimes 1_I)} represents the same situtation, but where the player's strategy \em{may} depend on the bit - he provides two strategies #{\sigma_1,\sigma_2}, one for each possibility.
+}
