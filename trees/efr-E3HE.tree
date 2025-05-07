@@ -58,15 +58,3 @@
 }
 \transclude{efr-AB57}
 \transclude{efr-8MYE}
-
-
-\p{
-  Finally, recall that conditionals in a Markov category are defined only up to almost certain equality. If we have supports as well, we are generally fine restricting to the support and observing that they are strictly determined there, but assuming the existence of both supports and conditionals is a very stringent requirement on our Markov category. In some cases it will be useful to make merely the assumption that conditionals \em{may be chosen} to be one-sided inverses, strictly. We thus introduce the following notions:
-}
-
-\transclude{efr-AMFR}%Bayesian image factorization
-\transclude{efr-88JF}%Relative Bayesian inverse
-
-\p{
-  It should also be noted that, given two conditionals #{X \to Y} of the same joint distribution, if #{\cC} is representable we can still form the equalizer of the two maps #{X \rightrightarrows PY} - and this will generally be a subset of full measure where the two kernels agree. (Note that this is distinct from the equalizer of the two maps #{X \to Y \in \cC}, which may not exist.)
-}

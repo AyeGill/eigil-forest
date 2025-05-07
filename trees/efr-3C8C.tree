@@ -4,26 +4,10 @@
 \title{Future work}
 \parent{efr-O088}
 
-
 \p{
-  In particular, it is hihgly desirable to construct some sort of usable Markov fibration of smooth bundles over smooth manifolds, in order to begin developing a categorical theory of stochastic differential equations. We can easily construct a sub-Markov category of #{\TychStoch} consisting of smooth manifolds and kernels so that the induced map #{C(Y) \to C(X)} carries smooth maps to smooth maps. There is certainly a Markov prefibration over this, of bundles and commutative squares of such "smooth kernels", but there are several problems with this object:
-}
-\ol{
-  \li{Smooth manifolds are not stable under pullbacks, and so we cannot use our construction of the free prefibration.}
-  \li{Conditional distributions cannot in general be selected to be smooth, and so this category does not have conditionals.}
-}
-\p{
-  The first problem can at least partially be solved by embedding in a larger category which does have pullbacks (such as diffeological spaces) - in any case, one would want to consider such enlargements in order to endow the category with supports. It is also possible that some other construction of the free prefibration would work in this case (maybe using spans of submersions instead of general maps) - in this case we would still have a notion of Markov fibration, since this does not rely on the specific nature of the free prefibration, just on the existence of some left adjoint.
-}
-\p{
-  Thus, one problem worth studying is the existence of free prefibrations for fibrations on #{\cC_\det} in cases where this does not admit all pullbacks.
-}
-\p{
-  The second problem is harder to solve - it means we have little hope of obtaining a good theory of chart equivalence, and therefore it will be hard to prove that, for example, #{\SChart} preserves pullbacks. Since this a key step in the construction of double categories of lenses, this is a big issue.
-}
-
-\transclude{efr-CNAF}
-\transclude{efr-CTIK}
-\p{
-  Note that absolute equivalence implies observational equivalence (if #{\alpha,\beta} are charts over deterministic maps, so that #{\alpha \phi \beta} is over a deterministic map, then #{\alpha \phi \beta = \alpha \phi' \beta}). This also proves absolute equivalence is nontrivial - observational \em{disequivalence} implies absolute disequivalence.
+[Comparison with double fibrations](todo-tree)
+[Possibilistic versions, posetal structure](todo-tree)
+[Partial Markov categories](todo-tree)
+[Logical aspects](todo-tree)
+[Markov fibrations without pullbacks](todo-tree)
 }
