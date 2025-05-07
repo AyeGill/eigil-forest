@@ -1,0 +1,17 @@
+\title{Game theory}
+\date{2020}
+\taxon{reference}
+\author{Michael Bahir Maschler}
+\author{Eilon Solan}
+\author{Shmuel Zamir}
+\author{Ziv Hellman}
+\author{Mike Borns}
+\meta{bibtex}{\startverb
+ @book
+{game-theory-maschler-textbook, address={New York}, edition={2nd ed}, title={Game theory}, ISBN={978-1-108-49345-1}, callNumber={519.3}, abstractNote={Covering both noncooperative and cooperative games, this comprehensive introduction to game theory also includes some advanced chapters on auctions, games with incomplete information, games with vector payoffs, stable matchings, and the bargaining set. Mathematically oriented, the book presents every theorem alongside a proof. The material is presented clearly and every concept is illustrated with concrete examples from a broad range of disciplines. With numerous exercises the book is a thorough and extensive guide to game theory from undergraduate through graduate courses in economics, mathematics, computer science, engineering, and life sciences to being an authoritative reference for researchers}, publisher={Cambridge University Press}, author={Maschler, Michael Bahir and Solan, Eilon and Zamir, Shmuel and Hellman, Ziv and Borns, Mike}, year={2020},language={eng} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Covering both noncooperative and cooperative games, this comprehensive introduction to game theory also includes some advanced chapters on auctions, games with incomplete information, games with vector payoffs, stable matchings, and the bargaining set. Mathematically oriented, the book presents every theorem alongside a proof. The material is presented clearly and every concept is illustrated with concrete examples from a broad range of disciplines. With numerous exercises the book is a thorough and extensive guide to game theory from undergraduate through graduate courses in economics, mathematics, computer science, engineering, and life sciences to being an authoritative reference for researchers
+}}
+

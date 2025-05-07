@@ -1,0 +1,10 @@
+\title{Zur Theorie der Gesellschaftsspiele}
+\date{1928-12}
+\taxon{reference}
+\meta{doi}{10.1007/BF01448847}
+\author{J. V. Neumann}
+\meta{bibtex}{\startverb
+ @article
+{neumann-games, title={Zur Theorie der Gesellschaftsspiele}, volume={100}, rights={http://www.springer.com/tdm}, ISSN={0025-5831, 1432-1807}, DOI={10.1007/BF01448847}, number={1}, journal={Mathematische Annalen}, author={V. Neumann, J.}, year={1928}, month={Dec}, pages={295-320},language={de} }
+\stopverb}
+
