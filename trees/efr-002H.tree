@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\title{The Para Construction}
+\title{The Para Construction as a double category}
 
 \p{
   In many different situations, we want to understand some morphism as \em{parameterized} by some data. For example, in machine learning one tries to find a function #{f: X \to Y} with some desirable behaviour by choosing a parameterization #{F: P \times X \to Y} and searching for some #{p \in P} so that #{F(p,-)} has this behaviour (for example by gradient descent on #{p}).

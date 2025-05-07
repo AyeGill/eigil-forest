@@ -15,11 +15,5 @@
   }
 }
 \p{
-  There are clearly close links between these two thoughts - indeed, the reverse derivative #{\Euc \to \Lens(\Euc)} is very closely related (it is the dual, using the isomorphism between tangent and cotangent bundles on #{\RR^n}) to the tangent bundle functor from euclidean spaces to \em{charts} which one would use in Myers' theory to define the double category of smooth dynamical systems (with euclidean state spaces). It therefore seems that there should be a \em{triple category} where the three notions of morphism are lenses, charts, and \em{lenses parameterized by tangent bundles}.
-}
-\p{
-  In describing such a category, however, we encounter some significant problems. The monoidal structure used to define parameterized morphisms may not be strict, which means at least one of the directions of composition in our triple category will not be strict. Since the literature on pseudo triple categories is almost nonexistent, this is problematic. Moreover, the presence of multiple partially-independent category structures makes the correct definition of "pseudo triple category" in this situation somewhat unclear.
-}
-\p{
-    We will begin this chapter by giving some background on the Para construction. The ideas here are not new, but we hope this section will serve as a useful reference, gathering some material which has been scattered across the literature, or relegated to folklore.
+  In this chapter, we will develop the theory of the category #{\Para} of parameterized maps. We will begin by reviewing the existing literature briefly. We will describe a double categorical version of this category -- this does not seem to have appeared in the literature yet, although it has been folklore for at least a few years (and there is nothing complicated about this construction, certainly). The remainder of this chapter will be dedicated to lifting this construction to a generic 2-category #{\CC} (with the above being the specialization to #{\CC = \Cat}). We will derive this lifting using the machinery of 2-category theory. We will see how this generalization accounts for much structure which can be seen to exist on #{\Para}, such as its symmetric monoidal structure (assuming #{\cM,\cC} are symmetric monoidal). But the true application of this will be in \ref{efr-ZRUZ}, where we use this to construct a \em{triple category} of open dynamical systems.
 }
