@@ -7,7 +7,7 @@
   \quiver{
     \begin{tikzcd}
     A \times X \ar[d] \ar[r] & A \times Y \ar[d]\\
-    X \ar[r] Y
+    X \ar[r] & Y
     \end{tikzcd}
   }
   are pullbacks in any category with products, even if it does not admit pullbacks in general.
