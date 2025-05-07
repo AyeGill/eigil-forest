@@ -4,7 +4,7 @@
 \title{Review of Categorical Systems Theory}
 
 \p{
-  We will give a review of the framework called \em{categorical systems theory}. The ideas are laid out by Myers in \ref{myers-cst}.
+  We will give a review of the framework called \em{categorical systems theory}, due to Myers (\ref{myers-cst}).
 }
 
 \transclude{efr-000A}
@@ -24,6 +24,10 @@
 \p{
   Of course, coalgebras can already encode systems with input and output - the point of the CST framework is to separate out the input and output of systems so that they can be acted on in a compositional manner.
 }
+
+
+\transclude{efr-002F}
+
 \p{
   In another direction, we have the following comparison result:
 }
@@ -32,8 +36,10 @@
   The first part here (which works, suitably formulated, for any locally Cartesian closed category), is a classical part of the theory of polynomial functors, see eg \ref{kock-poly-classical}. The second part is due to Spivak, see \ref{spivak-poly-abundant}. There is an extensive body of work on the description of interacting (disrete, deterministic) dynamical systems in terms of polynomial functors, see e.g. also \ref{shapiro-spivak-dynamic-operads}.
 }
 
-\transclude{efr-002F}
-
+\transclude{efr-GXJ0}
+\p{
+  In fact this example works for any monad on the category of sets.
+}
 
 \transclude{efr-9WQU}
 \p{

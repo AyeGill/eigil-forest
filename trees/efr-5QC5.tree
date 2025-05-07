@@ -4,8 +4,27 @@
 \parent{efr-ZRUZ}
 \title{Introduction}
 
+\p{
+  Given a set of inputs #{A} and a set of outputs #{B}, there are essentially two make sense of the informal description "finite-state automaton which reads inputs from #{A} and produces outputs in #{B}".
+  These are the notions of \em{Mealy machine} and \em{Moore machine}. Simply put, if the set of states is #{S}, a mealy machine is a function #{A \times S \to B \times S,} whereas a Moore machine is a pair #{A \times S \to S, S \to B}. In other words, in a Moore machine the output does not depend on the current input, but only on previous inputs (through their effect on the state), but in a Mealy machine, the input can be passed through directly.
+}
 
-\transclude{efr-0007}
+\p{
+  Using the language of categorical systems theory, we can make the following definitions:
+}
+\transclude{efr-0006}
+\transclude{efr-0005}
+
+\p{
+  A Moore machine in the sense of \ref{efr-0006} is what Myers calls a (open) dynamical system, and they are the central object of study in [[myers-cst]]. Arguably, both Moore machines and Mealy machines deserve the name of "open dynamical system" - the difference is is how they interact with the external world.
+}
+\p{
+  Observe in particular that, if #{A=I}, the categories of Mealy and Moore machines agree, both being equal to the slice of #{T} over the unit #{I}. In other words, the two notions of \em{closed} dynamical system coincide.
+}
+
+\p{
+  It is clear that both Mealy and Moore machines, in this sense, are special kinds of \em{parameterized morphism} in lenses, namely those parameterized by an object of the form #{TS}. This leads naturally to the idea that there should be a triple category of morphisms of this type, charts, and lenses.
+}
 
 \transclude{efr-000E}
 
@@ -16,3 +35,6 @@
   Note that the theory of Markov fibrations does not quite generalize the ordinary theory of fibrations - only fibrations with a Cartesian base (\ref{efr-CJTH} and \ref{efr-Z75A}). Since the pullbacks in #{\cC_\det} play such a key role in the theory, it is not clear that this can be dispensed with. Although Cartesian bases certainly cover the vast majority of examples from the literature on categorical systems, it is of course worth noting that they are not a requirement. Moreover, we will see that the construction of the double category of lenses and charts encounters certain problems for a general Markov fibration not seen for ordinary fibrations. Hence we will give a separate description of the triple categories in each of the two cases.
 }
 
+\p{
+  The notions of Mealy and Moore machine are both quite old, going back to \ref{mealy-circuits}, \ref{moore-gendanken-sequential}. While we do obtain finite-state automata of these types as special cases, our interest is primarily in the analysis of dynamical systems, which tends to ask rather different questions than automata theory. Thus, despite using the terminology, we will not be particularly interested in the actual theory of Mealy and Moore machines. We do mention one recent paper, \ref{semibicategory-of-moore-automata}, which has a category-theoretic approach similar in spirit to our own. Their category of Mealy machines can be obtained, not as our category of Mealy machines above, but by considering maps #{TS \otimes A \to B} in the case where #{A = \arena{*}{A}, B = \arena{*}{B}} are trivial in the secondary component. In the discrete case, such a map is given by #{A \times S \to B \times S}.
+}

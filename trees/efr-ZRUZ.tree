@@ -1,9 +1,7 @@
 \date{2025-04-08}
 \author{eigil-rischel}
 \import{macros}
-\title{
-  Categories of stochastic dynamical systems
-}
+\title{Categories of stochastic dynamical systems}
 \transclude{efr-5QC5}
 \transclude{efr-SIE7} 
 \transclude{efr-7DV5}

@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{example}
 \p{
-  Consider the dynamical systems theory where #{\cC = \Set}, #{\cA(X) = \Set^X} (with the obvious reindexing maps), and #{T(X) = (x \mapsto X)}. Then
+  In the theory of discrete dynamical systems:
   \ol{
     \li{The category of lenses #{\int \cA(-)^\op} is equivalently the category of \em{polynomial functors} and natural transformations between them.}
     \li{Using this equivalence, the category of dynamical systems with interface #{p} is exactly the category of #{p}-coalgebras and homomorphisms}

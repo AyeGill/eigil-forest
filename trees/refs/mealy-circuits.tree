@@ -1,0 +1,14 @@
+\title{A method for synthesizing sequential circuits}
+\date{1955-09}
+\taxon{reference}
+\meta{doi}{10.1002/j.1538-7305.1955.tb03788.x}
+\author{George H. Mealy}
+\meta{bibtex}{\startverb
+ @article
+{mealy-circuits, title={A method for synthesizing sequential circuits}, volume={34}, ISSN={0005-8580}, DOI={10.1002/j.1538-7305.1955.tb03788.x}, abstractNote={The theoretical basis of sequential circuit synthesis is developed, with particular reference to the work of D. A. Huffman and E. F. Moore. A new method of synthesis is developed which emphasizes formal procedures rather than the more familiar intuitive ones. Familiarity is assumed with the use of switching algebra in the synthesis of combinational circuits.}, number={5}, journal={The Bell System Technical Journal}, author={Mealy, George H.}, year={1955}, month={Sep}, pages={1045–1079} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+The theoretical basis of sequential circuit synthesis is developed, with particular reference to the work of D. A. Huffman and E. F. Moore. A new method of synthesis is developed which emphasizes formal procedures rather than the more familiar intuitive ones. Familiarity is assumed with the use of switching algebra in the synthesis of combinational circuits.
+}}
+
