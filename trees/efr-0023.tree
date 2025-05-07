@@ -29,7 +29,13 @@
 }
 \transclude{efr-0027}
 \p{
-  The first part here (which works, suitably formulated, for any locally Cartesian closed category), is a classical part of the theory of polynomial functors, see eg \ref{kock-poly-classical}. The second part is possibly due to Spivak, see \ref{spivak-poly-abundant}. There is an extensive body of work on the description of interacting (disrete, deterministic) dynamical systems in terms of polynomial functors, see e.g. also \ref{shapiro-spivak-dynamic-operads}.
+  The first part here (which works, suitably formulated, for any locally Cartesian closed category), is a classical part of the theory of polynomial functors, see eg \ref{kock-poly-classical}. The second part is due to Spivak, see \ref{spivak-poly-abundant}. There is an extensive body of work on the description of interacting (disrete, deterministic) dynamical systems in terms of polynomial functors, see e.g. also \ref{shapiro-spivak-dynamic-operads}.
 }
 
 \transclude{efr-002F}
+
+
+\transclude{efr-9WQU}
+\p{
+  Because of this, one views a generic chart map as a \em{generalized trajectory}, of a type given by the domain system. As another example, taking the state space to be #{\{1,2, \dots, n\}} with an update map that carries #{n} to #{1,} one finds a system which classifies \em{#{n}-periodic} trajectories. Recent work by Lynch, Myers, Staton, and the author (\ref{lynch-myers-rischel-staton-stoch-clocks}) constructs clock systems for theories of stochastic, discrete-time doctrines, although we will not delve into this here.
+}

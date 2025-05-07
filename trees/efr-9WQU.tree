@@ -1,0 +1,26 @@
+\date{2025-05-07}
+\author{eigil-rischel}
+\import{macros}
+\title{Clock system}
+\taxon{example}
+\p{
+  Consider the theory of discrete-time, discrete dynamical systems from \ref{efr-002F}. Let #{\xi: TS \lensto \arena{I}{O}} be a system.
+  Consider the system #{c: T\NN \lensto \arena{*}{\NN}} given by #{n \mapsto n} in the forwards direction, and #{(n,*) \mapsto n+1} in the backwards direction. (To be clear, the object denoted #{\arena{*}{\NN}} is the map #{\NN \to \NN} - it is a singleton \em{in each fiber}). Then a morphism of systems #{c \to \xi} consists of the following data:
+}
+\ol{
+  \li{
+    A function #{x: \NN \to S}.
+  }
+  \li{
+    Another function #{o: \NN \to O}.
+  }
+  \li{
+    A third function #{i: \NN \to I} so that #{i(n) \in I_{o(n)}}.
+  }
+  \li{
+    So that #{o(n) = \xi(x(n))} and #{\xi^\#(x(n),i(n)) = x(n+1)}
+  }
+}
+\p{
+  That is, it is a choice of a sequence #{x_n} of points in the state-space, and a sequence of inputs #{i_n} compatible with the outputs, so that this sequence \em{obeys the dynamics}. In other words, it is a \em{trajectory of the system.}
+}
