@@ -11,7 +11,7 @@
     \bar{X_2} \ar[r, "\phi_2"]  & \bar{Y_2}
     \end{tikzcd} 
   }
-  in #{\widetilde{\Span(\cD)^\lens}} Suppose further the underlying square in #{\cC} is deterministic. Then:
+  in #{\widetilde{\Span}(\cD)^\lens} Suppose further the underlying square in #{\cC} is deterministic. Then:
 }
 \ol{
   \li{
@@ -19,5 +19,23 @@
   }
   \li{
     If #{M_1} is the carrier of #{\phi_1} and the left leg #{M_1 \to X_1} is an isomorphism, then this implication is an equivalence.
+  }
+}
+\proof{
+  \p{
+    Given a stochastic chart carried by #{X \leftarrow M \to Y,} so that #{X \to Y} is deterministic, recall that we can first pull back to the equalizer #{M' \into M} of the two maps #{M \to X \to Y, M \to Y}, then along the prescribed section #{X \to M'}. Note that this gives a 2-cell from this canonical representative with carrier #{X} to the initial represetative.
+  }
+  \p{
+    Given two such cells, we get a square
+    \quiver{
+      \begin{tikzcd}
+      M_1 \ar[r] & M_2\\
+      X_1 \ar[u] & X_2 \ar[u]
+      \end{tikzcd}
+    }
+    But as part of the square surrounding the 2-cell, there is given a map #{X_1 \to X_2}, which must make this square commute. The functoriality of base change (pulling back the map #{\phi_2}) proves this bottom map is again a 2-cell.
+  }
+  \p{
+    But the property for this map to be a 2-cell is exactly the property for this square to be a commutative square in #{\Arena{\cD|_\det}}. This proves both parts of the statement.
   }
 }

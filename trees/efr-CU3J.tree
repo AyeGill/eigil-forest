@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  Let #{\phi, \psi: \bar{A} \to \bar{B}} be parallel decorated spans in #{\widetilde{\Span(\cD)^\chart}} (or #{\widetilde{\Span(\cD)^\lens}} ).
+  Let #{\phi, \psi: \bar{A} \to \bar{B}} be parallel decorated spans in #{\widetilde{\Span}(\cD)^\chart} (or #{\widetilde{\Span}(\cD)^\lens} ).
 }
 \p{
   They represent the same stochastic chart (lens) if and only if there exists a zig-zag of globular 2-cells between them.

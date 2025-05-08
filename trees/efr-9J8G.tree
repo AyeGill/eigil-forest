@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\title{A Markov category of smooth manifolds}
+\title{A Stochastic Dynamical Systems Theory of Smooth Manifolds}
 
 \transclude{efr-CBBU}%CartSp
 

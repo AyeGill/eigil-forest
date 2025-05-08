@@ -4,13 +4,16 @@
 \taxon{definition}
 \title{Stochastic Dynamical Systems Theories}
 \p{
-  A \em{stochastic dynamical systems theory} consists of a Markov prefibration #{\cD \to \cC} equipped with a section #{T: \cC_\det \to \cD|_\det} of the deterministic part.
+  A \em{stochastic dynamical systems theory} consists of a stochastic module #{\cD} over #{\cC} equipped with a section #{T: \cC_\det \to \cD|_\det} of the underlying fibration.
+}
+\p{
+  We adopt the notation #{\widetilde{\Arena}(\cD)} for the double category which was denoted #{\widetilde{\Span}(\cD)^\lens} above. We use the symbol #{\lensto} for the horizontal (span) morphisms and #{\charto} for the vertical morphisms (in #{\cD}).
 }
 \p{
   Given a stochastic dynamical systems theory #{(\cD, T)}, the \em{double category of dynamical systems} #{\Sys(\cD,T)} has
   \ol{
-    \li{Objects triples #{S \in \cC, \bar{A} \in \cD, \xi: TS \lensto \bar{A} \in \overline{\cD|_\det^\fop}}}
-    \li{Horizontal morphisms given by a pair #{f: S \to S', g: \bar{A} \charto \bar{B} \in \cD} so that there exists a square filling #{\xi, \xi', Tf, g}}
-    \li{Vertical morphisms given by a pair #{f: S \to S', g: \bar{A} \lensto \bar{B} \in \overline{\cD}} so that there exists a square #{Tf, g \xi, \xi', 1_{\bar{B}}}}
+    \li{Objects triples #{S \in \cC, \bar{A} \in \cD, \xi: TS \lensto \bar{A} \in \widetilde{\Arena}}}
+    \li{Horizontal morphisms given by a pair #{f: S \to S', g: \bar{A} \charto \bar{B} \in \cD, c} where #{c} is a square filling #{\xi, \xi', Tf, g}}
+    \li{Vertical morphisms given by a pair #{f: S \to S', g: \bar{A} \lensto \bar{B} \in \overline{\cD}, c} where #{c} is a square filling #{Tf, g \xi, \xi', 1_{\bar{B}}}}
   }
 }

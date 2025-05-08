@@ -25,7 +25,9 @@
 }
 
 \transclude{efr-MN7C}
-\transclude{efr-7UXT}
+\transclude{efr-WEST}
+\transclude{efr-QH7O}
+\transclude{efr-KL7V}
 
 \p{
   There is a very natural \em{double} categorical version of #{\Para}, where the vertical morphisms are just the unparameterized morphisms of #{\cC}, and the 2-cells with this boundary:
