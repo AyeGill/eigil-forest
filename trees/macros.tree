@@ -297,6 +297,7 @@
 
 
 \def\CRing{\cat{CRing}}
+\def\Ab{\cat{Ab}}
 
 % Universal Algebra
 
@@ -481,3 +482,4 @@
 \def\Game{\cat{Game}}
 \def\argmax{#{\mathrm{argmax}}}
 \def\Ctx{#{\mathrm{Ctx}}}
+\def\argmin{#{\mathrm{argmin}}}

@@ -5,5 +5,5 @@
 \author{Edward F. Moore}
 \meta{bibtex}{\startverb
  @inbook
-{moore-gedanken-sequential, title={Gedanken-Experiments on Sequential Machines}, ISBN={978-1-4008-8261-8, booktitle={Automata Studies}, publisher={Princeton University Press}, author={Moore, Edward F.}, year={1956}, month={Mar}, pages={129–154},language={en} }
+{moore-gedanken-sequential, title={Gedanken-Experiments on Sequential Machines}, ISBN={978-1-4008-8261-8, booktitle={Automata Studies}, publisher={Princeton University Press}, author={Moore, Edward F.}, year={1956}, month={Mar}, pages={129–154},language={en} }}
 \stopverb}

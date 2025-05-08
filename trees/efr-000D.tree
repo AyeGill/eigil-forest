@@ -10,11 +10,15 @@
 %Para construction normally
 \transclude{efr-002H}
 
+%2-limit sketches
+\transclude{efr-9I1M}
+
 %Pseudocategories in general
 \transclude{efr-ZRUW}
 
 %Pseudomonoid actions in general
 \transclude{efr-NI76}
+
 
 %Para in generic 2-categories
 \transclude{efr-GZH4}
