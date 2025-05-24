@@ -1,0 +1,9 @@
+\author{eigil-rischel}
+\date{2025-05-24}
+\def\query/transclusion-coslice[x]{
+ \open\query
+ \rel{\paths}{\outgoing}{\rel/transclusion}{\x}
+}
+\query{
+  \query/transclusion-coslice{lcc-001Z}
+}

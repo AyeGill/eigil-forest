@@ -1,0 +1,5 @@
+[forest]
+trees = ["trees/localcharts-files", "trees/utils", "trees/refs"]
+assets = ["assets"]
+theme = "theme"
+root = "eigil-rischel"
