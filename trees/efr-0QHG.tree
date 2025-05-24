@@ -1,0 +1,8 @@
+\date{2025-05-15}
+\author{eigil-rischel}
+\import{macros}
+\title{#{\Omega}-limit set}
+\p{
+  Let #{T: X \to X} describe a dynamical system on #{X}, and let #{Y \subset X}.
+  Then #{\omega(Y) = \cap_{n \geq 0} \overline{ \cup_{k \geq n} T^k(Y)}}
+}

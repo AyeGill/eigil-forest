@@ -1,0 +1,11 @@
+\date{2025-05-15}
+\author{eigil-rischel}
+\import{macros}
+\title{Chain Recurrence}
+\p{
+  Let #{T: X \to X} be a dynamical system on a metric space.
+  Then an \em{#{\epsilon}-pseudoorbit} is a sequence #{x_0, \dots x_n} so that #{d(Tx_i,x_{i+1}) < \epsilon}.
+}
+\p{
+  #{x} is called \em{chain recurrent} if there is an #{\epsilon}-pseudoorbit starting and ending at #{x} for every #{\epsilon > 0}.
+}
