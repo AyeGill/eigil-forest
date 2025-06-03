@@ -4,6 +4,6 @@
 \author{Bart Jacobs}
 \meta{bibtex}{\startverb
  @book
-{jacobs-categorical, address={Amsterdam; New York}, edition={1st ed}, series={Studies in logic and the foundations of mathematics}, title={Categorical logic and type theory}, ISBN={978-0-444-50170-7}, callNumber={QA9 .J27 1999}, publisher={Elsevier Science}, author={Jacobs, Bart}, year={1999}, collection={Studies in logic and the foundations of mathematics},language={en} }
+{jacobs-categorical-logic, address={Amsterdam; New York}, edition={1st ed}, series={Studies in logic and the foundations of mathematics}, title={Categorical logic and type theory}, ISBN={978-0-444-50170-7}, callNumber={QA9 .J27 1999}, publisher={Elsevier Science}, author={Jacobs, Bart}, year={1999}, collection={Studies in logic and the foundations of mathematics},language={en} }
 \stopverb}
 
