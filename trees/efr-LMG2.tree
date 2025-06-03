@@ -1,0 +1,25 @@
+\date{2025-06-03}
+\author{eigil-rischel}
+\import{macros}
+\title{ACT presentation 1: Algorithmic category theory for reinforcement learning}
+
+\p{
+  RL solves problems through reward signals. Training can happen without having a complete model of the task.
+}
+\p{
+  Limitations: reward sparsity. Sample inefficiency due to huge action spaces. Bad safety guarantees due to lack of stability. Bad generalization. Bad interpretability.
+}
+\p{
+  Two main paradigms of compositionality:
+  \ol{
+    \li{
+      Hierarchial RL. Sequential subtasks.
+    }
+    \li{
+      Functional RL. Parallel tasks that can be split into interacting subtasks.
+    }
+  }
+}
+\p{
+  They define a category of MDPs where products model parallel composition, pushouts model sequential composition, "punctured MDPs" -- MDPs with a forbidden subset of states removed -- model safety guarantees.
+}
