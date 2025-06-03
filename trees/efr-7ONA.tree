@@ -1,0 +1,15 @@
+\date{2025-05-30}
+\author{eigil-rischel}
+\import{macros}
+\title{Lagrangian Systems}
+\p{
+  In physics, the crucially useful property of Lagrangians is that they are "functorial" in a certain sense:
+}
+\ol{
+  \li{
+    When passing to mechanics constrained to a subset #{V \subseteq \RR^n,} the constrained Lagrangian is simply the restricted Lagrangian. The constrained mechanics arise from solving the constrained optimization problem instead of the original one -- we don't have to think about the precise magnitude of the forces that enforce the constraints.
+  }
+  \li{
+    When reparameterizing the mechanics in some new coordinate system, given by #{\Phi: U \to \RR^n}, the new Lagrangian is simply #{L(\Phi(u), D\Phi(\dot{u}))} as expected.
+  }
+}
