@@ -1,0 +1,22 @@
+\date{2025-06-15}
+\author{eigil-rischel}
+\import{macros}
+\title{Weakly smooth space}
+\taxon{Definition}
+\p{
+  Let #{A = C_0(X)} be a commutative C^*-algebra. A \em{weakly smooth structure} on #{A} consists of a sub-#{*}-algebra #{S \subseteq A} satisfying the following properties:
+  \ol{
+    \li{
+      S is dense in the norm topology of #{A}.
+    }
+    \li{
+      If #{f: \RR^n \to \RR} is a smooth function, and #{a_1, \dots a_n \in S}, then #{f(a_1,\dots a_n) \in S}, (in the sense of the continuous functions calculus).
+    }
+    \li{
+      S is equipped with a Frechet topology.
+    }
+  }
+}
+\p{
+  Given two weakly smooth structure #{(A,S), (B,S')}, a C^*-homomorphism #{A \to B} is said to preserve the smooth structure if it carries elements of #{S} to #{S'} and the restricted map #{S \to S'} is continuous for the given topologies.
+}

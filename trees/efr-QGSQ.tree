@@ -1,0 +1,6 @@
+\date{2025-06-15}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{R} be a commutative ring, #{A} be an #{R}-algebra, and let #{a \in A} be an element. The \em{spectrum of #{a},} #{\sigma(a) \subseteq R}, is the set of elements #{k} so that #{a - k} is \em{not} invertible.
+}

@@ -1,0 +1,12 @@
+\date{2025-06-09}
+\author{eigil-rischel}
+\import{macros}
+\title{Tautological systems theory}
+\p{
+  Let #{\cE \to \cA} be a fibration.
+  Then also #{\cE \times_\cA \cE \to \cE} is a fibration. Moreover it admits a canonical section given by the diagonal. If #{\cE \to \cA} is a monoidal fibration, this structure passes to this pullback (and the diagonal becomes monoidal).
+}
+\p{
+  In the context of [[myers-cst]], this gives a "tautological systems theory", where each space is preequipped with a "tangent bundle" (and each map is equipped with extra structure preserving this).
+  Note given a section #{T: \cA \to \cE}, there is induced #{\cE \to \cE \times_\cA \cE} which becomes a morphism of systems theories.
+}

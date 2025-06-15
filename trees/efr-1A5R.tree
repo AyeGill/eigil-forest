@@ -1,0 +1,10 @@
+\date{2025-06-15}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{p: E \to X} be a continuous map between locally compact Hausdorff spaces.
+  Then #{CO_0(E)} acquires the structure of a #{CO_0(X)} module in an obvious way, given by #{(f \cdot u)(e) = f(p(e))u(e)}. Moreover, #{\rho(u)(x) = \sup_{e \in p^{-1}(x)}u(x)} equips #{CO_0(E)} with a Frechet module structure.
+}
+\p{
+  The bounded homomorphisms #{CO_0(E) \to CO_0(X)} are in bijection with families of signed, real-valued Radon measures #{\mu_x \in CO_0(E_x)^*} which vary continuously, in the sense that the resulting map #{X \to CO_0(E)^*} (given by pushing forward along the inclusion #{E_x \into E}) is weak-* continuous, and which are uniformly bounded in  
+}

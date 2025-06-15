@@ -1,0 +1,13 @@
+\date{2025-06-12}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{(X, \Sigma)} be a measurable space. A #{\sigma}-ideal is a subset #{N \subset \Sigma} which is downwards stable (#{A \subset B, B \in N} implies #{A \in N}) and stable under countable unions.
+}
+\p{
+  A measurable space equipped with a #{\sigma}-ideal #{(X,\Sigma,N)} is called an \em{enhanced measurable space}. Note that if #{(X,\Sigma,\mu)} is a measure space, the collection of nullsets turns #{X} into an enhanced measurable space. If there is no chance of confusion, we will use this implicitly.
+}
+\p{
+  We also use the terminology from measure spaces for enchanced measurable spaces - thus we refer to the sets in #{N} as \em{nullsets} and say that two functions which differ only on a nullset are \em{equal almost everywhere,} and so on.
+}

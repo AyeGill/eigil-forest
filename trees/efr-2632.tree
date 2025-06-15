@@ -1,0 +1,27 @@
+\date{2025-06-08}
+\author{eigil-rischel}
+\import{macros}
+\title{Infinitesimal generators as big-tent DCST}
+\p{
+  A vector field #{X \to TX} on a manifold #{X} can be identified with an operator #{A: C^\infty(X) \to C^\infty(X)} (satisfying certain equations) which carries every map to its pointwise derivative in the indicated direction. This is an \em{infinitesimal generator} for the action on #{C^\infty(X)} given by the flow of the system.
+}
+\p{
+  We can view this as an unbounded operator whose domain contains the smooth maps. The nice thing about this perspective is that it makes sense even without knowing the smooth structure on #{X} (we would require simply that the operator has dense image).
+}
+\p{
+  Note that such a thing can be curried into a map #{X \to C(X)^*} (with certain local properties corresponding to being a tangent field). If we replace the domain with some space of partial functionals, we get a type of dynamics which can house quite general stochastic systems.
+}
+\p{
+  The idea is that, instead of specifying a smooth structure on the space #{X} which tells you which functions need to be considered smooth (and thus in the domain of #{A}), we let the notion of "vector field" include a specification of which functions are differentiable (in the given direction).
+}
+\p{
+  In order for this to work, we probably want the "bundles" to be bundles of convex or affine spaces, so that we get a map #{A \otimes B \to A \oplus B,} making the tangent bundle at least lax monoidal, so that we can compose systems.
+}
+
+\transclude{efr-1A5R}
+\transclude{efr-2ZUR}
+\transclude{efr-4T1Z}
+\transclude{efr-7O1A}
+\transclude{efr-86YE}
+\transclude{efr-QGSQ}
+\transclude{efr-YGH6}

@@ -1,0 +1,23 @@
+\date{2025-06-15}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{A} be a real Banach algebra. Then a (real) \em{Frechet module} over #{A} is a real vector space #{V} equipped with a family of mappings #{\rho_i: V \to A^+} (where positivity is defined in the spectral sense), satisfying:
+}
+\ol{
+  \li{
+    #{\rho_i(\alpha v) = \alpha \rho_i(v)}
+  }
+  \li{
+    #{\rho_i(v + w) \leq \rho_i(v) + \rho_i(w)}. Again this is understood in the sense that #{\rho_i(v) + \rho_i(w) - \rho_i(v + w)} has nonnegative spectrum.
+  }
+  \li{
+    If #{\rho_i(v)=0} for every #{i,} then #{v = 0}.
+  }
+}
+\p{
+  Given two Frechet modules, a module homomorphism #{f: V \to W} is said to be \em{bounded} if, for every #{i}, there exist #{K, \epsilon} so that #{\rho_i^W(f(v)) \leq 1} if #{\rho_1^V(v), \dots ,\rho^V_K(v) \leq \epsilon}.
+}
+\p{
+  Note that in this definition we, a priori, allow #{\epsilon} to be a generic element of #{A}. Viewing #{A = C_\RR(X)} for some space #{X}, this means the maps #{V_x \to W_x} are each required to be bounded, but not uniformly bounded. But in fact since #{\epsilon} must be strictly positive this requires it to be bounded away from #{0}, and so there is some uniform choice of #{\epsilon} (say the infimum of the spectrum of the element #{\epsilon})
+}
