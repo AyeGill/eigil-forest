@@ -1,4 +1,4 @@
-\title{Machine Learning as a controlled process}
+\title{Machine Learning as a bisystem}
 \taxon{example}
 \author{eigil-rischel}
 \import{macros}
@@ -15,5 +15,5 @@
     }
   }
 \p{
-  Thus a machine learning model is a sort of controlled process.
+  Thus a machine learning model is a sort of bisystem. Indeed our bisystems are essentially an abstracted version of the \em{learners} of Fong--Spivak--Tuyeras. The functoriality of this assignment is the main point of the above-mentioned papers. 
 }
