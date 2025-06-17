@@ -2,7 +2,13 @@
 \author{eigil-rischel}
 \import{macros}
 \title{A Stochastic Dynamical Systems Theory of Smooth Manifolds}
-
+\p{
+  In this section, as the title suggests, we constuct a stochastic dynamical systems theory of smooth manifolds, with the usual tangent bundle.
+  The main point is to construct a Markov category containing the smooth manifolds which is pullback-positive. We do this by considering the larger category of \em{diffeological spaces}. In order to make the topology work, we need to complicate the notion of diffeological space a bit, but having done so, we obtain a representable Markov category which is pullback-positive, and contains #{\SmMfd} as a full subcategory of the deterministic maps. A kernel #{p: M \to N} is a Markov kernel valued in Radon measures which is weakly continuous---so induces a linear map #{C(N) \to C(M)} taking #{\phi} to the function #{x \mapsto E_{p_x}\phi} on the spaces of continuous functions---and which furthermore smooth in the sense that this operation preserves the smooth functions. 
+}
+\p{
+  This Markov category of "smooth stochastic maps" may be of some independent interest.
+}
 \transclude{efr-CBBU}%CartSp
 
 \transclude{efr-E1SZ}%Diffeological spaces
