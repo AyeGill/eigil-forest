@@ -59,6 +59,5 @@
   This notion is not original---we learned of it from Matteo Capucci---but it seems to have remained somewhat on the level of folklore. Our main goal for this section will be to construct this (pseudo) double category, and show that is is functorial---that is, given a homomorphism of actions, there is an induced functor between double categories. In fact, we will show that this construction works in any 2-category. Later we will apply it to a pseudomonoid action in (strict) double categories to construct a pseudocategory internal to double categories---our triple category of bimachines.
 }
 
-\transclude{efr-59XF}
 \transclude{efr-55CC}
 \transclude{efr-HUEE}
