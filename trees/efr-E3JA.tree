@@ -1,0 +1,33 @@
+\date{2025-06-17}
+\author{eigil-rischel}
+\import{macros}
+\title{Complete LCVSs as pro-objects in the category of Banach spaces}
+\taxon{proposition}
+\p{
+  Given a locally convex topological vector space #{V}, let #{\cN_V} be the set of continuous seminorms. Then equipping #{\cN_V} with the inverse pointwise order, we have a diagram #{U \mapsto \widehat{V_{p}} : \cU \to \Ban}.
+  Since #{\cU} is directed (since #{\min(p,q)} is again a seminorm), this gives a functor #{V \mapsto (\widehat{V_p}) \LCVS \to \Pro(\Ban)}. 
+}
+\p{
+  The composite #{\LCVS \to \Pro(\Ban) \to \Pro(\LCVS) \xto{\lim} \LCVS} is left adjoint to the inclusion of complete LCVSs into LCVSs. In particular, if #{V} is complete, then it is the limit of its associated pro-object. If #{W} is complete, the map #{\Hom(V,W) \to \Hom((V_p),(W_q))} is a bijection.
+}
+\proof{
+  \p{
+  There is essentially nothing to show in the construction of the given functor -- given #{f: V \to W} continuous, the induced map between the objects #{V_p} and #{W_q} is constructed by observing that for each #{q}, #{qf} is a continuous seminorm on #{V}, and #{f} descends to a continuous map #{V_{qf} \to W_q}. 
+  }
+  \p{
+    Let #{V} be an LCVS. Since the seminorms jointly separate points, the map #{V \to \lim V_p} is injective. By construction it is continuous.
+    Let #{v_{\alpha,p} \in V_p} be a net in #{\lim V_p} indexed by #{\alpha \in A} (so for each #{\alpha}, #{v_{\alpha,-}} is a compatible family of elements in the #{V_p}). By assumption each net #{v_{-,p}} is Cauchy in #{\widehat{V_p}} and hence convergent. The limits #{v_p} form a compatible set which is a limit of the assembled net by the universal property of the limit topology. Hence the limit is complete.
+  }
+  \p{
+    Finally let #{v_p} be a compatible family of elements in #{\widehat{V_p}}. By definition there exists for each #{V_p} some sequence #{v_{n,p} \in V} which is Cauchy for the seminorm #{p} and which converges to #{v_p}. Consider the directed set #{\NN \times \cN_V} and the net #{v_{n,p} \in V}. The map #{V \to \lim \hat{V_p}} carries this net to a net which converges to #{(v_p)}. Hence #{V \to \lim \hat{V_p}} has dense image. This suffices to show it is a completion.
+  }
+
+
+  \p{
+    Let #{f: V \to W} be a continuous linear map, and consider the induced map between the pro-objects #{V_p} and #{W_q}. By definition the map #{V_P \to W_{q}} is given in each case by factoring the map #{V \to W \to W_{q}} over #{V_{qf}}. Hence knowing the map #{\hat{V} \to \hat{W}} determines each map #{V \to W_{q}}. Since the seminorms jointly separate points in #{W}, this suffices to determine #{f}. So the functor is faithful.
+  }
+  \p{
+    Let #{W} be complete. Take a map #{f_q: (\hat{V_p}) \to (\hat{W_q})}. This induces a family of maps #{V \to \hat{W_q}}. By the above this is equivalent to giving a map #{V \to W} since #{W} is the limit of this diagram. This map clearly induces the original map #{f}, hence the functor is full
+  }
+  
+}
