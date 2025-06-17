@@ -7,7 +7,7 @@
   Consider the theory of [discrete dynamical systems](efr-002F), and let #{\xi: TS \lensto A = \arena{\bar{A}}{A}} be a system. Let #{\phi: S \to \{\bot,\top\}} be a predicate on #{S}, and let #{\arena{\bar{U}}{U} \subseteq \arena{\bar{A}}{A}} be a subobject of #{A} (that is, #{\bar{U} \subset \bar{A}} and #{U \subset A,} and if #{(a,a') \in \bar{U}} then #{a \in A}).
 }
 \p{
-  Then write #{\nabla_{U}(\phi)} for the predicate on #{S} which is true if and only if the following hold: #{\xi(s) \in U,} and if #{a' \in \bar{U} \times_A S,} then #{\xi^\#(s,a')} satisfies #{\phi}. In other words - the output is in #{U}, and if the input is further in #{\bar{U},} then the next step will satisfy #{\phi}.
+  Then write #{\nabla_{U}(\phi)} for the predicate on #{S} which is true if and only if the following hold: #{\xi(s) \in U,} and if #{a' \in \bar{U} \times_A S,} then #{\xi^\#(s,a')} satisfies #{\phi}. In other words---the output is in #{U}, and if the input is further in #{\bar{U},} then the next step will satisfy #{\phi}.
 }
 \p{
   Note that by taking #{U = A, \bar{U} = \bar{A}} this encodes a simple next-step modality.

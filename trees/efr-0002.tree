@@ -12,7 +12,7 @@
     \mathcal{A}_{f(X)} \ar[r] & \mathcal{A}_{f(Y)}
     \end{tikzcd}
   }
-  of kernels commutes - in other words, given an intervention \em{in the low-level model,} the two possible distributions in the high-level model agree.
+  of kernels commutes---in other words, given an intervention \em{in the low-level model,} the two possible distributions in the high-level model agree.
 }
 \p{
   The main problem with this condition is that it is simply too strict. We generally can't ask that \em{every} low-level intervention is well-modeled by the corresponding high-level intervention. Rather, each high-level intervention corresponds to some distribution of the corresponding low-level variables, and we must ask that a diagram of this form:
@@ -22,7 +22,7 @@
     \mathcal{A}_{f(X)} \ar[r] \ar[u] & \mathcal{A}_{f(Y)}
     \end{tikzcd}
   }
-  commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that \em{every} set of velocities corresponding to a given temperature will lead to a given distribution of outcomes - rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
+  commutes. For example, if the low-level variables are the velocities of all the gas molecules in a container, and the high-level variables are thermodynamic quantities like temperature and pressure, we can't expect that \em{every} set of velocities corresponding to a given temperature will lead to a given distribution of outcomes---rather, intervening on the temperature leads to some particular distribution of possible sets of velocities, and this leads to the observed distribution of outcomes.
 }
 \p{
   The key here is that \em{control information flows in the opposite direction from measurement information}. This phenomenon repeats in many examples.

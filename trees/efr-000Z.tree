@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \p{
-  Let #{\phi \subseteq A^\omega} be a subobject - a property of sequences.
+  Let #{\phi \subseteq A^\omega} be a subobject---a property of sequences.
   Then given a coalgebra #{\xi: X \to A \otimes X} and a point #{x \in X}, there is a probability #{P(\phi | x_0 = x),}. The map #{X \to \Delta(\{\bot,\top\})} which describes these probabilities is precisely the composite #{X \to A^\omega \xto{\phi} \{\bot,\top\}}.
 }
 \p{
@@ -29,7 +29,7 @@
       Draw a sample sequence #{x_n} starting at #{x}
     }
     \li{
-      For each #{n}, draw a bit with probability #{\square \phi (x_n)} - the probability that a sequence starting at #{x_n} would satisfy #{\phi} at all timesteps.
+      For each #{n}, draw a bit with probability #{\square \phi (x_n)}---the probability that a sequence starting at #{x_n} would satisfy #{\phi} at all timesteps.
     }
     \li{
       If any of these bits are true, the whole thing is true. That's the probability/value of #{\diamond\square\phi(x)}
@@ -40,5 +40,5 @@
   }
 }
 \p{
-  This suggests that coalgebraic modal logic, at least naively applied in #{\Stoch}, is no good - the probabilities #{\square \phi(x)} don't contain enough information (unless?) to recover the probability of eventually necessarily #{\phi}.
+  This suggests that coalgebraic modal logic, at least naively applied in #{\Stoch}, is no good---the probabilities #{\square \phi(x)} don't contain enough information (unless?) to recover the probability of eventually necessarily #{\phi}.
 }

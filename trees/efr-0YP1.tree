@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \ol{
-  \li{Suppose any category #{\cC'} admits products and \em{intersections} - that is, pullbacks #{U \times_X V} whenever #{U,V} are subobjects of #{X}. Then it admits all finite limits.}
+  \li{Suppose any category #{\cC'} admits products and \em{intersections}---that is, pullbacks #{U \times_X V} whenever #{U,V} are subobjects of #{X}. Then it admits all finite limits.}
   \li{
     Suppose #{\cC_\det} admits and #{\cC_\det \to \cC} preserves pullbacks along monomorphisms. Suppose further #{\cC} is positive. Then it is pullback-positive.
   }

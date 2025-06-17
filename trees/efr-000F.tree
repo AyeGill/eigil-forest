@@ -6,7 +6,7 @@
   There are a few different types of morphisms to consider when thinking about controlled processes.
 }
 \p{
-  First of all, there are of course two other types of morphisms of the endpoints - lenses and arenas.
+  First of all, there are of course two other types of morphisms of the endpoints---lenses and arenas.
   Hence we should ask: given a square of this form:
   \quiver{
     \begin{tikzcd}
@@ -27,10 +27,10 @@
   is a 2-cell in #{\Arena}. We will call these \em{chart reparametrizations}
 }
 \p{
-  For lenses #{A \lensto A', B \lensto B'}, it is not totally obvious - clearly we will want a morphism #{S \to S'} with some property, but it is not immediately obvious what square we can look at.
+  For lenses #{A \lensto A', B \lensto B'}, it is not totally obvious---clearly we will want a morphism #{S \to S'} with some property, but it is not immediately obvious what square we can look at.
 }
 \p{
-  One answer is to ask for an \em{isomorphism} #{S \xto{\sim} S'} - this is carried to a lens #{TS \lensto TS'}, and so we can ask for this square of lenses to commute:
+  One answer is to ask for an \em{isomorphism} #{S \xto{\sim} S'}---this is carried to a lens #{TS \lensto TS'}, and so we can ask for this square of lenses to commute:
   \quiver{
     \begin{tikzcd}
     TS \otimes A \ar[r, shift right] \ar[d, shift right] & B \ar[d, shift right] \ar[l, shift right]\\

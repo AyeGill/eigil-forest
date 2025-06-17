@@ -8,9 +8,9 @@
 \p{
   Hence, our life will be greatly simplified if we can approach the construction of this triple category by more conceptual means. Our strategy will essentially be the following:
   \ol{
-    \li{We will note that the notion of internal pseudocategory is classified by a limit sketch - that is, there is a bicategory (actually, a 1-category) #{\cI} and class of diagrams #{K} so that a pseudocategory internal in #{\cC} is precisely a pseudofunctor #{\cI \to \cC} which carries all the diagrams in #{K} to \em{homotopy limits}}
+    \li{We will note that the notion of internal pseudocategory is classified by a limit sketch---that is, there is a bicategory (actually, a 1-category) #{\cI} and class of diagrams #{K} so that a pseudocategory internal in #{\cC} is precisely a pseudofunctor #{\cI \to \cC} which carries all the diagrams in #{K} to \em{homotopy limits}}
     \li{We will prove that the double categorical #{\dblPara(-)} construction preserves homotopy limits.}
-    \li{Hence, by the preceding point, applying it to a pseudocategory internal to the bicategory of category actions will produce a pseudocategory internal to pseudo double categories - a triple category.}
+    \li{Hence, by the preceding point, applying it to a pseudocategory internal to the bicategory of category actions will produce a pseudocategory internal to pseudo double categories---a triple category.}
   }
 }
 

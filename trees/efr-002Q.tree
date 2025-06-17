@@ -9,7 +9,7 @@
 \proof{
   \p{
     Let #{p} be a 2-fibration with this property.
-    Note that #{\Cat \subseteq \BiCat} is a full sub(tri)category, hence the only question is whether the fibers are categories - that is, whether they have discrete hom-categories. The mapping category in the fiber, #{\cE_x(x',y'),} given #{x \in \cC, x',y' \in \cE_x}, is given by the fiber of #{\cE(x',y') \to \cC(x,x)} over the identity - but by assumption this is a discrete category.
+    Note that #{\Cat \subseteq \BiCat} is a full sub(tri)category, hence the only question is whether the fibers are categories---that is, whether they have discrete hom-categories. The mapping category in the fiber, #{\cE_x(x',y'),} given #{x \in \cC, x',y' \in \cE_x}, is given by the fiber of #{\cE(x',y') \to \cC(x,x)} over the identity---but by assumption this is a discrete category.
   }
   \p{
     Conversely, let #{F: \cC^{\co \op} \to \Cat} be a bifunctor and consider its Grothendieck construction. By definition, a 2-cell is #{(\alpha,\alpha_-): (f,f_-) \to (g,g_-) : (x,x') \to (y,y')} where #{\alpha: f \to g: x \to y}, and #{\alpha_-} is a 2-cell like this in #{F(x):}

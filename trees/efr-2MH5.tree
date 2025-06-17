@@ -4,8 +4,8 @@
 \title{Weak conditionals}
 \taxon{definition}
 \p{
-  Let #{p: \cD \to \cC} be a Markov prefibration. We say a #{p} (or, abusing notation, #{\cD}) \em{admits weak conditionals} if, given a Cartesian map #{\bar{Y} \to \bar{Z}} and any map #{\bar{X} \to \bar{Z},} the existence part of the Cartesian condition holds - that is, every factorization #{p(\bar{X}) \to p(\bar{Y})} admits a lift, although not necessarily a unique one.
+  Let #{p: \cD \to \cC} be a Markov prefibration. We say a #{p} (or, abusing notation, #{\cD}) \em{admits weak conditionals} if, given a Cartesian map #{\bar{Y} \to \bar{Z}} and any map #{\bar{X} \to \bar{Z},} the existence part of the Cartesian condition holds---that is, every factorization #{p(\bar{X}) \to p(\bar{Y})} admits a lift, although not necessarily a unique one.
 }
 \p{
-  We say a Markov category #{\cC} admits weak conditionals if its codomain functor #{\MAr{\cC} \to \cC} is a prefibration which admits weak conditionals - this is equivalent to requiring that it is pullback-positive, and that \em{all} deterministic pullbacks are carried to weak pullbacks by the inclusion #{\cC_\det \to \cC} (in other words, that they satisfy the existence part of the universal property even for pairs of nondeterministic maps).
+  We say a Markov category #{\cC} admits weak conditionals if its codomain functor #{\MAr{\cC} \to \cC} is a prefibration which admits weak conditionals---this is equivalent to requiring that it is pullback-positive, and that \em{all} deterministic pullbacks are carried to weak pullbacks by the inclusion #{\cC_\det \to \cC} (in other words, that they satisfy the existence part of the universal property even for pairs of nondeterministic maps).
 }

@@ -6,7 +6,7 @@
 \transclude{efr-001V}
 
 \p{
-  For discrete-time deterministic systems, a #{P = \arena{\bar{P}}{P}}-valued predicate amounts to a mapping #{S \to P} - since the diagram implies the update can't depend on the extra input #{\bar{P}}, and in the deterministic case, a lift of #{S \to A} over #{A \otimes P} is simply a choice of #{S \to P}. (In the non-deterministic case, this is not true, of course).
+  For discrete-time deterministic systems, a #{P = \arena{\bar{P}}{P}}-valued predicate amounts to a mapping #{S \to P}---since the diagram implies the update can't depend on the extra input #{\bar{P}}, and in the deterministic case, a lift of #{S \to A} over #{A \otimes P} is simply a choice of #{S \to P}. (In the non-deterministic case, this is not true, of course).
 }
 \p{
   Let #{F: \Set \to \Set} be a functor, and let #{\xi: X \to FX} be a coalgebra of it.
@@ -14,7 +14,7 @@
   Note that this makes #{X} a coalgebra of #{F(-) \times P,} and as such it has a unique map to the terminal coalgebra (if it exists) of this functor #{X \to (F(-) \times P)^\infty}.
 }
 \p{
-  This means, given a predicate on that terminal coalgebra, #{p: (F(-) \times P)^\infty \to P,} by composing these two operations, we get a new predicate on #{X}. Thus, predicates on these cofree coalgebras are a sort of "modal operators" - for example, if #{P = \{\bot,\top\}} is the set of booleans, and #{F(X) = X} (so that coalgebras are just discrete dynamical systems), the cofree coalgebra on #{P} is the set #{\{\bot,\top\}^\omega} of streams of booleans. Then we can take #{p((\phi_i))} to be true if and only if each #{\phi_i} is true. Then the modal operator of #{p} is essentially "necessity" - the composite predicate is true for exactly those #{x \in X} so that #{\phi(x_n)} is true for every #{x_n} on the trajectory.
+  This means, given a predicate on that terminal coalgebra, #{p: (F(-) \times P)^\infty \to P,} by composing these two operations, we get a new predicate on #{X}. Thus, predicates on these cofree coalgebras are a sort of "modal operators"---for example, if #{P = \{\bot,\top\}} is the set of booleans, and #{F(X) = X} (so that coalgebras are just discrete dynamical systems), the cofree coalgebra on #{P} is the set #{\{\bot,\top\}^\omega} of streams of booleans. Then we can take #{p((\phi_i))} to be true if and only if each #{\phi_i} is true. Then the modal operator of #{p} is essentially "necessity"---the composite predicate is true for exactly those #{x \in X} so that #{\phi(x_n)} is true for every #{x_n} on the trajectory.
 }
 \transclude{efr-001X}
 

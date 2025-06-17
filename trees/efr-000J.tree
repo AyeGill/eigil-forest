@@ -9,14 +9,14 @@
   The three directions of morphism in #{\Ctrl} are lenses, charts, and controlled processes.
 }
 \p{
-  The lens-chart double category is isomorphically #{\Arena} - in particular, composition of both lenses and charts is strictly associative.
+  The lens-chart double category is isomorphically #{\Arena}---in particular, composition of both lenses and charts is strictly associative.
 }
 \p{
   The process-chart double category has 2-cells the chart reparametrizations. 
   The process-lens double category has 2-cells the lens \em{isoparametrizations}. They both compose in the obvious way.
 }
 \p{
-  Processes compose as morphisms of #{\Para_{\cC^\simeq}(\Lens)} - that is,
+  Processes compose as morphisms of #{\Para_{\cC^\simeq}(\Lens)}---that is,
   ##{(S,TS \otimes A \to B) ; (S', TS' \otimes B \to C) = (S' \otimes S, T(S' \otimes S) \otimes A \cong TS' \otimes TS \otimes A \to TS' \otimes B \to C),}
   this is associative up to a coherent choice of globular isoparametrization.
 }

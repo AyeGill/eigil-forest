@@ -5,18 +5,18 @@
   By moving to a stochastic-optics based dynamical systems doctrine, we can create a situation where terminal dynamical systems are, instead of being something very complicated, are just what you expect them to be (and the difference is in what a morphism between systems is allowed to be), and the predicates on their state spaces are [graded predicates](efr-0009) of exactly the relevant kind.
 }
 \p{
-  For example, the terminal coalgebra in #{\Stoch} of #{F(-) = A \otimes (-)} is #{A^\omega} - as usual it can be computed as the inverse limit #{\cdots \to A \otimes A \to A \to I}, which does exist by the extension theorem (and is probably a Kolmogorov limit?). 
+  For example, the terminal coalgebra in #{\Stoch} of #{F(-) = A \otimes (-)} is #{A^\omega}---as usual it can be computed as the inverse limit #{\cdots \to A \otimes A \to A \to I}, which does exist by the extension theorem (and is probably a Kolmogorov limit?). 
 }
 \p{
   We can't easily use the trick from coalgebraic modal logic of forming cofree coalgebras on objects, however. Normally the cofree #{T}-algebra on an object #{A} is the terminal coalgebra of #{T(-) \times A}, but of course #{\Stoch} doesn't have products! 
 }
 \p{
-  However, we can embed #{\Stoch \subseteq \Set^\Delta}, the full category of convex spaces, which does have products. This makes many other things more complicated, but does help us solve this problem - the convex space #{\prod^\infty \Delta(A)} is, for example, the cofree #{\Id}-coalgebra on #{A}.
+  However, we can embed #{\Stoch \subseteq \Set^\Delta}, the full category of convex spaces, which does have products. This makes many other things more complicated, but does help us solve this problem---the convex space #{\prod^\infty \Delta(A)} is, for example, the cofree #{\Id}-coalgebra on #{A}.
 }
 
 \p{
-  This will not let you express queries like "#{\phi(x)} holds eventually" (the interpretation of which is the probability that #{x} eventually holds) - we can compute some sort of supremum of probabilities, but this is only #{1} if there is some timestep where #{P(\phi(x_n)) = 1,} which is stronger.
+  This will not let you express queries like "#{\phi(x)} holds eventually" (the interpretation of which is the probability that #{x} eventually holds)---we can compute some sort of supremum of probabilities, but this is only #{1} if there is some timestep where #{P(\phi(x_n)) = 1,} which is stronger.
 }
 \p{
-  (On the other hand, given #{X \to TX} and #{X \to A}, there is a canonical choice of map #{X \to TX \otimes A} - the independent pairing - and so there is an induced map to the terminal coalgebra #{\bigotimes^\infty A})
+  (On the other hand, given #{X \to TX} and #{X \to A}, there is a canonical choice of map #{X \to TX \otimes A}---the independent pairing---and so there is an induced map to the terminal coalgebra #{\bigotimes^\infty A})
 }

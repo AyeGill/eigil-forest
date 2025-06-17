@@ -6,7 +6,7 @@
   Let #{\cD \to \cC_\det} be a Markov fibration. Since it is a fibration, we may form the ordinary double category of arenas #{\Arena(\cD)}. Note that there is a double functor #{\Arena(\cD) \to \cC_\det^\square}. This is a double fibration: an internal category in the category of fibrations.
 }
 \p{
-  The double category of \em{stochastic arenas} is obtained by stochastically completing this fibration in both directions - in other words, we form the completions #{\overline{\Arena(\cD)_1}} and #{\overline{\Arena(\cD)_2}}. We must check that this still gives a double category (it does), which we then transpose, stochastically complete, then transpose again (once again, there is something to check to see that the completion preserves the double categorical structure).
+  The double category of \em{stochastic arenas} is obtained by stochastically completing this fibration in both directions---in other words, we form the completions #{\overline{\Arena(\cD)_1}} and #{\overline{\Arena(\cD)_2}}. We must check that this still gives a double category (it does), which we then transpose, stochastically complete, then transpose again (once again, there is something to check to see that the completion preserves the double categorical structure).
 }
 \p{
   The phrase "stochastic arenas" is a bit unfortunate, since the arenas themselves are no different from ordinary arenas (stochastic completion does not change the objects). Rather, it is the morphisms, the lenses and charts, that are stochastic.

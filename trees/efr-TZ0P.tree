@@ -11,5 +11,5 @@
     \end{tikzcd}
   }
   are pullbacks in any category with products, even if it does not admit pullbacks in general.
-  It follows that the full subcategory of #{\cC^\to} spanned by objects of this form is always a fibration over #{\cC}, which is isomorphic to #{\coOptic(\cc)} -- the fiberwise dual is isomorphic to #{\Lens(\cC)}.
+  It follows that the full subcategory of #{\cC^\to} spanned by objects of this form is always a fibration over #{\cC}, which is isomorphic to #{\coOptic(\cC)}---the fiberwise dual is isomorphic to #{\Lens(\cC)}.
 }

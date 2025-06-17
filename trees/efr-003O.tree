@@ -15,7 +15,7 @@
     Let us quickly observe that, for \em{any} pseudo double category, the nerve is 3-coskeletal. Recall this means #{N_\Dbl(\CC)[n] \to N_\Dbl(\CC)[\partial \Delta^n]} is an isomorphism if #{n>3}. This is clear, since a double category has no four-dimensional information (by contrast, the case #{n=3} is not an isomorphism, but merely a discrete isofibration, since a 3-cell involves a diagram of 2-cells which may or may not commute).
   }
   \p{
-    The full faithfulness is more or less immediate. Certainly a pseudo double functor is determined by its action on objects, 1-cells and 2-cells, which are the objects and morphisms of #{N_\Dbl(\CC)[0],N_\Dbl(\CC)[1]}, and its chosen functoriality 2-cells, which are obtained by applying the functor #{N_\Dbl(\CC)[2] \to N_\Dbl(\DD)[2]} to a commutative triangle - this proves faithfulness. Conversely, it's straightforward to verify that the preceding data always assembles into a pseudofunctor, which proves fullness (the action on the higher simplices is determined by the action of the lower simplices due to coskeletality).
+    The full faithfulness is more or less immediate. Certainly a pseudo double functor is determined by its action on objects, 1-cells and 2-cells, which are the objects and morphisms of #{N_\Dbl(\CC)[0],N_\Dbl(\CC)[1]}, and its chosen functoriality 2-cells, which are obtained by applying the functor #{N_\Dbl(\CC)[2] \to N_\Dbl(\DD)[2]} to a commutative triangle---this proves faithfulness. Conversely, it's straightforward to verify that the preceding data always assembles into a pseudofunctor, which proves fullness (the action on the higher simplices is determined by the action of the lower simplices due to coskeletality).
   }
 
   \p{
@@ -52,9 +52,9 @@
 \end{tikzcd}
     }
 
-    A morphism in #{N_\Dbl(\cC)[2]} is a commutative diagram such as this, with each face filled with a 2-cell, so that the triangular faces are isomorphisms, and so that the resulting diagram of 2-cells commutes also. But clearly, if we forget the 2-cell between the morphisms labeled #{f,f'}, there is a unique way to reconstruct it - it must be the composite of the other two square 2-cells with the globular 2-isomorphisms in the triangle. This proves the full faithfulness in the case #{n=2}. The case #{n=3} is completely analogous.
+    A morphism in #{N_\Dbl(\cC)[2]} is a commutative diagram such as this, with each face filled with a 2-cell, so that the triangular faces are isomorphisms, and so that the resulting diagram of 2-cells commutes also. But clearly, if we forget the 2-cell between the morphisms labeled #{f,f'}, there is a unique way to reconstruct it---it must be the composite of the other two square 2-cells with the globular 2-isomorphisms in the triangle. This proves the full faithfulness in the case #{n=2}. The case #{n=3} is completely analogous.
   }
   \p{
-    Now conversely, given a weakly Segal Reedy fibrant simplicial category #{C}, it is the nerve of a pseudo double category with vertical category #{C[0]}, category of #{1}-cells #{C[1],} and composition given by choosing a section #{C[1] \times_{C[0]} C[1] \to C[2]}. By considering the category #{C[3]}, we find a unique choice of associator 2-cell, and looking at #{C[4]} proves coherence - the details are exactly as in \ref{lack-paoli-nerves-bicats} for bicategories.
+    Now conversely, given a weakly Segal Reedy fibrant simplicial category #{C}, it is the nerve of a pseudo double category with vertical category #{C[0]}, category of #{1}-cells #{C[1],} and composition given by choosing a section #{C[1] \times_{C[0]} C[1] \to C[2]}. By considering the category #{C[3]}, we find a unique choice of associator 2-cell, and looking at #{C[4]} proves coherence---the details are exactly as in \ref{lack-paoli-nerves-bicats} for bicategories.
   }
 }

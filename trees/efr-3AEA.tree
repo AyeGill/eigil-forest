@@ -10,7 +10,7 @@
   In most cases, one can not expect strict functoriality as above. From an abstract point of view, it makes sense that one should really ask only for a natural isomorphism #{\phi^*\psi^* \simeq (\psi\phi)^*}, up to some coherence conditions. This assembles into a so-called \em{pseudofunctor} into the 2-category #{\Cat}.
 }
 \p{
-  From a concrete point of view, there are many natural families of categories which arise as pseudofunctors. For example, restriction of scalars always has a left adjoint (extesion of scalars, given by #{M \mapsto M \otimes_R S,} viewing #{S} as an #{R}-module via the map #{\phi}) - since adjoints compose (that is, if #{F \vdash G} and #{F' \vdash G',} then #{FF' \vdash GG'}) this must be functorial up to natural isomorphism, but this is the best we can promise. 
+  From a concrete point of view, there are many natural families of categories which arise as pseudofunctors. For example, restriction of scalars always has a left adjoint (extesion of scalars, given by #{M \mapsto M \otimes_R S,} viewing #{S} as an #{R}-module via the map #{\phi})---since adjoints compose (that is, if #{F \vdash G} and #{F' \vdash G',} then #{FF' \vdash G'G}) this must be functorial up to natural isomorphism, but this is the best we can promise. 
 }
 \p{
   To avoid the higher categorical algebra involved in working with pseudofunctors, Grothendieck introduced the notion of \em{fibration} in \ref{grothendieck-descent-fibrations}.

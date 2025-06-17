@@ -6,7 +6,7 @@
   Recall that by a "random map", we mean a parameterized (deterministic) map #{\Omega \times X \to Y}, plus some sort of probability distribution #{\mu: I \to \Omega}, probably up to some sort of equivalence relation.
 }
 \p{
-  We would like to develop a notion of 2-cell between random maps and stochastic maps, so that a choice of 2-cell from #{(+1): \NN \to \NN} to a stochastic map #{s: X \to X} is precisely a random trajectory of the dynamical system implied by #{s} - a random sequence so that the conditional distribution of #{x_{n+1}} given #{x_1, \dots, x_n} is exactly #{s(x_n)}.
+  We would like to develop a notion of 2-cell between random maps and stochastic maps, so that a choice of 2-cell from #{(+1): \NN \to \NN} to a stochastic map #{s: X \to X} is precisely a random trajectory of the dynamical system implied by #{s}---a random sequence so that the conditional distribution of #{x_{n+1}} given #{x_1, \dots, x_n} is exactly #{s(x_n)}.
 }
 \quiver{
   \begin{tikzcd}
@@ -18,7 +18,7 @@
   The right notion is a map #{\NN \times \Omega \to \Delta(\Omega)} such that the implied distribution on #{\Omega} is always the given one, and so that the resulting diagram in #{\Stoch} commutes (i.e the two maps #{\NN \to \Delta(X)} agree).
 }
 \p{
-  Aside: the general monoidal definition of this is actually a little tricky - if #{\Omega} is from a different category than #{\NN}, what does it mean to give a map #{\Omega \times \NN \to \Omega}? (The case of a map #{\Omega \times \NN \to \NN} is of course about a category action, but here we want the other direction as well. But we do want #{\Omega} and #{\NN} to live in different categories - in this case, one of them is is #{\mathsf{ProbStoch}} and one of them is in #{\mathsf{Stoch}})
+  Aside: the general monoidal definition of this is actually a little tricky---if #{\Omega} is from a different category than #{\NN}, what does it mean to give a map #{\Omega \times \NN \to \Omega}? (The case of a map #{\Omega \times \NN \to \NN} is of course about a category action, but here we want the other direction as well. But we do want #{\Omega} and #{\NN} to live in different categories---in this case, one of them is is #{\mathsf{ProbStoch}} and one of them is in #{\mathsf{Stoch}})
 }
 \p{
   The idea is that, given a random sequence which satisfies the difference equation, your map #{\phi: \NN \times \Omega \to \Delta(\Omega)} takes #{n,\omega'} to the conditional distribution of #{\omega} given all the information necessary to compute the first #{n} elements. More conceptually, we may as well let the sample space be #{X^\NN}, and the map #{\NN \times X^\NN \to \Delta(X^\NN)} just resamples the tail after #{x_n} conditional on the first #{n} elements. Clearly this reproduces the original sampling distribution (that's what conditional distribution means), and also, if our distribution on #{X^\NN} \em{is} a solution of the difference equation, that exactly means that the conditional distribution of #{x_{n+1}} given the first #{n} elements is equal to #{s(x_n)} 
@@ -28,15 +28,15 @@
   For each #{n}, we have a kernel #{\phi(n,-): X^\NN \to \Delta(X^\NN)}, a way of generating a new sequence given an old one. The measure-consistency property says that, for each #{n}, if we sample a random sequence and then resample, the overall distribution on sequences is the same. The commutativity condition says that, for each #{n} and each sequence #{(x_n)} (maybe almost all sequences?), the distribution of #{x_{n+1}} when resampling at #{n} is #{s(x_n)}.
 }
 \p{
-  But it is not totally clear that this is sufficient - in particular, it's not clear that we're constrained to the resampling strategy "resample everything after #{n} at the conditional probability". For that matter, nothing prevents us from resampling #{x_n} as well!
+  But it is not totally clear that this is sufficient---in particular, it's not clear that we're constrained to the resampling strategy "resample everything after #{n} at the conditional probability". For that matter, nothing prevents us from resampling #{x_n} as well!
 }
 \p{
   For example, let #{X = \{0,1\}}, with the dynamics deterministically walking back and forth.
-  Consider the random sequence where each #{x_n} is uniformly and \em{independently} distributed. This is clearly not a solution. But if we resample by setting #{x'_n := \phi(n,(x_n))} to have each element independent and uniformly random, except #{x'_{n+1}} with is the negation of #{x_n}, then this is seen to be a valid 2-cell. First of all, if we sample a random #{(x_n)}, then compute #{(x'_n)} as described, clearly all the values will be independent, and each will be uniform. It is indeed true that the distribution of #{x'_{n+1}} is the one implied by #{x_n} - but it is not the one implied by #{(x'_n),} which is now different!. 
+  Consider the random sequence where each #{x_n} is uniformly and \em{independently} distributed. This is clearly not a solution. But if we resample by setting #{x'_n := \phi(n,(x_n))} to have each element independent and uniformly random, except #{x'_{n+1}} with is the negation of #{x_n}, then this is seen to be a valid 2-cell. First of all, if we sample a random #{(x_n)}, then compute #{(x'_n)} as described, clearly all the values will be independent, and each will be uniform. It is indeed true that the distribution of #{x'_{n+1}} is the one implied by #{x_n}---but it is not the one implied by #{(x'_n),} which is now different!. 
 }
 \p{
   At least part of this problem is solved if we realize that the map #{X \to X} is properly thought of, from a CST point of view, as a section of the projection #{X \times X \to X.}
-  If we incorporate this into the diagram above, we find that the resampling procedure may not change #{x_n}, which rules out the previous example. This seems to guarantee that the conditional expectation #{P(x_{n+1}|x_n)} obey the equation, but note that this is actually not quite sufficient - we want a Markov property where this doesn't change if we condition on previous #{x_i}s. This may mean that by resampling the \em{previous} #{x_i} we can mess up this property.
+  If we incorporate this into the diagram above, we find that the resampling procedure may not change #{x_n}, which rules out the previous example. This seems to guarantee that the conditional expectation #{P(x_{n+1}|x_n)} obey the equation, but note that this is actually not quite sufficient---we want a Markov property where this doesn't change if we condition on previous #{x_i}s. This may mean that by resampling the \em{previous} #{x_i} we can mess up this property.
 }
 \p{
   On the other hand, it seems like there is probably no general definition of random trajectory that specializes to Markov processes in the case of #{\NN}. For consider the "cyclic clock" deterministic systems #{\ZZ /n \xto{+1} \ZZ /n}. What would a Markov process with this time-space even mean? It seems that for \emph{Markov} processes, we must use some extra structure on #{\NN}, likely its ordering.

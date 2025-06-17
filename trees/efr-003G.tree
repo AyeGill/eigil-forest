@@ -8,7 +8,7 @@
   For each #{[n] \in \Delta}, we have an induced fibration #{\hat{\cC}^{[n]} \to B\cM^{[n]}}.
   
 
-  Let #{\dblPara_\cM(\cC)[n]} denote the fiber of the composite functor #{\cC^{[n]} \to B\cM^{[n]} \to B\cM^{n+1}} over the unique object #{(*,\dots ,*)}, where the latter functor is just evaluation at the #{n+1} objects of #{[n]} (this is not a 2-fibration in general - although it is an isofibration, so the fiber is still well-behaved).
+  Let #{\dblPara_\cM(\cC)[n]} denote the fiber of the composite functor #{\cC^{[n]} \to B\cM^{[n]} \to B\cM^{n+1}} over the unique object #{(*,\dots ,*)}, where the latter functor is just evaluation at the #{n+1} objects of #{[n]} (this is not a 2-fibration in general---although it is an isofibration, so the fiber is still well-behaved).
  
   Then
   \ol{

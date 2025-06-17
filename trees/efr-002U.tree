@@ -22,5 +22,5 @@
 \p{
   Note that the way these correspond to functors from the various duals of #{\cD} into bicategories is somewhat unintuitive!
   By the work of Buckley, #{(-,-)}-fibrations classify functors #{\cD^{\co \op} \to \BiCat}.
-  Given for example a #{(+,-)}-fibration, it has a dual #{(-,-)}-fibration which, of course, classifies a functor #{\cD^\co \to \BiCat}. But the values of this functor are not the fibers of the original functor, but the (1-cell) duals - after postcomposing with the #{(-)^\op} functor #{\BiCat^\co \to \BiCat}, we are left with a functor #{\cD \to \BiCat}.
+  Given for example a #{(+,-)}-fibration, it has a dual #{(-,-)}-fibration which, of course, classifies a functor #{\cD^\co \to \BiCat}. But the values of this functor are not the fibers of the original functor, but the (1-cell) duals---after postcomposing with the #{(-)^\op} functor #{\BiCat^\co \to \BiCat}, we are left with a functor #{\cD \to \BiCat}.
 }
