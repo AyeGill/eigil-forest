@@ -24,7 +24,11 @@
 \transclude{efr-D7W0}
 
 \p{
-  We will now give a short sketch of the theory of fibrations. Nothing here is novel, nor will we use anything unfamiliar to experts. For a textbook treatment, see eg. \ref{jacobs-categorical-logic} (chapters 1, 9), or \ref{borceux-handbook} (chapter 8). 
+  When #{f: X \to Y} and #{A \in \cD_Y}, we may write #{A_X} for the object #{f^*A} if there is no chance of confusion. (Compare that the choice of #{f} is also suppressed in the notation #{A \times_Y X} for a pullback)
+}
+
+\p{
+  We will now give a short sketch of the theory of fibrations. Nothing here is novel, nor will we use anything unfamiliar to experts. For a textbook treatment, see eg. \ref{jacobs-categorical-logic} (chapters 1, 9), or \ref{borceux-handbook} (chapter 8). Note that we will not give a formal definition of the term "pseudofunctor" here. See eg \ref{jacobs}, def. 1.4.4.
 }
 
 \transclude{efr-KUW7}
