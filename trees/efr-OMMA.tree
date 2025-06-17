@@ -7,9 +7,9 @@
 }
 \ol{
   \li{
-    #{\Markov} and #{\Markov^\oplax} admit all products, computed simply as products in #{\Cat}.
+    #{\Markov_s} and #{\Markov^\oplax} admit all products, computed simply as products in #{\Cat}.
   }
   \li{
-    #{\Markov} admits all finite limits, and these are preserved by the inclusion into #{\Markov^\oplax}
+    #{\Markov_s} admits all finite limits, and these are preserved by the inclusion into #{\Markov^\oplax}
   }
 }

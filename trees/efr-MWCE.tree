@@ -6,9 +6,6 @@
   Having done the prep-work in \ref{efr-000D} (and \ref{efr-0023}), we can jump directly into the construction:
 }
 \transclude{efr-EPI9}
-\p{
-  We call the objects #{TS \otimes \bar{A} \lensto \bar{B}} \em{bisystems} since they generalize the two types of machine, Moore and Mealy (but we choose to stick with "system" rather than "machine").
-}
 \transclude{efr-WX1V}
 \p{
   We can recover the ordinary category of (Moore) systems as the slice over #{I}, in the following sense:

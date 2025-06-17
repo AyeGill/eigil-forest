@@ -1,0 +1,8 @@
+\date{2025-06-17}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\title{The theory of smooth dynamical systems}
+\p{
+  There is a dynamical systems theory where #{\cC = \SmMfd} is the category of smooth manifolds, #{\cA_X} is the category of fiber bundles over #{X}, with #{f^*: \cA_Y \to \cA_X} given by pullback along #{f: X \to Y} (note that pullbacks of bundles always exist), and with #{TX} being the tangent bundle of #{X} in the ordinary sense. In this case, closed dynamical systems are manifolds equipped with (smooth) vector fields, which is what is classically thought of as a smooth dynamical system.
+}

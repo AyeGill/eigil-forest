@@ -2,7 +2,6 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{example}
-\title{#{\Optic(\cC)} is positive assuming supports}
 \p{
   Let #{\cC} be a positive Markov category with supports. Then #{\Optic(\cC) \to \cC} is a Markov prefibration.
 }

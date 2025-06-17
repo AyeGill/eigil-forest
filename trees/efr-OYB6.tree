@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{proposition}
+\title{Characterization of positivity}
 \p{
   Let #{\cC} be a Markov category. The following are equivalent:
 }

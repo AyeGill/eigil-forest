@@ -2,9 +2,8 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{example}
-\title{#{\Optic(\BorelStoch)} is not a Markov prefibration}
 \p{
-  The functor #{\Optic(\BorelStoch) \to \BorelStoch} is not a Markov prefibration, although its pullback over #{\BorelStoch_\det} is a Grothendieck fibration.
+  The functor ##{\Optic(\BorelStoch) \to \BorelStoch} is not a Markov prefibration, although its pullback over #{\BorelStoch_\det} is a Grothendieck fibration.
 }
 \p{
   To see this, first consider the deterministic pullback. It is not hard to see that an optic #{\binom{A}{X} \to \binom{B}{Y}} with deterministic base can be identified with a map #{X \otimes B \to A} (and the base deterministic map #{X \to Y}). Hence this part is a fibration with the fiber over #{X} being the coKleisli category of the #{X \times -} monad, and the pullback functors given by reindexing these parameterized maps. The Cartesian lift of a map #{X \to Y} at #{\binom{B}{Y}} is given by the optic #{\binom{B}{X} \to \binom{B}{Y}} with unit residual and identity backwards component.

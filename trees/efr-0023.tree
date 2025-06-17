@@ -12,7 +12,7 @@
 \transclude{efr-0025}
 
 \p{
-  We will write arenas either as #{\arena{\bar{A} \in \cA(A)}{A \in \cC}}, or, for brevity when there is no need to discuss the two levels separately, simply with a symbol #{A}. We will also write both #{\bar{TS}{S}} and #{TS} as the situation calls for - there should be no confusion resulting from this.
+  We will write arenas either as #{\arena{\bar{A} \in \cA(A)}{A \in \cC}}, or, for brevity when there is no need to discuss the two levels separately, simply with a symbol #{A}. We will also write both #{\arena{\bar{TS}}{S}} and #{TS} as the situation calls for - there should be no confusion resulting from this.
 }
 
 \transclude{efr-0028}
@@ -41,7 +41,10 @@
   In fact this example works for any monad on the category of sets.
 }
 
+\transclude{efr-KZEM}
+
 \transclude{efr-9WQU}
 \p{
-  Because of this, one views a generic chart map as a \em{generalized trajectory}, of a type given by the domain system. As another example, taking the state space to be #{\{1,2, \dots, n\}} with an update map that carries #{n} to #{1,} one finds a system which classifies \em{#{n}-periodic} trajectories. Recent work by Lynch, Myers, Staton, and the author (\ref{lynch-myers-rischel-staton-stoch-clocks}) constructs clock systems for theories of stochastic, discrete-time doctrines, although we will not delve into this here.
+  Because of this, one views a generic chart map as a \em{generalized trajectory}, of a type given by the domain system. As another example, taking the state space to be #{\{1,2, \dots, n\}} with an update map that carries #{n} to #{1,} one finds a system which classifies \em{#{n}-periodic} trajectories. Similarly, in the smooth case, the system #{(\RR, d/dt: \RR \to T\RR)} classifies solutions of a smooth differential equation (those which extend to infinity).
+  Recent work by Lynch, Myers, Staton, and the author (\ref{lynch-myers-rischel-staton-stoch-clocks}) constructs clock systems for theories of stochastic, discrete-time doctrines, although we will not delve into this here.
 }

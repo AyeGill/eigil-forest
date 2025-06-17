@@ -4,7 +4,7 @@
 \taxon{proposition}
 \p{
   Given a lens #{A \lensto A',} postcomposition gives a functor #{\Sys(A) \to \Sys(A')}.
-  Given a chart #{A \charto A'}, there is a \em{profucntor} #{\Sys(A) \proto \Sys(A'),}
+  Given a chart #{A \charto A'}, there is a \em{profunctor} #{\Sys(A) \proto \Sys(A'),}
   where the set over #{TS \lensto A} and #{TS' \lensto A'} is the set of maps #{S \to S'} so that this square commutes:
 }
 \p{

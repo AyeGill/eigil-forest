@@ -7,10 +7,12 @@
   Let #{E: \cC \to \cD} be the coequalizer in #{\Cat}. Then #{\cD} inherits a monoidal structure making #{E} strict monoidal.
   Moreover, if #{\cC} is symmetric or braided, #{\cD} inherits this structure making #{E} a braided functor.
 }
+\proof{
 \p{
   The only thing to check is that the equivalence relation on morphisms is stable under tensoring. But this is clear: let #{f : X \to Y \in \cC', g: A \to B \in \cC}.
   Then #{f \otimes S(g)} witnesses the identification of #{F(f) \otimes g} and #{G(f) \otimes g}. Tensoring on the right is analogous. This finishes the proof for the monoidal structure.
 }
 \p{
   In the braided or symmetric case, it is clear that the image of the braiding of #{\cC} in #{\cD} becomes a braiding on #{\cD} it clearly satisfies the coherence equations (being a quotient), and naturality follows by simply choosing representatives and noting that the tensor in #{\cD} is defined by tensoring representatives in #{\cC}. Finally if #{\cC} is symmetric clearly the equation #{\sigma_{A,B}\sigma_{B,A} = 1} passes to #{\cD}. 
+}
 }

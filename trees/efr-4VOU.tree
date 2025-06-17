@@ -4,8 +4,8 @@
 \taxon{remark}
 \title{A note on terminology}
 \p{
-  When we speak of a \em{stochastic} map in a Markov category, we always mean a map which is \em{not necessarily deterministic} -- that is, a general map of #{\cC}. If we wish to refer to a map which is specifically not deterministic, we will use the term \em{nondeterministic}.
+  When we speak of a \em{stochastic} map in a Markov category, we always mean a map which is \em{not necessarily deterministic} -- that is, a general map of #{\cC}.
 }
 \p{
-  Given a map #{P \to X \otimes Y} into a tensor product, the composites with the projections #{P \to X, P \to Y} are called the \em{marginals}. Given two maps #{f: P \to X, g: P \to Y}, we refer to any map #{P \to X \otimes Y} with those marginals as a \em{pairing} of the two. Note that there is always a canonical pairing given by #{(f \otimes g) \copy_P}. We write #{\braket{f,g}: P \to X \otimes Y} for this canonical pairing. For deterministic maps this is just the usual pairing using the universal property of the product. (We mostly use this in cases where one map is deterministic, so that the pairing is unique assuming positivity).
+  Given a map #{p: P \to X \otimes Y} into a tensor product, the composites with the projections #{P \to X, P \to Y} are called the \em{marginals}. Given two maps #{f: P \to X, g: P \to Y}, we refer to any map #{P \to X \otimes Y} with those marginals as a \em{pairing} of the two. Note that there is always a canonical pairing given by #{(f \otimes g) \copy_P}. We write #{\braket{f,g}: P \to X \otimes Y} for this canonical pairing. For deterministic maps this is just the usual pairing using the universal property of the product. (We mostly use this in cases where one map is deterministic, so that the pairing is unique assuming positivity). When #{p = \braket{\pi_Xp, \pi_Yp}}, we say #{X \indep Y \mid P}, and say the two coordinates are \em{independent given #{P}} (or just independent). 
 }

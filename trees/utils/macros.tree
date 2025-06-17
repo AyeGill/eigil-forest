@@ -474,6 +474,9 @@
 
 \def\todo[note]{[\note](todo-tree)}
 \def\rparen{\startverb)\stopverb}
+\def\lparen{\startverb(\stopverb}
+\def\lbracket{\startverb[\stopverb}
+\def\rbracket{\startverb]\stopverb}
 \def\amp{\startverb\&\stopverb}
 
 

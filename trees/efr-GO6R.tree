@@ -36,10 +36,8 @@
 }
 
 \p{
-  Stochastic modules over a given #{X \in \cC} can be seen to be monadic over the category of indexed copresheaves over that #{X}. However, the compatibility of these local left adjoints with the structure of the rest of the category is somewhat subtle. However, we do have free stochastic modules on \em{representable} indexed copresheaves, as we now show:
+  Stochastic modules over a given #{X \in \cC} can be seen to be monadic over the category of indexed copresheaves over that #{X}. However, the compatibility of these local left adjoints with the structure of the rest of the category is somewhat subtle. However, we do have free stochastic modules on \em{representable} indexed copresheaves, as we will soon see.
 }
-
-\transclude{efr-A08L}%Free thing
 
 
 \transclude{efr-2XPE}
@@ -48,12 +46,16 @@
   We will now begin proving:
 }
 \transclude{efr-LGOA}%Left adjoint theorem
-\transclude{efr-OH7U}%Cartesians proof
+\transclude{efr-OH7U}%Proof of existence of free guys
 \transclude{efr-0BES}%Proof of left adjoint
 \p{
   This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}.
 }
 \transclude{efr-ACIV}%Remark on terminology
+
+\transclude{efr-A08L}%Monad on fibrations on Cdet
+
+
 
 \p{
   It is immediately obvious that we have:
@@ -67,7 +69,7 @@
 
 
 \p{
-  By construction, two morphisms in #{\overline{\cD}_0} represented by spans with apex #{M,M',} are identified if there exists a zig-zag #{M \to K_0 \leftarrow K_1 \cdots \leftarrow M'} of spans (decorated with sections from the domain #{X} and morphisms in the fiber, satisfying equations, etc). We will now prove a lemma that allows us to cut this down to a smaller set in many conditions. We will need the following hypothesis:
+  By construction, two morphisms in #{\overline{\cD}_0} represented by spans with apex #{M,M',} are identified if there exists a zig-zag #{M \to K_0 \leftarrow K_1 \to \cdots \leftarrow M'} of spans (decorated with sections from the domain #{X} and morphisms in the fiber, satisfying equations, etc). We will now prove a lemma that allows us to cut this down to a smaller set in many conditions. We will need the following hypothesis:
 }
 
 \transclude{efr-2MH5}%defn: weak conditionals

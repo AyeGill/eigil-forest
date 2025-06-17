@@ -12,7 +12,7 @@
   }
   \li{
     A map is \em{Cartesian} if for every #{g: Z \to X} and #{\bar{Z}} with #{p(\bar{Z}) = Z,} there is a bijection
-    ##{\{\bar{g} : \bar{Z} \to \bar{X} \mid p(\bar{g}) = g\} \to \{\bar{g}' : \bar{Z} \to \bar{Y} \mid p(\bar{g'} = fg)\}}
+    ##{\{\bar{g} : \bar{Z} \to \bar{X} \mid p(\bar{g}) = g\} \to \{\bar{g}' : \bar{Z} \to \bar{Y} \mid p(\bar{g'} = fg)\},}
     note that every Cartesian map is locally Cartesian (take #{g = 1_X})
   }
   \li{

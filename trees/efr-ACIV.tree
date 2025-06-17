@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{remark}
 \p{
-  We will sometimes refer to the morphisms of #{\overline{\cD_0}} as \em{precharts}. Taking the fibration #{\MAr{\cC}|\_det \to \cC_\det} as an example, it is not too hard to see that the precharts between #{X \otimes A \to X} and #{B \otimes Y \to Y} are representatives of co-optics #{\arena{A}{X} \charto \arena{B}{Y}}. In fact their equivalence relation is given by sliding equivalence for \em{deterministic} maps (i.e morphisms in #{\Optic_{\cC_\det}(\cC_\det, \cC)}). The precharts in #{\cD_0^\fop} will be called \em{prelenses}. We will speak of the tuple
+  We will sometimes refer to the morphisms of #{\overline{\cD_0}} as \em{precharts}. Taking the fibration #{\MAr{\cC}|_\det \to \cC_\det} as an example, it is not too hard to see that the precharts between #{X \otimes A \to X} and #{B \otimes Y \to Y} are representatives of co-optics #{\arena{A}{X} \charto \arena{B}{Y}}. In fact their equivalence relation is given by sliding equivalence for \em{deterministic} maps (i.e morphisms in #{\Optic_{\cC_\det}(\cC_\det, \cC)}). The precharts in #{\cD_0^\fop} will be called \em{prelenses}. We will speak of the tuple
   ##{(M, p:M \to X, p':M \to Y, s: X \to M, \phi: p^*\bar{X} \to p^*\bar{Y})}
   representing a prechart just as a "decorated span (representing ...)". When part of the structure is understood, or can just be left abstracted, we will denote such a decorated span simply by #{(M,s,\phi),} or even just #{(M,\phi)}. It will be clear from context which part of the structure is being specified.
 }

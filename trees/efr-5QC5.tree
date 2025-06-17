@@ -25,7 +25,9 @@
 \p{
   It is clear that both Mealy and Moore machines, in this sense, are special kinds of \em{parameterized morphism} in lenses, namely those parameterized by an object of the form #{TS}. This leads naturally to the idea that there should be a triple category of morphisms of this type, charts, and lenses.
 }
-
+\p{
+  We call the parameterized lenses #{TS \otimes \bar{A} \lensto \bar{B}} \em{bisystems} since they generalize the two types of machine, Moore and Mealy (but we choose to stick with "system" rather than "machine").
+}
 \transclude{efr-000E}
 
 \p{
@@ -40,7 +42,7 @@
 }
 
 \p{
-  It should also be noted that the idea of embedding Mealy machines as the morphisms #{TS \otimes A \to I} is not original, but was communicated to the author by Matteo Capucci. It seems not to have appeared in the literature so far. The idea that there "should" be a triple category of systems, like the one we will construct, has also circulated as folklore for a few years, although again an explicit construction has yet to appear. Very similar ideas appear in the work of Shapiro and Spivak, see for example \ref{shapiro-spivak-dynamic-operads}. 
+  It should also be noted that the idea of embedding Mealy machines as the morphisms #{TS \otimes A \to I} is not original, but was communicated to the author by Matteo Capucci. It seems not to have appeared in the literature so far. The idea that there "should" be a triple category of systems, like the one we will construct, has also circulated as folklore, although again an explicit construction has yet to appear. Very similar ideas appear in the work of Shapiro and Spivak, see for example \ref{shapiro-spivak-dynamic-operads}. 
 }
 
 \p{
