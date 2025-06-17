@@ -36,11 +36,11 @@
 }
 
 \ol{
-  \li{If #{\cD} is a Markov fibration, we get a stochastic module structure on #{\cD|_\det^\cA} - does it present a markov fibration?}
+  \li{If #{\cD} is a Markov fibration, we get a stochastic module structure on #{\cD|_\det^\cA}---does it present a markov fibration?}
   \li{There is an induced map #{\SChart{\Fun(\cA,\cD|_\det)} \to \Fun(\cA,\cD)} (where the latter is taken by convention to mean the full subcategory of functors whose image in #{\cC} consists of deterministic arrows). Is this an isomorphism? (If it is, clearly this implies point 1)}
 }
 \p{
-  Unfortunately this is by no means obvious - the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these - we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. 
+  Unfortunately this is by no means obvious---the surjectivity of #{\SChart{\cD|_\det} \to \cD} cannot a priori be lifted to the arrow category. The issue is that, given a map in #{\MAr{\cD}} consisting of, say #{\phi_0,\phi_1,} it is not sufficient to find charts representing each of these---we must find a \em{chart of squares} representing the square. This is not guaranteed by the Markov fibration structure, and a similar issue comes into play for the equivalence witnesses. 
 }
 \p{
   We may attempt to ignore this issue and simply try to form a double category #{\SLens(\MAr{\cD}) \rightrightarrows \SLens(\cD),} given a stochastic module #{\cD}, but here the problem is that #{\SLens} does not commute with limits in general. Hence we can not easily define a composition on the 2-cells of lenses obtained this way.

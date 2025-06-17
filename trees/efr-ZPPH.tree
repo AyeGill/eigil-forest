@@ -6,7 +6,7 @@
   This is due to Dwyer and Kan, see a discussion in [nlab: Simplicial Localization](https://ncatlab.org/nlab/show/simplicial+localization).
 }
 \p{
-  The other equivalences pinning down the homotopy theory of homotopy theories are, of course, by no means trivial - for example the equivalence between simplicial categories and quasicategories - but this is essentially a strictification result for the lowest level of composition, and as such not entirely surprising. The observation that all the infinite higher levels of structure - as long as it is suitably weak, and invertible - can be represented at such a low level is very surprising.
+  The other equivalences pinning down the homotopy theory of homotopy theories are, of course, by no means trivial---for example the equivalence between simplicial categories and quasicategories---but this is essentially a strictification result for the lowest level of composition, and as such not entirely surprising. The observation that all the infinite higher levels of structure---as long as it is suitably weak, and invertible---can be represented at such a low level is very surprising.
 }
 \p{
   The result tells you that somehow #{(\infty,1)}-category theory is really about the weak equivalences. Once you have those, all the higher structure is forced to exist. It is also linked to the observation that being an isomorphism in an #{(\infty,1)}-category is a mere property (and moreover, there is only one good notion of isomorphism, no weakenings), as represented for eg quasicategories by the theorem, due to Joyal, that a morphism is a "strong isomorphism" (guaranteeing fillers for all the horns involving it (not merely the inner ones)) if and only if it is an isomorphism in the homotopy category.

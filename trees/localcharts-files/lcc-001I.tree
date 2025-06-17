@@ -9,7 +9,7 @@
     The first of these problems corresponds to #{L_1 = (X,*,L_1(x,*) = f(Ax + b))}
 }
 \p{
-    The second corresponds to #{L_2 = (X \times Y, Y^*, L_2(x,y,\alpha) = f(y) + \alpha (Ax + b - y))}
+    The second corresponds to #{L_2 = (X \times Y, Y^*, L_2(x,y,\alpha) = f(y) + \alpha (Ax + b---y))}
     (Where by #{Y^*} I just mean the vector space dual of #{Y})
 }
 \p{
@@ -18,8 +18,8 @@
 }
 \p{
     In the other direction, we have the map #{(x,y) \mapsto x}, the first projection.
-    Now, it is true that #{(L_2)_*(x,y) \geq (L_1)_*(x)} - the former is #{\infty} unless #{y = Ax + b}, in which case they're both equal to the infimal value of #{f(Ax + b)}.
-    But there is no map #{* \to Y^*} picking out an #{\alpha} which witnesses this - even if we pass to some sort of extended reals, the signs we want to choose depend on the sign of #{Ax + b - y}, which could go either way.
+    Now, it is true that #{(L_2)_*(x,y) \geq (L_1)_*(x)}---the former is #{\infty} unless #{y = Ax + b}, in which case they're both equal to the infimal value of #{f(Ax + b)}.
+    But there is no map #{* \to Y^*} picking out an #{\alpha} which witnesses this---even if we pass to some sort of extended reals, the signs we want to choose depend on the sign of #{Ax + b---y}, which could go either way.
 
     This is one sense in which the problems are "equivalent but not isomorphic".
 }

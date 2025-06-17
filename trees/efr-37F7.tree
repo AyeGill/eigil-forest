@@ -8,7 +8,7 @@
 }
 \p{
   Moreover this is monoidal for the Hancock tensor on #{\Optic(\CartSp)}. 
-  Since #{\Para(-)} is functorial, we obtain a functor #{\Para(\CartSp) \to \Para(\Optic(\CartSp))}. Given some parameterized (smooth) map #{X \times P \to Y,} we obtain an optic #{\arena{X}{X} \otimes \arena{P}{P} \to \arena{Y}{Y}}. After choosing #{x \in X} and a section #{d: Y \to Y} -- for example, by sampling #{x,y^*} from a dataset and letting #{d(y)} be the gradient of #{(y-y^*)^2} at #{y} -- the resulting gradient #{P \to P} describes how to update the parameters to move #{y} in the desired direction. The fact that this is functorial is essentially the mechanism behind the backpropagation algorithm - see \ref{backprop-as-functor}, \ref{bruno-etal-categorical-learning-2021} for more.
+  Since #{\Para(-)} is functorial, we obtain a functor #{\Para(\CartSp) \to \Para(\Optic(\CartSp))}. Given some parameterized (smooth) map #{X \times P \to Y,} we obtain an optic #{\arena{X}{X} \otimes \arena{P}{P} \to \arena{Y}{Y}}. After choosing #{x \in X} and a section #{d: Y \to Y} -- for example, by sampling #{x,y^*} from a dataset and letting #{d(y)} be the gradient of #{(y-y^*)^2} at #{y} -- the resulting gradient #{P \to P} describes how to update the parameters to move #{y} in the desired direction. The fact that this is functorial is essentially the mechanism behind the backpropagation algorithm---see \ref{backprop-as-functor}, \ref{bruno-etal-categorical-learning-2021} for more.
 }
 \p{
   (Note that this construction can also be generalized to smooth manifolds, but one must pass to \em{dependent} lenses and use the cotangent manifold instead.)

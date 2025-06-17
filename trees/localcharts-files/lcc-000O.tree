@@ -12,5 +12,5 @@
 \subtree{
     \taxon{proof}
     \p{The functoriality is trivial to verify. Fullness of this functor is just a reformulation of the definition of randomness pushback.}
-    \p{Given #{\phi: \Omega_1 \to \Omega_2,} let #{\phi': \Omega_1 \otimes A \to \Omega} and #{\nu : I \to A} be a randomness pushback for it - that is, #{\phi'} is deterministic and #{\phi' (\Omega_1 \otimes \nu) = \phi}. Consider the tuple #{(\Omega_1 \otimes A, (\mu_1 \otimes \nu), f_1(\pi_{\Omega_1} \otimes X))}. By construction, the deterministic maps #{\pi_1} and #{\phi'} witness its equivalence to the two other maps.}
+    \p{Given #{\phi: \Omega_1 \to \Omega_2,} let #{\phi': \Omega_1 \otimes A \to \Omega} and #{\nu : I \to A} be a randomness pushback for it---that is, #{\phi'} is deterministic and #{\phi' (\Omega_1 \otimes \nu) = \phi}. Consider the tuple #{(\Omega_1 \otimes A, (\mu_1 \otimes \nu), f_1(\pi_{\Omega_1} \otimes X))}. By construction, the deterministic maps #{\pi_1} and #{\phi'} witness its equivalence to the two other maps.}
 }

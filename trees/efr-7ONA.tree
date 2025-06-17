@@ -20,7 +20,7 @@
   Similarly in zero-sum cases, the minmax solution of #{L(x,a)} may change if the set of #{A}s is restricted.
 }
 \p{
-  In the dynamical case, the key point is that a function of derivative is contravariant functorial in #{x}, whereas derivatives themselves are covariant - given a vector field on #{X} and #{Y \to X}, we can't transport the vector field back to #{Y}.
+  In the dynamical case, the key point is that a function of derivative is contravariant functorial in #{x}, whereas derivatives themselves are covariant---given a vector field on #{X} and #{Y \to X}, we can't transport the vector field back to #{Y}.
 }
 \p{
   This is probably related to Owen et al's "energy-driven systems".

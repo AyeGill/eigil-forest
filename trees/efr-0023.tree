@@ -12,7 +12,7 @@
 \transclude{efr-0025}
 
 \p{
-  We will write arenas either as #{\arena{\bar{A} \in \cA(A)}{A \in \cC}}, or, for brevity when there is no need to discuss the two levels separately, simply with a symbol #{A}. We will also write both #{\arena{\bar{TS}}{S}} and #{TS} as the situation calls for - there should be no confusion resulting from this.
+  We will write arenas either as #{\arena{\bar{A} \in \cA(A)}{A \in \cC}}, or, for brevity when there is no need to discuss the two levels separately, simply with a symbol #{A}. We will also write both #{\arena{\bar{TS}}{S}} and #{TS} as the situation calls for---there should be no confusion resulting from this.
 }
 
 \transclude{efr-0028}
@@ -22,7 +22,7 @@
 }
 \transclude{efr-0026}
 \p{
-  Of course, coalgebras can already encode systems with input and output - the point of the CST framework is to separate out the input and output of systems so that they can be acted on in a compositional manner.
+  Of course, coalgebras can already encode systems with input and output---the point of the CST framework is to separate out the input and output of systems so that they can be acted on in a compositional manner.
 }
 
 

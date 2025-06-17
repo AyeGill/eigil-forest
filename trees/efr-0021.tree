@@ -15,5 +15,5 @@
   The second issue can be solved by assuming our equations are \em{Lipschitz} (which the square root function is not). Since smooth functions are at least Lipschitz on compact domains (with Lipschitz constant bounded by the maximal derivative), there is some hope that we can get rid of this problem (but note that, when studying stochastic processes, there are reasons for wanting to study processes with jumps, complicating the situation).
 }
 \p{
-  However, the first issue is more resilient. One approach is to restrict our attention to compact manifolds - this is enough to guarantee that every smooth differential equation has a (global) solution. The problem with this is that the spaces of trajectories - like the space of smooth functions #{\RR \to A} - will not even be a manifold, but some type of generalized smooth space. Hence we will not a priori be able to extend this class 
+  However, the first issue is more resilient. One approach is to restrict our attention to compact manifolds---this is enough to guarantee that every smooth differential equation has a (global) solution. The problem with this is that the spaces of trajectories---like the space of smooth functions #{\RR \to A}---will not even be a manifold, but some type of generalized smooth space. Hence we will not a priori be able to extend this class 
 }

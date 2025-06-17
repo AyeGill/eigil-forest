@@ -7,7 +7,7 @@
   In \ref{actegories-amthematician-capucci-gavranovic}, the authors study actegories with extra monoidal structure. Although they do not introduce pseudomonoid actions in a general 2-category, they study actegories internal to monoidal categories, which they call \em{monoidal actegories.} It is straightforward to check that pseudomonoid actions in #{\MonCat} agree with their notion: such an action consists of a braided monoidal category #{\cM}, an ordinary monoidal category #{\cC}, a monoidal functor #{\cM \times \cC \to \cC,} and monoidal natural transformations #{\mu,\eta} satisfying the coherence equations for an actegory.
 }
 \p{
-  (Note that since the functor #{\otimes} appears on one side of #{\mu}, to speak of #{\mu} being a monoidal natural transformation we must have a monoidal structure on #{\otimes} - this makes #{\cM} into a braided monoidal category).
+  (Note that since the functor #{\otimes} appears on one side of #{\mu}, to speak of #{\mu} being a monoidal natural transformation we must have a monoidal structure on #{\otimes}---this makes #{\cM} into a braided monoidal category).
 }
 \p{
   For the case of symmetric monoidal actegories, since #{\SymMonCat} is cocartesian, #{\PsMon(\SymMonCat) \simeq \SymMonCat}. Given two symmetric monoidal categories #{\cM,\cC,} \ref{actegories-amthematician-capucci-gavranovic} show that an action is simply given by a strong symmetric monoidal functor #{f: \cM \to \cC} (and in this case the action is #{M \cdot C = F(M) \otimes C}). Unwinding this construction we see that #{\Act_s(\SymMonCat)} is bi-equivalent to a category which has as objects strong (but not strict) symmetric monoidal functors #{C \to C',} and morphisms squares

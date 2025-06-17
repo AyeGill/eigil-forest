@@ -24,7 +24,7 @@
   Because of the existence of conditionals, as noted previously, every such map can be identified with one where the residual is #{X \otimes Y}. It is clear that the relevant data is then a map #{X \to Y} and a map #{X' \otimes X \times Y \to Y'}, which gives an optic. Hence the map from optics is surjective.
 }
 \p{
-  Now, we claim it is injective as well. To see this it suffices to observe that every choice of residual #{M \to X \times Y} embeds in some bigger "nondependent" residual #{M' \times X \times Y}, and we can always extend any map #{X' \times_X M \to Y'} to this larger set. Hence any series of relations identifying the maps associated to two optics can be carried out using only these nondependent residuals - but then it is clear that each such relation amounts to a sliding relation between optics. Hence the map is injective.
+  Now, we claim it is injective as well. To see this it suffices to observe that every choice of residual #{M \to X \times Y} embeds in some bigger "nondependent" residual #{M' \times X \times Y}, and we can always extend any map #{X' \times_X M \to Y'} to this larger set. Hence any series of relations identifying the maps associated to two optics can be carried out using only these nondependent residuals---but then it is clear that each such relation amounts to a sliding relation between optics. Hence the map is injective.
 }
 \p{
   Now observe that, given an optic #{\binom{A}{X} \to \binom{B}{Y},} and a map #{Y \to B}, there is a well-defined composite map #{X \to A}.
@@ -34,7 +34,7 @@
   In particular, if #{\BorelStoch'} \em{was} a Markov fibration, if two optics have the same induced map #{X' \otimes X \to Y' \otimes Y,} then composing them with the same such map should give the same map #{X \to Y'}. We will show this is not the case.
 }
 \p{
-  Let #{X = *}, #{X',Y,Y' = \RR,} let the distribution #{* \to Y} be standard Gaussian, let the residual be all of #{Y}, and let #{X' \times Y \to Y'} be given  for the first optic by #{X+y}, and for the second optic by the map which is #{0} when #{x=y}, and #{x+y} otherwise. In both cases, the induced map #{X' \to Y \otimes Y'} is given at each point #{x} by sampling a standard normal and returning #{y,y+x} - for each input #{x}, the probability that we sample the same #{y} is zero, so the maps agree.
+  Let #{X = *}, #{X',Y,Y' = \RR,} let the distribution #{* \to Y} be standard Gaussian, let the residual be all of #{Y}, and let #{X' \times Y \to Y'} be given  for the first optic by #{X+y}, and for the second optic by the map which is #{0} when #{x=y}, and #{x+y} otherwise. In both cases, the induced map #{X' \to Y \otimes Y'} is given at each point #{x} by sampling a standard normal and returning #{y,y+x}---for each input #{x}, the probability that we sample the same #{y} is zero, so the maps agree.
 }
 \p{
   But if we take the corresponding optics #{\binom{Y'}{*} \to \binom{X'}{Y}} and compose it with the identity map #{Y \to X',} we find that we get the distribution #{\cN(0,2)} in one case, and constant #{0} in the other. 

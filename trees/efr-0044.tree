@@ -8,7 +8,7 @@
 
 \proof{
     \p{
-        Assume first #{\cC} is pullback-positive. It is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts - pullback positivity is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts can be taken to be deterministic (we have just constructed deterministic Cartesian lifts, and such lifts are unique up to unique isomorphism), the second condition also follows from this assumption, simply taking the other leg to be deterministic.
+        Assume first #{\cC} is pullback-positive. It is clear that computing pullbacks in #{\cC_\det} gives the required Cartesian lifts---pullback positivity is precisely the claim that lifts exist uniquely in the definition of a Cartesian morphism (since the map to the base leg of the pullback is always deterministic in this case). Since Cartesian lifts can be taken to be deterministic (we have just constructed deterministic Cartesian lifts, and such lifts are unique up to unique isomorphism), the second condition also follows from this assumption, simply taking the other leg to be deterministic.
     }
     \p{
         Conversely, suppose #{\MAr{\cC} \to \cC} is a Markov prefibration and suppose the Cartesian maps are given by the deterministic pullback squares.

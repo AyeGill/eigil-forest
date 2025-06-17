@@ -30,7 +30,7 @@
         by definition of #{\Lens}.
         The precomposition maps then carry #{(\psi^+, \psi^-)} to #{(\psi^+, (\phi_i^-)^*\psi^-)}.
     }
-    \p{So clearly, if condition 1 holds - if each #{(\phi_i^-)^*} is a bijection - each of these maps is a bijection, as desired. If condition 2 holds, both products are empty. This establishes the forwards direction: if, for each #{C}, one of the conditions hold, the natural transformation is a bijection, and so we have a coproduct.}
+    \p{So clearly, if condition 1 holds---if each #{(\phi_i^-)^*} is a bijection---each of these maps is a bijection, as desired. If condition 2 holds, both products are empty. This establishes the forwards direction: if, for each #{C}, one of the conditions hold, the natural transformation is a bijection, and so we have a coproduct.}
     \p{On the other hand, let #{C} be so that neither condition holds. Take #{Z = \sum_i X_i}.}
     \p{By assumption all of the sets #{\cC(X_i \times C, A_i)} are nonempty, and so are the sets #{\cC(X_i, Z)}. Hence neither product is empty, so each map must be a bijection. But by assumption there is some #{i} where this is not the case.}
 }

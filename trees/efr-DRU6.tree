@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{lemma}
 \p{
-  2-cells of decorated spans compose - that is, given a diagram
+  2-cells of decorated spans compose---that is, given a diagram
   \quiver{
     \begin{tikzcd}
     \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
@@ -23,6 +23,6 @@
       \bar{X_3}_{M_1} \ar[r] & \bar{Y_3}_{M_1}
       \end{tikzcd}
     }
-    Note that the top square is commutative by assumption, since pullbacks compose (even along stochastic maps) and this is the assumption that #{\alpha} is a cell. The bottom square is the result of pulling back a commutative square over #{M_2} again along #{\alpha}. Note that pullback along stochastic morphisms is not in general functorial - but since the vertical parts of this square are themselves pulled back from #{X_2,Y_2}, this composition is preserved by pullback along #{\alpha: M_1 \to M_2}. This finishes the proof. 
+    Note that the top square is commutative by assumption, since pullbacks compose (even along stochastic maps) and this is the assumption that #{\alpha} is a cell. The bottom square is the result of pulling back a commutative square over #{M_2} again along #{\alpha}. Note that pullback along stochastic morphisms is not in general functorial---but since the vertical parts of this square are themselves pulled back from #{X_2,Y_2}, this composition is preserved by pullback along #{\alpha: M_1 \to M_2}. This finishes the proof. 
   }
 }

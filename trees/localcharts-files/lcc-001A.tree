@@ -15,12 +15,12 @@
     }
     \p{The idea is that
         \ol{
-            \li{The objects of #{\cC} are "spaces" which the dynamics can happen in - we could have #{\cC = \Top}, #{\cC = \Man}, or even more simply, #{\cC = \Set}}
+            \li{The objects of #{\cC} are "spaces" which the dynamics can happen in---we could have #{\cC = \Top}, #{\cC = \Man}, or even more simply, #{\cC = \Set}}
             \li{#{\cA(X \in \cC)} assigns to each space a category of "bundles over #{X}", families of objects indexed over #{X} in a suitable way. For example, if the spaces are manifolds, we could have #{\cA(X)} be the category of bundles over #{X}, or just the vector bundles and linear maps. If #{\cC} is the category of sets, we could have #{\cA(X) = \Set_{/X}}.}
-            \li{The section takes each space to its "tangent bundle" - a collection of "possible changes" in #{X}.}
+            \li{The section takes each space to its "tangent bundle"---a collection of "possible changes" in #{X}.}
         }    
     }
-    \p{In this situation, a \em{dynamical system} is an object #{S \in \cC} and a morphism #{TS \leftrightarrows A} in the fiberwise opposite #{\int \cA(-)^\op}. In the case where #{\cC} is the category of smooth manifolds and smooth maps, and #{\cA(X)} is the category of bundles over #{X}, and #{T} is the tangent bundle functor, this means that #{A = A \to B} is some bundle, and a dynamical system consists of maps #{f: S \to B} and #{f^\#: f^*A \to TS}. The idea is that #{A \to B} is the "interface" of the dynamical system, #{f} computes the \em{output} associated to each state, #{A_b} is the space of possible inputs for a certain output, and #{f^\#} computes the tangent vector given an input - hence, this is a form of parameterized smooth dynamical system}
+    \p{In this situation, a \em{dynamical system} is an object #{S \in \cC} and a morphism #{TS \leftrightarrows A} in the fiberwise opposite #{\int \cA(-)^\op}. In the case where #{\cC} is the category of smooth manifolds and smooth maps, and #{\cA(X)} is the category of bundles over #{X}, and #{T} is the tangent bundle functor, this means that #{A = A \to B} is some bundle, and a dynamical system consists of maps #{f: S \to B} and #{f^\#: f^*A \to TS}. The idea is that #{A \to B} is the "interface" of the dynamical system, #{f} computes the \em{output} associated to each state, #{A_b} is the space of possible inputs for a certain output, and #{f^\#} computes the tangent vector given an input---hence, this is a form of parameterized smooth dynamical system}
 }
 \subtree{
     \title{Categories of Stochastic Dynamical Systems}

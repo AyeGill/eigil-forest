@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{remark}
 \p{
-  Of course, there is an equally good "pull-back" operation on selection relations given by #{\{(x,kf) \mid (fx, k)\}} (this is the pushforward in #{\SS_{\cC^\op}}). These are adjoint representatives of the same profunctor, which should arguably be regarded as the primary object of interest - that is, we could work with a functor #{\cC \to \dblCat}, the category of categories and profunctors, where we say two selection relations #{\epsilon \in \SS_X, \epsilon' \in \SS_Y} are related by #{f :X \to Y} if #{\epsilon(x, kf) \Rightarrow \epsilon'(fx, k)}.
+  Of course, there is an equally good "pull-back" operation on selection relations given by #{\{(x,kf) \mid (fx, k)\}} (this is the pushforward in #{\SS_{\cC^\op}}). These are adjoint representatives of the same profunctor, which should arguably be regarded as the primary object of interest---that is, we could work with a functor #{\cC \to \dblCat}, the category of categories and profunctors, where we say two selection relations #{\epsilon \in \SS_X, \epsilon' \in \SS_Y} are related by #{f :X \to Y} if #{\epsilon(x, kf) \Rightarrow \epsilon'(fx, k)}.
 }
 \p{
   However, we will stick with the pushforward definition for now, since it is conceptually simpler and good enough for our purposes.

@@ -8,7 +8,7 @@
 
 
 \p{
-  The class of fibrations is stable under pullback. This turns #{\Fib(-)} into an indexed category, which represents a fibration over #{\Cat} - this is the "global" category of fibrations #{\Fib}, whose objects are fibrations #{\cD \to \cC,} and whose morphisms are commutative squares
+  The class of fibrations is stable under pullback. This turns #{\Fib(-)} into an indexed category, which represents a fibration over #{\Cat}---this is the "global" category of fibrations #{\Fib}, whose objects are fibrations #{\cD \to \cC,} and whose morphisms are commutative squares
 
   \quiver{
     \begin{tikzcd}
@@ -20,13 +20,13 @@
   where the top map preserves Cartesian morphisms.
 }
 \p{
-  By considering universal constructions like limits and colimits in #{\Fib}, additional fibrations can be constructed. It would similarly be useful to study limits in the category of Markov fibrations. Moreover, the products in #{\Fib} allow one to express notions of internal pseudomonoid - these turn out to be \em{monoidal fibrations}, and this is a key part of Moeller and Vasilakopoulou's treatment of the monoidal Grothendieck construction, \ref{moeller-vasilakopoulou}. Since we want to study monoidal Markov fibrations, we should study their limits.
+  By considering universal constructions like limits and colimits in #{\Fib}, additional fibrations can be constructed. It would similarly be useful to study limits in the category of Markov fibrations. Moreover, the products in #{\Fib} allow one to express notions of internal pseudomonoid---these turn out to be \em{monoidal fibrations}, and this is a key part of Moeller and Vasilakopoulou's treatment of the monoidal Grothendieck construction, \ref{moeller-vasilakopoulou}. Since we want to study monoidal Markov fibrations, we should study their limits.
 }
 \transclude{efr-9VAH}%thm: prefibrations are preserved by pullback
 \transclude{efr-Z8X4}%remark
 \transclude{efr-FNYQ}%def: global cat. of Markov prefibrations
 \p{
-  There is an obvious functor #{\MarkPreFib \to \Fib \times_\Cat \Markov^\oplax,} which carries a prefibration to the pair of its Markov category and its underlying fibration onto the deterministic part. On each fiber, this admits a left adjoint, as constructed in \ref{efr-GO6R}. By abstract nonsense these left adjoints commute \em{laxly} with the pullbacks - that is, given an oplax Markov functor #{f: \cC \to \cC'} and a map of fibrations #{\cD \to \cD'} over the deterministic part, there is an induced functor #{\overline{\cD} \to \overline{\cD'}} over #{f}, although this assignment does not preserve Cartesian squares.
+  There is an obvious functor #{\MarkPreFib \to \Fib \times_\Cat \Markov^\oplax,} which carries a prefibration to the pair of its Markov category and its underlying fibration onto the deterministic part. On each fiber, this admits a left adjoint, as constructed in \ref{efr-GO6R}. By abstract nonsense these left adjoints commute \em{laxly} with the pullbacks---that is, given an oplax Markov functor #{f: \cC \to \cC'} and a map of fibrations #{\cD \to \cD'} over the deterministic part, there is an induced functor #{\overline{\cD} \to \overline{\cD'}} over #{f}, although this assignment does not preserve Cartesian squares.
 }
 \p{
   However this does give a functor #{\Fib \times_\Cat \Markov^\oplax \to \MarkPreFib}, left adjoint to the restriction. The category of algebras over this monad is fibred over #{\Markov^\oplax,} with each fiber being the category of stochastic modules over that markov category, and we get a global functor from #{\MarkPreFib}. In the same way, we get a global functor #{\SChart(-)} to #{\Cat^\to} which carries each stochastic module #{\cD_0 \to \cC_\det \to \cC} to the functor #{\SChart(\cD_0) \to \cC}

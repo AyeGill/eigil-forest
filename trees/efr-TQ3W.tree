@@ -7,6 +7,6 @@
 }
 \proof{
   \p{
-    Given #{f: X \to Y} and #{\bar{Y} \in \cA(Y),} is is clear that the map #{\arena{\cA(f)(\bar{Y})}{X} \to \arena{\bar{Y}}{Y}} given by #{f, 1_{\cA(f)(\bar{Y})}} is locally Cartesian - the required bijection is the definition of maps in the Grothendieck construction. But it's straightforward to see that these compose.
+    Given #{f: X \to Y} and #{\bar{Y} \in \cA(Y),} is is clear that the map #{\arena{\cA(f)(\bar{Y})}{X} \to \arena{\bar{Y}}{Y}} given by #{f, 1_{\cA(f)(\bar{Y})}} is locally Cartesian---the required bijection is the definition of maps in the Grothendieck construction. But it's straightforward to see that these compose.
   }
 }

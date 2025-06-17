@@ -8,6 +8,6 @@
 }
 \proof{
   \p{
-    The correspondence in both directions is obvious by just formally reversing the direction of the map #{f: \binom{A}{M} \to \binom{B}{M}} in a representing tuple #{X \leftarrow M \to Y, a: X \to M, f} - the fact that this assignment respects the equivalence relation follows from the fact that the monad preserves fiberwise opposites.
+    The correspondence in both directions is obvious by just formally reversing the direction of the map #{f: \binom{A}{M} \to \binom{B}{M}} in a representing tuple #{X \leftarrow M \to Y, a: X \to M, f}---the fact that this assignment respects the equivalence relation follows from the fact that the monad preserves fiberwise opposites.
   }
 }

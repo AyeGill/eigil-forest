@@ -14,7 +14,7 @@
   }
 }
 \p{
-  However, already at step two we encounter serious complications - it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated. However, it will turn out that our particular double and triple categories are of a sufficiently nice type (they are \em{isofibrant}) that this confusion goes away.
+  However, already at step two we encounter serious complications---it is not the case that every pseudo double category, even up to equivalence, can be modeled as a weakly internal category, and in general the relationship between these two classes of objects is somewhat complicated. However, it will turn out that our particular double and triple categories are of a sufficiently nice type (they are \em{isofibrant}) that this confusion goes away.
 }
 
 \transclude{efr-0036}
@@ -39,7 +39,7 @@
 
 \p{
   All this would naturally lead you to believe that a pseudo double category is equivalently a weak Segal object in #{\Cat}. This, however, is not true.
-  One way to see this is that the composition operation is (up to equivalence) defined on the homotopy pullback #{C_1 \times_{C_0} C_1}. An object of this category consists of two horizontal morphisms (i.e objects of #{C_1}) and an \em{isomorphism in #{C_0}} between their respective codomain and domain. This seems logical - if two objects in #{C_0}, say #{x,x'} are supposed to be the same if they are isomorphic, how can we not let you compose a morphism ending in one with one starting in the other? But nevertheless such a composition operation is not implied by the structure of an ordinary double category.
+  One way to see this is that the composition operation is (up to equivalence) defined on the homotopy pullback #{C_1 \times_{C_0} C_1}. An object of this category consists of two horizontal morphisms (i.e objects of #{C_1}) and an \em{isomorphism in #{C_0}} between their respective codomain and domain. This seems logical---if two objects in #{C_0}, say #{x,x'} are supposed to be the same if they are isomorphic, how can we not let you compose a morphism ending in one with one starting in the other? But nevertheless such a composition operation is not implied by the structure of an ordinary double category.
 }
 
 \transclude{efr-0039}%composition not defined on objects
@@ -66,7 +66,7 @@
 
 \transclude{efr-003O}
 
-\p{Having found that pseudo double categories are a full subcategory of simplicial categories, we might hope to characterize the essential image. However, they are not all weak Segal objects (as we've seen, this requires isofibrancy), and nor are they strict Segal (this would require discreteness - the strict Segal categories are exactly the strict double categories). There may be a good way of characterizing the image of #{\Dbl}, but the present theorem is suitable for our purposes}
+\p{Having found that pseudo double categories are a full subcategory of simplicial categories, we might hope to characterize the essential image. However, they are not all weak Segal objects (as we've seen, this requires isofibrancy), and nor are they strict Segal (this would require discreteness---the strict Segal categories are exactly the strict double categories). There may be a good way of characterizing the image of #{\Dbl}, but the present theorem is suitable for our purposes}
 
 \transclude{efr-003I}
 \p{
@@ -85,10 +85,10 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \transclude{efr-003L}
 \p{
   (See again \ref{johnson-yau-2dim-categories})
-  It is not hard to see that the 2-nerve of a bicategory #{\cC} is a weak Segal category, and under the loose identification of weak Segal categories and pseudo double categories, it corresponds to the pseudo double category with horizontal bicategory #{\cC} and \em{discrete} vertical category. Thus, the nerve of the bicategory #{\Para_\cM(\cC)} is not quite the gadget we're after - we need to add some vertical morphisms.
+  It is not hard to see that the 2-nerve of a bicategory #{\cC} is a weak Segal category, and under the loose identification of weak Segal categories and pseudo double categories, it corresponds to the pseudo double category with horizontal bicategory #{\cC} and \em{discrete} vertical category. Thus, the nerve of the bicategory #{\Para_\cM(\cC)} is not quite the gadget we're after---we need to add some vertical morphisms.
 }
 \p{
-  One thing we can consider is the simplicial \em{bicategory} #{\BiCat^\ps([n],\Para_\cM(\cC))}. This has all the morphisms we want - we just need to thin them out so that the vertical components always live inside #{\cC,} i.e. have trivival parameter. It turns out that the way to do this is to consider the pullback of this diagram:
+  One thing we can consider is the simplicial \em{bicategory} #{\BiCat^\ps([n],\Para_\cM(\cC))}. This has all the morphisms we want---we just need to thin them out so that the vertical components always live inside #{\cC,} i.e. have trivival parameter. It turns out that the way to do this is to consider the pullback of this diagram:
 }
 \p{
 \quiver{
@@ -104,16 +104,16 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \transclude{efr-003G}
 
 \p{
-  Thus we have a functor from monoidal category actions to isofibrant pseudo double categories (in their guise as Reedy fibrant weakly Segal simplicial categories). Moreover, as it is given as a limit - and, since the limit in question is a pullback of a fibration, and hence a homotopy limit - it will be fairly straightforward to show that this construction preserves internal categories. Hence we will be able to use it to construct a pseudo triple category, as we wanted.
+  Thus we have a functor from monoidal category actions to isofibrant pseudo double categories (in their guise as Reedy fibrant weakly Segal simplicial categories). Moreover, as it is given as a limit---and, since the limit in question is a pullback of a fibration, and hence a homotopy limit---it will be fairly straightforward to show that this construction preserves internal categories. Hence we will be able to use it to construct a pseudo triple category, as we wanted.
 }
 
 
 \transclude{efr-003Q}
 \remark{
-  One could replace each category #{\CC} with its nerve, obtaining a \em{trisimplicial set} #{\CC[n,m,k]} - the notations #{\CC_{-,0,-}} and so on for the sub-double categories should be understood in this way. Of course, analogously we could restrict to a simplicial strict double category. However, the homotopy theory of diagram categories is in some ways easier to think about, so we prefer this presentation.
+  One could replace each category #{\CC} with its nerve, obtaining a \em{trisimplicial set} #{\CC[n,m,k]}---the notations #{\CC_{-,0,-}} and so on for the sub-double categories should be understood in this way. Of course, analogously we could restrict to a simplicial strict double category. However, the homotopy theory of diagram categories is in some ways easier to think about, so we prefer this presentation.
 }
 \remark{
-  The functoriality ensures every type of coherence between these objects that you could wish for. Since there is only one dimension of weakness, writing down coherence equations would probably be feasible - nevertheless, given the huge number of different data involved, the compact presentation of \ref{efr-003Q} seems preferable. In general, because of this huge amount of data, we expect mostly to work with fragments of this triple category.
+  The functoriality ensures every type of coherence between these objects that you could wish for. Since there is only one dimension of weakness, writing down coherence equations would probably be feasible---nevertheless, given the huge number of different data involved, the compact presentation of \ref{efr-003Q} seems preferable. In general, because of this huge amount of data, we expect mostly to work with fragments of this triple category.
 }
 \transclude{efr-003R}
 \transclude{efr-000I}

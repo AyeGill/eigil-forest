@@ -9,5 +9,5 @@
     Under very weak assumptions on the Markov category #{\cC}, such as positivity, all isomorphisms are deterministic. This implies that all Markov prefibrations over #{\cC} are isofibrations, and thus rules out any sort of behavior like the above. As noted, we are only concerned with positive Markov categories.
 }
 \p{
-    Relatedly, in the proof of \ref{efr-0044}, a careless prover may have erroneously concluded after the first step that all Cartesian lifts are deterministic - but since Cartesian lifts are characterized only up to \em{isomorphism}, not necessarily \em{deterministic} isomorphism, this does not automatically follow. (But of course replacing a nondeterministic lift with an isomorphic deterministic one in this situation cannot alter the unique existence of the factorization, so it does not matter).
+    Relatedly, in the proof of \ref{efr-0044}, a careless prover may have erroneously concluded after the first step that all Cartesian lifts are deterministic---but since Cartesian lifts are characterized only up to \em{isomorphism}, not necessarily \em{deterministic} isomorphism, this does not automatically follow. (But of course replacing a nondeterministic lift with an isomorphic deterministic one in this situation cannot alter the unique existence of the factorization, so it does not matter).
 }

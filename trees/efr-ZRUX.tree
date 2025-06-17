@@ -47,5 +47,5 @@
 }
 
 \p{
-    A \em{homomorphism} or \em{strict functor} of pseudocategories #{A \to B} is a pair of morphisms #{F_1: A_1 \to B_1, F_0: A_0 \to B_0} which commute with all the structure - that is, #{dF_1 = F_0d}, #{F_1 \alpha = \alpha (F_1 \times_{F_0} F_1 \times_{F_0} F_1)}, and so on. There is a clear notion of natural transformation of homomorphisms. We write #{\PsCat_s(\CC)} for the 2-category of pseudocategories, homomorphisms and natural transformations in #{\CC}.
+    A \em{homomorphism} or \em{strict functor} of pseudocategories #{A \to B} is a pair of morphisms #{F_1: A_1 \to B_1, F_0: A_0 \to B_0} which commute with all the structure---that is, #{dF_1 = F_0d}, #{F_1 \alpha = \alpha (F_1 \times_{F_0} F_1 \times_{F_0} F_1)}, and so on. There is a clear notion of natural transformation of homomorphisms. We write #{\PsCat_s(\CC)} for the 2-category of pseudocategories, homomorphisms and natural transformations in #{\CC}.
 }

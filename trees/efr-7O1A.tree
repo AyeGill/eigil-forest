@@ -9,7 +9,7 @@
     #{\rho_i(\alpha v) = \alpha \rho_i(v)}
   }
   \li{
-    #{\rho_i(v + w) \leq \rho_i(v) + \rho_i(w)}. Again this is understood in the sense that #{\rho_i(v) + \rho_i(w) - \rho_i(v + w)} has nonnegative spectrum.
+    #{\rho_i(v + w) \leq \rho_i(v) + \rho_i(w)}. Again this is understood in the sense that #{\rho_i(v) + \rho_i(w)-\rho_i(v + w)} has nonnegative spectrum.
   }
   \li{
     If #{\rho_i(v)=0} for every #{i,} then #{v = 0}.

@@ -7,7 +7,7 @@
   Given an indexed category #{\cA: \cC^\op \to \Cat}, the double category \Arena of \em{arenas} has
 }
 \ol{
-  \li{Objects the objects of #{\int \cA} - note that these are the same as the objects of #{\int \cA(-)^\op}}
+  \li{Objects the objects of #{\int \cA}---note that these are the same as the objects of #{\int \cA(-)^\op}}
   \li{Vertical morphisms the lenses}
   \li{Horizontal morphisms the charts}
   \li{The double category is thin. Given a square of this form

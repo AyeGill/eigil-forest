@@ -19,7 +19,7 @@
 }
 \transclude{efr-TO9K}
 \p{
-  Note that, as in this example, we do not generally expect #{\Optic_\cC(\cC,\cD)} to yield a Markov fibration if #{\cD} is not another Markov category (and not even then in general, as the case of #{\BorelStoch} shows). - for these, we expect to need a sort of positivity in the fiber as well, which restricts us to things that look like probability kernels.
+  Note that, as in this example, we do not generally expect #{\Optic_\cC(\cC,\cD)} to yield a Markov fibration if #{\cD} is not another Markov category (and not even then in general, as the case of #{\BorelStoch} shows).---for these, we expect to need a sort of positivity in the fiber as well, which restricts us to things that look like probability kernels.
 }
 \transclude{efr-O6GQ}
 \p{

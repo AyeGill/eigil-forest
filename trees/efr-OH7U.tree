@@ -64,7 +64,7 @@
 \end{tikzcd}
   }
 
-  noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X} - given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to tthe map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
+  noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X}---given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to tthe map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
 }
 \p{
   But it is equally clear that the equivalence relation imposed by #{T\cD_0(\bar{X},-)} is implied by the equations of a stochastic module, and so this map is well-defined, establishing the property.
@@ -85,7 +85,7 @@
     X \ar[ru, bend left=30] \ar[rr, dashed] & & B
     \end{tikzcd} 
   }
-  First, note that the two maps #{M \to X \to B} and #{M \to B} do not necessarily agree. However, we can remedy this by replacing #{M} by their equalizer - note that as we argued above, this gives an equivalent element of the stochastic module. (By writing their equalizer in #{\cC_\det} as the split pullback #{M \times_{B \times B} B,} we can see that the section factors over this, even if #{\cC} does not have all equalizers in general). Hence we can assume the triangle formed by adding the dashed arrow commutes.
+  First, note that the two maps #{M \to X \to B} and #{M \to B} do not necessarily agree. However, we can remedy this by replacing #{M} by their equalizer---note that as we argued above, this gives an equivalent element of the stochastic module. (By writing their equalizer in #{\cC_\det} as the split pullback #{M \times_{B \times B} B,} we can see that the section factors over this, even if #{\cC} does not have all equalizers in general). Hence we can assume the triangle formed by adding the dashed arrow commutes.
 }
 \p{
   Since #{M \to B} now factors over #{X}, the lift #{X \to A} gives a lift #{M \to A}. Now by the Cartesian property of #{\bar{A} \to \bar{B}}, there is a unique lift of #{p^*\bar{X} \to \bar{B}} to this map (here we just use the fact that #{\cD_0} is a fibration). This gives the desired lift.

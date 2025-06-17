@@ -14,7 +14,7 @@
       #{\dblPara_\cM(\cC)_1 = \cM \times \cC \downarrow \cC}, with domain and codomain given by the two projections to #{\cC}
     }
     \li{
-      The identities map #{\cC \to \cM \times \cC \downarrow \cC} is given by #{(I, 1_\cC, 1_\cC, \lambda),} where #{\lambda: I \cdot - \to -} is the left unitor of #{\cM}.
+      The identities map #{\cC \to \cM \times \cC \downarrow \cC} is given by #{(I, 1_\cC, 1_\cC, \lambda),} where #{\lambda: I \cdot- \to -} is the left unitor of #{\cM}.
     }
     \li{
       The horizontal composition map is the composition in #{\Para:} given #{M \cdot X \to Y, N \cdot Y \to Z,} their composite is given by #{(N \otimes M) \cdot X \cong N \cdot (M \cdot X) \to N \cdot Y \to Z.} The horizontal composition of 2-cells is defined analogously.
@@ -32,7 +32,7 @@
   \p{
     Let #{\cM \curvearrowright \cC, \cM' \curvearrowright \cC'}, #{F: \cM \to \cM'} be a strict monoidal functor, and let #{G: \cC \to \cC'} be a linear functor "over #{F}", that is a (strict) #{\cM}-linear functor when #{\cC'} is viewed as a #{\cM}-actegory along #{F}. Then the induced functor #{\dblPara_\cM(\cC) \to \dblPara_{\cM'}(\cC')} is given by #{G} on the vertical category, and on the horizontal category by 
     ##{(M,X,X',\phi: M \cdot X \to X') \mapsto (F(M), G(X), G(X'), F(M) \cdot G(X) \simeq G(M \cdot X) \to G(X'))}
-    where the isomorphism is the linearity - noting that the #{M}-action on #{\cC'} is precisely acting by #{F(M)}.
+    where the isomorphism is the linearity---noting that the #{M}-action on #{\cC'} is precisely acting by #{F(M)}.
   }
   \p{
     By naturality of the lineator it is straightforward to see that this is a functor, and it clearly preserves domain and codomain. It preserves units (strictly!) by the compatibility between the unitor and lineator. It remains to see that this preserves composition. For brevity, denote the induced functor #{H} from here.

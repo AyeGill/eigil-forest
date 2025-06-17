@@ -7,5 +7,5 @@
   Let #{\cC} be a Markov category. Suppose #{\cC} admits deterministic pullbacks. Then for each object #{X \in \cC}, let #{\cC_{/X}} denote the category where objects are deterministic maps #{A \to X} and morphisms are commutative triangles (whose map #{A \to B} is not necessarily deterministic). 
 }
 \p{
-  Note that #{\cC_{/X}} admits the structure of a Markov category - given #{A_1 \to B_1} and #{A_2 \to B_2} over #{X}, the induced map #{A_1 \times_X A_2 \to B_1 \times B_2} necessarily lands within the subobject #{B_1 \times_X B_2}
+  Note that #{\cC_{/X}} admits the structure of a Markov category---given #{A_1 \to B_1} and #{A_2 \to B_2} over #{X}, the induced map #{A_1 \times_X A_2 \to B_1 \times B_2} necessarily lands within the subobject #{B_1 \times_X B_2}
 }

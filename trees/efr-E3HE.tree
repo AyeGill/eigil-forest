@@ -8,7 +8,7 @@
 }
 
 \p{
-  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels} - that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure - the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two - the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence - as in, non-indpendence - of one variable on another.
+  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure---the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-indpendence---of one variable on another.
 }
 
 \p{
@@ -32,7 +32,7 @@
 
 \p{
   Recall that the codomain functor #{\cC^\to \to \cC} is a fibration if and only if #{\cC} admits pullbacks. Since Markov categories have terminal objects but not, in general, products, they clearly cannot be expected to have pullbacks.
-  However, if #{\cC} is \em{positive} (\ref{fritz-synthetic-markov-cats}, def. 11.22 - but see \ref{efr-OYB6} below), given #{f: P \to X} \em{deterministic}, every #{g: P \to Y} has a unique pairing #{P \to X \otimes Y} with #{f}.
+  However, if #{\cC} is \em{positive} (\ref{fritz-synthetic-markov-cats}, def. 11.22---but see \ref{efr-OYB6} below), given #{f: P \to X} \em{deterministic}, every #{g: P \to Y} has a unique pairing #{P \to X \otimes Y} with #{f}.
   Computing pullbacks #{X \otimes_Z Y} in the subcategory #{\cC_\det,} we usually have a similar property. This will be the basic idea behind Markov prefibrations.
 }
 \p{

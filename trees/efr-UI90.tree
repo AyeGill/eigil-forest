@@ -4,7 +4,7 @@
 \taxon{corollary}
 \p{
   Since #{\SS} is lax monoidal, its Grothendieck construction #{\int \SS_\cC} acquires a monoidal structure (\ref{moeller-vasilakopoulou}).
-  We write this category #{\cC_\SS} - explicitly, it is given as follows:
+  We write this category #{\cC_\SS}---explicitly, it is given as follows:
 }
 \ol{
   \li{The objects are pairs #{(X,\epsilon)} where #{X \in \cC} and #{\epsilon \in \SS(X)} is a selection relation on it}

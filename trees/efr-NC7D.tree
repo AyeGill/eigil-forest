@@ -8,7 +8,7 @@
   Given a pair #{f:X \to Z, g: Y \to Z} of such maps, we claim that the subset of #{X \times Y} given by those points where #{f(x) = g(y)} as measures on #{Z}, equipped with the subset #{\sigma}-algebra and its inclusions into #{X} and #{Y}, is a pullback in #{\Stoch_\det}.
 }
 \p{
-  To see this, observe that #{\Stoch_\det} is the Kleisli category for the submonad #{G_{0,1}} of the Giry monad which takes a space to the subspace of #{0,1}-valued probability measures on it. Note that by the general theory of Markov categories this has products given by the products in #{\Meas}. It hence suffices to prove that the pullback of #{f \times g: X \times Y \to Z \times Z} along the diagonal #{Z \to Z \times Z} exists - if it does, it has the universal property of the product #{X \times_Y Z}.
+  To see this, observe that #{\Stoch_\det} is the Kleisli category for the submonad #{G_{0,1}} of the Giry monad which takes a space to the subspace of #{0,1}-valued probability measures on it. Note that by the general theory of Markov categories this has products given by the products in #{\Meas}. It hence suffices to prove that the pullback of #{f \times g: X \times Y \to Z \times Z} along the diagonal #{Z \to Z \times Z} exists---if it does, it has the universal property of the product #{X \times_Y Z}.
 }
 \p{
   To see that it does (and that it's given by the space described above), note that the diagonal is a split monomorphism, so it suffices to show that #{h: P \to X \times Y \in \Stoch_\det} factors over #{X \times_Y Z} if and only if the composite to #{Z \times Z} lifts over the diagonal.

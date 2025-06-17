@@ -7,7 +7,7 @@
 }
 \proof{
   \p{
-    (Note that stochastic modules themselves do not admit all finite limits, requiring some sort of isofibration property - we merely claim here that if the limit exists, it again admits weak supports)
+    (Note that stochastic modules themselves do not admit all finite limits, requiring some sort of isofibration property---we merely claim here that if the limit exists, it again admits weak supports)
   }
   \p{
     It is clear that the terminal object #{1_\cC: \cC \to \cC} has weak supports (regardless of #{\cC}).

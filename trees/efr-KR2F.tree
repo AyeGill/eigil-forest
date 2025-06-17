@@ -10,14 +10,14 @@
 }
 \transclude{efr-002I}
 \p{
-  Locally graded categories were introduced by Wood in \ref{locally-graded-cats}, under the name \em{large #{\cM}-categories}. The original motivation was to consider \em{large} presheaves on #{\cM} and use these to describe #{\cM}-enriched categories with possibly large hom-objects. We have not given much thought to size issues yet - our definition above should possibly be called "locally small locally graded categories". This is sufficient for us, since they capture all the #{\cM}-enriched categories and the locally small #{\cM}-actegories (as we will see in a bit,) which is what we're after.
+  Locally graded categories were introduced by Wood in \ref{locally-graded-cats}, under the name \em{large #{\cM}-categories}. The original motivation was to consider \em{large} presheaves on #{\cM} and use these to describe #{\cM}-enriched categories with possibly large hom-objects. We have not given much thought to size issues yet---our definition above should possibly be called "locally small locally graded categories". This is sufficient for us, since they capture all the #{\cM}-enriched categories and the locally small #{\cM}-actegories (as we will see in a bit,) which is what we're after.
 }
 \p{
   The notion of locally graded categories turns out to be somewhat unhelpful in defining #{\Para(-),} since the locally graded category corresponding to an category with an action \em{is} (a bicategorical version of) the #{\Para}-construction applied to that case. Nevertheless, this does conceptually simplify certain things.
 }
 \transclude{efr-002J}
 \p{
-  There is really nothing to show here. In the case of an actegory, conceptually we have the same idea - we want to define #{\cC_M(X,Y) = \cC(M \bullet X, Y)} - but there is a bit more work to do to see that this comes together into a locally graded category. We begin with the following alternative description of locally graded categories:
+  There is really nothing to show here. In the case of an actegory, conceptually we have the same idea---we want to define #{\cC_M(X,Y) = \cC(M \bullet X, Y)}---but there is a bit more work to do to see that this comes together into a locally graded category. We begin with the following alternative description of locally graded categories:
 }
 \transclude{efr-002T}
 \p{
@@ -34,7 +34,7 @@
   As may be expected, the work of Buckley is extremely complicated, because he treats the full generality and thus must consider the tricategory of bicategories, and the class of trifunctors into it. We only care about actions on ordinary categories, and hence can restrict ourselves to the bicategory #{\Cat}.
 }
 \p{
-  Recall that in the ordinary Grothendieck construction, there are actually two ways to turn a functor #{\cC^\op \to \Cat} into a category - we can either turn it into a fibration over #{\cC} or an opfibration over #{\cC^\op}. In the bicategorical case, there are two independent choices - we can be either contravariant or covariant both in the 1-cells and in the 2-cells. Somewhat annoyingly, the bicategorical structure usually put on #{\Para} corresponds to being covariant in the 1-cells but contravariant in the 2-cells, forcing us to deal with this sort of "mixed-variance fibration" (#{\co \Para}, consisting instead of morphisms #{X \to M \bullet Y}, instead has the 2-cells going in the opposite direction, so there's no help there).
+  Recall that in the ordinary Grothendieck construction, there are actually two ways to turn a functor #{\cC^\op \to \Cat} into a category---we can either turn it into a fibration over #{\cC} or an opfibration over #{\cC^\op}. In the bicategorical case, there are two independent choices---we can be either contravariant or covariant both in the 1-cells and in the 2-cells. Somewhat annoyingly, the bicategorical structure usually put on #{\Para} corresponds to being covariant in the 1-cells but contravariant in the 2-cells, forcing us to deal with this sort of "mixed-variance fibration" (#{\co \Para}, consisting instead of morphisms #{X \to M \bullet Y}, instead has the 2-cells going in the opposite direction, so there's no help there).
 }
 \transclude{efr-002U}
 \transclude{efr-002N}

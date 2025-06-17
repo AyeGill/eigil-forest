@@ -16,7 +16,7 @@
     Lens-chart cells, which are the 2-cells of #{\Arena(\cA)}. Note that this double category is thin. We will say a square of lenses and charts \em{commutes} if it is filled by such a 2-cell.
   }
   \li{
-    Chart-bisystem cells - given charts #{A_1 \charto B_1, A_2 \charto B_2} and systems #{TS \otimes A_1 \lensto A_2, TS' \otimes A_2 \lensto B_2,} a square filling this is a choice of map #{S \to S' \in \cC} so that the resulting lens-chart square
+    Chart-bisystem cells---given charts #{A_1 \charto B_1, A_2 \charto B_2} and systems #{TS \otimes A_1 \lensto A_2, TS' \otimes A_2 \lensto B_2,} a square filling this is a choice of map #{S \to S' \in \cC} so that the resulting lens-chart square
     \quiver{
       \begin{tikzcd}
 	{TS \otimes A_1} & {A_2} \\

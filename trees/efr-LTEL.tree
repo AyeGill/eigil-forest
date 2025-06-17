@@ -10,7 +10,7 @@
 }
 \ol{
   \li{
-    For any category #{\cC}, the 2-category #{\Fib(\cC)} admits products, and we can ask for an internal pseudomonoid in this 2-category. This is equivalent to asking for a functor #{\cC^\op \to \MonCat} - in other words, for a monoidal structure on each fiber so that the base-change functors become (strong) monoidal.
+    For any category #{\cC}, the 2-category #{\Fib(\cC)} admits products, and we can ask for an internal pseudomonoid in this 2-category. This is equivalent to asking for a functor #{\cC^\op \to \MonCat}---in other words, for a monoidal structure on each fiber so that the base-change functors become (strong) monoidal.
   }
   \li{
     The global category of fibrations #{\Fib} admits products, and we may ask for an internal pseudomonoid here. This is what Shulman calls a monoidal fibration: a fibration where #{\cD, \cC} both come equipped with monoidal structures, the fibration is a \em{strict} monoidal functor, and Cartesian maps are stable under monoidal product.

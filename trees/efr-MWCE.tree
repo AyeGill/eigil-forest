@@ -12,7 +12,7 @@
 }
 \transclude{efr-2M0M}
 \p{
-  In a double category #{\CC}, there is a "horizontal slice" 1-category having objects the horizontal maps #{A \to B} and morphisms given by 2-cells that are identity on the left boundary, composed vertically. Similarly there is a "vertical slice". This is given by a similar pullback in #{\Cat} - we simply do this one level up.
+  In a double category #{\CC}, there is a "horizontal slice" 1-category having objects the horizontal maps #{A \to B} and morphisms given by 2-cells that are identity on the left boundary, composed vertically. Similarly there is a "vertical slice". This is given by a similar pullback in #{\Cat}---we simply do this one level up.
 }
 \p{
   Note that Myers' construction of the double fibration #{\Sys(T) \to \Arena{\Cat}} in fact uses the vertical slice in this sense.

@@ -26,13 +26,13 @@
   Before we proceed to the case of stochastic lenses, we will pause briefly to make a small modification to the preceding theory as presented in \ref{towards-cybercat}. In a game with forwards play function #{\Sigma \times X \to Y,} there are two ways to talk about the player's "choice" -- we may say that the player chooses a strategy #{\sigma \in \Sigma,} which then has some effect. Or we may say that the choice is really the #{y \in Y,} and the strategy #{\sigma} is the "precommitment" of choosing what to do given each possible #{x \in X}.
 }
 \p{
-  Once we introduce randomness -- working in #{Kl(\Delta)}, for example -- we see that there are two \em{distinct} ways for a player to make a random choice: first, his strategy #{I \to \Delta(\Sigma)} may be stochastic - that is, he is choosing a random strategy. Or the morphism #{\Sigma \times X \to \Delta(Y)} may be stochastic - this means each strategy #{\sigma} contains a specification of how to randomly choose #{y} given each possible #{x}.
+  Once we introduce randomness -- working in #{Kl(\Delta)}, for example -- we see that there are two \em{distinct} ways for a player to make a random choice: first, his strategy #{I \to \Delta(\Sigma)} may be stochastic---that is, he is choosing a random strategy. Or the morphism #{\Sigma \times X \to \Delta(Y)} may be stochastic---this means each strategy #{\sigma} contains a specification of how to randomly choose #{y} given each possible #{x}.
 }
 \p{
   In the case where #{X = *}, the distinction is between taking #{\Sigma = Y} and letting the play function be the identity, and taking #{\Sigma = \Delta(Y)} and letting the play function be the \em{sampling map} which stochastically draws an element from a distribution.
 }
 \p{
-  We take the view that the latter is the proper presentation of this game - this goes along with the terminology in the classical game theory literature, which would certainly regard a distribution on the set of possible moves as a (mixed) strategy. Having represented our games like this, we may restrict ourselves to considering \em{deterministic} maps #{I \to \Sigma} as strategies. This also fixes the awkwardness in the definition of the Nash product, since now every strategy in #{\Sigma_1 \otimes \Sigma_2} decomposes uniquely as a pair of strategies.
+  We take the view that the latter is the proper presentation of this game---this goes along with the terminology in the classical game theory literature, which would certainly regard a distribution on the set of possible moves as a (mixed) strategy. Having represented our games like this, we may restrict ourselves to considering \em{deterministic} maps #{I \to \Sigma} as strategies. This also fixes the awkwardness in the definition of the Nash product, since now every strategy in #{\Sigma_1 \otimes \Sigma_2} decomposes uniquely as a pair of strategies.
 }
 \p{
   We quickly modify the preceding definitions to make sense of this. Note that we also modify the reparametrization maps to be deterministic (in the base).

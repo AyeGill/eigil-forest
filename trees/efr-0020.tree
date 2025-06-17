@@ -6,7 +6,7 @@
   Naively, we would think that a stochastic differential equation on a manifold #{X} should be a stochastic section of the tangent bundle, #{f: X \to \Delta(TX)} (with the understanding that such a thing may not always have a solution). 
 }
 \p{
-  Indeed, we will see that such a thing does lead to a differential equation. But unlike the deterministic case, there is not a 1-1 correspondence - different sections may determine the \em{same} differential equation (in the sense of having the same solutions).
+  Indeed, we will see that such a thing does lead to a differential equation. But unlike the deterministic case, there is not a 1-1 correspondence---different sections may determine the \em{same} differential equation (in the sense of having the same solutions).
 }
 \p{
   The issue is that, as we have discussed, by necessity solutions of stochastic differential equations are defined by integration, in a certain sense. The solution concept we have in mind is a Markov process, where each derivative is sampled independently from its distribution. But by the central limit theorem, integrating a family of independent random variables will always give a normal distribution, no matter what those variables are.

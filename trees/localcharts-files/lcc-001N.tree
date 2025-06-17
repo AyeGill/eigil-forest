@@ -18,7 +18,7 @@
     Note that #{\sup_{y'} L(x,y') \geq \inf_x L(x',y)} for all #{x,y}, this is the minmax inequality (or "weak duality").
 }
 \p{
-    Thus a choice of #{x,y} giving a state gives equality in that inequation - it is a \em{solution} of the minmax game. In other words, #{L \otimes L^*} has a state if and only if strong duality holds for #{L}, and the state is given by an optimal and dual optimal pair in that case. 
+    Thus a choice of #{x,y} giving a state gives equality in that inequation---it is a \em{solution} of the minmax game. In other words, #{L \otimes L^*} has a state if and only if strong duality holds for #{L}, and the state is given by an optimal and dual optimal pair in that case. 
 }
 \p{
     (By duality, and since #{(L \otimes L^*)^* \cong L \otimes L^*}, such an object has a state if and only if it has a costate)

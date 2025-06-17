@@ -13,7 +13,7 @@
     Noting that #{\MAr{\cC}} is a Markov category with the "pointwise" structure, and the deterministic maps consist precisely of the pointwise deterministic maps, clearly #{\MAr{\cD}|_\det = \MAr{\cD|_\det}}, and fibrations are stable under the formation of arrow categories, with Cartesian maps formed pointwise.
   }
   \p{
-    It is \em{not} trivial that this is a prefibration, because given a triangle in #{\MAr{\cC_\det}} - a "prism" - and a Cartesian lifting, we only know that the maps "at the ends" are Cartesian, not the maps between the triangles.
+    It is \em{not} trivial that this is a prefibration, because given a triangle in #{\MAr{\cC_\det}}---a "prism"---and a Cartesian lifting, we only know that the maps "at the ends" are Cartesian, not the maps between the triangles.
 
 %% DIAGARAM HERE
     Therefore we can not immediately apply the unique lifting property to say that the square between the induced lifts #{\bar{Y_i}_{X_i} \to \bar{Y_i}_{Z_i}} commute, given some map #{\bar{Y}_0 \to \bar{Y}_1} over #{Y_0 \to Y_1}. However, by taking the pullback on both sides (and noting that pullbacks are functorial,) we can factor this square into two which live entirely over a deterministic base, and where the Cartesian property therefore imply commutativity.

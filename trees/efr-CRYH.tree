@@ -5,10 +5,10 @@
 \title{On notation}
 \parent{efr-ZCTD}
 \p{
-  Objects and morphisms in the category of optics have two parts - one going "forwards", in the same direction as the optic, and one going "backwards". In \ref{riley-optics} the objects are written #{(X,A),} where #{X} is the forwards part. Hedges' work on open games used the binomial notation #{\binom{X}{A},} but wrote the forwards part on \em{top}.
+  Objects and morphisms in the category of optics have two parts---one going "forwards", in the same direction as the optic, and one going "backwards". In \ref{riley-optics} the objects are written #{(X,A),} where #{X} is the forwards part. Hedges' work on open games used the binomial notation #{\binom{X}{A},} but wrote the forwards part on \em{top}.
 }
 \p{
-  To make the connection to fibrations more natural, we instead write the forwards part on the \em{bottom}, #{\arena{A}{X}}. It is the backwards part which depends on the forwards part, hence the forwards part is the base of the fibration (when one exists) - and every part of the language of fibrations is built around a mental model where the base is at the bottom and the fibers are over it (including the word "base"). When reading the references, this may cause some confusion, but hopefull this can be overcome.
+  To make the connection to fibrations more natural, we instead write the forwards part on the \em{bottom}, #{\arena{A}{X}}. It is the backwards part which depends on the forwards part, hence the forwards part is the base of the fibration (when one exists)---and every part of the language of fibrations is built around a mental model where the base is at the bottom and the fibers are over it (including the word "base"). When reading the references, this may cause some confusion, but hopefull this can be overcome.
 }
 \p{
   While we're at it, let us note that when talking about optics we will freely use terms like "the forwards part" "the backwards object" and so on -- the meaning of this should now be clear. Of course, once we get to cooptics/charts, this would be more than a little confusing, since in that case both components are in the same direction. In those cases we will speak of either the primary (forwards) part or the secondary (backwards) part, or use the language of fibrations and speak of the map or object "in the base" and "in the fiber".

@@ -9,7 +9,7 @@
   This is not necessarily a natural transformation. However, if it is, #{F} it automatically equips #{F} with the structure of an oplax monoidal functor. Recall that oplax monoidal functors carry comonoids to comonoids. An oplax monoidal functor between Markov categories preserves the given comonoids if and only if it is induced like this.
 }
 \p{
-  Hence, there is at most one way to equip a functor between Markov categories with such a structure - it is a property, not extra structure. Call such a functor an \em{oplax Markov functor}. Note that oplax Markov functors preserve deterministic morphisms.
+  Hence, there is at most one way to equip a functor between Markov categories with such a structure---it is a property, not extra structure. Call such a functor an \em{oplax Markov functor}. Note that oplax Markov functors preserve deterministic morphisms.
 }
 \p{
   (Fritz \ref{fritz-synthetic-markov-cats} defines a \em{Markov functor} to be a \em{strong} monoidal functor which preserves the comonoids. Clearly this is a proper subset of our oplax markov functors.)

@@ -12,7 +12,7 @@
 }
 \transclude{efr-CRYH}
 \p{
-  By definition, the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot B, A)} consists of triples #{(M, f: X \to M \cdot Y, g: M \cdot B \to A)} up to the equivalence relation which, for every #{\phi: M \to M', f: X \to M \cdot Y, g: M' \cdot B \to A,} identifies the two tuples #{(M', (\phi \cdot 1_Y) f, g)} and #{(M, f, g (\phi \cdot 1_B))}. Note that this relation is not assumed to be inherently an equivalence relation - one takes the transitive-symmetric closure as usual.
+  By definition, the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot B, A)} consists of triples #{(M, f: X \to M \cdot Y, g: M \cdot B \to A)} up to the equivalence relation which, for every #{\phi: M \to M', f: X \to M \cdot Y, g: M' \cdot B \to A,} identifies the two tuples #{(M', (\phi \cdot 1_Y) f, g)} and #{(M, f, g (\phi \cdot 1_B))}. Note that this relation is not assumed to be inherently an equivalence relation---one takes the transitive-symmetric closure as usual.
 }
 \p{
   We call this relation the \em{sliding} relation (because we slide the map #{\phi} from the backwards part to the forwards part).
@@ -39,6 +39,6 @@
 \transclude{efr-2793}
 \transclude{efr-VTPS}
 \p{
-  This is the first way to see the maps of #{(\cC^\to)^\fop} as dependent lenses - they receive the category of lenses as a full subcategory. 
+  This is the first way to see the maps of #{(\cC^\to)^\fop} as dependent lenses---they receive the category of lenses as a full subcategory. 
 }
 \transclude{efr-TZ0P}

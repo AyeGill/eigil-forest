@@ -8,7 +8,7 @@
 
 \transclude{efr-ZRUX} % Def of pseudocategory, homomorphism.
 \p{
-    It is important to note that, although this is a weakening of the definition of internal category, pseudocategories are themselves a strict concept - they are defined in terms of equations that must hold up to \em{strict} equality. Thus for example there is an enriched monad (a 2-monad) on #{\Cat} whose \em{strict} algebras are the pseudo double categories.
+    It is important to note that, although this is a weakening of the definition of internal category, pseudocategories are themselves a strict concept---they are defined in terms of equations that must hold up to \em{strict} equality. Thus for example there is an enriched monad (a 2-monad) on #{\Cat} whose \em{strict} algebras are the pseudo double categories.
 }
 \transclude{efr-ZRUY} % Examples, including pseudomonoids.
 \transclude{efr-LTJQ} %Example, monoidal double cats

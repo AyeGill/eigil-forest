@@ -36,7 +36,7 @@
   Let now #{\xi: X \to A \otimes X} be a simple stochastic dynamical system which outputs a value of type #{A} at each step. The dual of this is #{C(A) \otimes C(X) \to C(X),} where the tensor here is now the tensor product of vector spaces.
 }
 \p{
-  Among \em{algebras}, the tensor product is the coproduct, so we may restrict the above map to form two modal operators, #{C(A) \to C(X)} and #{C(X) \to C(X)} - the latter being simply the transition operator taking a function #{\phi(x)} to the expected value of the next step, the former computing the expected value of the output given #{x}. But since the transition may be nondeterministic, these two restrictions do not determine it. From a logical point of view, the problem is that we can't express statements about the correlation between the output and the next step.
+  Among \em{algebras}, the tensor product is the coproduct, so we may restrict the above map to form two modal operators, #{C(A) \to C(X)} and #{C(X) \to C(X)}---the latter being simply the transition operator taking a function #{\phi(x)} to the expected value of the next step, the former computing the expected value of the output given #{x}. But since the transition may be nondeterministic, these two restrictions do not determine it. From a logical point of view, the problem is that we can't express statements about the correlation between the output and the next step.
 }
 \p{
   As a simple counterexample, consider two system where #{X = A = \{0,1\}}. In the first, the output and the next state are independent, and both equal the current state with probability #{1-\epsilon}. In the other, the output and next state are always equal, and again are equal to the current state with probability #{1-\epsilon}

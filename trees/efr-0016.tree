@@ -4,7 +4,7 @@
 \taxon{definition}
 \title{Simplicial Category}
 \p{
-  The \em{simplicial category} is the category of finite, nonempty, totally ordered sets, and order-preserving functions, denoted #{\mathbb{\Delta}}. We denote by #{[n]} for #{n \geq 0} the ordered set #{\{0 < 1 < \dots < n\}} of #{n+1} elements - every object on #{\mathbb{\Delta}} is isomorphic to one of the form #{[n]}.
+  The \em{simplicial category} is the category of finite, nonempty, totally ordered sets, and order-preserving functions, denoted #{\mathbb{\Delta}}. We denote by #{[n]} for #{n \geq 0} the ordered set #{\{0 < 1 < \dots < n\}} of #{n+1} elements---every object on #{\mathbb{\Delta}} is isomorphic to one of the form #{[n]}.
 }
 \p{
   A \em{simplicial object} in a category #{\cC} is a functor #{\Delta^\op \to \cC}.

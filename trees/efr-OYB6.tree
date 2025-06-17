@@ -19,7 +19,7 @@
 }
 \proof{
   \p{
-    Clearly 1 and 2 are equivalent, since independence just means #{f} is the independent pairing of the marginals - if it is uniquely determined by its marginals, it must be equal to the independent pairing, and conversely if it is necessarily independent, it is determined by its marginals. Now let us show this is equivalent to positivity.
+    Clearly 1 and 2 are equivalent, since independence just means #{f} is the independent pairing of the marginals---if it is uniquely determined by its marginals, it must be equal to the independent pairing, and conversely if it is necessarily independent, it is determined by its marginals. Now let us show this is equivalent to positivity.
   }
   \p{
     First suppose #{\cC} has unique pairings in this sense. Let #{f,g} be as in the definition of positivity. Then the two maps #{X \to Y \otimes Z} indicated are pairings of #{gf} and #{f}, and since #{gf} is deterministic, they are identical by hypothesis.

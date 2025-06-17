@@ -4,5 +4,5 @@
 \taxon{proposition}
 \p{
   Let #{\cD} be a Markov fibration.
-  Then the existence of a prechart morphism #{\phi \rightarrow \psi} is stable under prechart equivalence - that is, is #{\phi', \psi'} are two other decorated spans representing the same prechart, then if there exists a prechart morphism #{\phi \to \psi}, there also exists one #{\phi' \to \psi'} 
+  Then the existence of a prechart morphism #{\phi \rightarrow \psi} is stable under prechart equivalence---that is, is #{\phi', \psi'} are two other decorated spans representing the same prechart, then if there exists a prechart morphism #{\phi \to \psi}, there also exists one #{\phi' \to \psi'} 
 }

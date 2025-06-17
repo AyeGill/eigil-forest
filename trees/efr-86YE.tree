@@ -6,7 +6,7 @@
   A tangent field -- in a quite general sense -- can be described as a particular type of operator #{C(X) \to C(X)}. The Hille-Yosida theorem, and others, give conditions for such an operator to give a transition semigroup #{T_t : t\in \RR_{\geq 0}}, which is a good notion of "integrable (stochastic) dynamical system". We are interested in bringing this perspective to categorical systems theory.
 }
 \p{
-  The first step is noting that by currying, such an operator can be viewed as a function #{X \to C(X)^*}. Continuity (in the sense of landing in continuous functions) amounts to pointwise continuity (or weak-* continuity), although note that we will probably want to develop this theory for spaces #{X} without a topology. Note also that we must abuse this a bit, because the operators are in general \em{unbounded} (and in particular partial), so the space #{C(X)^*} must be replaced with some set of partial linear operators - which won't even be a vector space. 
+  The first step is noting that by currying, such an operator can be viewed as a function #{X \to C(X)^*}. Continuity (in the sense of landing in continuous functions) amounts to pointwise continuity (or weak-* continuity), although note that we will probably want to develop this theory for spaces #{X} without a topology. Note also that we must abuse this a bit, because the operators are in general \em{unbounded} (and in particular partial), so the space #{C(X)^*} must be replaced with some set of partial linear operators---which won't even be a vector space. 
 }
 \p{
   We can imagine that the structure on the space #{X} induces some dense set of "sufficiently smooth" functions on which all these operators will be defined.

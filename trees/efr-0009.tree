@@ -13,12 +13,12 @@
 }
 \p{
   Let #{p,q: X \to \Omega} be two stochastic maps to the subobject classifier (i.e #{\{\bot,\top\}}).
-  Defining logical operations on such objects is problematic essentially because of the lack of independence - if #{p,q} classify the probability that some #{f(X)} lie in two different subsets #{P,Q}, there is essentially no way to recover the probability of the intersection, or the union, since we can't see their correlation. We can consider a few different options - writing #{p(x),q(x) \in [0,1]} for the probability of truth (assuming that we're in a setting where #{\Delta(\Omega) = [0,1]}).
+  Defining logical operations on such objects is problematic essentially because of the lack of independence---if #{p,q} classify the probability that some #{f(X)} lie in two different subsets #{P,Q}, there is essentially no way to recover the probability of the intersection, or the union, since we can't see their correlation. We can consider a few different options---writing #{p(x),q(x) \in [0,1]} for the probability of truth (assuming that we're in a setting where #{\Delta(\Omega) = [0,1]}).
 }
 \ol{
   \li{#{\min(p+q,1)} is the probability of #{p \vee q} if they are \em{maximally disjoint}, i.e completely disregarded the possibility of overlap. Dually, #{\max(p+q-1,0)} is the probability of #{p \wedge q} if they are maximally disjoint}
   \li{#{\max(p,q)} is the probability of #{p \wedge q} if they are maximally overlapping, and dually #{\min(p,q)} is the probability of #{p \vee q} if they are minimally overlapping}
-  \li{#{pq} is the probability of #{p \wedge q} if they are independent, and dually #{p+q - pq} is the probability of #{p \vee q} if they are independent}
+  \li{#{pq} is the probability of #{p \wedge q} if they are independent, and dually #{p+q-pq} is the probability of #{p \vee q} if they are independent}
 }
 \p{
   In the language of error credits, adding an error credit of #{\epsilon} amounts to taking #{\wedge (1-\epsilon)} with the "maximally disjoint" assumption (this gives the \em{smallest} possible probability of truth, i.e. it's the \em{strongest} assumption you can make).

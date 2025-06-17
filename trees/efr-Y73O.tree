@@ -7,6 +7,6 @@
 }
 \proof{
   \p{
-    It suffices to observe that each optic #{\binom{A}{X} \to \binom{B}{Y}} has a representative with residual given by the support of #{X \to X \otimes Y,} and that the conditional distribution of #{A} given #{B \otimes X \otimes Y} is well-defined on this support - hence these representatives are equal for optics which become equal as stochastic lenses.
+    It suffices to observe that each optic #{\binom{A}{X} \to \binom{B}{Y}} has a representative with residual given by the support of #{X \to X \otimes Y,} and that the conditional distribution of #{A} given #{B \otimes X \otimes Y} is well-defined on this support---hence these representatives are equal for optics which become equal as stochastic lenses.
   }
 }

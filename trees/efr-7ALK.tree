@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{remark}
 \p{
-  On objects, we have a distribution isomorphism #{A \otimes (B \oplus C) \cong A \otimes B \oplus A \otimes C} (simply because the tensor distributes over the coproduct). This does not extend to a distributive law for games - there is not even isomorphism on the level of strategy sets, since the right-hand side has two copies of the strategy set for #{A}.
+  On objects, we have a distribution isomorphism #{A \otimes (B \oplus C) \cong A \otimes B \oplus A \otimes C} (simply because the tensor distributes over the coproduct). This does not extend to a distributive law for games---there is not even isomorphism on the level of strategy sets, since the right-hand side has two copies of the strategy set for #{A}.
 }
 \p{
   However, the above isomorphism seems to be \em{lax natural}, in that when #{G_A, G_B, G_C} are games, there is a 2-cell
