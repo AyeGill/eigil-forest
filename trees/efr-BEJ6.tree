@@ -1,0 +1,19 @@
+\date{2025-06-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  There is a pseudo double category #{\dblCat} where the objects are categories, the vertical maps are functors, the horizontal maps are \em{profunctors} (functors #{\cC \times \cD^\op \to \Set,} sometimes called bimodules), and the squares are natural transformations.
+}
+\p{
+  For any category with pullbacks #{\cC}, there is a pseudo double category #{\Span(\cC)} with #{\cC} as the vertical category, spans as the horizontal morphisms, and commutative diagrams as the squares.
+}
+\p{
+  There is a double category #{\Rel} of sets, functions, and relations.
+}
+\p{
+  For any Markov category #{\cC}, there is a double category with #{\CC_v = \cC_\det} and #{\CC_h = \cC}.
+}
+\p{
+  For any category at all, there is a double category #{\Sq(\cC)} with #{\Sq(\cC)_v = \Sq(\cC)_h = \cC} and commutative squares as the pullback squares.
+}

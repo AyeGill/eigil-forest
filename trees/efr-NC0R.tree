@@ -2,3 +2,12 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Double Categories}
+\transclude{efr-RXP4}
+\p{
+  There is also a notion of \em{pseudo double category}, which weakens the horizontal composition to only be associative and unital up to a coherent system of squares. We will not go into the details here, see \ref{efr-000D} for more on this.
+}
+\transclude{efr-BEJ6}
+
+\p{
+  Sometimes the two classes of morphism are instead called \em{loose} and \em{tight}, especially in cases where the composition of the loose class is not associative, or if the loose class is a superset of the tight class.
+}

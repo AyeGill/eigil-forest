@@ -155,6 +155,7 @@
 
 \def\Hom{#{\operatorname{\mathrm{Hom}}}}
 \def\dom{#{\operatorname{\mathrm{dom}}}}
+\def\cod{#{\operatorname{\mathrm{cod}}}}
 \def\codom{#{\operatorname{\mathrm{codom}}}}
 \def\yoneda{#{\operatorname{\mathbf{y}}}}
 
@@ -278,6 +279,8 @@
 
 \def\Comon{#{\operatorname{\cat{Comon}}}}
 
+\def\Sq{#{\operatorname{Sq}}}
+
 \def\Pr{#{\operatorname{\cP\mathrm{r}}}}
 \def\Pt{#{\operatorname{\cP\mathrm{t}}}}
 \def\Sh{#{\operatorname{\cS\mathrm{h}}}}
@@ -384,6 +387,7 @@
 \def\SPoly{#{\cat{SPoly}}}
 \def\Euc{#{\cat{Euc}}}
 \def\Tych{\cat{Tych}}
+
 
 % C-sets
 

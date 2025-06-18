@@ -1,0 +1,33 @@
+\date{2025-06-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Double Category}
+\p{
+  A (strict) \em{double category} is a category internal to the category #{\Cat} of categories.
+  Concretely, it consists of:
+}
+\ol{
+  \li{
+    A set of objects #{\Ob \CC}
+  }
+  \li{
+    A collection of \em{vertical morphisms} forming a category #{\CC_v} with #{\Ob \CC_v = \Ob \CC}
+  }
+  \li{
+    A collection of \em{horizontal morphisms} forming a category #{\CC_h} with #{\Ob \CC_h = \Ob \CC}
+  }
+  \li{
+    An a collection of \em{squares}. Each square has a left and right boundary given by vertical morphisms #{l,r}, and top and bottom boundary given by horizontal morphisms #{t,b} so that #{\dom t = \dom l, \cod t = \dom r} and so on:
+    \quiver{
+      \begin{tikzcd}
+      X \ar[r, "t"] \ar[d, "l"] & Y \ar[d, "r"]\\
+      A \ar[r, "b"] & B
+      \end{tikzcd}
+    }
+    The squares compose horizontally and vertically in the obvious way, each of which form a category (in particular, there are \em{identity squares} for each vertical and horizontal map).
+  }
+}
+\p{
+  A double functor is a mapping on objects, vertical and horizontal morphisms, and squares, which preserves all the identities and composition.
+}
