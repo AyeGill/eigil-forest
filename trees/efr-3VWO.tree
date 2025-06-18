@@ -1,0 +1,17 @@
+\date{2025-06-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{\hat{\otimes}_\pi} be the completed projective tensor product of topological vector spaces.
+  Equip #{\Pro(\Ban)} with the canonical extension of this monoidal product #{\lim_i A_i \hat{\otimes}_\pi \lim_j B_j := \lim_{i,j} A_i \hat{\otimes}_\pi B_j}.
+  Then the embedding #{\CLCVS \to \Pro(\Ban)} is strong monoidal.
+}
+\proof{
+  \p{
+    Let #{p_i, q_j} be directed families of seminorms defining the topology of #{A,B}, so that #{A} is represented by #{\lim_i \hat{A}_{p_i}} and analogously #{B}. Then by definition their tensor product in #{\Pro(\Ban)} is #{\lim_{i,j} \hat{A}_{p_i} \hat{otimes}_\pi \hat{B}_{q_j}}. It's straightforward to see that each of these tensor products is equivalent to #{\widehat{(A \otimes B)}_{p_i \otimes q_j},} where the subscript denotes the projective tensor product norm.
+  }
+  \p{
+    Thus this tensor product is given by #{A \otimes B} topologized by and completed with respect to the seminorms #{p_i \otimes q_j}. But this is a standard description of #{\hat{\otimes}_\pi}.
+  }
+}

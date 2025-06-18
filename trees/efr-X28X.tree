@@ -1,0 +1,21 @@
+\date{2025-06-18}
+\author{eigil-rischel}
+\import{macros}
+\title{Representable semantics of stochastic differential equations}
+
+\transclude{efr-WY1L}%Functional-analytic algebraic background
+
+\subtree{
+  \title{
+    Probability structures in Banach modules
+  }
+  \p{
+    TODO: Write this. Idea is to equip #{C(X)} with some extra structure so that the structure-preserving maps #{C(Y) \to C(X)} are the families of \em{probability} measures (the continuous linear maps are families of \em{signed, non-normalized} measures).
+  }
+  \p{
+    We also want to put this structure on the space of smooth functions, so that the good maps #{C^\infty(X) \to C(X)} are those satisfying the positive maximum principle. Note that unlike probability measures these form a cone (so the answer can't be something like "positive (for some order) maps which preserve a given point #{\phi}).
+  }
+  \p{
+    Current idea is to fix a convex (closed) subset of the dual (consisting in this case of the actual probability measures.)
+  }
+}

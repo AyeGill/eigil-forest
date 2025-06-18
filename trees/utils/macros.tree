@@ -300,6 +300,9 @@
 
 
 \def\CRing{\cat{CRing}}
+\def\TopAlg{#{\cat{TopAlg}}}
+\def\CstarAlgcom{#{C^*\cat{Alg}_\mathrm{com}}}
+\def\sa{\mathrm{sa}}
 \def\Ab{\cat{Ab}}
 
 % Universal Algebra

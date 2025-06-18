@@ -1,0 +1,15 @@
+\date{2025-06-15}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  The functor #{\CstarAlgcom \to \TopAlg_\RR} which carries a #{C^*}-algebra to the #{\RR}-algebra of self-adjoint elements in the norm topology is fully faithful.
+}
+\proof{
+  \p{
+    Let #{A,B} be commutative #{C^*}-algebras. Note that necessarily #{A \cong (A_\sa) \otimes_\RR \CC}, as topological #{\CC}-algebras. This clearly implies #{(-)_\sa} is faithful, since any #{\CC}-linear map #{V \otimes_\RR \CC \to W} is determined by its restriction to #{V} (by universal property).
+  }
+  \p{
+    Conversely, given #{A_\sa \to B_\sa}, the unique extension to the tensor products is clearly a continuous #{*}-homomorphism.
+  }
+}
