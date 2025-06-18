@@ -1,0 +1,14 @@
+\title{Introducing CatColab}
+\date{2024-10-02}
+\taxon{reference}
+\meta{external}{https://topos.institute/blog/2024-10-02-introducing-catcolab/}
+\author{Kevin Carlson}
+\meta{bibtex}{\startverb
+ @misc
+{catcolab-introducing, title={Introducing CatColab}, url={https://topos.institute/blog/2024-10-02-introducing-catcolab/},  journal={Topos Institute}, author={Carlson, Kevin}, year={2024}, month={Oct},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Today weâ€™re excited to announce the first pre-alpha release of our new software CatColab 0.1: Hummingbird. CatColab is software for making models of the world together.
+}}
+

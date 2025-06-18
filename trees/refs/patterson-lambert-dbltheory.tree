@@ -1,0 +1,15 @@
+\title{Cartesian double theories: A double-categorical framework for categorical doctrines}
+\date{2024-05}
+\taxon{reference}
+\meta{doi}{10.1016/j.aim.2024.109630}
+\author{Michael Lambert}
+\author{Evan Patterson}
+\meta{bibtex}{\startverb
+ @article
+{patterson-lambert-dbltheory, title={Cartesian double theories: A double-categorical framework for categorical doctrines}, volume={444}, ISSN={00018708}, DOI={10.1016/j.aim.2024.109630}, note={arXiv:2310.05384 [math]}, journal={Advances in Mathematics}, author={Lambert, Michael and Patterson, Evan}, year={2024}, month={May}, pages={109630} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+The categorified theories known as â€œdoctrinesâ€ specify a category equipped with extra structure, analogous to how ordinary theories specify a set with extra structure. We introduce a new framework for doctrines based on double category theory. A cartesian double theory is defined to be a small double category with finite products and a model of a cartesian double theory to be a finite product-preserving lax functor out of it. Many familiar categorical structures are models of cartesian double theories, including categories, presheaves, monoidal categories, braided and symmetric monoidal categories, 2-groups, multicategories, and cartesian and cocartesian categories. We show that every cartesian double theory has a unital virtual double category of models, with lax maps between models given by cartesian lax natural transformations, bimodules between models given by cartesian modules, and multicells given by multimodulations. In many cases, the virtual double category of models is representable, hence is a genuine double category. Moreover, when restricted to pseudo maps, every cartesian double theory has a virtual equipment of models, hence an equipment of models in the representable case. Compared with 2-monads, double theories have the advantage of being straightforwardly presentable by generators and relations, as we illustrate through a large number of examples.
+}}
+

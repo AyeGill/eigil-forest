@@ -1,0 +1,10 @@
+\title{Structured cospans}
+\date{2020-10-29}
+\taxon{reference}
+\author{John C. Baez}
+\author{Kenny Courser}
+\meta{bibtex}{\startverb
+ @article
+{baez-courser-structured-cospans, title={Structured cospans}, volume={35}, number={48}, journal={Theory and Applications of Categories}, author={Baez, John C. and Courser, Kenny}, year={2020}, month={Oct}, pages={1771-1822} }
+\stopverb}
+

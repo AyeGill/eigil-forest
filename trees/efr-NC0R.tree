@@ -7,7 +7,21 @@
   There is also a notion of \em{pseudo double category}, which weakens the horizontal composition to only be associative and unital up to a coherent system of squares. We will not go into the details here, see \ref{efr-000D} for more on this.
 }
 \transclude{efr-BEJ6}
-
+\transclude{efr-Y1S5}
 \p{
   Sometimes the two classes of morphism are instead called \em{loose} and \em{tight}, especially in cases where the composition of the loose class is not associative, or if the loose class is a superset of the tight class.
+}
+
+\p{
+  Although the explicit description above is probably the best way to think about the data of a double category, on a technical level it is often useful to think in terms of internal categories. An \em{internal category} in a category #{\cC} is a pair of objects #{C_0, C_1}, maps #{d,c: C_1 \to C_0, i: C_0 \to C_1} (the domain, codomain and identity), and a map #{m: C_1 \times_{C_0} C_1 \to C_1} (the multiplication), satisfying the usual laws of a category. A double category in the above sense is then an internal category in the category of categories.
+}
+\p{
+  In the terms of \ref{efr-RXP4}, #{C_0} is #{\CC_v}, and #{C_1} is the category whose \em{objects} are horizontal arrows, and whose morphisms are squares (composed vertically). Obviously, we could just as easily have oriented things horizontally, but this is the convention usually adopted.
+}
+\p{
+  Given a double category #{\CC}, there is another double category #{\CC^T} called the \em{transpose} of #{\CC}, which has the same objects but exchanges the horizontal and vertical morphisms. In many cases it is not clear which of #{\CC} and #{\CC^T} is the "correct" one to work with, and we may have to pass back and forth between them. We try to stick to the convention that the horizontal morphisms are the "loose" ones. To avoid confusion, we will also simply specify the classes of morphisms directly, speaking for example of "the lenses" or "the charts" when working with the double category #{\Arena(\cA)} (\ref{efr-0025}).
+}
+
+\p{
+  The concept of double category goes back to \ref{ehresmann-dblcats}. See \ref{johnson-yau-2dim-categories}, section 12.3 for a texbook treatment. They have been widely used in applied category theory. An early application is in \ref{baez-courser-structured-cospans}, which constructed a "structured" version of the double category of cospans. Here the philosophy is that the horizontal morphisms are the "systems" (in a general sense) which are being wired together by horizontal composition, while the vertical morphisms (and squares) are "structure-preserving maps between systems". This is similar to the our double category of "bisystems" (\ref{efr-MWCE}). Recent work by Lambert and Patterson \ref{patterson-lambert-dbltheory} applies double categories to categorical algebra, with many applications to systems modeling, see \ref{catcolab-introducing} (as well as to classical category theory). In the next section we'll see their application to categorical systems theory, and later see them applied to parameterized morphisms.
 }

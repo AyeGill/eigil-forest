@@ -1,0 +1,7 @@
+\date{2025-06-18}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  A double category is \em{thin} if, for each compatible square of vertical and horizontal morphisms, there is at most one square filling it. In other words, such a square either commutes or doesn't.
+}
