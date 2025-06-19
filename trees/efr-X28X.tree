@@ -19,3 +19,15 @@
     Current idea is to fix a convex (closed) subset of the dual (consisting in this case of the actual probability measures.)
   }
 }
+
+\subtree{
+  \title{
+    Stochastic stuff
+  }
+  \transclude{efr-ZHCD}
+  \transclude{efr-IBQB}
+  \transclude{efr-EZXZ}
+  \transclude{efr-D0W9}
+  \transclude{efr-TOML}
+  \transclude{efr-B8Z8}
+}

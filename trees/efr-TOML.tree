@@ -1,0 +1,10 @@
+\date{2025-06-19}
+\author{eigil-rischel}
+\import{macros}
+\taxon{theorem}
+\p{
+  Let #{T\RR^n \lensto *}, represented by #{A: C^\infty(\RR) \to C(\RR)}, be the dynamical system corresponding to a stochastic differential equation #{dX_t = \mu(X_t)dt + \sigma(X)dW_t}.
+}
+\p{
+  Then a chart of systems (TODO: clock system notation) #{ \to \RR^n} is equivalently a Markov process which solves the SDE.
+}

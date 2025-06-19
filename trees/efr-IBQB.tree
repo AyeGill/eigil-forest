@@ -1,0 +1,25 @@
+\date{2025-06-19}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{X} be a locally compact Hausdorff space, and let #{(\Omega)} be a measurable space.
+  Given a measurable map #{f: \Omega \to X} (in the Baire #{\sigma}-algebra), there is an induced #{C^*}-homomorphism #{C_0(X) \to L^\infty(\Omega)}. This assignment is a bijection.
+}
+\proof{
+  \p{
+    It is clear that #{f^*} is well-defined. Given a #{C^*}-homomorphism #{\phi: C_0(X) \to L^\infty(\Omega),} we obtain an assignment 
+    ##{\phi^*: \Hom(L^\infty(\Omega),\CC) \to \Hom(C_0(X),\CC)}
+    Note that #{\Hom(C_0(X),\CC) \cong X} by Gelfand-Naimark duality. There is also a map #{\ev: \Omega \to \Hom(L^\infty(\Omega),\CC)} given by #{\ev_\omega(u) = u(\omega)}.
+  }
+  \p{
+    Composing these maps, given #{\phi}, we get a measurable map #{\hat{\phi}: \Omega \to X}.
+    It is characterized by #{\hat{\phi}(\omega)} being the unique #{x} so that #{u(x) = \ev_\omega(\phi(u))} for #{u \in C_0(X)}
+  }
+  \p{
+    Clearly #{\hat{f^*} = f}---this statement simply means #{\ev_{f\omega}(u) = \ev_\omega(u f)} which is just the definition of function composition.
+  }
+  \p{
+    Analogously, the equation #{u(\hat{\phi}\omega) = \ev_\omega(\phi(u))} can be rewritten as #{u \circ \hat{\phi} = \phi(u),} which says that #{\phi = \hat{\phi}^*}. Hence we have our bijection.
+  }
+}

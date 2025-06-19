@@ -1,0 +1,18 @@
+\date{2025-06-19}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  Let #{\Omega, \cF_t, t \in \RR} be a #{\RR}-filtered measurable space.
+  Observe that the bounded, #{\cF}-adapted stochastic processes are closed in #{L^\infty(\RR \times \Omega)}. Denote this subset #{L^\infty(\RR \times \Omega)_\cF}
+}
+\p{
+  Now fix a probability measure #{\mu} on #{(\Omega, \cF_\infty = \cup_t \F)}.
+  Given an adapted stochastic process #{\phi: \RR \times \Omega \to \RR}, we obtain functions #{E[\phi(t,-) \mid \cF_{t_0}]}---formally, we take the conditional distribution #{(\Omega, \cF_{t_0}) \to (\Omega, \cF_\infty)} and carry #{(t,\omega_0)} to this expected value. For #{t \leq t_0}, this is equal to #{\phi(t,\omega_0)}.
+}
+\p{
+  If it exist, we refer to the right derivative of #{t \mapsto E[\phi(t,-) \mid \cF_{t_0}]} at #{t_0} as the \em{expected derivative of #{\phi} at #{t_0}}. (Note that we cannot expect this to be differentiable in both directions, since eg Brownian motion is almost surely not differentiable). Note that this is a random variable. We write  #{D^\EE\phi(t,\omega)} for the expected derivative at #{t} when it exists. If it exists for all #{t}, this is again an adapted stochastic process (but not necessarily bounded).
+}
+\p{
+  If the expected derivative of #{\psi \circ \phi} at #{t_0} exists for every smooth function #{\psi: \RR \to \RR} (TODO: and compactly supported?), we say #{\phi} is \em{stochastically differentiable} at #{t_0}. If moreover the iterated expected derivatives #{(D^\EE)^n(\psi \circ \phi)} all exist (for all #{\psi}) we say #{\phi} is \em{stochastically smooth}.
+}

@@ -1,0 +1,19 @@
+\date{2025-06-19}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  Let #{X_t = X_t(\omega)} be a Wiener process in #{\RR}.
+  Then #{X_t} is stochastically differentiable.
+}
+\p{
+  Let #{\psi: \RR \to \RR} be a smooth function. Fix #{t} and consider #{E(\psi(X_{t+h}) - \psi(X_t) \mid \cF_t)}. By definition the conditional distribution of #{X_{t+h}} is the same as #{X_t + \sqrt{h}Z}, where #{Z} is a standard normal. Without loss of generality assume #{t = 0,} #{\psi(0) = 0,} and #{X_t = 0}.
+}
+\p{
+  Using smoothness of #{\psi} at #{0}, we can write #{\psi(x) = x \psi'(0) + x^2 \psi^{(2)}(0)/2 + O(x^3)}. Now setting #{x = \sqrt{h}Z} we get
+  ##{\sqrt{h}Z \psi'(0) + hZ^2 \psi^{(2)}(0)/2 + O((\sqrt{h}Z)^3)}
+  Since #{E(Z^n)} is zero for #{n} odd and #{1} for #{n} even, it's clear that the derivative with respect to #{h} at #{0} is #{\psi^{(2)}/2}. 
+}
+\p{
+  For a general process #{X_t}, if the conditional moments #{E[(X_{t+h} - X_t)^n \mid \cF_t]} can be bounded by #{Ch^\epsilon} for #{\epsilon, C >0} (with probability #{1}), a similar argument shows that having these moments differentiable suffices for stochastic differentiability.
+}
