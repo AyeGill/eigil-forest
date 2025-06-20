@@ -8,7 +8,7 @@
 }
 \ol{
   \li{
-    Form the square double cateogry #{\cA^\to \rightrightarrows \cA}
+    Form the square double category #{\cA^\to \rightrightarrows \cA}
   }
   \li{
     Take the fiberwise opposite of these objects: #{(\cA^\to)^\fop \rightrightarrows \cA^\fop}.
