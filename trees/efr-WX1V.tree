@@ -4,7 +4,7 @@
 \taxon{remark}
 \title{The Structure of #{\BiSys}}
 \p{
-  #{\BiSys(T)} has the following structure: The objects are simply the objects of #{\cA} -- the bundles.
+  #{\BiSys(\cC,\cA,T)} has the following structure: The objects are simply the objects of #{\cA} -- the bundles.
 }
 \p{
   There are three types of 1-cell: Lenses, that is morphism in #{\cA^\fop}, which we write #{A \lensto B}, charts, that is morphisms in #{\cA}, which we write #{A \charto B}, and \em{bisystems,} which are pairs #{(S \in \cC, TS \otimes A \lensto B)}, and which we write #{A \proto B}.
@@ -56,7 +56,7 @@
   The charts, bisystems and chart-bisystem cells form a pseudo double category with the obvious composition. So do the lenses, bisystems and lens-bisystem cells. Finally, there is a notion of 3-cell given by a box whose sides are 2-cells of each kind, so that the resulting diagram in #{\cC} (with isomorphisms on two sides) commutes.
 }
 \p{
-  The lens-bisystem double category is #{\dblPara_{\cC^\simeq}(\Arena{\cA}_0)} (recall that #{\Arena{\cA}_0 = \cA^\fop}), with the action given by the functor #{T} (restricted to isomorphisms). The chart-bisystem double category is the result of taking #{\BiSys(T)}, a pseudocategory in double categories, and applying #{\PsCat((-)_h) : \PsCat(\DblCat) \to \PsCat(\Cat)} where #{(-)_h} takes the \em{horizontal} category of a (strict) double category.
+  The lens-bisystem double category is #{\dblPara_{\cC^\simeq}(\Arena{\cA}_0)} (recall that #{\Arena{\cA}_0 = \cA^\fop}), with the action given by the functor #{T} (restricted to isomorphisms). The chart-bisystem double category is the result of taking #{\BiSys(\cC,\cA,T)}, a pseudocategory in double categories, and applying #{\PsCat((-)_h) : \PsCat(\DblCat) \to \PsCat(\Cat)} where #{(-)_h} takes the \em{horizontal} category of a (strict) double category.
 }
 \p{
   The 3-cells, of course, are the 2-cells of #{\dblPara_{(\cC^\to)^\simeq}(\Arena(\cA)_1)}. Analogously to the above, for each class of 1-cells, there is a 

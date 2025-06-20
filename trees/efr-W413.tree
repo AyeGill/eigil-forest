@@ -1,0 +1,8 @@
+\date{2025-06-20}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{#{\BiSys^M}}
+\p{
+  Let #{(\cC, \cA, T)} be a stochastic dynamical systems theory. Consider the double category whose vertical category is #{\cC_\det} and horizontal category is #{\cC}, with commutative squares as the 2-cells (this is the \em{transpose} of #{\MAr{\cC} \rightrightarrows \cC}). This carries an obvious symmetric monoidal structure, and acts on the double category of stochastic arenas #{\widetile{\Arena}(\cA)} via the functor #{T}. Denote by #{\BiSys^M(\cC,\cA,T)} the symmetric monoidal triple category induced as in \ref{efr-EPI9} by this data.
+}

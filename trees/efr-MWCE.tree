@@ -15,8 +15,18 @@
   In a double category #{\CC}, there is a "horizontal slice" 1-category having objects the horizontal maps #{A \to B} and morphisms given by 2-cells that are identity on the left boundary, composed vertically. Similarly there is a "vertical slice". This is given by a similar pullback in #{\Cat}---we simply do this one level up.
 }
 \p{
-  Note that Myers' construction of the double fibration #{\Sys(T) \to \Arena{\Cat}} in fact uses the vertical slice in this sense.
+  Note that Myers' construction of the double fibration #{\Sys(\cC,\cA,T) \to \Arena{\Cat}} in fact uses the vertical slice in this sense.
 }
 \p{
-  This somewhat trivial observation means that any composition in #{\BiSys(T)} which produces 2-cell under #{I} in fact produces a morphism of systems in the ordinary sense. Replacing #{I} with another object, we may regard the slices as further-parameterized versions of #{\Sys(T)}.  
+  This somewhat trivial observation means that any composition in #{\BiSys(\cC,\cA,T)} which produces 2-cell under #{I} in fact produces a morphism of systems in the ordinary sense. Replacing #{I} with another object, we may regard the slices as further-parameterized versions of #{\Sys(\cC,\cA,T)}.  
+}
+
+\p{
+  There is essentially no difficulty in applying this to the Markov case:
+}
+
+\transclude{efr-W413}
+
+\p{
+  The information contained in #{\BiSys^M(\cC,\cA,T)} is much as above, although the complications invoved in the double category of stochastic arenas remain present.
 }

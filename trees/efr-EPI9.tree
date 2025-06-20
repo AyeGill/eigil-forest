@@ -17,5 +17,5 @@
 	\arrow["T"', from=2-1, to=2-2]
 \end{tikzcd}
   }
-  depicts two strict double categories, each with a symmetric monoidal structure, and a strict double functor between them which is (non-strictly) a symmetric monoidal functor. This induces an object of #{\SymMon(\Act(\DblCat))}. We denote by #{\BiSys(T)} this induced object.
+  depicts two strict double categories, each with a symmetric monoidal structure, and a strict double functor between them which is (non-strictly) a symmetric monoidal functor. This induces an object of #{\SymMon(\Act(\DblCat))}. Applying #{\dblPara(-)} under #{\SymMon(-),} we obtain a symmetric pseudomonoid in internal pseudocategories in #{\DblCat}. Denote by #{\BiSys(\cC,\cA,T)} this induced object.
 }
