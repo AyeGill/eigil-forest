@@ -48,3 +48,11 @@
   Because of this, one views a generic chart map as a \em{generalized trajectory}, of a type given by the domain system. As another example, taking the state space to be #{\{1,2, \dots, n\}} with an update map that carries #{n} to #{1,} one finds a system which classifies \em{#{n}-periodic} trajectories. Similarly, in the smooth case, the system #{(\RR, d/dt: \RR \to T\RR)} classifies solutions of a smooth differential equation (those which extend to infinity).
   Recent work by Lynch, Myers, Staton, and the author (\ref{lynch-myers-rischel-staton-stoch-clocks}) constructs clock systems for theories of stochastic, discrete-time doctrines, although we will not delve into this here.
 }
+
+\p{
+  Because this thesis is about Markov fibrations, we have chosen to present these ideas in terms of fibrations equipped with sections. Myers' book \ref{myers-cst} actually prefers the presentation in terms of indexed categories. Similarly, we construct a double category of systems which is fibred (in a certain sense) over the double category of arenas. Myers instead displays this as a \em{doubly indexed category} #{\Arena \to \dblCat}, which carries lenses to functors and charts to profunctors.
+}
+
+\p{
+  In a recent paper \ref{double-operadic-systems}, Myers and Libkind further develop the category theory of what they term \em{double operadic categorical systems theory,} which again concerns notions of "composable system" which are described in terms of such doubly indexed category (although for technical reasons, they use the language of \em{right modules} in that paper and a somewhat different presentation, the concept is the same.)
+}

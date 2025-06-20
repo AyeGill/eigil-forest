@@ -46,15 +46,15 @@
 }
 
 \p{
-  We begin this chapter with a treatment of double categories of charts and lenses in the context of Markov fibrations (and [stochastic modules](efr-OEFJ)). The construction does not work quite as well as in the classical case -- the difficulty is essentially that the equivalence relation which defines [stochastic charts](efr-TBZZ) has a directed nature, and given a 2-cell defined in an obvious way #{\phi \to \psi,} and an equation #{\psi \xfrom{\sim} \psi',} there is not (apparently) in general a way to lift this to an arrow #{\phi' \to \psi'} (with #{\phi' \simeq \phi}). However, we can construct a double category whose globular horizontal 2-category have \em{connected components} given by the stochastic charts (or lenses).
+  We begin this chapter with a treatment of double categories of charts and lenses in the context of Markov fibrations (and [stochastic modules](efr-OEFJ)). The construction does not work quite as well as in the classical case---the difficulty is essentially that the equivalence relation which defines [stochastic charts](efr-TBZZ) has a directed nature, and given a 2-cell defined in an obvious way #{\phi \to \psi,} and an equation #{\psi \xfrom{\sim} \psi',} there is not (apparently) in general a way to lift this to an arrow #{\phi' \to \psi'} (with #{\phi' \simeq \phi}). However, we can construct a double category whose globular horizontal 2-category have \em{connected components} given by the stochastic charts (or lenses).
 }
 
 \p{
   We proceed to give an account of categorical systems theory for these double categories. The chief problem posed by the above is that we may not have any good [clock systems](efr-9WQU). Since two equivalent charts should represent the same system, but they may receive different sets of maps from the supposed clock system (and thus have different sets of trajectories). We resolve this by proving that, for lenses with a deterministic base, every equivalence class of lenses has an initial representative. Moreover, mapping out of this initial representative to a representative of some other lens, a 2-cell exists filling a given square if and only if it commutes as a map of lenses and charts in the classical case (recall that over deterministic bases, Markov fibrations become ordinary fibrations). In particular the trajectories of a system with respect to such a clock system depend only on their equivalence class.
 }
 \p{
-  We follow this up by constructing the above discussed triple categories of "bimachines", that is systems which combine Mealy and Moore machines. We do this both for stochastic and the ordinary case -- the procedure is exactly the same, but of course they are different objects, neither generalizing the other.
+  We follow this up by constructing the above discussed triple categories of "bimachines", that is systems which combine Mealy and Moore machines. We do this both for stochastic and the ordinary case---the procedure is exactly the same, but of course they are different objects, neither generalizing the other.
 }
 \p{
-  We end by constructing a stochastic dynamical systems theory for \em{smooth} dynamical systems -- requiring a brief detour to construct a suitable Markov category of smooth kernels.
+  We end by constructing a stochastic dynamical systems theory for \em{smooth} dynamical systems---requiring a brief detour to construct a suitable Markov category of smooth kernels.
 }

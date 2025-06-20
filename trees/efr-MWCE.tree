@@ -30,3 +30,7 @@
 \p{
   The information contained in #{\BiSys^M(\cC,\cA,T)} is much as above, although the complications invoved in the double category of stochastic arenas remain present.
 }
+
+\p{
+  Our bisystems are reminiscent of the \em{energy-driven systems} of Capucci, Lynch, and Spivak (\ref{energy-driven-systems}). Indeed, their #{\CC \cat{org}} is essentially the bisystems in the (ordinary) doctrine of smooth dynamical systems. As we mentioned in the introduction, Shapiro and Spivak (\ref{shapiro-spivak-dynamic-operads}) have previous developed a structure #{\OO \cat{rg}} which consists of the bisystems for the discrete dynamical systems doctrine (i.e #{\Set^\to \to \Set}). #{\OO \cat{rg}} has a tremendous amount of structure coming from the representation of lenses in this doctrine as the category of polynomial functors, which can't be replicated for a general systems theory (and certainly not for a general \em{stochastic} systems theory).
+}

@@ -7,14 +7,14 @@
 }
 \ol{
   \li{
-    When passing to mechanics constrained to a subset #{V \subseteq \RR^n,} the constrained Lagrangian is simply the restricted Lagrangian. The constrained mechanics arise from solving the constrained optimization problem instead of the original one -- we don't have to think about the precise magnitude of the forces that enforce the constraints.
+    When passing to mechanics constrained to a subset #{V \subseteq \RR^n,} the constrained Lagrangian is simply the restricted Lagrangian. The constrained mechanics arise from solving the constrained optimization problem instead of the original one---we don't have to think about the precise magnitude of the forces that enforce the constraints.
   }
   \li{
     When reparameterizing the mechanics in some new coordinate system, given by #{\Phi: U \to \RR^n}, the new Lagrangian is simply #{L(\Phi(u), D\Phi(\dot{u}))} as expected.
   }
 }
 \p{
-  In open games, we have the same property for games given by utility functions. In general, given a strategy set #{\Sigma} and a selection relation, we have no way of determining an induced selection relation on #{\Sigma' \subset \Sigma} -- since there may be new optima if we restrict away from the previous optima.
+  In open games, we have the same property for games given by utility functions. In general, given a strategy set #{\Sigma} and a selection relation, we have no way of determining an induced selection relation on #{\Sigma' \subset \Sigma}---since there may be new optima if we restrict away from the previous optima.
 }
 \p{
   Similarly in zero-sum cases, the minmax solution of #{L(x,a)} may change if the set of #{A}s is restricted.

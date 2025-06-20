@@ -26,6 +26,6 @@
   The main problem with \ref{efr-I897} is that for many 2-categorical notions of interest, requiring (for example) the action #{\cM \times \cC \to \cC} to be a strict homomorphism of whatever structure under consideration is too strict to work, while working with the full category of pseudomorphisms prevents the pullbacks required for pseudocategories from existing. Thus for example, an internal pseudomonoid in #{\MonCat_s} is a \em{commutative} monoidal category, which is far too strict for most purposes---generally speaking, symmetric monoidal categories can \em{not} be strictified into commutative ones.
 }
 \p{
-  In \ref{efr-ZRUZ}, we will want to construct a symmetric monoidal "triple category" -- that is, a symmetric monoidal pseudocategory in strict double categories.
+  In \ref{efr-ZRUZ}, we will want to construct a symmetric monoidal "triple category"---that is, a symmetric monoidal pseudocategory in strict double categories.
   We will manage this via the preceding by noting that since #{\Act(\CC) \to \PsCat(\CC)} preserves products, it carries (symmetric) pseudomonoids to pseudomonoids---in other words, we can apply the internalization the other way around, taking pseudomonoids in actions rather than actions in pseudomonoids. This works because strict \em{products} still exist in the category of pseudohomomorphisms, but for a more general categorical structure, we would be in trouble.
 }

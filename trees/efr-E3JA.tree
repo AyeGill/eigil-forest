@@ -12,7 +12,7 @@
 }
 \proof{
   \p{
-  There is essentially nothing to show in the construction of the given functor -- given #{f: V \to W} continuous, the induced map between the objects #{V_p} and #{W_q} is constructed by observing that for each #{q}, #{qf} is a continuous seminorm on #{V}, and #{f} descends to a continuous map #{V_{qf} \to W_q}. 
+  There is essentially nothing to show in the construction of the given functor---iven #{f: V \to W} continuous, the induced map between the objects #{V_p} and #{W_q} is constructed by observing that for each #{q}, #{qf} is a continuous seminorm on #{V}, and #{f} descends to a continuous map #{V_{qf} \to W_q}. 
   }
   \p{
     Let #{V} be an LCVS. Since the seminorms jointly separate points, the map #{V \to \lim V_p} is injective. By construction it is continuous.

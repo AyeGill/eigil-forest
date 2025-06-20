@@ -15,7 +15,7 @@
     The existence part first claim is clear: #{\cC'} acquires a unique Markov structure since it is Cartesian, and the inclusion of that Markov structure into #{\cC} gives a Markov structure on #{\cC}. Conversely, suppose #{\cC} is a Markov category and #{\cC' \subseteq \cC_\det} is a class of deterministic morphisms which is still Cartesian. This means the projections #{X \otimes Y \to X,Y} still exhibit #{X \otimes Y} as a product in #{\cC'}. But since the pairing are the unique map lifting two given maps #{A \to X,Y,} the pairing must be preserved by the inclusion #{\cC' \to \cC_\det}. Since the canonical Markov structure is given as a pairing, this means the markov structure induced by #{\cC' \to \cC} must agree with the one given by #{\cC_\det}, which is just the original one.
   }
   \p{
-    The second claim is straightforward -- see eg \ref{fritz-synthetic-markov-cats} remark 10.13.
+    The second claim is straightforward---see eg \ref{fritz-synthetic-markov-cats} remark 10.13.
   }
   \p{
     Now suppose #{\cC_\det \subseteq \cC' \subseteq \cC}, where #{\cC'} is some larger premarkov structure. By the argument above, they must generate the same Markov structure on #{\cC}. But again, this implies that every map in #{\cC'} is deterministic for this Markov structure, so we have #{\cC_\det = \cC'}. This finishes the proof.

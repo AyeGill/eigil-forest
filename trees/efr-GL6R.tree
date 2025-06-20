@@ -13,5 +13,5 @@
     & F(\bar{X}_M')
     \end{tikzcd}
   }
-  commutes. In what follows, we will simply write #{f^*\bar{X}} for some choice of cartesian lift, and speak of #{\alpha_* : F(\bar{X}) \to F(f^*\bar{X})}. The above shows that this is a harmless abuse -- the actions #{\alpha_*} are preserved by the identification of different Cartesian lifts. In particular, we will often make arguments as if pullbacks compose strictly, although in general they only compose up to isomorphism. The above triangle means this is harmless.
+  commutes. In what follows, we will simply write #{f^*\bar{X}} for some choice of cartesian lift, and speak of #{\alpha_* : F(\bar{X}) \to F(f^*\bar{X})}. The above shows that this is a harmless abuse---the actions #{\alpha_*} are preserved by the identification of different Cartesian lifts. In particular, we will often make arguments as if pullbacks compose strictly, although in general they only compose up to isomorphism. The above triangle means this is harmless.
 }

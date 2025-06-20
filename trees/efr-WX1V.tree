@@ -4,7 +4,7 @@
 \taxon{remark}
 \title{The Structure of #{\BiSys}}
 \p{
-  #{\BiSys(\cC,\cA,T)} has the following structure: The objects are simply the objects of #{\cA} -- the bundles.
+  #{\BiSys(\cC,\cA,T)} has the following structure: The objects are simply the objects of #{\cA}---the bundles.
 }
 \p{
   There are three types of 1-cell: Lenses, that is morphism in #{\cA^\fop}, which we write #{A \lensto B}, charts, that is morphisms in #{\cA}, which we write #{A \charto B}, and \em{bisystems,} which are pairs #{(S \in \cC, TS \otimes A \lensto B)}, and which we write #{A \proto B}.

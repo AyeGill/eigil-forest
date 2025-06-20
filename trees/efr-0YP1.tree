@@ -10,7 +10,7 @@
 }
 \proof{
 \p{
-  To see the first point, let #{f: X \to Z, g: Y \to Z} be arbitrary maps. Note that #{X \times_Z Y = (X \times Y) \times_{X \times Y \times Z \times Z} X \times Y \times Z}, where the horizontal map is given by #{(x,y) \mapsto (x,y,f(x),g(y)),} and the top by #{(x,y,z) \mapsto (x,y,z,z)} -- in the sense that the universal property of this intersection is exactly the universal property of the given pullback.
+  To see the first point, let #{f: X \to Z, g: Y \to Z} be arbitrary maps. Note that #{X \times_Z Y = (X \times Y) \times_{X \times Y \times Z \times Z} X \times Y \times Z}, where the horizontal map is given by #{(x,y) \mapsto (x,y,f(x),g(y)),} and the top by #{(x,y,z) \mapsto (x,y,z,z)}---in the sense that the universal property of this intersection is exactly the universal property of the given pullback.
 }
 \p{
   Now suppose #{\cC_\det \to \cC} preserves this intersection, and #{\cC} is positive. (Note that it doesn't follow that the inclusion preserves the pullback #{X \times_Z Y}, because it doesn't preserve the products). This amounts to the claim that a map #{P \to X \otimes Y} lifts to the pullback if and only if the composite #{P \to X \otimes Y \otimes Z \otimes Z} lifts over the map #{1_X \otimes 1_Y \otimes \copy_Z} (note that the pullback of a monomorphism is a monomorphism).

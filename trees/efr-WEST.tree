@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{example}
 \p{
-  If #{\CC = \Set} regarded as a discrete 2-category, as noted, a pseudomonoid action is just a monoid action in the ordinary sense -- that is, a monoid #{M}, a set #{X} and a function #{m \cdot x} so that #{m \cdot (n \cdot x) = (mn) \cdot x}. The para construction is then the \em{action category,} whose objects are the points of #{X} and whose morphisms #{x \to y} are elements #{m} so that #{m \cdot x = y} (with multiplication as composition).
+  If #{\CC = \Set} regarded as a discrete 2-category, as noted, a pseudomonoid action is just a monoid action in the ordinary sense---that is, a monoid #{M}, a set #{X} and a function #{m \cdot x} so that #{m \cdot (n \cdot x) = (mn) \cdot x}. The para construction is then the \em{action category,} whose objects are the points of #{X} and whose morphisms #{x \to y} are elements #{m} so that #{m \cdot x = y} (with multiplication as composition).
 }
