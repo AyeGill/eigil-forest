@@ -4,10 +4,14 @@
 \title{Introduction}
 \parent{efr-0001}
 \p{
-  In several different parts of applied category theory, people have found it useful to study categories whose morphisms describe transformations or functions that take place in two "stages", where the second is dependent on the first, but composes in the other direction---so-called \em{lenses}. In many of these domains, stochastic phenomena play a role. There is a useful generalization of lenses to categories of stochastic maps---he so-called \em{optics} of Riley, \ref{riley-optics} ---ut this does not acommodate another useful genralization, so called \em{dependent lenses} where not only the backwards process but the set it takes values in is indexed over the base. It has been a long-standing problem to develop a suitable common generalization, "dependent optics", of these two ideas. In this thesis, we solve this problem by developing a theory of \em{Markov fibrations} (\ref{efr-O088}).
+  In several different parts of applied category theory, people have found it useful to study categories whose morphisms describe transformations or functions that take place in two "stages", where the second is dependent on the first, but composes in the other direction---so-called \em{lenses}. In many of these domains, stochastic phenomena play a role. There is a useful generalization of lenses to categories of stochastic maps---the so-called \em{optics} of Riley, \ref{riley-optics}---but this does not acommodate another useful genralization, so called \em{dependent lenses} where not only the backwards process but the set it takes values in is indexed over the base. It has been a long-standing problem to develop a suitable common generalization, "dependent optics", of these two ideas. In this thesis, we solve this problem by developing a theory of \em{Markov fibrations} (\ref{efr-O088}).
 }
 \p{
-  In the sixth chapter, we describe an extension of Myers' double category of dynamical systems. It has been observed that, although a lens from the tangent bundle #{TS \lensto A} may indeed be said to describe an open dynamical system with state space #{S}, the same can be said for a lens of type #{TS \otimes A \lensto I}---although a dynamical system of a different kind (essentially, the first type are the \em{Moore machines}, the second the \em{Mealy machines}---see the introduction to \ref{efr-000D} for more on this). It is natural to consider parameterized maps #{TS \otimes A \lensto B} as a common generalization of these two concepts---and in fact, special cases of this idea, lenses parameterized by tangent bundles, have already been considered many times, for example in the semantics of gradient descent (see \ref{bruno-etal-categorical-learning-2021}, \ref{towards-cybercat}, \ref{backprop-as-functor}).}
+  
+}
+\p{
+   Myers
+   It has been observed that, although a lens from the tangent bundle #{TS \lensto A} may indeed be said to describe an open dynamical system with state space #{S}, the same can be said for a lens of type #{TS \otimes A \lensto I}---although a dynamical system of a different kind (essentially, the first type are the \em{Moore machines}, the second the \em{Mealy machines}---see the introduction to \ref{efr-000D} for more on this). It is natural to consider parameterized maps #{TS \otimes A \lensto B} as a common generalization of these two concepts---and in fact, special cases of this idea, lenses parameterized by tangent bundles, have already been considered many times, for example in the semantics of gradient descent (see \ref{bruno-etal-categorical-learning-2021}, \ref{towards-cybercat}, \ref{backprop-as-functor}).}
 \p{
   Since parameterized maps compose in an obvious way, we now have three different notions of morphisms between bundles---lenses, charts, and "generalized systems". These should form some sort of symmetric monoidal triple category, but the right axiomatization of this concept is somewhat elusive. We will give a treatment of the higher category theory necessary to find a version of triple categories suitable for this case, and which makes the eventual construction of a monoidal triple category of systems. This approach will work both for Myers' theory build on a section of a (monoidal) fibration, but also for our novel theory of Markov fibrations (with the definitions suitably applied). As a special case we construct the double category of systems for a Markov fibration.
 }
@@ -38,6 +42,28 @@
   }
   \p{
     There have been a number of attempts at this---see eg \ref{fibre-optics-2021}, \ref{hedges-braithwaite-dep}, \ref{milewski-polylens}, \ref{vertechi-dep-optics}. While these efforts have to some extent succeeded in describing a theory that is general enough to contain the desired examples, it is generally very ad hoc. The construction of optics as a special case of Vertechi's dependent optics (\ref{vertechi-dep-optics}) gives them as fibre optics with the indexing bicategory being (the delooping of) a monoidal category #{\cM}, but embeds lenses using a bicategory of spans. Thus simple lenses admit two distinct encodings in this theory. Moreover, Vertechi's example of dependent monoidal optics fails to describe a supercategory of #{\Optic(\cC)} when applied to Markov categories, and are thus not suitable for, for example, game theory.
+  }
+}
+\subtree{
+  \title{Categorical Cybernetics}
+}
+\subtree{
+  \title{Overview and contributions}
+  \p{
+    We begin the thesis in \ref{efr-POD2} with a review of some preliminary material. This chapter can largely be skipped for readers already familiar with the material (Markov categories, double categories, lenses and optics, fibrations, and categorical dynamical systems theory). The chapter on Markov categories introduces a few novel auxiliary notions, but these can be referred back to as necessary (they are primarily regularity conditions which hold in most Markov categories of interest). 
+  }
+  \p{
+    In \ref{efr-O088}, we give the main technical contribution of the thesis by developing a theory of \em{Markov fibrations}. Their fiberwise opposites generalize both the fiberwise opposites of codomain fibrations (dependent lenses in a classical sense) and optics in Markov categories. \ref{efr-K6NM} provides the statement of the latter (the former is straightforward). We also give a description of monoidal structures on Markov fibrations (which pass to monoidal structures on the resulting categories of optics).
+  }
+  \p{
+    In \ref{efr-000D}, we give a construction of the double category of \em{parameterized morphisms} for a category action (or actegory)---in fact, we do this  internally to any #{2}-category. This has the advantage of allowing us to construct more highly-structured versions of this double category by carrying out the construction internally to higher-structured actions. (Bicategorical versions of #{\Para} are a relatively old idea, and the double categorical version is a straightforward extension which has existed for some time as folklore, but the fully-internal construction here is novel).
+  }
+  \p{
+    In \ref{efr-GFG0}, we apply Markov fibrations to compositional game theory, and solve a longstanding problem by giving a category of stochastic open games with a general "external choice" operator. This construction is largely abstract over the particular category, and so can be applied to different Markov fibrations to describe games defined with different notions of stochasticity. We also review some previous work with Capucci, Hedges, and Gavranovic on abstract constructions of categories of open games (\ref{towards-cybercat}). 
+  }
+  \p{
+    In \ref{efr-ZRUZ}, we describe how to extend Myers' categorical systems theory to Markov fibrations, to give theories of systems which may have stochastic maps not merely in the fiber (as was already described by Myers in \ref{myers-cst}) but also in the base. We also leverage our construction from \ref{efr-000D} to give a description of a \em{symmetric monoidal triple category} whose three types of morphisms, are lenses, charts, and what we call \em{bisystems,} that is morphisms #{TS \otimes A \lensto B} - these are open dynamical systems which have two directions of interaction with the environment.
+    We also describe a particular systems theory of smooth manifolds and smooth stochastic maps between them.
   }
 }
 \transclude{efr-0008}%Acknowledgements
