@@ -1,0 +1,53 @@
+\date{2025-06-20}
+\author{eigil-rischel}
+\import{macros}
+\title{Generative Adversarial Network}
+\p{
+  The idea of a \em{generative adversarial network,} or GAN, is to generate synthetic data which appears to be drawn from the same distribution as a given dataset. The basic idea is to train two networks in parallel: a discriminator, which is trained to distinguish the generator's output from the real dataset, and a generator, which is trained to fool the discriminator. In each training step, one of two things happen:
+  \ol{
+    \li{
+      We take a sample from the dataset, have the discriminator score it, and update it according to gradient descent to maximize the score.
+    }
+    \li{
+      We take a sample from the \em{latent distribution}, run the generator on it, then run the discriminator on the output. Then we update the discriminator with gradient descent to \em{minimize} the score, and update the generator with gradient descent to \em{maximize} the score in this case.
+    }
+  }
+}
+\p{
+  A GAN is naturally thought of as a sort of game played between two players, and hence has been an interesting example to study the parallels between the algebraic structure of machine learning and open games. However, since the game is essentially probabilistic, modeling this requires a category of lenses which contains both smooth manifolds, their tangent bundles and derivatives, as well as a good supply of stochastic maps. Additionally, the most natural way to model a GAN is as a morphism on a coproduct of spaces - hence we want coproducts in the lens category as well. The systems doctrine constructed in this section has all these features.
+}
+\p{
+  Fix a distribution #{\mu_D} on #{\RR^N}, the \em{data distribution}. Typically this will be a discrete distribution given by a dataset, perhaps of images.
+  Also fix a \em{latent distribution} #{\mu_L} on #{\RR^L}. Typically this will be something like an uncorrelated Gaussian.
+  Choose a \em{generator network} #{G: \RR^{P_g} \times \RR^L \to \RR^N} and a \em{discriminator network} #{D: \RR^{P_d} \times \RR^N \to [0,1]}. In practice these are given by neural networks, but for now we require them simply to be smooth maps.
+  (Actually, neural networks with ReLU activations are not smooth, but we ignore this subtlety for now)
+}
+\p{
+  Finally choose optimization algorithms #{T\RR^{P_g} \lensto T^*\RR^{P_g}} and #{T\RR^{P_d} \lensto T^*\RR^{P_d}} for the generator and discriminator networks.
+  Given this data, we obtain a bisystem #{\arena{T^*\RR^N + T^*\RR^L}{\RR^N + \RR^L} \proto \arena{*}{\RR^N \times [0,1]}} with parameter space #{\RR^{P_g} \times \RR^{P_d}} as follows:
+  \ol{
+    \li{
+      First, there is a morphism #{\RR^{P_g} \times (\RR^N + \RR^L) \to \RR^N + \RR^N} given by #{(_, \iota_0(d)) \mapsto d, (p_g, \iota_1(l)) \mapsto G(p_g,l)}.
+      Applying #{T^*} to this, and composing with the optimization algorithm for the generator we obtain a bisystem #{T^*(\RR^N + \RR^L) \to T^*\RR^N + T^*\RR^N} with parameter space #{\RR^{P_g}}. Call this #{\hat{G}}
+    }
+    \li{
+      Second, there is an obvious morphism #{\RR^{P_d} \times (\RR^N + \RR^N) \to ([0,1] + [0,1])} which simply runs the discriminator in both cases.
+      Taking the reverse derivative of this, and applying the optimization algorithm for the generator, we obtain a bisystem #{T^*\RR^N + T^*\RR^N \to T^*[0,1] + T^*[0,1]}. Call this #{\hat{D}}
+    }
+    \li{
+      Now there is an endomorphism lens #{T^*\RR^N \lensto T^*\RR^N} which is the identity #{1_{\RR^N}} in the forwards direction, and multiplication by #{-1} in the backwards direction. Call this #{N}.
+    }
+    \li{
+      The composite #{\hat{G} ; 1 + N ; \hat{N}} is now a bisystem #{T^*(\RR^N + \RR^L) \to T^*[0,1] + T^*[0,1]}. Finally, we compose this with the covector field #{[0,1] \to T^*[0,1]} given by #{d \id} in the first branch, and by #{- d \id} in the second branch.
+    }
+  }
+  \p{
+    The semantics of this when given a data point #{x \in \RR^N} is to run the discriminator, then update according to the gradient of the output---that is, to maximize the output. Given a latent sample #{x \in \RR^L}, we first run the generator, then the discriminator. The discriminator is now updated in the opposite direction---to \em{minimize} the output on this value, while the generator is updated in the positive direction---to maximize the value of its generation on this sample.
+  }
+  \p{
+    So far we have worked inside the doctrine of smooth dynamical systems. However, passing into the stochastic doctrine just described, we may precompose these bisystems with the map #{I \to \RR^N + \RR^L} given by sampling from #{\mu_D} with probability #{p} and from #{\mu_L} with probability #{1-p}. The resulting dynamical system describes the \em{training dynamics} of the GAN.
+  }
+  \p{
+    (One can also consider more complicated versions of this, where the number #{p} is controlled by another dynamical system. One can also embed a controller which weighs the gradients sent to the two networks, so that for example if the discriminator is too good, one slows down its learning rate compared to the generator for a while.)
+  }
+}
