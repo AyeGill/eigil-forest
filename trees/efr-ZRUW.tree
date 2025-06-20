@@ -13,14 +13,14 @@
 \transclude{efr-ZRUY} % Examples, including pseudomonoids.
 \transclude{efr-LTJQ} %Example, monoidal double cats
 \p{
-    Here we are already beginning to feel the limitations of this internalization a bit -- really we should ask for #{m}, at least, to be only a strong monoidal functor. But we move on for now with this problematic definition.
+    Here we are already beginning to feel the limitations of this internalization a bit---really we should ask for #{m}, at least, to be only a strong monoidal functor. But we move on for now with this problematic definition.
 }
 \p{
     Of course, there is a very crucial notion of \em{pseudofunctor} between pseudo double categories. This has an internal formulation in terms of \em{pseudomorphisms:}
 }
 \transclude{efr-8YZ9} %Pseudomorphism
 \p{
-    One should not spend too much time looking at \ref{efr-8YZ9}. This is clearly a horrible concept, and we will prefer to work around it rather than referring to it explicitly. It may be a useful exercise to convince oneself that, when #{C_0 = *} and the pseudocategory is a pseudomonoid -- eg a monoidal category -- this coincides with the notion of strong monoidal functor.
+    One should not spend too much time looking at \ref{efr-8YZ9}. This is clearly a horrible concept, and we will prefer to work around it rather than referring to it explicitly. It may be a useful exercise to convince oneself that, when #{C_0 = *} and the pseudocategory is a pseudomonoid---eg a monoidal category---this coincides with the notion of strong monoidal functor.
 }
 \p{
     One can also define lax and oplax functors between pseudo double categories, but we will not need that concept here.
