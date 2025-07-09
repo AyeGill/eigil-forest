@@ -1,0 +1,19 @@
+\date{2025-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{remark}
+\p{
+  The uniqueness and existence of solutions to the Martingale problem for a given unbounded operator #{A: D(A) \to L^\infty(X)} is a significant area of study. A classical textbook is (Ethier and Kurtz, chapter 4)---we will not delve into this problem here. We will only mention a few key facts.
+}
+\p{
+  First, if #{(A,\mu)} is such that any two solutions #{X_t,Y_t} have the same distributions at each time #{t}, then uniqueness holds, and any solution is a strong Markov process.
+}
+\p{
+  If #{X} is locally compact and separable, and #{A} satisfies the positive maximum condition, then there are always solutions valued in the one-point compactification of #{X} (we extend #{A} to functions on the compactification by #{Af|_X = A(f - f(\infty)|_X), (Af)(\infty) = 0}), and moreover they can be chosen with cadlag sample paths. If #{A(1) = 0} and #{X} is compact, these paths are contained in #{X}
+}
+\p{
+  Suppose for all #{\lambda,} #{R(\lambda - A ) \supset D(A)}, and that #{D(A)} separates points in #{X} (note that if #{D(A)} is also a subalgebra of #{C_0(X)}, this is equivalent to asking that it's dense in there). Then solutions to the martingale problem for #{(A,\mu)} are unique in #{\DD(I,X)} (that is, any two solutions #{X_t,Y_t} whose paths are almost certainly cadlag have the same image measure in #{\DD(I,X)}) This is (Ethier-Kurtz, theorem 4.4). Note that this is true if #{A} generates a semigroup, by the Hille-Yosida-Ray theorem.
+}
+\p{
+  Suppose there exists a solution #{X_t} of the martingale problem for #{A} which has "bounded growth rate" in the following sense: for each #{K \subset X} compact, #{\epsilon, T > 0}, there exists #{K' \subset X} compact so that #{\PP(X(t) \in K' \forall t < T, X(0) \in K) > (1-\epsilon)\PP(X(0) \in K)}. Then there exists an extension of #{A} which has well-posed Martingale problem (and #{X_t} is a solution). This is a combination of 5.11 and 5.19 from Ethier-Kurtz. Note that in particular, if #{X} is compact (and #{A(1) = 0}), the Martingale problem is well-posed.
+}

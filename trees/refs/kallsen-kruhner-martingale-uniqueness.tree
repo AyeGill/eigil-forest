@@ -1,0 +1,25 @@
+\date{2020}
+\author{Jan Kallsen}
+\author{Paul Krühner}
+\taxon{reference}
+\title{On uniqueness of solutions to martingale problems---counterexamples and sufficient criteria}
+\meta{external}{https://arxiv.org/abs/1607.02998}
+\meta{bibtex}{\startverb
+  @article{kallsen-kruhner-martingale-uniqueness,
+    title = {On uniqueness of solutions to martingale problems --- counterexamples and sufficient criteria},
+    volume = {25},
+    issn = {1083-6489},
+    url = {http://arxiv.org/abs/1607.02998},
+    doi = {10.1214/20-EJP494},
+    abstract = {The dynamics of a Markov process are often specified by its infinitesimal generator or, equivalently, its symbol. This paper contains examples of analytic symbols which do not determine the law of the corresponding Markov process uniquely. These examples also show that the law of a polynomial process is not necessarily determined by its generator. On the other hand, we show that a combination of smoothness of the symbol and ellipticity warrants uniqueness in law. The proof of this result is based on proving stability of univariate marginals relative to some properly chosen distance.},
+    issue = {none},
+    journaltitle = {Electronic Journal of Probability},
+    shortjournal = {Electron. J. Probab.},
+    author = {Kallsen, Jan and Krühner, Paul},
+    urldate = {2025-07-02},
+    date = {2020-01-01},
+    eprinttype = {arxiv},
+    eprint = {1607.02998 [math]},
+    keywords = {Mathematics - Probability}}
+  \stopverb
+}

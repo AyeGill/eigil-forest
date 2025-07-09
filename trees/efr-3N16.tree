@@ -1,0 +1,16 @@
+\date{2025-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{X_t} be a stochastic process with #{d^E X_t = 0} for all #{t}. Suppose moreover #{X} is such that for all test functions, #{E{\psi(X_t)}} is a continuous function of #{t}. Then #{X_t} is constant with probability #{1}.
+}
+\proof{
+  \p{
+    By conditioning on #{X_0,} it suffices to show that if #{X_0} is concentrated at a point, #{X_t} is constant at that same point.
+  }
+  \p{
+  Let #{\psi} be some test function. Note that #{t \mapsto \EE(\psi(X_t))} is right differentiable with right derivative #{0}, since this is the expectation of the stochastic right derivative (here we use a dominated convergence argument).
+  A function with constant zero right derivative must be constant, and it follows that the measures #{\PP(X_t)} for all #{t} are identical. But then #{X_t = X_0} with probability one for all #{t}, and this concludes the proof.
+  }
+}

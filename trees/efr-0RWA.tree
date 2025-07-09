@@ -1,0 +1,25 @@
+\date{2025-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{X_t} be a stochastic process and let #{\psi: X \to \RR} be a function.
+  Supposing the right stochastic derivatives are defined, we have for #{t \leq u}
+  ##{E[\psi(X_u) -\psi(X_t) \mid \cF_t] = E[\int_t^u D^\EE_s \psi(X_s) ds \mid \cF_t]}
+}
+\p{
+  That is, the expected change in #{\psi(X_t)} is the expected value of the integral of all the expected infinitesimal changes.
+}
+\proof{
+  \p{
+    By definition, the right-hand side is ##{E[\int_t^u \frac{d}{dv} E[\psi(X_v) \mid \cF_s]|_{v=s} ds \mid \cF_t]}
+  }
+  \p{
+    We can pull the expectation into the integral (why) and then past the derivative (why) to obtain
+    ##{\int_t^u \frac{d}{dv} E[E[\psi(X_v) \mid \cF_s] \mid \cF_t]|_{v=s} ds = \int_t^u \frac{d}{ds} E[\psi(X_s) \mid \cF_t] ds}
+  }
+  \p{
+    By the continuity assumptions (which?) the inner expectation is continuous, and the preceding calculation proves it is right differentiable. Since it is assumed (locally) absolutely continuous, it is differentiable almost everywhere and equal to the integral of its derivative. Since in those points where it is differentiable, the right derivative must agree with the derivative, it follows the integral above is equal to #{E[\psi(X_u) - \psi(X_t) \mid \cF_t]} as desired.
+  }
+
+}

@@ -1,0 +1,17 @@
+\date{2025-06-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{X_t} be a stochastic process in #{\RR} and suppose #{\EE[X_s \mid \cF_t]} is a continuous function of #{s} for all #{t}. 
+  Then #{X_t} is a martingale if and only if #{D^\EE X_t = 0} for all #{t}. 
+}
+\proof{
+  \p{
+    If #{X_t} is a martingale, then #{E[X_{t+h} - X_t \mid \cF_t] = 0} for all #{h>0}, and hence the limit as #{h \to 0^+}, which by definition is the derivative, is zero.
+  }
+  \p{
+    Conversely, let #{X_t} be a process so that the derivative is defined and zero everywhere.
+    Then by dominated convergence, #{s \mapsto E[X_{s} \mid \cF_t]} is differentiable on the right for all #{s > t}, with derivative given by #{E[D^\EE X_s \mid \cF_t] = 0}. Hence this function is continuous and right differentiable with derivative zero, and so constant.
+  }
+}

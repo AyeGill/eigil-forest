@@ -6,6 +6,9 @@
   Let #{X} be a locally compact Hausdorff space, and let #{(\Omega)} be a measurable space.
   Given a measurable map #{f: \Omega \to X} (in the Baire #{\sigma}-algebra), there is an induced #{C^*}-homomorphism #{C_0(X) \to L^\infty(\Omega)}. This assignment is a bijection.
 }
+\p{
+  Moreover, if #{(\Omega,N)} is an enhanced measurable space, two measurable functions #{f,g: \Omega \to X} induce equal maps #{C_0(X) \to L^\infty(\Omega,N)} if and only if they are almost everywhere equal, and this assignment is again a bijection.
+}
 \proof{
   \p{
     It is clear that #{f^*} is well-defined. Given a #{C^*}-homomorphism #{\phi: C_0(X) \to L^\infty(\Omega),} we obtain an assignment 
@@ -21,5 +24,18 @@
   }
   \p{
     Analogously, the equation #{u(\hat{\phi}\omega) = \ev_\omega(\phi(u))} can be rewritten as #{u \circ \hat{\phi} = \phi(u),} which says that #{\phi = \hat{\phi}^*}. Hence we have our bijection.
+  }
+  \p{
+    Finally, let #{f,g: \Omega \to X} be two measurable functions, and let #{N} be a #{\sigma}-ideal on #{\Omega}. Wlog #{X} is compact, and so there exist a countable family of continuous functions #{u_i: X \to \RR} which separate points. Suppose #{f,g} are not almost surely equal. Then there must be some #{u_i} so that #{\{\omega \mid u_if(\omega) \neq u_ig(\omega)\}} is non-null, or by sigma-additivity, #{f \neq g} would be null. This proves they are distinct as maps #{C_0(X) \to L^\infty(X,N)}
+  }
+  \p{
+    Now consider the map #{L^\infty(\Omega) \to L^\infty(\Omega,N)}. This is clearly surjective. The claim is that every #{C^*}-homomorphism into #{L^\infty(\Omega,N)} lifts over it---equivalently, that it splits (as a #{C^*}-homomorphism). One can see that the Gelfand spectrum of #{L^\infty(\Omega)} is given by the set of finitely additive #{0,1}-valued probability measures in the topology of pointwise convergence (equivalently, by the set of ultrafilters in the #{\sigma}-algebra), and the spectrum of #{L^\infty(\Omega,N)} is the subset of measures with #{\mu(N) = 0}.
+  }
+  \p{
+    It now suffices to show that the inclusion
+    ##{
+      \Spec(L^\infty(\Omega,N)) \into \Spec(L^\infty(X))
+    }
+    splits continuously, but one easily sees that the image is clopen, and so this is straightforward.
   }
 }

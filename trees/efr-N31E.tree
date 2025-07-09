@@ -1,0 +1,28 @@
+\date{2025-07-07}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\p{
+  Let #{X \to Z \leftarrow Y} be a cospan of compact Hausdorff spaces.
+  Then #{C(X) \otimes_{C(Z)} C(Y) = C(X \times_Z Y)}
+}
+\proof{
+  \p{
+    Recall that #{C(X) \hat{\otimes}_\epsilon C(Y) = C(X \times Y)}.
+    Hence there is a continuous map #{C(X) \hat{\otimes}_\epsilon C(Y) \to C(X \times_Z Y)}. Clearly this kills all the functions in the quotient, and so there is an induced map
+    #{C(X) \otimes_{C(Z)} C(Y) \to C(X \times_Z Y)}
+  }
+  \p{
+    By the Tietze extension theorem this map is surjective, so it suffices to show it is an isometry.
+    In any Banach space, #{\norm{x} = \sup_{\phi \in B_{X^*}} \abs{\phi(x)}}. Note that the dual ball of #{C(X) \otimes_{C(Z)} C(Y)} consists of the subset of the dual ball of #{C(X \times Y)} given by those functionals that respect the quotient. We will show that these consist of the measures concentrated on the pullback: this will imply that the norm of the equivalence class of a function #{f: X \times Y \to \CC} is given by the supremum of #{\abs{f}} on the pullback, which straightforwardly yields the desired isomorphism.
+  }
+  \p{
+    So let #{\mu} be a (signed) measure which is zero on all functions of the given kind. Suppose for contradiction #{\mu} is not concentrated on the diagonal. Without loss of generality, assume #{\mu} is positive (either the positive or negative part must not be concentrated---consider that one and flip the sign if necessary). Let #{K} be a compact set disjoint from the diagonal where #{\mu(K) > 0}. Then there exists a point #{(x,y) \in K} so that every neighborhood of #{(x,y)} has positive measure.
+  }
+  \p{
+    Since #{(x,y)} is not on the diagonal, we can find continuous #{h: Z \to \RR} so that #{h(z(x)) > 0} and #{h(z(y)) < 0}. By continuity, for some positive #{\epsilon}, there exists a neighborhood #{U_1} of #{(x,y)} so that #{h(z(y')) < -\epsilon < \epsilon < h(z(x'))} for all #{(x',y') \in U_1}. By compact Hausdorffness, we can find some functions #{f(x),g(y)} so that #{f(x)=g(y)=1} in a neighborhood of #{(x,y)} and #{f(x)g(y)=0} outside #{U_1} (we begin by choosing some basic neighborhood #{U \times V} contained in #{U_1}, and take #{f = 0} outside #{U}, #{g=0} outside #{V}).
+  }
+  \p{
+    Then the function #{f(x)g(y)(h(z(x)) - h(z(y)))} has positive expectation, but is clearly zero in the quotient. Hence as desired every functional which is well-defined on the quotient must be concentrated on the diagonal, yielding the desired result.
+  }
+}

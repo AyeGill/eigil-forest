@@ -1,0 +1,10 @@
+\date{2025-07-04}
+\author{eigil-rischel}
+\import{macros}
+\taxon{example}
+\p{
+  If #{X,Y} are locally compact Hausdorff spaces, #{C_0(X\times Y) \cong C_0(X) \hat{\otimes}_\epsilon C_0(Y)}
+}
+\p{
+  In fact this is an example of a more general fact: for any Banach space, #{C_0(X) \hat{\otimes}_\epsilon V \cong C_0(X,V)} (it is clear that #{C_0(X, C_0(Y)) = C_0(X \times Y)})
+}

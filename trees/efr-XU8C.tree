@@ -1,0 +1,16 @@
+\date{2025-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\p{
+  We will refer to the algebras (ie internal monoids) of the injective tensor product on #{\Ban} as Banach #{\epsilon}-algebras, or simply #{\epsilon}-algebras for brevity.
+}
+\p{
+  Let #{A} be a Banach algebra. Since the canonical map #{A \hat{\otimes}_\pi A \to A \hat{\otimes}_\epsilon A} is an epimorphism, every Banach #{\epsilon}-algebra is a Banach algebra, and every Banach algebra is an #{\epsilon}-algebra in at most one way. In particular, any continuous linear map between #{\epsilon}-algebras which is a homomorphism for the underlying Banach algebra structure is automatically a homomorphism of #{\epsilon}-algebras.
+}
+\p{
+  We denote by #{\BanAlg_\epsilon} (respectively #{\CBanAlg_{\epsilon}, \BanAlg_{\epsilon, \nonu}}, etc) the full subcategory of #{\BanAlg} spanned by the Banach #{\epsilon}-algebras.
+}
+\p{
+  Analogously, for any Banach #{\epsilon}-algebra, to be an #{\epsilon}-module is a property of a Banach module (a #{\hat{\otimes}_\pi}-module, i.e a module satisfying #{\norm{a \cdot m} \leq \norm{a}\norm{m}}). We denote by #{\BanMod_\epsilon(A)} the category of Banach #{\epsilon}-modules over #{A} (in this paper, we will only consider modules over commutative Banach algebras).
+}

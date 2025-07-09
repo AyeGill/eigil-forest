@@ -1,0 +1,21 @@
+\date{2025-07-08}
+\author{eigil-rischel}
+\import{macros}
+\taxon{proposition}
+\ol{
+  \li{
+    #{M \hat{\otimes}_A N} carries the structure of an #{\epsilon}-A-module, with action extended linearly from #{a \cdot (m \otimes n) = (a \cdot m) \otimes n}
+  }
+  \li{
+    #{A}-linear, bounded maps #{M \otimes_A N \to K} are precisely those maps #{M \hat{\otimes_\epsilon} N \to K} which are #{A}-linear for both of the actions of #{A} on the left-hand side.
+  }
+  \li{
+    With #{A} itself as the unit, #{\otimes_A} is a symmetric monoidal structure on #{\BanMod_\epsilon(A)}
+  }
+  \li{
+    When #{\phi: A \to B} is a bounded algebra homomorphism, the restriction of scalars functor #{\phi^*: \BanMod_\epsilon(B) \to \BanMod_\epsilon(A)} has a left adjoint, given by #{M \otimes_A B} equipped with the obvious #{B}-action.
+  }
+  \li{
+    The bifibration #{\BanMod_\epsilon \to \CBanAlg_\epsilon} is monoidal both as a fibration and as an opfibration. The induced monoidal structure on each fiber #{\BanMod_\epsilon(A)} is precisely #{\hat{\otimes}_A}
+  }
+}

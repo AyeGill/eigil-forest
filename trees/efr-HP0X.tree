@@ -1,0 +1,47 @@
+\date{2025-07-02}
+\author{eigil-rischel}
+\import{macros}
+\title{Martingale Problems}
+\p{
+  As noted above, the well-posedness of a martingale problem is a hard question in general. Since, for reasons of the construction of the category, we are interested in a further question: under what circumstances does it suffice to verify that #{x^f_t} is a martingale only for \em{smooth} #{f} (recall that in general the domain of #{A} may be some larger subset of functions).
+}
+\p{
+  Under mild constraints on the growth rate of #{x_t} (which are satisfied automatically if the space #{X} is compact), one can show that #{A} \em{extends} to an operator which has a well-posed martingale problem, but it is not automatic that this extension is unique.
+}
+\p{
+  Suppose #{A} has the form
+  ##{Af(x) = \nabla f(x)b(x) + \frac{1}{2}\Tr(Hf(x)c(x)) + \int f(x+y) - f(x) - \nabla f(x)\xi(y)F(x,dy)}
+}
+\p{
+  Then the function
+  ##{q(x,u) = iub(x) - \frac{1}{2}u c(x) u + \int e^{iuy}-1-iu\xi(y)F(x,dy)}
+  is called the \em{symbol} of #{A}. Note that #{A} can be recovered from #{q} as
+  ##{Af(x) = \int q(x,u)\hat{f}(-u)e^{iux}du,}
+  where #{\hat{f}} is the Fourier transform of #{f}. In particular, #{q} depends only on #{A}, not on the particular representation.
+}
+\p{
+  Assume #{q} is a symbol, i.e it has the form above. Then, staring at the relationship between #{q} and #{A}, one can derive at the following: a stochastic process #{x_t} is called a solution to the martingale problem for #{q} if, for all #{u},
+  ##{m^u_t := \exp(iu x_t) - \int_0^t q(x_s,u)\exp(iu x_s)ds}
+  is a \em{local} martingale.
+}
+\p{
+  We have the following results:
+  \ol{
+    \li{
+      If #{q} is continuous, and the quantity #{\abs{b(x)} + \Tr(c(x)) + \int \abs{y}^2 F(x,dy)} is bounded (for all #{x}, uniformly), then #{x_t} solves the #{q}-martingale problem if and only if it solves the #{A|_{C^\infty_c}}-martingale problem. Moreover at least one solution exists.
+    }
+    \li{
+      The same holds if #{q} is continuous, and for each #{x} #{q(x,u)} is twice differentiable with respect to #{u} at #{u=0}, with bounded gradient and Hessian (uniformly bounded for all #{x}, that is). Note that if #{F} is zero, t
+      his amounts to the requirement that both #{b,c} are bounded.
+    }
+    \li{
+      If #{q} is #{C^2} (as a function #{\RR^d \times \RR^d \to \CC}), and #{F = 0}, then uniqueness holds for the #{q}-martingale problem.
+    }
+    \li{
+      If #{V_k} is an open cover of #{\RR^n}, and #{q_k} is a sequence of symbols so that #{q_k(x,u) = q(x,u)} when #{x \in V_k}, and each #{q_k} has a well-posed martingale problem, then as long as there exist solutions to the #{q}-martingale problem, it is well-posed. (Bottcher-Schilling 3.28).
+    }
+    \li{
+      If #{q}
+    }
+  }
+}

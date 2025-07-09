@@ -1,0 +1,10 @@
+\date{2025-07-04}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  If #{p: E \to X} is a map of locally convex Hausdorff spaces, then #{C_0(E)} is a #{C_0(X)}-#{\epsilon}-module.
+}
+
+\p{
+  The map #{C_0(E) \hat{\otimes}_\epsilon C_0(X) \cong C_0(E \times X) \to C_0(E)} is dual to the obvious map #{E \to E \times X} pairing #{p} and the identity.
+}

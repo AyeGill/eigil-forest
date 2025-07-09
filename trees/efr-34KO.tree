@@ -1,0 +1,21 @@
+\date{2025-06-26}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{The Martingale Problem}
+\p{
+  Let #{X} be any measurable space, and let #{A} be a linear operator on the space #{L^\infty(X)} of measurable, bounded functions on #{X}. Let #{x_t = x_t(\omega) \in X} be a stochastic process in #{X}, adapted to a filtration #{\cF_t}. For each #{f \in D(A)}, let #{x^f_t} be the stochastic process given by
+  ##{x_t^f = f(x_t) - f(x_0) + \int_0^t (Af)(x_s)ds} 
+}
+\p{
+  We say #{x_t} is a solution to the \em{martingale problem} associated to #{A} if each #{x_t^f} is a martingale.
+}
+\p{
+  Let #{\mu} be a measure on #{X}. If any two solutions #{x_t,y_t} to the martingale problem for #{A} with #{\PP^{x_0} = \PP^{y_0} = \mu} have the same finite-dimensional distributions---that is, if for every tuple #{t_0, t_1, t_2, \dots t_n}, the distributions of the random variables #{(x_{t_0},\dots , x_{t_n})} and #{(y_{t_0},\dots y_{t_n})} agree---then we say the martingale problem for #{(A,\mu)} \em{satisfies uniqueness}. If it is well-posed for all #{\mu}, we say the problem for #{A} is well-posed (usually it suffices to check for the dirac measures #{\delta_x}).
+}
+\p{
+  If #{X} is a toplogical space, we can ask for solutions which have either continuous or cadlag sample paths. If there is a unique (as above) solution \em{with continuous sample paths}, we say the martingale problem with continuous sample paths for #{(A,\mu)} satisfies uniqueness.
+}
+\p{
+  If the martingale problem satisfies uniqueness and at least one solution exists, we say it is \em{well-posed}.
+}

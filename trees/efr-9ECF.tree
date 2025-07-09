@@ -1,0 +1,13 @@
+\date{2025-06-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{E} be an interval, #{M} a metrizable topological space, and let #{\DD(E:M)} be the Skorokhod space.
+  Then a Radon measure #{\mu \in C(\DD(E:M))^*} is uniquely determined by the values #{E_{f \sim \mu} [\prod_i f(t_i)^{n_i}]}
+}
+\proof{
+  \p{
+    Taking expectation corresponds to evaluating #{\mu} (viewed as a functional) at the given functions. Since expectation is linear, the given expectations also determine the value of #{\mu} on functions of the form #{\sum_k \alpha_k \prod_i f(t_i^k)^{n_i^k}}. These form a sub-algebra of #{C(\DD(E:M))}. Since they separate points (clearly: if two processes differ, they must differ at some time #{t}, hence be distinguished by #{f \mapsto f(t)}), this subalgebra is dense by the Stone-Weierstrass theorem. Hence #{\mu} is determined by its value here.
+  }
+}
