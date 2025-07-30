@@ -1,0 +1,40 @@
+\date{2025-07-17}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+  Let #{\phi: A \to B} be a homomorphism of commutative Banach #{\epsilon}-algebras, and let #{C} be another such algebra. Let #{M} be an #{A}-module and let {N} be a #{C}-module. Then as #{B \hat{\otimes}_\epsilon C}-modules, 
+  ##{(M \otimes_A B) \hat{\otimes}_\epsilon N \cong (M \hat{\otimes}_\epsilon N) \otimes_{A \hat{otimes}_\epsilon C} B \hat{\otimes}_\epsilon C}
+}
+\proof{
+  \p{
+    Note that #{(\phi \hat{\otimes}_\epsilon C)* (S \hat{\otimes}_\epsilon T) = \phi^*S \hat{\otimes}_\epsilon T,} for any pair of #{B}- and #{C}-modules.
+    Hence there is a straightforward map of #{A \hat{\otimes}_\epsilon B}-modules
+    ##{M \hat{\otimes}_\epsilon N \to (\phi \hat{\otimes}_\epsilon C)((M \otimes_A B) \hat{\otimes}_\epsilon N)}
+    By universal property, there is an induced map
+    ##{f: (M \hat{\otimes}_\epsilon N) \otimes_{A \hat{otimes}_\epsilon C} B \hat{\otimes}_\epsilon C \to (M \otimes_A B) \hat{\otimes}_\epsilon N}
+  }
+  \p{
+    By construction both sides are Banach spaces, and it is apparent that the image is dense (since the algebraic tensor forms a dense subspace on both sides). Hence it suffices to show that #{\norm{f(x)} \geq \norm{x}}. It suffices to verify this on the dense subset given by the algebraic tensor product.
+  }
+  \p{
+    To see this, consider an element #{x} on the left-hand side. By definition,
+    ##{\norm{x} = \inf_{(m_i,n_i,b_i,c_i) \in [x]} \sup_{\phi,\psi,\xi,\rho} \abs{\sum_i \phi(m_i)\psi(n_i)\xi(b_i)\rho(c_i)},}
+    where the infimum is taken over representations #{x = \sum_i m_i \otimes n_i \otimes b_i \otimes c_i}, with respect to the combination of the equivalence relations defining the tensor product #{M \hat{\otimes}_\epsilon N \hat{\otimes}_\epsilon B \hat{\otimes}_\epsilon C} and the quotient by #{A \hat{\otimes}_\epsilon C}. The sup is taken over tuples of linear morphisms to #{\CC}.
+  }
+  \p{
+    Such an element, by definition, goes to (the equivalence class of) #{\sum_i m_i \otimes (c_i \cdot n_i) \otimes b_i}.
+    The norm of this is
+    ##{\inf_{(m_j',n_j',b_j')} \sup_{\phi',\psi',\xi'} \abs{\sum_j \phi'(m'_j)\psi'(n_j')\xi'(b_j')}}
+    where the infimum is again taken over all possible representatives.
+  }
+  \p{
+    Consider the equivalence class defining #{(M \otimes_A B ) \hat{\otimes}_\epsilon N}. It is generated (as a closed, linear equation) by the multilinearity equations for the tensor product and #{am \otimes n \otimes b = m \otimes n \otimes \phi(a)b}.
+    Note that all of these can be lifted to #{(M \hat{\otimes}_\epsilon N) \otimes_{A \hat{otimes}_\epsilon C} B \hat{\otimes}_\epsilon C}.
+  }
+  \p{
+    It follows that, for any representative #{\sum_{j=0}^k m'_j \otimes n'_j \otimes b'_j} of #{f(x)}, there exists a representative #{\sum_{i=0}^n m_i \otimes n_i \otimes b_i \otimes c_i} of #{x} so that #{n = k}, #{m'_i = m_i}, #{n'_i = c_i \cdot n_i}, #{b'_i = b_i}. Note that moreover we may choose #{c_i = 1} for all #{i}. This implies
+    ##{\norm{x} \leq \sup_{\phi,\psi\,xi} \phi(m_i)\psi(n_i)\xi(b_i)}
+    (wlog we have #{\rho(1) = 1}), and since #{\norm{f(x)}} is an infimum over such things, this concludes the proof.
+  }
+}

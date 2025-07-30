@@ -1,0 +1,124 @@
+\date{2025-04-09T08:26:12Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Representable Dynamics for Stochastic Differential Equations}
+\subtree{
+    \title{Introduction}
+    \p{
+        The basic idea can be outlined as follows:
+    }
+    \ol{
+        \li{
+            The category of compact Hausdorff topological spaces is equivalent to the opposite of the category of (unital) commutative #{C^*}-algebras.
+        }
+        \li{
+            In particular, the slice category #{\CHaus_{/X}} may be identified with the category of #{C(X)}-algebras (in the sense of commutative #{C^*}-algebras which carry an action of #{C(X)})
+        }
+        \li{
+            Given two spaces #{E, E' \in \CHaus_{/X}}, a merely #{C(X)}-linear map #{C(E) \to C(E')} corresponds to a continuous (signed) kernel #{E' \to E}---that is, a family of (signed, Radon) measures on #{E} indexed by #{E'} (subject to a continuity condition).
+            Hence the category of #{C(X)}-modules contains as a full subcategory the opposite of the CD-category of compact Hausdorff spaces over #{X} and signed kernels between them. By considering instead ordered and/or pointed modules, we can restrict to the Markov category of probability kernels. If a bundle over #{X} corresponds to the module #{M}, a section corresponds to a module homomorphism #{M \to C(X)}.
+        }
+        \li{
+            Under mild conditions, a stochastic differential equation in a space #{X} can be identified with a partially-defined linear operator on the space of continuous functions #{C(X)}, which carries a function #{\phi} to the derivative of #{E(\phi(x(t)))} with respect to #{t} at #{t=0}, supposing #{x(0) = x}. For an SDE given by a drift and a diffusion term, this is defined when #{\phi} is #{C^2}.
+        }
+        \li{
+            If #{X} is a smooth manifold, define its tangent bundle to be the free module #{C^\infty(X) \otimes C(X)}. Then by definition a section is equivalent to a map #{C^\infty(X) \to C(X)}.
+        }
+        \li{
+            Let #{\Omega} be a measurable space equipped with a filtration and a probability measure #{\PP}.
+            There exists a commutative #{C^*}-algebra #{T} so that #{C^*}-homomorphisms #{f: C(X) \to T} are equivalent to #{\Omega}-indexed, adapted stochastic processes in #{X} up to #{\PP}-almost certain equivalence.
+            Moreover, this admits a sub-#{*}-algebra #{S \subset T} so that #{f} carries smooth functions to #{S} if and only if the right derivative #{dE[\phi(x(t))]/dt} is defined at zero for every smooth #{\phi}.
+            Finally, there exists a linear map #{S \to T} so that such an #{f} makes the obvious diagram commute if and only if the corresponding stochastic process solves the differential equation implied by the section #{C^\infty(X) \to C(X)}.
+        }
+    }
+    \p{
+        Putting that together, we have a category of #{C^*}-algebras equipped with a sub-#{*}-algebra, which contains the category of compact smooth manifolds as a full subcategory.
+        For each such "space" we have a category of bundles and stochastic maps between them, and a designated "tangent bundle" (given by the module #{C(X) \otimes C^\infty(X)}, where #{C^\infty(X)} now refers to the designated subalgebra).
+        The dynamical systems on such a space have been constructed to include a good notion of stochastic differential equation, and for these the set of trajectories (with a given indexing filtered probability space) is representable.
+    }
+    \p{
+        However, there are many holes to fill in this schematic outline. The notion of tensor product among Banach spaces is somewhat subtle, which we will at a minimum have to resolve to make sense of the free module #{C(X) \otimes C^\infty(X)}, but also to equip this dynamical systems theory with a monoidal structure. Similarly, the specific requirements of the subalgebra of smooth functions are We will need to understand the exact correspondence between stochastic processes and the stochastic derivatives sketched above. And of course we need to actually construct the promised representing space #{(T,S)}.
+    }
+}
+\subtree{
+    \title{
+        Functional Analysis
+    }
+    \p{
+        Topics: Basics of locally convex vector spaces, including completeness. Banach spaces. The two main tensor products. Complete locally convex vector spaces as a subcategory of pro(ban). Observation that #{\Ban \into \Pro(\Ban_1)}
+    }
+}
+\subtree{
+    \title{
+        Banach #{\epsilon}-algebras and modules
+    }
+    \p{
+        Mostly, establishing notation for algebras and modules for #{\hat{\otimes}_\epsilon}. Main theorem is existence of basechange #{\otimes_A} and compatibility with monoidal structure. Also established in #{\Pro(\Ban)}.
+    }
+    \p{
+        May be the best place to put the observation that if #{A \subset C(X)} densely, then #{\rho(a) = \norm{a}_{C(X)}}, hence #{C(X)} can be recovered from #{A}, and hence compact smooth manifolds embed in Banach #{\epsilon}-algebras.
+    }
+
+    \transclude{efr-XU8C}
+    \p{
+        (The alternate term \em{injective algebra} is problematic, since it suggests a nonexistent connection to the notion of injective module).
+    }
+    \transclude{efr-H2G0}
+    \transclude{efr-KK8F}
+    \transclude{efr-I18V}
+    \transclude{efr-N31E}
+    \transclude{efr-PI9D}
+}
+\subtree{
+    \title{
+        Theories of continuous-time stochastic dynamical systems
+    }
+    \p{
+        There are a few different, closely linked, ways one can do this. I think it is worth just describing all of them and discussing their differences.
+    }
+    \ol{
+        \li{
+            The most straightforward is to take as "weak smooth spaces" (the formal dual of) commutative #{C^*}-algebras #{R} equipped with a dense sub-#{*}-algebra #{S \subseteq R} of "smooth" functions, which is itself topologized in a way that makes it a complete topological vector space and its multiplication continuous.
+            One takes maps to be homomorphisms which preserve the smooth functions, "bundles" to be the formal dual of topological #{R}-modules, and the tangent bundle to be #{R \hat{\otimes}_\epsilon S}.
+        }
+        \li{
+            One can ask of the above that #{S} satisfy various requirements. It makes sense to ask that it is dense in #{R} (these are a reflexive subcategory of the above). Since #{R = C(X)}, we can ask that #{S} be stable under composition with smooth functions. 
+        }
+        \li{
+            One can also impose additional structure on the module categories, the most obvious being equipping them with a point and/or an order, so that maps correspond to probability kernels, rather than general signed kernels. There is the subtlety that the tangent bundles have no natural normalization, i.e there is no function which is supposed to have derivative equal to #{1} everywhere.
+        }
+        \li{
+            One can also work with the dual category of bundles (that is, the non-dualized category of #{C(X)}-modules). This is something like \em{vector} bundles over #{X}. It may embed ordinary topological bundles #{E \to X} as #{[C(E),C(X)]}, although I think maps between these are actually \em{measurable} kernels between the underlying spaces, not continuous ones. It's also not been verified that behaviors are representable in this paradigm.
+        }
+        \li{
+            Finally, one can simply consider #{S} as a "freestanding" #{*}-algebra in complete topological vector spaces, and take topological modules over it, etc. One can show that a #{*}-homomorphism #{C^\infty(Y) \to C^\infty(X)} is always continuous for the supremum norm, hence extends to a homomorphism #{C(Y) \to C(X),} hence comes from a map #{X \to Y} (which must be smooth). Modules include the merely topological bundles, but also contain a subcategory corresponding to smooth manifolds over #{X} and smooth kernels between them. Note that a vector field in this paradigm is a \em{smooth} (stochastic) vector field, i.e we are restricted to the case where the infinitesimal generator is a map #{C^\infty(X) \to C^\infty(X)}.
+        }
+        \p{
+            One advantage of relaxing from #{C^*}- or Banach algebras to general topological vector spaces is that, instead of mucking around with compactification or non-unital algebras, you can just consider the full space of continuous functions #{C(X)} equipped with the topology of locally uniform convergence. In fact, by embedding complete topological vector spaces in #{\Pro(\Ban)}, and observing that #{\Ind(\CHaus)^\op \into \Pro(\CAlg(\Ban)) \into \CAlg(\Pro(\Ban))}, one finds that these topological algebras contain locally compact Hausdorff spaces (and similarly, not-necessarily smooth manifolds, etc) as a full subcategory.
+        }
+    }
+}
+\subtree{
+    \title{
+        Martingale problems and representable dynamics
+    }
+    \p{
+        Discuss martingale problems, Feller processes/semigroups, infinitesimal generators, etc.
+        Construct the clock object and prove its universal property.
+    }
+    \p{
+        The property of the clock system is that a map (of spaces) is an adapted cadlag stochastic process, and it is a map of systems if and only if it a solution to the martingale problem for the linear operator giving the vector field on the target.
+    }
+    
+    \transclude{efr-34KO}
+    \transclude{efr-IBQB}
+    \transclude{efr-EZXZ}
+    \transclude{efr-D0W9}
+    \transclude{efr-0RWA}
+    \transclude{efr-3N16}
+    \transclude{efr-9ECF}
+    \transclude{efr-BLF5}
+}
+
+
+\transclude{efr-HP0X}

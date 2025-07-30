@@ -1,0 +1,14 @@
+\date{2025-07-10}
+\author{eigil-rischel}
+\import{macros}
+\taxon{definition}
+\title{Banach Algebra}
+\p{
+  A \em{Banach algebra} consists of a Banach space #{A} equipped with a multiplication #{\cdot: A \times A \to A} which is bilinear and satisfies #{\norm{a\cdot b} \leq \norm{a}\norm{b}}. It is called commutative and/or unital if it is such as an algebra.
+}
+\p{
+  We adopt the convention that Banach algebras are assumed to be unital unless otherwise specified, and the class of \em{non-unital Banach algebras} refers to not \em{necessarily} unital Banach algebras.
+}
+\p{
+  We denote by #{\BanAlg} the category of (unital) Banach algebras, #{\CBanAlg} the category of commutative Banach algebras and continuous homomorphisms, and by #{\BanAlg_\nonu, \CBanAlg_\nonu} their nonunital counterparts.
+}
