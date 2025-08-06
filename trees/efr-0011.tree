@@ -3,7 +3,7 @@
 \import{macros}
 \title{Stochastic arenas}
 \p{
-  For a good theory of stochastic dynamical systems, we must develop a replacement for the double category #{\Arena}. The ordinary framework of categorical systems theory does accomodate stochastic dynamical systems, by choosing the tangent bundle functor #{T} to be some form of probability monad.
+  For a good theory of stochastic dynamical systems, we must develop a replacement for the double category #{\Arena}. The ordinary framework of categorical systems theory does accommodate stochastic dynamical systems, by choosing the tangent bundle functor #{T} to be some form of probability monad.
 }
 
 \transclude{efr-003U}
