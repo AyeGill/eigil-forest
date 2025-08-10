@@ -122,7 +122,7 @@
     Note that if #{\phi = (\phi^+,\phi^-): L \to L'} is a morphism of #{\Minmax}, the two meanings of the notation #{\phi^+} agree, and the same is true of #{\phi^-}.
   }
   \p{
-    Note also that the reflexive subcategory #{\Conc^\op \subseteq \Minmax} is the local subcategory with respect to the forwards morphisms - a morphism is forward if and only if #{\phi^-} is an isomorhism (by definition), and the unit #{L \to L^-} is the terminal forwards morphism with domain #{L}. A dual statement holds for #{\Conv \subseteq \Minmax} (it is the \em{colocalization} with respect to the class of backwards morphisms).
+    Note also that the reflexive subcategory #{\Conc^\op \subseteq \Minmax} is the local subcategory with respect to the forwards morphisms - a morphism is forward if and only if #{\phi^-} is an isomorphism (by definition), and the unit #{L \to L^-} is the terminal forwards morphism with domain #{L}. A dual statement holds for #{\Conv \subseteq \Minmax} (it is the \em{colocalization} with respect to the class of backwards morphisms).
   }
 
   %monoidal structure

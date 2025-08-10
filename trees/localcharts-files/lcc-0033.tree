@@ -6,8 +6,8 @@
 \p{
   For a positive integer #{n,} #{\mu(n),} define
   \ul{
-    \li{#{\mu(n) = +1} if #{n} is squarlccee with an even number of prime factors}
-    \li{#{\mu(n) = -1} if #{n} is squarlccee with an odd number of prime factors}
+    \li{#{\mu(n) = +1} if #{n} is square with an even number of prime factors}
+    \li{#{\mu(n) = -1} if #{n} is square with an odd number of prime factors}
     \li{#{\mu(n) = 0} if #{n} has a squared prime factor}
   }
 }

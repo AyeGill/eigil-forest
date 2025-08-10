@@ -21,7 +21,7 @@
         #{L^+ \to (L^-)^+}
     }
     \p{
-        Since #{(-)^-} is a left adjoint to the incluson of #{\Conc^\op}, that map induces a map
+        Since #{(-)^-} is a left adjoint to the inclusion of #{\Conc^\op}, that map induces a map
         #{(L^+)^- \to (L^-)^+,} as desired.
     }
 }

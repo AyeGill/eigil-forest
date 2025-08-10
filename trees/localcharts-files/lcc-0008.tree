@@ -15,7 +15,7 @@
 
 \p{This defect is part of what motivated the development of [[lcc-0003]].}
 
-\p{For a while, it was thought that coproducts of this form were the \em{only} coproducts in #{\Lens(\Set)}, and that therefore the category of depdendent lenses could be constructed as the universal completion under coproducts of #{\Lens(\Set)} preserving the existing coproducts. This would then provide a universal property for a category of dependent optics as well.}
+\p{For a while, it was thought that coproducts of this form were the \em{only} coproducts in #{\Lens(\Set)}, and that therefore the category of dependent lenses could be constructed as the universal completion under coproducts of #{\Lens(\Set)} preserving the existing coproducts. This would then provide a universal property for a category of dependent optics as well.}
 
 \p{Unfortunately, this is not true. #{\Lens(\Set)} has the following "wild" coproduct as well:}
 
