@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{definition}
 \p{
-  Let #{X: \Delta^\op \to \cC} be a simplical object in a category, and suppose #{\cC} has all limits.
+  Let #{X: \Delta^\op \to \cC} be a simplicial object in a category, and suppose #{\cC} has all limits.
   Then the right Kan extension along the coYoneda embedding #{\Ran_yX : \sSet^\op = [\Delta^\op,\Set]^\op \to \cC} exists.
   If #{S} is a simplicial set, we denote by a minor abuse of notation #{X[S]} the value of this Kan extension at this set. Thus #{X[n] = X[\Delta^n]}.
 }

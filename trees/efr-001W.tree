@@ -19,5 +19,5 @@
 \transclude{efr-001X}
 
 \p{
-  In good cases, there will be a monadic adjunction associated to the lens #{A' \lensto A,} and so this operation will give an endomorphism on predicates for each choice of lift of the cofree predice (it can of course lift as itself, which corresponds to the identity operation).
+  In good cases, there will be a monadic adjunction associated to the lens #{A' \lensto A,} and so this operation will give an endomorphism on predicates for each choice of lift of the cofree predicate (it can of course lift as itself, which corresponds to the identity operation).
 }

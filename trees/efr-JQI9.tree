@@ -10,7 +10,7 @@
 }
 \proof{
   \p{
-    First we must verify functorialty with respect to lens composition. To that end, let #{X \xto{f} Y \xto{g} Z} be deterministic morphisms and #{\phi,\psi} be lenses over them.
+    First we must verify functoriality with respect to lens composition. To that end, let #{X \xto{f} Y \xto{g} Z} be deterministic morphisms and #{\phi,\psi} be lenses over them.
     Their composite as prelenses has carrier #{X \times_Y Y = X} and #{f^*(\psi)\phi} as the morphism in the fiber, which is exactly the prelens associated to their composite as lenses.
   }
   \p{

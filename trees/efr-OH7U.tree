@@ -64,7 +64,7 @@
 \end{tikzcd}
   }
 
-  noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X}---given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to tthe map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
+  noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X}---given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to the map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
 }
 \p{
   But it is equally clear that the equivalence relation imposed by #{T\cD_0(\bar{X},-)} is implied by the equations of a stochastic module, and so this map is well-defined, establishing the property.

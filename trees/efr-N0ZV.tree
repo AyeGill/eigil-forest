@@ -7,6 +7,6 @@
   \ol{
     \li{#{\Sigma} is a set. The elements of #{\Sigma} are called \em{strategies}}
     \li{#{p: \Sigma \to \cC(X,Y)} is a function.}
-    \li{#{E \subseteq #{\Ctx(X,Y) \times \Sigma}} is a relation between contexts and strategiess} 
+    \li{#{E \subseteq #{\Ctx(X,Y) \times \Sigma}} is a relation between contexts and strategies} 
   }
 }

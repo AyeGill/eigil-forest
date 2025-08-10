@@ -26,7 +26,7 @@
 }
 \proof{
   \p{
-    Note that every actegory #{\cM \curvearrowright \cC} is equivalent to a strict action of a strict monoidal category #{\cM_s \curvearrowright \cC_s} (in the sense that there exists #{\cM_s \xto{\sim} \cM} strong monoidal equivalence and #{\cC_s \xto{\sim} \cC} an equivalence such that these maps together form a map of actegories). It follows that it suffices to show unitalilty and associativity for our action in the strict case (since these are plainly preserved by equivalence). 
+    Note that every actegory #{\cM \curvearrowright \cC} is equivalent to a strict action of a strict monoidal category #{\cM_s \curvearrowright \cC_s} (in the sense that there exists #{\cM_s \xto{\sim} \cM} strong monoidal equivalence and #{\cC_s \xto{\sim} \cC} an equivalence such that these maps together form a map of actegories). It follows that it suffices to show unitality and associativity for our action in the strict case (since these are plainly preserved by equivalence). 
   }
 
   \p{

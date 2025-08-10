@@ -17,6 +17,6 @@
         Note that the functor #{\Cat \to \Set} taking the set of objects preserves colimits, so this amounts to saying that the simplicial map #{\ob X[-] \to \ob Y[-]} is a Reedy cofibration in simplicial sets. We know that the latching object of a simplicial set consists of the subset of degenerate n-simplices, so this amounts to the claim that every degenerate #{n}-simplex in #{\ob Y} which is in the image of #{f} was already degenerate in #{\ob X}. This follows from the levelwise injectivity.
     }
     \p{
-        Conversely, suppose #{f} is a Reedy cofibration. Assume by induction we have shown #{\ob f} injective at #{X[k] \to Y[k]} for each #{k < n}. Then in particular #{\ob L_n X \to \ob L_n Y} is injective, and hence #{X[n] \to X[n] \coprod_{L_nX} L_nY} is injective on objects, hencee the composite #{X[n] \to Y[n]} is. (Note that in the base case, #{L_0X = \emptyset}, so there is no problem starting the induction).
+        Conversely, suppose #{f} is a Reedy cofibration. Assume by induction we have shown #{\ob f} injective at #{X[k] \to Y[k]} for each #{k < n}. Then in particular #{\ob L_n X \to \ob L_n Y} is injective, and hence #{X[n] \to X[n] \coprod_{L_nX} L_nY} is injective on objects, hence the composite #{X[n] \to Y[n]} is. (Note that in the base case, #{L_0X = \emptyset}, so there is no problem starting the induction).
     }
 }

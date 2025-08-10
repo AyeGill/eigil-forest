@@ -16,7 +16,7 @@
 \p{
   Now this lift over #{Z} exists if and only if the probability of the diagonal #{\im(Z) \subseteq Z \times Z} under the composite is #{1}. By definition, it is
   ##{\int f(\im(Z) \mid x) g(\im(Z) \mid y) h(dx,y \mid p)}
-  Since the function being integrated is an indictator, this is simply the measure of the set #{\{(x,y) : \PP(\im(Z) \mid x,y) = 1\}.}
+  Since the function being integrated is an indicator, this is simply the measure of the set #{\{(x,y) : \PP(\im(Z) \mid x,y) = 1\}.}
   If the probability of the diagonal is one, clearly the two marginals agree. Conversely, since #{\Stoch_\det} is Cartesian, it must be the case that if the marginals agree the probability of the diagonal is 1. Therefore this is equal to the subset #{X \times_Z Y \subseteq X \times Y} described at the start. But for this to have measure #{1} for all #{p \in P} is equivalent to the desired lifting property. This finishes the argument. 
 }
 \p{

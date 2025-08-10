@@ -12,7 +12,7 @@
     First note that #{\cC^{[n]} \to \cC^{\partial \Delta^n} = M_n\cC} is an isomorphism when #{n \geq 4}, since a pseudofunctor involves only 3-dimensional information. In this case the functor #{\cC^{[n]} \to M_n\cC \times_{M_n\cD} \cD} is an isomorphism, and so certainly a fibration.
   }
   \p{
-    When #{n=3}, the objects of the codomain correspond to triples of morphisms #{f,g,h} with two choices of composite, and such an object is in the image if and only if the given diagram of 2-cells commutes---the functor is locally an isomorphism. Hence the functor #{\cC^{[3]} \to M_3\cC \times_{M_3\cD} \cD} is locally an isomorphism, so it suffices to prove it has the equivalence lifting proprty for 1-cells.
+    When #{n=3}, the objects of the codomain correspond to triples of morphisms #{f,g,h} with two choices of composite, and such an object is in the image if and only if the given diagram of 2-cells commutes---the functor is locally an isomorphism. Hence the functor #{\cC^{[3]} \to M_3\cC \times_{M_3\cD} \cD} is locally an isomorphism, so it suffices to prove it has the equivalence lifting property for 1-cells.
   }
   \p{
     To see this, observe that since #{\cD^{[3]} \to M_3\cD} is a local isomorphism, to give a morphism in the pullback is just to give a morphism in #{M_3\cC}. But since the property of commuting is certainly stable under equivalence, indeed we can lift such a morphism.

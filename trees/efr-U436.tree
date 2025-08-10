@@ -7,7 +7,7 @@
 }
 \p{
   To make sense of this, consider a simple case of a map #{m: I \to X} in #{Kl(\Delta)}.
-  Given two objects over #{*} (in #{\MAr{Kl(\Delta)}}), a map #{\bar{A}_X \to \bar{B}_X} is equivalent to a parameterized map #{X \times \bar{A} \to \bar{B}}. The operation #{m^*} consists in sampling this parameter according to the distribution #{m}---but since composition in the fiber over #{X} is defined by \em{copying} the parameter, but composition in the fiber over #{*} (i.e just #{Kl(\Delta)}) is defiend by composing the kernels under conditional independence, these only agree if the distribution #{m} is assumed to be deterministic.
+  Given two objects over #{*} (in #{\MAr{Kl(\Delta)}}), a map #{\bar{A}_X \to \bar{B}_X} is equivalent to a parameterized map #{X \times \bar{A} \to \bar{B}}. The operation #{m^*} consists in sampling this parameter according to the distribution #{m}---but since composition in the fiber over #{X} is defined by \em{copying} the parameter, but composition in the fiber over #{*} (i.e just #{Kl(\Delta)}) is defined by composing the kernels under conditional independence, these only agree if the distribution #{m} is assumed to be deterministic.
 }
 \p{
   Note that if either #{f} or #{g} is pulled back from a map #{\bar{A} \to \bar{B}} (i.e, if they do not depend on the parameter #{X}), the composition \em{is} preserved.

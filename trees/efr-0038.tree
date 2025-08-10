@@ -4,5 +4,5 @@
 \taxon{example}
 \p{
   For any category #{\cC}, a Segal object where #{C[0]} is terminal is equivalently a monoid object in #{\cC} (with the Cartesian monoidal structure).
-  In particular, a (strict) Segal object in #{\Cat} is a strict monoidal category. On the other hand, a \em{weak} Segal object is equvalently a (not necessarily strict) monoidal category.
+  In particular, a (strict) Segal object in #{\Cat} is a strict monoidal category. On the other hand, a \em{weak} Segal object is equivalently a (not necessarily strict) monoidal category.
 }

@@ -15,5 +15,5 @@
   A trajectory with this clock is a trajectory in the above sense, but we would like to abstract out the choice of a concrete sample space (note also that there is no fixed distribution on #{\Omega}, so eg we can't ask for the distribution of #{x_0} in the above).
 }
 \p{
-  Apart from figuring out the right way to take the "sum" over such #{\Omega}, there is also the question of whether we can pick out the ones which are "good" in the sense that the trajectories they classify are the \em{Markov} proesses with the right transition probabilities (this is encoded in the above example in the way #{\omega \in \Omega} is resampled).
+  Apart from figuring out the right way to take the "sum" over such #{\Omega}, there is also the question of whether we can pick out the ones which are "good" in the sense that the trajectories they classify are the \em{Markov} processes with the right transition probabilities (this is encoded in the above example in the way #{\omega \in \Omega} is resampled).
 }

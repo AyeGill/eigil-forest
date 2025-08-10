@@ -26,7 +26,7 @@
 
 \p{
   A vector field on a smooth manifold #{X} is simply a (smooth) section of the tangent bundle #{TX}.
-  A section is a bundle map from the trivial bundle #{X \to X}. This gives the idea of considering a \em{parameterized} dynamical system as consiting of a map #{X \to A} to some other smooth manifold, a bundle #{E \to A} (the points of #{E} are the parameters) and a bundle map #{E \times_A X \to TX}.
+  A section is a bundle map from the trivial bundle #{X \to X}. This gives the idea of considering a \em{parameterized} dynamical system as consisting of a map #{X \to A} to some other smooth manifold, a bundle #{E \to A} (the points of #{E} are the parameters) and a bundle map #{E \times_A X \to TX}.
   As we will see, such a bundle map is exactly a dependent lens in a category of bundles. Building on this idea, Myers (\ref{myers-cst}) described a highly abstract theory of open dynamical systems, given by lenses out of tangent bundles (where the notion of space, bundle and tangent bundle are generalized to any fibration).
 }
 \p{

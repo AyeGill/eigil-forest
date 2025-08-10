@@ -8,7 +8,7 @@
   A few questions immediately pose themselves when confronted with this statement:
   \ol{
     \li{Since a solution of a stochastic differential equation is not merely a function but some sort of distribution of functions, what do you mean by them not being differentiable?}
-    \li{Whatever the solutions are, how can they solve a differential equation if they aren't differentiable?}
+    \li{Whatever the solutions are, how can they solve a differential equation if they aren't't differentiable?}
   }
 }
 \p{

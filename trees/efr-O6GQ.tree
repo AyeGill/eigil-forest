@@ -21,7 +21,7 @@
     ##{A \to PM \times_{PX} A \cong P_X(M) \times_X A \into P_X(M \times_X A) \to P_X(B) \to B}
   }
   \p{
-    We must show this is a #{P_X}-homomorphism. Let us simplify by working internall to #{(\cC_{\det})_{/X}}---thus we have a Cartesian category equipped with a strong commutative monad #{P}, a map #{* \to PM}, and a map #{M \times A \to B} which is a parameterized algebra homomorphism, in the sense that the diagram 
+    We must show this is a #{P_X}-homomorphism. Let us simplify by working internally to #{(\cC_{\det})_{/X}}---thus we have a Cartesian category equipped with a strong commutative monad #{P}, a map #{* \to PM}, and a map #{M \times A \to B} which is a parameterized algebra homomorphism, in the sense that the diagram 
   }
 
   \p{
@@ -68,7 +68,7 @@
 \end{tikzcd}
   }
   \p{
-    The triangle at the top left commutes because #{P} is strong. The square to the right does not commute in general---however, since #{P} is commutative, the composite maps #{PM \times PA \to P^2(M \times A) \xto{\mu} P(X \times A)} agree. Since the map #{P^2(M \times A) \to B} factors over this, we may replace one edge of this square with another. The square to the right of that is simply #{P(-)} applied to the previous diagram, and so commmutes by assumption. The "triangle" under that is just two copies of the same maps, so commutes. The square on the left of the diagram commutes by functoriality of product. The square to the right of that commutes again because #{P} is strong. Hence the outer square commutes, which is precisely the homomorphism property we wanted.
+    The triangle at the top left commutes because #{P} is strong. The square to the right does not commute in general---however, since #{P} is commutative, the composite maps #{PM \times PA \to P^2(M \times A) \xto{\mu} P(X \times A)} agree. Since the map #{P^2(M \times A) \to B} factors over this, we may replace one edge of this square with another. The square to the right of that is simply #{P(-)} applied to the previous diagram, and so commutes by assumption. The "triangle" under that is just two copies of the same maps, so commutes. The square on the left of the diagram commutes by functoriality of product. The square to the right of that commutes again because #{P} is strong. Hence the outer square commutes, which is precisely the homomorphism property we wanted.
   }
 
 

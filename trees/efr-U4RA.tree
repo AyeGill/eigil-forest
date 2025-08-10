@@ -18,7 +18,7 @@
 
 \transclude{efr-YFV2}%Weak supports definition
 \p{
-  We will make use of the folllwing lemma:
+  We will make use of the following lemma:
 }
 \transclude{efr-L7L2}%Lemma on coequalizers
 \transclude{efr-TBZZ}%BIG theorem
@@ -48,7 +48,7 @@
 }
 
 \p{
-  Part of the motivation for the theory of dependent optics is to identify a category of stochastic optics which admits all coproducts. If #{\cC} is distributive, #{\Optic(\cC)} satisfies #{\binom{A}{X} + \binom{A}{Y} = \binom{A}{X+Y},} but this coproduct fails to exist in general if the two secondary objects are distinct. The idea is that this coproduct #{\binom{A}{X} + \binom{A'}{Y}} should exist as a family indexed by #{X + Y}, where #{E_x = A} for #{x \in X}, and #{E_y = A'} for #{y \in Y}. Our theory acommodates this example under the mild additional hypothesis of \em{extensiveness}
+  Part of the motivation for the theory of dependent optics is to identify a category of stochastic optics which admits all coproducts. If #{\cC} is distributive, #{\Optic(\cC)} satisfies #{\binom{A}{X} + \binom{A}{Y} = \binom{A}{X+Y},} but this coproduct fails to exist in general if the two secondary objects are distinct. The idea is that this coproduct #{\binom{A}{X} + \binom{A'}{Y}} should exist as a family indexed by #{X + Y}, where #{E_x = A} for #{x \in X}, and #{E_y = A'} for #{y \in Y}. Our theory accommodates this example under the mild additional hypothesis of \em{extensiveness}
 }
 \transclude{efr-B2P7}
 \transclude{efr-QAV2}

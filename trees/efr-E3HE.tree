@@ -8,7 +8,7 @@
 }
 
 \p{
-  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure---the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-indpendence---of one variable on another.
+  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure---the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-independence---of one variable on another.
 }
 
 \p{

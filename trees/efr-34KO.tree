@@ -14,7 +14,7 @@
   Let #{\mu} be a measure on #{X}. If any two solutions #{x_t,y_t} to the martingale problem for #{A} with #{\PP^{x_0} = \PP^{y_0} = \mu} have the same finite-dimensional distributions---that is, if for every tuple #{t_0, t_1, t_2, \dots t_n}, the distributions of the random variables #{(x_{t_0},\dots , x_{t_n})} and #{(y_{t_0},\dots y_{t_n})} agree---then we say the martingale problem for #{(A,\mu)} \em{satisfies uniqueness}. If it is well-posed for all #{\mu}, we say the problem for #{A} is well-posed (usually it suffices to check for the dirac measures #{\delta_x}).
 }
 \p{
-  If #{X} is a toplogical space, we can ask for solutions which have either continuous or cadlag sample paths. If there is a unique (as above) solution \em{with continuous sample paths}, we say the martingale problem with continuous sample paths for #{(A,\mu)} satisfies uniqueness.
+  If #{X} is a topological space, we can ask for solutions which have either continuous or cadlag sample paths. If there is a unique (as above) solution \em{with continuous sample paths}, we say the martingale problem with continuous sample paths for #{(A,\mu)} satisfies uniqueness.
 }
 \p{
   If the martingale problem satisfies uniqueness and at least one solution exists, we say it is \em{well-posed}.

@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{example}
 \p{
-  Given a compact Hausdorff space #{X}, a \em{Banach space bundle} is a space over #{X}, #{V \to X}, equipped with a fiberwise (complex) vector space structure #{+: V \times_X V \to V}, #{\cdot: \CC \times V \to V}, so that there exists a cover #{\{U_i\}} of #{X} so that for each #{U_i}, there exists a Banach space #{V_i} and a homeomorphism #{V \times_X U_i =: V_{U_i} \cong V_i \times U_i} over #{U_i,} which is morover linear in each fiber, where #{V_i} is equipped with the norm topology.
+  Given a compact Hausdorff space #{X}, a \em{Banach space bundle} is a space over #{X}, #{V \to X}, equipped with a fiberwise (complex) vector space structure #{+: V \times_X V \to V}, #{\cdot: \CC \times V \to V}, so that there exists a cover #{\{U_i\}} of #{X} so that for each #{U_i}, there exists a Banach space #{V_i} and a homeomorphism #{V \times_X U_i =: V_{U_i} \cong V_i \times U_i} over #{U_i,} which is moreover linear in each fiber, where #{V_i} is equipped with the norm topology.
 }
 \p{
   Note that this determines a \em{local} norm on each #{V_{U_i}} (and in particular each #{V_x}) up to equivalence (but no stricter than that). In particular each #{V_x} is a Banach space.

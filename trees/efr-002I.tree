@@ -4,7 +4,7 @@
 \title{Locally graded category}
 \taxon{definition}
 \p{
-  Let #{\cM} be a monoidal category. Recall that we may equip the presheaf category #{[\cM^\op, \Set]} with the monoidal structure of Day convolution. A \em{locally graded #{\cM}-category} is a category enrinched in #{[\cM^\op, \Set]}
+  Let #{\cM} be a monoidal category. Recall that we may equip the presheaf category #{[\cM^\op, \Set]} with the monoidal structure of Day convolution. A \em{locally graded #{\cM}-category} is a category enriched in #{[\cM^\op, \Set]}
 }
 \p{
   Equivalently, a locally graded #{\cM}-category consists of

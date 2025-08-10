@@ -20,7 +20,7 @@
 
   \p{
     Let #{\CC} be an isofibrant pseudo double category. We must prove its image is Reedy fibrant and weak Segal.
-    As noted above the only things to check, in order to proove fibrancy, are the cases #{n=1,2,3}.
+    As noted above the only things to check, in order to prove fibrancy, are the cases #{n=1,2,3}.
     The case #{n=1} is exactly the assumption that #{\CC} is isofibrant, since #{N_\Dbl(\CC)[0] = \CC[0]} and #{N_\Dbl(\CC)[1] = \CC_1}.
   }
   \p{
