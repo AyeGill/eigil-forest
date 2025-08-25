@@ -34,3 +34,7 @@
 \transclude{efr-P4T0}
 
 \transclude{efr-FT8J}
+
+\p{
+  The Markov structure of \ref{efr-FT8J} is a generalization of the fact that, if #{\cC} has products and coproducts, and the products distribute over the coproducts, then #{\Lens(\cC)} has products given by #{\binom{A}{X} \times \binom{B}{Y} \cong \binom{A \coprod B}{X \times Y}}. See eg \ref{hedges-morphisms-open-games}, section 8 for more on this.
+}
