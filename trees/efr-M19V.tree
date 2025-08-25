@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  If #{\cC} is Cartesian monoidal, ##{\Optic(\cC)(\arena{A}{X},\arena{B}{Y}) \cong \cC(X,Y) \times \cC(X \times B,A)}
+  If #{\cC} is Cartesian monoidal, ##{\Optic(\cC)\left(\arena{A}{X},\arena{B}{Y}\right) \cong \cC(X,Y) \times \cC(X \times B,A)}
 }
 \proof{
   \p{
