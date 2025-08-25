@@ -20,7 +20,7 @@
   }
   \p{
     Now let #{\cD \to \cE \leftarrow \cD'} be a cospan of fibrations over #{\cC_\det}, with #{\cD \to \cE} an isofibration, and consider the pullback #{\cD \times_\cE \cD'}. There is a natural transformation
-    ##{\overline{\cD \times_\cE \cD'} \to \overline{\cD} \times_{\overline{\cE} \overline{\cD'}}}
+    ##{\overline{\cD \times_\cE \cD'} \to \overline{\cD} \times_{\overline{\cE}} \overline{\cD'}}
     which we must show to be an isomorphism.
   }
   \p{

@@ -3,6 +3,6 @@
 \import{macros}
 \taxon{corollary}
 \p{
-  Let #{\cD} be a stochastic module fibration, and suppose each fiber has \em{coproducts,} and these are preserved by the pullback functors. Then #{SLens(\cD)} is a Markov category, with monoidal structure given by 
+  Let #{\cD} be a stochastic module fibration, and suppose each fiber has \em{coproducts,} and these are preserved by the pullback functors. Then #{\SLens(\cD)} is a Markov category, with monoidal structure given by 
   ##{\binom{\bar{X}}{X} \amp \binom{\bar{Y}}{Y} = \binom{\pi_X^*\bar{X} + \pi_Y^*\bar{Y}}{X \otimes Y}}
 }
