@@ -3,10 +3,10 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  The functor #{\arena{A}{X} \mapsto X}, #{\Lens(\cC) \to \cC}, is a fibration. The fiber #{\Lens(\cC)_X} as the following structure:
+  The functor #{\arena{A}{X} \mapsto X}, #{\Lens(\cC) \to \cC}, is a fibration. The fiber #{\Lens(\cC)_X} has the following description:
   \ol{
     \li{Its objects are the objects of #{\cC}.}
-    \li{A map #{A \to B} is a map #{X \times B \to A}.}
+    \li{A map #{A \to B \in \Lens(\cC)_X} is a map #{X \times B \to A \in \cC}.}
     \li{The composite of #{X \times B \to A,} #{X \times C \to B} is given by composing the two into #{X \times X \times C \to A,} then using the diagonal.}
     \li{Given #{f: X \to Y,} the pullback functor #{\Lens(\cC)_Y \to \Lens(\cC)_X} is given by precomposing by #{f}.}
   }
