@@ -10,7 +10,7 @@
   In #{\Optic(Kl(\Delta)),} #{\arena{R}{X} + \arena{R}{Y} \cong \arena{R}{X+Y}}. Games with this codomain naturally describe the situation of a player who has a binary choice between #{X} or #{Y}. We call coproducts of this form the "good" coproducts---note that also #{\arena{*}{*} + \arena{\emptyset}{*} = \arena{\emptyset}{2}}, but this is considered somewhat pathological, since it relies on the nonexistence of any morphism #{\arena{\emptyset}{X} \to \arena{A}{Y}} when #{A} and #{X} are nonempty.
 }
 \p{
-  In order to describe this structure on #{\Optic(Kl(\Delta)),} it would be useful if it had all coproducts. Unfortunately this is not the case. #{\Optic(\Set) = \Lens(\Set)} has a well-known extension with all coproducts, given by the fiberwise opposite of the fibration #{\Fam(\Set) \to \Set}. Extending this to stochastic maps would be the obvious way of constructing such a category of "dependent optics".
+  In order to describe this structure on #{\Optic(Kl(\Delta)),} it would be useful if it had all coproducts. Unfortunately this is not the case. #{\Optic(\Set) = \Lens(\Set)} has a well-known extension with all coproducts, given by the fiberwise opposite of the fibration #{\Fam(\Set) \to \Set} (this is \ref{efr-VTPS} in the case #{\cC = \Set}). Extending this to stochastic maps would be the obvious way of constructing such a category of "dependent optics".
 }
 \p{
   Consider a category #{\MAr{Kl(\Delta)}} defined as follows. Its objects are the objects of #{\Set^\to}---that is, they are indexed families of sets. A map in #{\MAr{Kl(\Delta)}} is a stochastic map in the base #{X \to Y \in Kl(\Delta)}, and a stochastic map on the total spaces #{\bar{X} \to \bar{Y}} which is compatible with it. Note that if #{\bar{X} \to X} is surjective, the map on the base is fully determined by the map on the fibers, which must merely satisfy the condition that the distribution of the indexing point in #{Y} depends only on the indexing point in #{X}, not the specific point in the fiber #{\bar{X}_x}.
@@ -76,7 +76,7 @@
   These equivalence relations correspond to "sliding" for \em{deterministic} morphisms #{M \to M'}. Note that the condition here can be checked just on the fibration #{\MAr{Kl(\Delta)} \times_{Kl(\Delta)} \Set \to \Set}.
 }
 \p{
-  To obtain the full set of sliding equations, we will need to use stochastic maps #{M \to M'}, and thus leave that fibration behind. However, we are tantalizingly close to realizing #{\MAr{Kl(\Delta)}} as being presented by some sort of additional structure on the fibration #{\Fam(\Kl(\Delta))}. 
+  To obtain the full set of sliding equations, we will need to use stochastic maps #{M \to M'}, and thus leave that fibration behind. However, we are tantalizingly close to realizing #{\MAr{Kl(\Delta)}} as being presented by some sort of additional structure on the fibration #{\Fam(\Kl(\Delta))}. (For a general monad #{T} acting on #{C}, the category #{\Optic_{\cC}(Kl(T),Kl(T))}, of effectful optics up to sliding of pure morphisms, was studied by Riley in \ref{riley-optics}, section 4.9, and by Hedges in \ref{hedges-blog-optics-effect})
 }
 
 \p{
