@@ -10,6 +10,9 @@
 \p{
   The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure---the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-independence---of one variable on another.
 }
+\p{
+  A morphism is called \em{deterministic} if it is a comonoid (co)homomorphism, which amounts to the claim that #{\copy_Y f = (f \otimes f) \copy_X}---in other words, that running two independent copies of the kernel (with the same input) is equivalent to running one and copying the output. The deterministic morphisms form a Cartesian monoidal subcategory which is denoted #{\cC_\det \subseteq \cC}.
+}
 
 \p{
   We first note the following alternative characterization of Markov categories in terms of their deterministic morphisms.
@@ -17,6 +20,9 @@
 
 \transclude{efr-5B0J}
 \transclude{efr-10HQ}
+\p{
+  Note that given a merely monoidal category, we can ask whether it is Cartesian, and if it is, it admits a unique symmetry induced by the universal property of the product. Hence if #{\cC' \subseteq \cC} is a Cartesian wide monoidal subcategory, we may attempt to define a symmetry on #{\cC} simply using the one from #{\cC'}. However, it is not automatic that this symmetry is natural for all the morphisms in #{\cC}.
+}
 \p{
   This basic idea was already noted by Fritz (and goes back to Golubtsov's work in \ref{golubtsov-kleisli}, an important part of the prehistory of Markov categories), although the precise statement above appears to be novel. Since the coherence conditions required of the comonoids in a Markov structure can be somewhat hard to remember, this characterization may be easier to understand.
 }
