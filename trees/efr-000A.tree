@@ -7,5 +7,5 @@
   A \em{theory of dynamical systems} is an indexed category #{\cA: \cC^\op \to \Cat} equipped with a section of its Grothendieck construction #{T: \cC \to \int \cA}.
 }
 \p{
-  It is called \em{monoidal} if #{\int \cA \to \cC} is equipped with the structure of a monoidal fibration (equivalently, if #{\cC} is monoidal an #{\cA} is lax monoidal for the Cartesian structure on #{\Cat}), and #{T} is a strong monoidal functor.
+  It is called \em{monoidal} if #{\cC} is a monoidal category, and #{\cA} is a lax monoidal functor. It is further called symmetric monoidal if #{\cC} is a symmetric monoidal category and #{\cA} is a symmtric lax monoidal functor. Note that this is equivalent to requiring #{\int \cA \to \cC} to be a (symmetric) monoidal fibration in the sense of \ref{shulman-monfibs} (see also \ref{moeller-vasilakopoulou}).
 }
