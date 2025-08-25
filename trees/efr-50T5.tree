@@ -1,0 +1,13 @@
+\date{2025-08-25}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Remark}
+\p{
+  Suppose #{\cM, \cC, \cD} are small categories. Then the coend defining #{\Optic_\cM(\cC,\cD)\left( \arena{A}{X}, \arena{B}{Y} \right)} is a small colimit of small sets, hence again small. Since clearly the set of objects #{\ob \cC \times \ob \cD} is small, #{\Optic_\cM(\cC,\cD)} is again a small category.
+}
+\p{
+  However, if #{\cM,\cD,\cC} are merely assumed to be \em{locally} small, we can not guarantee the same is true of #{\Optic_\cM(\cC,\cD)}, since the hom-sets are now defined by a coend/colimit with large indexing category. However, in many special cases, it can still be seen to be locally small, such as in the Cartesian case (where #{\Lens(\cC)} is clearly locally small).
+}
+\p{
+  In this thesis, we will not delve further into this subtlety, simply working inside some universe where all our categories are small. 
+}

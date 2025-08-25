@@ -17,18 +17,27 @@
   }
   commutes.
 }
+\p{
+  If #{\cC} has enough colimits, we may express the coend as the coequalizer of the diagram
+  ##{\coprod_{f : i \to j \in \cI} F(i,j) \rightrightarrows \coprod_{i} F(i,i),}
+  where the two maps are given on each component by #{F(i,f): F(i,j) \to F(i,i)} and #{F(f,j) : F(i,j) \to F(j,j)}, respectively. (This is Remark 1.2.4 in \ref{fosco-coend-calculus}). Note that in particular this implies that if #{\cC} has all colimits, then it also has all coends.
+}
 
 \transclude{efr-MMQZ}
 \p{
   Note that if #{\cM,\cC,\cD} are symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
 }
+
 \transclude{efr-CRYH}
 \p{
-  By definition, the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot B, A)} consists of triples #{(M, f: X \to M \cdot Y, g: M \cdot B \to A)} up to the equivalence relation which, for every #{\phi: M \to M', f: X \to M \cdot Y, g: M' \cdot B \to A,} identifies the two tuples #{(M', (\phi \cdot 1_Y) f, g)} and #{(M, f, g (\phi \cdot 1_B))}. Note that this relation is not assumed to be inherently an equivalence relation---one takes the transitive-symmetric closure as usual.
+  As noted above, the coend #{\int^M \cC(X, M \cdot Y) \times \cD(M \cdot B, A)} consists of triples #{(M, f: X \to M \cdot Y, g: M \cdot B \to A)} up to the equivalence relation which, for every #{\phi: M \to M', f: X \to M \cdot Y, g: M' \cdot B \to A,} identifies the two tuples #{(M', (\phi \cdot 1_Y) f, g)} and #{(M, f, g (\phi \cdot 1_B))}. Note that this relation is not assumed to be inherently an equivalence relation---one takes the transitive-symmetric closure as usual.
 }
 \p{
   We call this relation the \em{sliding} relation (because we slide the map #{\phi} from the backwards part to the forwards part).
 }
+
+\transclude{efr-50T5} %Remark on local smallness
+
 \p{
   Of course, we can also let the arrows in #{\cD} go in the same direction as #{\cC}. This does not seem to have played any role in the literature, but we will give this a name, as it is a useful example to have in mind for Markov fibrations (where we will construct our dependent optics, conceptually, as a fiberwise opposite)
 }
