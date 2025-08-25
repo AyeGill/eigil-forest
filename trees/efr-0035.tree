@@ -48,7 +48,7 @@
   It turns out that the simplifying assumption needed to make sense of these problems is one we're happy to make in the situation at hand. Namely, we would like to assume that the functor #{C_1 \to C_0 \times C_0} picking out the domain and codomain is an \em{isofibration}. Recall that a functor #{p: \cC \to \cD} is an isofibration if, given #{x} in the domain and #{f: p(x) \to y} an \em{isomorphism} in the codomain, there is a lift of #{f} to #{\tilde{f}: x \to \tilde{y}}. (Any Grothendieck fibration or opfibration is automatically an isofibration).
 }
 \p{
-  These lifts give us the coposition-with-#{f} operations we need, but they also simplify the notion of weak Segal object significantly. This is because of the fact that a (strict) pullback of isofibrations is automatically also a homotopy pullback. This means we can simplify the Segal condition to asking that the induced maps #{C[2] \to C[1]\times_{C[0]} C[1]} (where this denotes the strict pullback) are equivalences of categories (recall that #{C[2]} would be a strict pullback if this was an \em{isomorphism} of categories), and the analogous statement holds for the higher #{C[n]}.
+  These lifts give us the composition-with-#{f} operations we need, but they also simplify the notion of weak Segal object significantly. This is because of the fact that a (strict) pullback of isofibrations is automatically also a homotopy pullback. This means we can simplify the Segal condition to asking that the induced maps #{C[2] \to C[1]\times_{C[0]} C[1]} (where this denotes the strict pullback) are equivalences of categories (recall that #{C[2]} would be a strict pullback if this was an \em{isomorphism} of categories), and the analogous statement holds for the higher #{C[n]}.
 }
 
 \transclude{efr-0039}
@@ -118,5 +118,5 @@ See \ref{lack-model-structure-bicats}. Since we are not really interested in thi
 \transclude{efr-003R}
 \transclude{efr-000I}
 \remark{
-  By construction, #{\Ctrl_{0,-,-} = \Arena}, #{\Ctrl_{-,0,-}} is a double category consisting of parameterized lenses and chart reparametrizations between them, and #{\Ctrl_{-,-,0}} is a double category consisting of parameterized lenses and lens isoparametrizations between them.
+  By construction, #{\Ctrl_{0,-,-} = \Arena}, #{\Ctrl_{-,0,-}} is a double category consisting of parametrized lenses and chart reparametrizations between them, and #{\Ctrl_{-,-,0}} is a double category consisting of parametrized lenses and lens isoparametrizations between them.
 }

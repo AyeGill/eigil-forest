@@ -23,7 +23,7 @@
 }
 \proof{
   \p{
-    Given a stochastic chart carried by #{X \leftarrow M \to Y,} so that #{X \to Y} is deterministic, recall that we can first pull back to the equalizer #{M' \into M} of the two maps #{M \to X \to Y, M \to Y}, then along the prescribed section #{X \to M'}. Note that this gives a 2-cell from this canonical representative with carrier #{X} to the initial represetative.
+    Given a stochastic chart carried by #{X \leftarrow M \to Y,} so that #{X \to Y} is deterministic, recall that we can first pull back to the equalizer #{M' \into M} of the two maps #{M \to X \to Y, M \to Y}, then along the prescribed section #{X \to M'}. Note that this gives a 2-cell from this canonical representative with carrier #{X} to the initial representative.
   }
   \p{
     Given two such cells, we get a square

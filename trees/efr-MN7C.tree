@@ -9,5 +9,5 @@
   With the action induced by this functor, the bicategory #{\Para_{\int S}(\cC)} has morphisms given by maps #{M \otimes X \to Y, m \in S(M),} and maps given by reparametrizations which preserve the decoration #{m}.
 }
 \p{
-  For example, let #{\cC} be a Markov category and let #{S(X) = \cC(I,X)}. Then morphisms are parameterized maps equipped with a measure on the parameter space.
+  For example, let #{\cC} be a Markov category and let #{S(X) = \cC(I,X)}. Then morphisms are parametrized maps equipped with a measure on the parameter space.
 }

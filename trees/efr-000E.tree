@@ -8,7 +8,7 @@
   It is an observation which goes back at least to \ref{backprop-as-functor}, and was more thoroughly developed in \ref{bruno-etal-categorical-learning-2021}, that the process of training a machine learning algorithm by gradient descent can be abstracted in the following way:
 }
 \ul{
-    \li{Wanting to learn a function #{X \to Y}, we choose a parameterized function #{f: X \times P \to Y}, where all these are, in the simplest case, Euclidean spaces #{\RR^k}}
+    \li{Wanting to learn a function #{X \to Y}, we choose a parametrized function #{f: X \times P \to Y}, where all these are, in the simplest case, Euclidean spaces #{\RR^k}}
     \li{We take the backwards derivative of #{f,} obtaining a \em{lens:}
     ##{(f,Df): \arena{TX}{X} \otimes \arena{TP}{P} \lensto \arena{TY}{Y}}}
     \li{For each datum #{(x_n,y_n),} we compute the loss gradient #{\nabla L(-,y_n) : Y \to TY}, and combining this with #{x_n \in X} and the current parameter #{p}, we get a gradient on the parameter space which we can use to update

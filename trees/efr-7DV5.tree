@@ -7,7 +7,7 @@
 \transclude{efr-JQI9}
 
 \p{
-  Recall that in Myers' categorical dynamical systems theory, trajectories of a system #{\xi: TS \lensto \bar{A}} are identified with chart morphisms from a "clock" system---thus for example trajectories of a smooth dynamical system #{M \to TM} are exactly those maps #{\gamma: \RR \to M} which, when #{\RR} is equipped with the vector fied #{dx/dt = 1}, are homomorphisms.
+  Recall that in Myers' categorical dynamical systems theory, trajectories of a system #{\xi: TS \lensto \bar{A}} are identified with chart morphisms from a "clock" system---thus for example trajectories of a smooth dynamical system #{M \to TM} are exactly those maps #{\gamma: \RR \to M} which, when #{\RR} is equipped with the vectorfield #{dx/dt = 1}, are homomorphisms.
 }
 \p{
   In general this presents an issue for our replacement category #{\Sys(T,\cD)}---since we wish to regard two systems given by equivalent lenses as equivalent, but their set of homomorphisms from a given clock system is not necessarily in bijection. In the general case, we do not presently have a way around this problem---but at least for clock systems with deterministic readout, the above presents a solution: choosing the initial representative for such a system, we find that the set of trajectories does not depend on the equivalence class of the target system.

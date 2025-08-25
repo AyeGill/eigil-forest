@@ -18,7 +18,7 @@
   Note that Myers' construction of the double fibration #{\Sys(\cC,\cA,T) \to \Arena{\Cat}} in fact uses the vertical slice in this sense.
 }
 \p{
-  This somewhat trivial observation means that any composition in #{\BiSys(\cC,\cA,T)} which produces 2-cell under #{I} in fact produces a morphism of systems in the ordinary sense. Replacing #{I} with another object, we may regard the slices as further-parameterized versions of #{\Sys(\cC,\cA,T)}.  
+  This somewhat trivial observation means that any composition in #{\BiSys(\cC,\cA,T)} which produces 2-cell under #{I} in fact produces a morphism of systems in the ordinary sense. Replacing #{I} with another object, we may regard the slices as further-parametrized versions of #{\Sys(\cC,\cA,T)}.  
 }
 
 \p{

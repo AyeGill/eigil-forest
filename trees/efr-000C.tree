@@ -8,5 +8,5 @@
   ##{(S \in \cC, TS \otimes A \lensto B)}
 }
 \p{
-  In other words: a space #{S} and a lens parameterized by #{TS \in \Arena}
+  In other words: a space #{S} and a lens parametrized by #{TS \in \Arena}
 }

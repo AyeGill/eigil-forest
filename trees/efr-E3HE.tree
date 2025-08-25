@@ -8,7 +8,7 @@
 }
 
 \p{
-  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parameterized joint probability measure---the comonoid structure allows us to build a canonical such given parameterized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-independence---of one variable on another.
+  The basic idea of a Markov category is to interpret morphisms #{X \to Y} as "stochastic processes" or \em{kernels}---that is, functions valued in probability measures. A morphism #{P \to X \otimes Y} is a parametrized joint probability measure---the comonoid structure allows us to build a canonical such given parametrized measures #{P \to X, P \to Y} (by precomposing their tensor with the #{\copy_P} map). This is the product measure of the two---the fact that in general not every map has this form (because #{\cC} is not necessarily Cartesian) allows us to express the probabilistic dependence---as in, non-independence---of one variable on another.
 }
 \p{
   A morphism is called \em{deterministic} if it is a comonoid (co)homomorphism, which amounts to the claim that #{\copy_Y f = (f \otimes f) \copy_X}---in other words, that running two independent copies of the kernel (with the same input) is equivalent to running one and copying the output. The deterministic morphisms form a Cartesian monoidal subcategory which is denoted #{\cC_\det \subseteq \cC}.

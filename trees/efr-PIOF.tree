@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{example}
 \p{
-  If #{\cC} is a Markov category, and #{S = \cC(I,-),} the (horizontal) morphisms of #{\dblPara_S(\cC)} are parameterized morphisms equipped with a probability measure on the parameter space. The composition forms the independent joint measure on the product parameter space.
+  If #{\cC} is a Markov category, and #{S = \cC(I,-),} the (horizontal) morphisms of #{\dblPara_S(\cC)} are parametrized morphisms equipped with a probability measure on the parameter space. The composition forms the independent joint measure on the product parameter space.
 }

@@ -3,7 +3,7 @@
 \import{macros}
 \title{Locally Graded Categories as Fibrations}
 \p{
-  There is also a para construction for enriched categories (say enriched in #{\cM}), where a parameterized morphism is defined in the evident curried way as a map #{P \to \cC(A,B)} in #{\cM}. 
+  There is also a para construction for enriched categories (say enriched in #{\cM}), where a parametrized morphism is defined in the evident curried way as a map #{P \to \cC(A,B)} in #{\cM}. 
 }
 \p{
   The natural generalization of enrichment and actions is the notion of \em{locally #{\cM} graded category}. 
@@ -48,7 +48,7 @@
 \transclude{efr-002V}
 
 \p{
-  This will serve as a definition of the bicategory of parameterized maps. From this we can easily describe a \em{double category} of parameterized maps, which we will denote #{\dblPara_\cM(\cC)}
+  This will serve as a definition of the bicategory of parametrized maps. From this we can easily describe a \em{double category} of parametrized maps, which we will denote #{\dblPara_\cM(\cC)}
 }
 
 \transclude{efr-002X}
@@ -70,5 +70,5 @@
 
 \transclude{efr-002Z}
 \p{
-  We will see that the #{\Para} construction preserves pseudo-limits, which will allow us build a \em{triple category} where one of the directions is parameterized maps, by applying the #{\Para} construction levelwise to a double category internal to actions.
+  We will see that the #{\Para} construction preserves pseudo-limits, which will allow us build a \em{triple category} where one of the directions is parametrized maps, by applying the #{\Para} construction levelwise to a double category internal to actions.
 }

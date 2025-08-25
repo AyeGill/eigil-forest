@@ -23,10 +23,10 @@
 }
 
 \p{
-  It is clear that both Mealy and Moore machines, in this sense, are special kinds of \em{parameterized morphism} in lenses, namely those parameterized by an object of the form #{TS}. This leads naturally to the idea that there should be a triple category of morphisms of this type, charts, and lenses.
+  It is clear that both Mealy and Moore machines, in this sense, are special kinds of \em{parametrized morphism} in lenses, namely those parametrized by an object of the form #{TS}. This leads naturally to the idea that there should be a triple category of morphisms of this type, charts, and lenses.
 }
 \p{
-  We call the parameterized lenses #{TS \otimes \bar{A} \lensto \bar{B}} \em{bisystems} since they generalize the two types of machine, Moore and Mealy (but we choose to stick with "system" rather than "machine").
+  We call the parametrized lenses #{TS \otimes \bar{A} \lensto \bar{B}} \em{bisystems} since they generalize the two types of machine, Moore and Mealy (but we choose to stick with "system" rather than "machine").
 }
 \transclude{efr-000E}
 

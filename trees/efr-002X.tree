@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{proposition}
 \p{
-  Let #{\cC \to B\cM} be a locally graded category. Then the fiber #{\cC_*} over the unique object is equivalent to a 1-category. It consists of those morphisms which go to the identity in #{B\cM}, i.e the unit object #{I \in \cM}. We call such morphisms \em{unparameterized}.
+  Let #{\cC \to B\cM} be a locally graded category. Then the fiber #{\cC_*} over the unique object is equivalent to a 1-category. It consists of those morphisms which go to the identity in #{B\cM}, i.e the unit object #{I \in \cM}. We call such morphisms \em{unparametrized}.
 }

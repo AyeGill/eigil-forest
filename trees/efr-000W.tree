@@ -3,7 +3,7 @@
 \import{macros}
 \title{Random trajectories for stochastic dynamical systems}
 \p{
-  Recall that by a "random map", we mean a parameterized (deterministic) map #{\Omega \times X \to Y}, plus some sort of probability distribution #{\mu: I \to \Omega}, probably up to some sort of equivalence relation.
+  Recall that by a "random map", we mean a parametrized (deterministic) map #{\Omega \times X \to Y}, plus some sort of probability distribution #{\mu: I \to \Omega}, probably up to some sort of equivalence relation.
 }
 \p{
   We would like to develop a notion of 2-cell between random maps and stochastic maps, so that a choice of 2-cell from #{(+1): \NN \to \NN} to a stochastic map #{s: X \to X} is precisely a random trajectory of the dynamical system implied by #{s}---a random sequence so that the conditional distribution of #{x_{n+1}} given #{x_1, \dots, x_n} is exactly #{s(x_n)}.

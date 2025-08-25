@@ -21,7 +21,7 @@
     ##{A \to PM \times_{PX} A \cong P_X(M) \times_X A \into P_X(M \times_X A) \to P_X(B) \to B}
   }
   \p{
-    We must show this is a #{P_X}-homomorphism. Let us simplify by working internally to #{(\cC_{\det})_{/X}}---thus we have a Cartesian category equipped with a strong commutative monad #{P}, a map #{* \to PM}, and a map #{M \times A \to B} which is a parameterized algebra homomorphism, in the sense that the diagram 
+    We must show this is a #{P_X}-homomorphism. Let us simplify by working internally to #{(\cC_{\det})_{/X}}---thus we have a Cartesian category equipped with a strong commutative monad #{P}, a map #{* \to PM}, and a map #{M \times A \to B} which is a parametrized algebra homomorphism, in the sense that the diagram 
   }
 
   \p{

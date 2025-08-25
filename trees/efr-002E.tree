@@ -13,5 +13,5 @@
   Note that by taking #{U = A, \bar{U} = \bar{A}} this encodes a simple next-step modality.
 }
 \p{
-  Observe also that, if #{A,\bar{A}} are both finite, we can encode all the classical covering modality operators as (finite) conjunctions of #{\nabla_{\{(a,a_i)\}}\phi_i,} and hence the logic built up of these modal operators and Boolean operations will enjoy the Henessy-Milner property.
+  Observe also that, if #{A,\bar{A}} are both finite, we can encode all the classical covering modality operators as (finite) conjunctions of #{\nabla_{\{(a,a_i)\}}\phi_i,} and hence the logic built up of these modal operators and Boolean operations will enjoy the Hennessy-Milner property.
 }

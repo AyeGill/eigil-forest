@@ -7,5 +7,5 @@
   Let #{\cC} be symmetric monoidal, and let #{S: \cC \to \Set} be a symmetric lax monoidal functor. Then the category of elements #{\int_\cC S = \{(X \in \cC, s \in S(X))\}} acquires a symmetric monoidal structure (with the laxator and unitor giving the multiplication on the elements #{s}), so that the obvious forgetful functor #{\int_\cC S \to \cC} is symmetric.
 }
 \p{
-  With the action #{\int_\cC \curverightarrow \cC} induced by this functor, the (horizontal) morphisms of #{\dblPara_{\int \cC}(\cC)} are parameterized morphisms #{P \otimes X \to Y} equipped with an element of #{S(P)}, and the 2-cells are reparametrization morphisms which preserve the decoration. This may be denoted #{\dblPara_S(\cC)}
+  With the action #{\int_\cC \curverightarrow \cC} induced by this functor, the (horizontal) morphisms of #{\dblPara_{\int \cC}(\cC)} are parametrized morphisms #{P \otimes X \to Y} equipped with an element of #{S(P)}, and the 2-cells are reparametrization morphisms which preserve the decoration. This may be denoted #{\dblPara_S(\cC)}
 }

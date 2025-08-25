@@ -6,7 +6,7 @@
   The functor #{\Optic(\BorelStoch) \to \SLens(\MAr{\BorelStoch}|_\det)} is fully faithful.
 }
 \p{
-  We have just seen that this is full. Note that we have previously seen that optics with a deterministic base are in fact in bijection with parameterized maps, and so this is bijective on maps with deterministic base. In particular, it suffices to prove that two optics #{\binom{A}{X} \to \binom{B}{Y}} with the same (not necessarily deterministic) base map #{X \to Y} agree as long as, for every map #{X \times Y \to B \times S,} the composite map #{X \to A \times S} is the same.
+  We have just seen that this is full. Note that we have previously seen that optics with a deterministic base are in fact in bijection with parametrized maps, and so this is bijective on maps with deterministic base. In particular, it suffices to prove that two optics #{\binom{A}{X} \to \binom{B}{Y}} with the same (not necessarily deterministic) base map #{X \to Y} agree as long as, for every map #{X \times Y \to B \times S,} the composite map #{X \to A \times S} is the same.
 }
 \p{
   Note that by taking conditionals we may restrict to the case of two optics with residual #{X \times Y} and which have the same forwards component (given by the pairing of the identity and the map #{X \to Y}). Without loss of generality, take #{X=*}. Denote by #{\mu: * \to Y} the measure on #{Y}. Let the backwards components be #{f,g: Y \times B \to A}. To prove these two optics agree, it suffices to exhibit a subset #{Y' \subset Y} so that the measure #{\mu(Y') = 1} and so that #{f(y',b) = g(y',b)} for all #{y' \in Y'}.

@@ -5,7 +5,7 @@
 \title{Bayesian image factorizations}
 \p{
   Let #{\cC} be a Markov category.
-  A deterministic morphism #{f: X \to Y} is called \em{strictly conditionable} if, for every morphism #{m: P \to X,} there exists a parameterized Bayesian inverse #{c: P \otimes Y \to X} which is everywhere a \em{strict} section of #{f}---that is, #{c} is a conditional distribution for the joint #{P \to X \otimes Y,} and the composite #{P \otimes Y \to X \to Y} is equal (not merely almost certainly equal, but strictly equal) to the projection.
+  A deterministic morphism #{f: X \to Y} is called \em{strictly conditionable} if, for every morphism #{m: P \to X,} there exists a parametrized Bayesian inverse #{c: P \otimes Y \to X} which is everywhere a \em{strict} section of #{f}---that is, #{c} is a conditional distribution for the joint #{P \to X \otimes Y,} and the composite #{P \otimes Y \to X \to Y} is equal (not merely almost certainly equal, but strictly equal) to the projection.
 }
 \p{
   A Markov category is said to admit \em{Bayesian image factorizations} if every deterministic map factors as a strictly conditionable epimorphism followed by a (also deterministic) monomorphism.

@@ -25,7 +25,7 @@
     The pointwise convergence claim, together with Zorn's Lemma, implies that the set #{\{f \mid p(f) \leq 1, f(x)- 0\}} has a maximal element \todo{this may rely on some sort of separability condition, come to think of it}. The claim about maxima implies that such an element must actually be an upper bound. This takes care of the first point.
   }
   \p{
-    By definition, #{d(x,x) = f_x(x) = 0} for all #{x}. Fixing #{x,y}, note that #{d(x,z)- d(x,y)} is a function of #{z} which carries #{y} to zero, and since it is a constant plud #{d(x,-),} must have #{p(-) \leq 1}. Hence it is less than #{d(y,z),} but after rearranging this gives the triangle inequality.
+    By definition, #{d(x,x) = f_x(x) = 0} for all #{x}. Fixing #{x,y}, note that #{d(x,z)- d(x,y)} is a function of #{z} which carries #{y} to zero, and since it is a constant plus #{d(x,-),} must have #{p(-) \leq 1}. Hence it is less than #{d(y,z),} but after rearranging this gives the triangle inequality.
   }
   \p{
     Note that the constant function at zero has #{p(0) = 0 \leq 1,} and carries #{x} to zero, so we have #{d(x,y) \geq 0} for all #{x,y}.
