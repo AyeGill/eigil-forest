@@ -6,6 +6,18 @@
   We have already given somewhat of an account of lenses, optics, and their applications in the introduction. We briefly review the theory here, especially to normalize the notation and definitions. The best general source for this material is still \ref{riley-optics}.
 }
 
+\p{
+  The definition of optic relies on the notion of \em{coend}, which we briefly recall, see \ref{fosco-coend-calculus} for a textbook account. If #{F: \cI^\op \times \cI \to \cC} is a functor, the \em{coend} #{\int^{i \in I} F(i,i)} is defined as the initial object receiving a map #{f_i : F(i,i) \to \int^{i \in I} F(i,i)} for each #{i \in I}, so that for each #{\phi: i \to j}, the square
+  \quiver{
+    \begin{tikzcd}
+    & F(i,i) \ar[rd] & \\
+    F(j,i) \ar[ru] \ar[rd] & & \int^I \\
+    & F(j,j) \ar[ur]
+    \end{tikzcd}
+  }
+  commutes.
+}
+
 \transclude{efr-MMQZ}
 \p{
   Note that if #{\cM,\cC,\cD} are symmetric monoidal and these actions are symmetric, #{\Optic_\cM(\cC,\cD)} inherits a symmetric monoidal structure given by #{\arena{A}{X} \otimes \arena{B}{Y} = \arena{A \otimes B}{X \otimes Y}}. (Also given a braiding one can induce a non-symmetric monoidal structure, but this almost never comes up).
