@@ -9,13 +9,13 @@
   Note that this determines a \em{local} norm on each #{V_{U_i}} (and in particular each #{V_x}) up to equivalence (but no stricter than that). In particular each #{V_x} is a Banach space.
 }
 \p{
-  A morphism of Banach space bundles is a continuous map #{f: V \to W} over #{X} which is linear on each bundle. Note that this implies that on a suitable cover #{U_i,} the maps #{f: V_{U_i} \to W_{U_i}} obey #{\norm{f(v)} \leq C_i \norm{v}} for some #{C_i \in \RR}, for any local norms inducing the topologies (but the #{C_i} may not be bounded across the whole space #{X}). This defines an obvious category #{\Ban_X}
+  A morphism of Banach space bundles is a continuous map #{f: V \to W} over #{X} which is linear on each bundle. Note that this implies that on a suitable cover #{U_i,} the maps #{f: V_{U_i} \to W_{U_i}} obey #{\norm{f(v)} \leq C_i \norm{v}} for some #{C_i \in \RR}, for any local norms inducing the topologies, and hence by compactness there exists some #{C} so that #{\norm{f(v)} \leq C \norm{v}} for each #{v}.
 }
 \p{
   If #{X \to Y} is a continuous map, there is a pullback functor #{\Ban_Y \to \Ban_X}. The Grothendieck construction of this gives a fibration #{\BanBun \to \CHaus}
 }
 \p{
-  Note that Tychonoff spaces include all compact Hausdorff spaces. Therfore consider the full subcategory #{\CHausStoch \into \TychStoch} spanned by these. The fibration #{\BanBun} admits the structure of a stochastic module: given #{M \to X}, #{s: X \to M} a kernel, and a linear continuous map #{f: V \times_X M \to W \times_X M,} given #{v \in V_x,} there is an induced function #{M_x \to W_x} given by #{f(v,-)}. Since this is bounded (being continuous on a compact space) it is (Bochner) integrable define #{s^*f(v)} to be this integral.
+  Note that Tychonoff spaces include all compact Hausdorff spaces. Therfore consider the full subcategory #{\CHausStoch \into \TychStoch} spanned by these. The fibration #{\BanBun} admits the structure of a stochastic module: given #{M \to X}, #{s: X \to M} a kernel, and a linear continuous map #{f: V \times_X M \to W \times_X M,} given #{v \in V_x,} there is an induced function #{M_x \to W_x} given by #{f(v,-)}. Since this is bounded (being continuous on a compact space) it is (Bochner) integrable, define #{s^*f(v)} to be this integral.
 }
 \p{
   This example is analogous to optics for the action of categories of markov kernels on categories of vector spaces (as in \ref{efr-A6YR}). Note that we do \em{not} expect this type of example to present a Markov fibration. The reason is simply that, given a parametrized linear map #{M \times \RR^n \to \RR^n} and a measure on #{M}, the fact that the expectation map #{\RR^n \to \RR^n} is the identity by no means implies that the original map is almost surely the identity or anything like that. If #{(m,e_0) \mapsto e_1} and #{m} has positive probability, this can be canceled out by #{(m',e_0) \mapsto -e_1}. This is impossible for probability kernels. 
