@@ -4,5 +4,5 @@
 \taxon{definition}
 \title{Premarkov structure}
 \p{
-  Let #{\cC} be a monoidal category. A \em{premarkov structure} on #{\cC} is a wide monoidal subcategory #{\cC' \subseteq \cC}---that is, a class of morphisms which contains all identities and structural isomorphisms, and is stable under composition and monoidal products---so that the monoidal category #{\cC'} is Cartesian.
+  Let #{\cC} be a symmetric monoidal category. A \em{premarkov structure} on #{\cC} is a wide symmetric monoidal subcategory #{\cC' \subseteq \cC}---that is, a class of morphisms which contains all identities and structural isomorphisms, and is stable under composition and monoidal products---so that the monoidal category #{\cC'} is Cartesian.
 }
