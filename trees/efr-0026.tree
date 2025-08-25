@@ -5,5 +5,5 @@
 \p{
   Let #{F: \Set \to \Set} be a functor.
   Then there is a dynamical systems theory where #{\cC = \Set}, #{\cA} is constant at #{\Set},
-  and #{T(X) = (X,F(X))}. It is easy to see that the category of closed dynamical systems in this theory is precisely an #{F}-coalgebra.
+  and #{T(X) = (X,F(X))}. It is easy to see that the category of closed dynamical systems in this theory is equivalently the category of #{F}-coalgebras.
 }
