@@ -10,7 +10,7 @@
 }
 \proof{
   \p{
-    Let #{\alpha} be an algebra as assumed, and let #{\cD_0^\alpha \in \MarkPreFib} denote the coequalizer given. By general nonsense there is an induced functor #{\cD_0 \to \cD_0^\alpha|_\det} which is moreover an algebra homomorphism---the claim is that this is an isomorphism. By \ref{efr-L7L2}, pullback to the deterministic part preserves these coequalizers, so this amounts to the claim that the diagram #{\Free^2(\cD_0) \rightrightarrows \Free(\cD_0) \to \cD_9} is a coequalizer. But this is true for any algebra of any monad (in fact, the unit gives a splitting of this coequalizer).
+    Let #{\alpha} be an algebra as assumed, and let #{\cD_0^\alpha \in \MarkPreFib} denote the coequalizer given. By general nonsense there is an induced functor #{\cD_0 \to \cD_0^\alpha|_\det} which is moreover an algebra homomorphism---the claim is that this is an isomorphism. By \ref{efr-L7L2}, pullback to the deterministic part preserves these coequalizers, so this amounts to the claim that the diagram #{\Free^2(\cD_0) \rightrightarrows \Free(\cD_0) \to \cD_0} is a coequalizer. But this is true for any algebra of any monad (in fact, the unit gives a splitting of this coequalizer).
   }
   \p{
     By general nonsense the fibration associated to an algebra which presents a fibration forms a partial left adjoint to #{\MarkPreFib(\cC) \to \SFib(\cC)}. This left adjoint, by the above, has its image inside #{\MarkFib,} and hence there is an adjunction #{\MarkFib(\cC) \lensto \SFib(\cC)^p}. The preceding furthermore proves that the unit of this adjunction is the identity, which implies that the left adjoint is fully faithful---but by definition it is essentially surjective, finishing the argument.
