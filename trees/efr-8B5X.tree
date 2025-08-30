@@ -8,7 +8,8 @@
 \p{
   To see this, first consider the deterministic pullback. An optic #{\binom{A}{X} \to \binom{B}{Y}} with deterministic base can be identified with a map #{X \otimes B \to A} (and the base deterministic map #{X \to Y}). To see this, first observe that the subset of #{\BorelStoch(X, Y \otimes M)} with the marginal #{X \to Y} deterministic is in bijection with #{\BorelStoch_\det(X,Y) \times \BorelStoch(X,M)}, since #{\BorelStoch} is positive. Hence we can calculate
 
-  ##{\int^M \BorelStoch_\det(X,Y) \times \BorelStoch(X,M) \times \BorelStoch(M \otimes B, A) \cong \BorelStoch_\det(X,Y) \times \BorelStoch(X \times B, A),}
+  ##{\int^M \BorelStoch_\det(X,Y) \times \BorelStoch(X,M) \times \BorelStoch(M \otimes B, A)}
+  ##{ \cong \BorelStoch_\det(X,Y) \times \BorelStoch(X \times B, A),}
   using the ninja yoneda lemma as in \ref{efr-M19V}.
   
   Hence this part is a fibration with the fiber over #{X} being the coKleisli category of the #{X \times -} monad, and the pullback functors given by reindexing these parametrized maps. The Cartesian lift of a map #{X \to Y} at #{\binom{B}{Y}} is given by the optic #{\binom{B}{X} \to \binom{B}{Y}} with unit residual and identity backwards component.
