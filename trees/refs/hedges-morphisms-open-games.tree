@@ -1,8 +1,9 @@
 \title{Morphisms of Open Games}
+\date{2021-04-04}
 \author{Jules Hedges}
 \taxon{reference}
 \meta{bibtex}{\startverb
-@article{hedges_morphisms_2017,
+@article{hedges-morphisms-open-games,
   title = {Morphisms of open games},
   url = {http://arxiv.org/abs/1711.07059},
   abstract = {We deﬁne a notion of morphisms between open games, exploiting a surprising connection between lenses in computer science and compositional game theory. This extends the more intuitively obvious deﬁnition of globular morphisms as mappings between strategy proﬁles that preserve best responses, and hence in particular preserve Nash equilibria. We construct a symmetric monoidal double category in which the horizontal 1-cells are open games, vertical 1-morphisms are lenses, and 2cells are morphisms of open games. States (morphisms out of the monoidal unit) in the vertical category give a ﬂexible solution concept that includes both Nash and subgame perfect equilibria. Products in the vertical category give an external choice operator that is reminiscent of products in game semantics, and is useful in practical examples. We illustrate the above two features with a simple worked example from microeconomics, the market entry game.},
@@ -14,6 +15,5 @@
   eprinttype = {arxiv},
   eprint = {1711.07059},
   keywords = {Mathematics - Category Theory, Computer Science - Computer Science and Game Theory},
-  file = {hedges - mors of open games.pdf:/home/eigil/Dropbox/Matematik/Tekster/hedges - mors of open games.pdf:application/pdf},
 }
 \stopverb}

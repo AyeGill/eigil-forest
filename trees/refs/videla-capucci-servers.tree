@@ -1,0 +1,16 @@
+\title{Lenses for Composable Servers}
+\date{2022-03-29}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2203.15633}
+\meta{external}{http://arxiv.org/abs/2203.15633}
+\author{Andre Videla}
+\author{Matteo Capucci}
+\meta{bibtex}{\startverb
+ @article
+{videla-capucci-servers, title={Lenses for Composable Servers}, url={http://arxiv.org/abs/2203.15633}, DOI={10.48550/arXiv.2203.15633}, abstractNote={We implement the semantics of server operations using parameterised lenses. They allow us to define endpoints and extend them using classical lens composition. The parameterised nature of lenses models state updates while the lens laws mimic properties expected from HTTP. This first approach to server development is extended to use dependent parameterised lenses. An upgrade necessary to model not only endpoints, but entire servers, unlocking the ability to compose them together.}, note={arXiv:2203.15633 [cs]}, number={arXiv:2203.15633}, publisher={arXiv}, author={Videla, Andre and Capucci, Matteo}, year={2022}, month={Mar} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We implement the semantics of server operations using parameterised lenses. They allow us to define endpoints and extend them using classical lens composition. The parameterised nature of lenses models state updates while the lens laws mimic properties expected from HTTP. This first approach to server development is extended to use dependent parameterised lenses. An upgrade necessary to model not only endpoints, but entire servers, unlocking the ability to compose them together.
+}}
+
