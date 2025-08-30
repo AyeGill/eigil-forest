@@ -275,7 +275,8 @@
 
 \def\cofree{#{\fC}}
 
-\def\Ob{#{\operatorname{\mathbf{Ob}}}}
+\def\ob{#{\operatorname{\mathbf{ob}}}}
+
 
 \def\Comon{#{\operatorname{\cat{Comon}}}}
 
