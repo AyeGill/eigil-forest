@@ -4,6 +4,8 @@
 \taxon{definition}
 \title{Markov Fibration}
 \p{
+  If #{\cD} is a Markov prefibration, we call it a \em{Markov fibration} if the diagram #{\overline{\Free(\cD|_\det)} \rightrightarrows \overline{\cD|_\det} \to \cD} is a coequalizer in #{\Cat_{/\cC}}.
+}
+\p{
   Given an algebra #{\alpha: \Free(\cD_0) \to \cD_0} of the free Markov prefibration monad, let #{\overline{\Free(\cD_0)} \rightrightarrows \overline{\cD_0} \in \MarkPreFib} be as above. We say #{\alpha} \em{presents a Markov fibration} if the coequalizer of these maps in #{\Cat_{/\cC}} is a Markov prefibration.
-  If #{\cD} is a Markov prefibration, we call it a \em{Markov fibration} if the diagram #{\overline{\Free(\cD|_\det)} \rightrightarrows \overline{\cD|_\det} \to \cD} is a coequalizer in #{\Cat_{/\cC}}
 }
