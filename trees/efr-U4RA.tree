@@ -4,17 +4,55 @@
 \title{Markov Fibrations}
 
 \p{
-  Recall that, given a functor #{R: \cC \to \cD} with left adjoint #{L}, there is a "standard resolution" of any object #{X \in \cC}, given by the "cofork" #{LRLRX \rightrightarrows LRX \to X}, where the two parallel maps are the two possible applications of the adjunction counit. The adjunction is monadic if and only if this is always a coequalizer, in which case the algebra corresponding to #{X} is #{RLRX \to RX}---conversely, given an algebra #{\alpha: RLA \to A}, there are two parallel maps #{LRLA \rightrightarrows LA} (given by #{L(\alpha)} and the counit,) and the object in #{\cC} corresponding to this algebra is given by this coequalizer.
+  Recall that, given a functor #{R: \cC \to \cD} with left adjoint #{L}, there is a "standard resolution" of any object #{X \in \cC}, given by the "cofork" #{LRLRX \rightrightarrows LRX \to X}, where the two parallel maps are the two possible applications of the adjunction counit. The adjunction is monadic if and only if this is always a coequalizer, in which case the #{RL}-algebra corresponding to #{X} is #{RLRX \to RX}---conversely, given an algebra #{\alpha: RLA \to A}, there are two parallel maps #{LRLA \rightrightarrows LA} (given by #{L(\alpha)} and the counit,) and the object in #{\cC} corresponding to this algebra is given by this coequalizer.
 }
+\subtree{
+  \taxon{Example}
+  \p{
+    Consider the adjunction #{\abs{-}: \Mon \leftrightarrows \Set : (-)^*} between the category of monoids and the category of sets. Given a monoid #{M}, #{\abs{M}^*} consists of lists of elements in #{M}, and #{\abs{\abs{M}^*}^*
+  } consists of lists of such lists. The two maps #{\abs{\abs{M}^*}^* \to \abs{M}^*} consist in either concatenating the lists, or replacing each list with its product. Clearly these two maps are coequalized by the product map #{\abs{M}^* \to M}. Moreover it's clear that two lists have the same product if and only if they are identified in this coequalizer (simply consider a singleton list-of-lists, which identifies any given list with the singleton corresponding to its product).
+  }
+}
+
 \p{
   As a generalization of this, if this coequalizer exists for every algebra, they form a left adjoint to the canonical functor #{\cC \to \Alg_\cD(RL)}. Since we have seen that the monad of free Markov prefibrations commutes with taking fiberwise opposites, we may hope that such a left adjoint exists---a simple argument shows that, if it is, it is fully faithful, and we may say that those prefibrations in the image are the "fibrations" and define their fiberwise opposite as the fiberwise opposite applied to their underlying algebras. Although it turns out to not be quite so simple, we will take this idea as our starting point.
 }
+\subtree{
+  \taxon{Example}
+  \p{
+    Let #{\cat{GrpTop}} be the category of topological groups, and let #{R: \cat{GrpTop} \to \Set} forget both the group structure and the topology. Clearly this is right adjoint to the free group in the discrete topology, and the monad of this adjunction is the free group monad, which we write #{RL} for now. The canonical comparison functor #{\cat{GrpTop} \to \cat{Grp}} just forgets the topology. Given a (non-topological) group, described by a map #{RLG \to G}, we can form the diagram of topological groups #{LRLG \rightrightarrows LG}. Here #{LG} is the free, discrete group on #{G} and #{LRLG} is the free discrete group on the underlying set of #{LG}. Their coequalizer is simply #{G} equipped with the discrete topology, which is indeed the left adjoint to #{\cat{GrpTop} \to \cat{Grp}}
+  }
+}
+
 \p{
   In what follows, we will denote the monad #{\overline{(-)}|_\det} simply by #{\Free} to avoid too many complicated nestings of overlines and parentheses.
 }
 
 \transclude{efr-HVUT}
+\p{
+  The terminology "presents a Markov fibration" is justified by the following proposition.
+}
 \transclude{efr-MAUM}
+
+\p{
+  Let us briefly summarize the relationship between Markov prefibrations, Markov fibrations, and stochastic module fibrations at this stage.
+  \ul{
+    \li{
+      A stochastic module fibration is a (Grothendieck) fibration #{\cD} over #{\cC_\det}, equipped with some extra structure involving the whole category #{\cC}.
+      Given a deterministic map #{f: A \to B} two objects #{X,Y \in \cD_B}, and a map #{\phi: f^*X \to f^*Y}, we can think of this as a map parameterized by the fibers #{A_b}. Given a stochastic section #{s: B \to A}, the stochastic module structure picks out a map #{X \to Y \in \cD_B} corresponding to choosing this parameter randomly according to #{s}.
+    }
+    \li{
+      A Markov prefibration is a category #{\cD} over #{\cC} with a particular unique lifting property. In the above situation, it gives a unique lift #{X \to f^*X} of #{s}, corresponding to choosing #{a \in A_b} according to #{s} and leaving the #{x \in X}-coordinate unchangd. By composing this lift with #{\phi}, then with the Cartesian #{f^*Y \to Y}, we get a stochastic module structure on the part of #{\cD} lying over deterministic maps (which is also a Grothendieck fibration).
+    }
+    \p{
+      Given a stochastic module structure, there is a way of generating a category over #{\cC}, by freely adding the lifts corresponding to a Markov prefibration, then quotienting by the relations implied by the stochastic module structure. This does not necessarily yield a Markov prefibration. 
+    }
+    \p{
+      A Markov prefibration is called a Markov fibration if it is presented by its underlying stochastic module in the above sense.
+    }
+  }
+}
+
 
 \transclude{efr-YFV2}%Weak supports definition
 \p{
