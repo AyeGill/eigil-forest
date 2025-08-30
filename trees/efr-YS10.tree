@@ -1,0 +1,11 @@
+\date{2025-08-27}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Talk}
+\title{Representable Dynamics for Stochastic Differential Equations}
+\subtree{
+  \taxon{Abstract}
+  \p{
+    There is a huge variety of objects which deserve the name "dynamical system". Most important types fit into the framework called "double categorical systems theory", developed by Myers. In this framework, the trajectories of a dynamical systems are defined to be the homomorphisms of systems out of specified "clock systems" - for example, a trajectory of a discrete dynamical system is a homomorphism out of the dynamical system (N,+1). Describing clock systems for notions deterministic dynamical system is relatively straightforward, but their description for stochastic systems is more complicated. For discrete-time stochastic dynamical systems - that is, Markov chains - this was recently resolved, but the solution does not apply to continuous-time stochastic processes, such as SDEs (stochastic differential equations). In addition to giving an introduction to all of the preceding, I'll present some work in progress on defining clock systems for SDEs.
+  }
+}
