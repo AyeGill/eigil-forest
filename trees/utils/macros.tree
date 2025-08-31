@@ -311,6 +311,7 @@
 \def\Terms{#{\operatorname{\mathbf{Terms}}}}
 \def\PCong{#{\operatorname{\mathbf{PCong}}}}
 \def\Alg{#{\cat{Alg}}}
+\def\Mon{#{\cat{Mon}}}
 \def\Coalg{#{\cat{Coalg}}}
 \def\EPres{#{\cat{EPres}}}
 
