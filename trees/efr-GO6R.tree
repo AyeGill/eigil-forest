@@ -42,11 +42,15 @@
 
 \transclude{efr-2XPE}
 
-\p{
-  We will now begin proving:
-}
-\transclude{efr-LGOA}%Left adjoint theorem
 \transclude{efr-OH7U}%Proof of existence of free guys
+
+\p{
+  We are now ready to prove the main proposition of this section:
+}
+
+\transclude{efr-LGOA}%Left adjoint theorem
+
+
 \transclude{efr-0BES}%Proof of left adjoint
 \p{
   This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}.
