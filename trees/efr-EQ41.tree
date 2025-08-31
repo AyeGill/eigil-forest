@@ -4,7 +4,7 @@
 \taxon{remark}
 \title{On 2-category theory}
 \p{
-  Since we will shortly be working with a number of functors between categories whose objects are themselves categories with some structure, it may be thought that we should give some thought to the strictness of our constructions---for example, we will shortly construct a left adjoint to #{(-)|_\det: \MarkPreFib(\cC_\det) \to \Fib(\cC),} and it may well be asked how strict this adjoint is, whether we need to consider the definition of \em{pseudomonad} when we get so far, et cetera.
+  Since we will shortly be working with a number of functors between categories whose objects are themselves categories with some structure, it may be thought that we should give some consideration to the strictness of our constructions---for example, we will shortly construct a left adjoint to #{(-)|_\det: \MarkPreFib(\cC_\det) \to \Fib(\cC),} and it may well be asked how strict this adjoint is, whether we need to consider the definition of \em{pseudomonad} when we get so far, et cetera.
 }
 \p{
   However, we can largely avoid this issue. The key observation is that none of our functors will alter the \em{objects} of the underlying category (since #{\cC_\det \to \cC} is identity on objects,). Hence, all the natural transformations that we would ordinarily ask to be \em{equivalences} of categories will instead be isomorphisms, and we can largely ignore considerations of higher category theory---similarly, all our functors will be strictly functorial. As a simple example of this, observe that the pullback functor #{(-)|_\det} is automatically strict---it simply consists in restriction to a subset of the morphisms in #{\cD} (which is automatically closed under composition), and thus clearly preserves composition strictly.

@@ -27,7 +27,7 @@
   At this point, the notion of a deterministic map #{M \to X} equipped with a stochastic (ie not \em{necessarily} deterministic) section begins playing a key role. The phrase "stochastic section" will always carry an implicit "of a deterministic map". In most cases the map that the section is a section \em{of} will be clear from the context.
 }
 \p{
-  Note that, given a stochastic section #{Y \to M} and a deterministic map #{X \to Y}, if #{\cC} is positive with deterministic pullbacks, there is a unique lifting of this to a section of the projection #{Y \times_X M \to Y}. We will use this fact several times.
+  Note that, given a stochastic section #{Y \to M} and a deterministic map #{X \to Y}, if #{\cC} is [pullback-positive](efr-T3HM), there is a unique lifting of this to a section of the projection #{Y \times_X M \to Y}. We will use this fact several times.
 }
 \transclude{efr-Y926}
 \transclude{efr-GL6R}
