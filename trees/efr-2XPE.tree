@@ -7,7 +7,12 @@
 }
 \proof{
   \p{
-  The only thing to verify for the stochastic module structure is the equation, but this is an easy consequence of the uniqueness property for Markov prefibrations---both of the given maps are given by composing with the unique lift of the map #{X \to N}.
+    Given #{f: M \to X} and a stochastic section #{\alpha}, it's clear that composition with the unique lift #{\bar{X} \to f^*\bar{X}} is a map of the right type, so we just have to verify the equations.
+    For the first equation (item 3 in the definition of stochastic module), we are comparing two maps #{F(g^*\bar{X}) \to F(b^*\bar{X})}. These are given by composition with two maps, let's call them #{\\phi, \psi: g^*\bar{X} \to b^*\bar{X}}. These two maps are lifts of #{f\alpha} and #{\beta g}, but by assumption these two are equal. Hence by the uniqueness property of Markov prefibrations, #{\hpi = \psi}, and we have our equation. The other equation follows in a completely analogous way.
+  }
+  \p{
+
+
   To prove the homomorphism property, note that a morphism of prefibrations preserves Cartesian morphisms, and hence (by uniqueness) must preserve the unique lifts of stochastic sections. Then by functoriality it must preserve composition with these, which finishes the proof.
   }
 }
