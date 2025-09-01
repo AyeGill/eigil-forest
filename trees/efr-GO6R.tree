@@ -68,6 +68,15 @@
 
 \transclude{efr-OEFJ}%Stochastic module fibration
 
+\p{
+  Let us try to understand the structure of a stochastic module fibration. It is easiest to understand in the case of a projection map #{P \times X \to X}. Suppose we have two objects #{A,B} over #{X}.
+  Then we think of a map #{f: \pi_X^*A \to \pi_X^*B} over #{P \times X} as a map #{P \times A \to B}, that is a map parameterized by #{P} (this is literally the case for a codomain fibration).
+  Given a stochastic section #{s} of #{\pi_X}, which amounts to a stochastic map #{X \to P}, the stochastic module stucture picks out a new map #{s_*f}, which is given over each point #{x \in X} by choosing the parameter according to #{s}, then applying #{f}.
+}
+\p{
+  The definition of the composite in \ref{efr-A08L}, in these terms, tells us that given maps #{f: P \times A \to B, g: Q \times B \to C}, and maps #{s: X \to P, t: X \to Q}, the composite of #{s_*(f)} and #{t_*(q)} is equal to the map obtained by forming the parameterized composite #{Q \times P \times A \to C} and applying the independent pairing #{\braket{t,s}: X \to Q \times P}. This is of course how composition is supposed to work in a Markov category.
+}
+
 \transclude{efr-VF6V}
 \transclude{efr-U436}
 
