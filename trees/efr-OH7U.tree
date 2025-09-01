@@ -4,7 +4,7 @@
 \taxon{lemma}
 \ol{
   \li{
-    Let #{\bar{X} \in \cD_0} be an object. Then there is a free stochastic module #{T\cD_0(\bar{X},-)} on its representable copresheaf, in the sense that if #{F} is another stochastic module, homomorphisms #{T\cD_0(\bar{X},-)} are in bijection with indexed natural transformations #{\cD_0(\bar{X},-) \to F}
+    Let #{\bar{X} \in \cD_0} be an object. Then there is a free stochastic module #{T\cD_0(\bar{X},-)} on its representable copresheaf, in the sense that if #{F} is another stochastic module, homomorphisms #{T\cD_0(\bar{X},-) \to F} are in bijection with indexed natural transformations #{\cD_0(\bar{X},-) \to F}
   }
   \li{The free stochastic module on a corepresentable presheaf is given as follows: an element of #{T\cD_0(\bar{X},-)(\bar{Y})} consists of a diagram in #{\cC} of the form
     \quiver{
@@ -37,7 +37,19 @@
 }
 \proof{
 \p{
-  First, observe that the equations for a stochastic module follow by a straightforward diagram chase around something with this shape:
+  First, we have to verify the equations of a stochastic module for #{T\cD_0(\overline{X},-)}. For the first case, suppose we are given a square
+  \quiver{
+    \begin{tikzcd}
+    N \ar[r] \ar[d] & W \ar[d]\\
+    Y \ar[r] \ar[u, curve left, "\alpha"] & Z \ar[u, curve left, "\beta"]
+    \end{tikzcd}
+  }
+
+  with all but the upwards maps stochastic. Now let #{\bar{Z}} be some object over #{Z} and suppose we are given an element of #{T\cD_0(\bar{X}, \bar{Z}_Y)}, represented by a span
+  #{X \leftarrow M \to Y}, a section #{X \to M} and a map #{\phi: \bar{X}_M \to \bar{Z}_M} over #{M}. 
+  
+  Consider then the below diagram:
+
   \quiver{
     \begin{tikzcd}
 	&& {M \times_Z W} \\
@@ -64,10 +76,15 @@
 \end{tikzcd}
   }
 
-  noting that pullbacks compose. Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X} it is clear that there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X}---given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to the map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
+  By definition, the first of the two possible elements of #{T\cD_0(\bar{Z}_W)} are given by either forming the pullback #{M \times_Y N}, taking the lift of #{\alpha} to #{M \to M \times_Y N} and composing to get a section #{X \to M \times_Y N}, and pulling back #{\phi} along the projection to get a map #{\bar{X}_{M \times_Y N} \to \bar{Z}_{M \times_Y N}}, then taking the span #{X \leftarrow M \times_Y N \to W}.
+  The second is given by first composing with the map #{Y \to Z}, then applying the above procedure with the pullback #{M \times_Z W}. The induced map #{M \times_Y N \to M \times_Z W} exhibits the equality of these two under the equivalence relation defining #{T\cD_0(\bar{X},-)} (commutativity of the bottom-right square implies that triangle of stochastic sections commutes.)
+}
+
+\p{
+  Given some other stochastic module #{F} over #{A} with a map of indexed copresheaves #{\cD_0(\bar{X},-) \to F,} over #{A \to X}, there is at most one extension to a map of stochastic presheaves #{T\cD_0(\bar{X},-) \to F} over #{A \to X}---given an element with representative #{(s:X \to M, X \leftarrow M \to Y, \bar{X}_M \to \bar{Y}_M),} it must go to the identity element of #{F(\bar{X}),} acted on by the stochastic section #{s} to produce an element of #{F(\bar{X}_M),} followed by #{F} applied to the map #{\bar{X}_M \to \bar{Y}} over #{M \to Y}.
 }
 \p{
-  But it is equally clear that the equivalence relation imposed by #{T\cD_0(\bar{X},-)} is implied by the equations of a stochastic module, and so this map is well-defined, establishing the property.
+  But it is not hard to see that the equivalence relation imposed by #{T\cD_0(\bar{X},-)} is implied by the equations of a stochastic module, and so this map is well-defined, establishing the property.
 }
 \p{
   Secondly, let #{\bar{A} \to \bar{B}} be a Cartesian map over #{A \to B,} and take a commutative triangle
