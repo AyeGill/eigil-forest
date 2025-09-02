@@ -2,9 +2,9 @@
 \date{2009-01}
 \taxon{reference}
 \meta{doi}{10.1137/070699652}
-\author{Constantinos Daskalakis}
-\author{Paul W. Goldberg}
-\author{Christos H. Papadimitriou}
+\author/literal{Constantinos Daskalakis}
+\author/literal{Paul W. Goldberg}
+\author/literal{Christos H. Papadimitriou}
 \meta{bibtex}{\startverb
  @article
 {nash-complexity, title={The Complexity of Computing a Nash Equilibrium}, volume={39}, ISSN={0097-5397, 1095-7111}, DOI={10.1137/070699652}, number={1}, journal={SIAM Journal on Computing}, author={Daskalakis, Constantinos and Goldberg, Paul W. and Papadimitriou, Christos H.}, year={2009}, month={Jan}, pages={195-259},language={en} }

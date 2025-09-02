@@ -3,10 +3,10 @@
 \taxon{reference}
 \meta{doi}{10.48550/arXiv.2108.05318}
 \meta{external}{http://arxiv.org/abs/2108.05318}
-\author{Seth Frey}
-\author{Jules Hedges}
-\author{Joshua Tan}
-\author{Philipp Zahn}
+\author/literal{Seth Frey}
+\author/literal{Jules Hedges}
+\author/literal{Joshua Tan}
+\author/literal{Philipp Zahn}
 \meta{bibtex}{\startverb
  @article
 {hedges-etal-institutions, title={Composing games into complex institutions}, url={http://arxiv.org/abs/2108.05318}, DOI={10.48550/arXiv.2108.05318}, abstractNote={Game theory is used by all behavioral sciences, but its development has long centered around tools for relatively simple games and toy systems, such as the economic interpretation of equilibrium outcomes. Our contribution, compositional game theory, permits another approach of equally general appeal: the high-level design of large games for expressing complex architectures and representing real-world institutions faithfully. Compositional game theory, grounded in the mathematics underlying programming languages, and introduced here as a general computational framework, increases the parsimony of game representations with abstraction and modularity, accelerates search and design, and helps theorists across disciplines express real-world institutional complexity in well-defined ways. Relative to existing approaches in game theory, compositional game theory is especially promising for solving game systems with long-range dependencies, for comparing large numbers of structurally related games, and for nesting games into the larger logical or strategic flows typical of real world policy or institutional systems.}, note={arXiv:2108.05318 [cs]}, number={arXiv:2108.05318}, publisher={arXiv}, author={Frey, Seth and Hedges, Jules and Tan, Joshua and Zahn, Philipp}, year={2023}, month={Mar} }

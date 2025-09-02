@@ -2,8 +2,8 @@
 \date{2023-12}
 \taxon{reference}
 \meta{doi}{10.1017/etds.2023.6}
-\author{Sean Moss}
-\author{Paolo Perrone}
+\author/literal{Sean Moss}
+\author/literal{Paolo Perrone}
 \meta{bibtex}{\startverb
  @article
 {moss-perrone-ergodic, title={A category-theoretic proof of the ergodic decomposition theorem}, volume={43}, ISSN={0143-3857, 1469-4417}, DOI={10.1017/etds.2023.6}, number={12}, journal={Ergodic Theory and Dynamical Systems}, author={Moss, Sean and Perrone, Paolo}, year={2023}, month={12}, pages={4166-4192},language={en} }

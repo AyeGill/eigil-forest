@@ -2,7 +2,7 @@
 \date{2024-10-02}
 \taxon{reference}
 \meta{external}{https://topos.institute/blog/2024-10-02-introducing-catcolab/}
-\author{Kevin Carlson}
+\author/literal{Kevin Carlson}
 \meta{bibtex}{\startverb
  @misc
 {catcolab-introducing, title={Introducing CatColab}, url={https://topos.institute/blog/2024-10-02-introducing-catcolab/},  journal={Topos Institute}, author={Carlson, Kevin}, year={2024}, month={Oct},language={en} }

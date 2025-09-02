@@ -1,8 +1,8 @@
 \title{Theory of games and economic behavior}
 \date{2007}
 \taxon{reference}
-\author{John Von Neumann}
-\author{Oskar Morgenstern}
+\author/literal{John Von Neumann}
+\author/literal{Oskar Morgenstern}
 \meta{bibtex}{\startverb
  @book
 {neumann-morgenstern-games, address={Princeton, NJ}, edition={60. anniversary ed., 4. print., and 1. paperb. print}, series={A Princeton classic edition}, title={Theory of games and economic behavior}, ISBN={978-0-691-13061-3}, publisher={Princeton University Press}, author={Von Neumann, John and Morgenstern, Oskar}, year={2007}, collection={A Princeton classic edition},language={eng} }

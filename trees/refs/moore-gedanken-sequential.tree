@@ -2,7 +2,7 @@
 \date{2016-03-02}
 \taxon{reference}
 \meta{external}{https://www.degruyterbrill.com/document/doi/10.1515/9781400882618-006/html?lang=en&srsltid=AfmBOoqX07OFJrYLj9OyvJTsJuBDrzZAuMA48cgLudz52gq3y5SZxNAh}
-\author{Edward F. Moore}
+\author/literal{Edward F. Moore}
 \meta{bibtex}{\startverb
  @inbook
 {moore-gedanken-sequential, title={Gedanken-Experiments on Sequential Machines}, ISBN={978-1-4008-8261-8}, publisher={Princeton University Press}, author={Moore, Edward F.}, year={1956}, month={Mar}, pages={129–154},language={en} }

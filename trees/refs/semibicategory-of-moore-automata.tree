@@ -3,11 +3,11 @@
 \taxon{reference}
 \meta{doi}{10.48550/arXiv.2305.00272}
 \meta{external}{http://arxiv.org/abs/2305.00272}
-\author{Guido Boccali}
-\author{Bojana Femić}
-\author{Andrea Laretto}
-\author{Fosco Loregian}
-\author{Stefano Luneia}
+\author/literal{Guido Boccali}
+\author/literal{Bojana Femić}
+\author/literal{Andrea Laretto}
+\author/literal{Fosco Loregian}
+\author/literal{Stefano Luneia}
 \meta{bibtex}{\startverb
  @article
 {semibicategory-of-moore-automata, title={The semibicategory of Moore automata}, url={http://arxiv.org/abs/2305.00272}, DOI={10.48550/arXiv.2305.00272}, note={arXiv:2305.00272 [math]}, number={arXiv:2305.00272}, publisher={arXiv}, author={Boccali, Guido and Femić, Bojana and Laretto, Andrea and Loregian, Fosco and Luneia, Stefano}, year={2023}, month={Apr} }

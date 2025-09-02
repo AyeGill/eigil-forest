@@ -2,7 +2,7 @@
 \date{1997-12}
 \taxon{reference}
 \meta{doi}{10.1017/S0960129597002296}
-\author{Duško Pavlović}
+\author/literal{Duško Pavlović}
 \meta{bibtex}{\startverb
  @article
 {pavlovic-categorical-names, title={Categorical logic of names and abstraction in action calculi}, volume={7}, rights={https://www.cambridge.org/core/terms}, ISSN={0960-1295, 1469-8072}, DOI={10.1017/S0960129597002296}, number={6}, journal={Mathematical Structures in Computer Science}, author={Pavlović, Duško}, year={1997}, month={Dec}, pages={619–637},language={en} }

@@ -1,6 +1,6 @@
 \title{Categorical Systems Theory}
 \taxon{reference}
-\author{David Jaz Myers}
+\author/literal{David Jaz Myers}
 \meta{bibtex}{\startverb
  @misc
 {myers-cst, title={Categorical Systems Theory}, author={Myers, David Jaz},language={en} , url={http://davidjaz.com/Papers/DynamicalBook.pdf}}

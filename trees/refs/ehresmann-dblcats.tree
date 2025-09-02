@@ -1,7 +1,7 @@
 \title{Categories structures}
 \date{1963}
 \taxon{reference}
-\author{Charles Ehresmann}
+\author/literal{Charles Ehresmann}
 \meta{bibtex}{\startverb
  @article
 {ehresmann-dblcats, title={Categories structures}, volume={80}, ISSN={0012-9593}, number={4}, journal={Annales scientifiques de l'Ecole Normale Superieure}, publisher={Elsevier}, author={Ehresmann, Charles}, year={1963}, pages={349-426},language={fra} }

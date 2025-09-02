@@ -2,7 +2,7 @@
 \date{1955}
 \taxon{reference}
 \meta{doi}{10.2307/1884852}
-\author{Herbert A. Simon}
+\author/literal{Herbert A. Simon}
 \meta{bibtex}{\startverb
  @article
 {simon-rational-choice, title={A Behavioral Model of Rational Choice}, volume={69}, ISSN={0033-5533}, DOI={10.2307/1884852}, abstractNote={Introduction, 99.--I. Some general features of rational choice, 100.--II. The essential simplifications, 103.--III. Existence and uniqueness of solutions, 111.--IV. Further comments on dynamics, 113.--V. Conclusion, 114.--Appendix, 115.}, number={1}, journal={The Quarterly Journal of Economics}, publisher={Oxford University Press}, author={Simon, Herbert A.}, year={1955}, pages={99-118} }

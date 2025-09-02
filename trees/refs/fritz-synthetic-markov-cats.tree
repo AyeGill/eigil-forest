@@ -2,7 +2,7 @@
 \date{2020-08}
 \taxon{reference}
 \meta{doi}{10.1016/j.aim.2020.107239}
-\author{Tobias Fritz}
+\author/literal{Tobias Fritz}
 \meta{bibtex}{\startverb
  @article
 {fritz-synthetic-markov-cats, title={A synthetic approach to Markov kernels, conditional independence and theorems on sufficient statistics}, volume={370}, ISSN={00018708}, DOI={10.1016/j.aim.2020.107239}, abstractNote={We develop Markov categories as a framework for synthetic probability and statistics, following work of Golubtsov as well as Cho and Jacobs. This means that we treat the following concepts in purely abstract categorical terms: conditioning and disintegration; various versions of conditional independence and its standard properties; conditional products; almost surely; suï¬ƒcient statistics; as well as versions of theorems on suï¬ƒcient statistics due to Fisher-Neyman, Basu, and Bahadur. Besides the conceptual clarity oï¬€ered by our categorical setup, its main advantage is that it provides a uniform treatment of various types of probability theory, including discrete probability theory, measure-theoretic probability with general measurable spaces, Gaussian probability, Markov processes of either of these kinds, and many others.}, note={arXiv: 1908.07021}, journal={Advances in Mathematics}, author={Fritz, Tobias}, year={2020}, month={Aug}, pages={107239},language={en} }

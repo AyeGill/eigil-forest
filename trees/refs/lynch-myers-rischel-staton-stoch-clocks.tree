@@ -1,9 +1,9 @@
 \title{Clock systems for stochastic and non-deterministic categorical systems theories}
 \taxon{reference}
-\author{Owen Lynch}
-\author{Eigil Fjeldgren Rischel}
-\author{David Jaz Myers}
-\author{Sam Staton}
+\author/literal{Owen Lynch}
+\author/literal{Eigil Fjeldgren Rischel}
+\author/literal{David Jaz Myers}
+\author/literal{Sam Staton}
 \meta{bibtex}{\startverb
  @unpublished
 {lynch-myers-rischel-staton-stoch-clocks, title={Clock systems for stochastic and non-deterministic categorical systems theories}, year={2025}, author={Lynch, Owen and Myers, David Jaz and Rischel, Eigil Fjeldgren and Staton, Sam}, note={Applied Category Theory 2025}, }

@@ -1,8 +1,8 @@
 \title{Monoidal Grothendieck Construction}
 \date{2020-07-22}
 \taxon{reference}
-\author{Joe Moeller}
-\author{Christina Vasilakopoulou}
+\author/literal{Joe Moeller}
+\author/literal{Christina Vasilakopoulou}
 \meta{bibtex}{\startverb
  @article
 {moeller-vasilakopoulou, title={Monoidal Grothendieck Construction}, volume={35}, number={31}, journal={Theory and Applications of Categories}, author={Moeller, Joe and Vasilakopoulou, Christina}, year={2020}, month={Jul}, pages={1159-1207},language={en} }

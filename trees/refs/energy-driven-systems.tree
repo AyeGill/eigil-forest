@@ -3,9 +3,9 @@
 \taxon{reference}
 \meta{doi}{10.48550/arXiv.2404.16140}
 \meta{external}{http://arxiv.org/abs/2404.16140}
-\author{Matteo Capucci}
-\author{Owen Lynch}
-\author{David I. Spivak}
+\author/literal{Matteo Capucci}
+\author/literal{Owen Lynch}
+\author/literal{David I. Spivak}
 \meta{bibtex}{\startverb
  @article
 {energy-driven-systems, title={Organizing Physics with Open Energy-Driven Systems}, url={http://arxiv.org/abs/2404.16140}, DOI={10.48550/arXiv.2404.16140}, abstractNote={Organizing physics has been a long-standing preoccupation of applied category theory, going back at least to Lawvere. We contribute to this research thread by noticing that Hamiltonian mechanics and gradient descent depend crucially on a consistent choice of transformation -- which we call a reaction structure -- from the cotangent bundle to the tangent bundle. We then construct a compositional theory of reaction structures. Reaction-based systems offer a different perspective on composition in physics than port-Hamiltonian systems or open classical mechanics, in that reaction-based composition does not create any new constraints that must be solved for algebraically. The technical contributions of this paper are the development of symmetric monoidal categories of open energy-driven systems and open differential equations, and a functor between them, functioning as a â€œfunctorial semanticsâ€ for reaction structures. This approach echoes what has previously been done for open games and open gradient-based learners, and in fact subsumes the latter. We then illustrate our theory by constructing an $n$-fold pendulum as a composite of $n$-many pendula.}, note={arXiv:2404.16140 [math]}, number={arXiv:2404.16140}, publisher={arXiv}, author={Capucci, Matteo and Lynch, Owen and Spivak, David I.}, year={2024}, month={Apr} }

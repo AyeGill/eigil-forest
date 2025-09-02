@@ -2,7 +2,7 @@
 \date{2009-01-09}
 \taxon{reference}
 \meta{external}{http://arxiv.org/abs/0706.1286}
-\author{Michael A. Shulman}
+\author/literal{Michael A. Shulman}
 \meta{bibtex}{\startverb
  @article
 {shulman-monfibs, title={Framed bicategories and monoidal fibrations}, url={http://arxiv.org/abs/0706.1286}, note={arXiv: 0706.1286}, journal={arXiv:0706.1286 [math]}, author={Shulman, Michael A.}, year={2009}, month={Jan},language={en} }

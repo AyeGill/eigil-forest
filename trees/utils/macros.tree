@@ -460,9 +460,9 @@
 
 % Figures
 
-\def\quiver[body]{
+\def\quiver[~body]{
   \figure{
-  \tex{\usepackage{quiver, amsopn, amssymb, mathrsfs}}{\body}
+  \tex{\usepackage{quiver, amsopn, amssymb, mathrsfs}}{\body{}}
   }
 }
 

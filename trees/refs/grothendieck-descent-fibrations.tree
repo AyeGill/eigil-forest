@@ -2,7 +2,7 @@
 \date{1960}
 \taxon{reference}
 \meta{external}{https://www.numdam.org/item/SB_1958-1960__5__299_0/}
-\author{Alexander Grothendieck}
+\author/literal{Alexander Grothendieck}
 \meta{bibtex}{\startverb
  @inbook
 {grothendieck-descent-fibrations, series={Bourbaki Seminar}, title={Descent technique and existence theorems in algebraic geometry. I. Generalities. Descent by faithfully flat morphisms}, url={https://www.numdam.org/item/SB_1958-1960__5__299_0/}, booktitle={Bourbaki Seminar: Years 1958/59 - 1959/60, Presentations 169-204}, publisher={French Mathematical Society}, author={Grothendieck, Alexander}, year={1960}, pages={299-327}, collection={Bourbaki Seminar},language={fr} }

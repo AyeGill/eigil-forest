@@ -3,11 +3,11 @@
 \taxon{reference}
 \meta{doi}{10.48550/arXiv.2503.21576}
 \meta{external}{http://arxiv.org/abs/2503.21576}
-\author{Tobias Fritz}
-\author{Tomas Gonda}
-\author{Antonio Lorenzin}
-\author{Paolo Perrone}
-\author{Areeb Shah Mohammed}
+\author/literal{Tobias Fritz}
+\author/literal{Tomas Gonda}
+\author/literal{Antonio Lorenzin}
+\author/literal{Paolo Perrone}
+\author/literal{Areeb Shah Mohammed}
 \meta{bibtex}{\startverb
  @article
 {law-large-nums-fritz-etal, title={Empirical Measures and Strong Laws of Large Numbers in Categorical Probability}, url={http://arxiv.org/abs/2503.21576}, DOI={10.48550/arXiv.2503.21576}, note={arXiv:2503.21576 [math]}, number={arXiv:2503.21576}, publisher={arXiv}, author={Fritz, Tobias and Gonda, Tomas and Lorenzin, Antonio and Perrone, Paolo and Mohammed, Areeb Shah}, year={2025}, month={Mar} }

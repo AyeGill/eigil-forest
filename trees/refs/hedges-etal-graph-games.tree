@@ -2,9 +2,9 @@
 \date{2021}
 \taxon{reference}
 \meta{doi}{10.4230/LIPIcs.CSL.2021.30}
-\author{Elena Di Lavore}
-\author{Jules Hedges}
-\author{Pawel Sobocinski}
+\author/literal{Elena Di Lavore}
+\author/literal{Jules Hedges}
+\author/literal{Pawel Sobocinski}
 \meta{bibtex}{\startverb
  @article
 {hedges-etal-graph-games, title={Compositional modelling of network games}, volume={183}, ISSN={1868-8969}, DOI={10.4230/LIPIcs.CSL.2021.30}, abstractNote={The analysis of games played on graph-like structures is of increasing importance due to the prevalence of social networks, both virtual and physical, in our daily life. As well as being relevant in computer science, mathematical analysis and computer simulations of such distributed games are vital methodologies in economics, politics and epidemiology, amongst other fields. Our contribution is to give compositional semantics of a family of such games as a well-behaved mapping, a strict monoidal functor, from a category of open graphs (syntax) to a category of open games (semantics). As well as introducing the theoretical framework, we identify some applications of compositionality.}, note={arXiv:2006.03493 [cs]}, journal={LIPIcs, Volume 183, CSL 2021}, author={Lavore, Elena Di and Hedges, Jules and Sobocinski, Pawel}, year={2021}, pages={30:1-30:24} }

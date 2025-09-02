@@ -1,9 +1,9 @@
 \title{A Compositional Framework for First-Order Optimization}
-\author{Tyler Hanks}
-\author{Matthew Klawonn}
-\author{evan-patterson}
-\author{Matthew Hale}
-\author{james-fairbanks}
+\author/literal{Tyler Hanks}
+\author/literal{Matthew Klawonn}
+\author/literal{evan-patterson}
+\author/literal{Matthew Hale}
+\author/literal{james-fairbanks}
 \meta{doi}{10.48550/arXiv.2403.05711}
 \meta{bibtex}{\startverb
 @misc{hanks-etal-convex-2024,
