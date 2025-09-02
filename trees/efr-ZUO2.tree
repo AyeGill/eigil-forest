@@ -1,0 +1,18 @@
+\date{2025-09-01}
+\author{eigil-rischel}
+\import{macros}
+\title{Sketch: Categorical Teleology}
+\tag{blogpost}
+\p{
+  Here is an idea which I first learned from Mirco Giacobbe: suppose we have some "open systems" of some sort. Maybe they're dynamical systems that can communicate along some boundary, call them #{X,Y}. If their interfaces are compatible - or more generally, if there is a chosen wiring diagram matching their interfaces - we can compose them. Let's write that schematically as #{X \star Y}.
+}
+\p{
+  Then suppose we have two "specs" #{A,B}, that is some sort of specification of the behaviour of a dynamical system, maybe something like "never output an element of the set #{U}" or "until you receive the input #{p}, always output an element of #{V}". Whatever. We can define a composition operation on specs, which is an "optimistic" composite, a bit like the composition of relations, where a the behaviours allowed under #{A \star B} are the ones that are possible for systems that are built up of two subsystems which follow #{A} and #{B}. So if #{A} says "do not output #{p} until time #{t}" and #{B} says "do not output {q} until you receive input #{p}", then #{A \star B} requires that you don't output #{q} until time #{t}.
+}
+\p{
+  Write #{X \leq A} for the spec-satisfaction relation. Note that every system can be regarded as a spec which demands the exact behaviour of that system. Then we have the following implication:
+  ##{X \star B \leq A \star B \wedge A \star Y \leq A \star B \Rightarrow X \star Y \leq A \star B}
+}
+\p{
+  That is, if #{X} satisfies spec #{A} \em{assuming} it's wired together with a system satisfying #{B}, and #{Y} satisfies spec #{B} \em{assuming} it's wired together with a system satisfying #{A}, then their composite system satisfies the composite spec.
+}
