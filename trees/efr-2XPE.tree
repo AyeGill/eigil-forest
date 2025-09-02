@@ -8,7 +8,7 @@
 \proof{
   \p{
     Given #{f: M \to X} and a stochastic section #{\alpha}, it's clear that composition with the unique lift #{\bar{X} \to f^*\bar{X}} is a map of the right type, so we just have to verify the equations.
-    For the first equation (item 3 in the definition of stochastic module), we are comparing two maps #{F(g^*\bar{X}) \to F(b^*\bar{X})}. These are given by composition with two maps, let's call them #{\\phi, \psi: g^*\bar{X} \to b^*\bar{X}}. These two maps are lifts of #{f\alpha} and #{\beta g}, but by assumption these two are equal. Hence by the uniqueness property of Markov prefibrations, #{\hpi = \psi}, and we have our equation. The other equation follows in a completely analogous way.
+    For the first equation (item 3 in the definition of stochastic module), we are comparing two maps #{F(g^*\bar{X}) \to F(b^*\bar{X})}. These are given by composition with two maps, let's call them #{\\phi, \psi: g^*\bar{X} \to b^*\bar{X}}. These two maps are lifts of #{f\alpha} and #{\beta g}, but by assumption these two are equal. Hence by the uniqueness property of Markov prefibrations, #{\phi = \psi}, and we have our equation. The other equation follows in a completely analogous way.
   }
   \p{
 

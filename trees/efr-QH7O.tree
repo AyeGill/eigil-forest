@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{example}
 \p{
-  Let #{\Ab - \Cat} be the 2-category of #{\Ab}-enriched categories, functors and natural transformations. Recall that a ring #{R} is the same as a one-object category enriched in #{\Ab}, and it admits a monoidal structure if and only if it is commutative (this is not particular to #{\Ab}-enriched categories). An enriched #{R}-action on an #{\Ab}-category #{\cC} is then an #{R}-module structure on each hom-set so that composition is #{R}-linear in each variable.
+  Let #{\operatorname{\Ab - \Cat}} be the 2-category of #{\Ab}-enriched categories, functors and natural transformations. Recall that a ring #{R} is the same as a one-object category enriched in #{\Ab}, and it admits a monoidal structure if and only if it is commutative (this is not particular to #{\Ab}-enriched categories). An enriched #{R}-action on an #{\Ab}-category #{\cC} is then an #{R}-module structure on each hom-set so that composition is #{R}-linear in each variable.
 }

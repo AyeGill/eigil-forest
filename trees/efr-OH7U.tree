@@ -41,7 +41,7 @@
   \quiver{
     \begin{tikzcd}
     N \ar[r] \ar[d] & W \ar[d]\\
-    Y \ar[r] \ar[u, curve left, "\alpha"] & Z \ar[u, curve left, "\beta"]
+    Y \ar[r] \ar[u, bend left, "\alpha"] & Z \ar[u, bend left, "\beta"]
     \end{tikzcd}
   }
 
