@@ -1,7 +1,7 @@
 \date{2025-04-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Stochastic charts and lenses}
 \p{
   We refer to #{\SChart(\cD_0)} as the category of \em{stochastic charts} in #{\cD_0}. We refer to #{\SChart(\cD_0^\fop)} as \em{stochastic lenses} and denote it also #{\SLens(\cD_0)}

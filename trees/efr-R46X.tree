@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Strategic Equivalence}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cD} be a monoidal stochastic module fibration over a Markov category #{\cC}, and consider a 2-cell #{\alpha: G_1 \to G_2: \bar{X} \to \bar{Y} \in \widetilde{\Game}(\SLens(\cD))}. 
 }

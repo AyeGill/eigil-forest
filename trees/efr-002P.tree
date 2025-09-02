@@ -1,7 +1,7 @@
 \date{2024-07-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \title{Logic for control}
 \p{
   Let an MDP (or partially observable MDP) be given, and consider a statement like "given policy #{\pi}, the expected reward is #{\geq r}", or "the probability that the total reward is less than #{r} is #{\leq \epsilon}", and so on. In one sense, these are statements about policies---but, fixing a policy, they become statements about the states of the MDP (meaning: if the problem is initialized in state \em{s_0}, and we use policy #{\pi}, ...). In particular, they are statements about the \em{behaviour} of the state of the MDP, and so should be expressible using the modal logic.

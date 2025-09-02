@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\cT} be a 2-limit sketch.
   Then the functor #{\Mod(\cT,\CC) \to [\CC^\op,\Mod(\cT)]} given by #{A \in \Mod(\cT,\CC) \mapsto (C \mapsto (S \in \cT \mapsto \CC(C,A(S))))} is fully faithful, and its essential image consists of those functors #{F} so that each #{F(-)(S) : \CC^\op \to \Cat, S \in \cT} is representable,

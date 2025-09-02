@@ -1,7 +1,7 @@
 \date{2025-03-21}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \ol{
     \li{
         An internal pseudocategory in #{\Cat} is, as mentioned above, a pseudo double category.

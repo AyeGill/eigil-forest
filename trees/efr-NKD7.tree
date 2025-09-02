@@ -1,7 +1,7 @@
 \date{2025-04-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{Diagram Markov Categories}
 \p{
   If #{\cC} is a Markov category and #{I} is any ordinary category, there is a Markov category #{\Fun(I,\cC)} whose objects are functors #{I \to \cC_\det,} and whose morphisms are natural transformations between these considered as functors into #{\cC} (i.e natural transformations with stochastic components). The monoidal and Markov structure is defined simply component-wise.

@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cM} be a monoidal category acting on #{\cC}.
   Then #{\dblPara_\cM(\cC)} is a pseudo double category where

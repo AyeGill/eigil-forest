@@ -1,7 +1,7 @@
 \date{2025-06-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X_t} be a stochastic process in #{\RR} and suppose #{\EE[X_s \mid \cF_t]} is a continuous function of #{s} for all #{t}. 
   Then #{X_t} is a martingale if and only if #{D^\EE X_t = 0} for all #{t}. 

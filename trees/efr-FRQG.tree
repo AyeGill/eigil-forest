@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{corollary}
+\taxon{Corollary}
 \p{
   Let #{\cD_0 \to \cC_0} be a functor and let #{\cC_0 \to \cC} be identity-on-objects and faithful.
   Then the pullback of the composite #{\cD_0 \to \cC} and the inclusion #{\cC_0 \to \cC} is identical to #{\cD_0}.

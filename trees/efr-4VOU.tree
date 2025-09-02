@@ -1,7 +1,7 @@
 \date{2025-04-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \title{A note on terminology}
 \p{
   When we speak of a \em{stochastic} map in a Markov category, we always mean a map which is \em{not necessarily deterministic}---that is, a general map of #{\cC}.

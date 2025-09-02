@@ -1,7 +1,7 @@
 \date{2025-05-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Premarkov structure}
 \p{
   Let #{\cC} be a symmetric monoidal category. A \em{premarkov structure} on #{\cC} is a wide symmetric monoidal subcategory #{\cC' \subseteq \cC}---that is, a class of morphisms which contains all identities and structural isomorphisms, and is stable under composition and monoidal products---so that the monoidal category #{\cC'} is Cartesian.

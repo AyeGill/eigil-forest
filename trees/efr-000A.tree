@@ -1,7 +1,7 @@
 \date{2024-06-06}
 \author{eigil-rischel}
 \title{Theory of Dynamical Systems}
-\taxon{definition}
+\taxon{Definition}
 \import{macros}
 \p{
   A \em{theory of dynamical systems} is an indexed category #{\cA: \cC^\op \to \Cat} equipped with a section of its Grothendieck construction #{T: \cC \to \int \cA}.

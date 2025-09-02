@@ -430,32 +430,32 @@
 }
 
 \def\proof[body]{
-  \subtree{\taxon{proof} \body}
+  \subtree{\taxon{Proof} \body}
 }
 
 \def\definition[head][body]{
-  \subtree{\title{\head} \taxon{definition} \body}
+  \subtree{\title{\head} \taxon{Definition} \body}
 }
 
 \def\remark[body]{
-  \subtree{\taxon{remark} \body}
+  \subtree{\taxon{Remark} \body}
   % \p{\textbf{Remark}. \body}
 }
 
 \def\predefinition[head][body]{
-  \subtree{\title{\head} \taxon{preliminary definition} \body}
+  \subtree{\title{\head} \taxon{Preliminary definition} \body}
 }
 
 \def\example[head][body]{
-  \subtree{\title{\head} \taxon{example} \body}
+  \subtree{\title{\head} \taxon{Example} \body}
 }
 
 \def\proposition[head][body]{
-  \subtree{\title{\head} \taxon{proposition} \body}
+  \subtree{\title{\head} \taxon{Proposition} \body}
 }
 
 \def\corollary[body]{
-  \subtree{\taxon{corollary} \body}
+  \subtree{\taxon{Corollary} \body}
 }
 
 % Figures

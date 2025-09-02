@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Pullback-positive}
 \p{
   Let #{\cC} be a Markov category. We say #{\cC} is \em{pullback-positive} if #{\cC_\det} admits pullbacks and, given a diagram of this form where #{P \to X} is deterministic, there is a unique map #{P \to X \times_Z Y} making the squares commute.

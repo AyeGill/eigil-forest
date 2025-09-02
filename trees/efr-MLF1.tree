@@ -1,7 +1,7 @@
 \date{2025-05-05}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   As defined above, #{\oplus} is a symmetric monoidal structure on #{\widetilde{\Game}(\SLens(\cD))}.
 }

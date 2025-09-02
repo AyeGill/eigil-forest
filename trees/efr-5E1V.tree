@@ -1,7 +1,7 @@
 \date{2025-05-05}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Consider the selection relation #{\argmax_X \boxtimes \argmax_Y} on #{\arena{\RR \times \RR}{X \times Y}}. A point #{(x,y)} is an equilibrium for a function #{k: X \times Y \to \RR^2} if and only if #{x} maximizes #{k_1(-,y)} and #{y} maximizes #{k_2(x,-)}. In other words, if #{x,y} is a Nash equilibrium (\ref{nash-noncoop-games}) in the usual sense for the game with payoff matrix #{k}.
 }

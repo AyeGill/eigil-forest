@@ -1,7 +1,7 @@
 \date{2025-06-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{The Martingale Problem}
 \p{
   Let #{X} be any measurable space, and let #{A} be a linear operator on the space #{L^\infty(X)} of measurable, bounded functions on #{X}. Let #{x_t = x_t(\omega) \in X} be a stochastic process in #{X}, adapted to a filtration #{\cF_t}. For each #{f \in D(A)}, let #{x^f_t} be the stochastic process given by

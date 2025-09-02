@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cC} be a Markov category. A \em{Markov copresheaf} is a copresheaf #{F: \cC \to \Set} equipped with a lax monoidal structure, so that the map #{* \to F(I)} is an isomorphism.
 }

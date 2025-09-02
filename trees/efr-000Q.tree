@@ -1,7 +1,7 @@
 \date{2024-06-16}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \ol{
   \li{For any #{\cC} with finite products, #{\CMon(\cC)} is preadditive}
   \li{For any preadditive #{\cC}, the forgetful functor #{\CMon(\cC) \to \cC} is an equivalence.}

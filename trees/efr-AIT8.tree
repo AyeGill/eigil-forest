@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{Decorated #{\Para}}
 \p{
   Let #{\cC} be symmetric monoidal, and let #{S: \cC \to \Set} be a symmetric lax monoidal functor. Then the category of elements #{\int_\cC S = \{(X \in \cC, s \in S(X))\}} acquires a symmetric monoidal structure (with the laxator and unitor giving the multiplication on the elements #{s}), so that the obvious forgetful functor #{\int_\cC S \to \cC} is symmetric.

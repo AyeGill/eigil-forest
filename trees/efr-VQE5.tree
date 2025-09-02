@@ -1,7 +1,7 @@
 \date{2025-02-24}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
     Let #{I} be an excellent Reedy category, and let #{\cC} be a quasi-Cisinki model category. Then the functor category #{[I,\cC]} equipped with the Reedy model structure is again quasi-Cisinski.
 }

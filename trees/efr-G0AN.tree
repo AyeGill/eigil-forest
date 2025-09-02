@@ -1,7 +1,7 @@
 \date{2025-04-11}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   The category #{\MarkPreFib(\cC)} admits all products, and pullbacks along isofibrations. These are simply computed as limits in #{\Cat_{/\cC}}
 }

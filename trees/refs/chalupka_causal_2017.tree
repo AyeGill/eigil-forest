@@ -2,7 +2,7 @@
 \title{Causal feature learning: An overview}
 \date{2017-01}
 \author/literal{Krzysztof Chalupka}\author/literal{Frederick Eberhardt}\author/literal{Pietro Perona}
-\taxon{reference}
+\taxon{Reference}
 
 \meta{bibtex}{\startverb
 @article{chalupka_causal_2017,

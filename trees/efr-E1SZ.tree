@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Diffeological Space}
-\taxon{definition}
+\taxon{Definition}
 \p{
   A \em{smooth space} is a sheaf on #{\SmMfd} in the standard topology of open covers.
   A smooth space #{X} is a \em{diffeological space} if, for each #{M \in \SmMfd,} the map #{X(M) \to \prod_{p \in M} X(\{p\}) is injective.}

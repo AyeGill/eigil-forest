@@ -1,7 +1,7 @@
 \date{2024-06-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   A globular lens reparametrization is the same thing as a globular chart reparametrization.
 }

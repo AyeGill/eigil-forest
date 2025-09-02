@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \ol{
   \li{
     The free prefibration monad on #{\Fib(\cC_\det)} has a canonical lifting to #{\MonFib(\cC_\det)}

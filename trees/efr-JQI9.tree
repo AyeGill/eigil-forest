@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cD} be a Markov prefibration. Then there is a double functor #{\Arena(\cD|_\det) \to \widetilde{\Arena}(\cD),} which acts as identity on the morphisms of #{\cD}, and carries each lens #{(f: X \to Y, \phi: f^*\bar{Y} \to \bar{X})} to the prelens #{(X \leftarrow X \to Y, \phi)}. This double functor is full on 2-cells.
 }

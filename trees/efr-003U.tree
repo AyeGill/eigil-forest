@@ -1,7 +1,7 @@
 \date{2024-07-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{Stochastic dynamical system in classical CST}
 \p{
   Let #{\cC = \Set,} and let #{\cA(X) = \Set_{/X}}, so that arenas are indexed sets, charts are commutative squares and lenses are dependent lenses in the classical sense. Let #{T(S) = S \times \Delta(S) \xto{\pi_0} S}, where #{\Delta(S)} is the set of finite-support distributions on #{S}. Then:

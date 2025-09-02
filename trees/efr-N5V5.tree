@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{T,\cD} be a stochastic dynamical systems theory.
   Then #{T,\cD|_\det} is an ordinary dynamical systems theory.

@@ -1,7 +1,7 @@
 \date{2024-06-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   Consider the category of smooth microlinear spaces #{X} equipped with a map #{X \to A} and a vector field #{X \to TX}.
 }

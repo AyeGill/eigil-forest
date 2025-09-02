@@ -1,7 +1,7 @@
 \date{2025-04-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   Since #{\overline{(-)}} preserves both global products and fiberwise ones, it induces both a fiberwise monoidal structure and a "global" monoidal structure on #{\overline{\cD_0}}. Here we only use the global one. If #{\cC} were Cartesian, the global one would be induced from the local one by, given maps #{\bar{X_1} \to \bar{X_2}, \bar{Y_1} \to \bar{Y_2},} pulling each of them back along the square
   \quiver{

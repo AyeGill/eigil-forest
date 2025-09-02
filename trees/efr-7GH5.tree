@@ -1,7 +1,7 @@
 \date{2025-04-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{F,G: \cC' \rightrightarrows \cC}, #{S: \cC \to \cC'} be a reflexive pair of identity-on-objects, strict monoidal functors.
   Let #{E: \cC \to \cD} be the coequalizer in #{\Cat}. Then #{\cD} inherits a monoidal structure making #{E} strict monoidal.

@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \title{Pseudocategories and categories of categories}
 \p{
   We will want to say that the category of pseudo double categories is the category of internal pseudocategories---modeled as Segal objects---in the bicategory of categories. There are two issues with this statement as written.

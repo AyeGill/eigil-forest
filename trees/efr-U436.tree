@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   The operations #{\alpha^*} associated to stochastic lifts are "functorial" in the sense that #{(\alpha\beta)^* = \beta^*\alpha^*}. However they are \em{not} functorial in the sense that #{\alpha^*(fg) = \alpha^*(f)\alpha^*(g)}
 }

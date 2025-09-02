@@ -1,7 +1,7 @@
 \date{2024-11-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
     Let #{\cC} be a Markov category. Suppose #{\cC} is positive, and has deterministic pullbacks along diagonals.
     Then #{\cC^\to \to \cC} is a Markov fibration.

@@ -1,7 +1,7 @@
 \date{2025-04-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\cC} be a Markov category with good deterministic pullbacks, and let #{X \in \cC}
 }

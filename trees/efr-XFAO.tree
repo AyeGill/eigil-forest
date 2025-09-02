@@ -1,7 +1,7 @@
 \date{2025-03-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Suppose #{\cD} is a Markov fibration so that each pullback functor #{f^*: \cD_Y \to \cD_X} for #{f: X \to Y \in \cC_\det} can be taken to be bijective on objects, and that these can furthermore be chosen strictly functorial (so that #{(fg)^* = g^*f^*}). Then, writing objects #{\bar{X} \in \cD_X} as #{\binom{A \in \cD_*}{X \in \cC},} where #{A} is the unique object in #{\cD_*} which pulls back to #{\bar{X}} under the deletion #{X \to *,} (note that this means #{f^*\binom{A}{Y} = \binom{A}{X}}) we may characterize the fiberwise dual as having hom-sets
   ##{\cD^{\fop}(\binom{A}{X},\binom{B}{Y}) = \cD(\binom{B}{X},\binom{A}{Y})}

@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   Let #{\cM} be a monoidal category, and let #{\cC} be a category with an #{\cM}-action.
 }

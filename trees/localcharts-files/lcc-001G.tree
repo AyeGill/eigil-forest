@@ -1,7 +1,7 @@
 \date{2024-04-22}
 \import{macros}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 \title{Standard form convex optimization problem}
 \p{
     A \em{convex optimization problem in standard form} consists of

@@ -1,7 +1,7 @@
 \date{2024-06-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Lenses and charts}
 \p{
   Let #{\cA: \cC^\op \to \Cat} be an indexed category. A \em{chart} is simply a morphism in the Grothendieck construction #{\int \cA}. A \em{lens} is a morphism in the fiberwise opposite #{\int \cA(-)^\op}.

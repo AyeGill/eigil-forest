@@ -1,6 +1,6 @@
 \date{2024-04-30}
 \author{eigil-rischel}
-\taxon{lemma}
+\taxon{Lemma}
 \import{macros}
 \p{
   Let #{p: \cD \to \cC} be a fibration, and let #{\cC_0 \into \cC} be a coreflexive subcategory (i.e a full subcategory whose inclusion admits a \em{right} adjoint).

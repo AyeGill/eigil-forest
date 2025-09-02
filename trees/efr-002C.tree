@@ -1,7 +1,7 @@
 \date{2024-07-01}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{T: \Set \to \Set} be a functor which preserves weak pullbacks.
   Then the assignment #{\bar{T}(R: A \proto B) = im(T(R)) \subseteq T(A) \times T(B)} defines a functor #{\Rel \to \Rel} (which just acts as #{T} on the objects).

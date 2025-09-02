@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Let #{\MonCat_s} be the 2-category of monoidal categories, \em{strict} monoidal functors and monoidal natural transformations. Note that this has pullbacks.
   Then the objects of #{\PsCat(\MonCat)} are a stricter version of \em{monoidal pseudo double categories}: they are pseudo double categories #{C_1,C_0} where both #{C_1,C_0} carry a monoidal structure so that #{d,c,e,m} are strict monoidal functors and #{\rho,\lambda,\alpha} are monoidal natural transformations.

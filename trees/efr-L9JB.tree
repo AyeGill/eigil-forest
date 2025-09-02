@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Weighted limit}
 \p{
   Let #{\CC} be a 2-category, let #{D: \II \to \CC} be a 2-diagram in it, and let #{W: \II \to \Cat} be another 2-functor.

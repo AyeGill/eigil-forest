@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \ol{
   \li{
     Let #{\bar{X} \in \cD_0} be an object. Then there is a free stochastic module #{T\cD_0(\bar{X},-)} on its representable copresheaf, in the sense that if #{F} is another stochastic module, homomorphisms #{T\cD_0(\bar{X},-) \to F} are in bijection with indexed natural transformations #{\cD_0(\bar{X},-) \to F}

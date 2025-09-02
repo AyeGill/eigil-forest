@@ -1,6 +1,6 @@
 \date{2024-04-30}
 \author{eigil-rischel}
-\taxon{corrollary}
+\taxon{Corrollary}
 \import{macros}
 \p{
   Since #{\Minmax \to \Set^\Delta \times \Set^{\Delta,\op}} is topological, it is both a fibration and an opfibration.

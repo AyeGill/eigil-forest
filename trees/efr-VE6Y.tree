@@ -1,7 +1,7 @@
 \date{2025-07-10}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Banach Algebra}
 \p{
   A \em{Banach algebra} consists of a Banach space #{A} equipped with a multiplication #{\cdot: A \times A \to A} which is bilinear and satisfies #{\norm{a\cdot b} \leq \norm{a}\norm{b}}. It is called commutative and/or unital if it is such as an algebra.

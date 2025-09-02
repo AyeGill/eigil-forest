@@ -1,7 +1,7 @@
 \date{2024-06-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Dynamical system with interface #{A}}
 \p{Let #{A} be an arena. A \em{dynamical system} with interface #{A} is an object #{S \in \cC} and a lens #{TS \lensto A}. A morphism of systems is a map #{S \to S'} so that this square commutes in #{\Arena}:}
 \p{

@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Fibered Conditionals}
 \p{
   Let #{p: \cD \to \cC} be a [Markov fibration](efr-0019). We say it is \em{stochastically complete} if, given a Cartesian morphism in the fibration #{f: X \to Y \in \cD \times_\cC \cC_\det}, and a deterministic morphism #{g: Z \to Y \in \cD_\det} (recall that #{\cD_\det} is still fibred over #{\cC_\det}), there is a bijection between the set of morphisms #{h: p(Z) \to p(X) \in \cC} so that the triangle

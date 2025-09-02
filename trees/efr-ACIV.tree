@@ -1,7 +1,7 @@
 \date{2025-04-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   We will sometimes refer to the morphisms of #{\overline{\cD_0}} as \em{precharts}. Taking the fibration #{\MAr{\cC}|_\det \to \cC_\det} as an example, it is not too hard to see that the precharts between #{X \otimes A \to X} and #{B \otimes Y \to Y} are representatives of co-optics #{\arena{A}{X} \charto \arena{B}{Y}}. (To see this, note that any prechart is equivalent to one where the apex of the span has the form #{M \otimes Y} and the right leg is the projection to #{Y}. Then the rest of the data is a map #{X \to M \otimes Y} and a map #{M \otimes B \to A}, since the #{X}-coordiante of the latter map is determined by the span).
   

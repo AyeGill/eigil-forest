@@ -1,6 +1,6 @@
 \date{2024-03-26}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 \import{macros}
 \def\det{\mathrm{det}}
 \def\Prob{\cat{Prob}}

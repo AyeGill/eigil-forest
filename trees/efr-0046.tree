@@ -1,7 +1,7 @@
 \date{2024-11-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
     Let #{\cC} be a Markov category.
     Then #{\cC} is positive if and only if, given #{f: A \to X} deterministic and #{g: A \to Y} (not necessarily deterministic), there is a unique #{h: A \to X \otimes Y} so that the marginals equal #{f,g}.

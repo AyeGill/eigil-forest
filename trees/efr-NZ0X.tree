@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\CC} be a 2-category and let #{C,D : \cT_\PsCat \to \CC} be pseudocategories, represented as models of the theory.
   Then a pseudonatural transformation #{F: C \to D} which is strict on #{c,d,e} and the limit projections #{\pi^i_j} is equivalently a pseudomorphism between the pseudocategories.

@@ -1,7 +1,7 @@
 \date{2025-06-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Double Category}
 \p{
   A (strict) \em{double category} is a category internal to the category #{\Cat} of categories.

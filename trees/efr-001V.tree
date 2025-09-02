@@ -1,7 +1,7 @@
 \date{2024-06-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\alpha: TS \lensto A} be a system with interface #{A}, and let #{P} be another arena.
   A \em{#{P}-valued predicate} on #{\alpha} is a lift

@@ -1,7 +1,7 @@
 \date{2024-07-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{p: \cD \to \cC} be a homomorphism of bicategories. We say #{p} is
   \ol{

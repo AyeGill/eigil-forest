@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{#{\MAr{\Stoch}} as Markov prefibration}
 \p{
   Recall that the deterministic maps in #{\Stoch} are those kernels valued in #{\{0,1\}}-valued measures. (And that these are \em{not} the same thing as the measurable maps).

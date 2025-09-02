@@ -1,7 +1,7 @@
 \date{2025-06-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   There is a pseudo double category #{\dblCat} where the objects are categories, the vertical maps are functors, the horizontal maps are \em{profunctors} (functors #{\cC \times \cD^\op \to \Set,} sometimes called bimodules), and the squares are natural transformations.
 }

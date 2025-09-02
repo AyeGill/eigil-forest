@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{corollary}
+\taxon{Corollary}
 \p{
   Let #{\cD} be a stochastic module over #{\cC}. There is a double category #{\widetilde{\Span}(\cD)^\chart} which has decorated spans as its horizontal maps, morphisms in #{\cD|_\det} as its vertical maps, and decorated span 2-cells as its 2-cells.
 }

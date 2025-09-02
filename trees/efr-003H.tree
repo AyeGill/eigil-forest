@@ -1,7 +1,7 @@
 \date{2024-07-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\cC \to \cD} be a strict Buckley fibration.
   Then the map of simplicial bicategories #{\cC^{[n]} \to \cD^{[n]}} is a Reedy fibration (with respect to the Lack model structure on bicategories)

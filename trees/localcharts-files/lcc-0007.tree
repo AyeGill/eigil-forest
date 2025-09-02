@@ -4,7 +4,7 @@
 \def\FibOptic{#{\mathsf{FibOptic}}}
 \import{macros}
 \def\Optic{#{\mathsf{Optic}}}
-\taxon{theorem}
+\taxon{Theorem}
 
 \def\det{#{\mathrm{det}}}
 \def\Bun{#{\mathsf{Bun}}}

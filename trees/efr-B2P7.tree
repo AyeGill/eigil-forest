@@ -1,7 +1,7 @@
 \date{2025-04-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   A Markov category is said to be an \em{extensive Markov category} if it admits finite coproducts, whose injections are deterministic, and which satisfy the following equivalent conditions:
 }

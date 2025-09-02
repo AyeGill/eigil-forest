@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{Monoidal and symmetric monoidal actegories}
 \p{
   In \ref{actegories-amthematician-capucci-gavranovic}, the authors study actegories with extra monoidal structure. Although they do not introduce pseudomonoid actions in a general 2-category, they study actegories internal to monoidal categories, which they call \em{monoidal actegories.} It is straightforward to check that pseudomonoid actions in #{\MonCat} agree with their notion: such an action consists of a braided monoidal category #{\cM}, an ordinary monoidal category #{\cC}, a monoidal functor #{\cM \times \cC \to \cC,} and monoidal natural transformations #{\mu,\eta} satisfying the coherence equations for an actegory.

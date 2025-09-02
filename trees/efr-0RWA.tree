@@ -1,7 +1,7 @@
 \date{2025-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X_t} be a stochastic process and let #{\psi: X \to \RR} be a function.
   Supposing the right stochastic derivatives are defined, we have for #{t \leq u}

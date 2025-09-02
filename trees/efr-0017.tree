@@ -1,7 +1,7 @@
 \date{2024-06-24}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a category with finite limits.
   The internal nerve functor #{\Cat(\cC) \to \Simp\cC} is fully faithful, and the essential image consists exactly of those simplicial objects #{X} where the maps #{p_i: X[n] \to X[1]} given by evaluating at #{p^i: [1] \to [n] : k \mapsto k+i}, #{i = 0,\dots n-1} exhibits #{X[n]} as the iterated pullback #{X[1] \times_{X[0]} \dots \times_{X[0]} X[1]}

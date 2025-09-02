@@ -1,7 +1,7 @@
 \date{2025-02-22}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a 2-category equipped with Lack's trivial model structure.
   Then a map #{f:X \to Y} is a cofibration if and only if it satisfies any of the following equivalent conditions:

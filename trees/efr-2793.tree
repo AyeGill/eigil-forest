@@ -1,7 +1,7 @@
 \date{2025-05-07}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   The functor #{\arena{A}{X} \mapsto X}, #{\Lens(\cC) \to \cC}, is a fibration. The fiber #{\Lens(\cC)_X} has the following description:
   \ol{

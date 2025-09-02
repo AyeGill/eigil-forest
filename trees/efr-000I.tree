@@ -1,7 +1,7 @@
 \date{2024-06-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{#{\Ctrl}}
 \p{
   Let #{\cC, \cA(-), T} be a dynamical systems theory, let #{\Arena} be the associated category of arenas. Recall that #{\Arena_0} is the category of \em{lenses}.

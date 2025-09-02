@@ -1,7 +1,7 @@
 \date{2025-04-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   When #{\cC, \cD} as above, #{\widetilde{\Game}(\SLens(\cD))} acquires a monoidal structure which we call \em{external choice,} and write #{\oplus}, given on objects by the coproduct #{+} in #{\SLens(\cD),}
   and on morphisms by the following formula:

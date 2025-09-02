@@ -1,7 +1,7 @@
 \date{2024-07-21}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{C[-]} be a Reedy fibrant weak Segal category. Let #{s: C[1] \times_{C[0]} C[1] \to C[2]} be a section of the canonical map.
   In the following diagram, choose a section #{s'} so that the diagram commutes (that is, using #{s'} and then projecting to either of the two sub-pullbacks is the same as using #{s} on one of the components). Note that this is possible because the pullback   

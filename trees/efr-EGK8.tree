@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cC} be a monoidal category. A \em{selection relation} on an object #{A \in \cC} is a relation #{\epsilon \subseteq \cC(I,A) \times \cC(A,I)}. We write #{\epsilon(a,k)} for the statement #{(a,k) \in \epsilon}.
 }

@@ -1,7 +1,7 @@
 \date{2025-02-22}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Coherent Nerve}
 \p{
   Let #{\cC} be a 2-category with finite 2-limits and 2-colimits.

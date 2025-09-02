@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Locally graded category}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cM} be a monoidal category. Recall that we may equip the presheaf category #{[\cM^\op, \Set]} with the monoidal structure of Day convolution. A \em{locally graded #{\cM}-category} is a category enriched in #{[\cM^\op, \Set]}
 }

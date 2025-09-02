@@ -1,7 +1,7 @@
 \date{2024-06-05}
 \author{eigil-rischel}
 \contributor{amar-hadzihasanovic}
-\taxon{theorem}
+\taxon{Theorem}
 \import{macros}
 \p{
   Let #{x \xto{f} y \xto{g} z}. Recall the definitions of #{\pi_1, \pi_0} of a morphism from \ref{puca-etal-obstructions-2023}, and the definition of #{\pi_1(g,f)}, \ref{lcc-003D}.

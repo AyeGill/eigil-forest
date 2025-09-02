@@ -1,7 +1,7 @@
 \date{2025-04-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Simple chart equations}
 \p{
   Let #{\cD_0} be a stochastic module over #{\cC}. We say #{\cD_0} \em{has simple chart equations} if two chart representatives #{(M,\phi), (M',\phi')} represent the same chart if and only if there exists a diagram

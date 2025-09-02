@@ -1,7 +1,7 @@
 \date{2025-04-05}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{F,G: \cD \rightrightarrows \cD'} be a parallel pair in #{\Cat_{/\cC}}, and suppose both are identity on objects. Suppose moreover this is a reflexive pair, i.e there is some #{S: \cD' \to \cD} so that #{FS = GS = 1_{\cD'}}. Then the coequalizer in #{\Cat_{/\cC}} is again identity on objects, and is given on hom-sets simply by the coequalizer of the parallel pair #{\cD(x,y) \rightrightarrows \cD'(x,y)}
 }

@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proof}
+\taxon{Proof}
 \title{Proof of \ref{efr-LGOA}}
 \p{
   First observe that, by \ref{efr-OH7U}, the pullback #{\bar{\cD_0}\times_\cC \cC_\det \to \cC_\det} is indeed a fibration, with the image of the Cartesian lifts under the functor #{\cD_0 \to \bar{\cD_0}} being Cartesian again. (This also establishes that #{\bar{\cD_0}} really does receive a map of fibrations from #{\cD_0})

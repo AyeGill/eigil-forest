@@ -1,7 +1,7 @@
 \date{2025-04-08}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   If #{\cC} is Cartesian (even if it does not admit pullbacks), the definition of Markov fibration over #{\cC} still makes sense, the Markov fibrations are exactly the Grothendieck fibrations, and their fiberwise opposites are simply their fiberwise opposites in the usual sense.
 }

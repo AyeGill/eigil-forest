@@ -1,7 +1,7 @@
 \date{2025-04-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{p: \cD \to \cC} be a functor. Given #{X \in \cC}, write #{\cD_X} for the (strict) pullback #{\{x\} \times_\cC \cD}. Explicitly, this consists of the objects in #{\cD} with #{p(A) = X} and the morphisms with #{p(f) = 1_X}.
   

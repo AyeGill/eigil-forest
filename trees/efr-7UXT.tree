@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Let #{\cC} be a symmetric monoidal category (for example, a Markov category). Consider the category where objects are pairs #{\arena{A}{X}} equipped with a relation #{R \subseteq \Optic(\cC)(I,\binom{A}{X}) \times \Optic(\cC)(\binom{A}{X},I),} and morphisms are relation-preserving maps---that is, #{f} so that #{R(s, cf) \Leftrightarrow R'(fs, c)}. This category acts on #{\Optic(\cC)} via the forgetful functor. Equip this with a monoidal structure by the \em{Nash product} 
   

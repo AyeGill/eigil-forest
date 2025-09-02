@@ -1,7 +1,7 @@
 \date{2025-04-09}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\Markov_s \subseteq \Markov^\oplax} denote the subcategory of \em{strictly monoidal} Markov functors (i.e those where the oplaxator #{F(X \otimes Y) \to F(X) \otimes F(Y)} is the \em{identity}).
 }

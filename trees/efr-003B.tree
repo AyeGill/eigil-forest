@@ -1,7 +1,7 @@
 \date{2024-07-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   #{C[\partial \Delta^1] = C[0] \times C[0]}, and the inclusion of the boundary in the whole induces a map #{C[\Delta^2] = C[2] \to C[0] \times C[0] = C[\partial \Delta^1],} which is precisely the pairing of the two face maps.
 }

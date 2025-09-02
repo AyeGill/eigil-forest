@@ -1,6 +1,6 @@
 \date{2024-04-22}
 \author{eigil-rischel}
-\taxon{proposition}
+\taxon{Proposition}
 \import{macros}
 \p{
     Let #{\phi: L \to L'} be a [morphism of minmax problems](lcc-001C).

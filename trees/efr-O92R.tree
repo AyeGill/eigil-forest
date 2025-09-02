@@ -1,7 +1,7 @@
 \date{2025-04-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \ol{
   \li{Sliding equivalence implies behavioural equivalence}
   \li{For charts over a deterministic base, sliding equivalence and behavioural equivalence coincide}

@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Iwss triple category}
-\taxon{definition}
+\taxon{Definition}
 \p{
   \todo{Need a good name here!}
   An \defcase{iwss triple category} (isofibrant weak-strict-strict) is a bisimplicial category #{\CC: \Delta^\op \times \Delta^\op \to \Cat} so that for each #{n}, #{\CC[n,-]} is a fibrant \em{strict} Segal category, and #{\CC[-,n]} is a fibrant weak Segal category.

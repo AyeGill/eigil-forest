@@ -1,7 +1,7 @@
 \date{2025-04-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   Note that #{\alpha_*} of course depends on #{f}, not just #{\alpha}.
 }

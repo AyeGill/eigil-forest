@@ -1,7 +1,7 @@
 \date{2025-07-08}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{A} be a commutative Banach #{\epsilon}-algebra, and let #{M,N} be #{A}-modules. In the Banach space #{M \hat{\otimes}_\epsilon N}, consider the set #{I = \{a\cdot m \otimes n - m \otimes a \cdot n \mid a\in A, m\in M, n \in N\}}. Define #{M \hat{\otimes}_A N = (M \hat{\otimes}_\epsilon N)/(\overline{\operatorname{span} I})}.
 }

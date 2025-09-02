@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \def\Tr{#{\operatorname{Tr}}}
-\taxon{example}
+\taxon{Example}
 \p{Let \cC be symmetric monoidal. Consider the monoidal category where
 \ol{
     \li{Objects are lists #{X_n, n\geq 0} of objects from \cC}

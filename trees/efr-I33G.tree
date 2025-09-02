@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Discrete pseudomonoid}
-\taxon{example}
+\taxon{Example}
 \p{
   If #{\CC = \cC} is an ordinary category with finite products (viewed as a discrete 2-category), a pseudomonoid is simply an internal monoid, and an action is just a monoid action in the ordinary sense.
 }

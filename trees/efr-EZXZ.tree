@@ -1,7 +1,7 @@
 \date{2025-06-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\Omega, \cF_t, t \in \RR} be a #{\RR}-filtered measurable space.
   Observe that the bounded, #{\cF}-adapted stochastic processes are closed in #{L^\infty(\RR \times \Omega)}. Denote this subset #{L^\infty(\RR \times \Omega)_\cF}

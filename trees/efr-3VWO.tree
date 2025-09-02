@@ -1,7 +1,7 @@
 \date{2025-06-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\hat{\otimes}_\pi} be the completed projective tensor product of topological vector spaces.
   Equip #{\Pro(\Ban)} with the canonical extension of this monoidal product #{\lim_i A_i \hat{\otimes}_\pi \lim_j B_j := \lim_{i,j} A_i \hat{\otimes}_\pi B_j}.

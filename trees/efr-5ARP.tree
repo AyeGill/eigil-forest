@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   For every locally #{\cM}-graded double category of action type #{\CC}, choosing a representative #{X \to M \cdot X} for each #{(M,X)}, this assignment extends to an action of #{\cM} on #{\CC_v}. With this action there is a bijection between maps #{X\to Y} over #{M}, and maps #{M \cdot X \to Y}. Under this bijection
   \ol{

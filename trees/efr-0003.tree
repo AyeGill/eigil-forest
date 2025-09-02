@@ -1,7 +1,7 @@
 \date{2024-05-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Structural Causal Model}
 \p{
   Let #{G} be a (finite) directed acyclic graph (DAG). Then a structural causal model (SCM) on #{G} consists of

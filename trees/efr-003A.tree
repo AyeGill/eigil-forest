@@ -1,7 +1,7 @@
 \date{2024-07-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{X: \Delta^\op \to \cC} be a simplicial object in a category, and suppose #{\cC} has all limits.
   Then the right Kan extension along the coYoneda embedding #{\Ran_yX : \sSet^\op = [\Delta^\op,\Set]^\op \to \cC} exists.

@@ -1,7 +1,7 @@
 \date{2024-07-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a bicategory, and let #{\cC_0 \to \cC} be an identity-on-objects functor from a #{1}-category. Then there is a pseudo double category where
   \ol{

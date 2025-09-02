@@ -1,7 +1,7 @@
 \date{2025-04-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   If #{\cC} has both supports and conditionals, the map #{\Optic(\cC) \to \SLens(\MAr{\cC}|_\det)} is faithful.
 }

@@ -3,7 +3,7 @@
 \title{Categories as Sheaves}
 \import{macros}
 \def\inert{#{\operatorname{inert}}}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\Delta} be the simplex category, and let #{\Delta_{\inert} \subseteq \Delta} be the subcategory of inert morphisms (those that are "distance-preserving").
 }

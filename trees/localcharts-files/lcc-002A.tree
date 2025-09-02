@@ -1,7 +1,7 @@
 \date{2024-05-07}
 \import{macros}
 \author{eigil-rischel}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X,Y} be convex spaces and let #{A \subset X \times Y} be a convex subspace. Let #{f: A \to \RR} be a convex function.
   Then #{x \mapsto #{\inf_{y: (x,y) \in A} f(x,y)}} is again convex.

@@ -1,6 +1,6 @@
 \date{2024-05-28}
 \author{eigil-rischel}
-\taxon{proposition}
+\taxon{Proposition}
 \import{macros}
 \p{
   Let #{1 : \NN \to \CC} denote the constant function at #{1}. Then #{(\mu \ast 1) = \delta_1}, where #{\delta_1} is the Kronecker delta (#{1} at #{1}, zero everywhere else).

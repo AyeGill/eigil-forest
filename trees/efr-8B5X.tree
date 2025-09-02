@@ -1,7 +1,7 @@
 \date{2025-03-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   The functor ##{\Optic(\BorelStoch) \to \BorelStoch} is not a Markov prefibration, although its pullback over #{\BorelStoch_\det} is a Grothendieck fibration.
 }

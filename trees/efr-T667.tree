@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   This characterization of the notions of pseudomorphism cannot help but seem a little ad hoc.
   The basic idea here seems to go back to Power in \ref{power-enriched-lawvere}. After constructing an enriched Lawvere theory (which is just a special kind of limit sketch) corresponding to any finitary enriched monad, he notes that in the #{\Cat}-enriched case the pseudomorphisms of monad algebras correspond to exactly those pseudonatural transformations which preserve the products strictly.

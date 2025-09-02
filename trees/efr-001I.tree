@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Indexed copresheaf}
 \p{
     Let #{p: \cD \to \cC} be a functor. An \em{indexed copresheaf} on #{\cD} is a tuple #{(X \in \cC, F: \cD \to \Set, \alpha: F(-) \to \cC(X,p(-)))} consisting of a copresheaf, an object of #{\cC}, and a natural transformation #{\alpha} as indicated. We say the indexed copresheaf is \em{over} #{X}, and we will abuse the terminology by referring to #{F} itself as an indexed copresheaf, leaving the transformation #{\alpha} implicit (for example, "let #{F} be an indexed copresheaf over #{X}").

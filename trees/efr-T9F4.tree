@@ -1,6 +1,6 @@
 \date{2025-04-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Monoidal Markov fibration}
 \p{A \em{monoidal Markov fibration} is a monoidal prefibration #{\cD \to \cC} which is a Markov fibration. It is \em{braided} or \em{symmetric} if it is braided or symmetric as a prefibration}

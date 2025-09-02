@@ -2,7 +2,7 @@
 \import{macros}
 \title{Backwards and forwards morphisms}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 
 \p{
   Let a morphism #{\phi = (\phi^+,\phi^-)} in #{\Set^\Delta \times \Set^{\Delta,\op}} be called \em{forwards} if #{\phi^-} is an isomorphism, and \em{backwards} if #{\phi^+} is an isomorphism.

@@ -1,7 +1,7 @@
 \date{2025-05-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \title{Stochastic module of #{P}-algebras}
 \p{
   Let #{\cC} be a representable, positive Markov category so that #{\cC_\det} admits intersections and the probability monad #{P} preserves them.

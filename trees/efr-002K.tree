@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC_(-)} be locally graded over #{\cM}.
   Then there is a double category where

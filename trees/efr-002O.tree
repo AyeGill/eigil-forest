@@ -1,7 +1,7 @@
 \date{2024-07-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cM} be a monoidal category. Then an action of #{\cM} is equivalently a pseudofunctor #{C: B\cM \to \Cat}, where #{C(*)} is the category which this is an action on.
 }

@@ -1,6 +1,6 @@
 \date{2025-04-09}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 \import{macros}
 \p{
   Let #{\cD} be a  Markov fibration over #{\cC}. Suppose given a (deterministic) commutative square in #{\cC}

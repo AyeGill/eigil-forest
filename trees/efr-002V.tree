@@ -1,7 +1,7 @@
 \date{2024-07-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be enriched in #{\cM}. Then this corresponds to a bicategory over #{B\cM}. Denote it #{\Para^\cM(\cC)}. The objects are the same as #{\cC}, and a morphism consists of a tuple #{M \in \cM, M \to \cC(X,Y) \in \cM}.
 }

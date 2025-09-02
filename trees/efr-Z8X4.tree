@@ -1,7 +1,7 @@
 \date{2025-04-09}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   Given any functor #{F: \cC \to \cC'} between Markov categories, we may attempt to define an oplax monoidal structure #{F(X \otimes Y) \to F(X) \otimes F(Y)} by pairing the projections.
 }

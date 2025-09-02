@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Lack Model Structure}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   There is a model structure on the category #{\BiCat_s} of bicategories and strict functors, in which
   \ol{

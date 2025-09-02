@@ -2,7 +2,7 @@
 \title{Minmax problem}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
     A \em{minmax problem} is a triple #{(X,Y,L),} where #{X,Y} are convex spaces (that is, algebras for the discrete distribution monad---more topological assumptions may be necessary here), and #{L: X \times Y \to \RR} is a function which is
     \ol{

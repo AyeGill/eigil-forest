@@ -1,7 +1,7 @@
 \date{2025-04-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \title{Fibrations and charts over Markov categories without conditionals}
 \p{
   Much of the theory of Markov fibrations is driven by the intuition that a bundle map #{\bar{X} \to \bar{Y}} can be factored as the canonical pairing #{\bar{X} \to \bar{X} \otimes Y} followed by a conditional distribution #{\bar{X} \otimes Y \to \bar{Y}}. If #{\cC} admits conditionals, every Markov fibration does have a representative of this type (up to the minor issue of empty fibers).

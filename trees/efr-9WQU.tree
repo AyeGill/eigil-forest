@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Clock system}
-\taxon{example}
+\taxon{Example}
 \p{
   Consider the theory of discrete-time, discrete dynamical systems from \ref{efr-002F}. Let #{\xi: TS \lensto \arena{I}{O}} be a system.
   Consider the system #{c: T\NN \lensto \arena{*}{\NN}} given by #{n \mapsto n} in the forwards direction, and #{(n,*) \mapsto n+1} in the backwards direction. (To be clear, the object denoted #{\arena{*}{\NN}} is the map #{\NN \to \NN}---it is a singleton \em{in each fiber}). Then a morphism of systems #{c \to \xi} consists of the following data:

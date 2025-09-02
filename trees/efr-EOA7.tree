@@ -1,7 +1,7 @@
 \date{2025-04-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a Markov category. Suppose #{\cC} admits [Bayesian image factorizations](efr-AMFR) and pullbacks of monomorphisms. Then any stochastic module over #{\cC} admits [simple chart equations](efr-M1U8).
 }

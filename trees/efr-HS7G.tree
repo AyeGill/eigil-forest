@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Stochastic Dynamical Systems Theories}
 \p{
   A \em{stochastic dynamical systems theory} consists of a stochastic module #{\cD} over #{\cC} equipped with a section #{T: \cC_\det \to \cD|_\det} of the underlying fibration.

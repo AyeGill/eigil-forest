@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cM} be a monoidal category, and let #{\bullet: \cM \times \cC \to \cC} be an action of #{\cM} on another category #{\cC}.
   Then the \em{#{\Para} construction} is the category #{\Para_\cM(\cC)} where

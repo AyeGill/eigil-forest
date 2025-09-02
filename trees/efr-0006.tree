@@ -1,7 +1,7 @@
 \date{2024-05-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Moore Machine}
 \p{
   In a dynamical systems theory, a \em{Moore machine} with state space #{S} and interface #{A} is a lens #{TS \lensto A}. The category of Moore machines with interface #{A} is the slice category of the functor #{T} over #{A}---that is, a morphism of Moore machines is a morphism #{S \to S'} so that the obvious triangle commutes.

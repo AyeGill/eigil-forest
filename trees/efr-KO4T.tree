@@ -1,7 +1,7 @@
 \date{2025-04-23}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cD \to \cC} be a (Grothendieck) fibration, and let #{\cC \to \cC'} be a faithful, identity-on-objects functor. Suppose #{\cC} admits pullbacks, and given a pair of morphisms #{P \to X,Y \in \cC'} over #{Z}, where #{P \to X} is in #{\cC}, there is a unique common factorization #{P \to X \times_Z Y}.
 }

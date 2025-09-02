@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Pseudomonoid action}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\CC} be a 2-category. A pseudomonoid action internal to #{\CC} consists of the following data: An internal pseudomonoid #{M}, an object #{C}, a morphism #{\cdot: M \times C \to C,} natural isomorphisms #{\mu: \cdot (\otimes \times 1_C) \to \cdot (1_M \times \cdot)} and #{\eta: \cdot \braket{e, 1_C} \to 1_C}, satisfying the coherence equations from \ref{efr-OFNV}.
 }

@@ -1,7 +1,7 @@
 \date{2025-04-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   #{\MAr{\BorelStoch}}, as we have noted, is a Markov prefibration, and hence induces a stochastic module structure on #{\MAr{\BorelStoch}|_\det}. This structure does not present a Markov fibration. To see this, note that in that case its fiberwise opposite would also present a Markov fibration. Then this fibration, #{\SLens(\MAr{\BorelStoch}|_\det)}, would be a prefibration whose deterministic part was #{\MAr{\BorelStoch}|_\det^\fop}. But \ref{efr-8B5X} shows that this is impossible.
 }

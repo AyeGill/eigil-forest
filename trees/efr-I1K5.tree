@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   The preceding definition clearly works in a non-symmetric monoidal category as well.
   In this case, arguably, a context should be defined to consist of maps #{I \to M_1 \otimes X \otimes M_2, M_1 \otimes Y \otimes M_2 \to I}. However, the problem with this from our point of view is that it doesn't allow the definition of a costate on #{P} given a parametrized map (since one cannot commute the #{P} past the #{M_1}), which is what we're interested in.

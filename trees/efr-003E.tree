@@ -1,7 +1,7 @@
 \date{2024-07-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{corollary}
+\taxon{Corollary}
 \p{
   The pseudo double category #{\dblPara_\cM(\cC)} is isofibrant. 
 }

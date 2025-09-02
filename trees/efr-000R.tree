@@ -1,7 +1,7 @@
 \date{2024-06-16}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   If #{\cC} is preadditive, and #{(\cI,K)} is a limit sketch, the category of models #{\Mod_\cI(\cC)} is again preadditive.
 }

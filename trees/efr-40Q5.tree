@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{2-limit sketch}
 \p{
   A \em{2-limit sketch} is a small 2-category #{\cT} equipped with a (small) set of cylinders #{\Theta}.

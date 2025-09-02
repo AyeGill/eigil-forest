@@ -1,7 +1,7 @@
 \date{2024-06-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   \ol{
     \li{A pseudo double functor #{\CC \to \DD} is equivalent to a natural transformation #{N(\CC) \to N(\DD)}}

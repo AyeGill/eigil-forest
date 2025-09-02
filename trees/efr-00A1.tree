@@ -1,7 +1,7 @@
 \date{2025-02-20}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
     Consider a double category with four objects #{A,B,B',C}, two nonidentity vertical maps #{B \to B' \to B} (which necessarily form an isomorphism), and two nonidentity horizontal maps #{A \proto B, B' \proto C} (and no nonidentity squares). If #{\CC_0} is the vertical category here, there is an obvious equivalence to the discrete category on three objects #{\CC_0 \to \{A,B,C\}} (identifying #{B,B'}). But if we take \em{any} equivalence #{\CC_1 \xto{\sim} \CC_1'} extending this diagram:
 }

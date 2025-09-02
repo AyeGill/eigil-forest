@@ -1,7 +1,7 @@
 \date{2024-04-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
     Let #{L} be a minmax problem.
     Suppose there exists #{\phi: I \to L \otimes L^*}.

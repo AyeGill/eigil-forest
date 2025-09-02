@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{The theory of discrete dynamical systems}
-\taxon{example}
+\taxon{Example}
 \p{
   There is a theory of dynamical systems with category of spaces #{\cC = \Set}, category of bundles #{\cA(X) = \Set_{/X}} (with pullbacks for reindexing), and tangent bundle #{TX = X \times X \xto{\pi_0} X}.
   We call this the theory of \em{discrete dynamical systems}. (In the sense that they are both discrete-time and discrete-space).

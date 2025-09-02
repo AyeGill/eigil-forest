@@ -1,6 +1,6 @@
 \date{2024-04-25}
 \author{eigil-rischel}
-\taxon{proposition}
+\taxon{Proposition}
 \import{macros}
 \p{
     Let #{f} be a convex function.

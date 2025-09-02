@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Complete LCVSs as pro-objects in the category of Banach spaces}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Given a locally convex topological vector space #{V}, let #{\cN_V} be the set of continuous seminorms. Then equipping #{\cN_V} with the inverse pointwise order, we have a diagram #{U \mapsto \widehat{V_{p}} : \cU \to \Ban}.
   Since #{\cU} is directed (since #{p + q} is again a seminorm), this gives a functor #{V \mapsto (\widehat{V_p}) \LCVS \to \Pro(\Ban)}. 

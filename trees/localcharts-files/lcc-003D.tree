@@ -2,7 +2,7 @@
 \import{macros}
 \author{eigil-rischel}
 \contributor{amar-hadzihasanovic}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{f: x \to y, g: y \to z} be a pair of composable morphisms in a category #{\cC}. Then the first homotopy poset of #{g} relative to #{f} is given as follows:
   \ol{

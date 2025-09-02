@@ -1,7 +1,7 @@
 \date{2025-04-05}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \title{Construction of #{\SChart(\cD_0)}}
 \p{
   Let #{\cD_0} be a fibration equipped with a stochastic module structure. Consider the equivalence relation on #{\overline{\cD_0}(\bar{X},\bar{Y})} which identifies two precharts #{(M, \phi), (N, \phi')} if there exists a map #{f: N \to M} over #{X,Y} and a stochastic section #{s} of #{f} which preserves the section from #{X}, so that #{s^*\phi' = \phi} (note that this makes sense because pullbacks compose). 

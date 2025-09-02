@@ -1,7 +1,7 @@
 \date{2025-04-09}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   We will denote by #{\MarkPreFib} the category whose objects are Markov prefibrations #{\cD \to \cC},
   and whose functors are commutative squares

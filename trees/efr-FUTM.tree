@@ -1,7 +1,7 @@
 \date{2025-04-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\cC} be a \em{causal} Markov category with supports and deterministic pullbacks. Suppose #{\cC} admits [relative Bayesian inverses](efr-88JF) of maps with full support. Then any stochastic module over #{\cC} has simple chart equations. In particular, this holds if #{\cC} admits conditionals, supports and deterministic pullbacks.
 }

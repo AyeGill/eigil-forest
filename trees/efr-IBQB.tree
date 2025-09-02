@@ -1,7 +1,7 @@
 \date{2025-06-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X} be a locally compact Hausdorff space, and let #{(\Omega)} be a measurable space.
   Given a measurable map #{f: \Omega \to X} (in the Baire #{\sigma}-algebra), there is an induced #{C^*}-homomorphism #{C_0(X) \to L^\infty(\Omega)}. This assignment is a bijection.

@@ -1,7 +1,7 @@
 \date{2025-05-03}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Consider the representable Markov category #{\TychDiffStoch}, and the stochastic module of fiberwise algebras given by \ref{efr-O6GQ}.
   Observe that whenever #{M} is a smooth manifold, the tangent bundle #{TM} is a fiberwise #{P}-algebra, with the multiplication given by taking the mean. 

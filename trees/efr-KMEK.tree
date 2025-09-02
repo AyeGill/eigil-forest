@@ -1,7 +1,7 @@
 \date{2025-06-15}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   The functor #{\CstarAlgcom \to \TopAlg_\RR} which carries a #{C^*}-algebra to the #{\RR}-algebra of self-adjoint elements in the norm topology is fully faithful.
 }

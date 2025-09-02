@@ -1,7 +1,7 @@
 \date{2025-04-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Absolute equivalence of charts}
 \p{
   Let #{\cD} be a stochastic module over #{\cC}, and let #{\phi,\phi'} be parallel morphisms in #{\SChart(\cD)}. We say #{\phi,\phi'} are \em{absolutely equivalent} if there exists a faithful strong Markov functor #{\cC \into \cC'}, and a faithful map of stochastic modules #{\cD \into \cD'} (with #{\cD'} over #{\cC}) so that #{\phi,\phi'} are identified by the induced map #{\SChart(\cD) \to \SChart(\cD')}

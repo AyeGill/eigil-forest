@@ -1,7 +1,7 @@
 \date{2024-06-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Let #{F: \Set \to \Set} be a functor.
   Then there is a dynamical systems theory where #{\cC = \Set}, #{\cA} is constant at #{\Set},

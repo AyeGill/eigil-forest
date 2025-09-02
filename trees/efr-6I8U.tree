@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Open games in a stochastic module}
 \p{
   Let #{\cD} be a symmetric monoidal stochastic module fibration over the Markov category #{\cC}. Recall that #{\SLens(\cD)} acquires a symmetric monoidal structure. Denote as usual #{\SLens(\cD)|_\det = \SLens(\cD) \times_{\cC} \cC_\det}. Note that this is stable under the monoidal product, and acts on #{\SLens(\cD)} via the inclusion.

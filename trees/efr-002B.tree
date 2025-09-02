@@ -1,7 +1,7 @@
 \date{2024-07-01}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Weak limits}
 \p{
   Let #{X: I \to \cC} be a diagram. A cone #{A \xto{f_i} X_i} is said to be a \em{weak limit} if, for any other cone #{B}, there exists a map #{B \to A} (but this map is not necessarily unique).

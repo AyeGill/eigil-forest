@@ -1,7 +1,7 @@
 \date{2024-06-16}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\Fin_*} be the category of finite pointed sets. Let #{\cC} be any #{(\infty,1)}-category.
   Let #{A: \Fin_* \to \cC} be a pseudofunctor. Then there are maps #{A(\rho^i): A(\{*,1,\dots n\}) \to A(\{*,1\})} for each #{i=1, \dots n}, given by #{\rho^i(i) = 1, \rho^i(j) = *} if #{i\neq j}. If this family exhibits each #{A(\{*,1\dots n\})} as the homotopy product of #{n} copies of #{A(\{*,1\}),} we call #{A} a symmetric pseudomonoid.

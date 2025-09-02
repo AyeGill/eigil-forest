@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\alpha: \Free(\cD_0) \to \cD_0} be stochastic module which presents a Markov fibration. Then the underlying algebra of the Markov prefibration obtained as the coequalizer of #{\overline{\Free(\cD_0)} \rightrightarrows \bar{\cD_0}} is isomorphic to #{\alpha}, and in particular this prefibration \em{is} a Markov fibration.
 }

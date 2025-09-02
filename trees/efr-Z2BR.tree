@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   The [Nash product](efr-PTAE) #{\SS(X) \times \SS(Y) \to \SS(X \otimes Y),} along with the map #{* \to \SS(I)} given by the full set #{S(I) \times S(I)} equips #{\SS} with a lax monoidal structure.
 }

@@ -1,7 +1,7 @@
 \date{2025-04-03}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Support of a morphism}
 \p{
   Let #{p: X \to Y, q: A \to Y} be two morphisms in a Markov category. We say \em{#{q} is absolutely continuous with respect to #{p}} and write #{q << p} if, whenever two maps #{Y \to Z} are #{p}-almost surely equal, they are also #{q}-almost surely equal.

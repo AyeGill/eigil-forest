@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Context}
 \p{
   Let #{X,Y} be objects of a symmetric monoidal category #{\cC}. A \em{context} for #{X,Y} is a tuple #{M \in \cC, s: I \to X \otimes M, k: Y \otimes M \to I}. We denote the set of contexts #{\Ctx(X,Y)}.

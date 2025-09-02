@@ -1,7 +1,7 @@
 \date{2024-05-06}
 \import{macros}
 \author{eigil-rischel}
-\taxon{proposition}
+\taxon{Proposition}
 \p{Consider the classes of backwards and forwards maps in #{\Minmax}, as well as the classes of Cartesian and coCartesian maps (over #{\Set^\Delta \times \Set^{\Delta,\op}})}
 \ol{
   \li{A forwards morphism #{(\phi,1_A): (X,A,L) \to (Y,A,L')} is Cartesian if and only if #{L(x,a) = L'(\phi(x),a)} for all #{x,a}}

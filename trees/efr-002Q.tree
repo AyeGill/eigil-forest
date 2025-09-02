@@ -1,7 +1,7 @@
 \date{2024-07-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{p: \cE \to \cC} be a weak 2-fibration of bicategories (in the sense of Buckley).
   Then the corresponding functor #{\cC^{\co \op} \to \BiCat} factors through #{\Cat \subseteq \BiCat} if and only if each mapping functor #{\cE(x,y) \to \cC(px,py)} is a \em{discrete} fibration.

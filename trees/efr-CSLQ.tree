@@ -1,7 +1,7 @@
 \date{2025-04-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Monoidal markov prefibration}
 \p{
   A \em{monoidal Markov prefibration} is a markov prefibration #{p: \cD \to \cC} equipped with a monoidal category structure on #{\cD} so that #{p} is \em{strict} monoidal and so that the underlying fibration is a monoidal fibration (i.e so that #{p} preserves Cartesian lifts).

@@ -1,6 +1,6 @@
 \date{2024-03-05}
 \author{eigil-rischel}
-\taxon{lemma}
+\taxon{Lemma}
 \import{macros}
 \import{lcc-0008}
 \def\labelto[l]{#{\overset{\l}{\to}}}
@@ -18,7 +18,7 @@
 
 
 \subtree{
-    \taxon{proof}
+    \taxon{Proof}
     \p{Note that #{\binom{B}{\sum_i X_i} \cong #{\sum_i \binom{B}{X_i}}}, and each of the #{\phi_i} factors as #{\binom{A_i}{X_i} \to \binom{B}{X_i} \to \sum_i \binom{B}{X_i}}.}
     \p{Hence if #{\binom{C}{Z}} is a test object, the natural transformation
     ##{\Lens(\cC)(\binom{B}{\sum_i X_i}, \binom{C}{Z}) \to \prod_i \Lens(\cC)(\binom{A_i}{X_i},\binom{C}{Z})} is isomorphically the morphism

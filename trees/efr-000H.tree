@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \title{#{\dblPara} preserves homotopy limits}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   The pseudofunctor #{\dblPara: \Arr(\SymMonCat) \to \PsDbl}, which carries a symmetric monoidal functor #{\cC \to \cD} to the pseudo double category #{\dblPara_\cC(\cD)}, preserves homotopy limits.
 }

@@ -1,7 +1,7 @@
 \date{2025-04-18}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Bayesian image factorizations}
 \p{
   Let #{\cC} be a Markov category.

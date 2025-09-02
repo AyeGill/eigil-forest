@@ -1,7 +1,7 @@
 \date{2025-04-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Behavioural equivalence}
 \p{
   Let #{\cD} be a monoidal stochastic module. Two precharts #{f_1, f_2: \bar{X} \to \bar{Y}} with the same underlying map #{X \to Y} are said to be \em{behaviourally equivalent} if, for any other three charts #{h: \bar{A} \to \bar{B}, s: \bar{S} \to \bar{A} \otimes \bar{X}, t: \bar{B} \otimes \bar{Y} \to \bar{T}} so that the composite map #{S \to T} is \em{deterministic}, the composite charts #{t(h \otimes f_1)s = t(h \otimes f_2)s} agree as charts.

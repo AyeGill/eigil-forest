@@ -1,7 +1,7 @@
 \date{2024-02-28}
 \title{Simple Optics}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 \import{macros}
 \def\Optic{#{\mathsf{Optic}}}
 \p{Let \cC be a monoidal category. Then #{\Optic(\cC)} is a category where

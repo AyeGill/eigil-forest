@@ -1,7 +1,7 @@
 \date{2024-12-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
     The first observation in the proof of \ref{efr-0047} in particular implies that, if #{\cC^\to \cC} is a Markov fibration, then #{\cC} is positive.
 }

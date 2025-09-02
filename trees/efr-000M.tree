@@ -1,7 +1,7 @@
 \date{2024-06-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Isoparametrization}
 \p{
   A chart- or lens reparametrization #{(\phi,a,b)} is called an \em{isoparametrization} ("chart isoparametrization" or "lens isoparametrization") if the parameter-space map #{\phi: S \to S'} is an isomorphism.

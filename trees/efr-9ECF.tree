@@ -1,7 +1,7 @@
 \date{2025-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{E} be an interval, #{M} a metrizable topological space, and let #{\DD(E:M)} be the Skorokhod space.
   Then a Radon measure #{\mu \in C(\DD(E:M))^*} is uniquely determined by the values #{E_{f \sim \mu} [\prod_i f(t_i)^{n_i}]}

@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   We denote by #{\Game(\SLens(\cD))} the symmetric monoidal category of strategic equivalence classes of open games.
 }

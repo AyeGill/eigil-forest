@@ -1,7 +1,7 @@
 \date{2025-03-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   #{\MAr{\BorelStoch}} is not a Markov fibration.
   To see this, recall that #{\Optic(\BorelStoch) \to \BorelStoch} is a Markov fibration, and its fiberwise inverse is given by simply swapping the order of the inputs.

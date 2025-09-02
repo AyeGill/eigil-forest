@@ -1,7 +1,7 @@
 \date{2025-05-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{#{\BiSys}}
 \p{
   Let #{\cA \to \cC, T: \cC \to \cA} be a symmetric monoidal dynamical systems theory. Then this diagram:

@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\CC} be a bicategory.
   To give a (strictly) reflexive quiver #{(c,d): X_1 \rightrightarrows X_0, s: X_0 \to X_1} the structure of a pseudocategory object in #{\CC}

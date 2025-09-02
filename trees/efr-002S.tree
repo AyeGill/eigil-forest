@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Stochastic lens}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cD \to \cC} be a stochastically complete Markov fibration. 
   Then a \em{stochastic lens #{\bar{X} \to \bar{Y}}}, where #{\bar{X},\bar{Y} \in \cD}, with #{p(\bar{X}) = X, p(\bar{Y}) = Y}, consists of:

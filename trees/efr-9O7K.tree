@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cT,\cT'} be limit sketches and suppose given a functor #{F: \Mod(\cT) \to \Mod(\cT')} which preserves limits and is \em{accessible,} that is it preserved #{\kappa}-filtered colimits for some #{\kappa}. Then #{F} admits a left adjoint #{L}. 
 }

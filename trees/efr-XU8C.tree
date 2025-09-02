@@ -1,7 +1,7 @@
 \date{2025-06-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Banach #{\epsilon}-algebra}
 \p{
   We will refer to the algebras (ie internal monoids) of the injective tensor product on #{\Ban} as Banach #{\epsilon}-algebras, or simply #{\epsilon}-algebras for brevity.

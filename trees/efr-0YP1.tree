@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \ol{
   \li{Suppose any category #{\cC'} admits products and \em{intersections}---that is, pullbacks #{U \times_X V} whenever #{U,V} are subobjects of #{X}. Then it admits all finite limits.}
   \li{

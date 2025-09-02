@@ -1,7 +1,7 @@
 \date{2025-04-09}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\cD \to \cC} be a Markov prefibration, and let #{F: \cC' \to \cC} be any functor from another Markov category which preserves deterministic maps. Then the pullback #{\cD' = \cD \times_{\cC} \cC' \to \cC'} is again a Markov prefibration, and the functor #{\cD' \to \cD} preserves Cartesian maps.
 }

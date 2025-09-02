@@ -1,7 +1,7 @@
 \date{2025-02-20}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
 Let #{\cC} be any 1-category, and let #{X: \Delta^\op \to \cC} be a Segal object.
 Then there is an internal category with morphism object #{X[1]}, objects object #{X[0]}, domain and codomain given by #{d_1,d_0: X[1] \to X[0]}, identity map given by #{s_0: X[0] \to X[1]}, and composition given by #{X[1] \times_{X[0]} X[1] \cong X[2] \xto{d_1} X[1]}, where the isomorphism is the one induced by the Segal property.

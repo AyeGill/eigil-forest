@@ -1,7 +1,7 @@
 \date{2025-04-08}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cD \to \cC} be a Markov prefibration. Recall that by #{\MAr{\cC}} we denote the category of \em{deterministic} arrows in #{\cC}. Let #{\Ar(\cC)} denote the ordinary arrow category. Let now #{\MAr{\cD}} denote the category #{\Ar(\cD) \times_{\Ar(\cC)} \MAr{\cC}} consisting of those arrows in #{\cD} which lie over a deterministic base (but again, where the morphisms consist of commutative squares whose other sides do not necessarily have deterministic bases). Then #{\MAr{\cD} \to \MAr{\cC}} is a Markov prefibration.
 }

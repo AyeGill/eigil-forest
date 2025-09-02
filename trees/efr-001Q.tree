@@ -1,7 +1,7 @@
 \date{2024-06-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \title{Commutativity of internalization}
 \p{
   Let #{\cI,\cJ} be limit sketches, and let #{\cC} be a bicategory. Then

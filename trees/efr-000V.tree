@@ -1,7 +1,7 @@
 \date{2024-06-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\Ctrl_1 \to \tilde{\Ctrl_1}} be constructed by freely adding companions of every globular chart reparametrization. Then #{\tilde{\Ctrl_1}} admits the following description:
   \ol{

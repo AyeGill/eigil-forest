@@ -1,7 +1,7 @@
 \date{2025-04-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   There exists a (strong) symmetric monoidal functor #{\Optic(Kl(\Delta)) \to \SLens(\MAr{Kl(\Delta)})} which
   \ol{

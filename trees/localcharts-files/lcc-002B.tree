@@ -1,6 +1,6 @@
 \date{2024-05-07}
 \author{eigil-rischel}
-\taxon{definition}
+\taxon{Definition}
 \title{The Twisted Grothendieck Construction}
 \p{
   Let #{\cA: \cC^\op \times \cD \to \Cat} be a pseudofunctor in two variables.

@@ -1,7 +1,7 @@
 \date{2025-02-22}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   Let #{\cC} be any 2-category . Then the coherent nerve defines a functor #{N : \PsCat(\cC)_\ps \to [\Delta^\op, \cC]}. Moreover,
   \ol{

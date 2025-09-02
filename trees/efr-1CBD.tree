@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cM} be a monoidal category.
   A \em{locally #{\cM}-graded double category} is a pseudo double category #{\CC} equipped with a strict double functor #{\CC \to \cM}, such that

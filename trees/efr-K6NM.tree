@@ -1,7 +1,7 @@
 \date{2025-04-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
   Let #{\cC} be any pullback-positive Markov category. Then #{\MAr{\cC} \to \cC} is a Markov prefibration which thus induces a stochastic module structure on #{\MAr{\cC}|_\det}.
   Writing simply #{\SChart(\cC), \SLens(\cC)} for #{\SChart(\MAr{\cC}|_\det), \SLens(\MAr{\cC}|_\det)}, we have:

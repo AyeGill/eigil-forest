@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Recall that the Yoneda embedding #{\cM \into [\cM^\op,\Set]} is strong monoidal. Hence it induces a functor from #{\cM}-categories to locally #{\cM}-graded categories, which carries #{\cC} to a locally graded category with #{\cC_M(X,Y) = \cM(M, \cC(X,Y))}
 }

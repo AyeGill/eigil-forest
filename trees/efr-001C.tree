@@ -1,7 +1,7 @@
 \date{2024-06-24}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\Delta: \Set \to \Set} carry a set #{X} to the set of finite-support probability distributions on #{X}. Recall that #{\Delta} is a monad.
 }

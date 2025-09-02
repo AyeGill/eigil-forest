@@ -1,7 +1,7 @@
 \date{2025-05-05}
 \author{eigil-rischel}
 \import{macros}
-\taxon{corollary}
+\taxon{Corollary}
 \p{
   Since #{\SS} is lax monoidal, its Grothendieck construction #{\int \SS_\cC} acquires a monoidal structure (\ref{moeller-vasilakopoulou}).
   We write this category #{\cC_\SS}---explicitly, it is given as follows:

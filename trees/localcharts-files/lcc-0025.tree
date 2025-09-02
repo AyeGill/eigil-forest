@@ -1,6 +1,6 @@
 \date{2024-04-30}
 \author{eigil-rischel}
-\taxon{proposition}
+\taxon{Proposition}
 \import{macros}
 \p{
   The inclusion of the subcategory of #{\Minmax} spanned by objects of the form #{(X,*,L)} admits a right adjoint. Dually, the subcategory spanned by objects of the form #{(*,Y,L)} admits a left adjoint.

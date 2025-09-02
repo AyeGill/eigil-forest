@@ -1,7 +1,7 @@
 \date{2025-05-07}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   If #{\cC} is Cartesian monoidal, ##{\Optic(\cC)\left(\arena{A}{X},\arena{B}{Y}\right) \cong \cC(X,Y) \times \cC(X \times B,A)}
 }

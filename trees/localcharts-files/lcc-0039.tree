@@ -1,6 +1,6 @@
 \date{2024-06-02}
 \author{eigil-rischel}
-\taxon{theorem}
+\taxon{Theorem}
 \import{macros}
 \p{
   Given a directed graph #{G}, let #{p_G(\lambda)} be the number of #{\ZZ /(\lambda)}-valued \em{proper} flows on #{G}.

@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \title{Particular weighted limits}
 \p{
   If #{W(-) = *} is constant at the point, and #{\II} is an 1-category, then a weighted limit is simply a #{L \to D(i)} in the underlying category #{\CC_0} so that there is additionally an isomorphism of categories #{\CC(X,L) \xto{\sim} \lim_i \CC(X,D(I))}. Note that this \em{is} stronger than just a limit in #{\CC_0}. We will refer to limits of this form by their ordinary names---speaking for example of pullbacks, products, and so on.

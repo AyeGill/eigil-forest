@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   There is a limit sketch #{\cT_\Act, \Theta_\Act} whose models are tuples #{(M,C,\cdot)} of a pseudomonoid #{M = (M,\otimes,I)}, an object #{C} and an action #{\cdot} of #{M} on #{C}. The strict natural transformations between models are strictly linear functors.
 }

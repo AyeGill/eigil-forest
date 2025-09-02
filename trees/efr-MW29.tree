@@ -1,7 +1,7 @@
 \date{2025-04-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   If #{\cC} is representable and positive, #{\cC_\det} has limits, and the monad #{P} preserves intersections, then #{\cC} is pullback-positive.
 }

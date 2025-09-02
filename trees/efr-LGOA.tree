@@ -1,7 +1,7 @@
 \date{2025-03-27}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a [pullback-positive](efr-T3HM) Markov category and let #{\cD_0 \to \cC_\det} be a fibration. Consider the full subcategory of stochastic modules spanned by the free modules on the corepresentables. Denote the opposite of this category #{\bar{\cD_0}}. Clearly there is a commutative diagram
   \quiver{

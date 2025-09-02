@@ -1,7 +1,7 @@
 \date{2024-07-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Discrete one-step modal operator}
 \p{
   Consider the theory of [discrete dynamical systems](efr-002F), and let #{\xi: TS \lensto A = \arena{\bar{A}}{A}} be a system. Let #{\phi: S \to \{\bot,\top\}} be a predicate on #{S}, and let #{\arena{\bar{U}}{U} \subseteq \arena{\bar{A}}{A}} be a subobject of #{A} (that is, #{\bar{U} \subset \bar{A}} and #{U \subset A,} and if #{(a,a') \in \bar{U}} then #{a \in A}).

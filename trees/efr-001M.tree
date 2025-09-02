@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Limit sketch}
 \p{
   A \em{limit sketch} consists of a (small) category #{\cI} equipped with a collection of cones

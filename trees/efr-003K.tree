@@ -1,7 +1,7 @@
 \date{2024-07-20}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{p: \cC \to \cD} be a (strict) 2-fibration, and fix a bicategory #{\cK}:
   \ol{

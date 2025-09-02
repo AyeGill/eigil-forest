@@ -1,7 +1,7 @@
 \date{2025-05-07}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   For any monoidal category #{\cC}, #{\Optic_\cC\left(\arena{A}{X}, \arena{I}{I}\right) = \cC(X,A)}. One way to think of an optic #{\arena{A}{X} \lensto \arena{B}{Y}} is as a string diagram #{X \to A}, but which has a hole with space for a morphism #{B \to Y}. One inserts such a morphism by composing the optic with the optic #{\arena{B}{Y} \lensto \arena{I}{I}} representing it. This idea of "open diagrams" has been developed in much more detail by Román, \ref{roman-optics-coend}. 
 }

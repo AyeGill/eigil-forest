@@ -1,7 +1,7 @@
 \date{2025-05-02}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{X} be a diffeo-topological space whose underlying space is Tychonoff. Then the space of probability measures #{P(X)} has a canonical diffeology given by those plots #{f: U \to P(X)} so that for each continuous function #{g} on #{X,} the resulting map #{u \mapsto E_{f(u)g}} is continuous, and if #{g} is smooth, then this is smooth as well. With this diffeology, and the topology of weak convergence, #{P(X)} is a diffeo-topological space. This defines a commutative affine monad on #{\TychDiff,} the category of such diffeo-topological spaces. 
 }

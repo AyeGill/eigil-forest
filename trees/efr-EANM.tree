@@ -1,7 +1,7 @@
 \date{2025-04-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Slice Markov Category}
 \p{
   Let #{\cC} be a Markov category. Suppose #{\cC} admits deterministic pullbacks. Then for each object #{X \in \cC}, let #{\cC_{/X}} denote the category where objects are deterministic maps #{A \to X} and morphisms are commutative triangles (whose map #{A \to B} is not necessarily deterministic). 

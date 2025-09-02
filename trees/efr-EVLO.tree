@@ -1,7 +1,7 @@
 \date{2025-07-17}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{\phi: A \to B} be a homomorphism of commutative Banach #{\epsilon}-algebras, and let #{C} be another such algebra. Let #{M} be an #{A}-module and let {N} be a #{C}-module. Then as #{B \hat{\otimes}_\epsilon C}-modules, 
   ##{(M \otimes_A B) \hat{\otimes}_\epsilon N \cong (M \hat{\otimes}_\epsilon N) \otimes_{A \hat{otimes}_\epsilon C} B \hat{\otimes}_\epsilon C}

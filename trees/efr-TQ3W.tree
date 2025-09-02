@@ -1,7 +1,7 @@
 \date{2025-04-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   #{\int_X \cA(X) \to \cC} is a Grothendieck fibration, and the pseudofunctor it induces is equivalent to #{\cA}
 }

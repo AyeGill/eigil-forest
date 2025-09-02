@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   For any (pullback-positive) #{\cC}, the monad #{\overline{(-)}|_\det} on #{\Fib(\cC_\det)} preserves products.
 }

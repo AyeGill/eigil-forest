@@ -1,7 +1,7 @@
 \date{2024-06-06}
 \author{eigil-rischel}
 \title{Controlled Lens}
-\taxon{definition}
+\taxon{Definition}
 \import{macros}
 \p{
   Let #{(\cC,\cA,T)} be a [monoidal theory of dynamical systems](efr-000A). Then the \em{double category of controlled lenses} is defined as follows:

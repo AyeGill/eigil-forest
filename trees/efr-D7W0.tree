@@ -1,7 +1,7 @@
 \date{2025-05-07}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   Let #{\cC} be any category, and let #{\cC^\to} denote the arrow category. Then the codomain functor #{\cC^\to \to \cC} is a fibration if and only if #{\cC} admits all pullbacks, and in this case the functors #{f^*: \cC_Y \to \cC_X,} given #{f: X \to Y,} are given by pullback along #{f}.
 }

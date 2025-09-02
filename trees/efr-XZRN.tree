@@ -1,7 +1,7 @@
 \date{2025-04-29}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   By construction, for each Markov prefibration #{\cD,} there is a canonical functor #{\SChart(\cD|_\det) \to \cD} over #{\cC}, which restricts to an isomorphism on the deterministic part (and in particular preserves Cartesian morphisms). #{\cD} is a Markov fibration if and only if this is an isomorphism.
 }

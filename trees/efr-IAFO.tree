@@ -1,7 +1,7 @@
 \date{2025-03-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{example}
+\taxon{Example}
 \p{
   #{\MAr{Kl(\Delta)}} is a Markov fibration. We have already seen that it is a Markov prefibration, and that the map from the coreflection is full. So it suffices to prove faithfulness.
   Consider a map in #{{\MAr{Kl(\Delta)}|_\det}}, given by a diagram

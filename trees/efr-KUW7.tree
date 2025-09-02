@@ -1,7 +1,7 @@
 \date{2025-04-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \p{
   Let #{\cA: \cC^\op \to \Cat} be a pseudofunctor. Then there is a category #{\int_{X \in \cC}\cA(X)} defined as follows:
   \ol{

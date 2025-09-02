@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X: \Delta^\op \to \Cat} be a (strict) simplicial category (note that every simplicial category is equivalent to a strict one). Suppose further the face maps #{X[1] \rightrightarrows X[0]} are both isofibrations. Then if #{X} is a Segal category in the strict sense, it is automatically a Segal category in the pseudo sense.
 }

@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   There exists a #{\Cat}-limit sketch #{(\cT_\PsCat, \Theta_\PsCat)} whose strict models are internal pseudocategories, and whose strict natural transformations are homomorphisms.
 }

@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proof}
+\taxon{Proof}
 \title{Proof of \ref{efr-I897}}
 \p{
   First recall that #{\Mod(\cT,\CC)} can be identified with the subcategory of #{[\CC^\op, \Mod(\cT)]} spanned by the levelwise representable presheaves.

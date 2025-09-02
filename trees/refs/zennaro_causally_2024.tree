@@ -2,7 +2,7 @@
 \title{Causally abstracted multi-armed bandits}
 \date{2024-04-26}
 \author/literal{Fabio Massimo Zennaro}\author/literal{Nicholas Bishop}\author/literal{Joel Dyer}\author/literal{Yorgos Felekis}\author/literal{Anisoara Calinescu}\author/literal{Michael Wooldridge}\author/literal{Theodoros Damoulas}
-\taxon{reference}
+\taxon{Reference}
 
 \meta{bibtex}{\startverb
 @misc{zennaro_causally_2024,

@@ -3,7 +3,7 @@
 \import{macros}
 \def\Tr{#{\operatorname{Tr}}}
 \title{Feedback monoidal category}
-\taxon{definition}
+\taxon{Definition}
 \p{A feedback monoidal category consists of
     \ol{
         \li{A monoidal category #{\cC = (\cC, \otimes, I)}}

@@ -1,7 +1,7 @@
 \date{2025-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Let #{X_t} be a stochastic process with #{d^E X_t = 0} for all #{t}. Suppose moreover #{X} is such that for all test functions, #{E{\psi(X_t)}} is a continuous function of #{t}. Then #{X_t} is constant with probability #{1}.
 }

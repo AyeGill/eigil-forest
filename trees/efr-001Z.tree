@@ -1,7 +1,7 @@
 \date{2024-06-28}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \title{Riesz Representation}
 \p{
   Let #{X} be a locally compact Hausdorff topological space, and let #{C_c(X)} denote the vector space of complex-valued, compactly supported functions on #{X}. Recall that a linear functional #{\psi: C_c \to \CC} is \em{positive} if it carries functions valued in the nonnegative reals to nonnegative real numbers.

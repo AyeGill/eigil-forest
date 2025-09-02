@@ -1,7 +1,7 @@
 \date{2024-06-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Given a lens #{A \lensto A',} postcomposition gives a functor #{\Sys(A) \to \Sys(A')}.
   Given a chart #{A \charto A'}, there is a \em{profunctor} #{\Sys(A) \proto \Sys(A'),}

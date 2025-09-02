@@ -1,7 +1,7 @@
 \date{2024-04-26}
 \author{eigil-rischel}
 \title{weak duality}
-\taxon{proposition}
+\taxon{Proposition}
 \import{macros}
 \p{
     Let #{L} be a minmax problem.

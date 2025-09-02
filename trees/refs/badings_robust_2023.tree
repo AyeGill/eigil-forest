@@ -2,7 +2,7 @@
 \title{Robust control for dynamical systems with non-gaussian noise via formal abstractions}
 \date{2023-01-21}
 \author/literal{Thom Badings}\author/literal{Licio Romao}\author/literal{Alessandro Abate}\author/literal{David Parker}\author/literal{Hasan A. Poonawala}\author/literal{Marielle Stoelinga}\author/literal{Nils Jansen}
-\taxon{reference}
+\taxon{Reference}
 
 \meta{bibtex}{\startverb
 @article{badings_robust_2023,

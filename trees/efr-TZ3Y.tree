@@ -1,7 +1,7 @@
 \date{2025-04-11}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
   Suppose #{\cC} admits weak conditionals, and let #{\cD \to \cC_\det} be a fibration.
   Then two morphisms #{f_0,f_1: \bar{X} \to \bar{Y}} in #{\overline{\cD}}, represented by commutative diagrams

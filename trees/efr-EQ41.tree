@@ -1,7 +1,7 @@
 \date{2025-04-06}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \title{On 2-category theory}
 \p{
   Since we will shortly be working with a number of functors between categories whose objects are themselves categories with some structure, it may be thought that we should give some consideration to the strictness of our constructions---for example, we will shortly construct a left adjoint to #{(-)|_\det: \MarkPreFib(\cC_\det) \to \Fib(\cC),} and it may well be asked how strict this adjoint is, whether we need to consider the definition of \em{pseudomonad} when we get so far, et cetera.

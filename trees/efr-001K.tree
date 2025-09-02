@@ -1,7 +1,7 @@
 \date{2024-06-25}
 \author{eigil-rischel}
 \import{macros}
-\taxon{theorem}
+\taxon{Theorem}
 \p{
     Let #{\cC} be a Markov category and let #{\cD_0 \to \cC_\det} be a fibration.
     Let a Markov extension of #{\cD_0} be a category #{\cD} equipped with functors #{\cD_0 \to \cD \to \cC} so that the obvious square commutes (strictly) and is a pullback. Let a map between Markov extensions be a functor #{\cD \to \cD'} so that the two triangles commute (again, strictly). Then:

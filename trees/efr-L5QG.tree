@@ -1,7 +1,7 @@
 \date{2025-05-04}
 \author{eigil-rischel}
 \import{macros}
-\taxon{definition}
+\taxon{Definition}
 \title{Pseudolinear map}
 \p{
   Let #{\CC} be a 2-category, and let #{(M,C,\cdot), (N,D,\star)} be internal pseudomonoid actions. A \em{pseudolinear map} (or just \em{linear}) is a pair of maps #{F_m: M \to N, F_c: C \to D}, equipped with a pseudomonoid pseudohomomorphism structure #{\phi, \tau} on #{F_m} and a natural isomorphism #{l: F_m(-) \cdot F_c(=) \to F_c(- \cdot =)} satisfying the following coherence conditions (note that writing functors using element-notation like this is well-defined)

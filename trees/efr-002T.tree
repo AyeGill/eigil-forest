@@ -1,7 +1,7 @@
 \date{2024-07-14}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Let #{\cC} be a locally #{\cM}-graded category. Consider the collection of categories #{\int_M \cC_M(X,Y)}, given by taking the category of elements of the presheaf #{M \mapsto \cC_M(X,Y)} for each #{X,Y}. These form the hom-categories of a bicategory #{\int \cC,} with a canonical pseudofunctor to the delooping #{B\cM}. Conversely, given a bicategory with a pseudofunctor #{\cD \to B\cM} so that each functor #{\cD(X,Y) \to B\cM(*,*) = \cM} is a discrete fibration, the presheaves classifying those discrete fibrations form a locally #{\cM}-graded category.
 }

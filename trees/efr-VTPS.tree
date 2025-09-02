@@ -1,7 +1,7 @@
 \date{2025-05-07}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   If #{\cC} moreover admits pullbacks, there is a fibred functor #{\Lens(\cC)^\fop \to \cC^\to \to \cC,} which carries an object #{\arena{A}{X}} to #{X \times A\xto{\pi_X} X,} and a morphism #{f:X \times A \to B} to the map #{X \times A \xto{\braket{\pi_X,F}} X \times B} over #{X}. This is fully faithful.
 }

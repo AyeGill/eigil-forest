@@ -1,7 +1,7 @@
 \date{2025-06-26}
 \author{eigil-rischel}
 \import{macros}
-\taxon{remark}
+\taxon{Remark}
 \p{
   The uniqueness and existence of solutions to the Martingale problem for a given unbounded operator #{A: D(A) \to L^\infty(X)} is a significant area of study. A classical textbook is (Ethier and Kurtz, chapter 4)---we will not delve into this problem here. We will only mention a few key facts.
 }

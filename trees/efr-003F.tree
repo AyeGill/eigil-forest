@@ -1,7 +1,7 @@
 \date{2024-07-19}
 \author{eigil-rischel}
 \import{macros}
-\taxon{proposition}
+\taxon{Proposition}
 \p{
   Consider the functor #{\Arr(\SymMonCat) \to [\Delta^\op,\Cat]} given by the nerve of #{\dblPara}.
   This functor carries isofibrations to \em{levelwise} isofibrations.
