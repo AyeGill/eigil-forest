@@ -6,7 +6,7 @@
   Let #{\cM} be a monoidal category, and let #{\cC} be a category with an #{\cM}-action.
 }
 \p{
-  Then there is an internal pseudocategory #{\dblPara_\cM(\cC),} with
+  Then there is a pseudo double category #{\dblPara_\cM(\cC),} with
   \ol{
     \li{
       #{\dblPara_\cM(\cC)_0 = \cC}}
@@ -26,7 +26,7 @@
 }
 \proof{
   \p{
-    Note that every actegory #{\cM \curvearrowright \cC} is equivalent to a strict action of a strict monoidal category #{\cM_s \curvearrowright \cC_s} (in the sense that there exists #{\cM_s \xto{\sim} \cM} strong monoidal equivalence and #{\cC_s \xto{\sim} \cC} an equivalence such that these maps together form a map of actegories). It follows that it suffices to show unitality and associativity for our action in the strict case (since these are plainly preserved by equivalence). 
+    Note that every actegory #{\cM \curvearrowright \cC} is equivalent to a strict action of a strict monoidal category #{\cM_s \curvearrowright \cC_s} (in the sense that there exists #{\cM_s \xto{\sim} \cM} strong monoidal equivalence and #{\cC_s \xto{\sim} \cC} an equivalence such that these maps together form a map of actegories). It follows that it suffices to show unitality and associativity for our composition in the strict case (since these are plainly preserved by equivalence). 
   }
 
   \p{
@@ -42,17 +42,15 @@
     ##{(N \otimes M) \cdot X = N \cdot M \cdot X \to N \cdot Y \to Z.}
   }
 \p{
-  Given two such composable maps, call them #{f,g}, the two objects #{H(fg), H(f)H(g)} are given by #{(F(M \otimes N), G(X), G(Z), \beta), (F(M) \otimes F(N), G(X), G(Z), \alpha)} ,where #{\alpha, \beta} are respectively the maps across the top and bottom of this diagrm:
+  Given two such composable maps, call them #{f,g}, the two objects #{H(fg), H(f)H(g)} are given by #{(F(M \otimes N), G(X), G(Z), \beta), (F(M) \otimes F(N), G(X), G(Z), \alpha)} ,where #{\alpha, \beta} are respectively the maps across the top and bottom of this diagram:
 }
-
+\p{
 \quiver{
- \begin{tikzcd}
+ \begin{tikzcd}[column sep=small]
 	{F(N) \otimes F(M) \cdot G(X)} & {F(N)\cdot F(M) \cdot G(X)} & {F(N)\cdot G(M \cdot X)} & {F(N)\cdot G(Y)} \\
 	&&&&& {G(Z)} \\
 	\\
-	{F(N \otimes M)\cdot G(X)} & {G(N \otimes M \cdot X)} & {G(N \cdot (M \cdot X))} & {G(N\cdot Y)} \\
-	\\
-	&&& \bullet
+	{F(N \otimes M)\cdot G(X)} & {G(N \otimes M \cdot X)} & {G(N \cdot (M \cdot X))} & {G(N\cdot Y)}
 	\arrow["\sim"', from=1-1, to=1-2]
 	\arrow["\alpha"', bend left=40, from=1-1, to=2-6]
 	\arrow[equals, from=1-1, to=4-1]
@@ -68,9 +66,10 @@
 	\arrow[from=4-4, to=2-6]
 \end{tikzcd}
 }
-
+}
+\p{
 This proves that #{H} preserves the composition strictly, as desired. (The rightmost triangle commutes by definition, and the leftmost rectangle is a lineator coherence)
-
+}
   \p{
     Since the strict limits in #{\PsDbl_s} and #{\Act_s} are computed levelwise, it suffices to observe that the slice category also preserves limits, being a weighted limit itself.
   }
