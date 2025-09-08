@@ -233,6 +233,8 @@
 \def\PsMon{#{\cat{PsMon}}}
 \def\PsCat{#{\cat{PsCat}}}
 \def\Act{#{\cat{Act}}}
+\def\actson{#{\curvearrowright}}
+
 
 % it'd be cool to have it automatically linked, like so:
 % \def\dblCat{#{\dblcat{Cat}}}{[#{\dblcat{Cat}}](equipment-of-cats)}
