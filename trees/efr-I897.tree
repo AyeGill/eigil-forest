@@ -4,5 +4,7 @@
 \taxon{Theorem}
 \p{
   Let #{\CC} be a 2-category which admits pullbacks, products and comma objects.
-  Then there is a functor #{\dblPara: \Act(\CC) \to \PsCat(\CC)} from the 2-category of pseudomonoid actions and pseudolinear maps to the 2-category of pseudocategories and pseudofunctors. This functor preserves strict maps, limits, and filtered colimits.
+  Then there is a functor #{\dblPara: \Act(\CC) \to \PsCat(\CC)} from the 2-category of pseudomonoid actions and pseudolinear maps to the 2-category of pseudocategories and pseudofunctors, with #{\dblPara_\cM(\cC)_0 = \cC} and #{\dblPara_\cM(\cC)_1 = \cM \times \cC \downarrow \cC}. 
+  
+   This functor preserves strict maps, limits, and filtered colimits.
 }

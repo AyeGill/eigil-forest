@@ -3,7 +3,7 @@
 \import{macros}
 \title{Actegories}
 
-\transclude{efr-OFNV}
+\transclude{efr-OFNV} %defn of actegories
 
 \p{
   Actegories are a very natural concept, and as one would expect their history goes back a long way. The concept has been considered by Benabou all the way back in \ref{benabou-bicategories}, and used many times since them. We will not delve too deeply into their theory here---see \ref{actegories-amthematician-capucci-gavranovic} for a thorough treatment. 
