@@ -1,0 +1,20 @@
+\date{2025-09-08}
+\title{Orphan trees}
+\author{eigil-rischel}
+\let\rel/has-parent{eigil-rischel.query.orphans.has-parent}
+\let\rel/covered{eigil-rischel.query.orphans.covered}
+\execute\datalog{
+  \rel/has-parent ?X -: {\rel/is-node ?Y} {\rel/transcludes ?Y ?X}
+}
+\execute\datalog{
+  \rel/covered ?X -: {\rel/has-parent ?X}
+}
+\execute\datalog{
+  \rel/covered ?X -: {\rel/links-to @{eigil-rischel} ?X}
+}
+\execute\datalog{
+  \rel/covered ?X -: {\rel/is-reference ?X}
+}
+\query\datalog{
+  ?X -: {\rel/is-node ?X} # {\rel/covered ?X}
+}
