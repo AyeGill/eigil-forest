@@ -9,6 +9,20 @@
 \transclude{efr-BNB2}
 
 \transclude{efr-PTAE}
+
+\p{
+  Let us unpack this very dense definition.
+  Given a context #{k: X \otimes Y \to I}, a strategy #{I \to X \otimes Y} is in equilibrium if:
+  \ol{
+    \li{
+      It decomposes as a tensor product of #{x: I \to X, y: I \to Y}.
+    }
+    \li{
+      Composing #{k} with #{y}, we obtain a map #{X \to I}. This is the context of the first player assuming the second player plays #{y}. #{x} must be an equilibrium strategy for this map. Simultaneously, #{y} must be an equilibrium for the analogous composite of #{k} and #{x}.
+    }
+  }
+}
+
 \transclude{efr-5E1V}
 
 \transclude{efr-Z2BR}
