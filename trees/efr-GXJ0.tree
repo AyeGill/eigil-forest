@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{The theory of stochastic discrete dynamical systems}
+\taxon{Example}
 \p{
   There is a systems theory where #{\cC = \Set, \cA(X) = Kl(\Delta)^X} (with the evident reindexing maps) and #{T(X) = X \times X}.
 }

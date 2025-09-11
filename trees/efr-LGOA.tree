@@ -23,3 +23,5 @@
     #{\bar{\cD_0} \to \cC} is initial among Markov prefibrations receiving a map from #{\cD_0}. In other words, this construction gives a left adjoint to the pullback functor #{\MarkPreFib(\cC) \to \Fib(\cC_\det)}
   }
 }
+
+\transclude{efr-0BES}

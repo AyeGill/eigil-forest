@@ -50,8 +50,6 @@
 
 \transclude{efr-LGOA}%Left adjoint theorem
 
-
-\transclude{efr-0BES}%Proof of left adjoint
 \p{
   This characterization of the left adjoint makes it fairly easy to understand the induced monad on #{\Fib(\cC_\det)}.
 }

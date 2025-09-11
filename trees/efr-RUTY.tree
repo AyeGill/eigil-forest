@@ -1,6 +1,7 @@
 \date{2025-06-20}
 \author{eigil-rischel}
 \import{macros}
+\taxon{Example}
 \title{Generative Adversarial Network}
 \p{
   The idea of a \em{generative adversarial network,} or GAN (\ref{gan-paper}), is to generate synthetic data which appears to be drawn from the same distribution as a given dataset. The basic idea is to train two networks in parallel: a discriminator, which is trained to distinguish the generator's output from the real dataset, and a generator, which is trained to fool the discriminator. In each training step, one of two things happen:
