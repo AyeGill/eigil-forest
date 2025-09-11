@@ -5,7 +5,7 @@
 \author/literal{Michael A. Shulman}
 \meta{bibtex}{\startverb
  @article
-{shulman-monfibs, title={Framed bicategories and monoidal fibrations}, url={http://arxiv.org/abs/0706.1286},, journal={arXiv:0706.1286 [math]}, author={Shulman, Michael A.}, year={2009}, month={Jan},language={en} }
+{shulman-monfibs, title={Framed bicategories and monoidal fibrations}, url={http://arxiv.org/abs/0706.1286}, journal={arXiv:0706.1286 [math]}, author={Shulman, Michael A.}, year={2009}, month={Jan},language={en} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

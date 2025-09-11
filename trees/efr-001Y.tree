@@ -29,7 +29,7 @@
 
 \transclude{efr-001Z}
 \p{
-  Let #{\phi: C_c(Y) \to C_c(X)} be a positive linear map. Then dualizing gives a linear map #{\phi^*: C_c(X)^* \to C_c(Y)^*}. If we assume the initial map preserves the constant #{1} function,, this will preserve probability measures, making it a sort of infinity-dimensional stochastic matrix.
+  Let #{\phi: C_c(Y) \to C_c(X)} be a positive linear map. Then dualizing gives a linear map #{\phi^*: C_c(X)^* \to C_c(Y)^*}. If we assume the initial map preserves the constant #{1} function, this will preserve probability measures, making it a sort of infinity-dimensional stochastic matrix.
 }
 \p{
   In particular, we get a composite map #{X \to C_c(X)^* \to C_c(Y)^*,} where the first map just includes the dirac measures (or, alternatively, takes #{x} to the "evaluate at #{x}" functional).

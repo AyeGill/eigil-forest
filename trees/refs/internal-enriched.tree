@@ -6,7 +6,7 @@
 \author/literal{Enrico Ghiorzi}
 \meta{bibtex}{\startverb
  @article
-{internal-enriched, title={Internal enriched categories}, url={http://arxiv.org/abs/2006.07997}, DOI={10.48550/arXiv.2006.07997}, abstractNote={We introduce the theory of enrichment over an internal monoidal category as a common generalization of both the standard theories of enriched and internal categories. The aim of the paper is to justify and contextualize the new notion by comparing it to other known generalizations of enrichment: namely, those for indexed categories and for generalized multicategories. It turns out that both of these notions are closely related to internal enrichment and, as a corollary, to each other.},, number={arXiv:2006.07997}, publisher={arXiv}, author={Ghiorzi, Enrico}, year={2020}, month={Jun} }
+{internal-enriched, title={Internal enriched categories}, url={http://arxiv.org/abs/2006.07997}, DOI={10.48550/arXiv.2006.07997}, abstractNote={We introduce the theory of enrichment over an internal monoidal category as a common generalization of both the standard theories of enriched and internal categories. The aim of the paper is to justify and contextualize the new notion by comparing it to other known generalizations of enrichment: namely, those for indexed categories and for generalized multicategories. It turns out that both of these notions are closely related to internal enrichment and, as a corollary, to each other.}, number={arXiv:2006.07997}, publisher={arXiv}, author={Ghiorzi, Enrico}, year={2020}, month={Jun} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{
