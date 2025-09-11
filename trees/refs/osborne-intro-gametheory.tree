@@ -4,7 +4,7 @@
 \author/literal{Martin J. Osborne}
 \meta{bibtex}{\startverb
  @book
-{osborne-intro-gametheory, title={An Introduction to Game Theory}, ISBN={978-0-19-512896-3}, abstractNote={This text emphasizes the ideas behind modern game theory rather than their mathematical expression, but defines all concepts precisely. It covers strategic, extensive and coalitional games and includes the topics of repeated games, bargaining theory and evolutionary equilibrium.}, note={Google-Books-ID: V2zAkgEACAAJ}, publisher={Oxford University Press}, author={Osborne, Martin J.}, year={2004},language={en} }
+{osborne-intro-gametheory, title={An Introduction to Game Theory}, ISBN={978-0-19-512896-3}, abstractNote={This text emphasizes the ideas behind modern game theory rather than their mathematical expression, but defines all concepts precisely. It covers strategic, extensive and coalitional games and includes the topics of repeated games, bargaining theory and evolutionary equilibrium.},, publisher={Oxford University Press}, author={Osborne, Martin J.}, year={2004},language={en} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

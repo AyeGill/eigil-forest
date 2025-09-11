@@ -6,7 +6,7 @@
 \author/literal{Evan Patterson}
 \meta{bibtex}{\startverb
  @article
-{patterson-lambert-dbltheory, title={Cartesian double theories: A double-categorical framework for categorical doctrines}, volume={444}, ISSN={00018708}, DOI={10.1016/j.aim.2024.109630}, note={arXiv:2310.05384 [math]}, journal={Advances in Mathematics}, author={Lambert, Michael and Patterson, Evan}, year={2024}, month={May}, pages={109630} }
+{patterson-lambert-dbltheory, title={Cartesian double theories: A double-categorical framework for categorical doctrines}, volume={444}, ISSN={00018708}, DOI={10.1016/j.aim.2024.109630}, url={https://arxiv.org/abs/2310.05384}, journal={Advances in Mathematics}, author={Lambert, Michael and Patterson, Evan}, year={2024}, month={May}, pages={109630} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

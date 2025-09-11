@@ -10,7 +10,7 @@
 \author/literal{Areeb Shah Mohammed}
 \meta{bibtex}{\startverb
  @article
-{law-large-nums-fritz-etal, title={Empirical Measures and Strong Laws of Large Numbers in Categorical Probability}, url={http://arxiv.org/abs/2503.21576}, DOI={10.48550/arXiv.2503.21576}, note={arXiv:2503.21576 [math]}, number={arXiv:2503.21576}, publisher={arXiv}, author={Fritz, Tobias and Gonda, Tomas and Lorenzin, Antonio and Perrone, Paolo and Mohammed, Areeb Shah}, year={2025}, month={Mar} }
+{law-large-nums-fritz-etal, title={Empirical Measures and Strong Laws of Large Numbers in Categorical Probability}, url={http://arxiv.org/abs/2503.21576}, DOI={10.48550/arXiv.2503.21576}, number={arXiv:2503.21576}, publisher={arXiv}, author={Fritz, Tobias and Gonda, Tomas and Lorenzin, Antonio and Perrone, Paolo and Mohammed, Areeb Shah}, year={2025}, month={Mar} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

@@ -6,7 +6,7 @@
 \author/literal{Gavin J. Seal}
 \meta{bibtex}{\startverb
  @article
-{tensors-monads-actions, title={Tensors, monads and actions}, url={http://arxiv.org/abs/1205.0101}, DOI={10.48550/arXiv.1205.0101}, abstractNote={We exhibit sufficient conditions for a monoidal monad T on a monoidal category C to induce a monoidal structure on the Eilenberg--Moore category C^T that represents bimorphisms. The category of actions in C^T is then shown to be monadic over the base category C.}, note={arXiv:1205.0101 [math]}, number={arXiv:1205.0101}, publisher={arXiv}, author={Seal, Gavin J.}, year={2013}, month={Jun} }
+{tensors-monads-actions, title={Tensors, monads and actions}, url={http://arxiv.org/abs/1205.0101}, DOI={10.48550/arXiv.1205.0101}, abstractNote={We exhibit sufficient conditions for a monoidal monad T on a monoidal category C to induce a monoidal structure on the Eilenberg--Moore category C^T that represents bimorphisms. The category of actions in C^T is then shown to be monadic over the base category C.},, number={arXiv:1205.0101}, publisher={arXiv}, author={Seal, Gavin J.}, year={2013}, month={Jun} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

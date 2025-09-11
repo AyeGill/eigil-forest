@@ -4,6 +4,6 @@
 \author/literal{Mitchell Riley}
 \meta{bibtex}{\startverb
  @article
-{riley-optics, title={Categories of optics}, note={Citation Key: Riley}, journal={arXiv preprint arXiv:1809.00738}, author={Riley, Mitchell}, year={2018} }
+{riley-optics, title={Categories of optics}, journal={arXiv preprint arXiv:1809.00738}, author={Riley, Mitchell}, year={2018} }
 \stopverb}
 
