@@ -8,3 +8,6 @@
 \p{
   On the other hand, #{G \oplus G (\cong G \otimes 1_I \oplus G \otimes 1_I)} represents the same situation, but where the player's strategy \em{may} depend on the bit---he provides two strategies #{\sigma_1,\sigma_2}, one for each possibility.
 }
+\p{
+  This proves that #{\otimes} does not distribute over #{\oplus} 
+}

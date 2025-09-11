@@ -5,7 +5,7 @@
 
 \p{
   Let #{\cC} be an extensive Markov category. Let #{\cD} be a monoidal stochastic module fibration with Markov structure, which has coproducts which are preserved by the pullbacks.
-  Recall that #{\SLens(\cD)} acquires two monoidal structures: one from dualizing the given monoidal structure on #{\cD,} which we simply denote #{\otimes,I}, and one from taking the coCartesian monoidal structure (which is Cartesian after taking the fiberwise dual, of course), which we denote #{\amp, \top}. Note that #{(\SLens(\cD), \amp)} is a Markov category. For the rest of this section, fix #{\cD, \cC} like this.
+  Recall that #{\SLens(\cD)} acquires two monoidal structures: one from dualizing the given monoidal structure on #{\cD,} which we simply denote #{\otimes,I}, and one from taking the coCartesian monoidal structure in the fiber (which is Cartesian after taking the fiberwise dual, of course), which we denote #{\amp, \top}. Note that #{(\SLens(\cD), \amp)} is a Markov category. For the rest of this section, fix #{\cD, \cC} like this.
 }
 
 \transclude{efr-Y2ZN}

@@ -7,7 +7,7 @@
 }
 \p{
   Selection relations are ordered by inclusion, and so form a (posetal) category, which we denote #{\SS_\cC(A)}.
-  Given #{f: A \to B,} we define the pushforward on selection relations by #{f_*\epsilon = \{(fx,k) \mid (x, kf)\}}. In other words, #{f_*\epsilon(y,k)} if and only if there exists #{x: I \to X} so that #{fx = y} and #{\epsilon(x, kf)}. 
+  Given #{f: A \to B,} we define the pushforward on selection relations by #{f_*\epsilon = \{(fx,k) \mid (x, kf) \in \epsilon\}}. In other words, #{f_*\epsilon(y,k)} if and only if there exists #{x: I \to X} so that #{fx = y} and #{\epsilon(x, kf)}. 
 }
 \p{
   It is clear that pushforward is monotone, so that this defines a functor #{\SS_\cC : \cC \to \Cat}

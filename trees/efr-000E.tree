@@ -15,5 +15,5 @@
     }
   }
 \p{
-  Thus a machine learning model is a sort of bisystem. Indeed our bisystems are essentially an abstracted version of the \em{learners} of Fong--Spivak--Tuyeras. The functoriality of this assignment is the main point of the above-mentioned papers. 
+  Thus a machine learning algorithm is a sort of bisystem. Indeed our bisystems are essentially an abstracted version of the \em{learners} of Fong--Spivak--Tuyeras. The functoriality of this assignment is the main point of the above-mentioned papers. 
 }
