@@ -28,14 +28,14 @@
 }
 
 \p{
-  We will now give a short sketch of the theory of fibrations. Nothing here is novel, nor will we use anything unfamiliar to experts. For a textbook treatment, see eg. \ref{jacobs-categorical-logic} (chapters 1, 9), or \ref{borceux-handbook} (chapter 8). Note that we will not give a formal definition of the term "pseudofunctor" here. See eg \ref{jacobs-categorical-logic}, def. 1.4.4.
+  We will not go into a comprehensive description of the theory of fibrations, but simply give a few basic results. We will give some examples in the next section. For a textbook treatment, see eg. \ref{jacobs-categorical-logic} (chapters 1, 9), or \ref{borceux-handbook} (chapter 8). Note that we will not give a formal definition of the term "pseudofunctor" here. See eg \ref{jacobs-categorical-logic}, def. 1.4.4.
 }
 
 \transclude{efr-KUW7}
 \transclude{efr-TQ3W}
 
 \p{
-  Given a pseudofunctor #{\cA: \cC^\op \to \Cat,} it is obvious that the assignment #{\cA(-)^\op} is pseudofunctorial as well (the required natural isomorphisms are just the inverses of the ones for #{\cA}). Applying this through the equivalence of fibrations and pseudofunctors leads to the \em{fiberwise opposite} of a fibration. Explicitly:
+  Given a pseudofunctor #{\cA: \cC^\op \to \Cat,} it is obvious that the assignment #{\cA(-)^\op} is pseudofunctorial as well (the required natural isomorphisms are just the formal opposites of the ones for #{\cA}). Applying this through the equivalence of fibrations and pseudofunctors leads to the \em{fiberwise opposite} of a fibration. Explicitly:
 }
 
 \transclude{efr-8LGE}
