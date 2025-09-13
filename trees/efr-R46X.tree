@@ -7,5 +7,5 @@
   Let #{\cD} be a monoidal stochastic module fibration over a Markov category #{\cC}, and consider a 2-cell #{\alpha: G_1 \to G_2: \bar{X} \to \bar{Y} \in \widetilde{\Game}(\SLens(\cD))}. 
 }
 \p{
-  We say this is a \em{strategic equivalence} if the underlying map #{\Sigma_1 \to \Sigma_2} is an isomorphism, and for every context #{c \in \Ctx(\bar{X},\bar{Y})}, the induced costate #{k} on #{\overline{\Sigma_2}} has the same equilibria (under this isomorphism) as the composite costate #{k\alpha} on #{\overline{\Sigma_1}}  
+  We say this is a \em{strategic equivalence} if the underlying map #{\Sigma_1 \to \Sigma_2} in #{\cC} is an isomorphism, and for every context #{c \in \Ctx(\bar{X},\bar{Y})}, the induced costate #{k} on #{\overline{\Sigma_2}} has the same equilibria (under this isomorphism) as the composite costate #{k\alpha} on #{\overline{\Sigma_1}}  
 }
