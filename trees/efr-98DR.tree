@@ -7,17 +7,17 @@
   and on morphisms by the following formula:
 }
 \p{
-  Given two open games #{G_1 = (\bar{\Sigma_A} \otimes \bar{A_1} \to \bar{A_2}, \epsilon_A), G_2 = (\bar{\Sigma_B} \otimes \bar{B_1} \to \bar{B_2}, \epsilon_B),} their external choice is has parameter #{\Sigma_A \amp \Sigma_B}. The play map is given by 
+  Given two open games #{G_1 = (\overline{\Sigma_A} \otimes \overline{A_1} \to \overline{A_2}, \epsilon_A), G_2 = (\overline{\Sigma_B} \otimes \overline{B_1} \to \overline{B_2}, \epsilon_B),} their external choice is has parameter #{\Sigma_A \amp \Sigma_B}. The play map is given by 
   ##{(\Sigma_A \amp \Sigma_B) \otimes (A_1 + B_1) \cong (\Sigma_A \amp \Sigma_B) \otimes A_1 + (\Sigma_A \amp \Sigma_B) \otimes B_1 \to \Sigma_A \otimes A_1 + \Sigma_B \otimes B_1 \to A_2 + B_2}
 
   The selection relation #{\epsilon_A \oplus \epsilon_A} is given (up to equivalence) as follows:
-  Given a context #{k: \bar{\Sigma_A} \amp \bar{\Sigma_B} \to I,} and a deterministic state #{I \to \bar{\Sigma_A} \amp \bar{\Sigma_B}}, they are in equilibrium if
+  Given a context #{k: \overline{\Sigma_A} \amp \overline{\Sigma_B} \to I,} and a deterministic state #{I \to \overline{\Sigma_A} \amp \overline{\Sigma_B}}, they are in equilibrium if
   \ol{
     \li{
-      #{k} factors over the canonical #{\bar{\Sigma_A} \amp \bar{\Sigma_B} \to \bar{\Sigma_A} + \bar{\Sigma_B}} for some #{c: I \to I + I}.
+      #{k} factors over the canonical #{\overline{\Sigma_A} \amp \overline{\Sigma_B} \to \overline{\Sigma_A} + \overline{\Sigma_B}} for some #{c: I \to I + I}.
     }
     \li{
-      The factorization being given by #{k_A, k_B : \bar{\Sigma_A}, \bar{\Sigma_B} \to I} ,and #{I \to \bar{\Sigma_A} \amp \bar{\Sigma_B}} being given by #{\sigma_A, \sigma_B : I \to \bar{\Sigma_A}, \bar{\Sigma_B}}, we have #{\epsilon_A(\sigma_A,k_A), \epsilon_B(\sigma_B, k_B)}
+      The factorization being given by #{k_A, k_B : \overline{\Sigma_A}, \overline{\Sigma_B} \to I} ,and #{I \to \overline{\Sigma_A} \amp \overline{\Sigma_B}} being given by #{\sigma_A, \sigma_B : I \to \overline{\Sigma_A}, \overline{\Sigma_B}}, we have #{\epsilon_A(\sigma_A,k_A), \epsilon_B(\sigma_B, k_B)}
     }
   }
 }

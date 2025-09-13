@@ -10,12 +10,12 @@
 
 \transclude{efr-Y2ZN}
 \p{
-  With the interpretation that #{\bar{X} \amp \bar{Y}} is the object #{\bar{X}_x + \bar{Y}_y} indexed over #{X \otimes Y,} this map simply selects one branch randomly and marginalizes to that coordinate in #{X \otimes Y,} then includes the returned value into the coproduct.
+  With the interpretation that #{\overline{X} \amp \overline{Y}} is the object #{\overline{X}_x + \overline{Y}_y} indexed over #{X \otimes Y,} this map simply selects one branch randomly and marginalizes to that coordinate in #{X \otimes Y,} then includes the returned value into the coproduct.
 }
 \transclude{efr-98DR}
 
 \p{
-  The idea behind the external choice operator is that, for all the contexts which can actually occur as a result of pasting a game #{G \oplus G'} into a larger string diagram, the map #{X \times X' \to \bar{X} + \bar{X}'} has the given form---that is, the probability of landing in each of the two fibers does not depend on the chosen #{x,x'} and the conditional distributions on the #{\bar{X}} component of the fiber depend only on #{x \in X}. Hence we need only concern ourselves with which states are equilibria for contexts of this form. The choice of the empty set of equilibria for other contexts is merely a convention.
+  The idea behind the external choice operator is that, for all the contexts which can actually occur as a result of pasting a game #{G \oplus G'} into a larger string diagram, the map #{X \times X' \to \overline{X} + \overline{X}'} has the given form---that is, the probability of landing in each of the two fibers does not depend on the chosen #{x,x'} and the conditional distributions on the #{\overline{X}} component of the fiber depend only on #{x \in X}. Hence we need only concern ourselves with which states are equilibria for contexts of this form. The choice of the empty set of equilibria for other contexts is merely a convention.
 }
 
 \transclude{efr-VB6A}
