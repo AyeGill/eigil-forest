@@ -64,6 +64,9 @@
 \p{
   It is not apparent whether weak supports are necessary for #{\SChart(\cD_0)} to be a prefibration. We have not found any counterexample, but in general the equivalence relation on charts is fairly complicated, so it is not apparent how to prove the necessity. We will generally not be too bothered about assuming weak supports instead of the more nebulous assumption that #{\cD_0} presents a Markov fibration.
 }
+\transclude{efr-26SF}%Lemma on equivalent formulation of equiv. rel.
+
+
 \transclude{efr-XZRN}
 \transclude{efr-1YS9}
 

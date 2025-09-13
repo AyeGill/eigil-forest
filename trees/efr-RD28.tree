@@ -6,28 +6,48 @@
   Let #{\cC} be a Markov category and let #{\cD} be a stochastic module over #{\cC}.
   Let #{(M_1, \phi_1): \bar{X_1} \lensto \bar{Y_1}, (M_2, \phi_2): \bar{X_2} \lensto \bar{Y_2}} be decorated spans in #{\Span_{\cC}(\cD / \cC_\det)}, and let #{f: \bar{X_1} \charto \bar{X_2}, g: \bar{Y_1} \to \bar{Y_2}} be morphisms in #{\cD}, so that we have a square
    \quiver{
-    \begin{tikzcd}
-    \bar{X_1} \ar[d] \ar[r, "\phi_1"] & \bar{Y_1} \ar[d]\\
-    \bar{X_2} \ar[r, "\phi_2"]  & \bar{Y_2}
-    \end{tikzcd} 
+    % https://q.uiver.app/#q=WzAsNixbMCwwLCJcXG92ZXJsaW5le1hfMX0iXSxbMCwxLCJcXG92ZXJsaW5le1hfMn0iXSxbMSwwLCJcXG92ZXJsaW5le1hfMX1fe01fMX0iXSxbMSwxLCJcXG92ZXJsaW5le1hfMn1fe01fMn0iXSxbMiwwLCJcXG92ZXJsaW5le1lfMX0iXSxbMiwxLCJcXG92ZXJsaW5le1lfMn0iXSxbMiwwXSxbMywxXSxbMiw0LCJcXHBoaV8xIl0sWzMsNSwiXFxwaGlfMiJdLFsyLDNdLFswLDEsImYiLDJdLFs0LDUsImciXV0=
+  \begin{tikzcd}
+	{\overline{X_1}} & {\overline{X_1}_{M_1}} & {\overline{Y_1}} \\
+	{\overline{X_2}} & {\overline{X_2}_{M_2}} & {\overline{Y_2}}
+	\arrow["f"', from=1-1, to=2-1]
+	\arrow[from=1-2, to=1-1]
+	\arrow["{\phi_1}", from=1-2, to=1-3]
+	\arrow["g", from=1-3, to=2-3]
+	\arrow[from=2-2, to=2-1]
+	\arrow["{\phi_2}", from=2-2, to=2-3]
+  \end{tikzcd}
   }
 }
 \p{
-  A \em{2-cell of decorated spans} for this data consists of a span #{M_1 \leftarrow K \to M_2} with a section #{s: M_1 \to K}, so that the squares
+  A \em{2-cell of decorated spans} for this data consists of a morphism #{m: M_1 \to M_2 \in \cC} (that is, possibly stochastic), satisfying the following two conditions. First, the diagram
   \quiver{
+    % https://q.uiver.app/#q=WzAsNixbMCwwLCJYXzEiXSxbMCwxLCJYXzIiXSxbMSwwLCJNXzEiXSxbMSwxLCJNXzIiXSxbMiwwLCJZXzEiXSxbMiwxLCJZXzIiXSxbMCwxXSxbMiwwXSxbMywxXSxbMiw0XSxbNCw1XSxbMyw1XSxbMiwzXV0=
     \begin{tikzcd}
-    K \ar[r] \ar[d] & M_2 \ar[d]\\
-    X_1 \otimes Y_1 \ar[r] & X_2 \otimes Y_2
-    \end{tikzcd}
+	{X_1} & {M_1} & {Y_1} \\
+	{X_2} & {M_2} & {Y_2}
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=1-1]
+	\arrow[from=1-2, to=1-3]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=1-3, to=2-3]
+	\arrow[from=2-2, to=2-1]
+	\arrow[from=2-2, to=2-3]
+\end{tikzcd}
   }
+  in the base must commute. Given this, there is an induced square
+  
 
   \quiver{
     \begin{tikzcd}
-    X_1 \ar[d] \ar[r] & X_2 \ar[dd] \\
-    M_1 \ar[d] & \\
-    K \ar[r]& M_2
-    \end{tikzcd}
+	{\overline{X_1}_{M_1}} & {\overline{Y_1}_{M_1}} \\
+	{\overline{X_2}_{M_1}} & {\overline{Y_2}_{M_1}}
+	\arrow[from=1-1, to=1-2]
+	\arrow[from=1-1, to=2-1]
+	\arrow[from=1-2, to=2-2]
+	\arrow[from=2-1, to=2-2]
+\end{tikzcd}
   }
 
-  both commute, and so that the square over #{M_0} obtained by pulling back #{f,g} into maps #{f_{M_1}: \bar{X_1}_{M_1} \to \bar{X_2}_{M_1}, g_{M_1} : \bar{Y_1}_{M_1} \to \bar{Y_2}_{M_1}} and pulling back #{\phi_2} to #{K} then along #{s} to obtain #{s^*(\phi_{2,K}) : \bar{X_2}_{M_1} \to \bar{Y_2}_{M_1}}, commutes. (Note that this makes sense because pullbacks compose and the square under #{K} commutes.)
+  in #{\cD_{M_1}}, where the bottom map is given by pulling back #{\phi_2} along #{m}, in the sense of \ref{efr-VF6V}. The second condition is that this square must also commute.
 }

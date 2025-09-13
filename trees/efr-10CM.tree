@@ -11,7 +11,7 @@
     \bar{X_2} \ar[r, "\phi_2"]  & \bar{Y_2}
     \end{tikzcd} 
   }
-  in #{\widetilde{\Span}(\cD)^\lens} Suppose further the underlying square in #{\cC} is deterministic. Then:
+  in #{\widetilde{\Span}(\cD)^\lens} (or #{\widetilde{\Span}(\cD)^\chart}) Suppose further the underlying square in #{\cC} is deterministic. Then:
 }
 \ol{
   \li{

@@ -10,6 +10,6 @@
 }
 \proof{
   \p{
-    Unwinding the definitions, a 2-cell #{M_\phi \leftarrow K \to M_\psi,} #{s: M_\phi \to K} is precisely a pair of an equation from #{\overline{\cD}} (given by the map #{K \to M_\psi}) and an equation from #{\SChart(\cD)} (given by the map #{K \to M_\phi} and the section #{s}). 
+    Unwinding the definitions, a 2-cell #{M_\phi \to M_\psi} is precisely a map exhibiting the equality of the two decorated spans, as in \ref{efr-26SF}
   }
 }
