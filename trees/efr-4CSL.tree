@@ -1,14 +1,20 @@
 \date{2025-04-30}
 \author{eigil-rischel}
 \import{macros}
-\taxon{Proposition}
+\taxon{Example}
 \p{
-  ##{(\argmax_\Sigma^\Omega: \bar{X} \to \bar{Y}) \oplus (\argmax_{\Sigma'}^\Omega : \bar{X}' \to \bar{Y}') \cong \argmax_{\Sigma \otimes \Sigma'}{\Omega} : \bar{X}\oplus \bar{X}' \to \bar{Y} \oplus \bar{Y}'}
+  Consider the (Grothendieck) fibration #{\Set^\to \to \Set}, which can be viewed as a Markov fibration.
+  Let #{f: \arena{\RR}{\Sigma} \otimes \arena{\bar{X}}{X} \lensto \arena{\bar{Y}}{Y}} be a parameterized lens.
+  Denote by #{\argmax_f} the open game #{\arena{\bar{X}}{X} \to \arena{\bar{Y}}{Y}} with parameters #{\arena{\RR}{\Sigma}}, underlying parameterized lens #{f}, and equilibrium relation given by #{\argmax}.
 }
 \p{
-  In other words, two players who play in disjoint cases, each maximizing a given utility function, is equivalent to one player who plays in both cases, and maximizes a utility function which depends on the case.
+  Then if #{g: \arena{\RR}{\Sigma'} \otimes \arena{\overline{X'}}{X'} \lensto \arena{\overline{Y'}}{Y'}} is another parameterized lens,
+  we have
+  ##{\argmax_f \oplus \argmax_g \cong \argmax_{f \oplus g},}
+  where by an abuse of notation #{f \oplus g} denotes the paramterized lens
+  ##{\arena{\RR}{\Sigma \times \Sigma'} \otimes (\arena{\overline{X}}{X} \oplus \arena{\overline{X'}}{X'}) \to \arena{\overline{Y}}{Y} \oplus \arena{\overline{Y'}}{Y'}}
+  given by distributing into the coproduct, then projecting into the relevant factor of the product #{\Sigma \times \Sigma'} and applying either #{f} or #{g}
 }
-\proof{
-  \p{
-  }
+\p{
+  A context for either of these games consists of an element of #{X + X'} and a function #{k: Y + Y' \to \RR}. The external choice game can be seen as having two players, one who gets to play if the context chooses an element in #{X}, who must output an element #{y \in Y} and optimize #{k(y)} (according to his private utility function #{\Sigma \times X \times \bar{Y} \to \RR}), the other playing when the input is in #{X'} and who must choose an element in #{y'}. The single argmax game can be seen as a single player, who is constrained to play inside the same "branch" of the game as the input (this constraint is encoded in the lens #{f \oplus g}), and whose utility function is given by the first players' in the first branch, and the second players' in the second branch.x
 }
