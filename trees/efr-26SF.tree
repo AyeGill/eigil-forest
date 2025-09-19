@@ -1,6 +1,7 @@
 \date{2025-09-13T15:10:35Z}
 \author{eigil-rischel}
 \taxon{Lemma}
+\import{macros}
 \p{
   Let #{(M,\phi)} and #{(N,\psi)} be two representatives of charts.
   Given some possibly stochastic map #{f: M \to N} over #{X} and #{Y}, recall (\ref{efr-VF6V}) that we can define #{f^*\psi}, regardless of whether #{f} is deterministic or the section of a deterministic map. If there exists such a map #{f}, we can always factor it over the pullback #{M \times_{X \times Y} N} as a section followed by a deterministic map. Hence the equivalence relation defining #{\SChart} is equivalent to the relation identifying two representatives whenever there exists such an #{f} with #{f^*\psi = \phi}
