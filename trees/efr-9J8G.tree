@@ -18,6 +18,10 @@
 \transclude{efr-S87B}%TychDiffStoch properties
 
 \transclude{efr-LPX2} %Remark on C\infty algebras, may need more context.
-\transclude{efr-IMZ3}%TychDiffStoch smooth systems (move??)
 
-\transclude{efr-RUTY}%GANS
+
+\p{
+  We will now give an example of how to represent the training dynamics of a machine learning system using the tools developed so far.
+  As discussed previously, given a parameterized function #{F: P \times X \to Y}, its reverse derivative naturally becomes a parameterized lens, and the composition of these describe how gradient vectors are passed around to compute an update during training. It is natural to want to compose this lens with the data-generating distribution #{I \to X \otimes Y}, (along with some more context describing the loss function, etc) to obtain the training dynamics of such a model. This requires a category of parameterized lenses which allows stochastic maps in the base. The goal of combining this feature with non-trivial tangent bundles was one of the original motivations for developing a theory of stochastic lenses.
+}
+\transclude{efr-IMZ3}%GANs

@@ -271,6 +271,10 @@
 \def\CMon{#{\cat{CMon}}}
 
 
+\def\inl{#{\operatorname{inl}}}
+
+\def\inr{#{\operatorname{inr}}}
+
 \def\horiz{\mathcal{h}}
 
 \def\List{#{\mathbf{List}}}
