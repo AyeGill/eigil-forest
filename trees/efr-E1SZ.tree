@@ -5,7 +5,7 @@
 \taxon{Definition}
 \p{
   A \em{smooth space} is a sheaf on #{\SmMfd} in the standard topology of open covers.
-  A smooth space #{X} is a \em{diffeological space} if, for each #{M \in \SmMfd,} the map #{X(M) \to \prod_{p \in M} X(\{p\}) is injective.}
+  A smooth space #{X} is a \em{diffeological space} if, for each #{M \in \SmMfd,} the map #{X(M) \to \prod_{p \in M} X(\{p\})} is injective.
 }
 \p{
   A diffeological space with underlying set #{X} is called a \em{diffeology} on #{X}, and consists of specifying which maps #{\RR^n \to X} are smooth. We call these maps \em{smooth plots}.
