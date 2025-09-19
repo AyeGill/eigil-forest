@@ -1,0 +1,7 @@
+\date{2025-09-14T13:06:36Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Remark}
+\p{
+  The pullbacks appearing in \ref{efr-T3HM} are of course pullbacks in #{\cC_\det}, not #{\cC}, analogously to how #{X \otimes Y} is a product in #{\cC_\det}, not #{\cC}. We will still use the notation #{X \times_Z Y} for these pullbacks, which should not lead to any confusion. We may occasionally write #{X \times Y} instead of #{X \otimes Y}, if we are carrying out a construction which primarily involves #{\cC_\det}. Since essentially no Markov categories have Cartesian products (except when the tensor product is Cartesian), this should also not lead to any ambiguity.
+}

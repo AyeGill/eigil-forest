@@ -51,6 +51,8 @@
 \p{
   Note that a pullback-positive category is in particular positive by taking #{Z = I}.
 }
+\transclude{efr-A7K7}
+
 \transclude{efr-0YP1} % lemma on pullbacks
 \p{
   The idea here is that a distribution on a subobject #{X' \subseteq X} defined by some condition #{f(x \in X) \in U \subseteq Y} is simply a distribution so that the condition is satisfied with probability #{1}. This is a natural condition which holds in many Markov categories.
