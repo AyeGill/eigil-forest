@@ -1,0 +1,26 @@
+\date{2025-09-19T09:33:16Z}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  Let #{\cC} be a Markov category, and consider a map #{X \otimes X \to X}.
+  Note that this induces a map #{PX \times PX \to PX} in #{\cC_\det}.
+}
+\p{
+  A \em{convex structure} on a representable Markov category #{\cC} is a natural transformation #{X \otimes X \to X} so that the corresponding multiplication on #{PX} makes each #{PX} into a convex body (an iterable, cancellative midpoint algebra).
+}
+\p{
+  First question: can this be expressed without reference to #{P}?
+}
+\p{
+  Second qustion: can a requirement like "#{PX} is free on X as an iterable midpoint algebra" be expressed without representability?
+}
+\p{
+  (For example, we may ask that #{X \otimes X \to X} makes #{\cC(A,X)} into a midpoint algebra for every #{A}. But #{\cC(A,X)} is not free on #{\cC_\det(A,X)}, except maybe in the case #{A = I})
+}
+
+\p{
+  Apart from every #{A} being iterable (as in #{PA} deterministic-iterable), the main point seems to be essentially whether the virtual stream object #{X^\omega} is a Kolmogorov limit. In other words, supposing we have some deterministic map #{A^\omega \to A} and a deterministic map #{X \to A \times X}, we get a deterministic map #{X \to A}. Given #{X \to A \otimes X} stochastic, do we get a stochastic map #{X \to A}? If #{A^\omega} is a Kolmogorov product, the answer is yes. 
+}
+\p{
+  This is a property of a #{A \times -}-coalgebra (for some #{A}), and the claim is that the magma #{PA \times PA \to PA} has this property. We can of course also simply demand that every iterable magma in #{\cC_\det} remains iterable in #{\cC}, as noted this is true when the countable products in #{\cC_\det} are Kolmogorov products. 
+}
