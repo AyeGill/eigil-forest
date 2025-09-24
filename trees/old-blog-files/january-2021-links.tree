@@ -1,0 +1,52 @@
+\author{eigil-rischel}
+\date{2021-01-31T15:50:00+00:00}
+\import{macros}
+\title{January 2021 Links}
+    \p{
+        Alvaro de Menard: [Are Experts Real?](https://fantasticanachronism.com/2021/01/11/are-experts-real/), and the followup, [Unjustified True Disbelief](https://fantasticanachronism.com/2021/01/12/unjustified-true-disbelief/). The former:
+    }
+    \p{
+        > There's a superficial uniformity in the academy. If you visit the physics department and the psychology department of a university they will appear very similar: the people working there have the same titles, they instruct students in the same degrees, and publish similar-looking papers in similar-looking journals.6 The N=59 crew display the exact same shibboleths as the real scientists. This similarity provides cover so that hacks can attain the prestige, without the competence, of academic credentials. > > Despite vastly different levels of rigor, different fields are treated with the ~same seriousness. Electrical engineering is definitely real, and the government bases all sorts of policies on the knowledge of electrical engineers. On the other hand nutrition is pretty much completely fake, yet the government dutifully informs you that you should eat tons of cereal and a couple loaves of bread every day. A USDA bureaucrat can hardly override the Scientists (and really, would you want them to?).
+    }
+    \p{
+        Concavenator: [Gods of Salt](https://www.deviantart.com/concavenator/art/Gods-of-Salt-773947897).
+    }
+    \p{
+        Michael Shulman: [The Logic of Space](https://arxiv.org/pdf/1703.03007.pdf). Especially recommend section 2.1, "On Syntax." See also [this discussion](https://twitter.com/SC_Griffith/status/1348794302235860993) of a related point on twitter. "How much information is actually in a universal property" is a fascinating question, one I actually might write a longer post about at some point.
+    }
+    \p{
+        Sarah Constantin: [Wrongology 101](https://srconstantin.github.io/2018/04/24/wrongology-101.html). Unfortunately seems to suffer from a spot of bad formatting.
+    }
+    \p{
+        Escardó-Simpson: [A universal characterization of the closed Euclidean interval](https://sci-hub.se/10.1109/LICS.2001.932488). People often say stuff like "analysis is coalgebraic" - the description of the unit interval in this paper in what is essentially finitary terms is probably the purest example I've seen of this.
+    }
+    \p{
+        Interesting thread: [Joel David Hamkins On Twitter](https://twitter.com/JDHamkins/status/1340971317277941762)
+    }
+    \p{
+        {{<tweet 1340971317277941762>}}
+    }
+    \p{
+        Nintil: [Longevity FAQ](https://nintil.com/longevity/).
+    }
+    \p{
+        [SSC IS BACK BABY](https://astralcodexten.substack.com/), now called "Astral Codex Ten". I also recommend going to the website of Scott's new psychiatry practice, [Lorien Psychiatry](https://lorienpsych.com/), and reading his writing on psych, especially [Ontology of Psychiatric Conditions: Taxometrics](https://lorienpsych.com/2020/10/30/ontology-of-psychiatric-conditions-taxometrics/). I enjoyed [Contra Weyl on Technocracy](https://astralcodexten.substack.com/p/contra-weyl-on-technocracy), but found it a bit weak (I especially feel the "technocracy success stories" weren't very strong). I think this is because both Scott and Weyl are using the term Technocracy in a sort of confused way, although Scott seems to be grappling towards understanding in this post. I think this is an object-level disagreement masquerading as a meta-level disagreement (which is also why all of Weyls actual alternative policy proposals smell so much like more technocracy - technocracy isn't really describing what it is he's against.) I really liked this quote:
+    }
+    \p{
+        > There is no way to perfectly calculate the devastation of a potential pandemic that hasn't happened yet. But once you make even a weak effort, you notice that all the numbers are really really big.
+    }
+    \p{
+        Jeff Kaufman: [Bets, Bonds and Kindergarten](https://www.jefftk.com/p/bets-bonds-and-kindergarteners). I might steal this idea for when I have my own children.
+    }
+    \p{
+        Alice Maz: [Alien Intelligences](https://www.alicemaz.com/writing/alien.html)
+    }
+    \p{
+        Philip Wadler: [Theorems for free!](http://ecee.colorado.edu/ecen5533/fall11/reading/free.pdf)
+    }
+    \p{
+        Junk Heap Homotopy: [The Four Intuitions](https://zrkrlc.com/notes/the-four-intuitions/1562959680/). (Physical, Computational, Algebraic, Geometric).
+    }
+    \p{
+        Milan Cvitcovic: [Things You're Allowed To Do](https://milan.cvitkovic.net/writing/things_youre_allowed_to_do/). Put it on Tab Snooze and read it every month.
+    }

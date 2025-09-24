@@ -1,0 +1,234 @@
+\date{2023-09-20}
+\author{eigil-rischel}
+\import{macros}
+\title{Coproducts in the category of lenses}
+\subtree{
+    \title{Introduction}
+    \p{
+        The category of bimorphic lenses and its many generalizations has been widely studied and utilized in applied category theory. We will not give a review of the literature here, but see e.g. Riley's paper on "optics" (one of the many generalizations) [*Categories of Optics*](https://arxiv.org/abs/1809.00738), which includes a decent if somewhat out of date overview.
+    }
+    \p{
+        Dispensing with a point of notation, we will denote objects of the category of lenses #{\binom{A}{X}}, and morphisms #{\varphi: \binom{A}{X} \to \binom{B}{Y}} as #{(\varphi^+: X \to Y,\varphi^- : X \times B \to A)}. Note that we write the *forwards* pass on the bottom of the tuple, breaking with the convention used by Riley and many others.
+    }
+    \p{
+        The category #{\mathsf{Lens}= \mathsf{Lens}(\mathsf{Set})} of lenses embeds into the category of polynomial functors #{\mathsf{Poly}} and natural transformations as the full subcategory of functors of the form #{X \times (-)^A}. Since #{\mathsf{Poly}} admits all coproducts, and these are computed pointwise, one immediate consequence is that we have the coproducts #{\binom{A}{X} + \binom{A}{Y} = \binom{A}{X + Y}} in #{\mathsf{Lens}}. These seem to have been studied first by Hedges ([*Morphisms of Open Games*](https://arxiv.org/abs/1711.07059)). (For a reference on #{\mathsf{Poly}}, including this inclusion, see eg Spivak's [*Poly: An abundant categorical setting for mode-dependent dynamics*](https://arxiv.org/abs/2005.01894). #{\mathsf{Poly}} is another branch on the tree of generalizations of #{\mathsf{Lens}}, studied extensively by Spivak and others).
+    }
+    \p{
+        Given the above, one might expect these to be all the coproducts of #{\mathsf{Lens}} (up to isomorphism) - they are certainly the only ones preserved by this inclusion[^1]. But this turns out not to be the case.
+    }
+    \p{
+        Let's begin with a worked example of the "exotic" coproducts. Note that I simply denote by #{n \in \mathbb{N}} the set #{\{1, \dots n\}} with #{n} elements. In particular #{0} is the empty set.
+    }
+\subtree{
+    \title{Example 1.1}
+    \p{
+        In #{\mathsf{Lens}}, #{\binom{0}{1} + \binom{1}{1} = \binom{0}{2}}, with the coproduct inclusions having as their forwards pass the two distinct maps #{1 \to 2}, and the backwards passes in both cases being trivial.
+    }
+    \p{
+        To see this is a coproduct, consider the natural transformation
+    }
+    \p{
+        #{\mathsf{Lens}\left(\binom{0}{2},\binom{A}{X}\right) \to \mathsf{Lens}\left(\binom{0}{1},\binom{A}{X}\right) \times \mathsf{Lens}\left(\binom{1}{1},\binom{A}{X}\right)}
+    }
+    \p{
+        In the case where #{A} is nonempty, this is simply the map #{0 \to 0}, because there are no maps #{2 \times A \to 0}, and also no maps #{1 \times A \to 0}. Clearly #{0 \to 0} is a bijection. On the other hand if #{A} is empty, all the backwards passes are trivial, so we're just left with the map #{\mathsf{Set}(2,A) \to \mathsf{Set}(1,A) \times \mathsf{Set}(1,A)}, which is clearly a bijection. Hence this is a natural isomorphism, so we have a coproduct.
+    }
+    \p{
+        To see why this is not preserved by the inclusion #{\mathsf{Lens}\hookrightarrow \mathsf{Poly}}, consider the polynomial #{y \mapsto y + 1} (this is the actual coproduct of the polynomials corresponding to these lenses). The inclusion maps from #{y = 1 \times y^1} and #{1 = 1 \times y^0} into this polynomial should induce a map from #{2 = 2 \times y^0}, but of course there's no way to map into the #{y} (unless we map the entire thing into the #{1} component, but this clearly won't pull back to the inclusion map of #{y} when we compose with the map #{y \to 2}). The problem is that, where in the lens/monomial case, to have any maps at all the backwards set must be #{0}, making the whole backwards pass trivial, in the polynomial case we can have the backwards set be empty only when it's forced to be.
+    }
+}
+}
+\subtree{
+    \title{The coproducts in #{\mathsf{Lens}}}
+    \p{
+        Having seen the above, we may begin to lose hope of understanding the coproducts in #{\mathsf{Lens}} at all. Fortunately the situation is not completely chaotic - in some sense, the preceding example is the *only* problem - all the coproducts in #{\mathsf{Lens}} are either of the form #{\binom{A}{\coprod_i X_i}} (up to isomorphism), or they are of the same form as the preceding example.
+    }
+\subtree{
+    \title{Theorem 2.1}
+    \p{
+        In #{\mathsf{Lens}= \mathsf{Lens}(\mathsf{Set})}, a tuple of lenses #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{Y}\}} is a coproduct diagram if and only if the forwards passes #{\{X_i \to Y\}} form a coproduct diagram in #{\mathsf{Set}}, and one of these conditions hold:
+    }
+    \ol{
+        \li{
+            For all #{i}, and for all #{x \in X_i}, the function
+        }
+    \p{
+        #{\varphi_i(x, -): B \to A_i} is a bijection.
+    }
+    }
+    \ol{
+        \li{
+            For at least one #{i}, #{A_i} is empty and #{X_i} is nonempty. (The existence of any lens #{\binom{A_i}{X_i} \to \binom{B}{Y}} then implies that #{B} must be empty as well)
+        }
+    }
+    \p{
+        The first class of coproducts are the "good" ones - these are preserved by the functor from lenses to polynomial functors, and seem to capture the correct notion of "branching" for bidirectional systems. The other class, the "exotic" coproducts, are more mysterious.
+    }
+    \p{
+        We will begin the proof of this theorem with some preliminaries about lenses in a general (Cartesian) distributive category. While we can't obtain the preceding theorem in this generality (for reasons that will become clear later), it may be useful to know what *can* be said here.
+    }
+    \p{
+        Let us fix a (Cartesian) distributive category #{\mathcal{C}} - that is, #{\mathcal{C}} has finite products and coproducts, and the universal map #{\coprod_i A \times X_i \to A \times (\coprod_i X_i)} is always an isomorphism. I will denote the initial object by #{0}.
+    }
+}
+\subtree{
+    \title{Proposition 2.2}
+    \p{
+        The functor #{\mathsf{Lens}(\mathcal{C}) \to \mathcal{C}} which carries #{\binom{A}{X}} to #{X} and a lens #{(\varphi^+, \varphi^-)} to its foward pass #{\varphi^+} admits a right adjoint, given by #{X \mapsto \binom{0}{X}}.
+    }
+\subtree{
+    \title{Proof}
+    \p{
+        We simply have to verify #{\mathsf{Lens}(\mathcal{C})(\binom{A}{X},\binom{0}{Y}) = \mathcal{C}(X,Y)}. But this is trivial - the forwards pass of such a lens is clearly an element of the right-hand side, so it suffices to prove that there is always a unique choice of backwards pass. But the backwards pass is a map #{0 \times X \to A}, and by distributivity #{0 \times X} is initial. This concludes the proof.
+    }
+    \p{
+        Because left adjoints preserve (in particular) coproducts, we obtain the following:
+    }
+}
+}
+\subtree{
+    \title{Corollary 2.3}
+    \p{
+        For a tuple #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{Y}\}} to be a coproduct diagram, the forwards passes #{X_i \to Y} must form a coproduct diagram in #{\mathcal{C}}.
+    }
+    \p{
+        The following result, characterizing the "good" coproducts, was already essentially proven by Hedges in *Morphisms of Open Games*[^2], but I'll state it here and sketch a proof for completeness.
+    }
+}
+\subtree{
+    \title{Proposition 2.4}
+    \p{
+        Let #{X_i} be a collection of objects of #{\mathcal{C}}, and #{\coprod_i X_i} a coproduct. Let also #{A \in \mathcal{C}}. Then the family of lenses #{\binom{A}{X_i} \to \binom{A}{\coprod_i X_i}} with forwards passes given by the coproduct inclusions, and backwards passes by the projection #{X_i \times A \to A}, is a coproduct diagram.
+    }
+\subtree{
+    \title{Proof}
+    \p{
+        #{\mathsf{Lens}(\mathcal{C})(\binom{A}{\coprod_i X_i},\binom{B}{Y}) = \mathcal{C}(\coprod_i X_i, B) \times \mathcal{C}((\coprod_i X_i) \times B, a)}
+    }
+    \p{
+        #{\cong \prod_i \left(\mathcal{C}(X_i, B) \times \mathcal{C}(X_i \times B, a)\right),}
+    }
+    \p{
+        using the universal property of coproducts and the distributivity. This is clearly the set of tuples of lenses #{\binom{A}{X_i} \to \binom{B}{Y}}, and moreover precomposition with the inclusion maps clearly picks out the elements of the tuple, verifying the universal property of the coproduct.
+    }
+}
+}
+\subtree{
+    \title{Proposition 2.5}
+    \p{
+        Let a tuple #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{\coprod_i X_i}\}} be given, such that each #{\varphi_i^+: X_i \to \coprod_j X_j} is the coproduct inclusion.
+    }
+    \p{
+        Given some object #{C \in \mathcal{C}}, each #{\varphi_i^-: X_i \times B \to A_i} determines a map #{ (\varphi_i^-)^*: \mathcal{C}(X_i \times C, B) \to \mathcal{C}(X_i \times C, A_i) }, given by #{ (\varphi_i^-)^*\psi(x,c) = \varphi_i^-(x,\psi(x,c))}. The tuple #{(\varphi_i)} is a coproduct diagram if and only if, for all #{C}, one of these conditions hold (not necessarily the same one for each #{C}):
+    }
+    \ol{
+        \li{
+            Each #{(\varphi_i^-)^*} is a bijection.
+        }
+    }
+    \ol{
+        \li{
+            For some #{i}, the set #{\mathcal{C}(X_i \times C, A_i)} is empty.
+        }
+    }
+\subtree{
+    \title{Proof}
+    \p{
+        Note that each of the lenses #{\varphi_i} factors as #{\binom{A_i}{X_i} \to \binom{B}{X_i} \to \binom{B}{\coprod X_i} = \coprod_i \binom{B}{X_i}}, where the first map is #{(1_{X_i},\varphi_i^-)}, and the second map is the coproduct inclusion.
+    }
+    \p{
+        Hence the natural transformation
+    }
+    \p{
+        #{\alpha: \mathsf{Lens}(\mathcal{C})\left(\binom{B}{\coprod_i X_i},\binom{C}{Z}\right) \to \prod_i \mathsf{Lens}(\mathcal{C})\left(\binom{A_i}{X_i},\binom{C}{Z}\right)}
+    }
+    \p{
+        factors as
+    }
+    \p{
+        #{\mathsf{Lens}(\mathcal{C})\left(\binom{B}{\coprod_i X_i},\binom{C}{Z}\right) \cong \prod_i\mathsf{Lens}(\mathcal{C})\left(\binom{B}{X_i},\binom{C}{Z}\right)}
+    }
+    \p{
+        #{\to \prod_i\mathsf{Lens}(\mathcal{C})\left(\binom{A_i}{X_i},\binom{C}{Z}\right)}
+    }
+    \p{
+        where the second map is the parallel product of the precomposition morphisms #{- \circ (1_{X_i},\varphi_i^-)} for each #{i}.
+    }
+    \p{
+        The tuple is a coproduct diagram if and only if this composite is a bijection, which is true if and only if this second map is a bijection.
+    }
+    \p{
+        A product of functions in #{\mathsf{Set}} is a bijection if and only if each component map is a bijection, or one of the product sets in the target is empty (in which case the corresponding set in the domain must be empty as well for a map to exist, and so both products are empty).
+    }
+    \p{
+        We can rewrite the sets involved here as
+    }
+    \p{
+        #{\mathsf{Lens}(\mathcal{C})\left(\binom{B}{X_i},\binom{C}{Z}\right) = \mathsf{Set}(X_i,Z) \times \mathsf{Set}(X_i \times C, B),}
+    }
+    \p{
+        and
+    }
+    \p{
+        #{\mathsf{Lens}(\mathcal{C})\left(\binom{A_i}{X_i},\binom{C}{Z}\right) = \mathsf{Set}(X_i,Z) \times \mathsf{Set}(X_i \times C, A_i).}
+    }
+    \p{
+        This is simply the definition of #{\mathsf{Lens}}
+    }
+    \p{
+        Under this expansion the map #{- \circ (1_{X_i},\varphi_i^-)} carries a lens #{(\psi^+, \psi^-)} to #{(\psi^+, (\varphi_i^-)^*\psi^-)}. So #{- \circ (1_{X_i},\varphi_i^-)i} is a bijection if and only if we have #{\mathsf{Set}(X_i,Z)} empty or #{(\varphi_i^-)^*} a bijection (or both).
+    }
+    \p{
+        Now, clearly if condition 1. holds, we've just seen that each #{- \circ (1_{X_i},\varphi_i^-)} becomes a bijection, and so our map #{\alpha} is a bijection. If condition 2. holds, then #{\mathsf{Lens}(\mathcal{C})\left(\binom{A_i}{X_i},\binom{C}{Z}\right)} is empty, and so we again have a (trivial) bijection.
+    }
+    \p{
+        So if at least one of the conditions hold for each #{C}, #{\alpha} is always a bijection, and so we have a coproduct.
+    }
+    \p{
+        On the other hand, suppose there is some #{C} so that neither condition holds. Take #{Z = \coprod_i X_i}. Then none of the mapping sets #{\mathsf{Set}(X_i, Z = \coprod_i X_i)} are empty, so the only way for #{- \circ (1_{X_i},\varphi_i^-)} to be a bijection is for #{(\varphi_i^-)^*} to be a bijection, but by hypothesis this fails for at least one #{i}. By assumption none of the sets #{\mathsf{Set}(X_i \times C, A_i)} are empty, and none of the sets #{\mathsf{Set}(X_i, Z)} are empty either, so the product is not empty - hence the map #{\alpha} is not a bijection in this case.
+    }
+    \p{
+        We can now return to the main theorem. The following argument is somewhat clunky and ad hoc. The main point is that we can characterize the cases where #{\mathsf{Set}(U,V)} is empty, namely only when #{V} is empty and #{U} is not. In a general category, this can be much more complicated, and there does not seem to be any completely general method. This means we don't know which possible #{C} we need to deal with when understanding when the backwards pass is a bijection, which makes it seemingly impossible to give a general classification of the coproducts by this method.
+    }
+    \p{
+        (The second point is that it's easy to understand when the maps between hom-spaces are bijections in #{\mathsf{Set}} - we have a somewhat clunky argument but it's pretty straightforward and it can probably be done in a more conceptual way, if one took the time to find it).
+    }
+    \p{
+        We can replace #{Y} with the coproduct #{\coprod_i X_i}, and each forwards pass #{\varphi_i^+} with the inclusion, without loss of generality (if we are not in this situation up to isomorphism, we don't have a coproduct by the corollary)
+    }
+}
+}
+\subtree{
+    \title{Proof of Theorem 2.1}
+    \p{
+        It's clear that the first condition of the theorem implies that #{\mathsf{Set}(X_i \times C, B) \to \mathsf{Set}(X_i \times C, A_i)} is a bijection always, and so we have a coproduct. As for the second condition, suppose #{X_i} is nonempty and #{A_i} is empty. Then for nonempty #{C}, the set #{\mathsf{Set}(X_i \times C, A_i)} is clearly empty, fulfilling the second condition of the lemma, whereas for empty #{C}, the map #{\mathsf{Set}(X_i \times C, B) \to \mathsf{Set}(X_i \times C, A_i)} is a map between two singletons (since #{X_i \times C} is empty), and hence a bijection.
+    }
+    \p{
+        This proves that if one of the two conditions hold, we have a coproduct. To see the other direction, suppose neither condition holds. If the second condition doesn't hold, then there is always a map #{X_i \to A_i}, and hence the set #{\mathsf{Set}(X_i \times C, A_i)} is never empty, so according to the lemma, it suffices to show that for some #{i} and some #{C}, the map #{(\varphi_i^-)^*: \mathsf{Set}(X_i \times C, B) \to \mathsf{Set}(X_i \times C, A_i)} is not a bijection.
+    }
+    \p{
+        Since the first condition doesn't hold, let #{j, x' \in X_j} be such that the map #{\varphi^-_j(x',-): B \to A_j} is not a bijection. Suppose first it's not surjective and let #{a'} be something not in the image.
+    }
+    \p{
+        Take #{C = *}. Then the constant function #{- \mapsto a' : X_j \times * \to A_j} is clearly not in the image of #{(\varphi_j^-)^*}, since that would require, for some #{\psi}, #{\varphi_j^-(x,\psi(x,*)) = a'} for all #{x}, and in particular for #{x = x'}, but that's a contradiction.
+    }
+    \p{
+        On the other hand suppose it's not injective, and that #{\varphi_j^-(x',b_0) = \varphi_j^-(x',b_1)} for some #{b_0,b_1 \in B}. Now take #{C = B} and consider a function #{\psi: X_j \times B \to B}, defined by #{\psi(x',b_0) = b_1}, and #{\psi(x,b) = b} for all other pairs #{(x,b)}. Now #{\varphi_j^-(x',\psi(x',b_0)) = \varphi_j^-(x',b_1) = \varphi_j^-(x',b_0)}. And for all other #{x} or #{b}, clearly #{\varphi_j^-(x,\psi(x,b)) = \varphi_j^-(x,b)}. Hence #{(\varphi_j^-)^*\psi = (\varphi_j^-)*(\pi_B: X_j \times B \to B)} (#{\pi_B} being the projection). But #{\psi \neq \pi_B}, so #{(\varphi_j^-)^*} is not injective in this case. This concludes the proof.
+    }
+    \p{
+        The forwards part of this proof almost works for any distributive category #{\mathcal{C}} with a *strict* initial object (meaning the only maps #{X \to 0} are isomorphisms, i.e #{X} has to be another initial object). The trouble is that #{X_i \times C} can be initial even when neither #{X_i} nor #{C} is, meaning even when #{A_i} is initial and #{X_i} isn't, the nonemptyness of #{\mathsf{Set}(X_i \times C, A_i)} does not imply that #{C} is initial, meaning that we don't automatically get that all the #{(\varphi_i^-)^*} maps are bijections. A simple example of this is something like #{\mathcal{C} = \mathsf{Set}^k} for some natural number #{k > 1}. Then as long as we have #{C^{(n)}} empty *or* #{X_i^{(n)}} empty for each #{n = 1 \dots k}, their product is empty.
+    }
+    \p{
+        A more general class of example with the same flavor is #{\mathcal{C} = Sh(X)} the category of sheaves on a topological space. Then again as long as the supports of #{C} and #{X_i} are disjoint, their product is empty.
+    }
+    \p{
+        It may be possible to develop a generalization of the theorem, or at least of the forwards part of the theorem, using considerations like these to control the sets of morphisms.
+    }
+    \p{
+        [^1]: There is a subtlety here, since #{\binom{A}{0} \cong \binom{B}{0}} for any sets #{A,B}, these being the initial objects of #{\mathsf{Lens}}. This is of course the natural "nullary" version of the binary formula, but it also means that #{\binom{A}{0}+\binom{B}{X} = \binom{B}{X}}, and that this coproduct is preserved by the inclusion into #{\mathsf{Poly}}, even if #{A \not\cong B}.
+    }
+    \p{
+        [^2]: Hedges states it only for #{\mathcal{C} = \mathsf{Set}}, but his proof goes through unaltered for our case. He also only constructs a particular family of coproduct diagrams, but the ones considered here are just his composed with isomorphisms in #{\mathsf{Lens}}, so there is really nothing serious going on
+    }
+}
+}

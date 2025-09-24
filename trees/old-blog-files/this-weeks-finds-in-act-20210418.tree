@@ -1,0 +1,65 @@
+\author{eigil-rischel}
+\date{2021-04-18T17:44:00+02:00}
+\import{macros}
+\title{This Week's Finds in ACT}
+    \p{
+        John Baez wrote a regular blog/column called "[This Week's Finds in Mathematical Physics](https://math.ucr.edu/home/baez/TWF.html)" circa 1993-2012. The entries are really a treasure trove of cool mathematical nuggets, covering everything from hardcore theoretical physics, group theory, climate models, category theory, and more.
+    }
+    \p{
+        Imitation being the sincerest form of flattery, I decided to shamelessly steal this format, and so this is hopefully the first of many "This Week's Finds in Applied Category Theory". Below, I've summarized a few of the papers/blog post/notes/whatever I read this week. I didn't stick religiously to things I first came across this week, and indeed some of these are pretty old, but they're all things I spent some time mulling over this week.
+    }
+\subtree{
+    \title{[Tom Leinster: Algebraic Closure](https://golem.ph.utexas.edu/category/2021/04/algebraic_closure.html) }
+    \p{
+        Galois theory is one of the cornerstones of algebra. It studies the relationship between _field extensions_ - that is, inclusions #{F \subseteq K} of one field in another - and subgroups of the group #{Aut(K/F)}, of those automorphisms #{\phi} of #{K} with #{\phi(f) = f} for all #{f \in F}. It's somewhat clunky to treat this topic using category theory, for the simple reason that a lot of constructions aren't functorial, involving some choices that can't be made canonically.
+    }
+    \p{
+        Tom Leinster explains a neat proof of one of the fundamental theorems, namely that all fields admit an algebraic closure. The trick here is to work with _rings_ for as long as possible, and then right at the end quotient by a maximal ideal to pass back to fields.
+    }
+    \p{
+        The post ends with a remarkable idea. The algebraic closure is not functorial, in the sense that there is no endofunctor #{\bar{-}: \mathsf{Field} \to \mathsf{Field}} and natural transformation #{1 \to \bar{-}} so that #{X \to \bar{X}} is always the inclusion of #{X} in its algebraic closure. However, Leinster conjectures that this can be remedied as follows: Consider a pair #{(\mathcal{E},k)}, where #{\mathcal{E}} is a topos and #{k} is a field in #{\mathcal{E}} - meaning a ring satisfying the formula #{\forall x. x = 0 \vee \exists y. xy = 1}. Then we can consider the collection of morphisms to pairs #{(\mathcal{E}',k')}, where #{k'} is algebraically closed. Then for #{\mathcal{E} = \mathsf{Set}}, #{k} a normal field, there is an initial such map, given by the topos #{Gal(k)-\mathsf{Set}} of sets with an action of the absolute Galois group of #{k}, and #{\bar{k}} equipped with its natural action.
+    }
+    \p{
+        Unfortunately, this doesn't hold. To see why, first recall why the map of ordinary fields #{i: k \to \bar{k}} is not initial among maps from #{k} to algebraically closed fields. The reason is simply that #{Gal(\bar{k}/k)} is not trivial, so there are multiple maps #{\bar{k} \to \bar{k}} from #{i} to #{i}.
+    }
+    \p{
+        Now let #{\phi} be an element of the absolute Galois group, and consider the functor #{\phi_*: Gal(k)-\mathsf{Set} \to Gal(k)-\mathsf{Set}} that carries a set #{X} to itself with the #{&phi;}-conjugate #{Gal(k)}-action, with #{(g,x) \mapsto \phi g \phi^{-1} . x} (here #{g.x} is the original action). This is an equivalence of categories, so certainly a geometric morphism (even "in both directions"). Now #{\phi} is a map #{\bar{k} \to \bar{k}} "over" the inclusion #{i: k \to \bar{k}}. It's obviously not #{Gal(k)}-equivariant - but it _is_ equivariant from #{\bar{k} \to \phi_*\bar{k}}. Namely, #{\phi g \phi^{-1} .  \phi . x = \phi . g.x}, which is exactly what should hold. Thus, both the identity and #{(\phi_*,\phi)} form maps #{(Gal(k)-\mathsf{Set},\bar{k}) \to (Gal(k)-\mathsf{Set},\bar{k})} over #{(\mathsf{Set},k)} (To verify commutativity of the geomtric morphisms, the functor #{\mathsf{Set} \to Gal(k)-\mathsf{Set}} equips a set with the trivial action, and obviously conjugating the trivial action you still get the trivial action). Just as in the normal case, this contradicts initiality.
+    }
+}
+\subtree{
+    \title{[Dan Shiebler Categorical Stochastic Processes and Likelyhood](https://arxiv.org/abs/2005.04735) }
+    \p{
+        In categorical approaches to probability, we usually study categories of stochastic maps given as Kleisli categories of "probability monads" - the ur-example being the Giry monad #{G: \mathsf{Meas} \to \mathsf{Meas}} which carries a measurable space to the space of probability measures on it. This is quite distinct from how something like a stochastic process is usually treated in probability theory. There one would usually consider a function #{f: X \times \Omega \to Y}, where #{\Omega} is some "background space of samples", equipped with a probability measure. This formulation is strictly more expressive, since it allows you to express correlations between #{f(x)} and #{f(x')}, but since this is exactly expressive power that you usually _don't_ want in the usual categorical setups, in some sense the Giry formulation may be more appropriate. In any case, Dan Shiebler develops this alternative approach in this paper. He also considers how the paradigm of _maximum likelyhood_ statistics fits into the categorical learning framework as developed eg by Fong-Spivak-Tuyeras in [Backprop as Functor](https://arxiv.org/abs/1711.10455) and further by Crutwell-Gavranovic-Ghani-Wilson-Zanasi, [Categorical Foundations of Gradient-Based Learning](https://arxiv.org/abs/2103.01931)
+    }
+}
+\subtree{
+    \title{[Composing Open Dynamical Systems 2: Undirected Composition](https://www.algebraicjulia.org/blog/post/2021/01/resource_sharers/index.html) {#composing-open-dynamical-systems-2-undirected-composition}}
+    \p{
+        A blog post from the AlgebraicJulia project, about implementing certain ideas from ACT in actual software. Here, they're discussing a notion of "composing dynamical systems". There are different ways of doing this:
+    }
+    \ul{
+        \li{
+            If you have a _parameterized_ dynamical system - one which depends on certain inputs - you can let another dynamical system control those inputs
+        }
+        \li{
+            If you have two dynamical systems, both with a distinguished variable of the same type, you might be able to have them _share_ that variable. This requires that you can somehow "add up" the changes prescribed by each of the dynamical systems. For example, for ODEs you can add the derivatives, and for "difference equations" like #{y_{n+1} - y_n = F(y_n)}, you can add the differences. But of course given a fully general "discrete dynamical system" like #{y_{n+1} = s(y_n)}, you can't do this.
+        }
+    }
+    \p{
+        The blog posts discusses the implementation of this idea in the `AlgebraicDynamics.jl` package.
+    }
+}
+\subtree{
+    \title{[Realizability as the Connection between Computable and Constructive Mathematics](http://math.andrej.com/2005/08/23/realizability-as-the-connection-between-computable-and-constructive-mathematics/) }
+    \p{
+        You probably know that _intuitionistic_ logic is where you don't assume the Law of Excluded middle, #{P \vee \neg P} for all formulas #{P}. You may have heard this described also as _constructive_ logic, and heard something along the lines of "to prove an existence statement constructively, you have to provide an explicit algorithm for constructing an example". Since there are many interesting models of intuitionstic logic that refute LEM, which have nothing to do with algorithms (like toposes), this statement is obviously a bit odd. The right way to interpret it is _realizability logic_, which formalizes the idea of "there is a computable procedure verifying this statement". Then we find that
+    }
+    \ul{
+        \li{
+            In order for #{\exists a: P(a)} to hold, there must be an algorithm that produces #{a} such that #{P(a)} (in a suitable sense)
+        }
+        \li{
+            The logic obeys the rules of intuitionistic logic (but not in general LEM, because this would require that for any statement, there was an algorithm which figured out whether #{P(x)} or #{\neg P(x)} holds, which is not true).
+        }
+    }
+}

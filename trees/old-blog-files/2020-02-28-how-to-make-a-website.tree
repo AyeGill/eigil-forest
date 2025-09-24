@@ -1,0 +1,318 @@
+\title{How to make a website}
+\date{2020-02-28}
+\author{eigil-rischel}
+\import{macros}
+    \p{
+        Here's what goes into a website.
+    }
+    \ul{
+        \li{
+            A server (hardware).
+        }
+        \li{
+            The software which runs on the server, also called a server.
+        }
+        \li{
+            A domain (optional)
+        }
+        \li{
+            An SSL certificate (technically optional but highly recommended)
+        }
+    }
+    \p{
+        I will explain what these terms mean, and how to get your own stuff set up. Please note that this is a guide for people who want to do everything from scratch. There are plenty of easier ways to set up a website. For instance:
+    }
+    \ul{
+        \li{
+            Any of a number of blogging systems, like [wordpress.com](https://wordpress.com), which will also help you hook up your own domain.
+        }
+        \li{
+            [nearlyfreespeech.com](https://nearlyfreespeech.com) - an extremely cheap option if you want to do some things yourself. If your website is just a collection of static pages, this is an easy way to put it on the internet.
+        }
+    }
+\subtree{
+    \title{How the internet works}
+    \p{
+        When you type "reddit.com" into your browser, here's what happens:
+    }
+    \ul{
+        \li{
+            Your computer sends a signal to something called a "DNS server", saying "I need to find 'reddit.com'. Can you tell me where it is?".
+        }
+        \li{
+            Since the people who operate reddit have previously left their address at the DNS server, it says, "yes, you can find it at 151.101.193.140".
+        }
+        \li{
+            Then your computer sends a new message to 151.101.193.140, saying essentialy "I'd like your home page, please"
+        }
+        \li{
+            (if you'd typed in "reddit.com/r/stuff", it would say "I'd like what you have at '/r/stuff', please").
+        }
+        \li{
+            Your ISP uses those numbers to find the reddit server, which is just a computer running in a warehouse somewhere.
+        }
+        \li{
+            The reddit server sends a message back containing their home page
+        }
+        \li{
+            Your browser displays the page.
+        }
+    }
+    \p{
+        Now, what we want to do is the same thing that reddit is doing. So, let's go over the list of things again:
+    }
+    \ul{
+        \li{
+            We need a __domain__, a name for people to find the website. In principle, you can just tell people an IP address like 151.101.193.140, and not use a domain, but that's kind of inconvenient to remember.
+        }
+        \li{
+            Basically, to get a domain, you pay the people in charge of domains some money for ownership of it. Then they write down in the big list of domains that  "awesome-website-stuff.xyz" belongs to so and so, and that the IP address is such and such.
+        }
+        \li{
+            (In reality, you buy your domain from an intermediary organization, of which there are many)
+        }
+        \li{
+            We need an actual server, to send the message to people who ask for it. A server is really just a computer - you could "serve" your website from your desktop computer, if you wanted to. In practice, you'll want your server to be running all the time, so it'll probably be easier to rent one. There are many services to do this.
+        }
+        \li{
+            Then you'll need to run a program on the server which can interpret the messages from people who want to see your website and respond with the website. Confusingly, this program is often also called a server.
+        }
+        \li{
+            Lastly, for security reasons, you may want your website in HTTPS. This makes sure the contents of your site are secure. If you'll be sending and receiving information which is not public, this is absolutely essential. Even if you just have a public-facing website with nothing secret on it, setting up HTTPS is a good idea - for instance, it ensures that an attacker can't fake messages from your website, so people can trust that it's really you writing what you put on your website.
+        }
+    }
+    \p{
+        Before we proceed, I should mention that I AM NOT A SECURITY EXPERT. If you're going to be handling any sort of sensitive information, please, PLEASE, do some research, and try to consult with someone who knows what they're doing. If you only follow my advice, you should assume that anything you put on your server is immediately compromised.
+    }
+}
+\subtree{
+    \title{Server (hardware)}
+    \p{
+        Basically, we're going to rent a computer from someone for your website to run on. There's a bunch of services to do this, each with their own advantages and problems.
+    }
+    \p{
+        My personal website uses [Linode](https://linode.com). Their servers start at $5/month for a so-called "nanode". When I need to explain something, I'll use that as the example.
+    }
+    \p{
+        I won't say that I have any great familiarity with the market, so do your own research. The important point for this tutorial is that you get full root access to a server running something like Ubuntu linux.
+    }
+    \p{
+        A lot of services "manage" you in various ways - providing a standardized webserver (as in, __software__ running on your server), limiting the stuff you can do on the server, etc etc. These are not necessarily bad ideas, but it's not what we're looking for.
+    }
+    \p{
+        You can also run whatever OS you want on your server. You'll almost certainly want some variation of Linux. I'll use Ubuntu for this guide. If you're using a different version, things will obviously be different.
+    }
+    \ul{
+        \li{
+            Buy a server somewhere
+        }
+        \li{
+            Set it up to run a recent version of Ubuntu.
+        }
+        \li{
+            Make sure you know the root password of your server (you should be able to view or set this on the website of your provider)
+        }
+        \li{
+            Then find its IP address.
+        }
+        \li{
+            Here's how this looks on Linode:
+        }
+    }
+    \p{
+        Image!
+    }
+    \p{
+        You can see the IP addresses on the right.
+    }
+    \ul{
+        \li{
+            Do `ssh root@x.y.z.w`, substituting the actual IP address
+        }
+        \li{
+            Log in using the root password
+        }
+    }
+    \p{
+        Now you're running a terminal on your server.
+    }
+}
+\subtree{
+    \title{Server (software)}
+    \p{
+        We're gonna use a program called [nginx](http://nginx.org/) to serve our website.
+    }
+    \ul{
+        \li{
+            While `ssh`ed into your server, do `apt update` and `apt install nginx` to install nginx.
+        }
+        \li{
+            To start nginx, do `/etc/init.d/nginx start`
+        }
+        \li{
+            To test that it's working, open up a browser and type your ip into the address bar. Your should see a page like this:
+        }
+    }
+    \p{
+        image!
+    }
+    \p{
+        Now, I'll explain how to configure nginx to serve your website.
+    }
+    \ul{
+        \li{
+            For this basic tutorial, we'll just set up nginx to serve some .html files in a directory. For a more complicated website, you'll probably want __dynamic__ content, i.e content which is generated by a program running on your server, rather than just read from a file. You can set up nginx to do this, but I won't cover that.
+        }
+        \li{
+            By default, nginx uses the directory `/var/www/` for websites. We're gonna stick with that. Now would be a good time to make up a domain name for your website. Do `mkdir -p /var/www/example.com/html`
+        }
+        \li{
+            Create `/var/www/example.com/html/index.html` using `nano` or another editor. For now, just put this text in it:
+        }
+    }
+    \p{
+        ```html <html> <head> <title>Welcome to example.com!</title> </head> <body> <h1>Success!  The example.com server block is working!</h1> </body> </html> ```
+    }
+    \ul{
+        \li{
+            Now create the file `/etc/nginx/sites-available/example.com`. Paste this into it:
+        }
+    }
+    \p{
+        ```nginx server{ listen 80; listen [::]:80;
+    }
+    \p{
+        root /var/www/example.com/html; index index.html index.htm index.nginx-debian.html;
+    }
+    \p{
+        server_name example.com www.example.com;
+    }
+    \p{
+        location / { try_files #{uri }uri/ =404; } } ```
+    }
+    \ul{
+        \li{
+            Create symlink to this file in the sites-enabled directory:
+        }
+        \li{
+            `ln -s /etc/nginx/sites-available/example.com /etc/nginx sites-enabled/`
+        }
+        \li{
+            nginx is configured by default to serve out of `/var/www/html` - disable the default configuration by doing `rm /etc/nginx/sites-enabled/default`
+        }
+        \li{
+            This will make the directory we've set up the default one. Don't worry, the default configuration file is still available in `sites-available/`
+        }
+        \li{
+            Now test that we didn't fuck up by doing `nginx -t` - this scans the configuration files for errors
+        }
+        \li{
+            Then restart nginx: `systemctl restart nginx.service`
+        }
+        \li{
+            Hopefully going to your server in a browser (by typing in the ip) will now show the page we made.
+        }
+    }
+}
+\subtree{
+    \title{Obtaining a domain}
+    \p{
+        Now let's buy the `example.com` domain.
+    }
+    \ul{
+        \li{
+            As mentioned, there are tons of places to buy a domain. Let's go with [hover](https://hover.com)
+        }
+        \li{
+            Create an account and buy your chosen domain.
+        }
+        \li{
+            Now you'll want to point your domain at the linode server.
+        }
+        \li{
+            When using Linode, the easiest way to do this to use linode's nameservers.
+        }
+        \li{
+            On the Hover control panel, you can see a list of "Nameservers"
+        }
+    }
+    \p{
+        image!
+    }
+    \ul{
+        \li{
+            Click edit, and set these to what you see there - `ns1.linode.com` etc
+        }
+        \li{
+            Then log on to Linode, go to "Domains" in the left-hand menu, click "add a new domain", and fill out the information:
+        }
+    }
+    \p{
+        image!
+    }
+    \p{
+        (Obviously you'll type in your domain at the top). Note that you __must__ enter an email address.
+    }
+    \ul{
+        \li{
+            The default settings created like this should work.
+        }
+        \li{
+            For reference, here's how mine looks:
+        }
+    }
+    \p{
+        image!
+    }
+    \ul{
+        \li{
+            Now you should be able to go to `example.com` or `www.example.com` and see your website.
+        }
+        \li{
+            If you can't, one possibility is that your browser (sensibly) won't let you connect to an unsecured website. We'll fix that now.
+        }
+    }
+}
+\subtree{
+    \title{HTTPs}
+    \p{
+        Now we'll set up security for your site. Luckily, this is super easy.
+    }
+    \ul{
+        \li{
+            `ssh` into your server and do `apt install certbot python3-certbot-nginx`
+        }
+        \li{
+            This installs the auto-setup tool `certbot` from the [Let's Encrypt](https://www.letsencrypt.org) project, as well as the plugin for nginx
+        }
+        \li{
+            Now simply do  `certbot --nginx -d example.com -d www.example.com`, and follow the instructions.
+        }
+        \li{
+            Look in `/etc/nginx/sites-available/example.com` - you should see that `certbot` has modified it.
+        }
+        \li{
+            Restart nginx and try to connect to your website.
+        }
+    }
+}
+\subtree{
+    \title{What now?}
+    \p{
+        Now you're set up! Put any files you want to put on your website into `/var/www/example.com/html`
+    }
+    \ul{
+        \li{
+            Look at the [nginx website](https://www.nginx.com/) for more information about configuring it
+        }
+        \li{
+            Use static site generators like [Jekyll](https://www.jekyllrb.com) or [Hakyll](https://jaspervdj.be/hakyll/) to generate your website.
+        }
+        \li{
+            Message me to complain about the problems in this guide.
+        }
+        \li{
+            If you buy your domain or your server from somewhere else, they probably have their own guides that tell you how to point your domain at the server. Try googling around.
+        }
+    }
+}

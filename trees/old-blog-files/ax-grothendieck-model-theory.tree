@@ -1,0 +1,98 @@
+\date{2020-05-17T00:00:00Z}
+\author{eigil-rischel}
+\import{macros}
+\title{The Ax-Grothendieck theorem}
+    \p{
+        The Ax-Grothendieck theorem says the following: Let #{f: \mathbb{C}^n \to \mathbb{C}^n} be a polynomial function. If it's injective, then it's surjective as well.
+    }
+    \p{
+        Here's how to prove it:
+    }
+    \ol{
+        \li{
+            The statement can be formulated as a first-order statement in the language of fields.
+        }
+        \li{
+            If a statement like that fails for #{\mathbb{C}}, there's a disproof in the  
+        first-order theory of algebraically closed fields of characteristic zero.
+        }
+        \li{
+            Such a proof is _finite_, so it only uses finitely many of the assumption  #{p \neq 0} - hence the theorem also fails in algebraically closed fields of sufficiently high characteristic.
+        }
+        \li{
+            Hence it fails in the algebraic closure of #{\mathbb{F}_p}. The specific
+        counterexample is in some finite extension of #{\mathbb{F}_p}, which is a finite field. But clearly the theorem is _true_ for finite fields, just by counting.
+        }
+    }
+    \p{
+        I think this is a pretty cool proof - it uses model theory in a really surprising way, and the step where you use the fact that _proofs are finite_ is just totally bonkers.
+    }
+\subtree{
+    \title{First-order logic and completeness }
+    \p{
+        Recall that first-order logic works with statements built up out of the logical connectives #{\wedge, \vee, \neg, \Rightarrow \bot, \top, \forall, \exists, =}. The language of _fields_ augments these symbols with #{+, -, \cdot, 1, 0} (it's really just the language of commutative rings - being a field just means that additional axioms hold).
+    }
+    \p{
+        A statement in the first-order language of fields could be something like this:
+    }
+    \p{
+        #{\forall a,b: \neg (a = 0) \Rightarrow \exists x: a\cdot x + b = 0}
+    }
+    \p{
+        This statement says that all nonconstant linear polynomials have a solution, which is true.
+    }
+    \p{
+        We could also write down a statement like
+    }
+    \p{
+        #{\forall a, b, c, d, e: \neg (a = 0) \Rightarrow \exists x: a x^4 + bx^3 + cx^2 + dx + e = 0}
+    }
+    \p{
+        This says that all fourth-order polynomials have a root, which is not always true, but true sometimes, like in #{\mathbb{C}}.
+    }
+    \p{
+        Similarly, we can form a statement #{R_n} for all #{n \in \mathbb{N}}, saying that all #{n}th order polynomials have a root. Note that the conjunction of all these statements is _not_ a first-order statement in itself - we can't take conjuctions of infinitely many statements, and there's no way to quantify over all polynomials in the theory of fields.
+    }
+    \p{
+        Similarly, we can form statements like #{1+1 \neq 0}. This is also true in #{\mathbb{C}}, but fails in fields of characteristic #{2}. We can form statements #{C_n} for all #{n}, saying that #{n \neq 0} - that the field does not have characteristic #{n}.
+    }
+    \p{
+        The _theory of algebraically closed fields of characteristic zero_ is the theory consisting of the axioms of a field augmented with the statements #{C_n} and #{R_n} for all #{n}. A model of this theory is precisely an algebraically closed field of characteristic zero (hence the name).
+    }
+    \p{
+        Now here is a highly nontrivial fact about this theory: it is _complete_. This means that _any statement expressible in the first-order language of fields is either provable or disprovable in it_. This means that, from the perspective of first-order logic, there are really no differences between fields of this type - even though there are of course many different such fields, they have the same first-order properties.
+    }
+}
+\subtree{
+    \title{Ax-Grothendieck in first order }
+    \p{
+        We want to phrase the Ax-Grothendieck theorem as a first-order statement. It turns out this isn't quite possible, because we can't quantify over "all degree #{d} polynomials" or "all #{n \in \mathbb{N}}". Therefore we instead formulate the statement #{P(n,d)}: "Any polynomial function #{f : \mathbb{C}^n \to \mathbb{C}^n} of degree at most #{d} is surjective if it's injective". Then the Ax-Grothendieck statement says that #{P(n,d)} holds for all #{n \geq 1, d \geq 0}.
+    }
+    \p{
+        (By the way: by "polynomial #{\mathbb{C}^n \to \mathbb{C}^n}", I mean a function where each coordinate is an #{n}-variable polynomial)
+    }
+    \p{
+        How does #{P(n,d)} look as a first-order formula? It's quite complicated - mostly because a degree #{d} polynomial like #{f} involves a large number of coefficients. The main point is that there is a _definite_ number of coefficients, once #{n} and #{d} is fixed, and so we can write "for all choices of coefficients for #{f}..." in first-order logic. For instance, if #{d = 2, n=1}, this looks like #{\forall a_{11},a_{12},a_{21},a_{22},b_1,b_2 \dots} Here #{a_{12}} is the coefficient for #{x_1} in the second coordinate polynomial of #{f}, and so on.
+    }
+    \p{
+        Now of course we can also make sense of injectivity: it's just the statement #{f(x_1,\dots x_n) = f(x'_1, \dots x'_n) \Rightarrow x_1=x'_1 \wedge \dots \wedge x_n = x'_n} - where the equality on the left of the implication is shorthand for a complicated expression involving the coefficients of #{f}.
+    }
+    \p{
+        And we can make sense of surjectivity: it just means #{\forall y_1 \dots y_n, \exists x_1, \dots x_n: f(x_1, \dots x_n) = (y_1, \dots y_n)}
+    }
+    \p{
+        Hence we have all the ingredients to make sense of #{P(n,d)}.
+    }
+}
+\subtree{
+    \title{Finishing up the proof }
+    \p{
+        We now have most of the ingredients to fill out the proof above. Since Ax-grothendieck is a (family of) first-order statements, if it fails, there is a disproof in the first-order theory of algebraically closed characteristic zero fields. To be specific, if Ax-Grothendieck is false, then #{P(n,d)} is false for some specific #{n,d}, and hence there is a disproof of that statement, i.e a proof of #{\neg P(n,d)}.
+    }
+    \p{
+        Observe that such a proof is finite. Hence it can use at most finitely many of the statements #{C_n}. Hence for #{p} large enough (larger than any #{n} where #{C_n} is used in the proof), Ax-Grothendieck fails for algebraically closed fields of characteristic #{p} - like the algebraic closure of #{\mathbb{F}_p}. (How do we know it fails? We have a proof that it fails!) Hence there exists some polynomial function #{f: \overline{\mathbb{F}_p}^n \to \overline{\mathbb{F}_p}^n} which is injective and not surjective. But now we can take the algebraic extension of #{F_p} by all the coefficientsof #{f} and the coordinates of a point #{y \in \overline{\mathbb{F}_p}^n} which is not in the image. Call this extension #{L}. Then #{f: L^n \to L^n} is a well-defined injective polynomial which is not surjective. And since #{L} is a finite extension of a finite field, it's finite. But then we clearly have a contradiction: injective fuctions between finite sets of the same cardinality are bijections, just by counting.
+    }
+    \p{
+        This concludes the proof.
+    }
+}

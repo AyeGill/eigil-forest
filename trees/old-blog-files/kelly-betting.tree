@@ -1,0 +1,46 @@
+\author{eigil-rischel}
+\date{2022-11-15}
+\import{macros}
+\title{Thoughts on the Kelly Criterion}
+    \p{
+        (Epistemic status: contains some mildly sloppy math, but is essentially true).
+    }
+    \p{
+        Suppose someone offers you the chance to bet some money on a coinflip. On a heads, you multiply your stake by #{3.75}, but if you lose, you lose your stake. Should you bet, and how much? Clearly this bet has positive *expected value*, and higher expected value the more your bet, but equally clearly, the actual decision depends a lot on your circumstances - and you'd be a fool to bet your entire life savings on this, or to take out as large a loan as possible to gamble on it.
+    }
+    \p{
+        One way of thinking about a bet like this is the so-called [Kelly criterion](https://en.wikipedia.org/wiki/Kelly_criterion). It's a particular formula for how large a fraction of your total wealth you should bet (depending on the odds of the bet), with the following nice property: if you make an infinite sequence of bets at the same odds, and bet the Kelly at each opportunity, your total profit is eventually larger than any other betting strategy, with probability 1.
+    }
+    \p{
+        Since the Kelly criterion never bets its entire bankroll, but the EV-maximizing thing is always to bet your entire bankroll, some people take this to mean there's some fundamental flaw with EV in this case - that expected value is simply misapplied to one bet in a sequence like this. It's true that we have to be more careful here - if the thing we care about is our wealth after some sequence of #{N} bets (#{N} going to #{\infty}), we can't just assume that we should maximize EV after one bet. But if we try to maximize EV after #{N} bets, we *still* find that the maximizing thing is to bet the entire bankroll every time. But how can this be true if the Kelly dominates every other strategy with probability 1? What's going on here?
+    }
+    \p{
+        ---
+    }
+    \p{
+        One way you can justify evaluating bets by their expected value is this: suppose you will get many opportunities to take a given bet, and the way the payouts aggregate is additive - that is, your total “score” that you care about maximizing is the score from each independent instance of the bet added together. Then, assuming the variance of each bet outcome is not too heavy-tailed, as the number of bets goes to infinity, the distribution of the sums approximates a normal distribution with median #{NE} and variance proportional to #{\sqrt{N}}, where #{n} is the number of bets and #{E} is the expected value.[^1]
+    }
+    \p{
+        Since for large #{n} the variance is much smaller than the expected value, the final outcome is more or less entirely determined by the expected value! This type of result is called a concentration theorem. This is a powerful justification for replacing a bet with its expected value, but only if bets combine additively!
+    }
+    \p{
+        For example, suppose the bet is something like “invest all your money in the stock market for a year”. You will get many opportunities to make this bet, but it’s not really appropriate to treat them additively - because, if you make a profit one year, you have more to invest next year, meaning you’ll be able to make an even bigger profit then, and vice versa if you lose.
+    }
+    \p{
+        Suppose a stock market investment has a #{50\%} chance of multiplying your investment by #{1.5}, and a #{50\%} chance of multiplying it by #{0.6}. This is positive expected value, but if you execute this investment many times, it’s not the case that with high probability you’ll increase your money by some amount - in fact, with high probability, your total amount of money will converge to #{0}!
+    }
+    \p{
+        We can prove this by noting that this bet aggregates by multiplication - your final score is the product of your initial bankroll, #{1.5} for every win, and #{0.6} for every loss. This means that the logarithm of your final score is the sum of the logarithm of your bankroll, log(1.5) for every win, and #{\log 0.6} for every loss. Hence by the concentration theorem discussed above, the logarithm will tend toward #{\frac{n (\log 1.5 - \log 0.6)}{2}}, and since #{\log 1.5 - \log 0.6 = \log 0.9} is negative, this goes towards negative infinity, meaning your actual score must go to zero.
+    }
+    \p{
+        So IF the concentration theorem was your reason for taking EV seriously, you’re forced to work with expected log score in the case of multiplicative bets, which, if you do the math, leads you to the Kelly criterion for how much to bet each round.
+    }
+    \p{
+        BUT! Who says you should care about concentration theorems? The concentration theorem says there is at most a low probability that the log of your score is big - but if the log of your score is big, then your score must be really big! If you do the math, you’ll see that the expected value of a “bet everything every time” strategy with the odds above, given #{n} bets, is #{1.05^{n/2}} - which goes to infinity as n does. Of course, clearly most of this EV must live in some very unlikely outcomes.
+    }
+    \p{
+        When economists bring out something like the Von Neumann-Morgenstern theorem to say that rational actions are described by maximizing EV of some “utility” random variable, they’re simply not invoking a concentration theorem, so saying “the concentration theorem doesn’t apply” is just not a useful knockdown, and it doesn’t mean that utility maximization theory fails to account for this type of repeated bets. Of course, utility theory doesn’t rule out the Kelly betting behavior either - Kelly betting is perfectly rational, explained by utility that’s logarithmic in money (or whatever the bet is being made in).
+    }
+    \p{
+        [^1]: The mean, that is to say the sum of the first #{n} samples divided by #{n}, always converges to the expected value with probability #{1}, this is "the law of large numbers". Of course maximizing #{x} and maximizing #{x/n} amounts to the same thing, but you probably should care about the fact that the variance is growing with #{n}!
+    }

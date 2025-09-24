@@ -1,0 +1,75 @@
+\date{2020-10-02T00:00:00Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Cheap nonstandard analysis}
+    \p{
+        Terry Tao: [A cheap version of nonstandard analysis](https://terrytao.wordpress.com/2012/04/02/a-cheap-version-of-nonstandard-analysis/). MathOverflow: [Does Cheap Nonstandard analysis take place in a topos?](https://math.stackexchange.com/questions/454393/does-cheap-nonstandard-analysis-take-place-in-a-topos/) (Answer: Yes, but an elementary topos, not a Grothendieck topos).
+    }
+    \p{
+        This is partially a summary of Tao's blog post, partially a small discussion of way LEM fails for cheap nonstandard reals.
+    }
+\subtree{
+    \title{What is "nonstandard analysis"? }
+    \p{
+        In "normal" nonstandard analysis, we consruct the "nonstandard reals" #{\mathbb{R}^*} as an ultrapowwer of the ordinary reals with regards to some nonprincipial ultrafilter #{\mathfrak{u}}. This means that a nonstandard real is a sequence #{(x_n)} of reals, quotiented by the equivalence relation which identifies two sequences if the set of naturals where they agree is in the ultrafilter - in symbols, #{\{n | x_n = y_n\} \in \mathfrak{u}}
+    }
+    \p{
+        This set inherits all the structure of the reals - where addition and multiplication is pointwise, and #{(x_n) \leq (y_n)} if #{\{n | x_n \leq y_n\} \in \mathfrak{u}}. In fact, it is even a totally ordered field, since first-order properties pass to ultrapowers by [Łoś's Theorem](https://en.wikipedia.org/wiki/Ultraproduct). It also contains a copy of the real numbers, where #{x \in \mathbb{R}} is identified with a constant sequence. We call these the _standard reals_.
+    }
+    \p{
+        (#{\mathbb{R}^*} is not complete, since this is a second-order property.)
+    }
+    \p{
+        #{\mathbb{R}} contains "infinitesimals", like the sequence #{(1/n)} - this is a positive nonstandard real number, but less than every positive standard real number. Call this number #{\epsilon}.
+    }
+    \p{
+        It also contains "infinite numbers", like the sequence #{(n)} - this is a nonstandard real wich is larger than every standard real.
+    }
+    \p{
+        Given a function #{f: \mathbb{R}^* \to \mathbb{R}^*}, we can ask for the value #{\frac{f(x + \epsilon) - f(x)}{\epsilon}}. This is a well-defined nonstandard real, since #{\epsilon} is not zero. In fact, it is the nonstandard real #{\left(\frac{f(x + 1/n) - f(x)}{1/n}\right)}. If #{f} comes from a function #{\mathbb{R} \to \mathbb{R}} which is differentiable, this sequence converges to #{f'(x)}. This means that the difference between the nonstandard derivative and the normal derivative is an infinitesimal, in the sense that it is smaller than every positive and larger than every negative standard real. One can show that #{f'(x)} is the only standard real with this property - so this gives a definition of the derivative (which does not depend on the choice of #{\epsilon}).
+    }
+    \p{
+        Nonstandard analysis takes this idea and runs with it to develop various parts of analysis using these infinitesimals.
+    }
+}
+\subtree{
+    \title{Cheap nonstandard analysis }
+    \p{
+        There are a few problems with this:
+    }
+    \ul{
+        \li{
+            The existence of a non-principal ultrafilter on #{\mathbb{N}} requires some "unfortunate" axiom like the axiom of choice or somesuch. (The existence of non-principal ultrafilters on all infinite sets is called the [ultrafilter theorem](https://ncatlab.org/nlab/show/ultrafilter+theorem), and is strictly weaker than the axiom of choice, but still considered a bit suspicious - for instance it implies the existence of nonmeasurable sets).
+        }
+        \li{
+            According to Tao, it's sometimes difficult to extract a quantitative bound from an asymptotic theorem proved with nonstandard analysis - he links this to the first point.
+        }
+    }
+    \p{
+        However, these difficulties disappear if we instead use the Frechet filter, consisting of all cofinite sets, on #{\mathbb{N}}. In other words, a cheap nonstandard real is a sequence #{(x_n)} of reals, quotiented by the equivalence relation that #{(x_n) = (y_n)} if #{x_n = y_n} for #{n} sufficiently big. Note that the Frechet filter is not an ultrafilter! Hence Łós' theorem does not hold, so the cheap nonstandard reals fail to inherit all the good properties of the ordinary reals.
+    }
+    \p{
+        The easiest example of this is that they are not a field. To see this, consider the cheap nonstandard real #{(0,1,0,1,0,1,\dots)}. This is not equal to zero, because there are infinitely many ones. On the other hand, it is also not invertible: if we multiply it with the cheap nonstandard real #{(x_n)}, we get #{(x_1, 0, x_2, 0, \dots)}. This is not equal to one, because there are infinitely many zeroes.
+    }
+    \p{
+        The way this would work for an ultrafilter is that either the set of even numbers or odd numbers would be in the ultrafilter. So either #{(0,1,0,1,\dots)} is zero or one - in either case, it's clearly invertible.
+    }
+    \p{
+        It turns out the parts of Łós' theorem that specifically fails for non-ultra filters are about statements #{\phi \vee \psi} - disjunction, and #{\neg \phi} - negation. Hence the statement #{x = 0 \vee (\exists y : xy=1)} doesn't hold for the quotiented product, even though it holds for the ultraproduct.
+    }
+    \p{
+        However, this shouldn't concern us _too much_, because we can basically view this as a faily of LEM (in a way that I will explain), and LEM is another one of those slightly suspicious axioms.
+    }
+    \p{
+        In what sense does LEM fail for cheap nonstandard reals? As mentioned, the nonstandard reals are a model of the language of ordered fields. The way this works is that any formula #{\phi(x)} in that language can be interpreted for a nonstandard real by asking if #{\phi(x_n)} holds for a set in the ultrafilter - for short, whether #{\{n \mid \phi(x_n)\} \in \mathfrak{u}}. A priori, this gives two ways of intepreting a formula like #{x=0 \vee x=1}. We can ask whether #{\{n \mid x_n = 0 \vee x_n = 1\} \in \mathfrak{u}}, or we can ask whether #{\{n \mid x_n = 0\} \in \mathfrak{u} \vee \{n \mid x_n=0\} \in \mathfrak{u}}. The second is the "correct" semantics for first-order logic, but the first is usually more convenient. Luckily, for ultrafilters they are the same.
+    }
+    \p{
+        We can try to use this approach with a non-ultrafilter, like the Frechet filter #{\mathcal{F}}. But now there's a difference! If we let #{(x_n) = (0,1,0,1,\dots)}, it's true that #{\{n \mid x_n = 0 \vee x_n = 1\} \in \mathcal{F}}, but not true that #{\{n \mid x_n = 0\} \in \mathcal{F} \vee \{n \mid x_n = 1\} \in \mathcal{F}}. A similar problem crops up for negation.
+    }
+    \p{
+        In this way, LEM fails in some sense, because we can have #{\phi,x} so that #{\{n \mid \phi(x_n)\} \notin \mathcal{F}} and #{\{n \mid \neg\phi(x_n)\} \notin \mathcal{F}}.
+    }
+    \p{
+        Do observe however that here the "or" is being interpreted _externally_, but the "not" is being interpreted _internally_.
+    }
+}

@@ -1,0 +1,131 @@
+\title{An approach to approximate category theory}
+\date{2022-06-04}
+\import{macros}
+    \p{
+        A number of different people have thought about ways to bring notions of approximation into category theory. There seem to be essentially two notions that one would like to express here:
+    }
+    \ol{
+        \li{
+            The idea that a digram, while it may not quite commute, commutes *up
+        to some specified tolerance #{\epsilon}.
+    }
+        \li{
+            The idea that a mapping, while it may not quite preserve the
+        relevant structures, preserves them *up to some specified tolerance #{\epsilon}.
+    }
+    }
+    \p{
+        The first idea is, at a basic level, captured by categories enriched in (some monoidal category of) metric spaces, whereas the other can be captured by categories enriched in some category of sets with a function #{S \to \mathbb{R}}, again equipped with a monoidal product suitable for the purpose at hand.
+    }
+    \p{
+        Categories enriched in metric spaces can be weakened to the *metagories* of Tholen and Wang ([link](https://arxiv.org/abs/1810.08828)) - these are, essentially, graphs with an "area" measure #{A(f,g,h) \in \lbracket 0,\infty \rparen}, defined whenever #{f:x \to y}, #{g:y \to z} and #{h: x \to z} form the edges of a 2-simplex, satisfying some sort of resonable 2-dimensional analogue of the triangle inequality. The basic idea is that the area measure indicates the failure of the given triangle to commute. So if #{A(f,g,h) = 0}, #{h} is a suitable choice for #{g \circ f}. The axioms correspond to unitality and associativity. They also imply that
+    }
+    \ol{
+        \li{
+            The set of maps #{x \to y} has a pseudometric[^1]
+        }
+        \li{
+            Composites in the sense above are well-defined up to distance zero,
+        i.e given two choices of composite they have #{d(h,h') = 0}.
+        }
+    }
+    \p{
+        Of course, given a category enriched in metric spaces, you can take #{A(f,g,h) = d(gf,h)}.
+    }
+    \p{
+        The second idea seems to be Paolo Perrone is discussing in [this talk](https://www.youtube.com/watch?v=JEOKvG1zcbY), calling categories like this "weighted categories".
+    }
+    \p{
+        I want to spell out here a common generalization of the two approaches to "quantitative category theory" that I haven't seen discussed anywhere else. I think, beyond the convenience of having a formalism capturing both ideas, it is in fact natural to do so - certain operations, natural to a category theorist, take you from one of these worlds to the other, in a way that's neatly described by this approach. That being said, there are still some issues, which I'll also discuss.
+    }
+    \p{
+        The basic approach is to consider a type of *filtered simplicial set*, i.e a functor #{\Delta^{op} \times (\lbracket 0,\infty \rparen, \leq) \to \mathsf{Set}}. Let's write this as #{X([n],r) = X^{\leq r}[n]}. We will probably want to assume that the maps #{X^{\leq r}[n] \to X^{\leq r'}[n]} for #{r \leq r'} are all injections. Such an object is almost the same thing as a simplicial set (defined by #{X^{\leq \infty}[n] = \mathop{\mathrm{colim}}_{r}X^{\leq r}[n]}) where each simplex #{\sigma} has an associated real number #{r(\sigma) \in \lbracket 0,\infty \rparen}, given by the first #{r} where that simplex appears in #{X^{\leq r}[n] \subseteq X^{\leq \infty}[n]}, such that the face an degeneracy maps never increase #{r}. This is not quite correct, because for each simplex the set of #{r} such that #{\sigma \in X^{\leq r}} can be either #{\lbracket a,\infty \rparen} or #{(a,\infty)} for some #{a}. We will probably want to impose the further condition that it's always the former. This amounts to the claim that #{X^{\leq r}[n]} is the intersection of #{X^{\leq r'}} for all #{r' > r}, which is a sort of sheaf condition.
+    }
+    \p{
+        The basic setup now is that we have a simplicial set, where each simplex has some associated positive number. It will be useful to think of this as the *error* of the simplex. Let me give a few examples of this to illustrate how I want to use this structure:
+    }
+    \ol{
+        \li{
+            Given a category enriched in metric sets #{\mathcal{C}}, we can
+        consider the filtered simplicial set where
+        }
+        \li{
+    \ul{
+        \li{
+            #{X^{\leq r}[0] = \operatorname{ob} \mathcal{C}} for each #{r}.
+        }
+        \li{
+            #{X^{\leq r}[1]} is the set of morphisms in #{\mathcal{C}}, again
+        regardless of #{r}.
+        }
+        \li{
+            #{X^{\leq r}[2]} consists of triples
+        #{f:x \to y, g: y \to z, h: x \to z} so that #{d_{\mathcal{C}(x,z)}(gf,h) \leq r}.
+        }
+        \li{
+            Each #{X^{\leq r}} is #{2}-coskeletal, i.e given a compatible
+        boundary for a higher simplex, there is always a unique such simplex (at any given error level).
+        }
+    }
+    }
+    }
+    \p{
+        It's clear that this data characterized such a category up to equivalence, although it's not totally obvious how to characterize the subclass of filtered simplicial sets which have this form.
+    }
+    \ol{
+        \li{
+            Given a category equipped with a *weight* in the sense of Perrone,
+        i.e a number #{d(f)} for each morphism such that #{d(1) = 0}, #{d(fg) \leq d(f) + d(g)}, we can build a filtered simplicial set as follows:
+        }
+        \li{
+        \ul{
+            \li{
+            #{X^{\leq r}[0]} is the set of objects, for all #{r}.
+            }
+            \li{
+            #{X^{\leq r}[1]} is the set of morphisms with #{d(f) \leq r}.
+            }
+            \li{
+            #{X^{\leq r}[2]} is the set of commuting triangles #{(f,g,h)} with #{d(f),d(g),d(h) \leq r}.
+            }
+            \li{
+            Each filtration degree is coskeletal, as above.
+            }
+        }
+        }
+    }
+    \p{
+        Again, it's clear that we can pull out a category with a metric on it in a unique way from a filtered simplicial set like this.
+    }
+    \p{
+        Thus, you're supposed to interpret a 2-simplex in #{X^{\leq r}[2]} as saying "this triangle commutes, at least at error tolerance #{r}", a morphism in #{X^{\leq r}[1]} as being "a morphism up to error/metric #{r}". In principle you could also have objects with errors, and higher simplices with errors if you wanted to do higher-categorical stuff.
+    }
+    \p{
+        Let's think about what makes such a simplicial set suitable for use as a category. Recall that an ordinary simplicial set #{X} is the nerve of a category if and only if every inner horn #{\Lambda^{n}_{k} \to X} has a unique filler, which is in turn equivalent to asking that horns of every dimension have unique fillers, or that the maps #{X[n] \to X[1] \times_{X[0]} X[1] \times_{X[0]} \dots \times_{X[0]} X[1]} are all bijections.
+    }
+    \p{
+        In other words, this is about fillers for certain horns existing, and perhaps existing uniquely. The world of quantitative categories is a bit more complicated, for the essential reason that
+    }
+    \p{
+        Here is my attempt at a suitable definition. For each #{n, 0 \leq k \leq n}, and #{r_{0}, \dots, r_{k-1},r_{k+1}, \dots r_{n}}, let #{\Lambda^n_{k}(r_{0},\dots r_{n})} be the filtered simplicial set given by a horn #{\Lambda_{k}^{n}}, with the #{i}th face for each #{i} having value #{r_{i}}, i.e appearing in #{\Lambda_{k}^{n}(r_{1},\dots r_{n})^{\leq r_{i}}} but not before (with the lower-dimensional faces all having the maximal possible value given this).
+    }
+    \p{
+        Similarly define #{\Delta^{n}(r_{0}, \dots r_{n})} (given a full list of #{n+1} values). Then we say a filtered simplicial set #{\mathcal{C}} is a *approximation quasicategory* if, for every #{0 < k < n}, and each tuple #{r_{0}, \dots r_{k-1},r_{k+1}, \dots r_{n}} every map #{\Lambda_{k}^{n}(r_{0}, \dots r_{n}) \to \mathcal{C}} admits an extension along #{\Lambda_k^n(r_{0},\dots r_{n}) \to \Delta^{n}(r_{0}, \dots r_{k-1}, \sum_{i \neq k} r_{i}, r_{k}, \dots r_{n})}.
+    }
+    \p{
+        This obviously corresponds to the definition of quasicategory (aka #{\infty}-category, weak Kan complex...), with the additional structure of the filtration incorporated in such a way that errors add when composing morphisms. This is perhaps a good time to note that one could also have combined errors with #{\operatorname{max}} instead of #{\Sigma}. This would have amounted to asking that each #{\mathcal{C}^{\leq \epsilon}} be a quasicategory in itself. From a categorical point of view this condition is much more natural, but adding errors seem more natural from the point of view of metrics, incorporating the triangle identity.
+    }
+    \p{
+        It is not entirely clear to me whether requiring each filler to exist uniquely, rather than merely exist, captures the right notion of 1-category. The reason is that it demands that composites be unique, whereas we might expect (from our earlier look at metagories) that they should only be unique up to an induced metric-0 notion. I tend to think that it's more sensible to require this equivalence relation to be already quotiented out, to make that part of the definition of approximation quasicategory, but I'm not entirely decided on this point.
+    }
+    \ol{
+        \li{
+            The category of morphisms #{[\mathcal{C},\mathcal{D}]} in a metric-enriched category naturally acquires a nontrivial filtration in the morphisms (which are commutative diagrams).
+    }
+        \li{
+            Iterating this, the category of morphisms in such a category naturally acquires a nontrivial filtration in the *objects*.
+    }
+    }
+    \p{
+        Working out all of category theory in this context is a big undertaking, which will probably not get done until people derive more actual utility from it. However, as a sort of test case to explore this system, I've spent some time thinking about how colimits should be defined, which I hope to explore in a future post.
+    }

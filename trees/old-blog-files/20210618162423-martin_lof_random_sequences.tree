@@ -1,0 +1,72 @@
+\author{eigil-rischel}
+\date{2021-06-18}
+\import{macros}
+\title{Martin-Löf Random Sequences}
+    \p{
+        A sequence of bits #{N \to \{0,1\}} is _Martin-Löf random_ (or _algorithmically random_) if, roughly speaking, there is no _computable_ pattern to it.
+    }
+    \p{
+        There are three equivalent definitions:
+    }
+\subtree{
+    \title{Kolmogorov complexity definition }
+    \p{
+        Let #{K(x)} be the kolmogorov complexity of a binary string (finite). Say #{x} is #{c}-incompressible if #{K(x) \geq |x| - c}. An infinite string is Martin-löf random if there exists #{c} so that all its finite prefixes are #{c}-incompressible.
+    }
+}
+\subtree{
+    \title{Constructive "covers" }
+    \p{
+        Given a finite string #{w}, #{C_w} is the open set of strings with that prefix. A constructive open is an open given as the union of an enumerable sequence of such things. A constructive nullcover is a computable sequence #{U_i \supset U_{i+1}} of constructive opens so that #{\mu(U_i) \leq 2^i} (#{\mu} being the obvious "lebesgue" measure on Cantor space). A sequence #{x} is Martin-Löf random if, for any constructive nullcover, #{x \neq \cup^\infty U_i}.
+    }
+}
+\subtree{
+    \title{Constructive Martingales }
+    \p{
+        A _Martingale_ is a function #{\{0,1\}^* \to \lbracket 0,\infty \rparen}, interpreted as the profit of a betting strategy (betting on coinflips) on the given sequence of coinflip outcomes. It's _fair_ if #{m(x) = (m(x .0) + m(x.1))/2} - in other words, the amount you win on a zero must equal the amount you lose on a one. Ie "you're betting at fair odds".
+    }
+    \p{
+        A martingale _succeeds_ on a Martin-löf random sequence if its limsup on the prefixes is infinite - i.e if it wins unbounded amounts of money at fair odds without ever risking any more than its finite starting pot (since it cannot go negative).
+    }
+    \p{
+        A martingale is _constructive_ if it is "lower computable", and a sequence is Martin-Löf random if there is no constructive martingale that succeeds on it.
+    }
+    \p{
+        Ie if there is no computable gambling strategy to extract unbounded money from the assumption "this sequence produces fair coinflips".
+    }
+}
+\subtree{
+    \title{Discussion }
+    \p{
+        In other words, as long as the world is computable, you can comfortably treat any Martin-löf sequence as random. Of course, if the world is computable, you cannot store one in any way, and any black box that outputs a Martin-Löf sequence is in some sense "either random or uncomputable".
+    }
+    \p{
+        So in some sense there's _no way_ of telling the difference between a deterministic, computable world that contains some black boxes that output Martin-Löf sequences, and a computable world that contains some black boxes that output "actually random" sequences. This provides some justification for the philosophical position that "randomness" is always about quantifying the limitations (of information, or in this case, of which functions they can compute) of the observer, advanced eg [here](https://www.lesswrong.com/posts/f6ZLxEWaankRZ2Crv/probability-is-in-the-mind).
+    }
+}
+\subtree{
+    \title{Proof (sketches) of equivalence }
+    \p{
+        Suppose #{x} belongs to some constructive nullcover, #{(U_n)} Then we can construct a constructive martingale which essentially makes the bet "#{x} will be in #{U_n}", continuously making a profit. Basically, assume we have already defined #{m(w)} for all the strings up to length #{k}, Consider a string #{w} of that length. Either both of #{w.0} and #{w.1} belong to #{U_k}, or neither, or exactly one of them. If neither do, then we know we're not looking at #{x}, so it doesn't matter. If both do, then we make no bet at this point, but use #{U_k} again to compure #{w.00, w.01} and so on. If only one of them do, then we bet all our money on that one. This martingale succeeds on #{x}, and is constructive because the #{U_n}s are.
+    }
+    \p{
+        On the other hand, suppose a constructive martingale #{m} succeeds on #{x}. Without loss of generality, assume #{m(\epsilon) = 1}, where #{\epsilon} is the empty string. Let #{U_n} be the set of strings where #{m(w) > 2^n} for some prefix. Clearly no fair betting strategy can get positive expected value, so the measure of #{U_n} is at most #{2^{-n}}. On the other hand #{U_n} is computable because #{m} is. This proves equivalence of the martingale and constructive nullcover definitions.
+    }
+    \p{
+        Now suppose #{x} is compressible, i.e the value #{n - K(x_n)} is unbounded. Then there exists a program which receives and infinite bitstring as input and produces output one bit at a time, and an input #{y}, so that when run with input #{y} it produces #{x} as output, and so that the difference between the number of input bits consumed and the number of output bits produced grows without bound (the input is just a suitable sequence of very effective compressions of #{x}. The program simulates these, then outputs the extra bits from the end). Note that given #{n}, we can compute #{k} so that, after consuming #{k} bits of input, the program produces #{n+k} bits of output. Then we can define #{U_n} to be the set of infinite strings that have a length #{n+k} prefix which is a possible output of the program on an input of length #{k}. There are at most #{2^k} such outputs, each of which determines a set of measure #{2^{-n-k}}, so this has measure #{2^{-n}}. But clearly #{n} is in there.
+    }
+    \p{
+        On the other hand, suppose #{x} is in some nullcover #{U_n}. Then we can try to compress the prefixes of #{x} as follows:
+    }
+    \ul{
+        \li{
+            Compute the gödel number of the program enumerating the prefixes defining #{U_n}, for some #{n}
+        }
+        \li{
+            Find the #{k}th output of this program, for some #{k}, which is necessarily a prefix of #{x}. We may assume wlog that this program produces its output in ascending order of length.
+        }
+    }
+    \p{
+        The length of this program is a constant #{c}, to store the program computing #{(U_n)} and for gluing code, plus #{\log n + \log k} bits to store #{n} and #{k}. Let #{l_i} be the length of the #{i}th prefix defining #{U_n} Then #{\sum_i 2^{-l_i} \leq 2^{-n}}. This implies that the #{l_i} is at least #{n + \log i}. Hence this is a length #{c + \log n + \log k} program that produces a prefix of #{x} of length at least #{n + \log k} - hence for #{n} large enough, this is an arbitrarily good compression.
+    }
+}

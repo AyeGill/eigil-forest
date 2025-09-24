@@ -1,0 +1,180 @@
+\date{2020-04-26T00:00:00Z}
+\author{eigil-rischel}
+\import{macros}
+\title{The zero-one laws of Kolmogorov and Hewitt–Savage in categorical probability}
+\subtree{
+    \title{TLDR }
+    \p{
+        This is a post about my paper [The zero-one laws of Kolmogorov and Hewitt-Savage in categorical probability](https://arxiv.org/abs/1912.02769), joint with [Tobias Fritz](https://perimeterinstitute.ca/personal/tfritz/). This is a "companion piece" where I try to explain those ideas in a more understandable language. There are essentially three ideas in this paper:
+    }
+    \ul{
+        \li{
+            "Markov categories for synthetic probability theory" - this is only treated
+        }
+    \p{
+        briefly, since this is just the background that we're building on top of. Tobias has a long paper on this, [A synthetic approach to Markov kernels, conditional independence and theorems on sufficient statistics](https://arxiv.org/abs/1908.07021).
+    }
+        \li{
+            "Kolmogorov products" - a take on tensor products of infinitely many objects.
+        }
+    \p{
+        These are introduced into the framework to handle probabilistic systems with infinitely many variables.
+    }
+        \li{
+            "Zero-One Laws". These are theorems from probability theory of the form "If an
+        }
+    \p{
+        event #{A} satisfies ..., then #{P(A) \in 0,1}" - i.e either it always happens or it never happens. For two classical ones, Kolmogorov's and Hewitt-Savage's, we give a way of phrasing them in the categorical language and prove them.
+    }
+    }
+    \p{
+        In this post, I'll try to give an accessible take on these ideas. I'll assume some familiarity with category theory, and a _very_ small amount of familiarity with probability theory
+    }
+}
+\subtree{
+    \title{What do you mean, "synthetic probability theory" }
+\subtree{
+    \title{Synthetic vs analytic }
+    \p{
+        (This is a weird rambly section. Feel free to skip it)
+    }
+    \p{
+        Think about plane geometry for a moment. Let's contrast two approaches: In the "Euclidean" approach, we work without any reference to what a point, a line, and so on, _is_[^fn:1]. We simply have certain axioms which relate lines and points, certain properties (like congruence) which things can have or not have, and so on. We could also call this approach _formal_, or maybe _syntactical_. We can contrast this with how plane geometry might be treated in the modern world:
+    }
+    \ul{
+        \li{
+            A point is an element of #{\mathbb{R}^2}.
+        }
+        \li{
+            A line is a subset of #{\mathbb{R}^2} such that ...
+        }
+    }
+    \p{
+        and so on. Here a point is really a particular _thing_, so is a line, and the statement "The angle #{ABC} equals the angle #{CBD}" is defined in terms of the things that #{A,B,C,D} are, rather than being a more or less irreducible notion. We call such an approach _analytical_. Another way of looking at it is that Euclidean geometry admits several distinct models (particularly if we abandon certain axioms, e.g. the parallel postulate). On the other hand, the analytical approach of #{\mathbb{R}^2} augmented with some structure is a _specific_ model.
+    }
+}
+\subtree{
+    \title{Markov categories }
+    \p{
+        The classical approach to probability theory is analytical - a probability space #{(\Omega,\Sigma,P)} is a specific thing with a specific structure. We want to contrast this to a synthetic approach to probability theory. One "model" of our synthetic approach will be "classical probability theory", i.e measures and #{\sigma} algebras. Another model will be given by "possibility theory", where each outcome either happens or doesn't happen. And there are many other exoctic models like that.
+    }
+    \p{
+        This approach is called Markov categories. It is a notion which has been developed by several different authors under different names - see the paper by Fritz above for a review of the literature (and a much more in-depth treatment of Markov categories).
+    }
+    \p{
+        A Markov category is a symmetric monoidal category #{(\mathsf{C},\otimes,I)}, where the monoidal unit is terminal, where each object #{X \in \mathsf{C}} carries a distinguished cocommutative comonoid structure #{(\operatorname{copy}_X: X \to X \otimes X, \operatorname{del}_X: X \to I)}, and such that the symmetric monoidal structure isomorphisms are homomorphisms[^fn:2]. See Tobias' paper for an unpacking of this definition.
+    }
+    \p{
+        The interpretation of a Markov category is that the objects are "spaces" that our random variables can take values in, and the maps are "stochastic processes" or "kernels", i.e functions which produce their output somewhat randomly. The tensor product of two objects #{X \otimes Y} is the "product space" where points are pairs of points #{(x,y)} - but note that this is _not_ a product in the categorical sense, since, give a random map #{A \to X \otimes Y}, we can not in general recover it from the "marginals" or "projections" #{A \to X} and #{A \to Y}. This is because the random values of #{X} and #{Y} may be _dependent_. On the other hand, we do have "diagonal" maps #{X \to X \otimes X} - which non-randomly send #{x} to #{(x,x)} - and a "projection" map #{X \to I}, which is actually unique (there is precisely one way to randomly generate an element of the one-point space).
+    }
+    \p{
+        A map #{I \to X} is called a _distribution on #{X}_, and should be thought of as the abstract version of a probability measure. For instance, if #{P:I \to X} is a distribution, and #{f: X \to Y} is a map, then we can make sense of this diagram:
+    }
+    \p{
+        {{< figure src="/ox-hugo/blog-zeroonekolmog-diag-5.png" >}}
+    }
+    \p{
+        it is the distribution on #{X \otimes Y} where #{x \in X} is sampled according to #{\psi}, then #{y \in Y} is sampled according to #{f(x)}. Note the bullet which denotes the copying operator.
+    }
+    \p{
+        We can define a few different standard terms from probability theory in this context.
+    }
+\subtree{
+    \title{Independence }
+    \p{
+        Given a map #{f: A \to X \otimes Y}, we can ask whether #{X,Y} are /independent given #{A} /. The intuition here is that given some #{a \in A}, if I sample #{(x,y)} from #{f(a)} and tell you what the #{x} was, that gives you no information about the #{y} (given that you know what the #{a} was). In diagram form, this looks like this:
+    }
+    \p{
+        {{< figure src="/ox-hugo/blog-zeroonekolmog-diag-2.png" >}}
+    }
+    \p{
+        The basic idea here is that it makes no difference whether we generate #{(x,y)} together in one go, or separately (using the same #{a}).
+    }
+}
+\subtree{
+    \title{Determinism }
+    \p{
+        A map #{f: A \to B} is _deterministic_ if we have this equality:
+    }
+    \p{
+        {{< figure src="/ox-hugo/blog-zeroonekolmog-diag-1.png" >}}
+    }
+    \p{
+        This means if we run #{f} twice with the same #{a \in A}, we get the same #{b \in B} out. This is a reasonable definition of "deterministic".
+    }
+    \p{
+        Note that in both these cases, the existence of the comonoid structure is _exactly_ what we needed to make sense of the probabilistic notion.
+    }
+}
+\subtree{
+    \title{Examples }
+    \ul{
+        \li{
+            There is a Markov category #{\mathsf{Stoch}} where the objects are measurable
+        }
+    \p{
+        spaces, and the maps are [Markov Kernels](https://en.wikipedia.org/wiki/Markov_kernel)
+    }
+    }
+    \ul{
+        \li{
+            There is a Markov category #{\mathsf{FinStoch}} where the objects are finite
+        }
+    \p{
+        sets and the maps are stochastic matrices. It is a full subcategory of #{\mathsf{Stoch}}.
+    }
+        \li{
+            There is a Markov category called #{\mathsf{SetMulti}} where the objects are
+        }
+    \p{
+        sets and the maps are "total relations", i.e relations #{X \to Y} where each element #{x \in X} is related to at least one element in #{Y}.
+    }
+        \li{
+            There is a Markov category #{\mathsf{Gauss}} where objects are natural numbers,
+        }
+    \p{
+        and maps #{n \to m} are "affine maps #{\mathbb{R}^n \to \mathbb{R}^m} plus constant Gaussian noise"
+    }
+    }
+    \p{
+        For (many) more examples, see Tobias' paper.
+    }
+}
+}
+}
+\subtree{
+    \title{Infinite tensor products }
+    \p{
+        Most theorems in probability theory involve infinite families of variables. To make sense of that in our framework, we need to make sense of "distributions on infinite product spaces", which means we need a notion of "infinite tensor product". The definition goes like this: Let #{\{X_j\}_{j \in J}} be a collection of objects in a markov category #{\mathsf{C}}. For each finite subset #{F \subset J}, we can make sense of the tensor product #{\bigotimes_{j \in F} X_j}[^fn:3]. Since the tensor unit is terminal, we have natural maps #{\bigotimes_{J \in F'} X_j \to \bigotimes_{j \in F} X_j} for each inclusion of finite sets #{F \subset F'}. Then we can ask for a cofiltered limit of this system: #{\lim_{F \subset J} \bigotimes_{j \in F} X_j} This is a reasonable definition of "infinite tensor product", which we can denote #{\bigotimes_{j \in J} X_j} However, it turns out we need one more condition. The issue is that in a Markov category, having an object defined up to isomorphism is not always good enough - we want it up to _deterministic isomorphism_, so that the comonoid structure is determined as well. The natural condition to add to make sure we pick the "right" limit is that each of the projections #{\bigotimes_{j \in J} X_j \to \bigotimes_{j \in F} X_j}, for each finite subset, is deterministic. Such an infinite tensor product, we called a _Kolmogorov product_.
+    }
+}
+\subtree{
+    \title{Kolmogorov's Zero-One Theorem, abstractly }
+    \p{
+        With this setup, it turns out it's very easy to prove an abstract version of [Kolmogorov's Zero-One Law](https://en.wikipedia.org/wiki/Kolmogorov\%s_zero–one_law). Informally, the content of the law is this: suppose you have a family #{(X_n)} of independent random variables, and some event #{A} which is determined by these variables, but is independent of any finite subset of them. Then #{P(A) \in \{0,1\}}.
+    }
+    \p{
+        Here is our abstract version: Let #{(X_j)_{j \in J}} be objects so that the Kolmogorov product #{\bigotimes_{j \in J} X_j} exists. Let #{p: A \to \bigotimes_{j \in J} X_j} be a map, and #{s :  \bigotimes_{j \in J} X_j \to T} be a deterministic map. Suppose #{p} displays the conditional independence of the #{X_j} given #{A}, and that for every finite #{F \subset J}, the joint distribution
+    }
+    \p{
+        {{< figure src="/ox-hugo/blog-zeroonekolmog-diag-3.png" >}}
+    }
+    \p{
+        displays the independence of #{X_F} and #{T} given #{A}. (Here #{X_F = \bigotimes_{j \in F} X_j}). Then the composite #{sp : A \to T} is deterministic.
+    }
+    \p{
+        I will sketch the proof (see the paper for details). Essentially, we first prove that #{T} is independent of all the #{X_j}, not just the finite subsets. To see this, we note that the definition of independence is comparing two maps into #{T \otimes \bigotimes_{j\in J} X_j}. This is a limit, so it's enough to show that all the component maps, which are the maps for finite #{F \subset J}, agree - this is true by definition. Now it follows by a string diagram manipulation that #{sp} satisfies the definition of determinism:
+    }
+    \p{
+        {{< figure src="/ox-hugo/blog-zeroonekolmog-diag-4.png" >}}
+    }
+    \p{
+        This concludes the proof.
+    }
+    \p{
+        To recover the classical Kolmogorov 0-1 law, we must do a little bit of technical work. We work in the Markov category #{\mathsf{BorelStoch}} of _standard Borel spaces_. This Markov category has countable Kolmogorov products[^fn:4]. We let #{A = *} and let our #{X_j} be the _spaces_ that the variables #{X_j} from the theorem take values in. We let the map #{p} give the joint distribution of the variables. We let #{T = \{0,1\}}, and we let #{s} be the indicator for the event. Then the theorem says that the composite #{sp} is deterministic. So the probability that #{sp} is #{1}, which is the probability that the event happens, is either zero or one.
+    }
+    \p{
+        [^fn:1]: Euclid actually did try to define notions like lines, points, etc, but we're gonna use his name anyways [^fn:2]: Note that we're not assuming all maps, or even all isomorphisms, are homomorphic. This makes Markov categories an evil notion [^fn:3]: I am handwaving some non-issues with regards to non-strictness here [^fn:4]: It turns out that proving this is significantly harder than proving the abstract theorem, once you have the setup
+    }
+}

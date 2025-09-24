@@ -1,0 +1,164 @@
+\author{eigil-rischel}
+\date{2020-11-04T13:20:00+00:00}
+\import{macros}
+\title{Euler's method is compositional}
+    \p{
+        Another day, another post about dynamical systems. Today, I want to think about _open_ dynamical systems. You can think of an open dynamical system as a system where
+    }
+    \ul{
+        \li{
+            The dynamics are parameterized by some variable (which is supposed to vary with time)
+        }
+        \li{
+            And some function of the state is exposed (maybe to parameterize other systems).
+        }
+    }
+    \p{
+        I want to describe two types of open dynamical systems: continuous ones and discrete ones, and show that Euler's method is a compositional mapping between them.
+    }
+\subtree{
+    \title{Open dynamical systems }
+    \p{
+        A _continuous open dynamical system_ consists of the following data:
+    }
+    \ul{
+        \li{
+            An input set #{\mathbb{R}^I}
+        }
+        \li{
+            An output set #{\mathbb{R}^O}
+        }
+        \li{
+            A state set #{\mathbb{R}^S}
+        }
+        \li{
+            A "dynamics" #{D: \mathbb{R}^{I+S} \to \mathbb{R}^S}.
+        }
+        \li{
+            A "readout" #{r: \mathbb{R}^{S} \to \mathbb{R}^O}.
+        }
+    }
+    \p{
+        This is a continous open dynamical system #{I \to O}. Here #{I,O,S} are natural numbers. Note that we are constraining our spaces to being #{\mathbb{R}^n}. Of course we could have made sense of the above definition for any smooth manifold, asking instead for a map #{I \times S \to TS} so that for each #{i} the map #{S \to TS} is a section of the tangent bundle. The reason we're looking only at Euclidean spaces is because, to actually use Euler's method, we need a way of "stepping along the derivative". In our case this is given by simply adding the derivative - in general, we need a map #{TS \to S}.
+    }
+    \p{
+        A trajectory of this dynamical system is a pair of functions #{i(t),s(t)} so that #{s'(t) = D(i(t),s(t))}.
+    }
+    \p{
+        Given systems #{I \to X, X \to O}, we can compose them to obtain a system #{I \to O}. Suppose the state, dynamics and readout of the two systems are respectively #{S_1,D_1,r_1,S_2,D_2,r_2}. Then the state of the composed system is #{S_1 + S_2}, the readout is simply #{(s_1,s_2) \mapsto r_2(s_2)}, and the dynamics are #{D(i,s_1,s_2) = (D_1(i,s_1),D_2(r_1(s_1),s_2))}. This corresponds to plugging the output of the first system into the input of the second.
+    }
+    \p{
+        Note that this does not form a category, because there are no identities - there is no way to simply feed the input into the output.
+    }
+    \p{
+        Now for the discrete systems: A discrete open dynamical system consists of the following data:
+    }
+    \ul{
+        \li{
+            An input set #{I}
+        }
+        \li{
+            An output set #{O}
+        }
+        \li{
+            A state set #{S}
+        }
+        \li{
+            An update function #{U: I \times S \to S}.
+        }
+        \li{
+            A readout function #{r: S \to O}.
+        }
+    }
+    \p{
+        Now the composition is pretty much analogous: given systems #{(S_1,U_1,r_1): I \to X, (S_2,U_2,r_2) : X \to O}, the composite has input #{I}, output #{O}, state space #{S_1 \times S_2}, readout #{(s_1,s_2) \mapsto r_2(s_2)}, and update #{U_2(i,s_1,s_2) = (U_1(i,s_1),U_2(r_1(s_1),s_2))}.
+    }
+    \p{
+        Again, there are no identities.
+    }
+}
+\subtree{
+    \title{Euler's method }
+    \p{
+        Recall that _Euler's method_ is a way of solving a differential equation #{y' = F(y)}. Given a starting condition #{y(0) = y_0}, we fix some step size #{h} and move forward one step at a time, approximating #{y(t + h) \approx y(t) + hy'(t) = y(t) + hF(y(t))}.
+    }
+    \p{
+        This is essentially replacing a continuous dynamic system with a discrete dynamical system. The state space is the same, and the update function steps forward #{h} by the above method. Formally, if #{(I,O,S,D,r)} is a continuous dynamical system, define #{Eu_h(I,O,S,D,r)} to have
+    }
+    \ul{
+        \li{
+            State space #{\mathbb{R}^S} - the same state space, essentially.
+        }
+        \li{
+            Input space #{\mathbb{R}^I}
+        }
+        \li{
+            Output space #{\mathbb{R}^O}
+        }
+        \li{
+            Update function #{U(i,s) = s + hD(i,s)}
+        }
+        \li{
+            Readout simply given by #{r}
+        }
+    }
+    \p{
+        Then, we have that #{Eu_h} is _compositional_ - in other words, if #{X,Y} are continuous systems and #{X;Y} their composite, then #{Eu_h(X;Y) = Eu_h(X);Eu_h(Y)}. The proof is essentially just by writing out the definitions.
+    }
+    \ul{
+        \li{
+            The desired identity for in/output, state sets and readout is clear.
+        }
+        \li{
+            For the update, on the left-hand side the update is given by
+        }
+    \p{
+        #{U(i,s_1,s_2) = (s_1,s_2) + h(D_1(i,s_1),D_2(r_1(s_1),s_2))}. On the left-hand side, the update is given by #{U(i,s_1,s_2) = (s_1 + hD_1(i,s_1), s_2 + hD_2(r_1(s_1),s_2))} - these are of course equal.
+    }
+    }
+}
+\subtree{
+    \title{Higher-order methods }
+    \p{
+        In ODE solving, a "higher-order method" is one that tries to incorporate information about higher derivatives to make a better estimate. We can view Euler's method as, essentially, calculating #{y(t+h)} by replacing #{y} with its first-order Taylor approximation #{T_1y(t+h) = y(t) + hy'(t)}, which we can calculate from the differential equation. We can often get a better estimate by incorporating higher derivatives - by trying to compute #{y(t) + hy'(t) + \frac{h^2}{2}y^{(2)}(t)}, for example. Essentially, we are incorporating information about how the derivative will change (or how we think it will change) over the interval #{[t,t+h]}. If it's going up, then we'll get a higher value than we expected just from looking at the derivative now. If it's going down, we'll get a lower value.
+    }
+    \p{
+        The issue here, of course, is that we can't compute the second derivative directly - the differential equation doesn't tell us what it should be. That leaves us with two options
+    }
+    \ul{
+        \li{
+            Derive both sides of #{y'(t) = F(y(t))} to get #{y''(t) = F'(y(t))y'(t) = F'(y(t))F(y(t))}.
+        }
+    }
+    \p{
+        Of course, this requires that the function #{F} in the equation is actually differentiable, and that you have access to a symbolic representation so that you can compute the derivative explicitly. This falls in the general class of methods called _multiderivative methods_. It's easy to see how the above also gives a mapping from continuous systems to discrete ones, although I have not checked the details of compositionality.
+    }
+    \ul{
+        \li{
+            Estimate #{y''(t) \approx \frac{y'(t)- y'(t-h)}{h} = \frac{F(y(t)) - F(y(t-h))}{h}}.
+        }
+    \p{
+        This can then be calculated from the past two steps.
+    }
+    }
+    \p{
+        It's not immediately obvious how to make this into a discrete dynamical system. After all, the next state depends not only on the current state, but also on the previous one. The idea will be to make a state of the discrete system consist of _two_ points in the space - the transition replaces the first with the second, and computes a new second point by the method. Explicitly, given as above a continuous dynamical system:
+    }
+    \ul{
+        \li{
+            The input and output are as Euler's method
+        }
+        \li{
+            The state is #{\mathbb{R}^S \times \mathbb{R}^S}.
+        }
+        \li{
+            The readout is #{r(s_1,s_2) = r(s_2)} (the readout of the "present") state.
+        }
+        \li{
+            The update is #{U(i,s_1,s_2) = (s_2, s_2 + hD(i,s_2) + \frac{h}{2}(D(i,s_2) - D(i,s_1)))}
+        }
+    }
+    \p{
+        Note that in this method, we are updating under the assumption of constant input - it may be more appropriate to remember the last input as well, and use that. In any case, I have not verified compositionality of this method either.
+    }
+}
