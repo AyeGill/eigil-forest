@@ -12,4 +12,4 @@
     ##{\Hom\left(\binom{A}{X},\binom{B}{Y}\right) = \int^{M \in \cC} \cC(X, M \otimes Y) \times \cC(M \otimes B, A)}}
 }}
 
-\p{Note that many sources, including [[riley-optics-2018]], write the forwards direction \em{on top}, rather than on the bottom as we have done here. Writing the forwards direction on the bottom is in line with the comparison with [dependent optics](lcc-0003), where the backwards pass is indexed in some sense over the forwards pass.}
+\p{Note that many sources, including [[riley-optics]], write the forwards direction \em{on top}, rather than on the bottom as we have done here. Writing the forwards direction on the bottom is in line with the comparison with [dependent optics](lcc-0003), where the backwards pass is indexed in some sense over the forwards pass.}
