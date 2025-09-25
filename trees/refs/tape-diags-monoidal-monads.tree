@@ -3,10 +3,10 @@
 \taxon{Reference}
 \meta{doi}{10.48550/arXiv.2503.22819}
 \meta{external}{http://arxiv.org/abs/2503.22819}
-\author{Filippo Bonchi}
-\author{Cipriano Junior Cioffo}
-\author{Alessandro Di Giorgio}
-\author{Elena Di Lavore}
+\author/literal{Filippo Bonchi}
+\author/literal{Cipriano Junior Cioffo}
+\author/literal{Alessandro Di Giorgio}
+\author/literal{Elena Di Lavore}
 \meta{bibtex}{\startverb
  @article
 {tape-diags-monoidal-monads, title={Tape Diagrams for Monoidal Monads},  DOI={10.48550/arXiv.2503.22819},  number={arXiv:2503.22819}, publisher={arXiv}, author={Bonchi, Filippo and Cioffo, Cipriano Junior and Giorgio, Alessandro Di and Lavore, Elena Di}, year={2025}, month={Mar} }

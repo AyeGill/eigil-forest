@@ -5,7 +5,7 @@
 \def\Mealy{#{\mathsf{Mealy}}}
 \def\Stream{#{\operatorname{Stream}}}
 \def\Sys{#{\mathsf{Sys}}}
-\p{(Inspired by a conversation with [[dylan-braithwaite]], [[matteo-capucci]] and [[toby-smithe]])}
+\p{(Inspired by a conversation with Dylan Braithwaite, Matteo Capucci, Toby Smythe)}
 \p{
     A "context" is "something you can plug a system into, producing a closed system.
     Recall that, given a (monoidal) theory of dynamical systems, a closed system is a system with interface #{I}. So we may say that, when #{A} is an interface, a context of type #{A} should give a functor #{\Sys(A) \to \Sys(I)}. 

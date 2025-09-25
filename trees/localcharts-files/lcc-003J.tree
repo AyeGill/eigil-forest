@@ -3,7 +3,7 @@
 \import{macros}
 \title{Logics for Categorical Systems Theory}
 \p{
-  What sort of logic can we use for reasoning about open dynamical systems in the style of [[djm-categorical-systems-theory]]?
+  What sort of logic can we use for reasoning about open dynamical systems in the style of [[myers-cst]]?
 }
 \p{
   One idea would be to attempt to use some form of modal logic. It is tempting to try to see if we can draw on the connection between modal logic and coalgebra ([[lcc-003G]]). However, while we can \em{sometimes} concoct a functor so that its coalgebras are precisely the open systems of a given signature, this is far from always the case.

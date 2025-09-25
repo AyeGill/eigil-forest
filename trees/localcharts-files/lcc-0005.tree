@@ -7,7 +7,7 @@
 
 
 \p{Let \cI have all finite limits, and equip it with the Cartesian monoidal structure.
-Let #{\cC,\cM,\cD \to \cI} be bifibrations which have the Beck-Chevalley condition. Suppose \cM is a monoidal bifibration in the sense of [[shulman-monfib-2009]], and suppose further that \cM acts on \cC and \cD in a way compatible with the fibrations.}
+Let #{\cC,\cM,\cD \to \cI} be bifibrations which have the Beck-Chevalley condition. Suppose \cM is a monoidal bifibration in the sense of [[shulman-monfibs]], and suppose further that \cM acts on \cC and \cD in a way compatible with the fibrations.}
 
 \p{Note that we are only asking for compatibility with the \em{fibration}, not with the bifibration - that is, we expect tensors of Cartesian lifts to be again Cartesian, but not that this is the case for coCartesian lifts.}
 

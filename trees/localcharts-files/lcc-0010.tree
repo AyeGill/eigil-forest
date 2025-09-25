@@ -1,7 +1,7 @@
 \date{2024-04-03}
 \author{eigil-rischel}
 \import{macros}
-\p{In [[badings-robust-control-2023]], the following scheme for controlling dynamical systems is described:}
+\p{In [[badings_robust_2023]], the following scheme for controlling dynamical systems is described:}
 \ol{
     \li{Take a parametrized discrete-time dynamical system with noise - that is, something of the form #{x_{n+1} = F(x_n, u_n) + v_n}, where the intended semantics is that #{u_n} is the input chosen at each step, and #{v_n} is randomly drawn from some distribution, and this whole thing lives in #{\RR^n}. For most of the paper the simple case where inputs live in #{\RR^m} and #{F} is linear (not bilinear, but linear on #{\RR^{n+m}}) is cosidered, but this is not strictly necessary - what \em{is} necessary is the assumption that the noise term is independent of #{x_n} and added on after computing the next term (that is - we could consider something like #{x_{n+1} = F(x_n,u_n,v_n)} where #{v_n} is random - that would require a more complicated method, I think).}
     \li{Choose two things - a partition of #{\RR^n} into regions #{X_i} and a "target point" in each #{d_i \in X_i} - these regions will be taken to be convex and the target point should be central in a certain sense. The point here is that, if $I$ is the set of regions, this is a \em{lens} #{\binom{\RR^n}{\RR^n} \leftrightarrows \binom{I}{I}} - the regions give you "high-level" information about where you are, and the points transform high-level control into low-level control.}

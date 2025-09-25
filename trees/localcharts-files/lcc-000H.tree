@@ -20,4 +20,4 @@
 
 \p{It is interesting to note that this algorithm essentially stores a function #{f: X \to X}, and represents the equivalence classes by its fixpoints (assuming by construction that #{x, f(x), f^2(x), \dots} always reaches one).}
 
-\p{See also [this post on LocalCharts](https://www.localcharts.org/t/equivalence-relations-via-idempotent-endomorphisms/1119/2) by [[owen-lynch]]}
+\p{See also [this post on LocalCharts](https://www.localcharts.org/t/equivalence-relations-via-idempotent-endomorphisms/1119/2) by Owen Lynch}

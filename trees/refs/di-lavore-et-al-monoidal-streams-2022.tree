@@ -1,0 +1,17 @@
+\title{Monoidal Streams for Dataflow Programming}
+\date{2022-02-04}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2202.02061}
+\meta{external}{http://arxiv.org/abs/2202.02061}
+\author/literal{Elena Di Lavore}
+\author/literal{Giovanni de Felice}
+\author/literal{Mario Román}
+\meta{bibtex}{\startverb
+ @article
+{Lavore_Felice_Román_2022, title={Monoidal Streams for Dataflow Programming}, url={http://arxiv.org/abs/2202.02061}, DOI={10.48550/arXiv.2202.02061}, abstractNote={We introduce monoidal streams: a generalization of causal stream functions to monoidal categories. In the same way that streams provide semantics to dataflow programming with pure functions, monoidal streams provide semantics to dataflow programming with theories of processes represented by a symmetric monoidal category. At the same time, monoidal streams form a feedback monoidal category, which can be used to interpret signal flow graphs. As an example, we study a stochastic dataflow language.}, note={arXiv:2202.02061 [cs]}, number={arXiv:2202.02061}, publisher={arXiv}, author={Lavore, Elena Di and Felice, Giovanni de and Román, Mario}, year={2022}, month={Feb} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We introduce monoidal streams: a generalization of causal stream functions to monoidal categories. In the same way that streams provide semantics to dataflow programming with pure functions, monoidal streams provide semantics to dataflow programming with theories of processes represented by a symmetric monoidal category. At the same time, monoidal streams form a feedback monoidal category, which can be used to interpret signal flow graphs. As an example, we study a stochastic dataflow language.
+}}
+

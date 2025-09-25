@@ -3,7 +3,7 @@
 \author{eigil-rischel}
 \import{macros}
 
-\p{The [[djm-categorical-systems-theory]] of [[david-jaz-myers]] is a very general language for talking about "systems"---as a special case, dynamical systems. In that framework, the set of \em{trajectories} of a system is a \em{representable} functor, given by mapping out of some other system. For example, if #{s: X \to TX} is a vector field giving a smooth dynamical system, a trajectory in the usual sense is a map from the dynamical system #{\RR \to T(\RR)} given by #{\dfrac{\partial}{\partial x}}, ie the system which moves right at constant speed #{1}.}
+\p{The [[myers-cst]] of [[david-jaz-myers]] is a very general language for talking about "systems"---as a special case, dynamical systems. In that framework, the set of \em{trajectories} of a system is a \em{representable} functor, given by mapping out of some other system. For example, if #{s: X \to TX} is a vector field giving a smooth dynamical system, a trajectory in the usual sense is a map from the dynamical system #{\RR \to T(\RR)} given by #{\dfrac{\partial}{\partial x}}, ie the system which moves right at constant speed #{1}.}
 \p{This framework handles this type of trajectories very well, but it is less clear how to talk about \em{stochastic dynamical systems}, which generally have \em{random trajectories}.}
 
 \p{Let us look for a moment at discrete-time stochastic dynamical systems which are closed (that is, not open, with trivial interface). This consists of a set equipped with a map #{X \to \Delta(X)}, thought of as a section of the projection #{X \times \Delta(X) \to X}. A trajectory between such systems is then a map #{X \to Y} so that the obvious diagram commutes.}
