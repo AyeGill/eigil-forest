@@ -1,0 +1,24 @@
+\date{2025-10-13T15:30:47Z}
+\author{eigil-rischel}
+\import{macros}
+\title{A simple categorical proof of (a) Martingale Convergence Theorem}
+\subtree{
+  \taxon{Theorem}
+  \p{
+    Let #{\Omega_1 \leftarrow \Omega_2 \leftarrow \dots} be a sequence of probability spaces, for example #{\Omega_i = (\Omega, \cF_i, P)} for some filtration of sigma-algebras. A \em{martingale} on this object is a sequence of random variables defined on #{\Omega_i} so that #{E[X_{i+1} \mid \Omega_i] = X_i}. Let #{\Omega_\infty} denote the limit of this diagram in probability spaces. Then every martingale of #{L^2}-random variables defines a sequence of random variables on #{\Omega_\infty}. This sequence converges in #{L^2}, say to #{X_\infty}, and #{X_n = E[X_\infty \mid \Omega_n]}
+  }
+}
+\proof{
+  \p{
+    Note that #{L^2(-)} defines a contravariant functor from probability spaces to Hilbert spaces and bounded maps. This functor carries the limit #{\Omega_\infty = \lim_i \Omega_i} to a colimit. To see this, first note that it carries each map to an embedding (since every measure-preserving map is onto up to a set of measure zero), so it suffices to show that every #{L^2} measurable function #{f} on the limit is a limit of functions #{f_i} which factor over #{\Omega_i}.
+  }
+  \p{
+    Let such an #{f} be given. Fix #{K} so that the #{L^2}-norm of the part of #{f} outside #{[-K,K]} is small. Partition #{[-K,K]} into intervals of width #{1/i}. Each of the sets #{f^{-1}(\lbracket k/i, k+1/i \rparen)} is measurable. Hence there is some #{N_i} so that each of these intervals is approximated up to probability #{\epsilon / i} by some #{\Omega_{N_i}}-measurable set. Define #{f_i} to be equal to #{k/i} on these approximating sets and zero outside of that. Then #{f_i} is within #{2\epsilon} of #{f} in #{L^2}.
+  }
+  \p{
+    Now since forming adjoints is a self-duality on Hilbert spaces, this immediately implies that #{L^2(\Omega_\infty)} is also the inverse limit of the adjoint diagram, where the map #{L^2(\Omega_{i+1}) \to L^2(\Omega_i)} is given by conditional expectation. It is apparent that an element of this inverse limit is precisely a martingale. Hence every martingale is the conditional expectation of a unique 
+  }
+}
+\p{
+  This concept is essentially what is called a \em{bilimit} in domain theory and studied for embedding-projection pairs. 
+}
