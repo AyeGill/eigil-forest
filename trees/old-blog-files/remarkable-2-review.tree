@@ -1,4 +1,5 @@
 \date{2020-11-10}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{reMarkable 2 review}
@@ -118,7 +119,8 @@ I recently got a [reMarkable 2](https://remarkable.com/). I've had it for one we
         The first line in the following picture was converted without error, while the second became "The Quick brown tote jumps over the lazy chef".
 }
 
-        \<html:img>[src]{\route-asset{assets/images/ox-hugo/remarkable_quickbrownfox.png}}{}
+        \<html:img>[src]{\route-asset{assets/images/ox-hugo/remarkable_quickbrownfox.png}}[title]{}
+
 
 \p{
         I haven't tested this extensively, and I expect it to do worse on other languages than English (you can switch the language used in the setting menu).

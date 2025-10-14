@@ -1,4 +1,5 @@
 \date{2020-05-10}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Notes from "Persistent Homotopy Theory"}
@@ -69,7 +70,8 @@ understand howthis works, and how this plays into classical model category theor
   This means we can build a diagram
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/jardine-r-interleaving-poset.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/jardine-r-interleaving-poset.png}}[title]{}
+
 
 \p{
   The top square commutes - in other words, #{i} almost has a retract, except we
@@ -105,7 +107,8 @@ understand howthis works, and how this plays into classical model category theor
   get a diagram like this
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/jardine-r-interleaving.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/jardine-r-interleaving.png}}[title]{}
+
 
 \p{
   where the top triangle commutes, and the bottom commutes up to a homotopy fixing

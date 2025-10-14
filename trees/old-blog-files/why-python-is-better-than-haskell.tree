@@ -1,4 +1,5 @@
 \date{2021-02-06}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Why Python Is Better Than Haskell}
@@ -52,7 +53,8 @@ I want to make a post request with some arguments, and get a response back (actu
 I go to the `http-conduit` docs, where I see this:
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195432_aqmV4V.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195432_aqmV4V.png}}[title]{}
+
 \p{
 Okay, so after staring at this for a bit, it seems like you just put in a bytestring? That's _slightly_ more low-level than I was hoping - to be honest, I don't even know how to format a list of arguments like the above into a http request!
 }
@@ -60,7 +62,8 @@ Okay, so after staring at this for a bit, it seems like you just put in a bytest
 \p{
 After digging around the docs page for a little while, I find this:
 }
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195853_4tIjnm.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195853_4tIjnm.png}}[title]{}
+
 \p{
 Okay.. that doesn't look too bad. Now we can implement the fragment above in Haskell like this:
 }

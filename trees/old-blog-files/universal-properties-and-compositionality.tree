@@ -1,4 +1,5 @@
 \date{2020-10-14}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Universal properties and Compositionality}
@@ -49,7 +50,8 @@ Continuing the train of thought from [this tweet](https://twitter.com/AyeGill/st
     The desired category #{\mathcal{C}[W^{-1}]} should have the following universal property: given a functor #{\mathcal{C} \to \mathcal{D}} which sends every #{f \in W} to an isomorphism, there should be a unique extension over #{\mathcal{C}[W^-1]}, as in this diagram:
 }
 
-    \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local.png}}{}
+    \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local.png}}[title]{}
+
 
 \p{
     This formalizes the intuition that #{\mathcal{C}[W^{-1}]} is #{\mathcal{C}}, with the maps #{W} turned isomorphisms, and nothing else changed.
@@ -173,9 +175,9 @@ Continuing the train of thought from [this tweet](https://twitter.com/AyeGill/st
 \p{
   An example of this is simply typed lambda calculus, or STLC.
   I guess it's well-known that the simply typed lambda-calculus can be interpreted in any cartesian closed category.
-  Each type #{A} is mapped to an object #{[[A]]}, with #{[[A \to B]] = [[B]]^{[[A]]}}.
+  Each type #{A} is mapped to an object #{ \lbracket [A ] \rbracket}, with #{\lbracket [ A \to B ] \rbracket = \lbracket [ B ] \rbracket^{\lbracket [ A ] \rbracket}}.
   Then a judgment #{\Gamma \vdash e : A}, where #{\Gamma = x_1 : X_1, x_2 : X_1, \dots x_n : X_n},
-  is mapped to a morphism #{\prod_i [[X_i]] \to [[A]]}, by inducting on the proof of the judgment using the projections
+  is mapped to a morphism #{\prod_i \lbracket [ X_i ] \rbracket \to \lbracket [ A ] \rbracket}, by inducting on the proof of the judgment using the projections
   and the hom-product adjunction.
 }
 

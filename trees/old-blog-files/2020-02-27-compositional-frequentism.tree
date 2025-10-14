@@ -1,4 +1,6 @@
 \date{2020-02-27}
+\import{macros}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Frequentist Statistics and Compositionality}

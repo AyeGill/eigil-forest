@@ -1,4 +1,5 @@
 \date{2021-01-21}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Where numbers come from}
@@ -17,13 +18,14 @@ Let's do a thought experiment.
 I place an empty box in front of you. Then, while you're watching, I put these objects into the box:
 }
 
-\<html:img>[src]{\route-asset{assets/images/2_apples.png}}{2 apples}
+\<html:img>[src]{\route-asset{assets/images/2_apples.png}}[title]{2 apples}
 
 \p{
 Then I remove these things from the box:
 }
 
-\<html:img>[src]{\route-asset{assets/images/3_apples.png}}{3 apples}
+\<html:img>[src]{\route-asset{assets/images/3_apples.png}}[title]{3 apples}
+
 
 \p{
 You're surprised! Why? Because what I took out is not a subset of what I put in. A new apple appeared.
@@ -41,7 +43,8 @@ Once children are old enough to talk, you can make the experiment more reliable 
 The following picture switches back and forth between two collections of apples. Can you tell whether they're the same size "in one go" - without letting it switch back and forth more than once?
 }
 
-\<html:img>[src]{\route-asset{assets/images/apples_gif.gif}}{apples gif}
+\<html:img>[src]{\route-asset{assets/images/apples_gif.gif}}[title]{apples gif}
+
 
 \p{
 This, it turns out, is actually very hard. Even grown human brains don't come hardwired with an arbitrarily powerful "compare the size of two collections" module. You can compare the *visual* size, which can give you the answer if the relative difference in size is moderately large. But in a case like the above, it's very hard to tell the size of those two collections apart.
@@ -59,7 +62,8 @@ Of course, this won't work if the collections are not available *at the same tim
 So humans, so long ago that the origins have been completely forgotten, but certainly more than 20.000 years ago, came up with an ingenious technology to solve this problem:
 }
 
-\<html:img>[src]{https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Os_d\%27Ishango_IRSNB.JPG/800px-Os_d\%27Ishango_IRSNB.JPG}{Ishango bone}
+\<html:img>[src]{https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Os_d\%27Ishango_IRSNB.JPG/800px-Os_d\%27Ishango_IRSNB.JPG}[title]{Ishango bone}
+
 
 \p{
 I will describe it for you now.
@@ -70,7 +74,7 @@ We invented a *reference set* of every possible size (infinities had not been in
   \li{#{\{1\}}}
   \li{#{\{1,2\}}}
   \li{#{\{1,2,3\}}}
-  \li{#{\\dots}}
+  \li{#{\dots}}
 \p{
 }
 }

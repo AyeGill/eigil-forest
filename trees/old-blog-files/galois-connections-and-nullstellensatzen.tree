@@ -1,4 +1,5 @@
 \date{2020-12-09}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Galois Connections and Nullstellensatzen}
@@ -90,7 +91,8 @@
   We say that _#{f} has the left lifting property with respect to #{g}_, and that #{g} has the right lifting property with respect to #{f}, if, for each diagram of this form, if the outer square commutes, there exists a dashed arrow making the triangles commute as well:
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-12-08-local-1.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-12-08-local-1.png}}[title]{}
+
 
 \p{
   Given a class #{S} of morphisms in #{\mathcal{C}}, let #{LLP(S)} be the class of morphism with the left lifting property with respect to _all_ morphisms #{f \in S}, analogously #{RLP(S)}.
@@ -109,7 +111,8 @@
   -   Retracts: given a commutative diagram
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-12-08-local-2.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-12-08-local-2.png}}[title]{}
+
 \p{
   where the horizontal composites are identities, if #{f} is in the class, so is #{g}
 }

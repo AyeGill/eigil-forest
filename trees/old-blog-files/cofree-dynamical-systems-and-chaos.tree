@@ -1,4 +1,5 @@
 \date{2020-10-30}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Cofree dynamical systems and chaos}
@@ -77,7 +78,8 @@ Suppose we have a #{T}-equivariant map #{\phi: M \to [T,M']}.
 #{T}-equivariance, of course, means that the diagram
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-30-local.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-30-local.png}}[title]{}
+
 
 \p{
 commutes.
@@ -88,7 +90,8 @@ The bare map #{M \to [T,M']} corresponds to a map #{M \otimes T \to M'}.
 The above commutative square means that this square commutes:
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local-1.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local-1.png}}[title]{}
+
 
 \p{
 The bottom way around is "let #{T} act on #{M}, then use the map".
@@ -99,7 +102,8 @@ The other one is "multiply the #{T}s together, then use the map".
 Now let's insert the unit into the right-hand #{T}:
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local-2.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local-2.png}}[title]{}
+
 
 \p{
 Both these squares commute. And the top arrow is just the identity.

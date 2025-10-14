@@ -1,4 +1,5 @@
 \date{2023-09-28}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Against calibration}
@@ -15,7 +16,8 @@ One way to rate forecasts is "Brier score".[^2] If you assign something probabil
 Another way to rate forecasters is "calibration". Calibration looks at the fraction of your "X\% likely" predictions that occurred, and asks how close that fraction is to X\% (for each X). Then you can plot it in graphs like this (source: [Manifold on twitter](https://twitter.com/ManifoldMarkets/status/1661877668038709249)):
 }
 
-\<html:img>[src]{\route-asset{assets/images/calibration.png}}{A calibration graph}
+\<html:img>[src]{\route-asset{assets/images/calibration.png}}[title]{A calibration graph}
+
 
 \p{
 On average, clearly, 10\% of your 10\% predictions should come true if you're assigning probabilities sensibly, so it seems good to have good calibration. Brier scoring agrees with this, in the following sense: suppose in fact 14\% of your 10\% predictions come true. Then you would have obtained a higher Brier score by replacing all your 10\% predictions with 14\%[^1].

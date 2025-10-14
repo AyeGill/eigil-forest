@@ -1,4 +1,5 @@
 \date{2020-10-25}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Chu spaces and linear logic}
@@ -8,7 +9,8 @@ A _Chu space over #{S}_ consists of a pair of sets #{(X,U)}, and a function #{e:
 A map of chu spaces #{(X,U,e) \to (Y,V,e')} is a pair of maps #{X \to Y, V \to U} so that the diagram
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local.png}}[title]{}
+
 
 \p{
 commutes.

@@ -1,4 +1,5 @@
 \date{2021-01-30}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Notes from "Practical Foundations for Programming Languages}

@@ -1,4 +1,5 @@
 \date{2020-02-28}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{How to Make A Website}
@@ -89,7 +90,8 @@ Please note that this is a guide for people who want to do everything from scrat
       - Here's how this looks on Linode:
 }
 
-  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F-ZIWgCcytN?alt=media&token=96ceb429-a6cc-43d7-a265-63b57afd1970}{}
+  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F-ZIWgCcytN?alt=media&token=96ceb429-a6cc-43d7-a265-63b57afd1970}[title]{}
+
 
 \p{
   You can see the IP addresses on the right.
@@ -116,7 +118,8 @@ Please note that this is a guide for people who want to do everything from scrat
   - To test that it's working, open up a browser and type your ip into the address bar. Your should see a page like this:
 }
 
-  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F1mUuZpp4mb?alt=media&token=8998a9a4-384e-4528-976b-25db5bcf1213}{}
+  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F1mUuZpp4mb?alt=media&token=8998a9a4-384e-4528-976b-25db5bcf1213}[title]{}
+
 
 \p{
   Now, I'll explain how to configure nginx to serve your website.
@@ -183,14 +186,16 @@ Please note that this is a guide for people who want to do everything from scrat
   - On the Hover control panel, you can see a list of "Nameservers"
 }
 
-  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F2LIWYtNPvB?alt=media&token=c58149c1-9ad0-4902-a83a-86540c7c4e28}{}
+  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2F2LIWYtNPvB?alt=media&token=c58149c1-9ad0-4902-a83a-86540c7c4e28}[title]{}
+
 
 \p{
   - Click edit, and set these to what you see there - `ns1.linode.com` etc
   - Then log on to Linode, go to "Domains" in the left-hand menu, click "add a new domain", and fill out the information:
 }
 
-  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2FGTbVkDHWxv?alt=media&token=70a86e84-1872-40e8-a6e5-cd8b6034fe38}{}
+  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2FGTbVkDHWxv?alt=media&token=70a86e84-1872-40e8-a6e5-cd8b6034fe38}[title]{}
+
 
 \p{
   (Obviously you'll type in your domain at the top). Note that you __must__ enter an email address.
@@ -201,7 +206,8 @@ Please note that this is a guide for people who want to do everything from scrat
       - For reference, here's how mine looks:
 }
 
-  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2FQBBPjZSd6-?alt=media&token=853eaef4-2bce-4026-bfe8-065d05050583}{}
+  \<html:img>[src]{https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs\%2Fapp\%2FEigilRischel\%2FQBBPjZSd6-?alt=media&token=853eaef4-2bce-4026-bfe8-065d05050583}[title]{}
+
 
 \p{
   - Now you should be able to go to `example.com` or `www.example.com` and see your website.

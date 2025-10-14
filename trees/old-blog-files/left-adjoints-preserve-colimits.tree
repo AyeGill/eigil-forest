@@ -1,4 +1,5 @@
 \date{2020-10-13}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Left adjoints preserve colimits.}
@@ -11,7 +12,8 @@ Let's also fix a diagram #{X: I \to C} from some index category #{I}.
 Now recall that a limit of #{X} is an object #{\lim X}, equipped with maps #{\pi_i: \lim X \to X(i)}, so that every triangle
 }
 
-\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-13-triag.png}}{}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-13-triag.png}}[title]{}
+
 
 \p{
 commutes, and so that, given another set of data #{(p, f_i: p to X(i))} with the same property, there is a unique map #{f: p \to \lim X} so that #{f_i = \pi_if}.

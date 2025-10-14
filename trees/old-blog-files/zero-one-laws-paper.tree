@@ -1,4 +1,5 @@
 \date{2020-04-26}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{The zero-one laws of Kolmogorov and Hewitt–Savage in categorical probability}
@@ -120,7 +121,8 @@
     we can make sense of this diagram:
 }
 
-    \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-5.png}}{}
+    \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-5.png}}[title]{}
+
 
 \p{
     it is the distribution on
@@ -142,7 +144,8 @@
       In diagram form, this looks like this:
 }
 
-      \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-2.png}}{}
+      \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-2.png}}[title]{}
+
 
 \p{
       The basic idea here is that it makes no difference whether we generate #{(x,y)}
@@ -155,7 +158,8 @@
       A map #{f: A \to B} is _deterministic_ if we have this equality:
 }
 
-      \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-1.png}}{}
+      \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-1.png}}[title]{}
+
 
 \p{
       This means if we run #{f} twice with the same #{a \in A}, we get the same #{b \in
@@ -238,7 +242,8 @@
   that for every finite #{F \subset J}, the joint distribution
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-3.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-3.png}}[title]{}
+
 
 \p{
   displays the independence of #{X_F} and #{T} given #{A}.
@@ -259,7 +264,8 @@
   definition of determinism:
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-4.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/blog-zeroonekolmog-diag-4.png}}[title]{}
+
 
 \p{
   This concludes the proof.

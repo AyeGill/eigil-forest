@@ -1,4 +1,5 @@
 \date{2020-04-13}
+\import{macros}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Bivariate Causal Inference}
@@ -19,13 +20,15 @@
   A "causal statistical model" is something like this:
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-1.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-1.png}}[title]{}
+
 
 \p{
   Or this
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-2.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-2.png}}[title]{}
+
 
 \p{
   Where a classical statistical model tells you what the probability of various
@@ -69,7 +72,8 @@
   can't always do this. For instance, this graph:
 }
 
-  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-3.png}}{}
+  \<html:img>[src]{\route-asset{assets/images/ox-hugo/graph-3.png}}[title]{}
+
 
 \p{
   Gives rise to exactly the same independence statements as graph 2 above.
