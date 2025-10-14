@@ -2,5 +2,5 @@
 trees = ["trees/utils", "trees/old-blog-files", "trees/public-trees"]
 assets = ["assets"]
 home = "eigil-rischel"
-url = "https://forest.local"
+url = "https://erischel.com/"
 foreign = [{ path = "efr-public.json", route_locally = false }]
