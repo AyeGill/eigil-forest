@@ -1,0 +1,24 @@
+\title{Stuff for public forest}
+\def\rel/public{eigil-forest.query.public}
+
+\execute\datalog{
+  \rel/public ?X -: {\rel/has-tag ?Z '{public}} {\rel/transcludes/reflexive-transitive-closure ?Z ?X}
+}
+\execute\datalog{
+  \rel/public ?X -: {\rel/has-taxon ?Z '{Reference}} {\rel/transcludes/reflexive-transitive-closure ?Z ?X}
+}
+\execute\datalog{
+  \rel/public ?X -: {\rel/has-taxon ?Z '{Person}} {\rel/transcludes/reflexive-transitive-closure ?Z ?X}
+}
+\execute\datalog{
+  \rel/public ?X -: {\rel/has-taxon ?Z '{Author}} {\rel/transcludes/reflexive-transitive-closure ?Z ?X}
+}
+\execute\datalog{
+  \rel/public ?X -: {\rel/has-taxon ?Z '{Institution}} {\rel/transcludes/reflexive-transitive-closure ?Z ?X}
+}
+
+\syndicate-query-as-json-blob{efr-public}{
+ \datalog{
+   ?X -: {\rel/public ?X}
+ }
+}
