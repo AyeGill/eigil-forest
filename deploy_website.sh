@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
-set -euo pipefail
 
 TARGET=root@172.105.82.133:/var/www/erischel.com/html
 
-git diff --quiet || { echo 'Unstaged changes detected, are you use you want to proceed' >&2; exit 1; } 
+git diff --quiet || { echo 'Unstaged changes detected, are you sure you want to proceed' >&2; exit 1; } 
 
 echo "Now doing automated commit"
 
