@@ -20,4 +20,4 @@ mv -f public-theme/* output/
 
 echo "Now publishing website"
 
-rsync -r public/ root@172.105.82.133:/var/www/erischel.com/html
+rsync -r output/ root@172.105.82.133:/var/www/erischel.com/html
