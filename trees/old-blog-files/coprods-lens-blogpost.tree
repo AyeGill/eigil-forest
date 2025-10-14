@@ -69,7 +69,7 @@
 \subtree{
   \title{The coproducts in #{\mathsf{Lens}}}
 \p{
-  Having seen the above, we may begin to lose hope of understanding the coproducts in #{\mathsf{Lens}} at all. Fortunately the situation is not completely chaotic - in some sense, the preceding example is the *only* problem - all the coproducts in #{\mathsf{Lens}} are either of the form #{\binom{A}{\coprod_i X_i}} (up to isomorphism), or they are of the same form as 
+  Having seen the above, we may begin to lose hope of understanding the coproducts in #{\mathsf{Lens}} at all. Fortunately the situation is not completely chaotic - in some sense, the preceding example is the *only* problem - all the coproducts in #{\mathsf{Lens}} are either of the form #{\binom{A}{\coprod_i X_i}} (up to isomorphism), or they are of the same form as example 1.1 
 }
   \subtree{
     \title{Theorem 2.1}
