@@ -12,11 +12,7 @@ git push
 
 echo "Now building forest"
 
-./forester build public-forest.toml
-
-echo "Replacing theme with public theme"
-
-mv -f public-theme/* output/
+./build-public.sh
 
 echo "Now publishing website"
 
