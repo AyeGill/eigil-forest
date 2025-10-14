@@ -1,10 +1,10 @@
 ./forester build forest.toml
 
-mv output/efr-public.json ./efr-public.json
+# mv output/efr-public.json ./efr-public.json
 
-rm -r output
+# rm -r output
 
-./forester build public-forest.toml
+#./forester build public-forest.toml
 
 echo "Adding public theme"
 
