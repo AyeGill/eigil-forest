@@ -1,0 +1,29 @@
+\title{Metric Equational Theories}
+\taxon{Reference}
+\date{2025-09-17}
+\meta{doi}{10.4204/eptcs.428.11}
+\author/literal{Radu Mardare}
+\author/literal{Neil Ghani}
+\author{eigil-rischel}
+\meta{bibtex}{\startverb
+@article{Mardare2025,
+  title = {Metric Equational Theories},
+  volume = {428},
+  ISSN = {2075-2180},
+  url = {http://dx.doi.org/10.4204/EPTCS.428.11},
+  DOI = {10.4204/eptcs.428.11},
+  journal = {Electronic Proceedings in Theoretical Computer Science},
+  publisher = {Open Publishing Association},
+  author = {Mardare,  Radu and Ghani,  Neil and Rischel,  Eigil},
+  year = {2025},
+  month = sep,
+  pages = {144–160}
+}
+\stopverb
+}
+\subtree{
+  \title{Abstract}
+  \p{
+    This paper proposes appropriate sound and complete proof systems for algebraic structures over metric spaces by combining the development of Quantitative Equational Theories (QET) with the Enriched Lawvere Theories. We extend QETs to Metric Equational Theories (METs) where operations no longer have finite sets as arities (as in QETs and the general theory of universal algebras), but arities are now drawn from countable metric spaces. This extension is inspired by the theory of Enriched Lawvere Theories, which suggests that the arities of operations should be the lambda-presentable objects of the underlying lambda-accessible category. In this setting, the validity of terms in METs can no longer be guaranteed independently of the validity of equations, as is the case with QET. We solve this problem, and adapt the sound and complete proof system for QETs to these more general METs, taking advantage of the specific structure of metric spaces.
+  }
+}

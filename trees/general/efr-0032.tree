@@ -2,6 +2,10 @@
 \author{eigil-rischel}
 \import{macros}
 \title{List of Publications}
+\tag{public}
+\p{
+  Click to expand.
+}
 \query\datalog{
   ?X -: {\rel/has-taxon ?X '{Reference}} {\rel/has-author ?X @{eigil-rischel}}
 }

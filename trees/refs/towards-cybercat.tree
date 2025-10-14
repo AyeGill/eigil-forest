@@ -8,7 +8,7 @@
 \author{eigil-rischel}
 \meta{bibtex}{\startverb
 @article
-{towards-cybercat, title={Towards Foundations of Categorical Cybernetics}, volume={372}, ISSN={2075-2180}, DOI={10.4204/EPTCS.372.17}, abstractNote={We propose a categorical framework for processes which interact bidirectionally with both an environment and a “controller”. Examples include open learners, in which the controller is an optimiser such as gradient descent, and an approach to compositional game theory closely related to open games, in which the controller is a composite of game-theoretic agents. We believe that “cybernetic” is an appropriate name for the processes that can be described in this framework.}, url={https://arxiv.org/abs/2105.06332}, journal={Electronic Proceedings in Theoretical Computer Science}, author={Capucci, Matteo and Gavranović, Bruno and Hedges, Jules and Rischel, Eigil Fjeldgren}, year={2022}, month={Nov}, pages={235–248} }
+{towards-cybercat, title={Towards Foundations of Categorical Cybernetics}, volume={372}, ISSN={2075-2180}, DOI={10.4204/EPTCS.372.17}, url={https://arxiv.org/abs/2105.06332}, journal={Electronic Proceedings in Theoretical Computer Science}, author={Capucci, Matteo and Gavranović, Bruno and Hedges, Jules and Rischel, Eigil Fjeldgren}, year={2022}, month={Nov}, pages={235–248} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{
