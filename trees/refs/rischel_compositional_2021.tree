@@ -1,19 +1,17 @@
 
 \title{Compositional abstraction error and a category of causal models}
 \date{2021-08-05}
-\author/literal{eigil-rischel}
+\author{eigil-rischel}
 \author/literal{Sebastian Weichwald}
 \taxon{Reference}
 
 \meta{bibtex}{\startverb
 @misc{rischel_compositional_2021,
- abstract = {Interventional causal models describe several joint distributions over some variables used to describe a system, one for each intervention setting. They provide a formal recipe for how to move between the different joint distributions and make predictions about the variables upon intervening on the system. Yet, it is difficult to formalise how we may change the underlying variables used to describe the system, say moving from fine-grained to coarse-grained variables. Here, we argue that compositionality is a desideratum for such model transformations and the associated errors: When abstracting a reference model M iteratively, first obtaining M' and then further simplifying that to obtain M'', we expect the composite transformation from M to M'' to exist and its error to be bounded by the errors incurred by each individual transformation step. Category theory, the study of mathematical objects via compositional transformations between them, offers a natural language to develop our framework for model transformations and abstractions. We introduce a category of finite interventional causal models and, leveraging theory of enriched categories, prove the desired compositionality properties for our framework.},
  author = {Rischel, Eigil F. and Weichwald, Sebastian},
  date = {2021-08-05},
  doi = {10.48550/arXiv.2103.15758},
  eprint = {2103.15758 [cs, math, stat]},
  eprinttype = {arxiv},
- file = {arXiv Fulltext PDF:/home/eigil/Zotero/storage/Q5TLWSAV/Rischel and Weichwald - 2021 - Compositional Abstraction Error and a Category of .pdf:application/pdf;arXiv.org Snapshot:/home/eigil/Zotero/storage/6JRI2TK9/2103.html:text/html},
  keywords = {Computer Science - Artificial Intelligence, Computer Science - Logic in Computer Science, Computer Science - Machine Learning, Mathematics - Category Theory, Statistics - Machine Learning},
  number = {{arXiv}:2103.15758},
  publisher = {{arXiv}},
@@ -24,3 +22,10 @@
 \stopverb}
 \meta{doi}{10.48550/arXiv.2103.15758}
 \meta{url}{http://arxiv.org/abs/2103.15758}
+
+\subtree{
+  \title{Abstract}
+  \p{
+    Interventional causal models describe several joint distributions over some variables used to describe a system, one for each intervention setting. They provide a formal recipe for how to move between the different joint distributions and make predictions about the variables upon intervening on the system. Yet, it is difficult to formalise how we may change the underlying variables used to describe the system, say moving from fine-grained to coarse-grained variables. Here, we argue that compositionality is a desideratum for such model transformations and the associated errors: When abstracting a reference model M iteratively, first obtaining M' and then further simplifying that to obtain M'', we expect the composite transformation from M to M'' to exist and its error to be bounded by the errors incurred by each individual transformation step. Category theory, the study of mathematical objects via compositional transformations between them, offers a natural language to develop our framework for model transformations and abstractions. We introduce a category of finite interventional causal models and, leveraging theory of enriched categories, prove the desired compositionality properties for our framework.
+  }
+}

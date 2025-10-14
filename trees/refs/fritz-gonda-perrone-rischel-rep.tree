@@ -5,7 +5,7 @@
 \author/literal{Tobias Fritz}
 \author/literal{Tomas Gonda}
 \author/literal{Paolo Perrone}
-\author/literal{eigil-rischel}
+\author{eigil-rischel}
 \meta{bibtex}{\startverb
  @article
 {fritz-gonda-perrone-rischel-rep, title={Representable Markov categories and comparison of statistical experiments in categorical probability}, volume={961}, ISSN={0304-3975}, DOI={10.1016/j.tcs.2023.113896}, abstractNote={Markov categories are a recent categorical approach to the mathematical foundations of probability and statistics. Here, this approach is advanced by stating and proving equivalent conditions for second-order stochastic dominance, a widely used way of comparing probability distributions by their spread. Furthermore, we lay the foundation for the theory of comparing statistical experiments within Markov categories by stating and proving the classical Blackwell-Sherman-Stein Theorem. Our version not only offers new insight into the proof, but its abstract nature also makes the result more general, automatically specializing to the standard Blackwell-Sherman-Stein Theorem in measure-theoretic probability as well as a Bayesian version that involves prior-dependent garbling. Along the way, we define and characterize representable Markov categories, within which one can talk about Markov kernels to or from spaces of distributions. We do so by exploring the relation between Markov categories and Kleisli categories of probability monads.}, journal={Theoretical Computer Science}, author={Fritz, Tobias and Gonda, Tomas and Perrone, Paolo and Fjeldgren Rischel, Eigil}, year={2023}, month={Jun}, pages={113896} }

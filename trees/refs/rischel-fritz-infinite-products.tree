@@ -3,7 +3,7 @@
 \taxon{Reference}
 \meta{doi}{10.32408/compositionality-2-3}
 \author/literal{Tobias Fritz}
-\author/literal{eigil-rischel}
+\author{eigil-rischel}
 \meta{bibtex}{\startverb
  @article
 {rischel-fritz-infinite-products, title={Infinite products and zero-one laws in categorical probability}, volume={2}, ISSN={2631-4444}, DOI={10.32408/compositionality-2-3}, abstractNote={We state and prove the zero-one laws of Kolmogorov and Hewitt-Savage within the setting of Markov categories, a category-theoretic approach to the foundations of probability and statistics. This gives general versions of these results which can be instantiated not only in measure-theoretic probability, where they specialize to the standard ones in the setting of standard Borel spaces, but also in other contexts. For example, applying the Kolmogorov law to the Kleisli category of the hyperspace monad on topological spaces gives criteria for when maps out of an infinite product of topological spaces into a Hausdorff space are constant.}, journal={Compositionality}, author={Fritz, Tobias and Rischel, Eigil Fjeldgren}, year={2020}, month={Aug}, pages={3},language={en} }
