@@ -1,246 +1,263 @@
-\author{eigil-rischel}
 \date{2021-01-30}
-\import{macros}
-\title{Notes from "Practical Foundations for Programming Languages"}
-    \p{
-        _Practical Foundations for Programming Languages_ (PFPL), by Robert Harper, is an introduction to the theory of programming languages. I recently finished reading through it. My read was fairly cursory - I stopped to think about ideas which seemed important or interesting, but I didn't read everything deeply, and I didn't do a lot of exercises.
-    }
-    \p{
-        In this post I'll summarize the things I got from it that seemed really interesting. I'll be giving my own perspective (much more category-oritented), not trying to stick to the book. This also means I might be mixing in some of my own thoughts that weren't really in the text, without any effort made to distinguish them. Sorry! If there's a dumb thing here don't assume that means the book is dumb.
-    }
-\subtree{
-    \title{Should you read it? }
-    \p{
-        I don't regret skimming. The book spends a lot of time on concepts which didn't really seem interesting to me - but of course that's highly personal, and I guess it's trying to be somewhat comprehensive, so that's the price you pay. I might have strongly preferred to read a summary of the interesting ideas (like this one), but it's hard to say how much I would have absorbed - somehow you usually learn more from being a bit immersed in things.
-    }
+\author{eigil-rischel}
+\title{Notes from "Practical Foundations for Programming Languages}
+
+\p{
+_Practical Foundations for Programming Languages_ (PFPL), by Robert Harper, is an introduction to the theory of programming languages.
+I recently finished reading through it. My read was fairly cursory - I stopped to think about ideas which seemed important or interesting, but I didn't read everything deeply, and I didn't do a lot of exercises.
+}
+
+\p{
+In this post I'll summarize the things I got from it that seemed really interesting.
+I'll be giving my own perspective (much more category-oritented), not trying to stick to the book. This also means I might be mixing in some of my own thoughts that weren't really in the text, without any effort made to distinguish them. Sorry! If there's a dumb thing here don't assume that means the book is dumb.
 }
 \subtree{
-    \title{Table of contents }
-    \p{
-        (of the book). Reproduced here so you can see if anything strikes your fancy:
-    }
-    \ol{
-        \li{
-            Judgment and rules
-        }
-        \li{
-            Statics and dynamics
-        }
-        \li{
-            Total functions
-        }
-        \li{
-            Finite data types
-        }
-        \li{
-            Types and propositions
-        }
-        \li{
-            Infinite data types
-        }
-        \li{
-            Variable types
-        }
-        \li{
-            Partiality and recursive types
-        }
-        \li{
-            Dynamic types
-        }
-        \li{
-            Subtyping
-        }
-        \li{
-            Dynamic dispatch
-        }
-        \li{
-            Control flow
-        }
-        \li{
-            Symbolic data
-        }
-        \li{
-            Mutable state
-        }
-        \li{
-            Parallelism
-        }
-        \li{
-            Concurrency and distribution
-        }
-        \li{
-            Modularity
-        }
-        \li{
-            Equational reasoning
-        }
-        \li{
-            Appendices.
-        }
-    }
-    \p{
-        My notes won't be following this structure.
-    }
+  \title{Should you read it?}
+\p{
+  I don't regret skimming. The book spends a lot of time on concepts which didn't really seem interesting to me - but of course that's highly personal, and I guess it's trying to be somewhat comprehensive, so that's the price you pay.
+  I might have strongly preferred to read a summary of the interesting ideas (like this one), but it's hard to say how much I would have absorbed - somehow you usually learn more from being a bit immersed in things.
+}
 }
 \subtree{
-    \title{Induction and coinduction }
-    \p{
-        This is probably the biggest thing I got out of this book. A lot of this is just my existing learning on this stuff finally crystallizing - so what I've written here may reflect me a lot more than the book.
-    }
-    \p{
-        Given a functor #{F: \mathcal{C} \to \mathcal{C}}, we can try to solve the equation #{F(X) \cong X} in at least two ways: We can take an _initial algebra_ of #{F}, or a _terminal coalgebra_ of #{F}. Recall that an algebra is an object #{X} with a map #{FX \to X}. There's an obvious category of algebras, and it's a theorem that for the initial object #{I}, if it exists, the map #{FI \to I} is an isomorphism. Dually, a coalgebra is an object with a map #{X \to FX}, there's a category of coalgebras, and if there is a terminal object #{T}, #{T \to FT} is an isomorphism. These correspond in some sense to "minimal" and "maximal" solutions of the equation #{F(X) \cong X}.
-    }
-    \p{
-        Example: Let #{\mathcal{C} = \mathsf{Set}}, #{F(X) = 1 + X}. The initial algbra is the set of naturals, with #{\xi: 1 + \mathbb{N} \to \mathbb{N}} taking #{* \in 1} to #{0} and #{n \in \mathbb{N}} to #{n+1}. The terminal coalgebra is the set of _conaturals_, #{\mathbb{N} \cup \{\infty\}}, with #{\xi} taking #{0} to #{*}, and every other conatural #{n} to #{n-1} (with #{\infty - 1 = \infty}).
-    }
-    \p{
-        Let's say you want to construct a map #{\mathbb{N} \to X}. You can do so by _induction_: specify an #{F}-algebra structure on #{X}, and there'll automatically be a unique homomorphism #{\mathbb{N} \to X}. This algebra structure corresponds to a map #{f: 1 + X \to X}. This map tells you:
-    }
-    \ol{
-        \li{
-            #{f(* \in 1)} is where #{0} should go
-        }
-        \li{
-            #{f(x \in X)} is where #{n+1} should go, if #{n} goes to #{x}.
-        }
-    }
-    \p{
-        In other words, and inductive definition.
-    }
-    \p{
-        Moreover, you can prove properties of such maps using initiality. Let #{f: \mathbb{N} \to X} be an algebra homomorphism, and let's suppose I want to show that #{f(n) \in U \subset X} for some subset. Then it suffices to prove that there is an algebra homomorphism #{p: Y \to X} with image contained in #{U}. The obvious way to construct this homomorphism is to let #{Y} be some subset of #{X}, contained in #{U}. For #{Y} to be an algebra, we must have, if #{s: 1 + X \to X}, #{s(*)\in Y} and #{s(y) \in Y} for #{y \in Y}. In other words, #{Y} must be stable under successor and contain the initial element.
-    }
-    \p{
-        We can in particular do ordinary induction by applying this to the identity map. Let #{U \subset \mathbb{N}} be the subset of elements satisfying some property. I want to show that the identity has image contained in #{U}, i.e that #{U} is the whole thing. It suffices to show that it contains #{0} and is closed under taking successor, i.e to perform induction in the usual sense.
-    }
-    \p{
-        Coinduction is dual to this. It lets you construct maps into the terminal algebra, and prove equality between such maps. Now maybe let #{F(X) = A \times X} for some set #{A}. The terminal coalgebra is the set #{A^\omega} of _streams_, functions #{\mathbb{N} \to A}, with the structure map #{A^\omega \to A \times A^\omega} slicing off the first element.
-    }
-    \p{
-        Given a map #{X \to A \times X}, we get a map #{f: X \to A^\omega} by terminality. Moreover, we can use _coinduction_ to show that #{f(x) = f(y)} for some #{x,y \in X}. Namely, if we can find any coalgebra homomorphism #{g: X \to \bar{X}} so that #{g(x) = g(y)}, then we must have #{f(x) = f(y)}, since we automatically have #{f = f'g}, with #{f': \bar{X} \to A^\omega} the unique map. How do we construct such a map? The obvious way is to let #{\bar{X}} the quotient of #{X} by some equivalence relation #{\sim}. For #{X/\sim} to still be an algebra - in other words, for the map #{X \to A \times X} to descend to a map #{X/\sim \to A \times X/\sim}, we must have that
-    }
-    \ol{
-        \li{
-            #{x \sim y} entails #{s_1(x) = s_1(y)}
-        }
-        \li{
-            #{x \sim y} entails #{s_2(x) \sim s_2(y)}
-        }
-    }
-    \p{
-        where #{s_1: X \to A, s_2: X \to X} are the two components of #{s: X \to A \times X}.
-    }
-    \p{
-        The general slogan is that induction lets us understand _maps out of the structure_ - which includes
-    }
+  \title{Table of contents}
+\p{
+  (of the book). Reproduced here so you can see if anything strikes your fancy:
+}
+
+\p{
+  1.  Judgment and rules
+  2.  Statics and dynamics
+  3.  Total functions
+  4.  Finite data types
+  5.  Types and propositions
+  6.  Infinite data types
+  7.  Variable types
+  8.  Partiality and recursive types
+  9.  Dynamic types
+  10. Subtyping
+  11. Dynamic dispatch
+  12. Control flow
+  13. Symbolic data
+  14. Mutable state
+  15. Parallelism
+  16. Concurrency and distribution
+  17. Modularity
+  18. Equational reasoning
+  19. Appendices.
+}
+
+\p{
+  My notes won't be following this structure.
+}
 }
 \subtree{
-    \title{What does "type safety" even mean? }
-    \p{
-        The simplest explanation of this is that type safety is a property of a type system and a "operational semantics", i.e of a model of program execution. In turn the simplest notion of execution is to give:
-    }
-    \ul{
-        \li{
-            A subset of expressions in the language called "values", which are "done", i.e they represent the results of computation
-        }
-        \li{
-            A relation #{e \mapsto e'} on expressions saying "e can evaluate to e' in one execution step".
-        }
-    }
-    \p{
-        Then type safety means, if #{e} is well-typed of type #{\tau}, either #{e \mapsto e'} for some #{e' : \tau}, or #{e} is a value. You _don't_ want to say something like "any well-typed program evaluated to a value of that type", because your type system probably doesn't guarantee termination (if it does, you language is not Turing complete). Obviously you need more sophisticated versions of this to account for more complicated models of program evaluation, programs with side effects, etc, but this is the idea.
-    }
+  \title{Induction and coinduction}
+\p{
+  This is probably the biggest thing I got out of this book.
+  A lot of this is just my existing learning on this stuff finally crystallizing - so what I've written here may reflect me a lot more than the book.
+}
+
+\p{
+  Given a functor #{F: \mathcal{C} \to \mathcal{C}}, we can try to solve the equation #{F(X) \cong X} in at least two ways:
+  We can take an _initial algebra_ of #{F}, or a _terminal coalgebra_ of #{F}.
+  Recall that an algebra is an object #{X} with a map #{FX \to X}.
+  There's an obvious category of algebras, and it's a theorem that for the initial object #{I}, if it exists, the map #{FI \to I} is an isomorphism.
+  Dually, a coalgebra is an object with a map #{X \to FX}, there's a category of coalgebras, and if there is a terminal object #{T}, #{T \to FT} is an isomorphism.
+  These correspond in some sense to "minimal" and "maximal" solutions of the equation #{F(X) \cong X}.
+}
+
+\p{
+  Example: Let #{\mathcal{C} = \mathsf{Set}}, #{F(X) = 1 + X}.
+  The initial algbra is the set of naturals, with #{\xi: 1 + \mathbb{N} \to \mathbb{N}} taking #{* \in 1} to #{0} and #{n \in \mathbb{N}} to #{n+1}.
+  The terminal coalgebra is the set of _conaturals_, #{\mathbb{N} \cup \{\infty\}}, with #{\xi} taking #{0} to #{*}, and every other conatural #{n} to #{n-1} (with #{\infty - 1 = \infty}).
+}
+
+\p{
+  Let's say you want to construct a map #{\mathbb{N} \to X}. You can do so by _induction_: specify an #{F}-algebra structure on #{X},
+  and there'll automatically be a unique homomorphism #{\mathbb{N} \to X}.
+  This algebra structure corresponds to a map #{f: 1 + X \to X}. This map tells you:
+}
+
+\p{
+  1.  #{f(* \in 1)} is where #{0} should go
+  2.  #{f(x \in X)} is where #{n+1} should go, if #{n} goes to #{x}.
+}
+
+\p{
+  In other words, and inductive definition.
+}
+
+\p{
+  Moreover, you can prove properties of such maps using initiality.
+  Let #{f: \mathbb{N} \to X} be an algebra homomorphism, and let's suppose I want to show that #{f(n) \in U \subset X} for some subset.
+  Then it suffices to prove that there is an algebra homomorphism #{p: Y \to X} with image contained in #{U}.
+  The obvious way to construct this homomorphism is to let #{Y} be some subset of #{X}, contained in #{U}.
+  For #{Y} to be an algebra, we must have, if #{s: 1 + X \to X}, #{s(*)\in Y} and #{s(y) \in Y} for #{y \in Y}.
+  In other words, #{Y} must be stable under successor and contain the initial element.
+}
+
+\p{
+  We can in particular do ordinary induction by applying this to the identity map.
+  Let #{U \subset \mathbb{N}} be the subset of elements satisfying some property.
+  I want to show that the identity has image contained in #{U}, i.e that #{U} is the whole thing.
+  It suffices to show that it contains #{0} and is closed under taking successor, i.e to perform induction in the usual sense.
+}
+
+\p{
+  Coinduction is dual to this. It lets you construct maps into the terminal algebra, and prove equality between such maps.
+  Now maybe let #{F(X) = A \times X} for some set #{A}.
+  The terminal coalgebra is the set #{A^\omega} of _streams_, functions #{\mathbb{N} \to A}, with the structure map #{A^\omega \to A \times A^\omega} slicing off the first element.
+}
+
+\p{
+  Given a map #{X \to A \times X}, we get a map #{f: X \to A^\omega} by terminality.
+  Moreover, we can use _coinduction_ to show that #{f(x) = f(y)} for some #{x,y \in X}.
+  Namely, if we can find any coalgebra homomorphism #{g: X \to \bar{X}} so that #{g(x) = g(y)},
+  then we must have #{f(x) = f(y)}, since we automatically have #{f = f'g}, with #{f': \bar{X} \to A^\omega} the unique map.
+  How do we construct such a map? The obvious way is to let #{\bar{X}} the quotient of #{X} by some equivalence relation #{\sim}.
+  For #{X/\sim} to still be an algebra - in other words, for the map #{X \to A \times X} to descend to a map #{X/\sim \to A \times X/\sim},
+  we must have that
+}
+
+\p{
+  1.  #{x \sim y} entails #{s_1(x) = s_1(y)}
+  2.  #{x \sim y} entails #{s_2(x) \sim s_2(y)}
+}
+
+\p{
+  where #{s_1: X \to A, s_2: X \to X} are the two components of #{s: X \to A \times X}.
+}
+
+\p{
+  The general slogan is that induction lets us understand _maps out of the structure_ - which includes
+}
 }
 \subtree{
-    \title{Quantified and self-referential types }
-    \p{
-        Given a type #{T} with a free type variable #{t} (like #{t \times \mathrm{int}}), we can form the type #{\forall t. T}. An element of this type should be something that can "play the role" of #{T} no matter what #{t} is. For example #{\lambda x^A.x: A \to A} gives an element of #{\forall A. A \to A}.
-    }
-    \p{
-        The behaviour of elements of this type is basically:
-    }
-    \ul{
-        \li{
-            you can "cast" an element of #{\forall t. T} to #{T[A/t]}, i.e you can "specialize" the value.
-        }
-        \li{
-            To produce an element of #{\forall t. T}, i have to produce an element that typechecks as #{T}, no matter what the value of #{t} is (the type variable #{t} can't appear in the context).
-        }
-    }
-    \p{
-        Similarly you can make sense of "existential types" #{\exist t. T}.
-    }
-    \p{
-        Once you have these, you can define _recursive_ types, too. Take something like a list of integers: `Data Intlist = Nil | Cons Int Intlist`. In other words, `Intlist = () + (Int,Intlist)`.
-    }
-    \p{
-        We can type this using universally quantified types as #{\forall t. ((() + \mathrm{Int} \times A) \to A) \to A}. This basically means: you give me an #{a : A} and a map #{m: \mathrm{Int} \times A \to A}, and I give you an #{A}, for any type #{A}. The `Nil` constructor is the map which simply returns the given #{a}. The `Cons n l` constructor, for `n` an integer, returns an intlist which, given #{(a,m)}, feeds it to `l` (returning #{a'}), then computes #{m(n,a')} and returns it.
-    }
-    \p{
-        If you unpack this in your head, you'll see that this is exactly folding. A list is something you can fold over - the #{a} provided is the initial accumulator and the #{m: \mathrm{Int} \times A \to A} is the combination map.
-    }
-    \p{
-        The general formulation of the above is #{\forall a. (T(a) \to a) \to a}. Essentially, we are picking out the _initial algebra_ of #{T}, by saying that this is the universal thing with a map to #{a} for each #{T}-algebra structure on #{a}[^fn:1].
-    }
-    \p{
-        We could also pick out the _terminal coalgebra_, by writing #{\exists (a \to T(a), a)}. This has the dual meaning - given any #{T}-coalgbra structure, and a point in the carrier, we obtain a point of the terminal coalgebra. The terminal coalgebra of #{T(x) = () + x \times \mathrm{Int}} is the type of "colists" - possibly infinite lists (of integers). We see above that to produce a colist, we have to provide an element #{a : A} of some type, as well as a map #{s: A \to () + A \times \mathrm{Int}}. #{s(a) = ()} means the list is empty, #{s(a) = (a',n)} means #{n} is the head and the rest of the list corresponds to the pair #{(s,a')}. This is "iteration", or maybe "cofolding".
-    }
+  \title{What does "type safety" even mean?}
+\p{
+  The simplest explanation of this is that type safety is a property of a type system and a "operational semantics",
+  i.e of a model of program execution. In turn the simplest notion of execution is to give:
+}
+
+\p{
+  -   A subset of expressions in the language called "values", which are "done", i.e they represent the results of computation
+  -   A relation #{e \mapsto e'} on expressions saying "e can evaluate to e' in one execution step".
+}
+
+\p{
+  Then type safety means, if #{e} is well-typed of type #{\tau}, either #{e \mapsto e'} for some #{e' : \tau}, or #{e} is a value.
+  You _don't_ want to say something like "any well-typed program evaluated to a value of that type", because your type system probably doesn't guarantee termination (if it does, you language is not Turing complete).
+  Obviously you need more sophisticated versions of this to account for more complicated models of program evaluation, programs with side effects, etc, but this is the idea.
+}
 }
 \subtree{
-    \title{How a call stack works }
-    \p{
-        This is about how to evaluate programs. Simple "pure functional" languages can "just" be evaluated by successively applying reduction rules. But this is pretty limited - both in performance terms, but also prevents you from doing a few cool things, like _continuations_.
-    }
-    \p{
-        A _call stack_ is basically a list of functions - in the sense of "expressions with a hole in them" - that are waiting for the result of computation, along with a value that's being evaluated, and a "pointer" which tells us whether the next step is to reduce the active value some more, or to return it, i.e plug it into the next function
-    }
-    \p{
-        So eg the stack `a;b;c > e` means "we're in the process of evaluating `e`. Once that's done, evaluate `c e`, then `b (c e)` and so on". On the other hand `a;b;c < e` means "`e` is a value that's done evaluating, pass it to `c`, then `b`, then `a`.
-    }
-    \p{
-        Then you need to make up some rules for how to handle these things - which order to evaluate expressions and so on.
-    }
-    \p{
-        To augment this language with continuations, you can add expressions like `callcc : (Cont(a) -> a) -> a` and `throw : a -> Cont(a) -> b`, where the meaning of `callcc` is "run this function with a "continuation" pointing the current state - if the continuation is ever "used" by `throw`, just immediately return the value `a` that was supplied". Then the dynamics of this stuff is:
-    }
-    \ul{
-        \li{
-            `s > callcc f` evaluates to `s > f [s]`, where `[s] : Cont a` is a representation of the current stack, and
-        }
-        \li{
-            `s' > throw a [s]` evaluates to `s > a`, i.e throwing restores the stack from the time the continuation was created.
-        }
-    }
+  \title{Quantified and self-referential types}
+\p{
+  Given a type #{T} with a free type variable #{t} (like #{t \times \mathrm{int}}), we can form the type #{\forall t. T}.
+  An element of this type should be something that can "play the role" of #{T} no matter what #{t} is.
+  For example #{\lambda x^A.x: A \to A} gives an element of #{\forall A. A \to A}.
+}
+
+\p{
+  The behaviour of elements of this type is basically:
+}
+
+\p{
+  -   you can "cast" an element of #{\forall t. T} to #{T[A/t]}, i.e you can "specialize" the value.
+  -   To produce an element of #{\forall t. T}, i have to produce an element that typechecks as #{T}, no matter what the value of #{t} is (the type variable #{t} can't appear in the context).
+}
+
+\p{
+  Similarly you can make sense of "existential types" #{\exist t. T}.
+}
+
+\p{
+  Once you have these, you can define _recursive_ types, too.
+  Take something like a list of integers: `Data Intlist = Nil | Cons Int Intlist`.
+  In other words, `Intlist = () + (Int,Intlist)`.
+}
+
+\p{
+  We can type this using universally quantified types as #{\forall t. ((() + \mathrm{Int} \times A) \to A) \to A}.
+  This basically means: you give me an #{a : A} and a map #{m: \mathrm{Int} \times A \to A}, and I give you an #{A}, for any type #{A}.
+  The `Nil` constructor is the map which simply returns the given #{a}.
+  The `Cons n l` constructor, for `n` an integer, returns an intlist which, given #{(a,m)}, feeds it to `l` (returning #{a'}),
+  then computes #{m(n,a')} and returns it.
+}
+
+\p{
+  If you unpack this in your head, you'll see that this is exactly folding. A list is something you can fold over - the #{a} provided is the initial accumulator and the #{m: \mathrm{Int} \times A \to A} is the combination map.
+}
+
+\p{
+  The general formulation of the above is #{\forall a. (T(a) \to a) \to a}. Essentially, we are picking out the _initial algebra_ of #{T}, by saying that this is the universal thing with a map to #{a} for each #{T}-algebra structure on #{a} [^fn:1].
+}
+
+\p{
+  We could also pick out the _terminal coalgebra_, by writing #{\exists (a \to T(a), a)}.
+  This has the dual meaning - given any #{T}-coalgbra structure, and a point in the carrier, we obtain a point of the terminal coalgebra.
+  The terminal coalgebra of #{T(x) = () + x \times \mathrm{Int}} is the type of "colists" - possibly infinite lists (of integers).
+  We see above that to produce a colist, we have to provide an element #{a : A} of some type, as well as a map #{s: A \to () + A \times \mathrm{Int}}. #{s(a) = ()} means the list is empty, #{s(a) = (a',n)} means #{n} is the head and the rest of the list corresponds to the pair #{(s,a')}. This is "iteration", or maybe "cofolding".
+}
 }
 \subtree{
-    \title{Parametricity }
-    \p{
-        You might have heard about "free theorems", from Wadler's paper [Theorems for Free!](http://ecee.colorado.edu/ecen5533/fall11/reading/free.pdf). Parametricity is the technical term for those things. The basic idea is that a term of polymorphic type has certain properties _purely by virtue of its type_. This is the so-called "free theorem" associated to that type.
-    }
-    \p{
-        The basic idea behind parametricity is to associate a relation to every type:
-    }
-    \ul{
-        \li{
-            Elements of "primitive" types like #{\mathrm{Int}} and such are equivalent if they're equal (this is just a relation on the type itself)
-        }
-        \li{
-            Elements of the product type #{A \times B} are equivalent if they have equivalent coordinates (according to the relations associated to #{A} and #{B})
-        }
-        \li{
-            Elements of function types #{A \to B} are equivalent if they map equivalent terms to equivalent terms, i.e #{f \sim f'} if #{a \sim a'} implies #{f(a) \sim f'(a')}.
-        }
-        \li{
-            Let #{A \mapsto T(A)} be a "type operator" - we can interpret it as an operation on _relations_ - in particular, it can act on relations #{A \leftrightarrow A'} which are not defined on a single set. The relation #{\forall. A T(A)} is the relation on the set #{\prod_A T(A)} defined by #{g \sim g'} if #{g_A \sim_T(\alpha) g_A'} for all relations #{\alpha: A \leftrightarrow A'}.
-        }
-    }
-    \p{
-        The statement of parametricity is then that #{x \sim x} for all (well-typed) terms #{x} of closed type.
-    }
-    \p{
-        For example, parametricity for #{id: \forall A. A \to A} means that for any relation #{\sim: A \leftrightarrow B}, we have #{id_A(a) \sim  id_B(b)} if #{a \sim b}. Specializing eg to #{a \sim b} if and only if #{a = a_0} for some fixed element (taking maybe #{B=()}), we see that #{id} must be the identity. The precise version of this is more complicated, because you need to deal with the possibility that there may be free type variables around, and also the fact that a type is not really a set (so you need to work with relations on _terms_ - this is what the book does - or use domain theory - this is what Wadler does).
-    }
-    \p{
-        [^fn:1]: Although the quantified definition is more general, because it works even when #{T} is not a functor in #{a}, but just some type that depends on #{a}
-    }
+  \title{How a call stack works}
+\p{
+  This is about how to evaluate programs. Simple "pure functional" languages can "just" be evaluated by successively applying reduction rules. But this is pretty limited - both in performance terms, but also prevents you from doing a few cool things, like _continuations_.
+}
+
+\p{
+  A _call stack_ is basically a list of functions - in the sense of "expressions with a hole in them" - that are waiting for the result of computation, along with a value that's being evaluated, and a "pointer" which tells us whether the next step is to reduce the active value some more, or to return it, i.e plug it into the next function
+}
+
+\p{
+  So eg the stack `a;b;c > e` means "we're in the process of evaluating `e`. Once that's done, evaluate `c e`, then `b (c e)` and so on". On the other hand `a;b;c < e` means "`e` is a value that's done evaluating, pass it to `c`, then `b`, then `a`.
+}
+
+\p{
+  Then you need to make up some rules for how to handle these things - which order to evaluate expressions and so on.
+}
+
+\p{
+  To augment this language with continuations, you can add expressions like `callcc : (Cont(a) -> a) -> a` and `throw : a -> Cont(a) -> b`, where the meaning of `callcc` is "run this function with a "continuation" pointing the current state - if the continuation is ever "used" by `throw`, just immediately return the value `a` that was supplied".
+  Then the dynamics of this stuff is:
+}
+
+\p{
+  -   `s > callcc f` evaluates to `s > f [s]`, where `[s] : Cont a` is a representation of the current stack, and
+  -   `s' > throw a [s]` evaluates to `s > a`, i.e throwing restores the stack from the time the continuation was created.
+}
+}
+\subtree{
+  \title{Parametricity}
+\p{
+  You might have heard about "free theorems", from Wadler's paper [Theorems for Free!](http://ecee.colorado.edu/ecen5533/fall11/reading/free.pdf).
+  Parametricity is the technical term for those things.
+  The basic idea is that a term of polymorphic type has certain properties _purely by virtue of its type_.
+  This is the so-called "free theorem" associated to that type.
+}
+
+\p{
+  The basic idea behind parametricity is to associate a relation to every type:
+}
+
+\p{
+  -   Elements of "primitive" types like #{\mathrm{Int}} and such are equivalent if they're equal (this is just a relation on the type itself)
+  -   Elements of the product type #{A \times B} are equivalent if they have equivalent coordinates (according to the relations associated to #{A} and #{B})
+  -   Elements of function types #{A \to B} are equivalent if they map equivalent terms to equivalent terms, i.e #{f \sim f'} if #{a \sim a'} implies #{f(a) \sim f'(a')}.
+  -   Let #{A \mapsto T(A)} be a "type operator" - we can interpret it as an operation on _relations_ - in particular, it can act on relations #{A \leftrightarrow A'} which are not defined on a single set. The relation #{\forall. A T(A)} is the relation on the set #{\prod_A T(A)} defined by #{g \sim g'} if #{g_A \sim_T(\alpha) g_A'} for all relations #{\alpha: A \leftrightarrow A'}.
+}
+
+\p{
+  The statement of parametricity is then that #{x \sim x} for all (well-typed) terms #{x} of closed type.
+}
+
+\p{
+  For example, parametricity for #{id: \forall A. A \to A} means that for any relation #{\sim: A \leftrightarrow B}, we have #{id_A(a) \sim  id_B(b)} if #{a \sim b}.
+  Specializing eg to #{a \sim b} if and only if #{a = a_0} for some fixed element (taking maybe #{B=()}), we see that #{id} must be the identity. The precise version of this is more complicated, because you need to deal with the possibility that there may be free type variables around, and also the fact that a type is not really a set (so you need to work with relations on _terms_ - this is what the book does - or use domain theory - this is what Wadler does).
+}
+
+\p{
+  [^fn:1]: Although the quantified definition is more general, because it works even when #{T} is not a functor in #{a}, but just some type that depends on #{a}
+}
 }

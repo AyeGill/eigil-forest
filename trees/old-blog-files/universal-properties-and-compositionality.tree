@@ -1,154 +1,194 @@
+\date{2020-10-14}
 \author{eigil-rischel}
-\date{2020-10-14T15:00:00+01:00}
-
-\import{macros}
 \title{Universal properties and Compositionality}
-    \p{
-        Continuing the train of thought from [this tweet](https://twitter.com/AyeGill/status/1217748819682693121), I compare and contrast two perspectives on the philosophy of category theory: that it's about describing how things can be composed of other things ("compositionality"), and that it's about describing things in terms of their transformations into other things ("universal properties").
-    }
-\subtree{
-    \title{Some uses of category theory }
-    \p{
-        Category theory is an amazingly successful tool for pure mathematics. Since its introduction by Eilenberg and MacLane in [Generalized Theory of Natural Equivalences](https://web.math.rochester.edu/people/faculty/doug/otherpapers/SESM.pdf), it has completely transformed algebraic topology and algebraic geometry.
-    }
-    \p{
-        Let's study some examples of this:
-    }
-\subtree{
-    \title{The Brouwer Fixpoint Theorem }
-    \p{
-        This well-known theorem says that any continuous map #{f: D^2 \to D^2}[^fn:1] must have a fixpoint, i.e a point so that #{f(x) = x}. The usual way to prove this is to suppose for contradiction that we have a map with no fixpoints. Then by drawing a line from #{f(x)} to #{x} and seeing where it intersects the boundary of #{D^2}, we find a continuous map #{g: D^2 \to S^1} with the property that #{g(x) = x} when #{x \in S^1 \subseteq D^2}. Now we have to prove that there is no such continuous map.
-    }
-    \p{
-        Luckily, there happens to exist a _functor_, #{\pi_1: \mathrm{Top} \to \mathrm{Grp}}, with the properties that #{\pi_1(S^1) = \mathbb{Z},\ \pi_1(D^2) = 0}. If there really was a #{g} as above, so that the composition #{S^1 \hookrightarrow D^2 \overset{g}{\to} S^1} was the identity, then by applying #{\pi_1} to it we would find a map so that #{\mathbb{Z} \to 0 \to \mathbb{Z}} was the identity - which is clearly impossible.
-    }
-    \p{
-        If we wanted to summarize this argument, we could say
-    }
-    \ul{
-        \li{
-            #{\mathbb{Z}} is not a retract of #{0} (algebra)
-        }
-        \li{
-            _Functors preserve retracts_ (category theory)
-        }
-        \li{
-            Therefore #{S^1} is not a retract of #{D^2}. (topology)
-        }
-    }
+
+\p{
+Continuing the train of thought from [this tweet](https://twitter.com/AyeGill/status/1217748819682693121), I compare and contrast two perspectives on the philosophy of category theory: that it's about describing how things can be composed of other things ("compositionality"), and that it's about describing things in terms of their transformations into other things ("universal properties").
 }
 \subtree{
-    \title{Idempotent monads, aka localizations }
-    \p{
-        It's very common in algebraic topology that you have some class of morphisms #{W} in your category #{\mathcal{C}} that you want to treat as isomorphisms. First of all, category theory tells us that there is essentially a unique way to make sense of this: The desired category #{\mathcal{C}[W^{-1}]} should have the following universal property: given a functor #{\mathcal{C} \to \mathcal{D}} which sends every #{f \in W} to an isomorphism, there should be a unique extension over #{\mathcal{C}[W^-1]}, as in this diagram:
-    }
-    \p{
-        {{< figure src="/ox-hugo/2020-10-14-local.png" >}}
-    }
-    \p{
-        This formalizes the intuition that #{\mathcal{C}[W^{-1}]} is #{\mathcal{C}}, with the maps #{W} turned isomorphisms, and nothing else changed. Category theory (the Yoneda lemma), applied to the category of categories, tells us that this determines #{\mathcal{C}[W{-1}]} up to equivalence of categories. Under quite weak assumptions, this category can be constructed.
-    }
-    \p{
-        But understanding the category #{\mathcal{C}[W^{-1}]} is usually very difficult. However, in good cases, something miraculous happens, and #{\mathcal{C}[W^{-1}]} appears as a subcategory of #{\mathcal{C}} itself!
-    }
-    \p{
-        As a very simple example, we can consider the category #{\mathrm{Ab}} of abelian groups. Call a homomorphism a "rational equivalence" if
-    }
-    \ul{
-        \li{
-            If #{f(x) = 0}, then #{nx = 0} for some #{n \in \mathbb{Z}}
-        }
-        \li{
-            For each #{y} in the image, there exists #{x,n} so that #{f(x) = ny}.
-        }
-    }
-    \p{
-        Call the category of rational equivalences #{W}. Then #{\mathrm{Ab}[W^{-1}]} is equivalent to the subcategory consisting of #{\mathbb{Q}}-modules - those abelian groups #{A} where each multiplication by #{n} map #{(n \cdot -): A \to A} is a bijection.
-    }
-    \p{
-        The way to construct this in general is to consider the subcategory of _#{W}-local objects_ - those objects #{A} where, for every #{f: X \to Y} in #{W}, the map #{\mathcal{C}(A,X) \to \mathcal{C}(A,Y)} is a bijection. If every object admits a map #{\lambda: A \to \tilde{A}} with #{\lambda \in W} and #{\tilde{A}} #{W}-local, then the construction #{A \mapsto \tilde{A}} assembles into a functor, which exhibits the subcategory of #{W}-local objects as #{\mathcal{C}[W^{-1}]}.
-    }
-    \p{
-        In this case, part of the utility of category theory is it lets us ask this question in the first place. But beyond that, it gives us access to the idea of, to put it technically, asking for objects that represent functors with certain properties (for example, those that invert certain morphisms) - in general terms, to describe objects in terms of their relations to other objects.
-    }
-    \p{
-        (The really powerful uses of this technique involve doing something more complicated to model categories, or, equivalently, applying it to #{\infty}-categories. But I won't get into that here - see e.g. [my undergraduate thesis](https://erischel.com/documents/bscproject.pdf) or section 5.2.7 of [Higher Topos Theory](https://arxiv.org/abs/math/0608040).)
-    }
+  \title{Some uses of category theory}
+\p{
+  Category theory is an amazingly successful tool for pure mathematics.
+  Since its introduction by Eilenberg and MacLane in [Generalized Theory of Natural Equivalences](https://web.math.rochester.edu/people/faculty/doug/otherpapers/SESM.pdf), it has completely transformed algebraic topology and algebraic geometry.
+}
+
+\p{
+  Let's study some examples of this:
+}
+  \subtree{
+    \title{The Brouwer Fixpoint Theorem}
+\p{
+    This well-known theorem says that any continuous map #{f: D^2 \to D^2}[^fn:1] must have a fixpoint, i.e a point so that #{f(x) = x}.
+    The usual way to prove this is to suppose for contradiction that we have a map with no fixpoints.
+    Then by drawing a line from #{f(x)} to #{x} and seeing where it intersects the boundary of #{D^2}, we find a continuous map #{g: D^2 \to S^1} with the property that #{g(x) = x} when #{x \in S^1 \subseteq D^2}.
+    Now we have to prove that there is no such continuous map.
+}
+
+\p{
+    Luckily, there happens to exist a _functor_, #{\pi_1: \mathrm{Top} \to \mathrm{Grp}}, with the properties that
+    #{\pi_1(S^1) = \mathbb{Z},\ \pi_1(D^2) = 0}.
+    If there really was a #{g} as above, so that the composition #{S^1 \hookrightarrow D^2 \overset{g}{\to} S^1} was the identity, then by applying #{\pi_1} to it we would find a map so that #{\mathbb{Z} \to 0 \to \mathbb{Z}} was the identity - which is clearly impossible.
+}
+
+\p{
+    If we wanted to summarize this argument, we could say
+}
+
+\p{
+    -   #{\mathbb{Z}} is not a retract of #{0} (algebra)
+    -   _Functors preserve retracts_ (category theory)
+    -   Therefore #{S^1} is not a retract of #{D^2}. (topology)
+  }
+}
+  \subtree{
+    \title{Idempotent monads, aka localizations}
+\p{
+    It's very common in algebraic topology that you have some class of morphisms #{W} in your category #{\mathcal{C}} that you want to treat as isomorphisms.
+    First of all, category theory tells us that there is essentially a unique way to make sense of this:
+    The desired category #{\mathcal{C}[W^{-1}]} should have the following universal property: given a functor #{\mathcal{C} \to \mathcal{D}} which sends every #{f \in W} to an isomorphism, there should be a unique extension over #{\mathcal{C}[W^-1]}, as in this diagram:
+}
+
+    \<html:img>[src]{\route-asset{assets/images/ox-hugo/2020-10-14-local.png}}{}
+
+\p{
+    This formalizes the intuition that #{\mathcal{C}[W^{-1}]} is #{\mathcal{C}}, with the maps #{W} turned isomorphisms, and nothing else changed.
+    Category theory (the Yoneda lemma), applied to the category of categories, tells us that this determines #{\mathcal{C}[W{-1}]} up to equivalence of categories. Under quite weak assumptions, this category can be constructed.
+}
+
+\p{
+    But understanding the category #{\mathcal{C}[W^{-1}]} is usually very difficult.
+    However, in good cases, something miraculous happens, and #{\mathcal{C}[W^{-1}]} appears as a subcategory of #{\mathcal{C}} itself!
+}
+
+\p{
+    As a very simple example, we can consider the category #{\mathrm{Ab}} of abelian groups.
+    Call a homomorphism a "rational equivalence" if
+}
+
+\p{
+    -   If #{f(x) = 0}, then #{nx = 0} for some #{n \in \mathbb{Z}}
+    -   For each #{y} in the image, there exists #{x,n} so that #{f(x) = ny}.
+}
+
+\p{
+    Call the category of rational equivalences #{W}. Then #{\mathrm{Ab}[W^{-1}]} is equivalent to the subcategory consisting of #{\mathbb{Q}}-modules - those abelian groups #{A} where each multiplication by #{n} map #{(n \cdot -): A \to A} is a bijection.
+}
+
+\p{
+    The way to construct this in general is to consider the subcategory of _#{W}-local objects_ - those objects #{A} where, for every #{f: X \to Y} in #{W}, the map #{\mathcal{C}(A,X) \to \mathcal{C}(A,Y)} is a bijection.
+    If every object admits a map #{\lambda: A \to \tilde{A}} with #{\lambda \in W} and #{\tilde{A}} #{W}-local, then the construction #{A \mapsto \tilde{A}} assembles into a functor, which exhibits the subcategory of #{W}-local objects as #{\mathcal{C}[W^{-1}]}.
+}
+
+\p{
+    In this case, part of the utility of category theory is it lets us ask this question in the first place.
+    But beyond that, it gives us access to the idea of, to put it technically, asking for objects that represent functors with certain properties (for example, those that invert certain morphisms) - in general terms, to describe objects in terms of their relations to other objects.
+}
+
+\p{
+    (The really powerful uses of this technique involve doing something more complicated to model categories, or, equivalently, applying it to #{\infty}-categories. But I won't get into that here - see e.g. [my undergraduate thesis](https://erischel.com/documents/bscproject.pdf) or section 5.2.7 of [Higher Topos Theory](https://arxiv.org/abs/math/0608040).)
+  }
+}
+  \subtree{
+    \title{ZX Calculus}
+\p{
+    ZX calculus is a graphical language for quantum computing, introduced by Coecke and Duncan in a [2008 paper](https://arxiv.org/abs/0906.4725).
+    It is essentially a flavor of string diagrams with special operators and rewriting rules to describe the operations in quantum computing. A diagram in the ZX calculus can be interpreted as a linear map between Hilbert spaces.
+    I won't delve too much into the ZX calculus, since I'm not familiar with it beyond a surface level, but I will note that it's probably one of the more successful applications of category theory so far - I count 88 publications listed on <https://zxcalculus.com>.
+  }
+}
+  \subtree{
+    \title{Open Reaction Networks}
+\p{
+    [Open Reaction Networks](https://arxiv.org/abs/1704.02051), described there by John Baez and Blake Pollard, are a compositional version of reaction networks
+    Reaction networks describe various notions of "transition system", where you have a number of different "things" or "species" and various ways those things can be transformed into each other, "transitions".
+    An open reaction networks is augmented with the designation of certain places as inputs and outputs.
+    The composition operation identifies the outputs of one with the inputs f another, gluing them together in a single reaction network.
+    Baez and Pollard construct a compositional semantics for reaction networks, which takes a reaction network to an "open dynamical system" describing the dynamics of the outputs, in terms of a function specifying the inputs over time.
+  }
+}
 }
 \subtree{
-    \title{ZX Calculus }
-    \p{
-        ZX calculus is a graphical language for quantum computing, introduced by Coecke and Duncan in a [2008 paper](https://arxiv.org/abs/0906.4725). It is essentially a flavor of string diagrams with special operators and rewriting rules to describe the operations in quantum computing. A diagram in the ZX calculus can be interpreted as a linear map between Hilbert spaces. I won't delve too much into the ZX calculus, since I'm not familiar with it beyond a surface level, but I will note that it's probably one of the more successful applications of category theory so far - I count 88 publications listed on <https://zxcalculus.com>.
-    }
+  \title{Compositionality and universal properties}
+\p{
+  The phrase "universal property"[^fn:2] appears neither in the original ZX calculus paper, nor in [Graphical Structures for Design and Verification of Quantum Error Correction](https://arxiv.org/pdf/1611.08012.pdf), which is one of the more successful applications (both of the ZX calculus and of category theory in general, outside pure math). Clearly they are not that interested in characterizing objects by their mapping properties - indeed, since the objects in this case are just finite-dimensional Hilbert spaces, hence direct sums of #{\mathbb{C}}, characterizing such a thing is not that interesting.
+  The point is that in the classical domains of category theory, the primary thing is the objects, and how they map to one another. When we think about maps, we are usually just looking for an abstract machine that will guarantee the existence of a map with such-and-such properties, not in looking "inside" the map, so to speak, to see what it does.
+  This in contrast with the ZX calculus, where the chief point is that we want a method for writing down maps between Hilbert spaces and understanding how they work.
+  So also open Petri nets - the interesting structure here is (obviously) the _Petri net_, not the finite sets which serve as objects.
+}
+
+\p{
+  In this domain, the chief interest is in the _functors_ - we want to know, for example, that a certain "black-boxing" construction from the category of Petri nets to the category of (say) linear relations preserves the composition.
+}
 }
 \subtree{
-    \title{Open Reaction Networks }
-    \p{
-        [Open Reaction Networks](https://arxiv.org/abs/1704.02051), described there by John Baez and Blake Pollard, are a compositional version of reaction networks Reaction networks describe various notions of "transition system", where you have a number of different "things" or "species" and various ways those things can be transformed into each other, "transitions". An open reaction networks is augmented with the designation of certain places as inputs and outputs. The composition operation identifies the outputs of one with the inputs f another, gluing them together in a single reaction network. Baez and Pollard construct a compositional semantics for reaction networks, which takes a reaction network to an "open dynamical system" describing the dynamics of the outputs, in terms of a function specifying the inputs over time.
-    }
+  \title{Synthesis: Double categories and operads}
+\p{
+  As remarked by Jules Hedges [here](https://twitter.com/\%5Fjulesh\%5F/status/1277607181156790273), the "compositionality" above is really just about operation-preserving maps between algebras of some operad - the fact that the operad (or a suboperad) is the operad for categories[^fn:3] is not really important.
+  So we can consider the operad where
+}
+
+\p{
+  -   The types (or colors) are pairs #{(I,O)} of finite sets
+  -   The operations are generated by a composition operation #{(A,B),(B,C) \to (A,C)}, an identity operation #{() \to (A,A)}, and optionally a "tensor" operation #{(A,B),(X,Y) \to (A+X,B+Y)} and some more operations for the unitors and associators in the monoidal structure.
+  -   Quotiented by the axioms of a monoidal category.
+}
+
+\p{
+  Then the _set_ of open petri nets is an algebra for this operad, and we're essentially looking for an algebra homomorphism into a different algebra.
+}
+
+\p{
+  This perspective has a number of advantages:
+}
+
+\p{
+  -   When mapping into a situation where a slightly different structure exist, we can describe this by adding an operad homomorphism to the mix.
+  -   We can take algebras in _categories_ to get categories where the _objects_ are the systems we're interested in.
+}
+
+\p{
+  This can give us some interesting universal properties - for example, the initial Petri net (with given input-output sets #{I,O}) would seem to be the net with exactly #{I+O} as places, and no transitions.
+}
+
+\p{
+  We can go even further and consider morphisms between systems with different interfaces.
+  Presently the best framework for this seems to be double categories, which means we're going back to the operad for categories[^fn:4], but that's fine.
+  For example, in [Morphisms of Open Games](https://arxiv.org/abs/1711.07059), Jules Hedges constructs a double category of open games, and describes limits and colimits in the "vertical category of morphisms" - i.e. in the category where objects are open games and maps are morphisms _between_ them.
+}
+
+\p{
+  In fact, various technologies for describing "open systems", like the [Structured Cospans](https://arxiv.org/abs/1911.04630) of Baez and Courser, already output a double category. And in fact the composition in these systems already involves some sort of universal property, being described as a pushout.
 }
 }
 \subtree{
-    \title{Compositionality and universal properties }
-    \p{
-        The phrase "universal property"[^fn:2] appears neither in the original ZX calculus paper, nor in [Graphical Structures for Design and Verification of Quantum Error Correction](https://arxiv.org/pdf/1611.08012.pdf), which is one of the more successful applications (both of the ZX calculus and of category theory in general, outside pure math). Clearly they are not that interested in characterizing objects by their mapping properties - indeed, since the objects in this case are just finite-dimensional Hilbert spaces, hence direct sums of #{\mathbb{C}}, characterizing such a thing is not that interesting. The point is that in the classical domains of category theory, the primary thing is the objects, and how they map to one another. When we think about maps, we are usually just looking for an abstract machine that will guarantee the existence of a map with such-and-such properties, not in looking "inside" the map, so to speak, to see what it does. This in contrast with the ZX calculus, where the chief point is that we want a method for writing down maps between Hilbert spaces and understanding how they work. So also open Petri nets - the interesting structure here is (obviously) the _Petri net_, not the finite sets which serve as objects.
-    }
-    \p{
-        In this domain, the chief interest is in the _functors_ - we want to know, for example, that a certain "black-boxing" construction from the category of Petri nets to the category of (say) linear relations preserves the composition.
-    }
+  \title{Synthesis: Syntactical categories, Lambda Calculus}
+\p{
+  Above we have thought about many different situations where we're interested in studying the "behaviour", in some sense, of complex systems, and we try to understand this behaviour as a functor in a category of such systems.
+  Perhaps the most famous example of this is the notion of _functorial semantics_ from logic (indeed the term "functorial semantics" seems to describe the black-boxing functor quite well).
+  The general pattern is that we have a _syntactical category_ where the morphisms are terms in some syntax, subject to some equivalence relation (often generated by some set of syntactical rewriting rules), and this is mapped into some sort of "semantics" category.
+  Here it very often happens that the necessary structure to interpret the syntax corresponds to some more or less natural categorical structure, and the syntactical category is the initial such category (so that there is a well-defined interpretation of the syntax in each suitable category).
 }
-\subtree{
-    \title{Synthesis: Double categories and operads }
-    \p{
-        As remarked by Jules Hedges [here](https://twitter.com/_julesh_/status/1277607181156790273), the "compositionality" above is really just about operation-preserving maps between algebras of some operad - the fact that the operad (or a suboperad) is the operad for categories[^fn:3] is not really important. So we can consider the operad where
-    }
-    \ul{
-        \li{
-            The types (or colors) are pairs #{(I,O)} of finite sets
-        }
-        \li{
-            The operations are generated by a composition operation #{(A,B),(B,C) \to (A,C)}, an identity operation #{() \to (A,A)}, and optionally a "tensor" operation #{(A,B),(X,Y) \to (A+X,B+Y)} and some more operations for the unitors and associators in the monoidal structure.
-        }
-        \li{
-            Quotiented by the axioms of a monoidal category.
-        }
-    }
-    \p{
-        Then the _set_ of open petri nets is an algebra for this operad, and we're essentially looking for an algebra homomorphism into a different algebra.
-    }
-    \p{
-        This perspective has a number of advantages:
-    }
-    \ul{
-        \li{
-            When mapping into a situation where a slightly different structure exist, we can describe this by adding an operad homomorphism to the mix.
-        }
-        \li{
-            We can take algebras in _categories_ to get categories where the _objects_ are the systems we're interested in.
-        }
-    }
-    \p{
-        This can give us some interesting universal properties - for example, the initial Petri net (with given input-output sets #{I,O}) would seem to be the net with exactly #{I+O} as places, and no transitions.
-    }
-    \p{
-        We can go even further and consider morphisms between systems with different interfaces. Presently the best framework for this seems to be double categories, which means we're going back to the operad for categories[^fn:4], but that's fine. For example, in [Morphisms of Open Games](https://arxiv.org/abs/1711.07059), Jules Hedges constructs a double category of open games, and describes limits and colimits in the "vertical category of morphisms" - i.e. in the category where objects are open games and maps are morphisms _between_ them.
-    }
-    \p{
-        In fact, various technologies for describing "open systems", like the [Structured Cospans](https://arxiv.org/abs/1911.04630) of Baez and Courser, already output a double category. And in fact the composition in these systems already involves some sort of universal property, being described as a pushout.
-    }
+
+\p{
+  An example of this is simply typed lambda calculus, or STLC.
+  I guess it's well-known that the simply typed lambda-calculus can be interpreted in any cartesian closed category.
+  Each type #{A} is mapped to an object #{[[A]]}, with #{[[A \to B]] = [[B]]^{[[A]]}}.
+  Then a judgment #{\Gamma \vdash e : A}, where #{\Gamma = x_1 : X_1, x_2 : X_1, \dots x_n : X_n},
+  is mapped to a morphism #{\prod_i [[X_i]] \to [[A]]}, by inducting on the proof of the judgment using the projections
+  and the hom-product adjunction.
 }
-\subtree{
-    \title{Synthesis: Syntactical categories, Lambda Calculus }
-    \p{
-        Above we have thought about many different situations where we're interested in studying the "behaviour", in some sense, of complex systems, and we try to understand this behaviour as a functor in a category of such systems. Perhaps the most famous example of this is the notion of _functorial semantics_ from logic (indeed the term "functorial semantics" seems to describe the black-boxing functor quite well). The general pattern is that we have a _syntactical category_ where the morphisms are terms in some syntax, subject to some equivalence relation (often generated by some set of syntactical rewriting rules), and this is mapped into some sort of "semantics" category. Here it very often happens that the necessary structure to interpret the syntax corresponds to some more or less natural categorical structure, and the syntactical category is the initial such category (so that there is a well-defined interpretation of the syntax in each suitable category).
-    }
-    \p{
-        An example of this is simply typed lambda calculus, or STLC. I guess it's well-known that the simply typed lambda-calculus can be interpreted in any cartesian closed category. Each type #{A} is mapped to an object #{[[A]]}, with #{[[A \to B]] = [[B]]^{[[A]]}}. Then a judgment #{\Gamma \vdash e : A}, where #{\Gamma = x_1 : X_1, x_2 : X_1, \dots x_n : X_n}, is mapped to a morphism #{\prod_i [[X_i]] \to [[A]]}, by inducting on the proof of the judgment using the projections and the hom-product adjunction.
-    }
-    \p{
-        One can show that the _initial_ Cartesian closed category with a certain set of objects and points - we might say the CCC _generated_ by that data - can be described as having objects the contexts, and morphisms the judgments, in STLC with those constants. But this is somewhat interesting - the syntax of lambda calculus is "about writing down functions", just as the ZX calculus. Yet there are also universal properties in the mix - the fact that the functor #{A \times -} has a right adjoint for all #{A}. Across many areas of categorical logic, similar things happen.
-    }
-    \p{
-        [^fn:1]: It actually holds for #{D^n} for all #{n}, but let's keep things simple [^fn:2]: A lot of things are described as _universal_, but this refers to the important property that any quantum computation can be described in ZX-calculus [^fn:3]: There isn't really an operad for categories - what I describe here is for "categories with a specific set of objects" - but that's not so important [^fn:4]: There are ways to generalize this - David Jaz Myers has studied monoidal double functors into a double category of categories, which seems to be a version of this (in some sense, this uses the fact that any operad can be upgraded to a symmetric monoidal category). See eg [this talk](https://www.youtube.com/watch?v=50s62D5Ah-M&t=2032s&ab_channel=Topos).
-    }
+
+\p{
+  One can show that the _initial_ Cartesian closed category with a certain set of objects and points - we might say the CCC _generated_ by that data - can be described as having objects the contexts, and morphisms the judgments, in STLC with those constants.
+  But this is somewhat interesting - the syntax of lambda calculus is "about writing down functions", just as the ZX calculus.
+  Yet there are also universal properties in the mix - the fact that the functor #{A \times -} has a right adjoint for all #{A}.
+  Across many areas of categorical logic, similar things happen.
+}
+
+\p{
+  [^fn:1]: It actually holds for #{D^n} for all #{n}, but let's keep things simple
+  [^fn:2]: A lot of things are described as _universal_, but this refers to the important property that any quantum computation can be described in ZX-calculus
+  [^fn:3]: There isn't really an operad for categories - what I describe here is for "categories with a specific set of objects" - but that's not so important
+  [^fn:4]: There are ways to generalize this - David Jaz Myers has studied monoidal double functors into a double category of categories, which seems to be a version of this (in some sense, this uses the fact that any operad can be upgraded to a symmetric monoidal category). See eg [this talk](https://www.youtube.com/watch?v=50s62D5Ah-M&t=2032s&ab\%5Fchannel=Topos).
+}
 }

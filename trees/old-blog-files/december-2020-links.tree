@@ -1,46 +1,59 @@
+\date{2020-12-31}
 \author{eigil-rischel}
-\date{2020-12-31T10:58:26+00:00}
-\import{macros}
 \title{December 2020 Links}
-    \p{
-        A list of some of the things I found interesting in December.
-    }
-    \p{
-        [Low-Tech Magazine](https://www.lowtechmagazine.com/): "Low-tech Magazine questions the blind belief in technological progress, and talks about the potential of past and often forgotten knowledge and technologies when it comes to designing a sustainable society. Interesting possibilities arise when you combine old technology with new knowledge and new materials, or when you apply old concepts and traditional knowledge to modern technology". Sample articles: [The Curse of the Modern Office](https://www.lowtechmagazine.com/2016/11/the-curse-of-the-modern-office.html), [Well-tended fires outperform modern cooking stoves](https://www.lowtechmagazine.com/2014/06/thermal-efficiency-cooking-stoves.html), [Why we need a speed limit for the internet](https://www.lowtechmagazine.com/2015/10/can-the-internet-run-on-renewable-energy.html).
-    }
-    \p{
-        Evangelia Aleiferi: [Cartesian Double Categories with an Emphasis on Characterizing Spans](https://arxiv.org/abs/1809.06940).
-    }
-    \p{
-        Owen Lynch: [Haskell's Children](https://owenlynch.org/posts/2020-09-16-haskells-children/) (Owen's whole blog is worth reading).
-    }
-    \p{
-        Tobias Fritz has put up some [slides](http://tobiasfritz.science/2020/statistical_experiments.pdf) discussing our [new preprint](https://arxiv.org/abs/2010.07416) about comparison of experiments (with Paolo Perrone and Tomás Gonda).
-    }
-    \p{
-        I've been rereading [Bayesian Updates Compose Optically](https://arxiv.org/abs/2006.01631) by Toby St Clere Smithe.
-    }
-    \p{
-        Michael Nielsen: [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/).
-    }
-    \p{
-        Applied Divinity Studies: [Isolated Demands for Rigor in New Optimism](https://applieddivinitystudies.com/stagnation/). "More likely, solar power has been making great strides on a pretty consistent basis for decades, and the only recent break is in how high-status it is to say that out loud."
-    }
-    \p{
-        Jules Hedges: [Compositional Game Theory Reading List](https://julesh.com/2017/11/09/compositional-game-theory-reading-list/)
-    }
-    \p{
-        Jason Collins: [Principles for the application of Human Intelligence](https://behavioralscientist.org/principles-for-the-application-of-human-intelligence/)
-    }
-    \p{
-        George on LessWrong: [Machine Learning May Be Fundamentally Unexplainable](https://www.lesswrong.com/posts/vxLfja7hmcFifAtYd/machine-learning-could-be-fundamentally-unexplainable). "When we say that we “understand” physics what we really mean is that there are a few dozen of thousands of blokes that spent half their lives turning their brains into hyper-optimized physics-thinking machines and they assure us that they “understand” it."
-    }
-    \p{
-        Amanda Askell: [In AI Ethics, "Bad" Isn't Good Enough](https://askell.io/posts/2020/12/bad-isnt-good-enough).
-    }
-    \p{
-        A map of properties of logical theories: <https://forkinganddividing.com/>
-    }
-    \p{
-        r/math: [Most overpowered theorems in math?](https://www.reddit.com/r/math/comments/kkakmi/most_overpowered_theorems_in_math/)
-    }
+
+\p{
+A list of some of the things I found interesting in December.
+}
+
+\p{
+[Low-Tech Magazine](https://www.lowtechmagazine.com/): "Low-tech Magazine questions the blind belief in technological progress, and talks about the potential of past and often forgotten knowledge and technologies when it comes to designing a sustainable society. Interesting possibilities arise when you combine old technology with new knowledge and new materials, or when you apply old concepts and traditional knowledge to modern technology". Sample articles: [The Curse of the Modern Office](https://www.lowtechmagazine.com/2016/11/the-curse-of-the-modern-office.html), [Well-tended fires outperform modern cooking stoves](https://www.lowtechmagazine.com/2014/06/thermal-efficiency-cooking-stoves.html), [Why we need a speed limit for the internet](https://www.lowtechmagazine.com/2015/10/can-the-internet-run-on-renewable-energy.html).
+}
+
+\p{
+Evangelia Aleiferi: [Cartesian Double Categories with an Emphasis on Characterizing Spans](https://arxiv.org/abs/1809.06940).
+}
+
+\p{
+Owen Lynch: [Haskell's Children](https://owenlynch.org/posts/2020-09-16-haskells-children/) (Owen's whole blog is worth reading).
+}
+
+\p{
+Tobias Fritz has put up some [slides](http://tobiasfritz.science/2020/statistical\%5Fexperiments.pdf) discussing our [new preprint](https://arxiv.org/abs/2010.07416) about comparison of experiments (with Paolo Perrone and Tomás Gonda).
+}
+
+\p{
+I've been rereading [Bayesian Updates Compose Optically](https://arxiv.org/abs/2006.01631) by Toby St Clere Smithe.
+}
+
+\p{
+Michael Nielsen: [Principles of Effective Research](https://michaelnielsen.org/blog/principles-of-effective-research/).
+}
+
+\p{
+Applied Divinity Studies: [Isolated Demands for Rigor in New Optimism](https://applieddivinitystudies.com/stagnation/). "More likely, solar power has been making great strides on a pretty consistent basis for decades, and the only recent break is in how high-status it is to say that out loud."
+}
+
+\p{
+Jules Hedges: [Compositional Game Theory Reading List](https://julesh.com/2017/11/09/compositional-game-theory-reading-list/)
+}
+
+\p{
+Jason Collins: [Principles for the application of Human Intelligence](https://behavioralscientist.org/principles-for-the-application-of-human-intelligence/)
+}
+
+\p{
+George on LessWrong: [Machine Learning May Be Fundamentally Unexplainable](https://www.lesswrong.com/posts/vxLfja7hmcFifAtYd/machine-learning-could-be-fundamentally-unexplainable). "When we say that we “understand” physics what we really mean is that there are a few dozen of thousands of blokes that spent half their lives turning their brains into hyper-optimized physics-thinking machines and they assure us that they “understand” it."
+}
+
+\p{
+Amanda Askell: [In AI Ethics, "Bad" Isn't Good Enough](https://askell.io/posts/2020/12/bad-isnt-good-enough).
+}
+
+\p{
+A map of properties of logical theories: <https://forkinganddividing.com/>
+}
+
+\p{
+r/math: [Most overpowered theorems in math?](https://www.reddit.com/r/math/comments/kkakmi/most\%5Foverpowered\%5Ftheorems\%5Fin\%5Fmath/)
+}

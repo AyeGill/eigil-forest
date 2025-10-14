@@ -1,28 +1,81 @@
-\date{2020-05-02T00:00:00Z}
+\date{2020-05-02}
 \author{eigil-rischel}
-\import{macros}
 \title{Complexity theory, probability}
+
 \subtree{
-    \title{Computationally bounded probability theory }
-    \p{
-        Probability theory is about how to manage incomplete information. One way to interpret a statement like "the probability of event #{X} is #{p}" is in terms of betting odds - you think the probability of #{X} is #{p} if you value a lottery ticket that pays out $1 if #{X} happens at #{p} dollars. From this interpretation, all the laws of probability theory (except arguably those involving infinite conjunctions of events) follow, if we add the requirement that your valuation is "inexploitable" - in other words, if we require that no smart bookie can get you to make a series of bets that always loses money.
-    }
-    \p{
-        The big issue with probability theory as a model of how to reason under uncertain information is that it doesn't account for agents with _limited processing power_ (i.e all of them). A way to think about this problem is that, realistically, the best you can possible hope for is to not be outsmarted by bookies without too much more computing power than you. For example, what is the probability that among the first #{10^{10^10}} digits of #{\pi}, there are more even than odd ones? If a mortal human is forced to assign this event a probability, we must choose more or less blindly - a bookie with an arbitrarily powerful computer could then win lots of money off us by calculating a lot of inaccessible digits of #{\pi} and betting us for their parity.
-    }
-    \p{
-        This approach to "computationally bounded probability theory" is explored in the paper [Logical Induction](https://arxiv.org/abs/1609.03543). Based on the idea about "computationally limited bookies", they build a notion of "logical inductor" - a process which assigns gradually updating probabilities to logical statements, and which is "optimal" in the sense that it can't be exploited.
-    }
+  \title{Computationally bounded probability theory}
+\p{
+  Probability theory is about how to manage incomplete information.
+  One way to interpret a statement like "the probability of event #{X} is #{p}" is
+  in terms of betting odds - you think the probability of #{X} is #{p} if you value
+  a lottery ticket that pays out $1 if #{X} happens at #{p} dollars.
+  From this interpretation, all the laws of probability theory (except arguably
+  those involving infinite conjunctions of events) follow, if we add the
+  requirement that your valuation is "inexploitable" - in other words, if we
+  require that no smart bookie can get you to make a series of bets that always
+  loses money.
+}
+
+\p{
+  The big issue with probability theory as a model of how to reason under
+  uncertain information is that it doesn't account for agents with
+  _limited processing power_ (i.e all of them).
+  A way to think about this problem is that, realistically, the best you can
+  possible hope for is to not be outsmarted by bookies without too much more
+  computing power than you.
+  For example, what is the probability that among the first #{10^{10^10}} digits of
+  #{\pi}, there are more even than odd ones?
+  If a mortal human is forced to assign this event a probability, we must choose
+  more or less blindly - a bookie with an arbitrarily powerful computer could then
+  win lots of money off us by calculating a lot of inaccessible digits of #{\pi}
+  and betting us for their parity.
+}
+
+\p{
+  This approach to "computationally bounded probability theory" is explored in the
+  paper [Logical Induction](https://arxiv.org/abs/1609.03543). Based on the idea about "computationally limited
+  bookies", they build a notion of "logical inductor" - a process which assigns
+  gradually updating probabilities to logical statements, and which is "optimal"
+  in the sense that it can't be exploited.
+}
 }
 \subtree{
-    \title{Computationally bounded logic }
-    \p{
-        In some sense, the problem solved by logical induction is that ordinary logic is _too expressive_. It can express statements which are hard to verify in a small amount of space. Interestingly, there are versions of logic that get around this limitation in various ways. [Light Affine Set Theory](https://link.springer.com/article/10.1023/B:STUD.0000034183.33333.6f) is a version of set theory with the following interesting property: the provably total functions are precisely those with a polynomial-time algorithm. This means that the function which determines the most common parity among the first #{10^{10^n}} digits of #{\pi} is _not provably total_ (assuming of course that there is no efficient algorithm for this). Of course, this sort of logic is by necessity much more restricted than normal logic. We can think about this as a sort of ultrafinitism - numbers like #{10^{10^n}} are "too big to exist".
-    }
+  \title{Computationally bounded logic}
+\p{
+  In some sense, the problem solved by logical induction is that ordinary logic is
+  _too expressive_. It can express statements which are hard to verify in a small
+  amount of space.
+  Interestingly, there are versions of logic that get around this limitation in
+  various ways.
+  [Light Affine Set Theory](https://link.springer.com/article/10.1023/B:STUD.0000034183.33333.6f) is a version of set theory with the following
+  interesting property: the provably total functions are precisely those with a
+  polynomial-time algorithm.
+  This means that the function which determines the most common parity among the
+  first #{10^{10^n}} digits of #{\pi} is _not provably total_ (assuming of course
+  that there is no efficient algorithm for this).
+  Of course, this sort of logic is by necessity much more restricted than normal
+  logic.
+  We can think about this as a sort of ultrafinitism - numbers like #{10^{10^n}}
+  are "too big to exist".
+}
 }
 \subtree{
-    \title{Synthesis? }
-    \p{
-        What is the unifying thread here? I'm not sure. I want to say something like "you can't prove in LAST that a logical inductor is inconsistent". This is not quite meaningful - a logical inductor is a _sequence_ of probability assignments (as they have more time to calculate, they update their probabilities), and each step along the sequence will generally contain plenty of specific verifiable mistakes. But there's an idea that I'm trying to grasp at, that the inconsistency of a logical inductor "takes superpolynomial resources to detect", and hence it "is" a probability measure from the point of view of a polynomial logic. Or perhaps we should say that it "isn't not a probability measure", in the sense of constructive logic. That is, we can't verify that it's a probability measure, but we can't construct a counterexample either.
-    }
+  \title{Synthesis?}
+\p{
+  What is the unifying thread here? I'm not sure.
+  I want to say something like "you can't prove in LAST that a logical inductor is
+  inconsistent".
+  This is not quite meaningful - a logical inductor is a _sequence_ of probability
+  assignments (as they have more time to calculate, they update their
+  probabilities),
+  and each step along the sequence will generally contain plenty of specific
+  verifiable mistakes.
+  But there's an idea that I'm trying to grasp at, that the inconsistency of a
+  logical inductor "takes superpolynomial resources to detect", and hence it "is"
+  a probability measure from the point of view of a polynomial logic.
+  Or perhaps we should say that it "isn't not a probability measure", in the sense
+  of constructive logic.
+  That is, we can't verify that it's a probability measure, but we can't construct
+  a counterexample either.
+}
 }

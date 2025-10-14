@@ -1,5 +1,12 @@
 [forest]
-trees = ["trees/general", "trees/utils", "trees/localcharts-files", "trees/people", "trees/refs"]
+trees = [
+    "trees/general",
+    "trees/utils",
+    "trees/localcharts-files",
+    "trees/people",
+    "trees/refs",
+    "trees/old-blog-files",
+]
 assets = ["assets"]
 home = "eigil-rischel"
 url = "https://forest.local"

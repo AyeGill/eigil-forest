@@ -1,72 +1,80 @@
+\date{2022-03-28}
 \author{eigil-rischel}
-\import{macros}
-\date{2022-03-25}
 \title{Fragmentary-coarse groups are categorically neat}
+
 \subtree{
-    \title{Coarse geometry }
-    \p{
-        The idea of a _coarse space_ is to formalize a sense in which the inclusion of metric spaces #{\mathbb{Z} \hookrightarrow \mathbb{R}} is an equivalence. These two spaces have the same "large-scale structure", in the sense that any function into #{\mathbb{R}} can be approximated up to uniformly bounded error by one into #{\mathbb{Z}}. Say two functions #{f,f': X \to Y} into a metric space are _close_ if there exists a constant #{C} with #{d_Y(f(x),f'(x)) \leq C} for all #{x}. Say a function between metric spaces is _controlled_ if postcomposition with it preserves closeness (it turns out there is a simpler equivalent statement of that, but it doesn't really matter). Then we can consider equivalence classes of controlled functions between metric spaces, under the equivalence relation of closeness. This is "coarse geometry".
-    }
-    \p{
-        It turns out there is a way to abstract away from the metric and describe a "coarse structure" on a set, which remembers enough information to tell which pairs of functions are close and which are controlled, but nothing else - and that there then exist coarse structures that aren't induced by metrics. I personally think of this as kind of complementary to the way topologies remember what's necessary to talk about continuity - if continuous functions between metric spaces are about preserving the "small-scale structure", the notion of convergence, then coarse geometry is the opposite of that.
-    }
-    \p{
-        The category of coarse spaces admits finite products, so we can talk about "coarse group theory", which is explored in [An Invitation to Coarse Groups](<https://arxiv.org/pdf/2203.08591.pdf>) by Leitner and Vigolo, which I've been reading a bit recently. It's full of interesting stuff - maybe my favorite bit is the story about geometric group theory. If you have a group #{G} with a generating set #{S}, you can define a metric by setting #{d(a,b)} to be the length of the shortest way of writing #{a^{-1}b} as a word in generators - this amounts to taking the graph distance on the Cayley graph. Studying this metric structure on the group #{G} can tell you a lot of interesting stuff about the group - but the metric is highly dependent on the choice of generating set #{S}! So it's somehow very surprising that all these different metric come back and give us the same group-theoretic information (since the group #{G} is fixed). Leitner and Vigolo shows that for all finite #{S}, the metrics give the same coarse structure on #{G}, and much of geometric group theory "sees" only coarse structure!
-    }
-    \p{
-        I find all this really cool and I highly recommend the paper. I want to talk about a subtlety that comes up in the category of coarse groups.
-    }
+  \title{Coarse geometry}
+\p{
+  The idea of a _coarse space_ is to formalize a sense in which the inclusion of metric spaces #{\mathbb{Z} \hookrightarrow \mathbb{R}} is an equivalence.
+  These two spaces have the same "large-scale structure", in the sense that any function into #{\mathbb{R}} can be approximated up to uniformly bounded error by one into #{\mathbb{Z}}. Say two functions #{f,f': X \to Y} into a metric space are _close_ if there exists a constant #{C} with #{d_Y(f(x),f'(x)) \leq C} for all #{x}. Say a function between metric spaces is _controlled_ if postcomposition with it preserves closeness (it turns out there is a simpler equivalent statement of that, but it doesn't really matter). Then we can consider equivalence classes of controlled functions between metric spaces, under the equivalence relation of closeness. This is "coarse geometry".
+}
+
+\p{
+  It turns out there is a way to abstract away from the metric and describe a "coarse structure" on a set, which remembers enough information to tell which pairs of functions are close and which are controlled, but nothing else - and that there then exist coarse structures that aren't induced by metrics. I personally think of this as kind of complementary to the way topologies remember what's necessary to talk about continuity - if continuous functions between metric spaces are about preserving the "small-scale structure", the notion of convergence, then coarse geometry is the opposite of that.
+}
+
+\p{
+  The category of coarse spaces admits finite products, so we can talk about "coarse group theory", which is explored in [An Invitation to Coarse Groups](<https://arxiv.org/pdf/2203.08591.pdf>) by Leitner and Vigolo, which I've been reading a bit recently. It's full of interesting stuff - maybe my favorite bit is the story about geometric group theory. If you have a group #{G} with a generating set #{S}, you can define a metric by setting #{d(a,b)} to be the length of the shortest way of writing #{a^{-1}b} as a word in generators - this amounts to taking the graph distance on the Cayley graph. Studying this metric structure on the group #{G} can tell you a lot of interesting stuff about the group - but the metric is highly dependent on the choice of generating set #{S}! So it's somehow very surprising that all these different metric come back and give us the same group-theoretic information (since the group #{G} is fixed). Leitner and Vigolo shows that for all finite #{S}, the metrics give the same coarse structure on #{G}, and much of geometric group theory "sees" only coarse structure!
+}
+
+\p{
+  I find all this really cool and I highly recommend the paper. I want to talk about a subtlety that comes up in the category of coarse groups.
+}
 }
 \subtree{
-    \title{The problem: group homomorphisms lack kernels }
-    \p{
-        Consider two possible coarse structures on the set #{\mathbb{Z}} - the trivial structure and the one induced by the normal metric, which we can write #{\mathbb{Z}_{|\cdot|}}. The identity map #{\mathbb{Z}_{\mathrm{triv}} \to \mathbb{Z}_{|\cdot|}} is obviously a coarse group homomorphism. It's also an epimorphism. In normal group theory we have the very convenient isomorphism theorem saying that the image of a group homomorphism is, up to isomorphism, the quotient of the domain by the kernel. But there is no coarse subgroup of #{\mathbb{Z}_{\mathrm{triv}}} that can play this role.
-    }
-    \p{
-        Let's think about how to remedy this. The universal property of the kernel dictates that maps into it must be precisely those maps into #{\mathbb{Z}_{\mathrm{triv}}} that are close to zero in #{\mathbb{Z}_{|\cdot|}}. The first condition boils down to taking each coarsely connected component to the same point, and the second condition means that the image must be a bounded subset (in the metric). Of course, there is no coarse set like this - it would have to consist of "the bounded subsets of #{\mathbb{Z}}", but of course every point is contained in one of these subsets.
-    }
+  \title{The problem: group homomorphisms lack kernels}
+\p{
+  Consider two possible coarse structures on the set #{\mathbb{Z}} - the trivial structure and the one induced by the normal metric, which we can write #{\mathbb{Z}_{|\cdot|}}. The identity map #{\mathbb{Z}_{\mathrm{triv}} \to \mathbb{Z}_{|\cdot|}} is obviously a coarse group homomorphism. It's also an epimorphism. In normal group theory we have the very convenient isomorphism theorem saying that the image of a group homomorphism is, up to isomorphism, the quotient of the domain by the kernel. But there is no coarse subgroup of #{\mathbb{Z}_{\mathrm{triv}}} that can play this role.
+}
+
+\p{
+  Let's think about how to remedy this. The universal property of the kernel dictates that maps into it must be precisely those maps into #{\mathbb{Z}_{\mathrm{triv}}} that are close to zero in #{\mathbb{Z}_{|\cdot|}}. The first condition boils down to taking each coarsely connected component to the same point, and the second condition means that the image must be a bounded subset (in the metric). Of course, there is no coarse set like this - it would have to consist of "the bounded subsets of #{\mathbb{Z}}", but of course every point is contained in one of these subsets.
+}
 }
 \subtree{
-    \title{The solution: relaxing the notion of coarse space }
-    \p{
-        The answer is to relax the notion of coarse space, by removing the condition that #{\Delta_X} is among the controlled sets. This leads to the notion of _fragmentary coarse space_:
-    }
-    \ul{
-        \li{
-            A fragmentary coarse space is a set #{X} equipped with a family #{\mathcal{E}_X} of subsets of #{X \times X}, stable under finite unions, subsets, and so that if #{E_1,E_2 \in \mathcal{E}_X}, then #{E_1 \circ E_2 \in \mathcal{E}_X}.
-        }
-        \li{
-            A subset #{A \subset X} is called a _fragment_ if #{\Delta_A} is in #{\mathcal{E}_X}.
-        }
-        \li{
-            Two functions #{f,f': X \to Y} between fragmentary coarse spaces are _fragmentary close_ if, for each fragment #{A} of #{X}, #{f(A) \times f'(A) \in \mathcal{E}_Y}.
-        }
-        \li{
-            A function #{f: X \to Y} is _fragmentary controlled_ if, for each #{A \in \mathcal{E}_X}, #{(f\times f)(A) \in \mathcal{E}_Y}.
-        }
-        \li{
-            The category of fragmentary coarse spaces and equivalence classes of fragmentary controlled functions up to fragmentary closeness is denoted #{\mathbf{FragCrs}}
-        }
-    }
-    \p{
-        Leitner and Vigolo show that #{\mathbf{FragCrs}} is complete and cocomplete, and in fact even Cartesian closed (these convenient properties are the reason they introduce the notion of frag-coarse space). I now claim that it is furthermore _regular_.
-    }
-    \p{
-        Observe that this property passes to the category of group objects in #{\mathbf{FragCrs}}. Hence given any quotient homomorphism #{f: G \to H} between (fragmentary) coarse groups, there exists a kernel #{\mathrm{ker}(f)} so that #{H = G/\mathrm{ker}(f)}, although the kernel may have to be a fragmentary-coarse group even if #{G} and #{H} are coarse. Thus, passing to fragmentary-coarse groups provides us with a nice group theory.
-    }
+  \title{The solution: relaxing the notion of coarse space}
+\p{
+  The answer is to relax the notion of coarse space, by removing the condition that #{\Delta_X} is among the controlled sets.
+  This leads to the notion of _fragmentary coarse space_:
+}
+
+\p{
+  -   A fragmentary coarse space is a set #{X} equipped with a family #{\mathcal{E}_X} of subsets of #{X \times X}, stable under finite unions, subsets, and so that if #{E_1,E_2 \in \mathcal{E}_X}, then #{E_1 \circ E_2 \in \mathcal{E}_X}.
+  -   A subset #{A \subset X} is called a _fragment_ if #{\Delta_A} is in #{\mathcal{E}_X}.
+  -   Two functions #{f,f': X \to Y} between fragmentary coarse spaces are _fragmentary close_ if, for each fragment #{A} of #{X}, #{f(A) \times f'(A) \in \mathcal{E}_Y}.
+  -   A function #{f: X \to Y} is _fragmentary controlled_ if, for each #{A \in \mathcal{E}_X}, #{(f\times f)(A) \in \mathcal{E}_Y}.
+  -   The category of fragmentary coarse spaces and equivalence classes of fragmentary controlled functions up to fragmentary closeness is denoted #{\mathbf{FragCrs}}
+}
+
+\p{
+  Leitner and Vigolo show that #{\mathbf{FragCrs}} is complete and cocomplete, and in fact even Cartesian closed (these convenient properties are the reason they introduce the notion of frag-coarse space). I now claim that it is furthermore _regular_.
+}
+
+\p{
+  Observe that this property passes to the category of group objects in #{\mathbf{FragCrs}}. Hence given any quotient homomorphism #{f: G \to H} between (fragmentary) coarse groups, there exists a kernel #{\mathrm{ker}(f)} so that #{H = G/\mathrm{ker}(f)}, although the kernel may have to be a fragmentary-coarse group even if #{G} and #{H} are coarse. Thus, passing to fragmentary-coarse groups provides us with a nice group theory.
+}
 }
 \subtree{
-    \title{Proof that #{\mathbf{FragCrs}} is regular }
-    \p{
-        Since #{\mathbf{FragCrs}} is complete and cocomplete, it suffices to show that pullbacks of regular epimorphisms are again regular. We first claim that every epimorphism #{f: X \to Y} is in fact regular. Note that Leitner-Vigolo show that #{f} is an epimorphism if and only if, for each fragment #{Y'} of #{Y}, there exists a fragment #{X'} of #{X} and a controlled set #{F \in \mathcal{E}_Y}, so that #{Y' \subset F(f(X'))} (i.e for every #{y \in Y'}, there exists #{x \in X'} so that #{(f(x),y) \in F}). Given this, we see that #{Y} is frag-coarse-equivalent to #{X} equipped with the frag-coarse structure #{f^{-1}(\mathcal{E}_Y)} - clearly #{f} is a frag-coarse surjection from this space to #{Y}, and also a frag-coarse embedding, hence an equivalence. So every epimorphism is, up to isomorphism, given by a map which is set-theoretically the identity. One also sees that the codomain necessarily has the same fragments as the domain. Now, inspecting the construction of coequalizers for frag-coarse spaces, it's not too hard to see that the frag-coarse structure on #{X} that gives the coequalizer of the kernel pair of #{f} must coincide with the one on the codomain on #{f}. Hence every epimorphism is regular.
-    }
-    \p{
-        Now, if #{i: X \to \bar{X}} is an epi (assumed to be set-theoretically the identity), and #{f: Y \to \bar{X}} is any map, we must show that again #{Y \times_{\bar{X}} X \to Y} is an epimorphism. The construction of limits makes it clear that the fragments of the pullback are each contained in a set of the form #{A \times B} where #{A,B} are fragments of #{Y} and #{X} respectively and #{f(A) \times B} is controlled in #{\bar{X}}. Since for each fragment #{A} of #{Y}, #{f(A)} is a fragment of #{\bar{X}}, it's clear that we can find a matching fragment #{B} for each #{A}. Then the projection from this fragment is surjective on the nose, and hence the projection is epimorphic.
-    }
-    \p{
-        Now let's consider the example of #{\mathbb{Z}_{\mathrm{triv}} \to \mathbb{Z}_{|\cdot|}}. In fact since the forgetful functor from group objects preserves all limits, we can compute the kernel of this map just in #{\mathbf{FragCrs}}. It is given by the frag-coarse structure on #{\mathbb{Z}} where a set is #{U} controlled if it's bounded (namely if the identity is close to zero on it) - not if the distance #{d(x,y)} is bounded as #{(x,y)} ranges over #{U}, but if the whole thing is a bounded subset of #{\mathbb{Z}} in the #{1}-norm. This means that the fragments are exactly the bounded subsets of #{\mathbb{Z}} (and that there is no nontrivial frag-coarse structure beyond that - a set is controlled if and only if it's contained in the product #{A \times A} for a fragment #{A}).
-    }
-    \p{
-        It's not too hard in this case to verify that the quotient of #{\mathbb{Z}_{\mathrm{triv}}} by this subgroup is in fact #{\mathbb{Z}_{|\cdot|}}. Namely, a coarse map out of #{\mathbb{Z}_{\mathrm{triv}}} restricts to zero on the subgroup if and only if it carries the bounded subsets of #{\mathbb{Z}} to sets that are bounded-close to zero in the codomain, i.e sets so that #{A \times \{0\}} is controlled. But for a coarse group homomorphism, this is enough to be controlled as a morphism on #{\mathbb{Z}_{|\cdot|}}.
-    }
+  \title{Proof that #{\mathbf{FragCrs}} is regular}
+\p{
+  Since #{\mathbf{FragCrs}} is complete and cocomplete, it suffices to show that pullbacks of regular epimorphisms are again regular.
+  We first claim that every epimorphism #{f: X \to Y} is in fact regular.
+  Note that Leitner-Vigolo show that #{f} is an epimorphism if and only if, for each fragment #{Y'} of #{Y}, there exists a fragment #{X'} of #{X} and a controlled set #{F \in \mathcal{E}_Y}, so that #{Y' \subset F(f(X'))} (i.e for every #{y \in Y'}, there exists #{x \in X'} so that #{(f(x),y) \in F}).
+  Given this, we see that #{Y} is frag-coarse-equivalent to #{X} equipped with the frag-coarse structure #{f^{-1}(\mathcal{E}_Y)} - clearly #{f} is a frag-coarse surjection from this space to #{Y}, and also a frag-coarse embedding, hence an equivalence.
+  So every epimorphism is, up to isomorphism, given by a map which is set-theoretically the identity. One also sees that the codomain necessarily has the same fragments as the domain.
+  Now, inspecting the construction of coequalizers for frag-coarse spaces, it's not too hard to see that the frag-coarse structure on #{X} that gives the coequalizer of the kernel pair of #{f} must coincide with the one on the codomain on #{f}. Hence every epimorphism is regular.
+}
+
+\p{
+  Now, if #{i: X \to \bar{X}} is an epi (assumed to be set-theoretically the identity), and #{f: Y \to \bar{X}} is any map, we must show that again #{Y \times_{\bar{X}} X \to Y} is an epimorphism. The construction of limits makes it clear that the fragments of the pullback are each contained in a set of the form #{A \times B} where #{A,B} are fragments of #{Y} and #{X} respectively and #{f(A) \times B} is controlled in #{\bar{X}}.
+  Since for each fragment #{A} of #{Y}, #{f(A)} is a fragment of #{\bar{X}}, it's clear that we can find a matching fragment #{B} for each #{A}. Then the projection from this fragment is surjective on the nose, and hence the projection is epimorphic.
+}
+
+\p{
+  Now let's consider the example of #{\mathbb{Z}_{\mathrm{triv}} \to \mathbb{Z}_{|\cdot|}}. In fact since the forgetful functor from group objects preserves all limits, we can compute the kernel of this map just in #{\mathbf{FragCrs}}. It is given by the frag-coarse structure on #{\mathbb{Z}} where a set is #{U} controlled if it's bounded (namely if the identity is close to zero on it) - not if the distance #{d(x,y)} is bounded as #{(x,y)} ranges over #{U}, but if the whole thing is a bounded subset of #{\mathbb{Z}} in the #{1}-norm. This means that the fragments are exactly the bounded subsets of #{\mathbb{Z}} (and that there is no nontrivial frag-coarse structure beyond that - a set is controlled if and only if it's contained in the product #{A \times A} for a fragment #{A}).
+}
+
+\p{
+  It's not too hard in this case to verify that the quotient of #{\mathbb{Z}_{\mathrm{triv}}} by this subgroup is in fact #{\mathbb{Z}_{|\cdot|}}. Namely, a coarse map out of #{\mathbb{Z}_{\mathrm{triv}}} restricts to zero on the subgroup if and only if it carries the bounded subsets of #{\mathbb{Z}} to sets that are bounded-close to zero in the codomain, i.e sets so that #{A \times \{0\}} is controlled. But for a coarse group homomorphism, this is enough to be controlled as a morphism on #{\mathbb{Z}_{|\cdot|}}.
+}
 }

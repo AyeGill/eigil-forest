@@ -1,31 +1,48 @@
+\date{2021-11-13}
 \author{eigil-rischel}
-\date{2021-11-13T16:20:00+00:00}
-\import{macros}
 \title{Smooth dynamical systems as infinitesimal discrete dynamical systems}
-    \p{
-        Here I am working with nonstandard analysis in the sense of Robinson, taking an ultrapower of the real numbers and building things out of that. But in general I am going to be a bit sloppy and not worry too much about the details.
-    }
-    \p{
-        Recall that a standard function is _differentiable_ if, for every standard #{x} and for every infinitesimal #{\epsilon}, #{f(x+\epsilon)-f(x)/\epsilon \approx a}, where #{a} is also standard.
-    }
-    \p{
-        Fix an infinitesimal #{h}. Let #{M} be a standard differentiable manifold, fix #{p \in M}, and consider the tangent space #{T_pM}. Recall that the elements of this vector space (may be taken to be) smooth paths #{\gamma: I \to M}, with #{0 \in I \subset \mathbb{R}} some open interval, up to the equivalence relation of having the same first derivative at #{p} (which may be checked in any choice of local coordinates, all coordinates giving the same answer). In particular we may compute this derivative, letting #{\phi: U \to \mathbb{R}}, #{p \in U \subset M} being the local coordinates of choice, as  the standard part of #{(\phi(\gamma(h))-\phi(p))/h}. Having fixed #{h}, we may thus replace each curve with just the choice of #{\gamma(h)}, the only condition on this being that in any choice of local coordinates, the above quotient has a standard part (eg it is not unbounded). But since the change-of-coordinate maps are in particular differentiable, it suffices to verify this for one such choice. We may call this property "being at #{O(h)}-order infinitesimal distance from from #{p}". For example, suppose that #{M = \mathbb{R}}, #{p=0} and #{\phi = 1_\mathbb{R}}. Then if #{h = (1/n)}, it will not do to take #{\gamma(h) = (1/\sqrt{n})}, for in that case we will get the unbounded nonstandard real #{(\sqrt{n})} for the difference quotient.
-    }
-    \p{
-        Let #{\widetilde{D_pM}} be the set of such points in #{M}. We don't quite have a map #{T_pM \to \widetilde{D_pM}}, because e.g the path #{\gamma(t)=t^2}, which has local derivative zero, has #{\gamma(h) = h^2 \neq 0}. In order to make this map well-defined, we need to consider a quotient by the relation of "being at distance #{o(h)}". More precisely, let #{v \approx v'} if, if any coordiante chart, #{d(v,v')/h} is infinitesimal. (The local differentiability ensures this does not depend on the choice of coordinates.) Then let #{D_pM = \widetilde{D_pM}/\approx} - now the map #{T_pM \to D_pM} is well-defined.
-    }
-    \p{
-        We can also define a vector space structure on #{D_pM} that makes this map linear. We simply lift the addition and scalar multiplication from any coordinate chart. Local differentiability imply that #{\psi(h(v+v')) = \psi'(0) h(v+v') + h\epsilon}, wher #{\psi} is a change-of-coordinate map, so that addition is well-defined up to an infinitesimal times #{h}, which is quotiented out by in any case. Scalar multiplication works similarly. Note that we are defining a vector space over #{\mathbb{R}}, _not_ over the full #{*\mathbb{R}}. Multiplication by a number of order #{o(h)} is not invertible (in fact such products are always zero), and similarly scaling by an unbounded number may take you out of the coordinate patch, and is thus not well-defined.
-    }
-    \p{
-        In fact with this, we have an isomorphism #{T_pM \to D_pM} - any #{v \in D_pM} is the image of #{\gamma(t) = p + tv/h}, and two curves have the same derivative exactly if #{\gamma(h) \approx \gamma'(h)}.
-    }
-    \p{
-        Recall that smooth dynamical system on #{M} is a smoth section #{M \to TM}. We can exploit our isomorphism above, by observing that each #{D_p} is actually a quotient of a subset of #{M}. Hence we may ask for a function #{s: *M \to *M} so that #{s(p) \in \widetilde{D_p} \subset *M} - this induces a smooth dynamical system. Every (standard) smooth dynamical system has this form, and #{s,s'} induce the same system if #{s(p) \approx s'(p)} for each #{p}.
-    }
-    \p{
-        What's cool about this is that these are essentially _discrete_ dynamical systems, albeit nonstandard ones. A discrete dynamical system is a set with an "advance one timestep" function #{s: X \to X}. So a smooth dynamical system is a manifold with an "advance time #{h}" function #{s: *M \to *M}, subject to the condition that #{s(p)} is #{h}-close to #{p}, and up to a certain equivalence relation. This suggests a way to use the same conceptual tools to study smooth and discrete dynamical systems.
-    }
-    \p{
-        The paper [Differential geomtry via infinitesimal displacements](https://arxiv.org/abs/1405.0984), by Nowik and Katz, provides a more in-depth analysis of this idea.
-    }
+
+\p{
+Here I am working with nonstandard analysis in the sense of Robinson, taking an ultrapower of the real numbers and building things out of that. But in general I am going to be a bit sloppy and not worry too much about the details.
+}
+
+\p{
+Recall that a standard function is _differentiable_ if, for every standard #{x} and for every infinitesimal #{\epsilon}, #{f(x+\epsilon)-f(x)/\epsilon \approx a}, where #{a} is also standard.
+}
+
+\p{
+Fix an infinitesimal #{h}.
+Let #{M} be a standard differentiable manifold, fix #{p \in M}, and consider the tangent space #{T_pM}. Recall that the elements of this vector space (may be taken to be) smooth paths #{\gamma: I \to M}, with #{0 \in I \subset \mathbb{R}} some open interval, up to the equivalence relation of having the same first derivative at #{p} (which may be checked in any choice of local coordinates, all coordinates giving the same answer).
+In particular we may compute this derivative, letting #{\phi: U \to \mathbb{R}}, #{p \in U \subset M} being the local coordinates of choice, as  the standard part of #{(\phi(\gamma(h))-\phi(p))/h}.
+Having fixed #{h}, we may thus replace each curve with just the choice of #{\gamma(h)}, the only condition on this being that in any choice of local coordinates, the above quotient has a standard part (eg it is not unbounded). But since the change-of-coordinate maps are in particular differentiable, it suffices to verify this for one such choice.
+We may call this property "being at #{O(h)}-order infinitesimal distance from from #{p}".
+For example, suppose that #{M = \mathbb{R}}, #{p=0} and #{\phi = 1_\mathbb{R}}. Then if #{h = (1/n)}, it will not do to take #{\gamma(h) = (1/\sqrt{n})}, for in that case we will get the unbounded nonstandard real #{(\sqrt{n})} for the difference quotient.
+}
+
+\p{
+Let #{\widetilde{D_pM}} be the set of such points in #{M}. We don't quite have a map #{T_pM \to \widetilde{D_pM}}, because e.g the path #{\gamma(t)=t^2}, which has local derivative zero, has #{\gamma(h) = h^2 \neq 0}. In order to make this map well-defined, we need to consider a quotient by the relation of "being at distance #{o(h)}". More precisely, let #{v \approx v'} if, if any coordiante chart, #{d(v,v')/h} is infinitesimal. (The local differentiability ensures this does not depend on the choice of coordinates.) Then let #{D_pM = \widetilde{D_pM}/\approx} - now the map #{T_pM \to D_pM} is well-defined.
+}
+
+\p{
+We can also define a vector space structure on #{D_pM} that makes this map linear.
+We simply lift the addition and scalar multiplication from any coordinate chart.
+Local differentiability imply that #{\psi(h(v+v')) = \psi'(0) h(v+v') + h\epsilon}, wher #{\psi} is a change-of-coordinate map, so that addition is well-defined up to an infinitesimal times #{h}, which is quotiented out by in any case. Scalar multiplication works similarly.
+Note that we are defining a vector space over #{\mathbb{R}}, _not_ over the full #{*\mathbb{R}}. Multiplication by a number of order #{o(h)} is not invertible (in fact such products are always zero), and similarly scaling by an unbounded number may take you out of the coordinate patch, and is thus not well-defined.
+}
+
+\p{
+In fact with this, we have an isomorphism #{T_pM \to D_pM} - any #{v \in D_pM} is the image of #{\gamma(t) = p + tv/h}, and two curves have the same derivative exactly if #{\gamma(h) \approx \gamma'(h)}.
+}
+
+\p{
+Recall that smooth dynamical system on #{M} is a smoth section #{M \to TM}.
+We can exploit our isomorphism above, by observing that each #{D_p} is actually a quotient of a subset of #{M}. Hence we may ask for a function #{s: *M \to *M} so that #{s(p) \in \widetilde{D_p} \subset *M} - this induces a smooth dynamical system. Every (standard) smooth dynamical system has this form, and #{s,s'} induce the same system if #{s(p) \approx s'(p)} for each #{p}.
+}
+
+\p{
+What's cool about this is that these are essentially _discrete_ dynamical systems, albeit nonstandard ones. A discrete dynamical system is a set with an "advance one timestep" function #{s: X \to X}. So a smooth dynamical system is a manifold with an "advance time #{h}" function #{s: *M \to *M}, subject to the condition that #{s(p)} is #{h}-close to #{p}, and up to a certain equivalence relation. This suggests a way to use the same conceptual tools to study smooth and discrete dynamical systems.
+}
+
+\p{
+The paper [Differential geomtry via infinitesimal displacements](https://arxiv.org/abs/1405.0984), by Nowik and Katz, provides a more in-depth analysis of this idea.
+}

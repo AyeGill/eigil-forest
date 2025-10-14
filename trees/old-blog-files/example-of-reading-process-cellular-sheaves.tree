@@ -1,149 +1,141 @@
+\date{2021-04-25}
 \author{eigil-rischel}
-\date{2021-04-25T15:45:00+02:00}
-\import{macros}
 \title{Example of my reading process: Cellular sheaves of lattices and the Tarski laplacian}
-    \p{
-        There's a lot of sort of "implicit" skills that are important in various fields of science, that you really only learn by just hanging around older people that already know them and picking things up by osmosis. This is one of the things that make it hard to just learn things by reading textbooks, as opposed to actually going to a university and getting a degree. I think we should be doing more to study and teach these sorts of skills, to the extent that it may be possible.
-    }
-    \p{
-        Therefore, I've decided to write this post where I describe my "process" for reading papers by means of example. The paper I'll be reading is a random one that came across my feed[^fn:1]: [Ghrist and Riess: Cellular Sheaves of Lattices and the Tarski Laplacian](https://arxiv.org/abs/2007.04099).
-    }
-    \p{
-        I got the idea for this project from Alexey Guzey tweeting this:
-    }
-    \p{
-        {{< tweet 1385263375979008001>}}
-    }
-    \p{
-        This post is an "async" version of Alexey's request - although as he notes in the replies to that tweet, the difference in learning rate between "reading what someone wrote about doing something" and "interacting with them as they do it live" is pretty insane. So this post is also an offer: if anyone wants to hop on a video call with me and hang out while I read a paper, let me know! My email is ayegill (at) gmail (dot) com.
-    }
-    \p{
-        Some notes before we begin:
-    }
-    \ul{
-        \li{
-            I selected this papre by skimming the abstract and deciding it looked interesting. Once I'd decided I would use this paper for this post, I committed to "finishing" reading it even if it turned out to be not that interesting - normally I might have skimmed it and decided not to keep reading it.
-        }
-        \li{
-            "Finishing" is obviously still pretty variable - some papers I will read in a lot more detail than this one.
-        }
-        \li{
-            My process involves a lot of being distracted by twitter, having to go do something else, and so on, which has been elided in this description.
-        }
-    }
+
+\p{
+There's a lot of sort of "implicit" skills that are important in various fields of science, that you really only learn by just hanging around older people that already know them and picking things up by osmosis. This is one of the things that make it hard to just learn things by reading textbooks, as opposed to actually going to a university and getting a degree. I think we should be doing more to study and teach these sorts of skills, to the extent that it may be possible.
+}
+
+\p{
+Therefore, I've decided to write this post where I describe my "process" for reading papers by means of example. The paper I'll be reading is a random one that came across my feed[^fn:1]: [Ghrist and Riess: Cellular Sheaves of Lattices and the Tarski Laplacian](https://arxiv.org/abs/2007.04099).
+}
+
+\p{
+I got the idea for this project from Alexey Guzey [tweeting this:](https://x.com/alexeyguzey/status/1385263375979008001)
+}
+
+\p{
+This post is an "async" version of Alexey's request - although as he notes in the replies to that tweet, the difference in learning rate between "reading what someone wrote about doing something" and "interacting with them as they do it live" is pretty insane. So this post is also an offer: if anyone wants to hop on a video call with me and hang out while I read a paper, let me know! My email is ayegill (at) gmail (dot) com.
+}
+
+\p{
+Some notes before we begin:
+}
+
+\ul{
+  \li{I selected this papre by skimming the abstract and deciding it looked interesting. Once I'd decided I would use this paper for this post, I committed to "finishing" reading it even if it turned out to be not that interesting - normally I might have skimmed it and decided not to keep reading it.}
+  \li{"Finishing" is obviously still pretty variable - some papers I will read in a lot more detail than this one.}
+  \li{My process involves a lot of being distracted by twitter, having to go do something else, and so on, which has been elided in this description.}
+\p{
+}
+}
 \subtree{
-    \title{My process }
-    \p{
-        The very first thing I do is to send the paper to my [reMarkable]. I read the paper on the reMarkable, and keep a piece of paper next to me for scratches, and my laptop open for googling and for notes.
-    }
-    \p{
-        I go over the beginning of the paper, taking some loose notes. I jot the following down on a piece of paper: **Terms**
-    }
-    \ul{
-        \li{
-            Reeb graphs
-        }
-        \li{
-            The thesis of curry
-        }
-        \li{
-            Cellular sheaves? How do they work?
-        }
-        \li{
-            (Unwritten thought: I remember that I've read about "cellular sheaves" before. They're some sort of system for encoding a sheaf on a cellular complex of some soty, in a way that's "analogous" to sheaves on the geometric realization on the complex.)
-        }
-        \li{
-            Hodge Laplacian for vector spaces?
-        }
-        \li{
-            (Unwritten thought: the paper is about a laplacian for lattices - this seems to be a different version of the same concept? What's that like?)
-        }
-        \li{
-            Graph signal processing?
-        }
-        \li{
-            (Unwritten thought: the paper described this as signal processing where the signals live on graphs instead of in real numbers?)
-        }
-    }
-    \p{
-        I also make notes when something makes me think of an idea related to one of my projects. At this point I'm at page 7, and I've made two such notes thus far.
-    }
-    \p{
-        At this point I have a vague idea of where the paper is situated - what's going on. There's a lot of references in this introduction to ideas I don't really know about, or only half remember. But nothing has made me think I should go look it up before I proceed.
-    }
-    \p{
-        At page 7 or so is where I get impatient with the paper just dumping a bunch of definitions around lattices on me, and start skimming forward a bit. On page 8, I notice the important point that we're dealing with categories of lattices where the morphisms are _connections_. Here I remember that I already know about [galois connections](https://ncatlab.org/nlab/show/Galois+connection) - a connection being the same thing but here they don't reverse the order.
-    }
-    \p{
-        On page 9 we get to "cellular sheaf theory". Here the authors luckily recall the definition of cellular sheaf I was missing before. I make a note in the margin at the top of page 10: "Ie #{F(\bullet) \to F(\bullet - \bullet)} - **not** the other way". This is the important point of a cellular sheaf
-    }
-    \ul{
-        \li{
-            It assigns an object (vector space,set,etc) to each _cell_ in a cell complex
-        }
-        \li{
-            The restriction maps go the opposite way from what you expect, from points to segments (and in general to higher-dimensional cells), not the other way around
-        }
-        \li{
-            There is no sheaf condition.
-        }
-    }
-    \p{
-        I briefly try to connect this picture with something I half-remember about the connection between a space and the geometric realization of the [nerve](https://en.wikipedia.org/wiki/Nerve_of_a_covering) of a cover (while reading the paper, I didn't remember the term Cech nerve, but just had a picture in my head which upon reflection seems to be captured by that term). I fail to make any actual progress with this but mentally note that this idea smells right. I skim the description of global sections and so on, but note the definition of the cellular cochain complex.
-    }
-    \p{
-        In the section on Cellular Hodge theory, I make the following note in the margin: "every de Rham class has a unique harmonic rep", summarizing what they're saying about the kernel of the Laplacian for Riemannian manifolds (/what I half-remember about this stuff). "Harmonic" here means exactly "in the kernel of the Laplacian". I make a note of the "hodge laplacian".
-    }
-    \p{
-        At this point I am skimming forwards a lot. I stare at the Tarski Laplacian on page  12 for a bit. I write "how does this 'diffusion' work?" in the margin. Then I think a bit about how to view this stuff as "diffusion". I think something like the following:
-    }
-    \ul{
-        \li{
-            The expanding part is the completion associated to the connection
-        }
-    }
-    \p{
-        #{F(v) \to F(e)} whenever #{e} is an edge adjacent to #{v}, then the "intersection" of all those completions for every edge. The the mixing part is kinda this same thing, but for every _neighbor_ vertex, i.e for every edge from a different vertex #{w}, you "extend" from #{w} to the edge, then restrict to #{v}. "Mixing".
-    }
-    \p{
-        I read some of the stuff about how diffusion lets a cochain "flow" to a global section, and made a note of the similar property of the Tarski laplacian - that the fixpoints of #{1 \wedge L} are exactly the global sections. Here I also thought to myself that it was interesting that this is just a _zero-dimensional_ theory, no higher homology objects.
-    }
-    \p{
-        Now I skim forward a bit more to page 15 at the bottom, "Tarski Cohomology", where the authors get to the question I just raised (this sort of "author mindreading" is always pleasing). They note here essentially that the definition for dimension zero also works in higher dimensions.
-    }
-    \p{
-        Then they pass to the comparison with more "ordinary" chain complex based cohomology. Here I initially skim forward and try to get the gist of things. I see they introduce something called the "Grandis cohomology", which I note is cohomology of a chain complex in lattices (which is in fact a preadditive category, so this makes sense kinda). You can compare this with usual cohomology by considering the "Grassmannian functor" associating to a vector space its lattice of subspaces. Here I got a bit confused about the relationship between the various types of cohomology, so I had to go back and forth a bit to make sense
-    }
-    \ul{
-        \li{
-            The Tarski cohomology is the fixpoints of a certain endomorphism on the #{k}-chains (defined in a natural way)
-        }
-        \li{
-            Given a chain complex, the Grandis cohomology is the cohomology in the usual sense
-        }
-        \li{
-            We can compare these in the case of a sheaf of vector spaces, by either
-        }
-        \li{
-            Constructing the usual chain complex of vector spaces, usign the Grasmannian functor and taking grandis cohomology
-        }
-        \li{
-            Or taking the associated Grassmannian sheaf and then taking its Tarski cohomology.
-        }
-    }
-    \p{
-        These are not in general the same. The reason you can't just build a chain complex out of a sheaf of lattices is that, while you can define a coboundary map, it doesn't form a chain complex, in the sense that #{\delta^2 \neq 0}. We can however do still do something with this fake chain complex, apparently involving mimicking the definition of the Hodge laplacian. This gives another type of cohomology, which is also not equivalent to Taski cohomology.
-    }
-    \p{
-        At this point there are still a lot of details I don't understand. I have the big picture, though. The next step would probably be to pick up some of the references to understand why this is useful - but I decide not to do that.
-    }
-    \p{
-        I also consider making flashcards or notes about this paper. This blog post is already a file in my notes, so I have that. I decide that these concepts _probably_ aren't worth comitting to memory, except "cellular sheaves", which I've come across a few times. I also decide to make notes on some of the concepts.
-    }
-    \p{
-        If you want to look at the sparse margin notes I took while reading this paper, it's [here](/ox-hugo/2020-04-25-ghrist.pdf).
-    }
-    \p{
-        [^fn:1]: In this case, it was recommended to me by <https://arxivist.com>
-    }
+  \title{My process}
+\p{
+  The very first thing I do is to send the paper to my [reMarkable]. I read the paper on the reMarkable, and keep a piece of paper next to me for scratches, and my laptop open for googling and for notes.
+}
+
+\p{
+  I go over the beginning of the paper, taking some loose notes.
+  I jot the following down on a piece of paper:
+  **Terms**
+}
+
+\p{
+  -   Reeb graphs
+  -   The thesis of curry
+  -   Cellular sheaves? How do they work?
+      -   (Unwritten thought: I remember that I've read about "cellular sheaves" before. They're some sort of system for encoding a sheaf on a cellular complex of some soty, in a way that's "analogous" to sheaves on the geometric realization on the complex.)
+  -   Hodge Laplacian for vector spaces?
+      -   (Unwritten thought: the paper is about a laplacian for lattices - this seems to be a different version of the same concept? What's that like?)
+  -   Graph signal processing?
+      -   (Unwritten thought: the paper described this as signal processing where the signals live on graphs instead of in real numbers?)
+}
+
+\p{
+  I also make notes when something makes me think of an idea related to one of my projects. At this point I'm at page 7, and I've made two such notes thus far.
+}
+
+\p{
+  At this point I have a vague idea of where the paper is situated - what's going on. There's a lot of references in this introduction to ideas I don't really know about, or only half remember. But nothing has made me think I should go look it up before I proceed.
+}
+
+\p{
+  At page 7 or so is where I get impatient with the paper just dumping a bunch of definitions around lattices on me, and start skimming forward a bit. On page 8, I notice the important point that we're dealing with categories of lattices where the morphisms are _connections_. Here I remember that I already know about [galois connections](https://ncatlab.org/nlab/show/Galois+connection) - a connection being the same thing but here they don't reverse the order.
+}
+
+\p{
+  On page 9 we get to "cellular sheaf theory". Here the authors luckily recall the definition of cellular sheaf I was missing before. I make a note in the margin at the top of page 10: "Ie #{F(\bullet) \to F(\bullet - \bullet)} - **not** the other way".
+  This is the important point of a cellular sheaf
+}
+
+\p{
+  -   It assigns an object (vector space,set,etc) to each _cell_ in a cell complex
+  -   The restriction maps go the opposite way from what you expect, from points to segments (and in general to higher-dimensional cells), not the other way around
+  -   There is no sheaf condition.
+}
+
+\p{
+  I briefly try to connect this picture with something I half-remember about the connection between a space and the geometric realization of the [nerve](https://en.wikipedia.org/wiki/Nerve\%5Fof\%5Fa\%5Fcovering) of a cover (while reading the paper, I didn't remember the term Cech nerve, but just had a picture in my head which upon reflection seems to be captured by that term). I fail to make any actual progress with this but mentally note that this idea smells right. I skim the description of global sections and so on, but note the definition of the cellular cochain complex.
+}
+
+\p{
+  In the section on Cellular Hodge theory, I make the following note in the margin: "every de Rham class has a unique harmonic rep", summarizing what they're saying about the kernel of the Laplacian for Riemannian manifolds (/what I half-remember about this stuff). "Harmonic" here means exactly "in the kernel of the Laplacian". I make a note of the "hodge laplacian".
+}
+
+\p{
+  At this point I am skimming forwards a lot. I stare at the Tarski Laplacian on page  12 for a bit. I write "how does this 'diffusion' work?" in the margin. Then I think a bit about how to view this stuff as "diffusion".
+  I think something like the following:
+}
+
+\p{
+  -   The expanding part is the completion associated to the connection
+}
+
+\p{
+  #{F(v) \to F(e)} whenever #{e} is an edge adjacent to #{v}, then the "intersection" of all those completions for every edge.
+  The the mixing part is kinda this same thing, but for every _neighbor_ vertex, i.e for every edge from a different vertex #{w}, you "extend" from #{w} to the edge, then restrict to #{v}. "Mixing".
+}
+
+\p{
+  I read some of the stuff about how diffusion lets a cochain "flow" to a global section, and made a note of the similar property of the Tarski laplacian - that the fixpoints of #{1 \wedge L} are exactly the global sections. Here I also thought to myself that it was interesting that this is just a _zero-dimensional_ theory, no higher homology objects.
+}
+
+\p{
+  Now I skim forward a bit more to page 15 at the bottom, "Tarski Cohomology", where the authors get to the question I just raised (this sort of "author mindreading" is always pleasing). They note here essentially that the definition for dimension zero also works in higher dimensions.
+}
+
+\p{
+  Then they pass to the comparison with more "ordinary" chain complex based cohomology. Here I initially skim forward and try to get the gist of things. I see they introduce something called the "Grandis cohomology", which I note is cohomology of a chain complex in lattices (which is in fact a preadditive category, so this makes sense kinda). You can compare this with usual cohomology by considering the "Grassmannian functor" associating to a vector space its lattice of subspaces. Here I got a bit confused about the relationship between the various types of cohomology, so I had to go back and forth a bit to make sense
+}
+
+\p{
+  -   The Tarski cohomology is the fixpoints of a certain endomorphism on the #{k}-chains (defined in a natural way)
+  -   Given a chain complex, the Grandis cohomology is the cohomology in the usual sense
+  -   We can compare these in the case of a sheaf of vector spaces, by either
+      -   Constructing the usual chain complex of vector spaces, usign the Grasmannian functor and taking grandis cohomology
+      -   Or taking the associated Grassmannian sheaf and then taking its Tarski cohomology.
+}
+
+\p{
+  These are not in general the same.
+  The reason you can't just build a chain complex out of a sheaf of lattices is that, while you can define a coboundary map, it doesn't form a chain complex, in the sense that #{\delta^2 \neq 0}.
+  We can however do still do something with this fake chain complex, apparently involving mimicking the definition of the Hodge laplacian. This gives another type of cohomology, which is also not equivalent to Taski cohomology.
+}
+
+\p{
+  At this point there are still a lot of details I don't understand. I have the big picture, though. The next step would probably be to pick up some of the references to understand why this is useful - but I decide not to do that.
+}
+
+\p{
+  I also consider making flashcards or notes about this paper. This blog post is already a file in my notes, so I have that. I decide that these concepts _probably_ aren't worth comitting to memory, except "cellular sheaves", which I've come across a few times. I also decide to make notes on some of the concepts.
+}
+
+\p{
+  If you want to look at the sparse margin notes I took while reading this paper, it's [here](/ox-hugo/2020-04-25-ghrist.pdf).
+}
+
+\p{
+  [^fn:1]: In this case, it was recommended to me by <https://arxivist.com>
+}
 }

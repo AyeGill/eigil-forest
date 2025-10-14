@@ -1,257 +1,252 @@
+\date{2020-11-10}
 \author{eigil-rischel}
-\date{2020-11-10T20:20:00+00:00}
-\import{macros}
 \title{reMarkable 2 review}
-    \p{
-        I recently got a [reMarkable 2](https://remarkable.com/). I've had it for one week. This is my review of it so far.
-    }
-\subtree{
-    \title{TLDR}
-    \ul{
-        \li{
-            It's very very good and I'm happy I bought one. If your relationship with working "on things" is like mine, I recommend it.
-        }
-        \li{
-            It's expensive and you can get an iPad + accessories + Apple Pencil for the same price, which may be better
-        }
-        \li{
-            There are some annoyances
-        }
-    }
-    \p{
-        Would I buy the reMarkable again? That is, if it was struck by a meteor tomorrow, would I buy a new one? Yes (but see my notes on other options). In my opinion, these devices are now good enough that it's worth paying a premium to get the "paper experience". I would not recommend saving up for the reMarkable - that is, if your disposable income is small and you'd need to make an effort over a time period to find the money, it's probably not worth it. If you own a laptop and are considering buying a tablet, which you anticipate using largely for reading and writing, the reMarkable is recommendable. If you're in the market for a tablet to use also for laptop tasks, it's not up to the job.
-    }
+
+\p{
+I recently got a [reMarkable 2](https://remarkable.com/). I've had it for one week. This is my review of it so far.
 }
 \subtree{
-    \title{Paper and Me }
-    \p{
-        My fiancé is one of those stationery nerds. She own several different fountain pens and a metric boatload of ballpoint pens, gel pens, highlighters, markers, and what have you. She buys a specific brand of Japanese calendar ([Hobonichi](https://www.1101.com/store/techo/en/)) each year. She has had the same color-coding system for her notes since we started university. She meticulously pagemarks and sorts all her notes into plastic sleeves and binders.
-    }
-    \p{
-        I am not like my fiancé. My workflow for most of my first five years at university consisted of the following:
-    }
-    \ul{
-        \li{
-            Keep a stack of papers and ballpoint pens in my backpack (along with the books I'm using and my laptop and so on).
-        }
-        \li{
-            When you sit down to work somewhere, get laptop, stack of papers, and a ballpoint pen out.
-        }
-        \li{
-            When you need to think, locate a blank spot on a piece of paper in front of you and write there.
-        }
-        \li{
-            If there's no space, go through the papers until you find some space.
-        }
-        \li{
-            When you stop working, gather all the papers into your backpack.
-        }
-        \li{
-            Periodically go through your papers and throw out any that have writing all over them
-        }
-        \li{
-            Periodically add a fresh dump of blank papers to your backpack.
-        }
-    }
-    \p{
-        The two points I want to make here is:
-    }
-    \ul{
-        \li{
-            I am a very disorganized person
-        }
-        \li{
-            I fucking love paper
-        }
-    }
-    \p{
-        Paper is awesome. I am long paper. Whoever you are, you should be using more paper. There's absolutely no reason to strain your head to the breaking point, keeping a bunch of things inside it, instead of putting them on paper. Actually, if you take one recommendation from this review, just make sure to keep paper and pen wherever you work and use it all the time. Go to [these](https://www.amazon.co.uk/HP-Office-A4-gsm-500sh/dp/B000JTKDCW/ref=sr_1_24?dchild=1&keywords=blank+paper&qid=1604957654&sr=8-24) [links](https://www.amazon.co.uk/Zebra-01951-Z-Grip-Ballpoint-Pen/dp/B000KN2B4A/ref=sr_1_13?dchild=1&keywords=ballpoint+pens&qid=1604957742&sr=8-13) to buy some _right now_, they're cheap (but you probably have this stuff already - use it!). See also [Paper Trauma](https://www.lesswrong.com/posts/GpDjJFeCQCLjpt68b/paper-trauma). I also invite you to consider [buying a big notebook](http://acritch.com/notepad/), but I haven't tried that yet myself.
-    }
-    \p{
-        But paper has some limitations:
-    }
-    \ul{
-        \li{
-            You sometimes run out
-        }
-        \li{
-            If you want to write your notes about something you're reading on paper, the best place is the thing you're reading - but this requires that it be on paper (instead of a computer). This means you have to buy a book (these have a tendency to pile up rapidly, if it even is a book you can buy) or print it out (this tends to be messy, and you might not have a printer. Back at the university of Copenhagen, I used to print out a lot of stuff and spiral-back it, but I can't do this any more).
-        }
-        \li{
-            Sometimes you lose your old paper where you wrote something important (usually, because you didn't know at the time it would be important).
-        }
-        \li{
-            It's easy to make a mess by creating a huge stack of paper. If you're like me, "clean up your big pile of papers" can sometimes become a bit of an "ugh" task that you can't get around to and which sucks up a lot of energy.
-        }
-    }
-    \p{
-        Enter the [reMarkable 2](https://remarkable.com/). A "next-generation paper tablet", it promises you that you can "Replace your notebooks and printed documents with the only tablet that feels like paper". Naturally, I was intrigued.
-    }
+  \title{TLDR}
+\p{
+  -   It's very very good and I'm happy I bought one. If your relationship with working "on things" is like mine, I recommend it.
+  -   It's expensive and you can get an iPad + accessories + Apple Pencil for the same price, which may be better
+  -   There are some annoyances
+}
+
+\p{
+  Would I buy the reMarkable again? That is, if it was struck by a meteor tomorrow, would I buy a new one? Yes (but see my notes on other options). In my opinion, these devices are now good enough that it's worth paying a premium to get the "paper experience".
+  I would not recommend saving up for the reMarkable - that is, if your disposable income is small and you'd need to make an effort over a time period to find the money, it's probably not worth it.
+  If you own a laptop and are considering buying a tablet, which you anticipate using largely for reading and writing, the reMarkable is recommendable. If you're in the market for a tablet to use also for laptop tasks, it's not up to the job.
+}
 }
 \subtree{
-    \title{General experience and thoughts }
-    \p{
-        The writing experience is _very very good_. It doesn't quite feel like paper - it's not _that_ close - but apart from actually writing on paper it's the best I've tried (having, admittedly, not tried that many). It's leagues ahead of writing on a "normal" tablet using a stylus.
-    }
-    \p{
-        Drawing on the reMarkable has the following advantages over paper:
-    }
-    \ul{
-        \li{
-            You can erase things, perfectly
-        }
-        \li{
-            You can undo/redo strokes
-        }
-        \li{
-            You can zoom
-        }
-        \li{
-            You can select and move things
-        }
-        \li{
-            There's layers, like in image editing software.
-        }
-    }
-    \p{
-        The surface feels a bit too smooth - it doesn't have the same friction as dragging a pen over paper. It's still better than a normal screen (like a iPad) though. You can tell they added some texture to make this more lifelike, but it's not the same.
-    }
-    \p{
-        Not surprisingly, it's a bit awkward to hold the tablet with one hand and write with the other. The holding hand doesn't provide quite enough support. You really need to support it with a table or your knees or something.
-    }
-    \p{
-        Probably the biggest thing I would like is a bigger screen.
-    }
+  \title{Paper and Me}
+\p{
+  My fiancé is one of those stationery nerds. She own several different fountain pens and a metric boatload of ballpoint pens, gel pens, highlighters, markers, and what have you. She buys a specific brand of Japanese calendar ([Hobonichi](https://www.1101.com/store/techo/en/)) each year. She has had the same color-coding system for her notes since we started university&nbsp;[^fn:1]. She meticulously pagemarks and sorts all her notes into plastic sleeves and binders.
+}
+
+\p{
+  I am not like my fiancé. My workflow for most of my first five years at university consisted of the following:
+}
+
+\p{
+  -   Keep a stack of papers and ballpoint pens in my backpack (along with the books I'm using and my laptop and so on).
+  -   When you sit down to work somewhere, get laptop, stack of papers, and a ballpoint pen out.
+  -   When you need to think, locate a blank spot on a piece of paper in front of you and write there.
+      -   If there's no space, go through the papers until you find some space.
+  -   When you stop working, gather all the papers into your backpack.
+  -   Periodically go through your papers and throw out any that have writing all over them
+  -   Periodically add a fresh dump of blank papers to your backpack.
+}
+
+\p{
+  The two points I want to make here is:
+}
+
+\p{
+  -   I am a very disorganized person
+  -   I fucking love paper
+}
+
+\p{
+  Paper is awesome. I am long paper. Whoever you are, you should be using more paper.
+  There's absolutely no reason to strain your head to the breaking point, keeping a bunch of things inside it, instead of putting them on paper. Actually, if you take one recommendation from this review, just make sure to keep paper and pen wherever you work and use it all the time. Go to [these](https://www.amazon.co.uk/HP-Office-A4-gsm-500sh/dp/B000JTKDCW/ref=sr\%5F1\%5F24?dchild=1&keywords=blank+paper&qid=1604957654&sr=8-24) [links](https://www.amazon.co.uk/Zebra-01951-Z-Grip-Ballpoint-Pen/dp/B000KN2B4A/ref=sr\%5F1\%5F13?dchild=1&keywords=ballpoint+pens&qid=1604957742&sr=8-13) to buy some _right now_, they're cheap (but you probably have this stuff already - use it!). See also [Paper Trauma](https://www.lesswrong.com/posts/GpDjJFeCQCLjpt68b/paper-trauma). I also invite you to consider [buying a big notebook](http://acritch.com/notepad/), but I haven't tried that yet myself.
+}
+
+\p{
+  But paper has some limitations:
+}
+
+\p{
+  -   You sometimes run out
+  -   If you want to write your notes about something you're reading on paper, the best place is the thing you're reading - but this requires that it be on paper (instead of a computer). This means you have to buy a book (these have a tendency to pile up rapidly, if it even is a book you can buy) or print it out (this tends to be messy, and you might not have a printer. Back at the university of Copenhagen, I used to print out a lot of stuff and spiral-back it, but I can't do this any more).
+  -   Sometimes you lose your old paper where you wrote something important (usually, because you didn't know at the time it would be important).
+  -   It's easy to make a mess by creating a huge stack of paper. If you're like me, "clean up your big pile of papers" can sometimes become a bit of an "ugh" task that you can't get around to and which sucks up a lot of energy.
+}
+
+\p{
+  Enter the [reMarkable 2](https://remarkable.com/). A "next-generation paper tablet", it promises you that you can "Replace your notebooks and printed documents with the only tablet that feels like paper". Naturally, I was intrigued.
+}
+}
 \subtree{
-    \title{Notes about the OS }
-    \p{
-        The "OS", as it is, is basically just a folder structure where you can arrange pdfs, EPUBs (I haven't tried this), and "notebooks", which are basically collections of pages of your drawing/writing/scribbling. You can also add things to "favorites" and sort by "type" (notebook/pdf/EPUB). It's not amazing, especially since it's a bit sluggish to use, but it does the job.
-    }
-    \p{
-        You can get stuff out of and into the reMarkable in a few ways:
-    }
-    \ul{
-        \li{
-            If you create an account in their server and connect it, it automatically syncs to their cloud, and you can get at this data from a desktop app and a mobile app. These are also how you get stuff into it. The syncing here is pretty slow, so I don't use this a lot.
-        }
-        \li{
-            You can send a mail from the tablet with a collection of pages - either annotated pdf/epub or raw notebook. This is what I do, and it works great!
-        }
-        \li{
-            There's also a browser extension which turns a website into an EPUB and sends it to the tablet. It works okay, about the same as something like Pocket or Instapaper.
-        }
-        \li{
-            You can also have the reMarkable convert you handwriting into text and send it as an email. This is actually surprisingly (to me) good, but probably not quite good enough to send a mail without proofreading (you can check and edit the message on the tablet before sending).
-        }
-    \p{
+  \title{General experience and thoughts}
+\p{
+  The writing experience is _very very good_. It doesn't quite feel like paper - it's not _that_ close - but apart from actually writing on paper it's the best I've tried (having, admittedly, not tried that many). It's leagues ahead of writing on a "normal" tablet using a stylus.
+}
+
+\p{
+  Drawing on the reMarkable has the following advantages over paper:
+}
+
+\p{
+  -   You can erase things, perfectly
+  -   You can undo/redo strokes
+  -   You can zoom
+  -   You can select and move things
+  -   There's layers, like in image editing software.
+}
+
+\p{
+  The surface feels a bit too smooth - it doesn't have the same friction as dragging a pen over paper. It's still better than a normal screen (like a iPad) though. You can tell they added some texture to make this more lifelike, but it's not the same.
+}
+
+\p{
+  Not surprisingly, it's a bit awkward to hold the tablet with one hand and write with the other. The holding hand doesn't provide quite enough support. You really need to support it with a table or your knees or something.
+}
+
+\p{
+  Probably the biggest thing I would like is a bigger screen.
+}
+  \subtree{
+    \title{Notes about the OS}
+\p{
+    The "OS", as it is, is basically just a folder structure where you can arrange pdfs, EPUBs (I haven't tried this), and "notebooks", which are basically collections of pages of your drawing/writing/scribbling.
+    You can also add things to "favorites" and sort by "type" (notebook/pdf/EPUB).
+    It's not amazing, especially since it's a bit sluggish to use, but it does the job.
+}
+
+\p{
+    You can get stuff out of and into the reMarkable in a few ways:
+}
+
+\p{
+    -   If you create an account in their server and connect it, it automatically syncs to their cloud, and you can get at this data from a desktop app and a mobile app. These are also how you get stuff into it. The syncing here is pretty slow, so I don't use this a lot.
+    -   You can send a mail from the tablet with a collection of pages - either annotated pdf/epub or raw notebook. This is what I do, and it works great!
+    -   There's also a browser extension which turns a website into an EPUB and sends it to the tablet. It works okay, about the same as something like Pocket or Instapaper.
+    -   You can also have the reMarkable convert you handwriting into text and send it as an email. This is actually surprisingly (to me) good, but probably not quite good enough to send a mail without proofreading (you can check and edit the message on the tablet before sending).
         The first line in the following picture was converted without error, while the second became "The Quick brown tote jumps over the lazy chef".
-    }
-    }
-    \p{
-        {{< figure src="/ox-hugo/remarkable_quickbrownfox.png" >}}
-    }
-    \p{
+}
+
+        \<html:img>[src]{\route-asset{assets/images/ox-hugo/remarkable_quickbrownfox.png}}{}
+
+\p{
         I haven't tested this extensively, and I expect it to do worse on other languages than English (you can switch the language used in the setting menu).
-    }
+  }
 }
-\subtree{
-    \title{The physical feel of things }
-    \p{
-        The pen weighs 19g, and feels about like an ordinary ballpoint pen/fineliner in the hand. I would have liked a bit more weight, but it's not a big deal.
-    }
-    \p{
-        The tablet is pretty light. Holding it in one hand is a bit heavy for me - not TOO heavy to use like that, but I probably won't read like that for, say, multiple hours. This is not a big deal though.
-    }
-    \p{
-        The "Book Folio" cover is fine. It's fairly basic, certainly not "worth" 100 EUR - if there was a market for accesories, you could certainly buy a better one much cheaper. It essentially consists of two pieces of sturdy cardboard (I think), covered on the outside by light grey fabric and on the inside by something that feels like felt. The tablet attached to the backside by magnets - these are not that strong, but they do the job. The pen simply attached to the tablet itself by magnets - again, these do the job, but I would have liked them to be a bit stronger. I am slightly worried about the pen falling off in a bag full of mess and getting into trouble. The front piece also attaches by (weaker) magnets when closed, so it doesn't open by itself.
-    }
+  \subtree{
+    \title{The physical feel of things}
+\p{
+    The pen weighs 19g, and feels about like an ordinary ballpoint pen/fineliner in the hand. I would have liked a bit more weight, but it's not a big deal.
 }
+
+\p{
+    The tablet is pretty light. Holding it in one hand is a bit heavy for me - not TOO heavy to use like that, but I probably won't read like that for, say, multiple hours. This is not a big deal though.
 }
-\subtree{
-    \title{Notes about my "workflow" }
-    \p{
-        The basic things I've done with the reMarkable so far breaks down into roughly three categories:
-    }
-    \ul{
-        \li{
-            During video meetings, I've scratched notes on the tablet
-        }
-        \li{
-            I've put things on the tablet to read, and scribbled in the margins while I did so
-        }
-        \li{
-            I've used the blank pages (notebooks) to work on.
-        }
-    }
-\subtree{
-    \title{Meeting notes }
-    \p{
-        The device doesn't really shine here. The only advantage it has over writing on the computer is that I can keep the window with people's faces visible while writing, which I could do anyway if I had a second monitor. There's something nice about paper writing - maybe the flexibility of not being limited to one line after the other? Maybe something physical? That this captures but writing on the computer doesn't, though. But this is a small advantage.
-    }
-}
-\subtree{
-    \title{Reading and scribbling }
-    \p{
-        This is the real killer app for me. As noted above, you can put your pdfs on the reMarkable and read them. And while reading them, you can scribble on them. I am one of those people who likes to constantly doodle on things, so the eraser really comes in handy here - I can make a scribble, then erase it, so the margins don't get covered in random noise. This is an advantage I hadn't thought of.
-    }
-    \p{
-        After scribbling and highlighting and so on, I usually send annotated pages to my email. Then they can become part of my diginal notes.
-    }
-    \p{
-        I think the fact that this doesn't browse the internet is probably a huge advantage, because it adds a bit of friction to checking twitter, making me distract myself less. Just having a pdf reader that can't check twitter might contribute a huge amount of value.
-    }
-}
-\subtree{
-    \title{Working on blank paper }
-    \p{
-        As mentioned above, using blank paper to think on is really important to me. On the reMarkable, there's a distinguished "quick pages" notebook with a permanent shortcut to it on the top. This gives you an infinite supply of blank pages to work on. I also use a few other notebooks to collect thoughts about various projects, but this is not very well-organized. The biggest drawback here is that the pages are not very large. I think the screen is slightly broader than A6 format (checked by holding up a folded sheet of A4). This is not optimal - I would like to be able to draw bigger things, to keep more thoughts on the page at once. The jury is still out, but I can't imagine the reMarkable will permanently replace paper in this domain for me - at best, it will supplement it.
-    }
+
+\p{
+    The "Book Folio" cover is fine. It's fairly basic, certainly not "worth" 100 EUR - if there was a market for accesories, you could certainly buy a better one much cheaper. It essentially consists of two pieces of sturdy cardboard (I think), covered on the outside by light grey fabric and on the inside by something that feels like felt. The tablet attached to the backside by magnets - these are not that strong, but they do the job. The pen simply attached to the tablet itself by magnets - again, these do the job, but I would have liked them to be a bit stronger. I am slightly worried about the pen falling off in a bag full of mess and getting into trouble. The front piece also attaches by (weaker) magnets when closed, so it doesn't open by itself.
+  }
 }
 }
 \subtree{
-    \title{Notes on price & comparison to other products }
-    \p{
-        The reMarkable 2 device itself costs 400 EUR (473 USD at current rates, but prices may differ by region). This price point is severely misleading, since it's more or less useless unless you buy a pen (you can read on it, of course, but if that's all you want to do I would definitely consider it overpriced).
-    }
-    \p{
-        The basic "Marker" costs 60 EUR, and the "Marker plus" costs 100 EUR. The only difference is that the plus weighs slightly more and that you can use the rear end to erase. It's probably best to just consider the base price of the device 460 EUR and ask whether you want to pay 40 EUR for the eraser.
-    }
-    \p{
-        Lastly, you can purchase a cover, or "folio". Here your options are the basic folio for 80 EUR, which is simply a sleeve that you can slide the reMarkable into, and the "Book Folio", which is essentially a folder, which magnetically attaches to the back of the reMarkable and wraps around it. This costs 100 EUR for the basic "polymer weave", and 150 EUR for the black or brown "Premium Leather" version. These are "overpriced" in the sense that, if there was a market for reMarkable accessories, you would certainly be able to buy much better protective covers for much less. But there isn't, so you're stuck with these, and the question is whether they're worth the money.
-    }
-    \p{
-        You can also buy a reMarkable 1 with basic Folio and (non-eraser) Marker for 349 EUR.
-    }
-    \p{
-        When I bought my reMarkable, I paid a reduced price because I was buying it early. I bought the Marker Pro and the Polymer Weave Book Folio, and ended up paying 460 EUR.
-    }
-    \p{
-        So how much does the reMarkable 2 cost? Based on my experience so far, the built-in eraser is super convenient and well worth the money. You probably want _some_ sort of protective cover, to prevent the screen from getting dings and scratches, but I have to stress that the Folios really seem to be nothing special. If I was buying it again I would probably buy the Book Folio again, just because 20 EUR isn't a lot and it seems a bit incovenient to be taking it in and out of the sleeve all the time. On that basis, it costs 600 EUR, or ~710 USD.
-    }
-    \p{
-        That's a lot. For that money you could buy an iPad (329 USD), Apple Pencil (129), and a smart cover (50), and still have money left over. You could use that money to buy extra memory for the iPad, cellular web access (not a killer app for me, but the reMarkable lacks it). You could even buy an iPad Air, if you maybe skimped out on the cover. I didn't look into the Android options, but presumably those are even cheaper. So if you're looking for a "general work tablet", you should probably skip the reMarkable. If you're looking for the paper feeling, you could consider [Paperlike](https://paperlike.com/), for just 40 USD (which I have not tried and cannot opine on).
-    }
-    \p{
-        reMarkable really has nothing in the way of tablet features. You can't install any apps (actually, there's a small community of hackers, but nobody is seriously developing third-party software). You wouldn't want to install any of the apps you have on other devices even if you could, because the refresh speed is too low for most "normal" software to really be usable. You can't browse the internet.
-    }
-    \p{
-        What you can do is basically:
-    }
-    \ul{
-        \li{
-            Write and draw with a stylus like you were drawing on blank paper
-        }
-        \li{
-            Read pdfs and ebooks, and write on them.
-        }
-    }
-    \p{
-        If stuff like that is such an important part of your workflow that getting a significantly better experience than you would doing the same thing on an iPad is worth giving up _all of the iPad's other features_, you should consider the reMarkable. Personally, this is basically the only reason I would really want to own a tablet anyway. In fact, the fact that I can't browse the internet on it is probably a strong feature in its favor, since it makes it harder to distract yourself with twitter.
-    }
-    \p{
-        Another comparison is with the line of products from [Boox](https://www.boox.com). The most direct comparison is with the [Note Air](https://www.boox.com/noteair), which has a similar form factor and price point. There is also [Supernote](https://supernote.com/#/). I have no experience with any of these. It seems that the Boox Note Air is generally more feature-rich than the reMarkable - it actually runs Android, and is thus closer to a "proper" tablet. [This review](https://goodereader.com/blog/reviews/remarkable-2-vs-the-onyx-boox-note-air) may provide some information, and recommends the Note Air.
-    }
-    \p{
-        I have to say these products are really tempting me, especially the ones with larger screens. If I was buying a new "paper tablet" today, I would seriously consider them.
-    }
+  \title{Notes about my "workflow"}
+\p{
+  The basic things I've done with the reMarkable so far breaks down into roughly three categories:
+}
+
+\p{
+  -   During video meetings, I've scratched notes on the tablet
+  -   I've put things on the tablet to read, and scribbled in the margins while I did so
+  -   I've used the blank pages (notebooks) to work on.
+}
+  \subtree{
+    \title{Meeting notes}
+\p{
+    The device doesn't really shine here. The only advantage it has over writing on the computer is that I can keep the window with people's faces visible while writing, which I could do anyway if I had a second monitor.
+    There's something nice about paper writing - maybe the flexibility of not being limited to one line after the other? Maybe something physical? That this captures but writing on the computer doesn't, though. But this is a small advantage.
+  }
+}
+  \subtree{
+    \title{Reading and scribbling}
+\p{
+    This is the real killer app for me. As noted above, you can put your pdfs on the reMarkable and read them. And while reading them, you can scribble on them. I am one of those people who likes to constantly doodle on things, so the eraser really comes in handy here - I can make a scribble, then erase it, so the margins don't get covered in random noise. This is an advantage I hadn't thought of.
+}
+
+\p{
+    After scribbling and highlighting and so on, I usually send annotated pages to my email. Then they can become part of my diginal notes.
+}
+
+\p{
+    I think the fact that this doesn't browse the internet is probably a huge advantage, because it adds a bit of friction to checking twitter, making me distract myself less. Just having a pdf reader that can't check twitter might contribute a huge amount of value.
+  }
+}
+  \subtree{
+    \title{Working on blank paper}
+\p{
+    As mentioned above, using blank paper to think on is really important to me. On the reMarkable, there's a distinguished "quick pages" notebook with a permanent shortcut to it on the top. This gives you an infinite supply of blank pages to work on.
+    I also use a few other notebooks to collect thoughts about various projects, but this is not very well-organized.
+    The biggest drawback here is that the pages are not very large. I think the screen is slightly broader than A6 format (checked by holding up a folded sheet of A4). This is not optimal - I would like to be able to draw bigger things, to keep more thoughts on the page at once. The jury is still out, but I can't imagine the reMarkable will permanently replace paper in this domain for me - at best, it will supplement it.
+  }
+}
+}
+\subtree{
+  \title{Notes on price & comparison to other products}
+\p{
+  The reMarkable 2 device itself costs 400 EUR (473 USD at current rates, but prices may differ by region).
+  This price point is severely misleading, since it's more or less useless unless you buy a pen (you can read on it, of course, but if that's all you want to do I would definitely consider it overpriced).
+}
+
+\p{
+  The basic "Marker" costs 60 EUR, and the "Marker plus" costs 100 EUR.
+  The only difference is that the plus weighs slightly more and that you can use the rear end to erase.
+  It's probably best to just consider the base price of the device 460 EUR and ask whether you want to pay 40 EUR for the eraser.
+}
+
+\p{
+  Lastly, you can purchase a cover, or "folio".
+  Here your options are the basic folio for 80 EUR, which is simply a sleeve that you can slide the reMarkable into,
+  and the "Book Folio", which is essentially a folder, which magnetically attaches to the back of the reMarkable and wraps around it.
+  This costs 100 EUR for the basic "polymer weave", and 150 EUR for the black or brown "Premium Leather" version.
+  These are "overpriced" in the sense that, if there was a market for reMarkable accessories, you would certainly be able to buy much better protective covers for much less. But there isn't, so you're stuck with these, and the question is whether they're worth the money.
+}
+
+\p{
+  You can also buy a reMarkable 1 with basic Folio and (non-eraser) Marker for 349 EUR.
+}
+
+\p{
+  When I bought my reMarkable, I paid a reduced price because I was buying it early. I bought the Marker Pro and the Polymer Weave Book Folio, and ended up paying 460 EUR.
+}
+
+\p{
+  So how much does the reMarkable 2 cost? Based on my experience so far, the built-in eraser is super convenient and well worth the money. You probably want _some_ sort of protective cover, to prevent the screen from getting dings and scratches, but I have to stress that the Folios really seem to be nothing special. If I was buying it again I would probably buy the Book Folio again, just because 20 EUR isn't a lot and it seems a bit incovenient to be taking it in and out of the sleeve all the time.
+  On that basis, it costs 600 EUR, or ~710 USD.
+}
+
+\p{
+  That's a lot.
+  For that money you could buy an iPad (329 USD), Apple Pencil ($129), and a smart cover ($50), and still have money left over.
+  You could use that money to buy extra memory for the iPad, cellular web access (not a killer app for me, but the reMarkable lacks it). You could even buy an iPad Air, if you maybe skimped out on the cover. I didn't look into the Android options, but presumably those are even cheaper. So if you're looking for a "general work tablet", you should probably skip the reMarkable.
+  If you're looking for the paper feeling, you could consider [Paperlike](https://paperlike.com/), for just 40 USD (which I have not tried and cannot opine on).
+}
+
+\p{
+  reMarkable really has nothing in the way of tablet features. You can't install any apps (actually, there's a small community of hackers, but nobody is seriously developing third-party software). You wouldn't want to install any of the apps you have on other devices even if you could, because the refresh speed is too low for most "normal" software to really be usable.
+  You can't browse the internet.
+}
+
+\p{
+  What you can do is basically:
+}
+
+\p{
+  -   Write and draw with a stylus like you were drawing on blank paper
+  -   Read pdfs and ebooks, and write on them.
+}
+
+\p{
+  If stuff like that is such an important part of your workflow that getting a significantly better experience than you would doing the same thing on an iPad is worth giving up _all of the iPad's other features_, you should consider the reMarkable. Personally, this is basically the only reason I would really want to own a tablet anyway. In fact, the fact that I can't browse the internet on it is probably a strong feature in its favor, since it makes it harder to distract yourself with twitter.
+}
+
+\p{
+  Another comparison is with the line of products from [Boox](https://www.boox.com). The most direct comparison is with the [Note Air](https://www.boox.com/noteair), which has a similar form factor and price point. There is also [Supernote](https://supernote.com/#/). I have no experience with any of these. It seems that the Boox Note Air is generally more feature-rich than the reMarkable - it actually runs Android, and is thus closer to a "proper" tablet. [This review](https://goodereader.com/blog/reviews/remarkable-2-vs-the-onyx-boox-note-air) may provide some information, and recommends the Note Air.
+}
+
+\p{
+  I have to say these products are really tempting me, especially the ones with larger screens. If I was buying a new "paper tablet" today, I would seriously consider them.
+}
+
+\p{
+  [^fn:1]: for the record, her opinion of my reMarkable was that it seemed awesome, but it was a nonstarter for her, because it didn't do colors
+}
 }

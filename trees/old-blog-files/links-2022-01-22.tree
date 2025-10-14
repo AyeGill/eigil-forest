@@ -1,20 +1,14 @@
-\import{macros}
-\title{Links 2022-01-22}
 \date{2022-01-22}
-    \ul{
-        \li{
-            [Dordle](https://zaratustra.itch.io/dordle), a Wordle variant where you have to guess two words at the same time.
-        }
-        \li{
-            [Intercats](https://topos.site/intercats/), a new seminar from the Topos Institute on "categorical interaction". I'm scheduled to speak here (in June, so don't get too excited yet)
-        }
-        \li{
-            [How To Become A Magician](https://www.nicoledieker.com/p/how-to-become-a-magician). See also [Becoming A Magician](https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/).
-        }
-        \li{
-            [Postmortem on RatVac](https://www.lesswrong.com/posts/McN9BNtNcbYNfdCB5/postmortem-on-ratvac). I have the highest level of respect for everyone who made their own vaccine - major props.
-        }
-        \li{
-            [Compositional Thermostatics](https://golem.ph.utexas.edu/category/2021/11/compositional_thermostatics.html) from Baez, Lynch, and Moeller. I can also recommend Owen's [blog](https://owenlynch.org/).
-        }
-    }
+\author{eigil-rischel}
+\title{Links 2022-01-22}
+
+\ul{
+  \li{[Dordle](https://zaratustra.itch.io/dordle), a Wordle variant where you have to guess two words at the same time.}
+  \li{[Intercats](https://topos.site/intercats/), a new seminar from the Topos Institute on "categorical interaction". I'm scheduled to speak here (in June, so don't get too excited yet)}
+  \li{[How To Become A Magician](https://www.nicoledieker.com/p/how-to-become-a-magician). See also [Becoming A Magician](https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/).}
+  \li{[Postmortem on RatVac](https://www.lesswrong.com/posts/McN9BNtNcbYNfdCB5/postmortem-on-ratvac). I have the highest level of respect for everyone who made their own vaccine - major props.}
+  \li{[Compositional Thermostatics](https://golem.ph.utexas.edu/category/2021/11/compositional_thermostatics.html) from Baez, Lynch, and Moeller. I can also recommend Owen's [blog](https://owenlynch.org/).}
+\p{
+}
+}
+

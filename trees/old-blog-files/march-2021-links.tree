@@ -1,40 +1,54 @@
+\date{2021-03-28}
 \author{eigil-rischel}
-\date{2021-03-28T14:24:00+01:00}
-\import{macros}
 \title{March 2021 Links}
-    \p{
-        Also contains links from February.
-    }
-    \p{
-        [Fantastic Anachronism: Two Paths to the Future](https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/)
-    }
-    \p{
-        [Ansuz: What color are your bits?](https://ansuz.sooke.bc.ca/entry/23) What do the notions of "random number" and "copyrighted music" have in common? They're not about the specific bits under consideration, but about their _color_.
-    }
-    \p{
-        [mike_hawke: Some random parenting ideas](https://www.lesswrong.com/posts/6vPvpTZTBqe6evmKL/some-random-parenting-ideas).
-    }
-    \p{
-        [Zvi: Why I Am Not In Charge](https://www.lesswrong.com/posts/cR7Zfrc4BtnFes46y/why-i-am-not-in-charge)
-    }
-    \p{
-        I was very taken with Lucy Greer's blog [drossbucket](https://drossbucket.com/) in general, and I particularly enjoyed this recent post: [Speedrun: "Sensemaking"](https://drossbucket.com/2021/03/14/speedrun-sensemaking/), where she tries find out as much as she can about this nebulous term in one hour. Seems like a cool thing to emulate!
-    }
-    \p{
-        [Michael Nielsen: Maps of Matter](https://futureofmatter.com/maps_of_matter.html).
-    }
-    \p{
-        [Derek Sivers: There is no speed limit](https://sive.rs/kimo)
-    }
-    \p{
-        [Autotranslucence: Becoming a Magician](https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/)
-    }
-    \p{
-        Higman's embedding theorem states that a finitely generated group can be embedded as a subgroup of a finitely presented group precisely if there is a presentation where the relations are recursively enumerable, i.e there is a computer program that generates them one after the other. Of course this statement makes sense if you replace "group" here by any single-sorted algebraic theory (i.e Lawvere theory) - [The Boone Conjecture](https://ncatlab.org/nlab/show/Boone+conjecture) is the conjecture that it's always true. This is now known to be false in general, but of course the problem of characterizing those algebraic theories which have this property remains. I find this extremely cool because it reduces a question about computability theory - which seems to require a lot of essentially arbitrary choices about how powerful the model of computation should be, etc - to a purely algebraic question.
-    }
-    \p{
-        [Hillel Wayne: A Binder Full Of Questions](https://buttondown.email/hillelwayne/archive/a-binder-full-of-questions/).
-    }
-    \p{
-        [Mark Xu: Strong Evidence is Common](https://www.lesswrong.com/posts/JD7fwtRQ27yc8NoqS/strong-evidence-is-common).
-    }
+
+\p{
+Also contains links from February.
+}
+
+\p{
+[Fantastic Anachronism: Two Paths to the Future](https://fantasticanachronism.com/2021/03/23/two-paths-to-the-future/)
+}
+
+\p{
+[Ansuz: What color are your bits?](https://ansuz.sooke.bc.ca/entry/23) What do the notions of "random number" and "copyrighted music" have in common? They're not about the specific bits under consideration, but about their _color_.
+}
+
+\p{
+[mike_hawke: Some random parenting ideas](https://www.lesswrong.com/posts/6vPvpTZTBqe6evmKL/some-random-parenting-ideas).
+}
+
+\p{
+[Zvi: Why I Am Not In Charge](https://www.lesswrong.com/posts/cR7Zfrc4BtnFes46y/why-i-am-not-in-charge)
+}
+
+\p{
+I was very taken with Lucy Greer's blog [drossbucket](https://drossbucket.com/) in general, and I particularly enjoyed this recent post: [Speedrun: "Sensemaking"](https://drossbucket.com/2021/03/14/speedrun-sensemaking/), where she tries find out as much as she can about this nebulous term in one hour. Seems like a cool thing to emulate!
+}
+
+\p{
+[Michael Nielsen: Maps of Matter](https://futureofmatter.com/maps\%5Fof\%5Fmatter.html).
+}
+
+\p{
+[Derek Sivers: There is no speed limit](https://sive.rs/kimo)
+}
+
+\p{
+[Autotranslucence: Becoming a Magician](https://autotranslucence.wordpress.com/2018/03/30/becoming-a-magician/)
+}
+
+\p{
+Higman's embedding theorem states that a finitely generated group can be embedded as a subgroup of a finitely presented group precisely if there is a presentation where the relations are recursively enumerable, i.e there is a computer program that generates them one after the other.
+Of course this statement makes sense if you replace "group" here by any single-sorted algebraic theory (i.e Lawvere theory) - [The Boone Conjecture](https://ncatlab.org/nlab/show/Boone+conjecture) is the conjecture that it's always true.
+This is now known to be false in general, but of course the problem of characterizing those algebraic theories which have this property remains.
+I find this extremely cool because it reduces a question about computability theory - which seems to require a lot of essentially arbitrary choices about how powerful the model of computation should be, etc - to a purely algebraic question.
+}
+
+\p{
+[Hillel Wayne: A Binder Full Of Questions](https://buttondown.email/hillelwayne/archive/a-binder-full-of-questions/).
+}
+
+\p{
+[Mark Xu: Strong Evidence is Common](https://www.lesswrong.com/posts/JD7fwtRQ27yc8NoqS/strong-evidence-is-common).
+}

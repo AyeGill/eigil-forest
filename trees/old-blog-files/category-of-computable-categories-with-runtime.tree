@@ -1,135 +1,164 @@
-\date{2020-10-09T00:00:00Z}
+\date{2020-10-09}
 \author{eigil-rischel}
-\import{macros}
 \title{A category of computable functions with runtime}
-    \p{
-        See: [Giorgios Bakirtzis and Christian Williams: Turing Categories](https://golem.ph.utexas.edu/category/2019/08/turing_categories.html). Turing Categories describe _computability_. I want to find a category to work with _complexity_ instead. This is a stab at it. Fix a universal Turing machine and an encoding of the natural numbers. Of course, this lets us speak of _computable_ functions #{\mathbb{N} \to \mathbb{N}} (and these don't depend on the choice of Turing machine). But fixing a specific machine also lets us speak of the _runtime_, in steps, of a program #{p} with input #{n \in \mathbb{N}}. Write #{p(n) = m} if #{p(n)} eventually terminates with output #{m}, and write #{T(p,n) = t} if it takes #{t} steps.
-    }
-    \p{
-        Now we want to define a category as follows:
-    }
-    \ul{
-        \li{
-            The objects are subsets of the natural numbers.
-        }
-        \li{
-            The maps #{A \to B} are equivalence classes of programs under an "asymptotic equivalence" relation.
-        }
-        \li{
-            The composition is "the obvious thing".
-        }
-    }
-    \p{
-        What I mean by asymptotic equivalence is this: the two programs halt on the same inputs, produce the same outputs, and run in the same amount of time up to a constant factor. To be more precise, #{p \lesssim p' : A \to B} if there exists a constant #{C} so that, when #{p(n) = m} and #{T(p,n) = t}, #{p'(n) = m} and #{T(p,n) \leq Ct}. Then #{p \sim p'} if #{p \lesssim p'} and #{p' \lesssim p}.
-    }
-    \p{
-        This corresponds to our natural definition of "same behaviour, and same #{O}-class".
-    }
-    \p{
-        Now, we want to construct the composition #{pp'} simply to have #{pp'(n) = p(p'(n))} and #{T(pp',n) = T(p',n) + T(p,p'(n))}. (This means that if #{p'(n)} halts with output #{m}, and #{p(m)} halts with output #{k}, then #{pp'(n)} halts with output #{k}, and has the runtime described above, otherwise it doesn't halt). It's not completely trivial that this is possible - essentially, the "overhead of composition" must be smaller than the runtime of the larger of #{p} and #{p'}. We must add this as a requirement to our Turing machine - luckily, this seems to be satisfied by most sane models of computation.
-    }
-    \p{
-        Call the category so defined #{\mathrm{Comp}}.
-    }
-\subtree{
-    \title{Comp as a restriction category }
-    \p{
-        Given a program #{p: A \to B}, we can define #{\bar{p}: A \to A} as follows: to compute #{\bar{p}(n)}, run #{p(n)} until completion, then return #{n} no matter what.
-    }
-    \p{
-        Certainly any universal Turing machine admits this construction. Does this define a restriction category? Recall the axioms of a restriction category:
-    }
-    \ol{
-        \li{
-            #{f\bar{f} = f}
-        }
-        \li{
-            #{\bar{f}\bar{g} = \bar{g}\bar{f}}
-        }
-        \li{
-            #{\overline{g\bar{f}} = \bar{g}\bar{f}}
-        }
-        \li{
-            #{\bar{g}f = f\overline{gf}}
-        }
-    }
-    \p{
-        (If these compositions are well-defined).
-    }
-    \ol{
-        \li{
-            Clearly #{f\bar{f}} has the same values as #{f}.
-        }
-    \p{
-        It runs in almost exactly twice the runtime of #{f}, plus whatever the overhead of composition and the #{\bar{(-)}} construction is. It is not actually completely obvious that this is small enough for _every_ universal Turing machine. Nevertheless, the assumption that #{T(\bar{p},n) \leq T(p,n) + C} for some constant #{C} seems rather harmless, which suffices here.
-    }
-        \li{
-            #{\bar{f}\bar{g}} and #{\bar{g}\bar{f}}, again, clearly have the same values. With the assumption from above, the runtime is also asymptotically the same.
-        }
-        \li{
-            Once again it's easy to see that the two maps have the same values.
-        }
-    \p{
-        The first one runs in #{T(g,n) + T(f,n) + 2C}, and so does the second one, hence they have the same (asymptotically) runtime.
-    }
-        \li{
-            Here the claim about equivalent runtimes is a bit more subtle.
-        }
-    \p{
-        The first one takes #{T(f,n) + T(g,f(n))} time (up to asymptotic equivalence). The second one takes #{T(f,n) + T(g,f(n)) + T(f,n)}. But these two are equivalent - the second is at most twice the first.
-    }
-    }
-    \p{
-        Hence #{\mathsf{Comp}} is a restriction category.
-    }
+
+\p{
+See: [Giorgios Bakirtzis and Christian Williams: Turing Categories](https://golem.ph.utexas.edu/category/2019/08/turing\%5Fcategories.html).
+Turing Categories describe _computability_.
+I want to find a category to work with _complexity_ instead.
+This is a stab at it.
+Fix a universal Turing machine and an encoding of the natural numbers.
+Of course, this lets us speak of _computable_ functions #{\mathbb{N} \to \mathbb{N}} (and these don't depend on the choice of Turing machine).
+But fixing a specific machine also lets us speak of the _runtime_, in steps, of a program #{p} with input #{n \in \mathbb{N}}.
+Write #{p(n) = m} if #{p(n)} eventually terminates with output #{m}, and write #{T(p,n) = t} if it takes #{t} steps.
+}
+
+\p{
+Now we want to define a category as follows:
+}
+
+\ul{
+  \li{The objects are subsets of the natural numbers.}
+  \li{The maps #{A \to B} are equivalence classes of programs under an "asymptotic equivalence" relation.}
+  \li{The composition is "the obvious thing".}
+\p{
+}
+}
+
+\p{
+What I mean by asymptotic equivalence is this: the two programs halt on the same inputs, produce the same outputs, and run in the same amount of time up to a constant factor.
+To be more precise, #{p \lesssim p' : A \to B} if there exists a constant #{C} so that, when #{p(n) = m} and #{T(p,n) = t},
+#{p'(n) = m} and #{T(p,n) \leq Ct}.
+Then #{p \sim p'} if #{p \lesssim p'} and #{p' \lesssim p}.
+}
+
+\p{
+This corresponds to our natural definition of "same behaviour, and same #{O}-class".
+}
+
+\p{
+Now, we want to construct the composition #{pp'} simply to have #{pp'(n) = p(p'(n))} and #{T(pp',n) = T(p',n) + T(p,p'(n))}.
+(This means that if #{p'(n)} halts with output #{m}, and #{p(m)} halts with output #{k}, then #{pp'(n)} halts with output #{k}, and has the runtime described above, otherwise it doesn't halt).
+It's not completely trivial that this is possible - essentially, the "overhead of composition" must be smaller than the runtime of the larger of #{p} and #{p'}.
+We must add this as a requirement to our Turing machine - luckily, this seems to be satisfied by most sane models of computation.
+}
+
+\p{
+Call the category so defined #{\mathrm{Comp}}.
 }
 \subtree{
-    \title{Comp as a Cartesian restriction category. }
-    \p{
-        Do "restriction products" exist in #{\mathsf{Comp}}. This would seem to rely on a _constant-time_ bijection #{\mathbb{N} \cong \mathbb{N} \times \mathbb{N}}. I am fairly sure this doesn't exist - since the encoding size of a natural number grows as the logarithm, it would seem that such a bijection must have unbounded runtime.
-    }
-    \p{
-        This may be remedied by passing to a less restrictive form of equivalence. For example, suppose we can find a logarithmic-time implementation of the above bijection. Then we can alter the definition of #{\lesssim} so that #{p \lesssim p'} as long as there exists #{C} so that #{T(p',n) \leq CT(p,n)\log(n)} (and they have the same values). There are other reasons to prefer this equivalence relation. It is not in general true that universal Turing machines can simulate each other with _constant_ overhead. This means that the choice of UTM made at the beginning of this post is actually significant. But it _is_ true that they can simulate each other with _logarithmic_ overhead.&nbsp;[^fn:1] This means the choice of machine is unimportant, making for a much nicer theory.
-    }
-    \p{
-        The construction of this correspondence does seem to be the only obstruction to equipping #{\mathsf{Comp}} with a Cartesian restriction structure, in the "obvious" way (where #{A \times B} is the subset of #{\mathbb{N}} which corresponds under this bijection to a pair #{(a\in A, b \in B)}.)
-    }
+  \title{Comp as a restriction category}
+\p{
+  Given a program #{p: A \to B}, we can define #{\bar{p}: A \to A} as follows: to compute #{\bar{p}(n)}, run #{p(n)} until completion, then return #{n} no matter what.
+}
+
+\p{
+  Certainly any universal Turing machine admits this construction. Does this define a restriction category?
+  Recall the axioms of a restriction category:
+}
+
+\p{
+  1.  #{f\bar{f} = f}
+  2.  #{\bar{f}\bar{g} = \bar{g}\bar{f}}
+  3.  #{\overline{g\bar{f}} = \bar{g}\bar{f}}
+  4.  #{\bar{g}f = f\overline{gf}}
+}
+
+\p{
+  (If these compositions are well-defined).
+}
+
+\p{
+  1.  Clearly #{f\bar{f}} has the same values as #{f}.
+      It runs in almost exactly twice the runtime of #{f}, plus whatever the overhead of composition and the #{\bar{(-)}} construction is.
+      It is not actually completely obvious that this is small enough for _every_ universal Turing machine.
+      Nevertheless, the assumption that #{T(\bar{p},n) \leq T(p,n) + C} for some constant #{C} seems rather harmless, which suffices here.
+  2.  #{\bar{f}\bar{g}} and #{\bar{g}\bar{f}}, again, clearly have the same values. With the assumption from above, the runtime is also asymptotically the same.
+  3.  Once again it's easy to see that the two maps have the same values.
+      The first one runs in #{T(g,n) + T(f,n) + 2C}, and so does the second one, hence they have the same (asymptotically) runtime.
+  4.  Here the claim about equivalent runtimes is a bit more subtle.
+      The first one takes #{T(f,n) + T(g,f(n))} time (up to asymptotic equivalence).
+      The second one takes #{T(f,n) + T(g,f(n)) + T(f,n)}.
+      But these two are equivalent - the second is at most twice the first.
+}
+
+\p{
+  Hence #{\mathsf{Comp}} is a restriction category.
+}
 }
 \subtree{
-    \title{Comp as a traced category }
-    \p{
-        Can we define a trace operation on #{\mathsf{Comp}}? This would be an operation #{Tr^X_{A,B}: Hom(A \times X \to B \times X) \to Hom(A,B)}. The idea would be that to evaluate #{Tr^X_{A,B}(f)} on #{a \in A}, you run #{f(a,0)} to obtain #{b_1, x_1}, then run #{f(a,x_1)} to obtain #{b_2,x_2} and you keep doing this until you find a fixpoint where #{x_n = x_{n+1}} then the resulting #{b_{n+1}} is your output. (If this never terminates, you simply don't halt on that input).
-    }
-    \p{
-        The obvious problem is that the choice of #{0} is non-canonical. We might want to let #{Tr^X_{A,B}} only be defined when this input doesn't matter - but this property is not obviously computable! (We would have to check every possible #{n}). This probably precludes #{Tr^X_{A,B}} from satisfying the axioms of a trace. I'm not sure, but I think the issue will appear in the axiom #{Tr^X_{A,B}Tr^Y_{A\otimes X, B \otimes X}(f) = Tr^{X\otimes Y}_{A,B}(f)}. The right-hand side corresponds to applying #{f(a,0,0)}, then #{f(a,x_1,y_1)}, then proceeding like that until we find a fixpoint #{(x_n,y_n)}. In the second, we first define a function #{f(a,x)} by applying #{f(a,x,0)} to find #{y_1}, then going until we find a fixpoint #{y_n}. Then we apply _the function to defined_, call it #{f'}, with #{f'(a,0)} to find #{x_1}, and so on. In other words, we first find a fixpoint #{y} for #{f(a,0,y)}, and use that fixpoint to produce #{x_1}. Then we find a fixpoint for #{f(a,x_1,y)} and so produce #{y_2}, and so on. This does eventually produce a pair #{(x,y)} which form a fixpoint for #{f(a,x,y)}, but not necessarily the same one as the "simultaneous" procedure. This problem is exactly fixed if we only allow those #{a}s where the starting input doesn't matter - then there is a unique fixpoint, and we are happy.
-    }
-    \p{
-        The second problem, of course, is that the two procedures defined above have _very different runtimes_. This problem does seem to be baked into the axioms of a traced monoidal category. This is perhaps not surprising - these axioms are not saying that both sides are equally fast ways of computing the result, just that the results are equal. So perhaps we should look for some alternative "complexity-sensitive" version of these axioms that make sense in our context.
-    }
-    \p{
-        On the other hand, the temptation to regard a string diagram with loops as describing a meaningful program is very strong. This would suggest that we need a different version of #{\mathsf{Comp}}, or perhaps a different traced structure, that makes the two sides of the equation equal.
-    }
+  \title{Comp as a Cartesian restriction category.}
+\p{
+  Do "restriction products" exist in #{\mathsf{Comp}}.
+  This would seem to rely on a _constant-time_ bijection #{\mathbb{N} \cong \mathbb{N} \times \mathbb{N}}.
+  I am fairly sure this doesn't exist - since the encoding size of a natural number grows as the logarithm, it would seem that such a bijection must have unbounded runtime.
+}
+
+\p{
+  This may be remedied by passing to a less restrictive form of equivalence.
+  For example, suppose we can find a logarithmic-time implementation of the above bijection.
+  Then we can alter the definition of #{\lesssim} so that #{p \lesssim p'} as long as there exists #{C} so that #{T(p',n) \leq CT(p,n)\log(n)} (and they have the same values).
+  There are other reasons to prefer this equivalence relation.
+  It is not in general true that universal Turing machines can simulate each other with _constant_ overhead.
+  This means that the choice of UTM made at the beginning of this post is actually significant.
+  But it _is_ true that they can simulate each other with _logarithmic_ overhead.&nbsp;[^fn:1]
+  This means the choice of machine is unimportant, making for a much nicer theory.
+}
+
+\p{
+  The construction of this correspondence does seem to be the only obstruction to equipping #{\mathsf{Comp}} with a Cartesian restriction structure, in the "obvious" way (where #{A \times B} is the subset of #{\mathbb{N}} which corresponds under this bijection to a pair #{(a\in A, b \in B)}.)
+}
 }
 \subtree{
-    \title{Comp as a Turing category }
-    \p{
-        Comp is, first of all, not a Turing category, because undecidable subsets of the natural numbers won't be retracts of them. If we fiddle with the definition to fix this issue (we can remove all other objects than #{\mathbb{N}} and #{\{1\}}, for example), it might actually be a Turing category - because of the fact that universal Turing machines can simulate each other with logarithmic overhead.
-    }
+  \title{Comp as a traced category}
+\p{
+  Can we define a trace operation on #{\mathsf{Comp}}?
+  This would be an operation #{Tr^X_{A,B}: Hom(A \times X \to B \times X) \to Hom(A,B)}.
+  The idea would be that to evaluate #{Tr^X_{A,B}(f)} on #{a \in A}, you run #{f(a,0)} to obtain #{b_1, x_1}, then run #{f(a,x_1)} to obtain #{b_2,x_2} and you keep doing this until you find a fixpoint where #{x_n = x_{n+1}} then the resulting #{b_{n+1}} is your output.
+  (If this never terminates, you simply don't halt on that input).
+}
+
+\p{
+  The obvious problem is that the choice of #{0} is non-canonical.
+  We might want to let #{Tr^X_{A,B}} only be defined when this input doesn't matter - but this property is not obviously computable! (We would have to check every possible #{n}).
+  This probably precludes #{Tr^X_{A,B}} from satisfying the axioms of a trace. I'm not sure, but I think the issue will appear in the axiom #{Tr^X_{A,B}Tr^Y_{A\otimes X, B \otimes X}(f) = Tr^{X\otimes Y}_{A,B}(f)}.
+  The right-hand side corresponds to applying #{f(a,0,0)},
+  then #{f(a,x_1,y_1)}, then proceeding like that until we find a fixpoint #{(x_n,y_n)}.
+  In the second, we first define a function #{f(a,x)} by applying #{f(a,x,0)} to find #{y_1}, then going until we find a fixpoint #{y_n}.
+  Then we apply _the function to defined_, call it #{f'}, with #{f'(a,0)} to find #{x_1}, and so on.
+  In other words, we first find a fixpoint #{y} for #{f(a,0,y)}, and use that fixpoint to produce #{x_1}.
+  Then we find a fixpoint for #{f(a,x_1,y)} and so produce #{y_2}, and so on.
+  This does eventually produce a pair #{(x,y)} which form a fixpoint for #{f(a,x,y)}, but not necessarily the same one as the "simultaneous" procedure.
+  This problem is exactly fixed if we only allow those #{a}s where the starting input doesn't matter - then there is a unique fixpoint, and we are happy.
+}
+
+\p{
+  The second problem, of course, is that the two procedures defined above have _very different runtimes_.
+  This problem does seem to be baked into the axioms of a traced monoidal category.
+  This is perhaps not surprising - these axioms are not saying that both sides are equally fast ways of computing the result, just that the results are equal.
+  So perhaps we should look for some alternative "complexity-sensitive" version of these axioms that make sense in our context.
+}
+
+\p{
+  On the other hand, the temptation to regard a string diagram with loops as describing a meaningful program is very strong. This would suggest that we need a different version of #{\mathsf{Comp}}, or perhaps a different traced structure, that makes the two sides of the equation equal.
+}
 }
 \subtree{
-    \title{Further questions }
-    \ul{
-        \li{
-            What is the general definition of which #{\mathsf{Comp}} is an example?
-        }
-        \li{
-            Does this actually help at all?
-        }
-        \li{
-            Is there a (family of) model(s) of computation which allows us to A: make a category with useful internal structure, B: without fiddling with various notions of asymptotic performance.
-        }
-    }
-    \p{
-        [^fn:1]: See eg [Wikipedia](https://en.wikipedia.org/wiki/Universal_Turing_machine#Efficiency)
-    }
+  \title{Comp as a Turing category}
+\p{
+  Comp is, first of all, not a Turing category, because undecidable subsets of the natural numbers won't be retracts of them.
+  If we fiddle with the definition to fix this issue (we can remove all other objects than #{\mathbb{N}} and #{\{1\}}, for example), it might actually be a Turing category - because of the fact that universal Turing machines can simulate each other with logarithmic overhead.
+}
+}
+\subtree{
+  \title{Further questions}
+\p{
+  -   What is the general definition of which #{\mathsf{Comp}} is an example?
+  -   Does this actually help at all?
+  -   Is there a (family of) model(s) of computation which allows us to A: make a category with useful internal structure, B: without fiddling with various notions of asymptotic performance.
+}
+
+\p{
+  [^fn:1]: See eg [Wikipedia](https://en.wikipedia.org/wiki/Universal\%5FTuring\%5Fmachine#Efficiency)
+}
 }

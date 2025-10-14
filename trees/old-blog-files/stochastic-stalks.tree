@@ -1,71 +1,124 @@
-\date{2020-05-24T00:00:00Z}
+\date{2020-05-24}
 \author{eigil-rischel}
-\import{macros}
 \title{Stochastic Stalks}
+
 \subtree{
-    \title{Stalks and points }
-    \p{
-        Recall that a [point of a topos](https://ncatlab.org/nlab/show/point+of+a+topos) #{\mathcal{E}} is a geometric morphism from the topos #{Set}. My preferred way to think about this is to consider the sheaf topos #{Sh(X)} on some (sober) topological space #{X}. Then given #{x \in X} and a sheaf #{S}, we can form the stalk at #{x}
-    }
-    \p{
-        #{S_x := \operatorname{colim}_{x \in U \subseteq X \text{ open}} S(U)}
-    }
-    \ol{
-        \li{
-            This determines the point uniquely, i.e if #{(-)_x \simeq (-)_y} then #{x = y}
-        }
-        \li{
-            This is a left exact left adjoint #{Sh(X) \to Set} - i.e part of a geometric
-        }
-    \p{
-        morphism #{Set \to Sh(X)}.
-    }
-        \li{
-            All left exact left adjoints #{Sh(X) \to Set} have this form.
-        }
-    }
-    \p{
-        Hence it makes sense to identify literal points of #{X} with points of #{Sh(X)} in the above sense.
-    }
+  \title{Stalks and points}
+\p{
+  Recall that a [point of a topos](https://ncatlab.org/nlab/show/point+of+a+topos) #{\mathcal{E}} is a geometric morphism from the topos #{Set}.
+  My preferred way to think about this is to consider the sheaf topos #{Sh(X)} on
+  some (sober) topological space #{X}.
+  Then given #{x \in X} and a sheaf #{S}, we can form the stalk at #{x}
+}
+
+\p{
+  #{S_x := \operatorname{colim}_{x \in U \subseteq X \text{ open}} S(U)}
+}
+
+\p{
+  1.  This determines the point uniquely, i.e if #{(-)_x \simeq (-)_y} then #{x = y}
+  2.  This is a left exact left adjoint #{Sh(X) \to Set} - i.e part of a geometric
+      morphism #{Set \to Sh(X)}.
+  3.  All left exact left adjoints #{Sh(X) \to Set} have this form.
+}
+
+\p{
+  Hence it makes sense to identify literal points of #{X} with points of #{Sh(X)} in
+  the above sense.
+}
 }
 \subtree{
-    \title{Random points }
-    \p{
-        We can think of a probability measure on a space #{X} as a sort of "generalized point", which has been "smeared out". How can we lift this intuition to the level of #{Sh(X)}? It seems sort of obvious that we shouldn't expect this to work on the level of sets - they are somehow too "discrete" to capture quantitative information about probabilities. It's actually worth mentioning here that any point of #{Sh(X)} is determined by its action on sheaves represented by open sets, which must each be sent to either #{\emptyset} or #{*} (this follows from the "left exact left adjoint" assumptions). The fact that it's a left exact left adjoint furthermore implies that it must be a sort of infinitely-additive #{\{0,1\}}-valued probability measure defined on the open sets, and it follows from this that it's a "dirac measure". This is how to prove that all points are really represented by a point. It seems that one way of considering "random points" would be to let the functor take values in a category with objects that can reasonably represent more complicated probability measures. It also seems unlikely that we can rely completely on universal properties to carry the day here. If #{U, V \subset X} are open sets, then #{U \cap V} is their product, both in #{O(X)} and in #{Sh(X)}. So if a functor #{P: Sh(X) \to C} preserves products, #{P(U \cap V)} depends only on #{P(U)} and #{P(V)} - so this clearly can't capture all possible probability measures.
-    }
+  \title{Random points}
+\p{
+  We can think of a probability measure on a space #{X} as a sort of "generalized
+  point", which has been "smeared out".
+  How can we lift this intuition to the level of #{Sh(X)}?
+  It seems sort of obvious that we shouldn't expect this to work on the level of
+  sets - they are somehow too "discrete" to capture quantitative information about
+  probabilities.
+  It's actually worth mentioning here that any point of #{Sh(X)} is determined by
+  its action on sheaves represented by open sets, which must each be sent to
+  either #{\emptyset} or #{*} (this follows from the "left exact left adjoint"
+  assumptions).
+  The fact that it's a left exact left adjoint furthermore implies that it must be
+  a sort of infinitely-additive #{\{0,1\}}-valued probability measure defined on
+  the open sets, and it follows from this that it's a "dirac measure".
+  This is how to prove that all points are really represented by a point.
+  It seems that one way of considering "random points" would be to let the functor
+  take values in a category with objects that can reasonably represent more
+  complicated probability measures.
+  It also seems unlikely that we can rely completely on universal properties to
+  carry the day here.
+  If #{U, V \subset X} are open sets, then #{U \cap V} is their product, both in
+  #{O(X)} and in #{Sh(X)}.
+  So if a functor #{P: Sh(X) \to C} preserves products, #{P(U \cap V)} depends only
+  on #{P(U)} and #{P(V)} - so this clearly can't capture all possible probability
+  measures.
+}
 }
 \subtree{
-    \title{One attempt: Stochastic stalks }
-    \p{
-        I haven't solved this problem completely (I'm not convinced a good general solution exists). One approach is to think about _integration of metric spaces over a measure_, which I will now explain. A _sheaf of metric spaces_ is a functor #{O(X)^{op} \to Met}, where #{Met} is the category of metric spaces and _short_, i.e distance-nonincreasing, maps, which satisfies the sheaf axiom. We denote the category of such sheaves by #{Sh(X,Met)}. By "the sheaf axiom", I mean it preserves limits. Since #{Met} does not have all limits, this is a bit subtler than it may appear. However, since #{Met} does have finite limits, this difficulty disappears if we assume #{X} is compact.
-    }
-    \p{
-        Let #{M} be a sheaf of metric spaces and let #{P} be a Radon probability measure on #{X}. Then we define #{M_X} to be the product #{\prod_{x \in X}M_x} of all the stalks (just considered as a set). Equip #{M_X} with a pseudometric #{d} by setting #{d(a,b) = \int d(a_x,b_x)P(dx)}. In other words, we _integrate_ the distances according to the given probability measure. If we quotient out with the relation #{a \sim b} if #{d(a,b) = 0}, this gives a proper metric space, #{M_X/\sim}.
-    }
-    \p{
-        Now for each #{U \subset X} with #{P(U) = 1}, we consider the map #{M(U) \to M_X/\sim} given by taking all the germs. We let #{M_P} be the metric space consisting of the images of all these maps.
-    }
-    \p{
-        This defines a functor #{Sh(X,Met) \to Met}. We can recover the probability measure on an open set #{A} by considering a sheaf #{M} given by two points at distance #{1} if #{U \subset A} and the singleton otherwise. Then #{M_P} consists of two points at distance #{P(A)}. At least in the case of compact Hausdorff spaces, this determines the underlying measure uniquely. (In general, the "measure defined on open sets" that we recover in this way is called a valuation, and you can argue that we shouldn't expect to tell the difference between different measures with the same valuation).
-    }
+  \title{One attempt: Stochastic stalks}
+\p{
+  I haven't solved this problem completely (I'm not convinced a good general
+  solution exists).
+  One approach is to think about _integration of metric spaces over a measure_,
+  which I will now explain.
+  A _sheaf of metric spaces_ is a functor #{O(X)^{op} \to Met}, where #{Met} is the
+  category of metric spaces and _short_, i.e distance-nonincreasing, maps,
+  which satisfies the sheaf axiom.
+  We denote the category of such sheaves by #{Sh(X,Met)}.
+  By "the sheaf axiom", I mean it preserves limits.
+  Since #{Met} does not have all limits, this is a bit subtler than it may appear.
+  However, since #{Met} does have finite limits, this difficulty disappears if we
+  assume #{X} is compact.
+}
+
+\p{
+  Let #{M} be a sheaf of metric spaces and let #{P} be a Radon probability measure
+  on #{X}.
+  Then we define #{M_X} to be the product #{\prod_{x \in X}M_x} of all the stalks
+  (just considered as a set).
+  Equip #{M_X} with a pseudometric #{d} by setting #{d(a,b) = \int d(a_x,b_x)P(dx)}.
+  In other words, we _integrate_ the distances according to the given probability
+  measure. If we quotient out with the relation #{a \sim b} if #{d(a,b) = 0}, this
+  gives a proper metric space, #{M_X/\sim}.
+}
+
+\p{
+  Now for each #{U \subset X} with #{P(U) = 1}, we consider the map #{M(U) \to
+  M_X/\sim} given by taking all the germs.
+  We let #{M_P} be the metric space consisting of the images of all these maps.
+}
+
+\p{
+  This defines a functor #{Sh(X,Met) \to Met}.
+  We can recover the probability measure on an open set #{A} by considering a sheaf
+  #{M} given
+  by two points at distance #{1} if #{U \subset A} and the singleton otherwise.
+  Then #{M_P} consists of two points at distance #{P(A)}.
+  At least in the case of compact Hausdorff spaces, this determines the underlying
+  measure uniquely.
+  (In general, the "measure defined on open sets" that we recover in this way is
+  called a valuation, and you can argue that we shouldn't expect to tell the
+  difference between different measures with the same valuation).
+}
 }
 \subtree{
-    \title{Questions }
-    \ul{
-        \li{
-            What useful properties characterize functors of the above form?
-        }
-        \li{
-            Is there a good way of doing this for #{\sigma}-algebras instead of topologies?
-        }
-        \li{
-            Is there a good way of doing this for a general topos?
-        }
-    }
+  \title{Questions}
+\p{
+  -   What useful properties characterize functors of the above form?
+  -   Is there a good way of doing this for #{\sigma}-algebras instead of topologies?
+  -   Is there a good way of doing this for a general topos?
+}
 }
 \subtree{
-    \title{Example: Random variables }
-    \p{
-        Let #{M} be any metric space. Then we can form a sheaf of metric spaces where #{M(U)} is the set of continuous functions #{U \to M} in the sup metric. Then the metric space #{M_P} is the set of #{M}-valued random variables, metrized by letting #{d(A,B) := \mathbb{E}_P(d(A,B))} - i.e metrized by _expected_ distance.
-    }
+  \title{Example: Random variables}
+\p{
+  Let #{M} be any metric space.
+  Then we can form a sheaf of metric spaces where #{M(U)} is the set of continuous
+  functions #{U \to M} in the sup metric.
+  Then the metric space #{M_P} is the set of #{M}-valued random variables,
+  metrized by letting #{d(A,B) := \mathbb{E}_P(d(A,B))} - i.e metrized by
+  _expected_ distance.
+}
 }

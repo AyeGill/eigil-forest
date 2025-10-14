@@ -1,65 +1,101 @@
+\date{2021-02-06}
 \author{eigil-rischel}
-\import{macros}
-\date{2021-02-06T18:18:00+00:00}
 \title{Why Python Is Better Than Haskell}
-    \p{
-        Also read Hillel Wayne: [Why Python Is My Favorite Language](https://buttondown.email/hillelwayne/archive/2269df89-b3fc-406f-ac2e-9d7464879ba3).
-    }
-    \p{
-        [[https://x.com/Ayegill/status/1319624318469476352]]
-    }
-    \p{
-        So: I like python a lot. On the other hand, I also really like haskell. I like functional programming. I like putting information into types, and having the types checked at compile-time. I like higher-order function like `map`. By god, I even like monads. I think monadic parser-combinators are just about the coolest thing in the world - especially the fact that you can implement them as a library!
-    }
-    \p{
-        Python is very antithetical to that. It obviously doesn't have static types. It has higher-order functions, but their use isn't super idiomatic. It's not pure. But... I still really like coding in it. In a lot of cases I _strongly_ prefer writing Python to Haskell. Probably the strongest reason for that is the build situation in Haskell, which is extremely stupid. But actually even allowing that, python seems to have a certain ease of use that Haskell doesn't. Why is that? I think the key thing is that _Haskell makes it easy to create new abstractions and regards it as a normal part of coding_.
-    }
-    \p{
-        Wait, what? Weren't we talking about things that make _python_ easier to use? Yes. That's what I mean. The fact that Haskell makes it easy and expected to introduce new abstractions means that, to pick up a new library, I need to understand its abstractions, and probably massage an interface between them and my program. That's super annoying.
-    }
-    \p{
-        When writing in python, there are essentially no abstractions, beyond the bare minimum of procedural "each command modifies variables and does IO and returns a value", along with a very small set of types of data: numbers, strings, maps, lists. It's not that this makes libraries easy to integrate, it's that it makes them _easy to understand_. To use `requests` to talk to [mailgun](https://www.mailgun.com/), here's what I did:
-    }
-    \code{
-        r = requests.post(mgurl, auth=("api",MAILGUN_APIKEY), data={"from": sender, "to": [TARGET_MAIL], "subject": subject, "text": text})
-        return(r.text)
-    }
-    \p{
-        I want to make a post request with some arguments, and get a response back (actually the response doesn't matter that much in this application, but whatever). I build the arguments (strings) and the url (a string), then shove all this into `post` function.
-    }
-    \p{
-        [Here's](https://stackoverflow.com/questions/33983629/basic-way-of-sending-http-post-in-haskell-using-http-conduit) the top google result for "haskell make post request", which I just googled now while writing this post. Okay.. so I need to find a `RequestBody` (what's that?) and use `parseRequest` to turn my url into a request, where I can then insert my body..?
-    }
-    \p{
-        I go to the `http-conduit` docs, where I see this:
-    }
-    \p{
-        ![](/ox-hugo/20200414104653-blog_posts.org_20210203_195432_aqmV4V.png) Okay, so after staring at this for a bit, it seems like you just put in a bytestring? That's _slightly_ more low-level than I was hoping - to be honest, I don't even know how to format a list of arguments like the above into a http request!
-    }
-    \p{
-        After digging around the docs page for a little while, I find this: ![](/ox-hugo/20200414104653-blog_posts.org_20210203_195853_4tIjnm.png) Okay.. that doesn't look too bad. Now we can implement the fragment above in Haskell like this:
-    }
-    \p{
-        ```haskell do manager <- newManager defaultManagerSettings request <- urlEncodeBody [("from", sender),("to",targetMail),("subject",subject),("text",text)] <#{> parseRequest mgurl response <- httpLbs request manager return } body response ```
-    }
-    \p{
-        (I actually haven't checked whether this works like I expect it to, so don't be shocked if this code doesn't work as written).
-    }
-    \p{
-        Okay, so in this _very simple_ case, we needed to understand two new types: `Manager` and `Request`. `RequestBody` turned out to be a red herring, although I also looked that one up. I'm going to allow `ByteString` as part of the "standard library", but if I was really writing this code I probably would've had to look up/remember how to convert between string types.
-    }
-    \p{
-        The `Manager` object keeps track of open connections, which is probably not needed for my application. Do I need to close my connections after I'm done or something? I actually make some other http requests earlier in this application - does it matter if I use the same manager?
-    }
-    \p{
-        Why does `parseRequest` use the `IO` monad? (Looks at the docs) okay, it actually uses `MonadThrow`, so I guess I should make a decision about how to handle a parse error - should I just crash with an exception or handle the error more gracefully (the Python version of this script has logging - that's probably what "should" be done).
-    }
-    \p{
-        Is this all very complicated? No. Is it bad design? Also no. `http-conduit` provides stuff like `simpleHttp :: MonadIO m => String -> m ByteString` which lets you do simple requests. I'm gonna assume giving people the option of passing a manager object around is a good idea. Making people be explicit about what request they want instead of just making a best guess based on the arguments passed to `requests.post`.
-    }
-    \p{
-        Once your application gets more complicated, the extra structure imposed by Haskell starts paying dividends - the abstractions begin to simplify things, justifying the upfront cost of understanding them. And the abstractions built by the _user_ - not imported from libraries but custom-built for this application - start becoming worthwhile.
-    }
-    \p{
-        But while you're still at the "fucking around to do something simple" stage, it's all very overkill.
-    }
+
+\p{
+Also read Hillel Wayne: [Why Python Is My Favorite Language](https://buttondown.email/hillelwayne/archive/2269df89-b3fc-406f-ac2e-9d7464879ba3).
+}
+
+\p{
+[Tweet](https://x.com/Ayegill/status/1319624318469476352)
+}
+
+\p{
+So: I like python a lot. On the other hand, I also really like haskell. I like functional programming. I like putting information into types, and having the types checked at compile-time. I like higher-order function like `map`. By god, I even like monads. I think monadic parser-combinators are just about the coolest thing in the world - especially the fact that you can implement them as a library!
+}
+
+\p{
+Python is very antithetical to that. It obviously doesn't have static types. It has higher-order functions, but their use isn't super idiomatic. It's not pure. But... I still really like coding in it. In a lot of cases I _strongly_ prefer writing Python to Haskell. Probably the strongest reason for that is the build situation in Haskell, which is extremely stupid. But actually even allowing that, python seems to have a certain ease of use that Haskell doesn't. Why is that? I think the key thing is that _Haskell makes it easy to create new abstractions and regards it as a normal part of coding_.
+}
+
+\p{
+Wait, what? Weren't we talking about things that make _python_ easier to use? Yes. That's what I mean. The fact that Haskell makes it easy and expected to introduce new abstractions means that, to pick up a new library, I need to understand its abstractions, and probably massage an interface between them and my program. That's super annoying.
+}
+
+\p{
+When writing in python, there are essentially no abstractions, beyond the bare minimum of procedural "each command modifies variables and does IO and returns a value", along with a very small set of types of data: numbers, strings, maps, lists.
+It's not that this makes libraries easy to integrate, it's that it makes them _easy to understand_. To use `requests` to talk to [mailgun](https://www.mailgun.com/), here's what I did:
+}
+
+\startverb
+# the variables are populated further up...
+r = requests.post(
+    mgurl,
+    auth=("api",MAILGUN_APIKEY),
+        data={"from": sender,
+              "to": [TARGET_MAIL],
+              "subject": subject,
+              "text": text})
+return(r.text)
+\stopverb
+
+\p{
+I want to make a post request with some arguments, and get a response back (actually the response doesn't matter that much in this application, but whatever). I build the arguments (strings) and the url (a string), then shove all this into `post` function.
+}
+
+\p{
+[Here's](https://stackoverflow.com/questions/33983629/basic-way-of-sending-http-post-in-haskell-using-http-conduit) the top google result for "haskell make post request", which I just googled now while writing this post. Okay.. so I need to find a `RequestBody` (what's that?) and use `parseRequest` to turn my url into a request, where I can then insert my body..?
+}
+
+\p{
+I go to the `http-conduit` docs, where I see this:
+}
+
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195432_aqmV4V.png}}{}
+\p{
+Okay, so after staring at this for a bit, it seems like you just put in a bytestring? That's _slightly_ more low-level than I was hoping - to be honest, I don't even know how to format a list of arguments like the above into a http request!
+}
+
+\p{
+After digging around the docs page for a little while, I find this:
+}
+\<html:img>[src]{\route-asset{assets/images/ox-hugo/20200414104653-blog_posts.org_20210203_195853_4tIjnm.png}}{}
+\p{
+Okay.. that doesn't look too bad. Now we can implement the fragment above in Haskell like this:
+}
+
+\startverb
+do
+  manager <- newManager defaultManagerSettings
+  request <- urlEncodeBody [("from", sender),("to",targetMail),("subject",subject),("text",text)] <$> parseRequest mgurl
+  response <- httpLbs request manager
+  return $ body response
+\stopverb
+
+\p{
+(I actually haven't checked whether this works like I expect it to, so don't be shocked if this code doesn't work as written).
+}
+
+\p{
+Okay, so in this _very simple_ case, we needed to understand two new types: `Manager` and `Request`. `RequestBody` turned out to be a red herring, although I also looked that one up. I'm going to allow `ByteString` as part of the "standard library", but if I was really writing this code I probably would've had to look up/remember how to convert between string types.
+}
+
+\p{
+The `Manager` object keeps track of open connections, which is probably not needed for my application. Do I need to close my connections after I'm done or something? I actually make some other http requests earlier in this application - does it matter if I use the same manager?
+}
+
+\p{
+Why does `parseRequest` use the `IO` monad? (Looks at the docs) okay, it actually uses `MonadThrow`, so I guess I should make a decision about how to handle a parse error - should I just crash with an exception or handle the error more gracefully (the Python version of this script has logging - that's probably what "should" be done).
+}
+
+\p{
+Is this all very complicated? No. Is it bad design? Also no. `http-conduit` provides stuff like `simpleHttp :: MonadIO m => String -> m ByteString` which lets you do simple requests. I'm gonna assume giving people the option of passing a manager object around is a good idea. Making people be explicit about what request they want instead of just making a best guess based on the arguments passed to `requests.post`.
+}
+
+\p{
+Once your application gets more complicated, the extra structure imposed by Haskell starts paying dividends - the abstractions begin to simplify things, justifying the upfront cost of understanding them. And the abstractions built by the _user_ - not imported from libraries but custom-built for this application - start becoming worthwhile.
+}
+
+\p{
+But while you're still at the "fucking around to do something simple" stage, it's all very overkill.
+}

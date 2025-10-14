@@ -1,83 +1,83 @@
 \date{2023-09-28}
 \author{eigil-rischel}
-\import{macros}
 \title{Against calibration}
-    \p{
-        Forecasting is predicting whether something will happen, like who will be the next US president or whether a natural disaster will happen or what the economy is going to be like in a year. It's notoriously difficult to think about. Typically who study this sort of thing think you should make quantifiable predictions with specific probabilities assigned to them, make them public, and then let people rate your performance later to figure out who's good at forecasting. I'm not gonna explain all this in too much detail. See eg the discussion at the start of [this astralcodexten post](https://www.astralcodexten.com/p/mantic-monday-mantic-matt-y).
-    }
-    \p{
-        One way to rate forecasts is "Brier score".[^2] If you assign something probability #{p}, and it happens, your Brier score is #{(1-p)^2}. If it doesn't happen, your Brier score is #{p^2} (since you essentially said it wouldn't happen with probability #{1-p}). Lower is better - the lowest possible Brier score is #{0}, the highest is #{1.} If you make many predictions, your Brier score is the average Brier score across the whole set of questions.
-    }
-    \p{
-        Another way to rate forecasters is "calibration". Calibration looks at the fraction of your "X% likely" predictions that occurred, and asks how close that fraction is to X% (for each X). Then you can plot it in graphs like this (source: [Manifold on twitter](https://twitter.com/ManifoldMarkets/status/1661877668038709249)):
-    }
-    \p{
-        ![A calibration graph](/calibration.png)
-    }
-    \p{
-        On average, clearly, 10% of your 10% predictions should come true if you're assigning probabilities sensibly, so it seems good to have good calibration. Brier scoring agrees with this, in the following sense: suppose in fact 14% of your 10% predictions come true. Then you would have obtained a higher Brier score by replacing all your 10% predictions with 14%[^1].
-    }
-    \p{
-        [^1]: This is essentially what people mean when they say Brier scoring is a "proper scoring rule".
-    }
-    \p{
-        There are a few reason people focus on calibration
-    }
-    \ul{
-        \li{
-            Perhaps most importantly, it's *comparable across question sets*. That is, if I make a bunch of predictions, and you make a *different set* of predictions, we can sensibly compare our calibration plots and see who did better. In contrast, predicting more difficult question sets will result in a lower Brier score even if you're doing as well as possible (in the limit, predicting coinflips, if you assign the correct 50-50 probability you'll get an average Brier score of 0.25, whereas if you predict events that happen 10\% of the time and assign that probability correctly you'll get a Brier score of 0.09).
-        }
-        \li{
-            There's some evidence that calibration is *trainable* and *generalizes.* That is, if you practice, you can improve your calibration, and if your calibration is good on one type of questions (say, about politics), it'll tend to be good on other questions (about technological advances, say) as well.
-        }
-    }
-    \p{
-        These obviously make calibration a pretty useful concept, and I don't want to disparage that. It's good to practice your calibration if you want to make precise predictions, and it's good to publish your calibration graph if you want people to take your forecast seriously.
-    }
-\subtree{
-    \title{Calibration is a very weak statement about the quality of your forecasts}
-    \p{
-        Manifold (to their credit!) publishes their calibration plots. These are generally pretty good. Some people seem take this as strong evidence that Manifold makes good predictions.
-    }
-    \p{
-        We can try to think about perfect calibration in market terms. If some method could improve on Manifold's predictions, then that method could be turned into a profitable trading strategy. So we can think about statements that Manifold makes "good" predictions in terms of the classes of strategy they rule out. In the extreme case, if the market was perfectly efficient, no strategy could make a profit - meaning there's no way to improve the predictions.
-    }
-    \p{
-        Perfect calibration means that, (for example) of the markets currently trading at 10\% YES, 10\% will resolve YES. This means that no trading strategy of the type "whenever a market is valued at 10\% YES, buy some of it" can make a profit in expectation. This is obviously an *incredibly weak* notion of market efficiency. We expect this to hold, but this doesn't mean the predictions are well-priced at all.
-    }
+
+\p{
+Forecasting is predicting whether something will happen, like who will be the next US president or whether a natural disaster will happen or what the economy is going to be like in a year. It's notoriously difficult to think about. Typically who study this sort of thing think you should make quantifiable predictions with specific probabilities assigned to them, make them public, and then let people rate your performance later to figure out who's good at forecasting. I'm not gonna explain all this in too much detail. See eg the discussion at the start of [this astralcodexten post](https://www.astralcodexten.com/p/mantic-monday-mantic-matt-y).
+}
+
+\p{
+One way to rate forecasts is "Brier score".[^2] If you assign something probability #{p}, and it happens, your Brier score is #{(1-p)^2}. If it doesn't happen, your Brier score is #{p^2} (since you essentially said it wouldn't happen with probability #{1-p}). Lower is better - the lowest possible Brier score is #{0}, the highest is #{1.} If you make many predictions, your Brier score is the average Brier score across the whole set of questions.
+}
+
+\p{
+Another way to rate forecasters is "calibration". Calibration looks at the fraction of your "X\% likely" predictions that occurred, and asks how close that fraction is to X\% (for each X). Then you can plot it in graphs like this (source: [Manifold on twitter](https://twitter.com/ManifoldMarkets/status/1661877668038709249)):
+}
+
+\<html:img>[src]{\route-asset{assets/images/calibration.png}}{A calibration graph}
+
+\p{
+On average, clearly, 10\% of your 10\% predictions should come true if you're assigning probabilities sensibly, so it seems good to have good calibration. Brier scoring agrees with this, in the following sense: suppose in fact 14\% of your 10\% predictions come true. Then you would have obtained a higher Brier score by replacing all your 10\% predictions with 14\%[^1].
+}
+
+\p{
+[^1]: This is essentially what people mean when they say Brier scoring is a "proper scoring rule".
+}
+
+\p{
+There are a few reason people focus on calibration
+}
+
+\ul{
+  \li{Perhaps most importantly, it's *comparable across question sets*. That is, if I make a bunch of predictions, and you make a *different set* of predictions, we can sensibly compare our calibration plots and see who did better. In contrast, predicting more difficult question sets will result in a lower Brier score even if you're doing as well as possible (in the limit, predicting coinflips, if you assign the correct 50-50 probability you'll get an average Brier score of 0.25, whereas if you predict events that happen 10\% of the time and assign that probability correctly you'll get a Brier score of 0.09).}
+  \li{There's some evidence that calibration is *trainable* and *generalizes.* That is, if you practice, you can improve your calibration, and if your calibration is good on one type of questions (say, about politics), it'll tend to be good on other questions (about technological advances, say) as well.}
+}
+
+\p{
+These obviously make calibration a pretty useful concept, and I don't want to disparage that. It's good to practice your calibration if you want to make precise predictions, and it's good to publish your calibration graph if you want people to take your forecast seriously.
 }
 \subtree{
-    \title{Good calibration doesn't mean you have a good Brier score}
-    \p{
-        Imagine two people forecasting the same set of 100 potential natural disasters. The first forecaster (call him A) assigns probability 1\% to them all. The second forecaster (B) assigns probability 80\% to two of them, and 2\% to the rest. In the end, exactly one of the disasters happen, and it's one of the two that the second forecaster assigned 80\% probability to.
-    }
-    \p{
-        A has perfect calibration. B, by contrast, has pretty bad calibration (his 80\% "should" have been 50\%, and his 2\% should have been 0\%).
-    }
-    \p{
-        But:
-    }
-    \ul{
-        \li{
-            B has a better Brier score (A has #{(0.0099 + 0.99^2)/100}, B has approximately #{(0.8^2 + 0.2^2 + 0.0004 \cdot 98) /100}, and remember lower is better).
-        }
-        \li{
-            More to the point, B's forecast is *clearly more useful* - having some reasonable ideas *which* of the 100 potential disasters will happen is clearly more important than getting the overall rate right
-        }
-        \li{
-            We could make this point even more stark by letting B assign 90\% probability to the disaster that ended up happening, and 1\% probability to the ones that don't.
-        }
-    }
+  \title{Calibration is a very weak statement about the quality of your forecasts}
+\p{
+  Manifold (to their credit!) publishes their calibration plots. These are generally pretty good. Some people seem take this as strong evidence that Manifold makes good predictions.
+}
+
+\p{
+  We can try to think about perfect calibration in market terms. If some method could improve on Manifold's predictions, then that method could be turned into a profitable trading strategy. So we can think about statements that Manifold makes "good" predictions in terms of the classes of strategy they rule out. In the extreme case, if the market was perfectly efficient, no strategy could make a profit - meaning there's no way to improve the predictions.
+}
+
+\p{
+  Perfect calibration means that, (for example) of the markets currently trading at 10\% YES, 10\% will resolve YES. This means that no trading strategy of the type "whenever a market is valued at 10\% YES, buy some of it" can make a profit in expectation. This is obviously an *incredibly weak* notion of market efficiency. We expect this to hold, but this doesn't mean the predictions are well-priced at all.
+}
 }
 \subtree{
-    \title{Good calibration doesn't mean other people should adopt your forecasts}
-    \p{
-        People often say things like "X has good calibration, meaning when they say there's a 10\% chance of something happening, it happens 10\% of the time. So when they say there's a 10\% chance of nuclear war (or whatever), we should take it seriously".
-    }
-    \p{
-        The first sentence is of course a correct explanation of calibration. But think of our disaster forecasters from before. A had perfect calibration, meaning when A says that disasters overall happen only one time in a hundred, he's right. But if he says that some *specific* disaster has a very low, 1\%, probability of happening, we shouldn't necessarily take that forecast very seriously. Perhaps it's actually easy to know which 1\% of disasters happen. A's ability to get the base rate right does say something about his forecasting, but the fact that he can't do better than the base rate doesn't prove that we can't, and should therefore adopt his forecast.
-    }
-    \p{
-        [^2]: Another is log scoring, where if you say X will happen with probability #{p} and it happens, you score is #{-\log p} instead of #{(1-p)^2}. For our purposes the difference doesn't really matter (both have this property of being a "proper scoring rule", so if you have to assign the same probability to some set of questions, you optimize your score by assigning the fraction of them that comes out true).
-    }
+  \title{Good calibration doesn't mean you have a good Brier score}
+\p{
+  Imagine two people forecasting the same set of 100 potential natural disasters. The first forecaster (call him A) assigns probability 1\% to them all. The second forecaster (B) assigns probability 80\% to two of them, and 2\% to the rest. In the end, exactly one of the disasters happen, and it's one of the two that the second forecaster assigned 80\% probability to.
+}
+
+\p{
+  A has perfect calibration. B, by contrast, has pretty bad calibration (his 80\% "should" have been 50\%, and his 2\% should have been 0\%).
+}
+
+\p{
+  But:
+  - B has a better Brier score (A has #{(0.0099 + 0.99^2)/100}, B has approximately #{(0.8^2 + 0.2^2 + 0.0004 \cdot 98) /100}, and remember lower is better).
+  - More to the point, B's forecast is *clearly more useful* - having some reasonable ideas *which* of the 100 potential disasters will happen is clearly more important than getting the overall rate right
+  	- We could make this point even more stark by letting B assign 90\% probability to the disaster that ended up happening, and 1\% probability to the ones that don't.
+}
+}
+\subtree{
+  \title{Good calibration doesn't mean other people should adopt your forecasts}
+\p{
+  People often say things like "X has good calibration, meaning when they say there's a 10\% chance of something happening, it happens 10\% of the time. So when they say there's a 10\% chance of nuclear war (or whatever), we should take it seriously".
+}
+
+\p{
+  The first sentence is of course a correct explanation of calibration. But think of our disaster forecasters from before. A had perfect calibration, meaning when A says that disasters overall happen only one time in a hundred, he's right. But if he says that some *specific* disaster has a very low, 1\%, probability of happening, we shouldn't necessarily take that forecast very seriously. Perhaps it's actually easy to know which 1\% of disasters happen. A's ability to get the base rate right does say something about his forecasting, but the fact that he can't do better than the base rate doesn't prove that we can't, and should therefore adopt his forecast.
+}
+
+\p{
+  [^2]: Another is log scoring, where if you say X will happen with probability #{p} and it happens, you score is #{-\log p} instead of #{(1-p)^2}. For our purposes the difference doesn't really matter (both have this property of being a "proper scoring rule", so if you have to assign the same probability to some set of questions, you optimize your score by assigning the fraction of them that comes out true).
+}
 }

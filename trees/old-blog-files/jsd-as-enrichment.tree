@@ -1,57 +1,114 @@
-\date{2020-06-12T00:00:00Z}
+\date{2020-06-12}
 \author{eigil-rischel}
-\import{macros}
 \title{Jensen-Shannon divergence is compositional}
-    \p{
-        Let #{\mathsf{FinStoch}} be the category of finite sets and stochastic matrices. Given two stochastic matrices, #{f_1,f_2: X \to Y}, we can define their **Jensen-Shannon distance** as #{d(f_1,f_2) := \sup_x \sqrt{\operatorname{JSD}(f_1(x),f_2(x))}}, where JSD is the [Jensen-Shannon divergence](https://en.wikipedia.org/wiki/Jensen\%E2\%80\%93Shannon_divergence). It's a standard result that the root of JSD defines a metric on the space of probability measures - hence the above defines a metric on the set #{\mathsf{FinStoch}(X,Y)}. My aim here is to show that _this gives an enrichment of #{\mathsf{FinStoch}} in the category #{\mathsf{Met}} of metric spaces and **short**, i.e distance nonincreasing, maps_
-    }
-    \p{
-        The content of this statement is that the composition map
-    }
-    \p{
-        #{\mathsf{FinStoch}(X,Y) \otimes \mathsf{FinStoch}(Y,Z) \to \mathsf{FinStoch}(X,Z)} is a short map. The monoidal structure on #{\mathsf{Met}} that we're considering is given by the "1-metric", i.e #{d_{X \otimes Y}((x,y),(x',y')) = d_X(x,x') + d_Y(y,y')} This has the convenient property that a map is short if and only if it's "short in each variable separately". In other words, we must show that the map #{f \circ - :\mathsf{FinStoch}(X,Y) \to \mathsf{FinStoch}(X,Z)} is short for each #{f}, and that the map #{- \circ f : \mathsf{FinStoch}(Y,Z) \to \mathsf{FinStoch}(X,Z)} is short for each #{f}.
-    }
-\subtree{
-    \title{Fact about #{\operatorname{JSD}}. }
-    \p{
-        We will use the following characterization of #{\operatorname{JSD}(p,q)}: Let #{B} be a "fair coinflip", i.e a random variable which is #{0} with probability #{1/2} and #{1} otherwise. Let #{X} be a random variable which is distributed according to #{p} if #{B=0} and #{q} if #{B=1}. Then the mutual information of #{X} and #{B} is exactly the Jensen-Shannon divergence of #{p} and #{q}
-    }
+
+\p{
+Let #{\mathsf{FinStoch}} be the category of finite sets and stochastic matrices.
+Given two stochastic matrices, #{f_1,f_2: X \to Y}, we can define their
+**Jensen-Shannon distance** as #{d(f_1,f_2) := \sup_x \sqrt{\operatorname{JSD}(f_1(x),f_2(x))}},
+where JSD is the [Jensen-Shannon divergence](https://en.wikipedia.org/wiki/Jensen\%E2\%80\%93Shannon\%5Fdivergence).
+It's a standard result that the root of JSD defines a metric on the space of
+probability measures - hence the above defines a metric on the set
+#{\mathsf{FinStoch}(X,Y)}. My aim here is to show that
+_this gives an enrichment of #{\mathsf{FinStoch}} in the category #{\mathsf{Met}}
+of metric spaces and **short**, i.e distance nonincreasing, maps_
+}
+
+\p{
+The content of this statement is that the composition map
+}
+\p{
+##{\mathsf{FinStoch}(X,Y) \otimes \mathsf{FinStoch}(Y,Z) \to
+\mathsf{FinStoch}(X,Z)} is a short map. The monoidal structure on #{\mathsf{Met}}
+that we're considering is given by the "1-metric", i.e
+}
+##{d_{X \otimes Y}((x,y),(x',y')) = d_X(x,x') + d_Y(y,y')}
+\p{
+This has the convenient property that a map is short if and only if it's "short
+in each variable separately". In other words, we must show that the map
+}
+##{f \circ - :\mathsf{FinStoch}(X,Y) \to \mathsf{FinStoch}(X,Z)}
+\p{
+is short for each #{f}, and that the map
+}
+##{- \circ f : \mathsf{FinStoch}(Y,Z) \to \mathsf{FinStoch}(X,Z)}
+\p{
+is short for each #{f}.
 }
 \subtree{
-    \title{Postcomposition }
-    \p{
-        We want to show that #{d(fg_0,fg_1) \leq d(g_0,g_1)}. Clearly we may as well square both sides, so that we're trying to show that #{\sup_x \operatorname{JSD}(fg_0(x),fg_1(x)) \leq \sup_x \operatorname{JSD}(g_0(x),g_1(x))}
-    }
-    \p{
-        It suffices to show that this inequality holds for each #{x}, so let an #{x} be given. Then #{\operatorname{JSD}(g_0(x),g_1(x))} is the mutual information between a fair coin #{B} and a variable #{Y} distributed according to #{g_B(x)}. and #{\operatorname{JSD}(fg_1(x),fg_2(x))} is the mutual information between #{B} and a variable distributed as #{f(Y)}. But "postprocessing" by #{f} can't possible put more information about #{B} into the random variable, since it depends on #{Z} only through #{B}. Hence we have the desired inequality.
-    }
+  \title{Fact about #{\operatorname{JSD}}.}
+\p{
+  We will use the following characterization of #{\operatorname{JSD}(p,q)}:
+  Let #{B} be a "fair coinflip", i.e a random variable which is #{0} with
+  probability #{1/2} and #{1} otherwise.
+  Let #{X} be a random variable which is distributed according to #{p} if #{B=0} and
+  #{q} if #{B=1}. Then the mutual information of #{X} and #{B} is exactly the
+  Jensen-Shannon divergence of #{p} and #{q}
+}
 }
 \subtree{
-    \title{Precomposition }
-    \p{
-        We want to show #{d(g_0f,g_1f) \leq d(g_0,g_1)} Again it suffices to show #{\sup_x \operatorname{JSD}(g_0f(x),g_1f(x)) \leq \sup_y \operatorname{JSD}(g_0(y),g_1(y))} It's enough to show this for each specific #{x}, so let's assume wlog that #{X=*} and #{f} is simply a distribution, and we're showing #{\operatorname{JSD}(g_0f,g_1f) \leq \sup_y \operatorname{JSD}(g_0(y),g_1(y))}
-    }
-    \p{
-        To see this, let #{Y} be distributed according to #{f}, let #{B} be an unbiased coin, and let #{Z} be distributed according to #{g_B(Y)}. Then #{\operatorname{JSD}(g_0f,g_1f)} is #{I(Z;B)}, and #{\operatorname{JSD}(g_0(y),g_1(y))} is #{I(Z;B | Y = y)}.
-    }
-    \p{
-        Our claim is that #{I(Z;B) \leq I(Z;B | Y=y)} for at least one #{y}. We insert the entropy formula for mutual information: #{H(B) - H(B|Z) \leq H(B|Y=y) - H(B|Z, Y=y)} Since #{B,Y} independent, #{H(B|Y=y) = H(B)} (equals one bit), so we may rearrange this as #{H(B|Z,Y=y) \leq H(B|Z)} Now that the expected value #{E_y[H(B|Z,Y=y)]} is precisely #{H(B|Z,Y)} by definition. By a standard inequality #{H(B|Z,Y) \leq H(B|Z)}. Hence we also have the inequality #{H(B|Z,Y=y)} for at least one #{y}, as desired.
-    }
+  \title{Postcomposition}
+\p{
+  We want to show that #{d(fg_0,fg_1) \leq d(g_0,g_1)}.
+  Clearly we may as well square both sides, so that we're trying to show that
+}
+  ##{\sup_x \operatorname{JSD}(fg_0(x),fg_1(x)) \leq \sup_x
+  \operatorname{JSD}(g_0(x),g_1(x))}
+
+\p{
+  It suffices to show that this inequality holds for each #{x}, so let an #{x} be
+  given.
+  Then #{\operatorname{JSD}(g_0(x),g_1(x))} is the mutual information between a
+  fair coin #{B} and a variable #{Y} distributed according to #{g_B(x)}.
+  and #{\operatorname{JSD}(fg_1(x),fg_2(x))} is the mutual information between #{B}
+  and a variable distributed as #{f(Y)}.
+  But "postprocessing" by #{f} can't possible put more information about #{B} into
+  the random variable, since it depends on #{Z} only through #{B}.
+  Hence we have the desired inequality.
+}
 }
 \subtree{
-    \title{Followup questions }
-    \ol{
-        \li{
-            Is there a way to build something like this "canonically" - the way entropy
-        }
-    \p{
-        is characterized by a set of axioms in [A characterization of Entropy in Terms of Information Loss](https://arxiv.org/abs/1106.1791)?
-    }
-        \li{
-            How does this relate to other metrics on probability, i.e the description
-        }
-    \p{
-        from [A probability monad as the colimit of spaces of finite samples](https://arxiv.org/abs/1712.05363)
-    }
-    }
+  \title{Precomposition}
+\p{
+  We want to show #{d(g_0f,g_1f) \leq d(g_0,g_1)}
+  Again it suffices to show
+}
+  ##{\sup_x \operatorname{JSD}(g_0f(x),g_1f(x)) \leq \sup_y
+  \operatorname{JSD}(g_0(y),g_1(y))}
+\p{
+  It's enough to show this for each specific #{x}, so let's assume wlog that #{X=\ast}
+  and #{f} is simply a distribution, and we're showing
+}
+  ##{\operatorname{JSD}(g_0f,g_1f) \leq \sup_y \operatorname{JSD}(g_0(y),g_1(y))}
+
+\p{
+  To see this, let #{Y} be distributed according to #{f}, let #{B} be an unbiased
+  coin, and let #{Z} be distributed according to #{g_B(Y)}.
+  Then #{\operatorname{JSD}(g_0f,g_1f)} is #{I(Z;B)}, and
+  #{\operatorname{JSD}(g_0(y),g_1(y))} is #{I(Z;B | Y = y)}.
+}
+
+\p{
+  Our claim is that #{I(Z;B) \leq I(Z;B | Y=y)} for at least one #{y}.
+  We insert the entropy formula for mutual information:
+}
+  ##{H(B) - H(B|Z) \leq H(B|Y=y) - H(B|Z, Y=y)}
+\p{
+  Since #{B,Y} independent, #{H(B|Y=y) = H(B)} (equals one bit), so we may rearrange
+  this as ##{H(B|Z,Y=y) \leq H(B|Z)}
+  Now that the expected value #{E_y[H(B|Z,Y=y)]} is precisely #{H(B|Z,Y)} by
+  definition.
+  By a standard inequality #{H(B|Z,Y) \leq H(B|Z)}.
+  Hence we also have the inequality #{H(B|Z,Y=y)} for at least one #{y}, as desired.
+}
+}
+\subtree{
+  \title{Followup questions}
+\p{
+  1.  Is there a way to build something like this "canonically" - the way entropy
+      is characterized by a set of axioms in [A characterization of Entropy in
+      Terms of Information Loss](https://arxiv.org/abs/1106.1791)?
+  2.  How does this relate to other metrics on probability, i.e the description
+      from [A probability monad as the colimit of spaces of finite samples](https://arxiv.org/abs/1712.05363)
+}
 }

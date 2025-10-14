@@ -1,84 +1,113 @@
+\date{2021-01-21}
 \author{eigil-rischel}
-\date{2021-01-21T20:00:00+00:00}
-\import{macros}
 \title{Where numbers come from}
-    \p{
-        Alternative title: Wolves hate him!! Shepherd compares the size of large sets with this one easy trick!
-    }
-    \p{
-        Previously: [Recognizing Numbers](https://www.lesswrong.com/posts/S6MerYRZw4jDrzGGD/recognizing-numbers)
-    }
-    \p{
-        Let's do a thought experiment. I place an empty box in front of you. Then, while you're watching, I put these objects into the box:
-    }
-    \p{
-        [2 apples](/2_apples.png)
-    }
-    \p{
-        Then I remove these things from the box:
-    }
-    \p{
-        [3 apples](/3_apples.png)
-    }
-    \p{
-        You're surprised! Why? Because what I took out is not a subset of what I put in. A new apple appeared.
-    }
-    \p{
-        You can do this experiment with animals, and small children of various ages, and monitor them carefully to see if they seem surprised. You can also try *larger collections of apples*, to see how large a collection of apples they can keep track of.
-    }
-    \p{
-        Once children are old enough to talk, you can make the experiment more reliable by simply asking them if the box is empty. But of course, there's a small window of interestingness here - children beyond a certain age rapidly get extremely good at this problem, and from a certain point humans basically never fail at this task, unless the pile of apples gets extremely large. This does not surprise you at all.
-    }
-    \p{
-        The following picture switches back and forth between two collections of apples. Can you tell whether they're the same size "in one go" - without letting it switch back and forth more than once?
-    }
-    \p{
-        [apples gif](/apples_gif.gif)
-    }
-    \p{
-        This, it turns out, is actually very hard. Even grown human brains don't come hardwired with an arbitrarily powerful "compare the size of two collections" module. You can compare the *visual* size, which can give you the answer if the relative difference in size is moderately large. But in a case like the above, it's very hard to tell the size of those two collections apart.
-    }
-    \p{
-        Here's a simple piece of technology for comparing the size of two collections: pair of the elements one after the other. If the collections are exhausted at the same time, they're the same size. If not, whichever has elements left at the end is bigger.
-    }
-    \p{
-        Of course, this won't work if the collections are not available *at the same time* to be compared. This could be for a contrived reason like above, the image flashing back and forth. Or it could be for a practical reason - [a shepherd wants to compare the set of sheep in the pen when he opens the gate in the morning to the set of sheep in the pen before he closes the gate at night.](https://www.lesswrong.com/posts/X3HpE8tMXz4m4w6Rz/the-simple-truth)
-    }
-    \p{
-        So humans, so long ago that the origins have been completely forgotten, but certainly more than 20.000 years ago, came up with an ingenious technology to solve this problem:
-    }
-    \p{
-        Ishango Bone.
-    }
-    \p{
-        I will describe it for you now. We invented a *reference set* of every possible size (infinities had not been invented yet). There are many such families of reference sets, but here is the one you are probably familiar with:
-    }
-    \ul{
-        \li{
-            #{\{1\}}
-        }
-        \li{
-            #{\{1,2\}}
-        }
-        \li{
-            #{\{1,2,3\}}
-        }
-        \li{
-            #{\dots}
-        }
-    }
-    \p{
-        Before I let out the sheep in the morning, I *identify the reference set with the same size as the collection of sheep*. I do this by the procedure used above - I match up sheep with elements of the reference sets until I run out of sheep. "1,2,3,4,5,6,7,8,9,10,11". Now I know that the collection of sheep has the same size as the collection #{\{1,2,3,4,5,6,7,8,9,10,11\}}. This is called *counting*. In the evening, I compare that collection with the collection of sheep that came back - if they're not the same size, I know about the discrepancy.
-    }
-    \p{
-        It's important to emphasize that numbers are really a *technology* - it had to be invented. We know this because there exist communities without this technology. You've probably heard about languages without a name for numbers above 2 - "one, two, many". Well, that's more or less real. The most famous are the [Pirahã](https://en.wikipedia.org/wiki/Pirahã_people) of the Amazon rainforest. Their language has two words "hói" "hoí" (distinguished by tone) - originally taken to mean "one" and "two", but now believed to probably mean something like "small quantity" and "larger quantity". These are the closest thing to numerals in their language. Experiments like the one I described at the beginning have been put to them - even adult humans usually begin to fail at this task even when the number of objects is as low as four or five. They *don't* fail at this task when simply asked to match the number of object placed in a line of the table. They understand what it means for two sets to be *in bijection*, but they lack the technology of numbers to keep track of this information. The Pirahã are quite capable of hunting, gathering, cultivating manioc, crafting bows and arrows, building huts, and generally surviving in the jungle. They're not *stupid*. But they really, truly, do not know how to count.
-    }
-    \p{
-        The main trick here is *abstraction*. We remove all the details of the individual sheep and remember *only* the "number" - the *size* of the collection, its ability to count other things, be in bijection with other things. A mathematician might say "the bijection class of the set", if they did not have the word "number".
-    }
-    \p{
-        The second trick, also important, is *reification*. You can see how much I fumble for words above, trying to describe the concept "the number of elements in a set" without using the word "number". This is not a quantity you can put inside your brain. So we choose a *simple representative*. Whoever made the Ishango bone, pictured above, choose a set of marks on a bone to represent the bijection class. This is convenient because you can just keep the set of marks, i.e the bone, with you until you need the number again (unlike the set of sheep, which you have to let out to graze, that's the whole point). Another implementation is by creating a set of *words*. The set #{\{1,2,3\}}, or #{\{\text{one}, \text{two}, \text{three}\}}, is a handy set of a given size. We name this set after its largest element - "three" - and to reconstruct the set from the name, you only need to recall the order of the special size-words
-    }
-    \p{
-        (Thanks to John for inspiring me to write this).
-    }
+
+\p{
+Alternative title: Wolves hate him!! Shepherd compares the size of large sets with this one easy trick!
+}
+
+
+\p{
+Previously: [Recognizing Numbers](https://www.lesswrong.com/posts/S6MerYRZw4jDrzGGD/recognizing-numbers)
+}
+
+\p{
+Let's do a thought experiment.
+I place an empty box in front of you. Then, while you're watching, I put these objects into the box:
+}
+
+\<html:img>[src]{\route-asset{assets/images/2_apples.png}}{2 apples}
+
+\p{
+Then I remove these things from the box:
+}
+
+\<html:img>[src]{\route-asset{assets/images/3_apples.png}}{3 apples}
+
+\p{
+You're surprised! Why? Because what I took out is not a subset of what I put in. A new apple appeared.
+}
+
+\p{
+You can do this experiment with animals, and small children of various ages, and monitor them carefully to see if they seem surprised. You can also try *larger collections of apples*, to see how large a collection of apples they can keep track of.
+}
+
+\p{
+Once children are old enough to talk, you can make the experiment more reliable by simply asking them if the box is empty. But of course, there's a small window of interestingness here - children beyond a certain age rapidly get extremely good at this problem, and from a certain point humans basically never fail at this task, unless the pile of apples gets extremely large. This does not surprise you at all.
+}
+
+\p{
+The following picture switches back and forth between two collections of apples. Can you tell whether they're the same size "in one go" - without letting it switch back and forth more than once?
+}
+
+\<html:img>[src]{\route-asset{assets/images/apples_gif.gif}}{apples gif}
+
+\p{
+This, it turns out, is actually very hard. Even grown human brains don't come hardwired with an arbitrarily powerful "compare the size of two collections" module. You can compare the *visual* size, which can give you the answer if the relative difference in size is moderately large. But in a case like the above, it's very hard to tell the size of those two collections apart.
+}
+
+\p{
+Here's a simple piece of technology for comparing the size of two collections: pair of the elements one after the other. If the collections are exhausted at the same time, they're the same size. If not, whichever has elements left at the end is bigger.
+}
+
+\p{
+Of course, this won't work if the collections are not available *at the same time* to be compared. This could be for a contrived reason like above, the image flashing back and forth. Or it could be for a practical reason - [a shepherd wants to compare the set of sheep in the pen when he opens the gate in the morning to the set of sheep in the pen before he closes the gate at night.](https://www.lesswrong.com/posts/X3HpE8tMXz4m4w6Rz/the-simple-truth)
+}
+
+\p{
+So humans, so long ago that the origins have been completely forgotten, but certainly more than 20.000 years ago, came up with an ingenious technology to solve this problem:
+}
+
+\<html:img>[src]{https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Os_d\%27Ishango_IRSNB.JPG/800px-Os_d\%27Ishango_IRSNB.JPG}{Ishango bone}
+
+\p{
+I will describe it for you now.
+We invented a *reference set* of every possible size (infinities had not been invented yet). There are many such families of reference sets, but here is the one you are probably familiar with:
+}
+
+\ul{
+  \li{#{\{1\}}}
+  \li{#{\{1,2\}}}
+  \li{#{\{1,2,3\}}}
+  \li{#{\\dots}}
+\p{
+}
+}
+
+\p{
+Before I let out the sheep in the morning, I *identify the reference set with the same size as the collection of sheep*. I do this by the procedure used above - I match up sheep with elements of the reference sets until I run out of sheep. "1,2,3,4,5,6,7,8,9,10,11". Now I know that the collection of sheep has the same size as the collection
+#{\{1,2,3,4,5,6,7,8,9,10,11\}}. This is called *counting*.
+In the evening, I compare that collection with the collection of sheep that came back - if they're not the same size, I know about the discrepancy.
+}
+
+\p{
+It's important to emphasize that numbers are really a *technology* - it had to be invented. We know this because there exist communities without this technology. You've probably heard about languages without a name for numbers above 2 - "one, two, many". Well, that's more or less real. The most famous are the [Pirahã](https://en.wikipedia.org/wiki/Pirah\%C3\%A3_people) of the Amazon rainforest.
+Their language has two words "hói" "hoí" (distinguished by tone) - originally taken to mean "one" and "two", but now believed to probably mean something like "small quantity" and "larger quantity". These are the closest thing to numerals in their language. 
+Experiments like the one I described at the beginning have been put to them[^2] - even adult humans usually begin to fail at this task even when the number of objects is as low as four or five. They *don't* fail at this task when simply asked to match the number of object placed in a line of the table. They understand what it means for two sets to be *in bijection*, but they lack the technology of numbers to keep track of this information. The Pirahã are quite capable of hunting, gathering, cultivating manioc, crafting bows and arrows, building huts, and generally surviving in the jungle. They're not *stupid*. But they really, truly, do not know how to count.[^3]
+}
+
+\p{
+[^3]: Actually, it seems some meddlesome people have started teaching the Pirahã Portugese, including numerals, and basic mathematics. So the world may be about to lose one of the few examples of numberless peoplmay be about to lose one of the few examples of numberless people..
+}
+
+
+\p{
+The main trick here is *abstraction*. We remove all the details of the individual sheep and remember *only* the "number" - the *size* of the collection, its ability to count other things, be in bijection with other things. A mathematician might say "the bijection class of the set", if they did not have the word "number".
+}
+
+\p{
+The second trick, also important, is *reification*. You can see how much I fumble for words above, trying to describe the concept "the number of elements in a set" without using the word "number". This is not a quantity you can put inside your brain. So we choose a *simple representative*. Whoever made the Ishango bone, pictured above, choose a set of marks on a bone to represent the bijection class. This is convenient because you can just keep the set of marks, i.e the bone, with you until you need the number again (unlike the set of sheep, which you have to let out to graze, that's the whole point). Another implementation is by creating a set of *words*. The set #{\{1,2,3\}}, or #{\{\text{one}, \text{two}, \text{three}\}}, is a handy set of a given size.
+We name this set after its largest element - "three" - and to reconstruct the set from the name, you only need to recall the order of the special size-words[^1]
+}
+
+\p{
+[^1]: In mathematics, we might define #{3} to be the set #{\{0,1,2\}} instead - this has the advantage that the definition is not self-referential, and maybe technically convenient for other reasons. But most people count starting from 1, not 0.
+}
+
+\p{
+[^2]: See [Number as a cognitive technology: Evidence from Pirahã language and cognition](https://www.sciencedirect.com/science/article/abs/pii/S0010027708001042?via\%3Dihub). Concretely, the subjects were asked to match the number of objects placed by the experimenter. In one experiment, the experimenter simply put objects down in a line on the table. In another, the objects were dropped one after the other into an opaque container. The subject then had to place the same number of objects on their side of the table. There were a few different versions of this. Maybe it's important to note here that this study was not exactly high-n, and communication with the subjects was unreliable for obvious reasons. There were a few failures even on the "easy" versions of the tasks, so perhaps it's not entirely clear how much of the results should be put down to the subjects having trouble representing cardinalities in their head, and how much should be put down to different versions of the task being harder to understand, or even simply deciding to mess with the experimenters.
+}
+
+\p{
+(Thanks to John for inspiring me to write this).
+}

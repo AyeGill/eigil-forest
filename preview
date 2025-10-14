@@ -13,7 +13,7 @@ import contextlib
 import time
 
 PORT = 8000
-ROOT = "http://localhost:{PORT}/index.xml".format(PORT=PORT)
+ROOT = "http://localhost:{PORT}/".format(PORT=PORT)
 DIR = os.path.dirname(os.path.realpath(__file__))
 
 def build_forest():

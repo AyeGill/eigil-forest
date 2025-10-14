@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?> 
+<?xml-stylesheet href="latex-lhaP5q.css" type="text/css"?> 
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91.2728pt" height="147.94214pt" viewBox="-45.76834 -142.38695 91.2728 147.94214 "> 
+<g transform="translate(0, 5.55519 ) scale(1,-1) translate(0,142.38695 )"> 
+              <g>
+ <g stroke="rgb(0.0%,0.0%,0.0%)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <g stroke-width="0.4pt">
+ <g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-2.30556,-2.22221)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.30556,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">x</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-42.43536,-70.6381)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.30556,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">y</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,37.82425,-70.63809)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.17361,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">z</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(1.0,0.0,0.0,1.0,-2.8611,-139.05397)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.58333,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">u</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke-width="0.6pt">
+ <path d=" M  -3.32571 -5.75519 L  -35.6919 -61.71112  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.50252,-0.86877,0.86877,-0.50252,-35.6919,-61.71112)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="miter">
+ <path d=" M  -5.6582 2.53972 L  0.325 0.0 L  -5.6582 -2.53972 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke-width="0.6pt">
+ <path d=" M  3.36208 -5.75519 L  36.08365 -61.71521  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.50581,-0.86504,0.86504,0.50581,36.08363,-61.7152)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="miter">
+ <path d=" M  -5.6582 2.53972 L  0.325 0.0 L  -5.6582 -2.53972 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke-width="0.6pt">
+ <path d=" M  -36.15573 -76.11552 L  -4.23227 -130.13521  " style="fill:none"/>
+ <g>
+ <g transform="matrix(0.509,-0.86127,0.86127,0.509,-4.23227,-130.13521)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="miter">
+ <path d=" M  -5.6582 2.53972 L  0.325 0.0 L  -5.6582 -2.53972 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(0.509,-0.86127,0.86127,0.509,-30.7768,-107.10957)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">*</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ <g>
+ <g stroke-width="0.6pt">
+ <path d=" M  36.61252 -74.17107 L  3.66367 -130.13109  " style="fill:none"/>
+ <g>
+ <g transform="matrix(-0.50934,-0.86504,0.86504,-0.50934,3.66367,-130.13107)">
+ <g>
+ <g stroke-dasharray="none" stroke-dashoffset="0.0pt">
+ <g stroke-linejoin="miter">
+ <path d=" M  -5.6582 2.53972 L  0.325 0.0 L  -5.6582 -2.53972 Z  " />
+ </g>
+ </g>
+ </g>
+  </g>
+ </g>
+ <g>
+ <g>
+ <g transform="matrix(0.50934,0.86504,-0.86504,0.50934,28.21681,-110.45683)">
+ <g fill="rgb(0.0%,0.0%,0.0%)">
+ <text style="stroke:none" transform="scale(1,-1) translate(2.5,0)" text-anchor="middle"  font-size="10"> 
+<tspan font-family="cmss" font-size="10">*</tspan></text> 
+</g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ </g>
+ 
+                           </g> 
+</svg> 

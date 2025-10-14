@@ -1,54 +1,108 @@
-\author{eigil-rischel}
-\title{
-    Frequentist Statistics and Compositionality
-}
 \date{2020-02-27}
-\import{macros}
-    \p{
-        Time-saving blurb: This essay thingy eventually ends without any useful conclusion (I don't manage to figure out how to make something compose). Also, it's not clear that what's here is particularly deep even if it could be made to work, which it hasn't.
-    }
-\subtree{
-    \title{P-values}
-    \p{
-        For convenience I'll only work with finite sets - I'm not aware of any serious problems extending this to more general spaces, but it would add some technicalities and it's not really germane to what I'm doing.
-    }
-    \p{
-        Let's say we have a population, and some attribute of the individuals that can be measured - maybe the population consists of humans, and we're measuring their height. Or maybe the population is really "outcomes of an experiment".
-    }
-    \p{
-        The simplest sort of model for something like this is just a probability distribution - a probability #{p(x)} for each possible measurement #{x}. What we want to do is to take some large number of measurements #{x_1, x_2, \dots x_N}, and see if our model is plausible. How to do this? The naive thing would be to calculate the probability of the outcome, which is #{p(x_1)p(x_2) \cdots p(x_N)}. For a plausible model, this should be high. One issue is that it's not clear how high is "high enough". Obviously, adding more samples will reduce this towards zero, even for a model that's totally correct. Moreover, if we're looking at a larger set of possibilities, then the probabilities will have to be smaller - again, even if our model is correct.
-    }
-    \p{
-        The classical solution to this question is the "#{p}-value": The probability of getting an outcome which is less or equally likely than the one we actually got. If you think about it, you'll realize that things with higher probabilities also have higher #{p}-values. Moreover, splitting the space of possibilities up doesn't affect the #{p}-value, essentially because it also splits all the lower-probability outcomes up. Taking more samples may increase or decrease the #{p}-value, but tends to decrease it precisely if our model is not exactly right (this is not really trivial). For these reasons #{p}-values are the most ubiquitous way of rating models in statistics. Clasically, we reject a model if the #{p}-value is less than #{0.05}.
-    }
-    \p{
-        (There are many problems with them, but we won't go into that...)
-    }
+\author{eigil-rischel}
+\title{Frequentist Statistics and Compositionality}
+
+\p{
+Time-saving blurb:
+This essay thingy eventually ends without any useful conclusion (I don't manage to figure out how to make something compose).
+Also, it's not clear that what's here is particularly deep even if it could be made to work, which it hasn't.
 }
 \subtree{
-    \title{Open models, rejection relations}
-    \p{
-        Now I want to cook up a categorical/compositional version of this. What's an "open probability distribution"? My best current bet is that it's a stochastic matrix #{A \to B} (where #{A,B} are finite sets). In other words, for each point #{a\in A}, a probability distribution #{P(b|a)} on #{B}. These form a category #{\mathsf{FinStoch}}.
-    }
-    \p{
-        How can I do frequentism to this, in a "compositional" way?. I came up with this definition:
-    }
-    \p{
-        A *plausibility relation* is a function #{(A \times B)^* \to [0,1]}. Here #{(A\times B)^*} is the "Kleene star", the set of finite sequences of pairs #{(a,b) \in A \times B}. The interpretation is that it's a function which sends each sequence to the #{p}-value. Given a stochastic matrix #{P: A \to B}, we can define a plausibility relation #{p_P((a_i,b_i)_{i=0}^N)}, to be the probability of observing a sequence of #{b_i}s less likely or equally likely to the actual sequence, given that each #{b_i} is distributed according to #{P( |a_i)} (holding the #{a_i}s fixed).
-    }
-    \p{
-        Now the puzzle: figure out a composition rule for plausibility relations which makes this into a functor. A reasonable definition could be this: ```texpic #{(p \circ q)((a_i,c_i)_{i=0}^N) = \sup_{b_i \in B^N}q((a_i,b_i))p((b_i,c_i))} ``` This vaguely mirrors the composition rules for relations. Unfortunately it doesn't work.
-    }
-    \p{
-        Basically, the #{p}-value of the least likely outcome is simply its probability (assuming no two outcomes have exactly the same probability), but the formula above isn't the formula for composing stochastic matrices (we should sum instead of taking max). To be completely concrete, let #{A=B=C = \{0,1\}}, let #{f:A \to B, g: B \to C} both be given by flipping the state with probability #{1/3}. Then the probability of passing from #{0} to #{1} after both #{f} and #{g} is #{4/9}, which is also its #{p}-value. The "composite of the #{p}-values" for #{(0,1)} is #{\max \{p_f(0,1)p_g(1,1), p_f(0,0)p_g(0,1)\} = 1/3}.
-    }
-    \p{
-        We could also hope that this construction was a "lax functor", i.e that we always had #{p_{fg} \geq p_f \circ p_g}. This also doesn't hold. Here we can find a counterexample where some outcome #{c} is most likely given #{a} (so has #{p}-value #{1}), but the most likely #{b} doesn't make #{c} the most likely (so none of the products can be #{1}). Again, concretely, let #{A = *, B = \{1,2,3\}, C = \{0,1\}}. Define #{f: A \to B} to be #{1} with probability #{3/7}, and both #{2} and #{3} with probability #{2/7}. Let #{g: B \to C} be defined so that given #{1}, it's always #{0}, and given #{2} or #{3}, it's always #{1}. Then the most likely outcome is #{C}, so the #{p}-value #{p_{fg}(*,1) = 1}. But for any choice of #{b}, either #{p_f(*,b)} or #{p_g(b,1)} will be less than #{1}, so the composed #{p}-value can't be one.
-    }
+  \title{P-values}
+\p{
+  For convenience I'll only work with finite sets - I'm not aware of any serious problems extending this to more general spaces, but it would add some technicalities and it's not really germane to what I'm doing.
+}
+
+\p{
+  Let's say we have a population, and some attribute of the individuals that can be measured - maybe the population consists of humans, and we're measuring their height.
+  Or maybe the population is really "outcomes of an experiment".
+}
+
+\p{
+  The simplest sort of model for something like this is just a probability distribution - a probability #{p(x)} for each possible measurement #{x}.
+  What we want to do is to take some large number of measurements #{x_1, x_2, \dots x_N}, and see if our model is plausible.
+  How to do this?
+  The naive thing would be to calculate the probability of the outcome, which is #{p(x_1)p(x_2) \cdots p(x_N)}.
+  For a plausible model, this should be high.
+  One issue is that it's not clear how high is "high enough".
+  Obviously, adding more samples will reduce this towards zero, even for a model that's totally correct.
+  Moreover, if we're looking at a larger set of possibilities, then the probabilities will have to be smaller - again, even if our model is correct.
+}
+
+\p{
+  The classical solution to this question is the "#{p}-value":
+  The probability of getting an outcome which is less or equally likely than the one we actually got.
+  If you think about it, you'll realize that things with higher probabilities also have higher #{p}-values.
+  Moreover, splitting the space of possibilities up doesn't affect the #{p}-value, essentially because it also splits all the lower-probability outcomes up.
+  Taking more samples may increase or decrease the #{p}-value, but tends to decrease it precisely if our model is not exactly right (this is not really trivial).
+  For these reasons #{p}-values are the most ubiquitous way of rating models in statistics. Clasically, we reject a model if the #{p}-value is less than #{0.05}.
+}
+
+\p{
+  (There are many problems with them, but we won't go into that...)
+}
 }
 \subtree{
-    \title{Comments}
-    \p{
-        The problem in the last countexample is that the probability is kind of "split up" between #{2,3 \in B}. This gives them a low #{p}-value, even though we don't care about their difference. But it's not clear that this sort of thinking could be made compositional.
-    }
+  \title{Open models, rejection relations}
+\p{
+  Now I want to cook up a categorical/compositional version of this.
+  What's an "open probability distribution"?
+  My best current bet is that it's a stochastic matrix #{A \to B} (where #{A,B} are finite sets).
+  In other words, for each point #{a\in A}, a probability distribution #{P(b|a)} on #{B}.
+  These form a category #{\mathsf{FinStoch}}.
+}
+
+\p{
+  How can I do frequentism to this, in a "compositional" way?.
+  I came up with this definition:
+}
+
+\p{
+  A *plausibility relation* is a function #{(A \times B)^* \to [0,1]}.
+  Here #{(A\times B)^*} is the "Kleene star", the set of finite sequences of pairs #{(a,b) \in A \times B}.
+  The interpretation is that it's a function which sends each sequence to the #{p}-value.
+  Given a stochastic matrix #{P: A \to B}, we can define a plausibility relation #{p_P((a_i,b_i)_{i=0}^N)},
+  to be the probability of observing a sequence of #{b_i}s less likely or equally likely to the actual sequence,
+  given that each #{b_i} is distributed according to #{P( |a_i)} (holding the #{a_i}s fixed).
+}
+
+\p{
+  Now the puzzle: figure out a composition rule for plausibility relations which makes this into a functor.
+  A reasonable definition could be this:
+}
+  \startverb
+  \[(p \circ q)((a_i,c_i)_{i=0}^N) = \sup_{b_i \in B^N}q((a_i,b_i))p((b_i,c_i))\]
+  \stopverb
+\p{
+  This vaguely mirrors the composition rules for relations.
+  Unfortunately it doesn't work.
+}
+
+\p{
+  Basically, the #{p}-value of the least likely outcome is simply its probability (assuming no two outcomes have exactly the same probability),
+  but the formula above isn't the formula for composing stochastic matrices (we should sum instead of taking max).
+  To be completely concrete, let #{A=B=C = \{0,1\}}, let #{f:A \to B, g: B \to C} both be given by flipping the state with probability #{1/3}.
+  Then the probability of passing from #{0} to #{1} after both #{f} and #{g} is #{4/9}, which is also its #{p}-value.
+  The "composite of the #{p}-values" for #{(0,1)} is #{\max \{p_f(0,1)p_g(1,1), p_f(0,0)p_g(0,1)\} = 1/3}.
+}
+
+\p{
+  We could also hope that this construction was a "lax functor", i.e that we always had #{p_{fg} \geq p_f \circ p_g}.
+  This also doesn't hold.
+  Here we can find a counterexample where some outcome #{c} is most likely given #{a} (so has #{p}-value #{1}), but the most likely #{b} doesn't make #{c} the most likely
+  (so none of the products can be #{1}).
+  Again, concretely, let #{A = *, B = \{1,2,3\}, C = \{0,1\}}.
+  Define #{f: A \to B} to be #{1} with probability #{3/7}, and both #{2} and #{3} with probability #{2/7}.
+  Let #{g: B \to C} be defined so that given #{1}, it's always #{0}, and given #{2} or #{3}, it's always #{1}.
+  Then the most likely outcome is #{C}, so the #{p}-value #{p_{fg}(*,1) = 1}.
+  But for any choice of #{b}, either #{p_f(*,b)} or #{p_g(b,1)} will be less than #{1}, so the composed #{p}-value can't be one.
+}
+}
+\subtree{
+  \title{Comments}
+\p{
+  The problem in the last countexample is that the probability is kind of "split up" between #{2,3 \in B}.
+  This gives them a low #{p}-value, even though we don't care about their difference.
+  But it's not clear that this sort of thinking could be made compositional.
+}
 }

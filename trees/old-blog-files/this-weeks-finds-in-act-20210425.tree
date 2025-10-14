@@ -1,64 +1,59 @@
+\date{2021-04-25}
 \author{eigil-rischel}
-\import{macros}
-\date{2021-04-25T19:45:00+02:00}
 \title{This Week's Finds in ACT - April 25th}
-    \p{
-        I wrote a long post on one of the papers I read this week: [Example of my reading process: Cellular sheaves of lattices and the Tarski laplacian](https://erischel.com/example-of-reading-process-cellular-sheaves/). See that post for the details!
-    }
-    \p{
-        Some other stuff:
-    }
-\subtree{
-    \title{[Jade Master: The Open Algebraic Path Problem](https://arxiv.org/abs/2005.06682)}
-    \p{
-        This paper came out in 2020, so it's practically ancient history. But it's really cool! It's about
-    }
-    \ul{
-        \li{
-            The problem of finding a path between two vertices on a graph
-        }
-        \li{
-            An algebraic generalization of this where you replace "graph" by more exotic things (the "algebraic path problem")
-        }
-        \li{
-            An _open_ generalization of this where you build your (generalized) graph by gluing together smaller examples.
-        }
-    }
-    \p{
-        The basic algebraic structure is a _quantale_ - an ordered set equipped with a binary operation (compatible with the order), which has all joins. Some basic examples:
-    }
-    \ul{
-        \li{
-            #{\{0 \leq 1\}} with the operation #{\vee} (OR). Here the algebraic path problem detects the existence of a path from one vertex to another.
-        }
-        \li{
-            #{[0,\infty]} equipped with #{+} and given the _reverse_ order (so join = infimum). In this case the algebraic path problem finds the length of the _shortest_ path (#{\infty} if there is no path).
-        }
-    }
-    \p{
-        The first observation is that this boils down to computing the pointwise join #{\bigvee_i M^i} of all the powers of the adjacency matrix corresponding to a graph - where we simply _define_ a "graph over a quantale" to be such an adjacency matrix. If the quantale is #{\{0,1\}}, this is a graph in the usual sense, each edge is either there or not. If the quantale is #{[0,\infty]}, each edge has a certain length (which may be infinite to denote "no edge"). Thus we have "the algebraic path problem".
-    }
-    \p{
-        The second observation is that you can "glue graphs together" by taking pushouts in a certain category of matrices, and this respects the computation of the paths above. There is a lot of very nice category theory in this.
-    }
+
+\p{
+I wrote a long post on one of the papers I read this week: [Example of my reading process: Cellular sheaves of lattices and the Tarski laplacian](example-of-reading-process-cellular-sheaves).
+See that post for the details!
+}
+
+\p{
+Some other stuff:
 }
 \subtree{
-    \title{[Tom Leinster: The Magnitude Of Metric Spaces](https://arxiv.org/abs/1012.5857v3)}
-    \p{
-        This is an even older paper, which spawned a lively field of research see eg [here](https://golem.ph.utexas.edu/category/2011/01/magnitude_of_metric_spaces_a_r.html) and [here](golem.ph.utexas.edu/category/2016/09/magnitude_homology.html). This is about associating an invariant called magnitude to metric spaces, which measures their "size" in a kind of hard-to-understand way:
-    }
-    \ul{
-        \li{
-            The magnitude of a finite set of points, all at distance #{\infty}, is the number of points
-        }
-        \li{
-            As the distances go to zero, the magnitude converges to one (in the above case of finitely many points)
-        }
-        \li{
-            The magnitude of the interval #{[0,t]} is #{1 + t/2}.
-        }
-    }
-    \p{
-        I don't think I really understand this stuff deeply, but it's very interesting!
-    }
+  \title{[Jade Master: The Open Algebraic Path Problem](https://arxiv.org/abs/2005.06682)}
+\p{
+  This paper came out in 2020, so it's practically ancient history.
+  But it's really cool! It's about
+}
+
+\p{
+  -   The problem of finding a path between two vertices on a graph
+  -   An algebraic generalization of this where you replace "graph" by more exotic things (the "algebraic path problem")
+  -   An _open_ generalization of this where you build your (generalized) graph by gluing together smaller examples.
+}
+
+\p{
+  The basic algebraic structure is a _quantale_ - an ordered set equipped with a binary operation (compatible with the order), which has all joins.
+  Some basic examples:
+}
+
+\p{
+  -   #{\{0 \leq 1\}} with the operation #{\vee} (OR). Here the algebraic path problem detects the existence of a path from one vertex to another.
+  -   #{[0,\infty]} equipped with #{+} and given the _reverse_ order (so join = infimum). In this case the algebraic path problem finds the length of the _shortest_ path (#{\infty} if there is no path).
+}
+
+\p{
+  The first observation is that this boils down to computing the pointwise join #{\bigvee_i M^i} of all the powers of the adjacency matrix corresponding to a graph - where we simply _define_ a "graph over a quantale" to be such an adjacency matrix. If the quantale is #{\{0,1\}}, this is a graph in the usual sense, each edge is either there or not. If the quantale is #{[0,\infty]}, each edge has a certain length (which may be infinite to denote "no edge"). Thus we have "the algebraic path problem".
+}
+
+\p{
+  The second observation is that you can "glue graphs together" by taking pushouts in a certain category of matrices, and this respects the computation of the paths above. There is a lot of very nice category theory in this.
+}
+}
+\subtree{
+  \title{[Tom Leinster: The Magnitude Of Metric Spaces](https://arxiv.org/abs/1012.5857v3)}
+\p{
+  This is an even older paper, which spawned a lively field of research (see eg [here](https://golem.ph.utexas.edu/category/2011/01/magnitude\%5Fof\%5Fmetric\%5Fspaces\%5Fa\%5Fr.html\%20) and [here](https://golem.ph.utexas.edu/category/2016/09/magnitude\%5Fhomology.html)). This is about associating an invariant called _magnitude_ to metric spaces, which measures their "size" in a kind of hard-to-understand way:
+}
+
+\p{
+  -   The magnitude of a finite set of points, all at distance #{\infty}, is the number of points
+  -   As the distances go to zero, the magnitude converges to one (in the above case of finitely many points)
+  -   The magnitude of the interval #{[0,t]} is #{1 + t/2}.
+}
+
+\p{
+  I don't think I really understand this stuff deeply, but it's very interesting!
+}
 }

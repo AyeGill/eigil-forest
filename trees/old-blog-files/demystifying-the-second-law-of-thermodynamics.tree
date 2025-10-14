@@ -1,128 +1,175 @@
+\date{2020-11-22}
 \author{eigil-rischel}
-\date{2020-11-22T12:14:04+00:00}
-\import{macros}
 \title{Demystifying the second law of thermodynamics}
-    \p{
-        Thermodynamics is really weird. Most people have probably encountered a bad explanation of the basics at some point in school, but probably don't remember more than
-    }
-    \ul{
-        \li{
-            Energy is conserved
-        }
-        \li{
-            Entropy increases
-        }
-        \li{
-            There's something called the ideal gas law/ideal gas equation.
-        }
-    }
-    \p{
-        Energy conservation is not very mysterious. Apart from some weirdness around defining energy in general, it's just a thing you can prove from whatever laws of motion you're using.
-    }
-    \p{
-        But _entropy_ is very weird. You've heard that it measures "disorder" in some vague sense. Maybe you've heard that it's connected to the [Shannon entropy](https://en.wikipedia.org/wiki/Entropy_(information_theory)) of a probability distribution #{H(p) = \sum_x - p(x)\ln p(x)}. Probably the weirdest thing about it is the law it obeys: It's not conserved, but rather it _increases_ with time. This is more or less the only law like that in physics.
-    }
-    \p{
-        It gets even weirder when you consider that at least classical Newtonian physics is _time-symmetric_. Roughly speaking, this means if you have a movie of things interacting under the laws of Newton, and you play it backwards, they're still obeying the laws of Newton. An orbiting moon just looks like it's orbiting in the other direction, which is perfectly consistent. A stone which is falling towards earth and accelerating looks like it's flying away from earth and decelerating - exactly as gravity is supposed to do.
-    }
-    \p{
-        But if there's some "entropy" quality out there that only increases, then that's obviously impossible! When you played the movie backwards, you'd be able to tell that entropy was decreasing, and if entropy always increases, some law is being violated. So what, is entropy some artefact of quantum mechanics? No, as it turns out. Entropy is an artefact of the fact that you can't measure all the particles in the universe at once. And the fact that it seems to always increase is a consequence of the fact that matter is stable at large scales.
-    }
-    \p{
-        The points in this post are largely from E.T. Jaynes' [Macroscopic Prediction](https://bayes.wustl.edu/etj/articles/macroscopic.prediction.pdf).
-    }
-\subtree{
-    \title{A proof that entropy doesn't always increase }
-    \p{
-        Let #{X} be the set of states of some physical system. Here I will assume that there is a finite number of states and time advances in discrete steps - there is some function #{T: X \to X} which steps time forward one step. We assume that these dynamics are time-reversible in the weak sense that #{T} is a bijection - every state is the future of exactly one "past" state. Let #{S: X \to \mathbb{R}} be some function. Assume #{S(x) \leq S(Tx)} - in other words, #{S} can never decrease. Then #{S} is constant, i.e #{S(x) = S(Tx)}.
-    }
-    \p{
-        Proof: Assume for contradiction #{S(x) < S(Tx)} for some #{x}. Since #{X} is finite, let #{\sum_x S(x)} be the sum of #{S} over all states. Then clearly #{\sum_x S(x) = \sum_x S(Tx)}, since #{Tx} just ranges over all the #{x}s. But on the other hand, we have #{S(x) \leq S(Tx)} for all #{x}, and #{S(x) < S(Tx)} in at least one case. So we must have #{\sum_x S(x) < \sum_x S(Tx)} - contradiction.
-    }
-    \p{
-        This proof can be generalized to the continuous time and space case without too much trouble, for the types of dynamics that actually show up in physics (using [Liouville's Theorem](https://en.wikipedia.org/wiki/Liouville\%27s_theorem_(Hamiltonian))). The proof above still requires a _bounded_ phase volume (corresponding to the finiteness of #{X}). To generalize to other situations we need some more assumptions - the easiest thing is to assume that the dynamics are time-reversible in a stronger sense, and that this is compatible with the entropy in some way.
-    }
-    \p{
-        (You can find easy counterexamples in general, e.g. if #{X=\mathbb{Z}} and the dynamics are #{T(x) = x+1}, then obviously we really do have that #{S(x) =x} is increasing. Nothing to do about that.)
-    }
-    \p{
-        Anyways the bounded/finite versions of the theorems do hold for a toy thermodynamic system like particles in a (finite) box - here the phase volume really is bounded.
-    }
+
+\p{
+Thermodynamics is really weird. Most people have probably encountered a bad explanation of the basics at some point in school, but probably don't remember more than
+}
+
+\ul{
+  \li{Energy is conserved}
+  \li{Entropy increases}
+  \li{There's something called the ideal gas law/ideal gas equation.}
+\p{
+}
+}
+
+\p{
+Energy conservation is not very mysterious. Apart from some weirdness around defining energy in general, it's just a thing you can prove from whatever laws of motion you're using.
+}
+
+\p{
+But _entropy_ is very weird. You've heard that it measures "disorder" in some vague sense.
+Maybe you've heard that it's connected to the [Shannon entropy](https://en.wikipedia.org/wiki/Entropy\%5F(information\%5Ftheory)) of a probability distribution #{H(p) = \sum_x - p(x)\ln p(x)}.
+Probably the weirdest thing about it is the law it obeys: It's not conserved, but rather it _increases_ with time.
+This is more or less the only law like that in physics.
+}
+
+\p{
+It gets even weirder when you consider that at least classical Newtonian physics is _time-symmetric_.
+Roughly speaking, this means if you have a movie of things interacting under the laws of Newton, and you play it backwards, they're still obeying the laws of Newton. An orbiting moon just looks like it's orbiting in the other direction, which is perfectly consistent. A stone which is falling towards earth and accelerating looks like it's flying away from earth and decelerating - exactly as gravity is supposed to do.
+}
+
+\p{
+But if there's some "entropy" quality out there that only increases, then that's obviously impossible! When you played the movie backwards, you'd be able to tell that entropy was decreasing, and if entropy always increases, some law is being violated.
+So what, is entropy some artefact of quantum mechanics? No, as it turns out. Entropy is an artefact of the fact that you can't measure all the particles in the universe at once. And the fact that it seems to always increase is a consequence of the fact that matter is stable at large scales.
+}
+
+\p{
+The points in this post are largely from E.T. Jaynes' [Macroscopic Prediction](https://bayes.wustl.edu/etj/articles/macroscopic.prediction.pdf).
 }
 \subtree{
-    \title{The true meaning of entropy }
-    \p{
-        Okay, so what the hell is going on? Did your high school physics textbook lie to you about this? Well, yes. But you're probably never going to observe entropy going down in your life, so you can maybe rest easy.
-    }
-    \p{
-        Let #{X} be the physical system under consideration again. But suppose now that we can't observe #{x \in X}, but only some "high-level description #{p(x) \in Y}. Maybe #{x} is the total microscopic state of every particle in a cloud of gas - their position and momentum - while #{p(x)} is just the average energy of the particles (roughly corresponding to the temperature). #{x} is called a _microstate_ and #{y = p(x)} is called a _macrostate_. Then the _entropy_ of #{y \in Y} is #{S(y) = \ln p^{-1}(\{y\})} - the logarithm of the number of microstates #{x} where #{p(x) = y}. We say these are the microstates that _realize_ the macrostate #{y}.
-    }
-    \p{
-        The connection with Shannon entropy is now that this is exactly the Shannon entropy of the uniform distribution over #{p^{-1}(y)}. This is the distribution you should have over microstates if you know nothing except the microstate. In other words, the entropy measures your uncertainty about the microstate given that you know nothing except the macrostate.
-    }
-    \p{
-        There are more sophisticated versions of this definition in general, to account for the fact that
-    }
-    \ul{
-        \li{
-            In general, your microstates are probably sets of real numbers, and there are probably infinitely many compatible with the macrostate, so we need a notion of "continuous entropy" (usually called differential entropy, I think)
-        }
-        \li{
-            Your measurement of the macrostate is probably not that certain (but this turns out to matter surprisingly little for thermodynamic systems),
-        }
-    }
-    \p{
-        but this is the basic gist.
-    }
+  \title{A proof that entropy doesn't always increase}
+\p{
+  Let #{X} be the set of states of some physical system. Here I will assume that there is a finite number of states and time advances in discrete steps - there is some function #{T: X \to X} which steps time forward one step. We assume that these dynamics are time-reversible in the weak sense that #{T} is a bijection - every state is the future of exactly one "past" state.
+  Let #{S: X \to \mathbb{R}} be some function. Assume #{S(x) \leq S(Tx)} - in other words, #{S} can never decrease.
+  Then #{S} is constant, i.e #{S(x) = S(Tx)}.
+}
+
+\p{
+  Proof: Assume for contradiction #{S(x) < S(Tx)} for some #{x}. Since #{X} is finite, let #{\sum_x S(x)} be the sum of #{S} over all states. Then clearly #{\sum_x S(x) = \sum_x S(Tx)}, since #{Tx} just ranges over all the #{x}s.
+  But on the other hand, we have #{S(x) \leq S(Tx)} for all #{x}, and #{S(x) < S(Tx)} in at least one case. So we must have #{\sum_x S(x) < \sum_x S(Tx)} - contradiction.
+}
+
+\p{
+  This proof can be generalized to the continuous time and space case without too much trouble, for the types of dynamics that actually show up in physics (using [Liouville's Theorem](https://en.wikipedia.org/wiki/Liouville\%27s\%5Ftheorem\%5F(Hamiltonian))). The proof above still requires a _bounded_ phase volume (corresponding to the finiteness of #{X}). To generalize to other situations we need some more assumptions - the easiest thing is to assume that the dynamics are time-reversible in a stronger sense, and that this is compatible with the entropy in some way.
+}
+
+\p{
+  (You can find easy counterexamples in general, e.g. if #{X=\mathbb{Z}} and the dynamics are #{T(x) = x+1}, then obviously we really do have that #{S(x) =x} is increasing. Nothing to do about that.)
+}
+
+\p{
+  Anyways the bounded/finite versions of the theorems do hold for a toy thermodynamic system like particles in a (finite) box - here the phase volume really is bounded.
+}
 }
 \subtree{
-    \title{Why entropy usually goes up }
-    \p{
-        Okay, so why does entropy go up? _Because there are more high-entropy states than low-entropy states_. That's what entropy _means_. If you don't know anything about what's gonna happen to #{x} (in reality, you usually understand the dynamics #{T} themselves, but have absolutely no information about #{x} except the macrostate), it's more likely that it will transfer to a macrostate with a higher number of representatives than to one with a low number of representatives.
-    }
-    \p{
-        This also lets us defuse our paradox from above. In reality, entropy doesn't go down for literally every microstate #{x}. It's not true that #{S(p(Tx)) > S(p(x))} for all #{x} - I proved that impossible above. What _can_ be true is this: given a certain macrostate, it's more probable that entropy increases than that it decreases.
-    }
-    \p{
-        We can consider an extreme example where we have two macrostates #{L} and #{H}, corresponding to low and high entropy. Clearly the number of low-entropy states that go to a high-entropy state is exactly the same as the number of high-entropy states that go to a low-entropy state. That's combinatorics. But the _fraction_ of low-entropy states that go to high-entropy is then necessarily larger than the fraction of high-entropy states that go to low-entropy states.
-    }
-    \p{
-        In other words, #{P(H(x_{t+1})|L(x_t)) > P(L(x_{t+1})|H(x_t))}
-    }
+  \title{The true meaning of entropy}
+\p{
+  Okay, so what the hell is going on? Did your high school physics textbook lie to you about this?
+  Well, yes. But you're probably never going to observe entropy going down in your life, so you can maybe rest easy.
+}
+
+\p{
+  Let #{X} be the physical system under consideration again. But suppose now that we can't observe #{x \in X}, but only some "high-level description #{p(x) \in Y}. Maybe #{x} is the total microscopic state of every particle in a cloud of gas - their position and momentum - while #{p(x)} is just the average energy of the particles (roughly corresponding to the temperature).
+  #{x} is called a _microstate_ and #{y = p(x)} is called a _macrostate_.
+  Then the _entropy_ of #{y \in Y} is #{S(y) = \ln (p^{-1}(\{y\}))} - the logarithm of the number of microstates #{x} where #{p(x) = y}. We say these are the microstates that _realize_ the macrostate #{y}.
+}
+
+\p{
+  The connection with Shannon entropy is now that this is exactly the Shannon entropy of the uniform distribution over #{p^{-1}(y)}. This is the distribution you should have over microstates if you know nothing except the microstate.
+  In other words, the entropy measures your uncertainty about the microstate given that you know nothing except the macrostate.
+}
+
+\p{
+  There are more sophisticated versions of this definition in general, to account for the fact that
+}
+
+\p{
+  -   In general, your microstates are probably sets of real numbers, and there are probably infinitely many compatible with the macrostate, so we need a notion of "continuous entropy" (usually called differential entropy, I think)
+  -   Your measurement of the macrostate is probably not that certain (but this turns out to matter surprisingly little for thermodynamic systems),
+}
+
+\p{
+  but this is the basic gist.
+}
 }
 \subtree{
-    \title{Why entropy (almost) always goes up }
-    \p{
-        Okay, but that's a lot weaker than "entropy always increases"! How do we get from here to there? I could say some handwavy stuff here about how the properties of thermodynamic systems mean that the differences in the number of representatives between high-entropy and low-entropy states are massive - and that means the right-hand probability above can't possibly be non-neglible. And that in general this works out so that entropy is almost guaranteed to increase.
-    }
-    \p{
-        But that's very unsatisfying. It just happened to work out that way? I have a much more satisfying answer: entropy almost always increases because matter is stable at large scales.
-    }
-    \p{
-        Wait, what? What does that mean?
-    }
-    \p{
-        By "matter is stable at large scales", I mean that the macroscopic behaviour of matter is predictable only from macroscopic observations. When a bricklayer builds a house, they don't first go over them with a microscope to make sure the microstate of the brick isn't going to surprise us later. And as long as we know the temperature and pressure of a gas, we can pretty much predict what will happen if we compress it with a piston.
-    }
-    \p{
-        What this means is that, if #{p(x) = p(x')}, then _with extremely high probability_, #{p(Tx) = p(Tx')}. It might not be literally certain, but it's sure enough.
-    }
-    \p{
-        Now, let's say we're in the macrostate #{y}. Then there is some macrostate #{y'} which is _extremely likely_ to be the next one. For very nearly all #{x} so that #{p(x) = y}, we have #{p(Tx) = y'}. But this means that #{y'} must have at least that many microstates representing it, since #{T} is a bijection. So the entropy of #{y'} can at most be a _tiny_ bit smaller than the entropy of #{y} - this difference would be as tiny as the fraction of #{x} with #{p(Tx) \neq y'}, so we can ignore it.
-    }
-    \p{
-        So unless something super unlikely happens and #{p(Tx) \neq y'}, entropy goes up.
-    }
-    \p{
-        By the way, this also explains what goes wrong with time-reversibility, and why in reality, you can easily tell that a video is going backwards. The "highly probably dynamics" #{Y \to Y}, which takes each macrostate the the most probable next state, don't have to be time-reversible. For instance, let's return to the two-macrostate system above. Suppose that with 100% certainty, low-entropy states become high-entropy. Let there be #{N_L} low-entropy states and #{N_H} high-entropy states. Then, just because #{T} is a bijection, there must be #{N_L} high-entropy states that become low-entropy. Now if #{N_H \gg N_L}, then practically all high-entropy states go to other high-entropy states. So #{L \mapsto H} but #{H \mapsto H}.
-    }
-    \p{
-        Of course in reality, if you start with a low-entropy state and watch this unfold for a _really_ long time, you'll eventually see it become a low-entropy state again. It's just extremely unlikely to happen in a short amount of time.
-    }
+  \title{Why entropy usually goes up}
+\p{
+  Okay, so why does entropy go up?
+  _Because there are more high-entropy states than low-entropy states_. That's what entropy _means_.
+  If you don't know anything about what's gonna happen to #{x} (in reality, you usually understand the dynamics #{T} themselves, but have absolutely no information about #{x} except the macrostate), it's more likely that it will transfer to a macrostate with a higher number of representatives than to one with a low number of representatives.
+}
+
+\p{
+  This also lets us defuse our paradox from above. In reality, entropy doesn't go down for literally every microstate #{x}.
+  It's not true that #{S(p(Tx)) > S(p(x))} for all #{x} - I proved that impossible above.
+  What _can_ be true is this: given a certain macrostate, it's more probable that entropy increases than that it decreases.
+}
+
+\p{
+  We can consider an extreme example where we have two macrostates #{L} and #{H}, corresponding to low and high entropy.
+  Clearly the number of low-entropy states that go to a high-entropy state is exactly the same as the number of high-entropy states that go to a low-entropy state. That's combinatorics.
+  But the _fraction_ of low-entropy states that go to high-entropy is then necessarily larger than the fraction of high-entropy states that go to low-entropy states.
+}
+
+\p{
+  In other words, #{P(H(x_{t+1})|L(x_t)) > P(L(x_{t+1})|H(x_t))}
+}
 }
 \subtree{
-    \title{Entropy is not exactly your uncertainty about the microstate }
-    \p{
-        The entropy of a given macrostate is the uncertainty about the microstate _of an observer who knows only the macrostate_. In general, you have more information than this. For example, if the system starts in a low-entropy state, and you let it evolve into a high-entropy state, you know that the system is in one of the very small number of high-entropy states which come from low-entropy states! But since you can only interact with the system on macroscales, this information won't be useful.
-    }
+  \title{Why entropy (almost) always goes up}
+\p{
+  Okay, but that's a lot weaker than "entropy always increases"! How do we get from here to there?
+  I could say some handwavy stuff here about how the properties of thermodynamic systems mean that the differences in the number of representatives between high-entropy and low-entropy states are massive - and that means the right-hand probability above can't possibly be non-neglible. And that in general this works out so that entropy is almost guaranteed to increase.
+}
+
+\p{
+  But that's very unsatisfying. It just happened to work out that way? I have a much more satisfying answer: entropy almost always increases because matter is stable at large scales.
+}
+
+\p{
+  Wait, what? What does that mean?
+}
+
+\p{
+  By "matter is stable at large scales", I mean that the macroscopic behaviour of matter is predictable only from macroscopic observations. When a bricklayer builds a house, they don't first go over them with a microscope to make sure the microstate of the brick isn't going to surprise us later. And as long as we know the temperature and pressure of a gas, we can pretty much predict what will happen if we compress it with a piston.
+}
+
+\p{
+  What this means is that, if #{p(x) = p(x')}, then _with extremely high probability_, #{p(Tx) = p(Tx')}. It might not be literally certain, but it's sure enough.
+}
+
+\p{
+  Now, let's say we're in the macrostate #{y}. Then there is some macrostate #{y'} which is _extremely likely_ to be the next one. For very nearly all #{x} so that #{p(x) = y}, we have #{p(Tx) = y'}.
+  But this means that #{y'} must have at least that many microstates representing it, since #{T} is a bijection.
+  So the entropy of #{y'} can at most be a _tiny_ bit smaller than the entropy of #{y} - this difference would be as tiny as the fraction of #{x} with #{p(Tx) \neq y'}, so we can ignore it.
+}
+
+\p{
+  So unless something super unlikely happens and #{p(Tx) \neq y'}, entropy goes up.
+}
+
+\p{
+  By the way, this also explains what goes wrong with time-reversibility, and why in reality, you can easily tell that a video is going backwards. The "highly probably dynamics" #{Y \to Y}, which takes each macrostate the the most probable next state, don't have to be time-reversible. For instance, let's return to the two-macrostate system above.
+  Suppose that with 100\% certainty, low-entropy states become high-entropy.
+  Let there be #{N_L} low-entropy states and #{N_H} high-entropy states.
+  Then, just because #{T} is a bijection, there must be #{N_L} high-entropy states that become low-entropy.
+  Now if #{N_H \gg N_L}, then practically all high-entropy states go to other high-entropy states.
+  So #{L \mapsto H} but #{H \mapsto H}.
+}
+
+\p{
+  Of course in reality, if you start with a low-entropy state and watch this unfold for a _really_ long time, you'll eventually see it become a low-entropy state again. It's just extremely unlikely to happen in a short amount of time.
+}
+}
+\subtree{
+  \title{Entropy is not exactly your uncertainty about the microstate}
+\p{
+  The entropy of a given macrostate is the uncertainty about the microstate _of an observer who knows only the macrostate_.
+  In general, you have more information than this.
+  For example, if the system starts in a low-entropy state, and you let it evolve into a high-entropy state, you know that the system is in one of the very small number of high-entropy states which come from low-entropy states!
+  But since you can only interact with the system on macroscales, this information won't be useful.
+}
 }
