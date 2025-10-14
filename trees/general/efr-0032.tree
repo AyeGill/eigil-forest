@@ -2,6 +2,6 @@
 \author{eigil-rischel}
 \import{macros}
 \title{List of Publications}
-\p{
-  (Dummied out!)
+\query\datalog{
+  ?X -: {\rel/has-taxon ?X '{Reference}} {\rel/has-author ?X @{eigil-rischel}}
 }
