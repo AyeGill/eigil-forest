@@ -1,5 +1,6 @@
 \title{Eigil Fjeldgren Rischel}
 \author{eigil-rischel}
+\import{macros}
 \meta{author}{false}
 \p{
 My name is Eigil Fjeldgren Rischel.
@@ -11,3 +12,7 @@ My advisors are [Neil Ghani](https://personal.cis.strath.ac.uk/neil.ghani/) and 
   I mainly work on applications of category theory to probability and statistics. 
 }
 \transclude{efr-0032}
+
+\p{
+  Blah
+}
