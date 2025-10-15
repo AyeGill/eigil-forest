@@ -6,7 +6,8 @@ trees = [
     "trees/people",
     "trees/refs",
     "trees/old-blog-files",
+    "trees/public-trees",
 ]
 assets = ["assets"]
-home = "eigil-rischel"
+home = "index"
 url = "https://erischel.com"
