@@ -1,0 +1,9 @@
+\title{List of publications}
+\parent{index}
+\p{
+  Click to expand.
+}
+
+\query\datalog{
+  ?X -: {\rel/has-taxon ?X '{Reference}} {\rel/has-author ?X @{eigil-rischel}}
+}
