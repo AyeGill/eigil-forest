@@ -1,5 +1,7 @@
 \date{2021-04-25}
 \import{macros}
+\tag{old-blog}
+\tag{blog-post}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Example of my reading process: Cellular sheaves of lattices and the Tarski laplacian}

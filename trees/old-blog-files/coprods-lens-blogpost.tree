@@ -1,5 +1,7 @@
 \date{2023-09-20}
 \import{macros}
+\tag{old-blog}
+\tag{blog-post}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{Coproducts in the category of lenses}
@@ -10,8 +12,7 @@
   The category of bimorphic lenses and its many generalizations has been
   widely studied and utilized in applied category theory. We will not give
   a review of the literature here, but see e.g. Riley's paper on "optics"
-  (one of the many generalizations) [*Categories of Optics*](https://arxiv.org/abs/1809.00738), which includes a decent if
-  somewhat out of date overview.
+  (one of the many generalizations) \ref{riley-optics}, which includes a decent overview.
 }
 
 \p{
@@ -30,8 +31,8 @@
   #{X \times (-)^A}. Since #{\mathsf{Poly}} admits all coproducts, and these
   are computed pointwise, one immediate consequence is that we have the
   coproducts #{\binom{A}{X} + \binom{A}{Y} = \binom{A}{X + Y}} in
-  #{\mathsf{Lens}}. These seem to have been studied first by Hedges ([*Morphisms of Open Games*](https://arxiv.org/abs/1711.07059)). (For a reference on #{\mathsf{Poly}},
-  including this inclusion, see eg Spivak's [*Poly: An abundant categorical setting for mode-dependent dynamics*](https://arxiv.org/abs/2005.01894). #{\mathsf{Poly}} is another
+  #{\mathsf{Lens}}. These seem to have been studied first by Hedges (\ref{hedges-morphisms-open-games}). (For a reference on #{\mathsf{Poly}},
+  including this inclusion, see eg Spivak \ref{spivak-poly-abundant}. #{\mathsf{Poly}} is another
   branch on the tree of generalizations of #{\mathsf{Lens}}, studied
   extensively by Spivak and others).
 }
@@ -48,7 +49,7 @@
   elements. In particular #{0} is the empty set.
 }
   \subtree{
-    \title{Example 1.1}
+    \taxon{Example}
 \p{
     In #{\mathsf{Lens}}, #{\binom{0}{1} + \binom{1}{1} = \binom{0}{2}}, with the coproduct inclusions having as their forwards pass the two distinct maps #{1 \to 2}, and the backwards passes in both cases being trivial.
 }
@@ -71,29 +72,29 @@
 \subtree{
   \title{The coproducts in #{\mathsf{Lens}}}
 \p{
-  Having seen the above, we may begin to lose hope of understanding the coproducts in #{\mathsf{Lens}} at all. Fortunately the situation is not completely chaotic - in some sense, the preceding example is the *only* problem - all the coproducts in #{\mathsf{Lens}} are either of the form #{\binom{A}{\coprod_i X_i}} (up to isomorphism), or they are of the same form as example 1.1 
+  Having seen the above, we may begin to lose hope of understanding the coproducts in #{\mathsf{Lens}} at all. Fortunately the situation is not completely chaotic - in some sense, the preceding example is the *only* problem - all the coproducts in #{\mathsf{Lens}} are either of the form #{\binom{A}{\coprod_i X_i}} (up to isomorphism), or they are of the same form as the example.
 }
   \subtree{
-    \title{Theorem 2.1}
+    \taxon{Theorem}
 \p{
     In #{\mathsf{Lens}= \mathsf{Lens}(\mathsf{Set})}, a tuple of lenses #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{Y}\}} is a coproduct diagram if and only if the forwards passes #{\{X_i \to Y\}} form a coproduct diagram in #{\mathsf{Set}}, and one of these conditions hold:
 }
-
-\p{
-    1.  For all #{i}, and for all #{x \in X_i}, the function
+\ol{
+\li{
+    For all #{i}, and for all #{x \in X_i}, the function
         #{\varphi_i(x, -): B \to A_i} is a bijection.
 }
 
-\p{
-    2.  For at least one #{i}, #{A_i} is empty and #{X_i} is nonempty. (The existence of any lens #{\binom{A_i}{X_i} \to \binom{B}{Y}} then implies that #{B} must be empty as well)
+\li{
+    For at least one #{i}, #{A_i} is empty and #{X_i} is nonempty. (The existence of any lens #{\binom{A_i}{X_i} \to \binom{B}{Y}} then implies that #{B} must be empty as well)
 }
-
+}
 \p{
     The first class of coproducts are the "good" ones - these are preserved by the functor from lenses to polynomial functors, and seem to capture the correct notion of "branching" for bidirectional systems. The other class, the "exotic" coproducts, are more mysterious.
 }
 
 \p{
-    We will begin the proof of this theorem with some preliminaries about lenses in a general (Cartesian) distributive category. While we can't obtain the preceding theorem in this generality (for reasons that will become clear later), it may be useful to know what *can* be said here.
+    We will begin the proof of this theorem with some preliminaries about lenses in a general (Cartesian) distributive category. While we can't obtain the preceding theorem in this generality (for reasons that will become clear later), it may be useful to know what \em{can} be said here.
 }
 
 \p{
@@ -106,7 +107,7 @@
     The functor #{\mathsf{Lens}(\mathcal{C}) \to \mathcal{C}} which carries #{\binom{A}{X}} to #{X} and a lens #{(\varphi^+, \varphi^-)} to its foward pass #{\varphi^+} admits a right adjoint, given by #{X \mapsto \binom{0}{X}}.
 }
     \subtree{
-      \title{Proof}
+      \taxon{Proof}
 \p{
       We simply have to verify #{\mathsf{Lens}(\mathcal{C})(\binom{A}{X},\binom{0}{Y}) = \mathcal{C}(X,Y)}. But this is trivial - the forwards pass of such a lens is clearly an element of the right-hand side, so it suffices to prove that there is always a unique choice of backwards pass. But the backwards pass is a map #{0 \times X \to A}, and by distributivity #{0 \times X} is initial. This concludes the proof.
 }
@@ -117,22 +118,21 @@
   }
 }
   \subtree{
-    \title{Corollary 2.3}
+    \taxon{Corollary}
 \p{
     For a tuple #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{Y}\}} to be a coproduct diagram, the forwards passes #{X_i \to Y} must form a coproduct diagram in #{\mathcal{C}}.
 }
-
-\p{
-    The following result, characterizing the "good" coproducts, was already essentially proven by Hedges in *Morphisms of Open Games*[^2], but I'll state it here and sketch a proof for completeness.
-  }
 }
+\p{
+    The following result, characterizing the "good" coproducts, was already essentially proven by Hedges in \ref{hedges-morphisms-open-games} [^2], but I'll state it here and sketch a proof for completeness.
+  }
   \subtree{
-    \title{Proposition 2.4}
+    \taxon{Proposition}
 \p{
     Let #{X_i} be a collection of objects of #{\mathcal{C}}, and #{\coprod_i X_i} a coproduct. Let also #{A \in \mathcal{C}}. Then the family of lenses #{\binom{A}{X_i} \to \binom{A}{\coprod_i X_i}} with forwards passes given by the coproduct inclusions, and backwards passes by the projection #{X_i \times A \to A}, is a coproduct diagram.
 }
     \subtree{
-      \title{Proof}
+      \taxon{Proof}
       ##{\mathsf{Lens}(\mathcal{C})(\binom{A}{\coprod_i X_i},\binom{B}{Y}) = \mathcal{C}(\coprod_i X_i, B) \times \mathcal{C}((\coprod_i X_i) \times B, a)}
 
       ##{\cong \prod_i \left(\mathcal{C}(X_i, B) \times \mathcal{C}(X_i \times B, a)\right),}
@@ -144,7 +144,7 @@
   }
 }
   \subtree{
-    \title{Proposition 2.5}
+    \taxon{Proposition}
 \p{
     Let a tuple #{\{\binom{A_i}{X_i} \overset{\varphi_i}{\to} \binom{B}{\coprod_i X_i}\}} be given, such that each #{\varphi_i^+: X_i \to \coprod_j X_j} is the coproduct inclusion.
 }
@@ -161,7 +161,7 @@
     2.  For some #{i}, the set #{\mathcal{C}(X_i \times C, A_i)} is empty.
 }
     \subtree{
-      \title{Proof}
+      \taxon{Proof}
 \p{
       Note that each of the lenses #{\varphi_i} factors as #{\binom{A_i}{X_i} \to \binom{B}{X_i} \to \binom{B}{\coprod X_i} = \coprod_i \binom{B}{X_i}}, where the first map is #{(1_{X_i},\varphi_i^-)}, and the second map is
       the coproduct inclusion.
@@ -235,12 +235,13 @@
 }
 
 \p{
-      We can replace #{Y} with the coproduct #{\coprod_i X_i}, and each forwards pass #{\varphi_i^+} with the inclusion, without loss of generality (if we are not in this situation up to isomorphism, we don't have a coproduct by Corollary 2.3)
+      We can replace #{Y} with the coproduct #{\coprod_i X_i}, and each forwards pass #{\varphi_i^+} with the inclusion, without loss of generality (if we are not in this situation up to isomorphism, we don't have a coproduct by the above)
     }
   }
 }
   \subtree{
-    \title{Proof of Theorem 2.1}
+    \taxon{Proof}
+    \title{Proof of the theorem}
 \p{
     It's clear that the first condition of the theorem implies that #{\mathsf{Set}(X_i \times C, B) \to \mathsf{Set}(X_i \times C, A_i)} is a bijection always, and so we have a coproduct. As for the second condition, suppose #{X_i} is nonempty and #{A_i} is empty. Then for nonempty #{C}, the set #{\mathsf{Set}(X_i \times C, A_i)} is clearly empty, fulfilling the second condition of the lemma, whereas for empty #{C}, the map #{\mathsf{Set}(X_i \times C, B) \to \mathsf{Set}(X_i \times C, A_i)} is a map between two singletons (since #{X_i \times C} is empty), and hence a
     bijection.
@@ -277,7 +278,7 @@
 }
 
 \p{
-    [^1]: There is a subtlety here, since #{\binom{A}{0} \cong \binom{B}{0}}
+    [^1]: There is a quibble here, since #{\binom{A}{0} \cong \binom{B}{0}}
         for any sets #{A,B}, these being the initial objects of
         #{\mathsf{Lens}}. This is of course the natural "nullary" version of
         the binary formula, but it also means that

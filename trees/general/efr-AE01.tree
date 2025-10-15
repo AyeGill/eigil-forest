@@ -1,0 +1,8 @@
+\date{2025-10-15T20:35:45Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Blog}
+
+\query\datalog{
+  ?X -: {\rel/has-tag ?X '{blog-post}} {\rel/has-author ?X @{eigil-rischel}}
+}

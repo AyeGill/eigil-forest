@@ -1,5 +1,7 @@
 \date{2020-05-17}
 \import{macros}
+\tag{old-blog}
+\tag{blog-post}
 \xmlns:html{http://www.w3.org/1999/xhtml}
 \author{eigil-rischel}
 \title{The Ax-Grothendieck theorem}
