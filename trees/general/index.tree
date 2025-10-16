@@ -13,6 +13,10 @@ My advisors are [Neil Ghani](https://personal.cis.strath.ac.uk/neil.ghani/) and 
 \p{
   This website is a "forest", made with the [forester](https://forester-notes.org) tool. It contains various notes I've made over the years, as well as some more structured blog posts.
 }
+\p{
+  Click on the headings below to expand, or on the bracketed link next to them to go to the relevant page.
+}
 \transclude{efr-0032}
 
+\put\transclude/expanded{false}
 \transclude{efr-AE01}
