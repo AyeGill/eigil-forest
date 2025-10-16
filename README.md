@@ -13,3 +13,10 @@ If you prefer to use [`nix`](https://github.com/NixOS/nix), you can simply run `
 ### JavaScript dependencies
 
 This forest has a small JavaScript component (`javascript/forester.js`), which creates a keyboard command palette. There is no need to have any of the JavaScript or Node ecosystem installed on your machine; all JavaScript dependencies are kept bundled in source control. If you wish to _upgrade_ this bundle, you will need to have a working installation of `npm`, and then run `./bundle-js.sh` and commit the resulting changes. It is not ordinarily necessary to do this.
+
+
+### Personal notes
+
+Tag list
+- `old-blog`: blog posts from a previous iteration of my website, migrated to the forest. Some of these have some formatting issues.
+- `blog-post`: trees intended as blog posts. Syndicated in `efr-AE01`.
