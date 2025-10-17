@@ -1,0 +1,56 @@
+\date{2025-10-16T15:23:06Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Footnote system for forester}
+\p{
+  (These should probably be displayed as sidenotes, but let's call them footnotes for now).
+}
+\p{
+  A way to hack footnotes into forester as it exists today would be:
+  \ol{
+    \li{
+      Create a new tree (in its own file) for each footnote, then link to them in the main tree:
+      \code{\startverb
+        Lorem ipsum[1](footnote-1)
+        \stopverb
+      }
+    }
+    \li{
+      Give the footnote a special taxon or tag (say \code{\startverb \taxon{Footnote} \stopverb})
+    }
+    \li{
+      Add a query to the bottom of each tree using footnotes which grabs every footnote linked in this tree.
+    }
+    \li{
+      Use some javascript to move the footnotes to the side of their corresponding link
+    }
+  }
+  This obviously has insanely bad ux: You have to create a new file for every footnote, you have to query them yourself (the javascript could get them for you, but then it would have to follow every single link to see if it pointed to a footnote), if the javascript breaks (or if a user has scripting disabled) everything looks awful, etc etc. In addition, when viewing a tree which transcludes other trees, the footnotes will not be correctly numbered.
+}
+\p{
+  Some of these problems can be solved with extensions to the forester language.
+  \ol{
+    \li{If there was a \code{\startverb \counter{foo} \stopverb} command which counted up each time it was evaluated on the current page, this could be used to number the footnotes (similar to how trees are dynamically assigned a number depending on the transclusion context). Although it's not too clear what else this would be good for.}
+
+    \li{
+      If there was a \code{\startverb \tree{body} \stopverb} command, which created an orphan tree with given contents and resolved to its address, this would allow the definition of a command to insert a footnote with given contents. But again it's not clear that such a command should be added.
+    }
+  }
+}
+\p{
+  An alternative would be to add a \code{footnote} fluid variable to the transclude command, false by default, which if true transcludes as a footnote, then modify the compiler and stylesheet to arrange these in a sensible way. So you would have
+  \code{\startverb
+  \def\footnote[body]{\scope{
+      \put\transclude/footnote{true}
+      \subtree{
+        \taxon{Footnote}
+        \body
+      }
+    }
+  }
+  \stopverb}
+  Then write \code{\startverb Foo bar baz\footnote{this is a note} \stopverb} 
+}
+\p{
+  I'm not sure how simple this would be (I assume normally mid-paragraph transclusions just force the paragraph to be split?)
+}
