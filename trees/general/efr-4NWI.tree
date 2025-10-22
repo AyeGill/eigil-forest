@@ -1,0 +1,20 @@
+\date{2025-10-22T16:14:44Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Private/public forest design}
+\p{
+  By far the most common use-case is probably an individual researcher, wishing to maintain private notes, but also publish a subset of their notes as a public website.
+}
+\p{
+  The current (2025-10-22) best solution seems to be either:
+  \ol{
+    \li{Write two separate forests and implant the public as a submodule in the private. Clearly this works, but makes it quite awkward to "publish" things, also while editing the private it's awkward to see what's in the public, etc.}
+    \li{
+      Use the datalog query language to pick out a subset of public trees from the private forest and publish them as a blob. Then have a public forest which simply implants this blob (plus an index page for the public forest). They can even share an asset directory pretty easily. The problems here are: this requires a small amount of work moving the json blob around while building (easily scriptable, but...), and the forest ends up being hosted at `foreign/`, which is a bit clunky.
+    }
+  }
+}
+
+\p{
+  I think it is worth thinking a bit about access control scenarios more complicated than these. For example, there may be a shared private forest where each author consents to their collaborators \em{viewing} their private notes, but not generally to having them published. (Such a shared private forest is currently in use by the ARIA SGAI project). Clearly there's no way to stop them from maliciously publishing them anyway, but it may be worth thinking about workflows that prevent \em{accidental} such publishings. (For example, if we publish everything in the transitive closure of the transcludes-or-links-to relation, A might decide to publish a note which links one of B's notes, without realizing he needed B's permission for this).
+}
