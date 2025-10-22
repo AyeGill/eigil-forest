@@ -1,0 +1,13 @@
+\date{2025-10-22T20:35:37Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Problems that haunt me}
+\subtree{
+  \title{What is the connection between adjunctions (functional analysis) and adjunctions (category theory)}
+  \p{
+    See [[palmquist-adjunctions-1974]]: Given #{A: V \to U} a map of inner product spaces, let #{S(A) : S(V)^\op \to S(U)} be the contravariant mapping on the subspace posets which carries #{K \subset V} to the set #{\{u \mid (u, Ak) =0 \forall k \in K\}}. Then this assignment preserves adjunctions. Moreover if #{A, B} are maps so that their images under this assignment are adjoint functors, they are adjoint as linear maps up to a scalar.
+  }
+  \p{
+    Chris Heunen's work on the category of Hilbert spaces.
+  }
+}

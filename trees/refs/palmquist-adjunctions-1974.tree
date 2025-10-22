@@ -1,0 +1,14 @@
+\title{Adjoint Functors Induced by Adjoint Linear Transformations}
+\date{1974}
+\taxon{reference}
+\meta{doi}{10.2307/2040415}
+\author/literal{Paul H. Palmquist}
+\meta{bibtex}{\startverb
+ @article
+{Palmquist_1974, title={Adjoint Functors Induced by Adjoint Linear Transformations}, volume={44}, ISSN={0002-9939}, DOI={10.2307/2040415}, number={2}, journal={Proceedings of the American Mathematical Society}, publisher={American Mathematical Society}, author={Palmquist, Paul H.}, year={1974}, pages={251–254} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Adjoint linear transformations between Hilbert spaces or, more generally, between dual systems of topological vector spaces induce contravariant functors which are adjoint on the right-essentially a Galois connection between the posets of subsets (or subspaces) of the spaces. Modulo scalars the passage from linear maps to functors is one-to-one; indeed, modulo scalars, two linear transformations are adjoint (hence both are weak continuous) if and only if the induced functors are adjoint.
+}}
+
