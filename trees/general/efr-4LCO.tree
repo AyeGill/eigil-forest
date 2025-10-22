@@ -1,0 +1,25 @@
+\date{2025-10-22T16:07:56Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Conjecture}
+\p{
+  Consider a category with the following structure and properties:
+  \ol{
+    \li{
+      Markov
+    }
+    \li{
+      Finite coproducts and #{\tensor} distributes
+    }
+    \li{
+      A natural transformation #{A \otimes A \to A}
+    }
+    \li{
+      The resulting binary operation on #{\cC(X,A)} makes all these into abstract convex bodies in the sense of Escardo-Simpson.
+    }
+  }
+  Call such a category a \em{iterable choice Markov category} 
+}
+\p{
+  Then I conjecture that #{\FinStoch} with the obvious "coinflip" operation is the initial iterable choice Markov category.
+}
