@@ -1,0 +1,16 @@
+\title{Automatic Abstraction Using Generalized Model Checking}
+\date{2002}
+\taxon{reference}
+\meta{doi}{10.1007/3-540-45657-0_11}
+\meta{external}{http://link.springer.com/10.1007/3-540-45657-0_11}
+\author/literal{Patrice Godefroid}
+\author/literal{Radha Jagadeesan}
+\meta{bibtex}{\startverb
+ @inbook
+{Godefroid_Jagadeesan_2002, address={Berlin, Heidelberg}, series={Lecture Notes in Computer Science}, title={Automatic Abstraction Using Generalized Model Checking}, volume={2404}, ISBN={978-3-540-43997-4}, url={http://link.springer.com/10.1007/3-540-45657-0_11}, DOI={10.1007/3-540-45657-0_11}, booktitle={Computer Aided Verification}, publisher={Springer Berlin Heidelberg}, author={Godefroid, Patrice and Jagadeesan, Radha}, editor={Brinksma, Ed and Larsen, Kim Guldstrand}, year={2002}, pages={137–151}, collection={Lecture Notes in Computer Science},language={en} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Generalized model checking is a framework for reasoning about partial state spaces of concurrent reactive systems. The state space of a system is only partial" (partially known) when a full state-space exploration is not computationally tractable, or when abstraction techniques are used to simplify the system's representation. In the context of automatic abstraction, generalized model checking means checking whether there exists a concretization of an abstraction that satis es a temporal logic formula. In this paper, we show how generalized model checking can extend existing automatic abstraction techniques (such as predicate abstraction) for model checking concurrent/reactive programs and yield the three following improvements: (1) any temporal logic formula can be checked (not just universal properties as with traditional conservative abstractions), (2) correctness proofs and counter-examples are both guaranteed to be sound, and (3) veri cation results can be more precise. We study the cost needed to improve precision by presenting new upper and lower bounds for the complexity of generalized model checking in the size of the abstraction.
+}}
+
