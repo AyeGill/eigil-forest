@@ -1,0 +1,8 @@
+\date{2025-10-28T09:52:37Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\title{Kolmogorov product}
+\p{
+  Let #{\cC} be a Markov category. An [infinite tensor product](efr-SIKM) is called a \em{Kolmogorov product} if all the finite marginals #{\otimes_{j \in J} X_j \to \otimes_{j \in F} X_j} are deterministic.
+}

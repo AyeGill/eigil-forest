@@ -1,0 +1,19 @@
+\date{2025-10-28T15:17:44Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\title{Coinflip in a Markov category}
+\p{
+  Let #{\cC} be a Markov category with finite coproducts. A \em{coinflip} in #{\cC} is a morphism #{f: I \to I + I} obeying the following equations:
+  \ol{
+    \li{
+      Symmetry: #{\tau_{I,I} f = f}, where #{\tau_{A,B} :A + B \to B + A} is the canonical isomorphism. 
+    }
+    \li{
+      Interchange: #{(f + f)f = (I + \tau_{I,I} + I)(f + f)f}
+    }
+  }
+}
+\p{
+  Given a coinflip in a distributive Markov category, there is a canonical induced natural transformation #{A \otimes A \to A}, which makes every #{A \in \cC} into a midpoint algebra. We say the coinflip is \em{iterable} if all of these midpoint algebras are iterable.
+}

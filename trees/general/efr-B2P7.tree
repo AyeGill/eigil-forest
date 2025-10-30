@@ -2,10 +2,14 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{Definition}
+\title{Extensive Markov Category}
 \p{
   A Markov category is said to be an \em{extensive Markov category} if it admits finite coproducts, whose injections are deterministic, and which satisfy the following equivalent conditions:
 }
 \ol{
   \li{If we let #{\cC_{/a}^\det} refer to the full subcategory of the slice spanned by the deterministic morphism #{x \to a}, we have an equivalence of categories #{\cC_{/a}^\det \times \cC_{/b}^\det \cong \cC_{/a + b}^\det}, given by taking coproducts}
   \li{#{\cC_\det} is an extensive category in the usual sense and the inclusion #{\cC_\det \to \cC} preserves pullbacks along coproduct inclusions.}
+}
+\p{
+  More generally, for an infinite regular cardinal #{\kappa}, we say that #{\cC} is #{\kappa}-extensive if #{\cC_\det} is a #{\kappa}-extensive category in the ordinary sense and both coproduct inclusions and pullbacks along them are preserves by the functor #{\cC_\det \to \cC}.
 }

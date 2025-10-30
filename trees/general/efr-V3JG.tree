@@ -1,0 +1,15 @@
+\date{2025-10-29T15:36:13Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{\cC} be a Markov category with finite coproducts of the unit. Any two coinflips in #{\cC} coincide. In particular, any Markov functor #{\cC \to \cD} which preserves these finite coproducts also preserves the coinflip.
+}
+\proof{
+  \p{
+    Let #{f} be a coinflip. Consider the map #{2 \xto{\oplus f} 2} given by flipping the coin, applying #{\neg: 2 \to 2} in one branch and doing nothing in the other. We claim this is equal to deletion followed by the coinflip. This can be checked on each summand (since #{2} is a coproduct), where it follows by symmetry.
+  }
+  \p{
+    Now let #{f_1, f_2} be two coinflips and consider the operation given by #{1 \xto{f_1 \otimes f_2} 2 \otimes 2 \xto{\oplus}}. This is easily seen to be equal both to #{f_1 ; (\oplus f_2)} and #{f_2 ; (\oplus f_1)}. But these are equal to #{f_2} and #{f_1} respectively by the above.
+  }
+}

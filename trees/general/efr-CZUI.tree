@@ -1,0 +1,12 @@
+\date{2025-10-29T15:45:53Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\p{
+  In #{\Set}, the free iterable midpoint algebra on two generators #{0,1} is #{[0,1]}
+}
+\proof{
+  \p{
+    Let #{A} be an iterable midpoint algebra. Note that any map #{f: [0,1] \to A} must be a homomorphism for the infinitary midpoint operator #{M}. Hence given #{a_0,a_1 \in A}, the unique #{f} so that #{f(0) = a_0, f(1) = a_1} is given by #{f(0.b_1b_2,dots) = M(a_{b_1}, \dots)}. This is straightforwardly seen to be well-defined and a midpoint homomorphism.
+  }
+}

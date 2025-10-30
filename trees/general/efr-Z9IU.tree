@@ -1,0 +1,7 @@
+\date{2025-10-29T15:40:30Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\p{
+  Let #{\cC} be a distributive Markov category with a coinflip #{c: 1 \to 2}. This coinflip is said to be \em{externally iterable} if the midpoint algebras #{\cC(X,Y)} are all iterable in #{\Set}.
+}

@@ -1,0 +1,16 @@
+\date{2025-10-30T09:47:16Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\p{
+  Let #{\cC} be a ... Markov category and let #{i_\cC: \Borel \to \cC} be the canonical functor.
+  Then there is a unique Markov extension over #{\Borel \into \Kl(\Delta_\omega)}, the Kleisli category of the discrete distribution monad, which preserves the coinflip.
+}
+\proof{
+  \p{
+    Consider the (countably presented) algebraic structure given by a single countable-arity operation #{M} satisfying all the equations implied by being an iterable midpoint operator. Clearly the countable distribution monad is the free monad for this structure on #{\Borel}. Hence the inclusion #{\Borel \into \Kl(\Delta_\omega)} is the initial functor equipping every object with such a structure. Hence there is a unique extension of #{i_\cC} over this functor.
+  }
+  \p{
+    Todo: this functor is Markov, i.e it respects independent pairings.
+  }
+}

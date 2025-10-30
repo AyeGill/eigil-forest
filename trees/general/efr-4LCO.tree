@@ -23,3 +23,31 @@
 \p{
   Then I conjecture that #{\FinStoch} with the obvious "coinflip" operation is the initial iterable choice Markov category.
 }
+
+
+\p{
+  Conjecture 2: #{\omega \Stoch}, the category of countable sets and discrete probability measures, is the initial Markov category with distributive countable coproducts and an [iterable coinflip structure](efr-QBVU).
+}
+\p{
+  Conjecture 3: #{\BorelStoch} is the initial category with countable distributive coproducts, countable Kolmogorov products, and an iterable coinflip structure.
+}
+\p{
+  Conjecture 4: #{\FinStoch_{\leq 1}} or possibly #{\omega \Stoch_{\leq 1}} is initial countably distributive CD-category with trace on plus and [some axioms]
+}
+\p{
+  Subconjecture: #{\Borel \into \BorelStoch} is the inital functor (preserving coproducts, tensor, and \em{Kolmogorov products}) to a iterable coinflip category. Could be true! Seems enough to check maps into countable sets (clear) and bitstreams.
+}
+\remark{
+  \p{
+    It is not necessarily clear that one can always add a free iterable coinflip structure to a given Markov category, but we can at least ask whether a given functor #{\cC \to \cD} \em{is} the free such.
+  }
+  \p{
+    Given #{\Borel \to \cC} where #{\cC} has Kolmogorov products and iterable coinflips, a measure #{* \to 2^\omega} is simply carried to the pairing/limit of the image of the marginals #{* \to 2^N}. The remaining question is how to deal with kernels #{2^\omega \to X}. That is, we know the "pointwise" value of such maps, but that doesn't necessarily suffice.
+  }
+  \p{
+    To do this it suffices to define an operation on measurable maps #{2^\omega \to GX} (#{G} being the Giry monad), and show it well-defined. Since #{\BorelStoch} is a model, we certainly can't define any non-measurable maps in the initial thing. Note that #{GX \cong 2^\omega} for every #{X}, and moreover we can choose a suitable representation of this (at least when #{X} is finite, which suffices by the filtration argument). For {2}, this is the map #{2^\omega \to [0,1]}. This is surjective, but not injective, so every kernel #{2^\omega \to 2} has a representation by lifting over this. The kernel #{2^\omega \to 2} is of course the canonical midpoint iteration map, and thus its image is determined. Then we just need to show given two measurable #{2^\omega \to 2^\omega}, if they have the same sampling probability at each point, this is provable "using the logic available to us".
+  }
+  \p{
+    For larger X this should be doable in a similar way (not totally clear yet)
+  }
+}

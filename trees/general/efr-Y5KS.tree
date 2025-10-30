@@ -1,0 +1,21 @@
+\date{2025-10-28T11:48:39Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Conjecture}
+\p{
+  Let #{\cC} be a countably extensive, Boolean Markov category with countable Kolmogorov products. Then any coinflip structure on #{\cC} is iterable.
+}
+\proof{
+  \p{
+    Let #{\chi_0: 2^\omega \to 2} be the indicator of #{\{0\}^\omega}. Let #{u: I \to 2^\omega} be the uniform measure according to the given coinflip structure. By the abstract Hewitt-Savage zero-one law, the composite #{\chi_0 u : I \to 2} is deterministic, hence classified by a subterminal object, say #{q}. Then #{\cC_{/q}} inherits the properties of #{\cC}, so assume #{q = 1}. But by symmetry of the coinflip, (this argument must be fleshed out) we see the complement of #{\chi_0 u} must also have probability 1 in this case. This yields a morphism #{1 \to 0} (since these sets are disjoint), and hence the category must be trivial.
+  }
+  \p{
+    TODO: Use the indicator only finitely many 1s instead, same argument. To show uniqueness, for #{X \to A \otimes X}, factor over #{X \otimes A^\omega \otimes 2^\omega} (by the map #{c_N} which only inspects the first #{N} things, for every #{N}). Use the fact that these agree with #{c_\infty}, the "correct" iteration guy, on the component where #{1} occurs before #{N}, and that union of these is the right thing, so must agree everywhere. 
+  }
+  \p{
+    Hence we can assume #{q = 0}, which means #{u} factors over the complement of #{\{0\}^\omega}. On this complement, there is a well-defined map to the natural numbers given by the index of the first #{1}.
+  }
+  \p{
+    Now let #{X \to A \otimes X} and consider the induced map #{X \to A^\omega}. By pairing this with the factorization #{u : I \to 2^\omega \setminus \{0\}^\omega}, and applying the map which selects #{a_i} where #{i} is the index of the first #{1}, we obtain an iteration operator (it is straightforward to check that this is an iteration operator).
+  }
+}

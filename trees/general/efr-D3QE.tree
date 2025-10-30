@@ -1,0 +1,51 @@
+\date{2025-10-30T11:48:03Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proof}
+\parent{efr-TVLB}
+\p{
+  Using \ref{efr-VH33}, there is a unique functor #{F: \Borel_{\Delta_\omega} \to \cC}.
+  There is a faithful (identity on objects) functor #{\Borel_{\Delta_\Omega} \to \BorelStoch} - the only case where this is not full is #{\Hom(A,2^\omega)}.
+}
+\p{
+  It is apparent that we must extend this functor by defining #{\bar{F}(\phi: A \to 2^\omega) = \lim_n F(\pi_{2^n}\phi)}, using the universal property of #{F(2^\omega) = F(2)^\omega}. The only question is whether this extension is actually functorial. By the limit property it suffices to prove that it is functorial for any composable pair
+  ##{A \xto{\phi} 2^\omega \xto{\psi} K}
+  with #{K} finite.
+}
+\p{
+  Let a function #{f: 2^\omega \to K} be \em{good} if #{\bar{F}(\phi) ; F(f) = F(\phi ; f)} for all kernels #{\phi: A \to 2^\omega} (for all #{A}).
+  Let an algebra of sets #{\AA \subseteq \cB(2^\omega)} (i.e a collection of subsets stable under finite unions and complements) be called good if every #{\AA}-measurable map #{2^\omega \to K} to a finite set is good. Now we claim:
+}
+\ol{
+  \li{
+    The class #{\AA_0} of sets of the form #{V \times 2^\omega} for #{V \subseteq 2^N}, #{N} finite, is a good algebra.
+  }
+  \li{
+    If #{\AA} is a good algebra, let #{\AA^+} be the smallest algebra containing all countable unions of sets in #{\AA}. Then #{\AA^+} is again a good algebra.
+  }
+  \li{
+    Any directed union of good algebras #{\AA_0 \subseteq \AA_1 \dots \subseteq A_\alpha \subseteq} is again a good algebra. 
+  }
+}
+\p{
+  First note that, by Zorn's lemma, this straightforwardly implies the full Borel #{\sigma}-algebra is a good algebra, which in turn concludes the proof.
+}
+\p{
+  Point 3 holds, since both being an algebra and being good are finitary properties (any map to a finite set which is measurable for the union must be measurable at some finite stage).
+  Point 1 is a straightforward consequence of the fact that the projections #{2^\omega \to 2^N} are good by construction. So we are left with point 2.
+}
+\p{
+  Let #{\AA} be a good algebra. Let us identify sets by their indicators #{2^\omega \to 2}. Then we can write any set in #{\AA^+} as
+  ##{g(\vee(f_1^i(-)), \vee f_2^i(-), \dots , \vee f_k^i(-)),}
+  where #{g: 2^k \to 2} is some function, #{\vee : 2^omega \to 2} is the indicator of the sequences with at least one #{1}, and #{f_j^i, 0 \leq j \leq k, 0 \leq i < \infty} are a bunch of #{\AA}-measurable functions.
+}
+\p{
+  By assumption the pairing of all the #{f}'s, #{2^\omega \to (2^\omega)^k} is good, and so it suffices to show that the mapping #{(\vee)^k : (2^\omega)^k \to 2^k} is good.
+  By induction we may suppose this holds for #{(\vee)^{k-1}}, since it is trivial for #{k=0}.
+}
+\p{
+  Now let #{\phi: A \to (2^\omega)^k} be some kernel. Write #{A = A_0 + A_1}, where #{A_0} is the subset where the probability of only zeroes in the first stream is at least #{1/2}, and #{A_1} is the complement, where the probability of at least one #{1} in the first stream is #{>1/2}. Observe that by #{\sigma}-continuity, for each #{a} there must be some #{N} so that the probability of at least one #{1} in the first #{N} elements of the first stream is at least #{1/2}. Decompose #{A_1} into #{A_1^1 +  A_1^2 +  \cdots,} where for #{a \in A_1^N} there is at least a #{1/2} probability of the first #{1} being before #{N}. Let #{\psi_1 : A \to (2^\omega)^k} be a kernel which on #{A_0} is given by #{(0, \otimes \mu_{2\dots k})} where #{\mu_{2,\dots k}} is the kernel giving the conditional distribution of the remaining streams if the first stream is #{0}. On #{A_1^N}, it is given by a linear combination #{\sum_{s \in 2^N \setminus 0} \delta_{s} \otimes \mu_s}, where #{\mu_s} is the conditional distribution of the rest of the stream and the remaining streams - we choose this linear combination so that #{1/2} of it is #{\leq} the actual probability of each of those prefixes.
+}
+\p{
+  Then by construction for some kernel #{\xi_1}, we have #{\phi = \frac{1}{2}(\phi_1, \xi_1)}. By construction, the pushforward of #{\phi_1} is equal to #{(0, \vee^{k-1}\mu_0)} on #{A_0} and #{(1, \sum_{s \in 2^N} \vee^{k-1}\nu_s)} on each of the #{A_1^N}. By the induction hypothesis all of these normalize. Since pushforward is a midpoint homomorphism we have #{(\vee^k)(\phi) = m((\vee)^k \phi_1, (\vee)^k \xi_1)}. By iteration we obtain a decomposition #{\vee^k \phi = \sum_i \frac{1}{2^i} \vee^k \phi_i} of measures that normalize. By iterability this determines the pushforward uniquely. Hence #{\vee^k} is good. This concludes the proof.
+}

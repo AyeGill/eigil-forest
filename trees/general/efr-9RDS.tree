@@ -1,0 +1,7 @@
+\date{2025-10-28T09:59:43Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Corollary}
+\p{
+  Let #{\kappa} be an infinite regular cardinal. If a Markov category #{\cC} is extensive (of any cardinality), and admits Kolmogorov products of cardinality #{< \kappa}, then #{\cC_\det} admits limits of cardinality #{\leq \kappa}.
+}

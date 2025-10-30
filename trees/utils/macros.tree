@@ -358,6 +358,7 @@
 \def\Meas{#{\cat{Meas}}}
 \def\FinStoch{#{\cat{FinStoch}}}
 \def\BorelStoch{#{\cat{BorelStoch}}}
+\def\Borel{#{\cat{Borel}}}
 \def\TychStoch{#{\cat{TychStoch}}}
 \def\TychDiff{#{\cat{TychDiff}}}
 \def\TychDiffStoch{#{\cat{TychDiffStoch}}}
@@ -425,6 +426,10 @@
 
 \def\abstract[body]{
   \subtree{\title{Abstract}\body}
+}
+
+\def\lemma[head][body]{
+  \subtree{\taxon{Lemma}\title{\head}\body}
 }
 
 \def\notes[body]{

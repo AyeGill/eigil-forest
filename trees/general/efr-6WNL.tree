@@ -1,0 +1,12 @@
+\date{2025-10-29T16:54:19Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\p{
+  Let #{\cC} be a Markov category with countable coproducts and a coinflip. If the coinflip is internally iterable, it is externally iterable.
+}
+\proof{
+  \p{
+    Given a sequence of maps #{f_i: A \to B}, consider the map #{\sum_{i \in \NN} A \t }
+  }
+}
