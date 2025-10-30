@@ -1,0 +1,31 @@
+\date{2025-10-23T08:30:26Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Things I recommend you buy and use}
+
+\def\item[name][description]{
+  \subtree{
+    \title{\name}
+    \p{
+      \description
+    }
+  }
+}
+
+\p{
+  See also: [Rob Wiblin](https://medium.com/@robertwiblin/things-i-recommend-you-buy-and-use-rob-edition-1d7b2ce27d68), [Sam Bowman](https://www.sambowman.co/p/things-i-recommend-you-buy-and-use), [Sam Enright](https://samenright.substack.com/p/things-i-recommend-you-buy-and-use), [Peter McLaughlin](https://herfingersbloomed.substack.com/p/things-i-recommend-you-buy-and-use). I have not personally tested all the products on those lists!
+}
+\subtree{
+  \title{Cooking products}
+  \item{IKEA VARDAGEN Cook's Knife, [15€](https://www.ikea.ee/en/products/cooking/kitchen-tools/knives/vardagen-cook-s-knife-art-40602481) / [20$](https://www.ikea.com/us/en/p/vardagen-chefs-knife-stainless-steel-walnut-30602467/)}{
+    For 90\% of cooking tasks, you only really need one knife: a big sharp one. The main determinant of quality in knives is not really sharpness, since any knife can be sharpened, but how well it holds its sharpness. These knives from IKEA are a reasonable 80/20 choice in this regard. It can certainly be worth it to spend mroe on a better knife if you cook a lot.
+    \p{
+      IKEA has a few variations on this knife: a slightly shorter version, a "santoku" version with a differently-shaped blade, and a paring knife. They also sell a 3-pack containing this one, the santoku, and the paring knife. The paring knife is probably a good choice if you're looking for a shorter knife, but I don't really see any need for the others. They also has some knives in the "IKEA 365+" series, for essentially the same price. As far as I can tell these are basically identical, with only the handle being different. I prefer the VARDAGEN handle. 
+    }
+  }
+  \item{IKEA }{}
+}
+
+\item{A clipboard}{
+  This 
+}
