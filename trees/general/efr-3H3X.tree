@@ -1,0 +1,35 @@
+\date{2025-10-29T18:54:50Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Sketch}
+\p{
+  A normal form representation is a countable linear combination of measurable functions #{A \to K}.
+}
+\lemma{}{
+  Any Borel kernel has a normal form representation.
+  \proof{
+    \p{
+    Assume by induction this is true for sets with lower cardinality (clearly it is true for the singleton).
+    Consider #{K \sqcup \{0\}}
+    Seperate #{A} into the measurable sets of points so that #{0} has probability greater than #{1/2} and the complement.
+    On the complement, by induction choose some subkernel concentrated on #{K} of total measure #{1/2}. Note that we have to recurse at most #{\abs{K}} times here so there's no problem with that. Choose a normal form representation of #{2\cdot}, and extend it to the set where #{P(0) \geq 1/2} by setting them all equal to zero there. It is straightforward to see that the original kernel has the form #{(p+q)/2}, where #{p} is the normal form we just constructed and #{q} is some other kernel. By iteration this suffices to determine a normal form.
+    }
+  }
+}
+\lemma{}{
+  Give two normal form representations of the same Borel kernel #{A \to 2}, they are necessarily sent to the same image in any markov category.
+  \proof{
+    \p{
+      They can both be written into the normal form above. First restrict to the set where #{1} has total probability mass at least #{1/2}. At every point there is some subset of the linear combination of total mass #{1/2} which sends that point to #{1}. Measurably choose a subcombination of exact probability mass #{1/2}. Let #{f_i'} be those functions altered to be #{0} at those points instead of #{1}. Then this is equal to #{m(1, \sum f_i')}. Is it obvious this is the same probability by the axioms? No. Do the same on the complement and we iterate.
+    }
+  }
+}
+\p{
+  We should make normal forms into #{\NN} be given by finite submeasures. Note that since #{\NN \to 2^\omega} in injective, it suffices to prove #{\to \NN \to K} agrees for all the finite truncations. 
+}
+\p{
+  This is good because the countable linear combinations of functions #{\NN \to \NN} do not actually hit all kernels.
+}
+\p{
+  Note that normal forms live in the \em{free} iterable midpoint algebras, and these do satisfy the "iterability uniqueness" for iterations #{a_1 +_\epsilon \dots}. Hence the argument above for 2, if it works, works also for other finite numbers.
+}
