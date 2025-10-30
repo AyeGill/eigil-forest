@@ -1,0 +1,24 @@
+\date{2025-10-23T19:11:32Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Modal logic for stochastic processes}
+\p{
+  Consider the Markov category of deterministic diagrams like #{X_0 \leftarrow X_1 \leftarrow \dots}.
+  This has an endofunctor #{N(X)_i = X_{i+1}} and a canonical map #{NX \to X} - I think a lot of stochastic processes stuff can be described "synthetically" in these terms.
+}
+\p{
+  As per my study of immersions in the representable dynamics paper, the immersions #{X \to Y} are exactly those that admit a Bayesian inverse (because this must be a levelwise Bayesian inverse, so the only question is whether the squares commute).
+}
+\p{
+  Of course we can also say the immersions are those so that the square
+  \quiver{
+    \begin{tikzcd}
+    \Box A \ar[d] \ar[r] & A \ar[d] \\
+    \Box B \ar[r] & B
+    \end{tikzcd}
+  }
+  displays conditional independence. It should follow from our argument that this is a consequence of conditionals existing.
+}
+\p{
+  There should essentially never be a Bayesian inverse #{X \to \Box X} (because #{\Box X \to X} is never an immersion). However, if #{A} is a constant object and #{\Box X \to A} is a map (a random variable at time #{t+1}) we can ask for a conditional #{X \to A} (as in conditional expectation), which can still exist.
+}
