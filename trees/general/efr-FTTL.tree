@@ -1,0 +1,8 @@
+\date{2025-10-30T15:17:43Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Theorem}
+\p{
+  #{\FinStoch} is the initial distributive, externally iterable, coinflip Markov category.
+  #{\omega \Stoch} is the initial countably distributive, iterable, coinflip Markov category.
+}
