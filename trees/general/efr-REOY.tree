@@ -1,0 +1,8 @@
+\date{2025-10-31T20:57:12Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Corollary}
+\p{
+  Any iterable midpoint algebra carries the structure of an algebra of #{\Delta_\omega}.
+  Moreover any midpoint homomorphism between iterable midpoint algebras is a #{\Delta_\omega}-homomorphism. In particular, if #{\cC} is a coinflip Markov category, each homset #{\cC(X,Y)} is a #{\Delta_\omega}-algebra, and composition is biconvex (i.e convex in each variable separately).
+}

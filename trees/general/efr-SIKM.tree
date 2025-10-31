@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Infinite tensor products}
+\taxon{Definition}
 \p{
   Let #{\cC} be a semiCartesian symmetric monoidal category and let #{\{X_j\}_{j \in J}} be a family of objects.
   Then if #{P_f(J)} denotes the set of finite subsets of #{J} (ordered by incluson), we obtain a diagram #{P_f(J)^\op \to \cC}, where #{F \mapsto \otimes_{j \in F} X_j}, and the inclusion #{F \to F'} is mapped to the which applies the deletion #{X_j \to I} for every #{j} not in #{F}. 

@@ -18,7 +18,7 @@
     It remains to show that this respects independent pairings. 
   }
 }
-\remark{}{
+\remark{
   \p{
     This is essentially a proof that #{\Borel_{\Delta_\omega}} is the free iterable coinflip category on #{\Borel} (not requiring that any of the properties be preserved).
   }

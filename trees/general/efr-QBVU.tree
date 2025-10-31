@@ -4,9 +4,5 @@
 \title{Coinflip structure}
 \taxon{Definition}
 \p{
-  Let #{\cC} be a Markov category. Then the notion of [[efr-6W7X]] makes sense in #{\cC}.
-  Note that it also makes sense to ask that #{A} is iterable (we ask that for every map #{X \to A \otimes X}, there exists a unique #{X \to A} so that the given diagram commutes).
-}
-\p{
-  A \em{coinflip structure} on #{\cC} is a natural transformation #{b_A: A \otimes A \to A} so that each #{b_A} makes #{A} into a midpoint algebra. It is called iterable if each #{(A,b_A)} is iterable in the above sense.
+  Let #{\cC} be a Markov category. A \em{coinflip structure} is a [[efr-6W7X]] structure on each homset #{\cC(X,Y)}, natural in both #{X} and #{Y}.
 }

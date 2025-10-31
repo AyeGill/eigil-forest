@@ -1,0 +1,7 @@
+\date{2025-10-31T18:52:03Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{\cC} be a Markov category. Every coinflip structure on #{\cC} is equal.
+}

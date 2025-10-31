@@ -5,26 +5,114 @@
   The universal property of measure-theoretic probability theory
 }
 
-\transclude{efr-B2P7}
-\transclude{efr-SIKM}
-\transclude{efr-EB3U}
-\transclude{efr-OH6B}
-\transclude{efr-9RDS}
-\transclude{efr-0XH9}
-\transclude{efr-3B2L}
-\transclude{efr-TVLB}
+\subtree{
+  \title{Introduction}
+}
 
-\transclude{efr-Y5KS}
+\subtree{
+  \title{Markov Categories}
+  
+  \p{
+    We will need to impose several different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The typical pattern is to demand that #{\cC_\det} has some property, and that this is "preserved" by the inclusion into #{\cC}. We list these now.
+  }
 
-\transclude{efr-JB06}
-\transclude{efr-D3QE}
-\transclude{efr-CZUI}
-\transclude{efr-6WNL}
-\transclude{efr-6W7X}
+  \p{
+    The list of hypotheses we will chiefly be interested in is the following:
+    \ol{
+      \li{
+        #{\cC} has countable Kolmogorov products.
+      }
+      \li{
+        #{\cC_\det} is extensive, and finite coproducts and pullbacks along finite coproduct inclusions are preserved by #{\cC_\det \into \cC}.
+      }
+      \li{
+        Every deterministic monomorphism is a coproduct inclusion.
+      }
+    }
+  }
+
+  \p{
+    Together these imply, for example, that #{\cC_\det} has all countable limits, that #{\cC_\det} is \em{countably} extensive (and that countable coproducts are preserved by the inclusion into #{\cC_\det}, etc). 
+  }
+
+  \transclude{efr-B2P7}%extensive
+  \transclude{efr-T0AU}%distributive
+  \p{
+    Note that any extensive Markov category is automatically distributive.
+  }
+  \p{
+    Recall that a category is \em{Boolean} if every monomorphism is a coproduct inclusion. This definition is usually only used when the category has at least finite intersections, in which case the subobject lattices become Boolean algebras. We will also only use it in this situation.
+  }
+
+  \p{
+    We will not really need the definition of Markov-extensivity, except to apply Chen's theorem to construct a functor #{\Borel \to \cC_\det \into \cC}.
+  }
+}
+
+\subtree{
+  \title{Coinflips and midpoint algebras}
+  \p{
+    We will not have any hope of giving a universal property for #{\BorelStoch}, or any interesting Markov category, without some property that forces certain maps to be nondeterministic. We now give such a structure.
+  }
+  \transclude{efr-0XH9}
+  \p{In fact, we have the following:}
+  \transclude{efr-V3JG}
+
+  \transclude{efr-Z9IU}
+  \transclude{efr-6W7X}
+  \transclude{efr-QBVU}
+  \transclude{efr-OX26}
+  \p{
+    Note that any coinflip #{I \to I + I} in a distributive Markov category induces a coinflip structure, and vice versa. Since both notions are unique, this is obviously a 1-1 correspondence.
+  }
+
+  \p{A Markov category is called a \em{coinflip Markov category} if it admits a coinflip structure. An argument analogous to \ref{efr-OX26} proves any Markov functor between coinflip Markov categories preserves the coinflip structure (in the distributive case, this is trivial since it clearly must preserve the coinflip #{I \to I + I}).
+  }
+
+  \transclude{efr-6WNL}
+  \transclude{efr-CZUI}
+
+  \transclude{efr-JB06}
+
+  \transclude{efr-REOY}
+}
+\subtree{
+  \title{The universal property of discrete probability}
+  \transclude{efr-FTTL}
+
+
+
+}
+
+
+\subtree{
+  \title{Kolmogorov products}
+
+  \transclude{efr-SIKM}
+  \transclude{efr-EB3U}
+
+  \transclude{efr-OH6B}
+  \transclude{efr-9RDS}
+}
+
+\subtree{
+  \title{The universal property of #{\BorelStoch}}
+  \transclude{efr-3B2L}
+  \transclude{efr-TVLB}
+  \p{
+    We first add another tool to our theory of coinflips. One view of the iterability hypothesis is that the weighted convex combination #{\sum_i 1/2^i a_i} is "convergent" in a certain sense. A similar convergence property is reflect in the fact that, in #{\BorelStoch}, the uniform pairing of countably many coinflips #{I \to 2^\omega} factors over the subspace #{2^\omega \setminus \{0\}^\omega} of sequences with at least one #{1}---or, in other words, the identical zero sequence has probability #{0}. It turns out that our hypotheses suffice to prove this fact about a generic coinflip, and thus prove that every coinflip (in a category with this structure) is iterable. The key ingredient of the proof is the \em{Abstract Kolmogorov zero-one law} of Fritz and Rischel (\ref{rischel-fritz-infinite-products}).
+  }
+  \transclude{efr-Y5KS}
+
+  \p{
+    The first step in the proof is the analogue of \ref{efr-FTTL} for #{\Borel}:
+  }
+  \transclude{efr-VH33}
+  \p{
+    Now we 
+  }
+  
+  \transclude{efr-D3QE}
+}
+
 \transclude{efr-4LCO}
-\transclude{efr-QBVU}
-\transclude{efr-V3JG}
-\transclude{efr-VH33}
-\transclude{efr-Z9IU}
-
-\transclude{efr-FTTL}
