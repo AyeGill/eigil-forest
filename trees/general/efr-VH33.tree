@@ -8,9 +8,18 @@
 }
 \proof{
   \p{
-    Consider the (countably presented) algebraic structure given by a single countable-arity operation #{M} satisfying all the equations implied by being an iterable midpoint operator. Clearly the countable distribution monad is the free monad for this structure on #{\Borel}. Hence the inclusion #{\Borel \into \Kl(\Delta_\omega)} is the initial functor equipping every object with such a structure. Hence there is a unique extension of #{i_\cC} over this functor.
+    Let #{\Delta_\omega X \to X} be an algebra in #{\Borel} for the discrete distribution monad.
+    Then in particular we may define a map #{M_X : X^\omega \to X} by #{M_X((x_i)) = \sum_i 1/2^i x_i}. Note that we can recover all other operations in #{\Delta_\omega X} by iterating #{M_X}. Hence there exists some set of equations between terms using the countable operator #{M} so that an internal model for this algebraic theory of countable arity is exactly an algebra for #{\Delta_\omega}. Moreover all these equations hold for the midpoint algebras induced by an iterable coinflip.
   }
   \p{
-    Todo: this functor is Markov, i.e it respects independent pairings.
+    Now by construction, the Kleisli category is induced by freely adding a natural algebra structure to each object. In other words, to extend #{i_\cC} over #{\Borel_{\Delta_\omega}} is to give each image #{i_\cC(X)} such a countable-arity algebra structure, satisfying those equations. Such a structure clearly exists, namely the canonical one coming from the coinflip operator. Moreover, since this structure is determined by the coinflip operator, and our functor must preserve this, this is unique.
+  }
+  \p{
+    It remains to show that this respects independent pairings. 
+  }
+}
+\remark{}{
+  \p{
+    This is essentially a proof that #{\Borel_{\Delta_\omega}} is the free iterable coinflip category on #{\Borel} (not requiring that any of the properties be preserved).
   }
 }

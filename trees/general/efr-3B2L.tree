@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Definition}
 \p{
-  #{\Mark_{\bool, \omega}^{\flip}} is the 2-category where objects are Markov categories equipped with a [coinflip](efr-0XH9), which are [countably extensive](efr-B2P7), admit countable [kolmogorov products](efr-EB3U), where #{\cC_\det} is Boolean. The functors are strong monoidal Markov functors which preserve countable limits in #{\cC_\det}, countable coproducts, and the coinflip.
+  #{\Mark_{\bool, \omega}^{\flip}} is the 2-category where objects are Markov categories which have a [coinflip](efr-0XH9), which are [countably extensive](efr-B2P7), admit countable [kolmogorov products](efr-EB3U), where #{\cC_\det} is Boolean. The functors are strong monoidal Markov functors which preserve countable limits in #{\cC_\det} and countable coproducts.
 }

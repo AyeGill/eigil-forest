@@ -5,14 +5,4 @@
 \p{
   #{\BorelStoch} is biinitial in #{\Mark^\flip_{\bool,\omega}}
 }
-\proof{
-  \p{
-    Let #{\cC} be an object of #{\Mark^\flip_{\bool,\omega}}. First observe that by (chen!), there is an essentially unique morphism #{F: \Borel \to \cC_\det}, hence from #{\Borel \to \cC}. It suffices to prove that this functor has a (strictly) unique extension to #{\BorelStoch} which preserves the distinguished coinflip. Define an operation on kernels #{\bar{F}(\phi)} as #{F(\phi^n)(1_A \times u_\cC)}, where #{u_\cC} is the uniform measure in #{\cC} and #{\phi^n} is any normal form of #{\phi}.
-  }
-  \p{
-    It is apparent that any extension satisfy the equation defining #{\bar{F}}. Hence the only questions are whether #{\bar{F}} is well-defined (that is, does it depend on the choice of normal form), and whether it actually defines a morphism. Concerning the latter, the only thing we have to verify is that it is functorial and monoidal. 
-  }
-  \p{
-    To show well-definedness, it clearly suffices to consider the case of a kernel with finite codomain #{A \to B}.
-  }
-}
+\transclude{efr-D3QE}
