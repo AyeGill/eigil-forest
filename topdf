@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+
+STYLE="article"
+
+while [[ $# -gt 0 ]]; do
+  case $1 in
+    -s|--style)
+      STYLE="$2"
+      shift # past argument
+      shift # past value
+      ;;
+    -*|--*)
+      echo "Unknown option $1"
+      exit 1
+      ;;
+    *)
+      POSITIONAL_ARGS+=("$1") # save positional arg
+      shift # past argument
+      ;;
+  esac
+done
+
+
+set -- "${POSITIONAL_ARGS[@]}" # restore positional parameters
+
+TREE=$1
+
+if [ "$TREE" == "" ]; then
+  echo "Usage: ./topdf [-s style] tree"
+  exit 1
+fi
+
+echo "Compiling tree $TREE to pdf via style $STYLE"
+
+xsltproc -o "output/$TREE.tex" "texstyles/$STYLE.xsl" "output/$TREE/index.xml"
+cp -r texpackages/* output/
+cp -r assets/*.sty output/
+cp -r assets/*.tikzstyles output/
+cp -r assets/*.tikzdefs output/
+# cp -r assets/*.pdf output/
+# cp -r assets/*.png output/
+# cp -r assets/djm output/
+# cp -r assets/ssl output/
+cd output/
+latexmk -pdflua -shell-escape $TREE.tex
+cd ..
+
+echo "Output pdf to output/$TREE.pdf"
+echo "Note that conversion to pdf is experimental, and the XSL style sheets in texstyles may need tweaking."
