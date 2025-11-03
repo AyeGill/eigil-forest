@@ -1,0 +1,7 @@
+\date{2025-11-03T14:28:58Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\p{
+  Let #{\cC, \cD} be Markov categories. A functor #{F: \cC \to \cD} admits an oplax Markov structure if and only if it preserves deterministic maps and independent pairings. If it does, the oplax structure is given by the unique such structure on #{\cC_\det \to \cD_\det} induced by these being Cartesian.
+}

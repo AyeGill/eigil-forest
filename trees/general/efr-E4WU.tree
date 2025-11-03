@@ -1,0 +1,12 @@
+\date{2025-11-03T14:06:48Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{\cC} be a coinflip Markov category. If it is externally iterable, then it is internally iterable.
+}
+\proof{
+  \p{
+    Let #{s: X \to A \otimes X} be a map, and suppose #{u_1,u_2} both satisfy the equation #{u_i = m(\pi_A s, u_i \pi_X s)}. Let #{a_n : X \to A} denote the map defined inductively by #{a_1 = \pi_A s}, #{a_{n+1} = a_n \pi_X s}. Let #{b_i^{n}} be defined inductively by #{b_i^1 = u_i}, #{b_i^{n+1} = b_i^n \pi_X s}. Then we see that #{b_i^n = m(a_n, b_i^{n+1})} for both #{i=1,2}. Therefore they must agree, and in particular #{u_1 = u_2}. This concludes the proof.
+  }
+}

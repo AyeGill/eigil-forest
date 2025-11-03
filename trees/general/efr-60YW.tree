@@ -1,0 +1,23 @@
+\date{2025-11-03T13:40:46Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{\cC} be a coinflip Markov category which is countably distributive. If #{\cC} is internally iterable, then it is externally iterable.
+}
+\proof{
+  \p{
+    By (escardo-simpson), a midpoint algebra #{(A,m)} in #{\Set} is iterable if and only if is satisfies these conditions:
+    \ol{
+      \li{
+        There exists an operator #{M: A^\omega \to A} so that #{M(a_1,a_2, \dots) = m(a_1, M(a_2, a_3, \dots))}
+      }
+      \li{
+        Given two sequences #{a_i, b_i} so that #{b_i = m(a_i, b_{i+1})} for all #{i}, then #{b_1 = M(a_1, a_2, \dots)}
+      }
+    }
+  }
+  \p{
+    Let a countable family #{f_i : A \to B} be given. Consider the operation #{\sum^\omega_{i=0} A \to B \times \sum^\omega A} given by the copairing of all the #{f_i} paired with the map #{\sum^\omega_{i=0} A \to \sum^\omega_{i=0} A} which maps each summand to the next one (i.e #{(i,a) \mapsto (i+1,a)}). Now an iteration of this map #{u: \sum_i A \to B} is equivalently a sequence of maps #{g_i} so that #{g_i = m(f_i,g_{i+1})}. Hence the existence and uniqueness of such an operator precisely corresponds to points 1 and 2 above.
+  }
+}

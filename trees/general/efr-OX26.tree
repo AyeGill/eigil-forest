@@ -5,3 +5,14 @@
 \p{
   Let #{\cC} be a Markov category. Every coinflip structure on #{\cC} is equal.
 }
+\proof{
+  \p{
+    Let #{m_1,m_2} denote two coinflip structures. Let #{f_1 = m_1(\pi_1, \pi_2) : A \otimes A \to A}, analogously #{f_2} (we condense the notation by writing #{f_1,f_2} regardless of the object in question). Note #{m_1(a,b) = f_1\braket{a,b}}, where #{\braket{a,b}} is any pairing of #{a,b}, by naturality.
+  }
+  \p{
+    First consider #{m_1(m_2(a,b),m_2(c,d))}. By the above this is #{f_1 \braket{f_2 \braket{a,b}, f_2 \braket{c,d}}}. Applying naturality to the morphism #{f_2}, we can also rewrite this as #{f_2 \circ (m_1(\braket{a,c},\braket{b,d}))}
+  }
+  \p{
+    Now take #{c = b, d = a}. By symmetry for #{m_2} we can rewrite the left-hand side as #{m_1(m_2(a,b),m_2(a,b))}. By idempotency this is simply #{m_2(a,b)}. The other expression now becomes #{f_2 \circ (m_1(\braket{a,b},\braket{b,a}))}. Now consider the first projection of the map #{m_1(\braket{a,b},\braket{b,a})}. By naturality it is equal to #{m_1(a,b)}. By symmetry, so is the second projection. Hence this is a pairing of #{m_1(a,b)} with itself. Hence the composite is equal to #{m_2(m_1(a,b),m_1(a,b)) = m_1(a,b)}. This concludes the proof.
+  }
+}
