@@ -3,19 +3,25 @@
 \import{macros}
 \taxon{Conjecture}
 \p{
-  Let #{\cC} be a countably extensive, Boolean Markov category with countable Kolmogorov products. Then any coinflip structure on #{\cC} is iterable.
+  Let #{\cC} be a countably extensive, Boolean, coinflip Markov category with countable Kolmogorov products. Then #{\cC} is iterable.
 }
 \proof{
   \p{
-    Let #{\chi_0: 2^\omega \to 2} be the indicator of #{\{0\}^\omega}. Let #{u: I \to 2^\omega} be the uniform measure according to the given coinflip structure. By the abstract Hewitt-Savage zero-one law, the composite #{\chi_0 u : I \to 2} is deterministic, hence classified by a subterminal object, say #{q}. Then #{\cC_{/q}} inherits the properties of #{\cC}, so assume #{q = 1}. But by symmetry of the coinflip, (this argument must be fleshed out) we see the complement of #{\chi_0 u} must also have probability 1 in this case. This yields a morphism #{1 \to 0} (since these sets are disjoint), and hence the category must be trivial.
+    Let #{r_1: 2^\omega \to 2} be the indicator of the subset consisting of those streams which have only finitely many #{1}s. Consider the uniform distribution #{c^\omega : I \to 2^\omega}, where #{c: I \to 2} is the coinflip. Observe that for any finite #{N}, #{r_1} factors over the second coordinate of the decomposition #{2^\omega \to 2^N \times 2^\omega}. 
   }
   \p{
-    TODO: Use the indicator only finitely many 1s instead, same argument. To show uniqueness, for #{X \to A \otimes X}, factor over #{X \otimes A^\omega \otimes 2^\omega} (by the map #{c_N} which only inspects the first #{N} things, for every #{N}). Use the fact that these agree with #{c_\infty}, the "correct" iteration guy, on the component where #{1} occurs before #{N}, and that union of these is the right thing, so must agree everywhere. 
+    As a resulti, if we form the joint #{I \to 2^\omega \otimes 2} given by sampling the uniform distribution and computing #{r_1}, the second coordinate is independent of any finite prefix of the first. Hence, by the abstract Kolmgorov zero-one law, the composite #{r_1 c^\omega : I \to I+I} is deterministic.
   }
   \p{
-    Hence we can assume #{q = 0}, which means #{u} factors over the complement of #{\{0\}^\omega}. On this complement, there is a well-defined map to the natural numbers given by the index of the first #{1}.
+    Hence it classifies some subterminal object #{q}. By symmetry, #{r_0 c^\omega} is the indicator of #{q} as well, where #{r_0} is the indicator of sequences with only finite many #{0}s. But these two subterminal objects must be disjoint, hence they must both be empty.
+  }
+  \p{
+    So #{r_0c^\omega, r_1c^\omega} are both equal to #{0 : I \to 2}. It follows that #{c^\omega} factors over the subobject #{2^\omega \setminus \{0\}^\omega \into 2^\omega} (since any sequence with finitely many zeroes certainly has at least one #{1}).
   }
   \p{
     Now let #{X \to A \otimes X} and consider the induced map #{X \to A^\omega}. By pairing this with the factorization #{u : I \to 2^\omega \setminus \{0\}^\omega}, and applying the map which selects #{a_i} where #{i} is the index of the first #{1}, we obtain an iteration operator (it is straightforward to check that this is an iteration operator).
+  }
+  \p{
+    TODO: Use the indicator only finitely many 1s instead, same argument. To show uniqueness, for #{X \to A \otimes X}, factor over #{X \otimes A^\omega \otimes 2^\omega} (by the map #{c_N} which only inspects the first #{N} things, for every #{N}). Use the fact that these agree with #{c_\infty}, the "correct" iteration guy, on the component where #{1} occurs before #{N}, and that union of these is the right thing, so must agree everywhere. 
   }
 }
