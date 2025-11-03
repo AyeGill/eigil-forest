@@ -1,0 +1,12 @@
+\title{Convex Duality Made Difficult}
+\date{2025-06-02}
+\taxon{Reference}
+\author{eigil-rischel}
+\meta{bibtex}{\startverb
+ @article
+{rischel-cvxdual-2025, title={Convex Duality Made Difficult}, volume={??}, journal={EPTCS}, author={Rischel, Eigil Fjeldgren}, pages={1–14}, date={2025} }
+\stopverb}
+\meta{external}{https://cgi.cse.unsw.edu.au/~eptcs/paper.cgi?ACT2025:28}
+
+
+\transclude{lcc-001Z}

@@ -491,14 +491,13 @@
 
 
 %Utility
-
-\def\todo[note]{[\note](todo-tree)}
+\xmlns:html{http://www.w3.org/1999/xhtml}
+\def\todo[note]{\<html:p>[style]{color:red}{\note}}
 \def\rparen{\startverb)\stopverb}
 \def\lparen{\startverb(\stopverb}
 \def\lbracket{\startverb[\stopverb}
 \def\rbracket{\startverb]\stopverb}
 \def\amp{\startverb\&\stopverb}
-
 
 
 % Game Theory
