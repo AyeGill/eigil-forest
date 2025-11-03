@@ -1,0 +1,28 @@
+\date{2025-11-02T22:19:45Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{F: \cC \to \cD} be a functor between Markov categories.
+  \ol{
+    \li{
+      If #{F} is a Markov functor, it preserves deterministic maps. The oplax monoidal structure on #{F} is necessarily given by the unique one induced on #{F_\det : \cC_\det \to \cD_\det}.
+    }
+    \li{
+      Moreover it preserves independent pairings, in the sense that 
+      \quiver{
+        \begin{tikzcd}
+        F(X) \ar[dr, swap, "{(F(f),F(g))}"] \ar[r, "{F((f,g))}"] & F(Y \otimes Z) \ar[d, "{\Delta_{Y,Z}}"] \\
+        & F(Y) \times F(Z)
+        \end{tikzcd}
+      }
+      commutes, where #{\Delta} is the oplax monoidal structure.
+    }
+    \li{
+      Given a functor #{F': \cC \to \cD} which preserves deterministic maps and independent pairings in this sense, the comonoid structure on #{F'_\det} makes #{F} into an oplax Markov functor.
+    }
+    \li{
+      A Markov functor is strong if and only if #{F_\det} preserves products.
+    }
+  }
+}
