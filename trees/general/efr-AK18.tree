@@ -134,42 +134,33 @@
     }
     \proof{
       \p{
-        It suffices to construct the map #{\Delta_\omega(\omega) \to \omega} which samples from the given distribution. Write #{D \subseteq \Delta_\omega(\omega)} for the set of finite dyadic combinations of indexes #{i \in \omega}. Consider the map #{(D)^\omega \to \Delta_\omega(\omega)} which computes the sum #{\sum_i 1/2^i d_i}. This is clearly surjective, and we can construct a measurable section by choosing a dyadic submeasure of total measure #{1/2} (adding as much as possible of each point starting from #{1}), then subtracting it and iterating with the remainder. Compose this section with #{D^\omega \to \omega^\omega \to \omega}, starting by using the midpoint structure on each coordinate then #{M}.
+        It suffices to construct the map #{\Delta_\omega(\omega) \to \omega} which samples from the given distribution. Write #{D \subseteq \Delta_\omega(\omega)} for the set of finite dyadic distributions on indexes #{i \in \omega}. Consider the map #{(D)^\omega \to \Delta_\omega(\omega)} which computes the sum #{\sum_i 1/2^i d_i}. This is clearly surjective. We can construct a section in the following way:
+      }
+      \ol{
+        \li{
+          Let #{(\epsilon_i) \in \Delta_\omega(\omega)} be the input.
+        }
+        \li{
+          Identify the least #{n} so that there exists a collection of #{\delta_i < \epsilon_i} with #{\sum_i \delta_i = 1/2} and #{\delta_i = k_i/2^n} for integers #{k_i \geq 0}. Necessarily #{\delta_i} is zero except for finitely many #{i}.
+        }
+        \li{
+          Let the first dyadic combination be #{(2 \delta_i)}, then recurse with #{(2 \epsilon_i - 2\delta_i)}.
+        }
+      }
+      \p{
+        It's clear that this indeed forms a section, and is measurable. We will now show that the map #{s: D^\omega \to \omega} factors over this split epimorphism. Let #{\operatorname{nm}: D^\omega \tp D^\omega} be the map which replaces each sequence with its normal form in the above sense. It suffices to show that #{sn\operatorname{nm}= s}. Note that by construction, the first component of the normal form of a given distribution is \em{strictly} less than the final probability. Thus there exists some finite index so that the sum #{\sum_{i=0}^N 1/2^i d_i} is greater than half the first component of the normal form.
+      }
+      \p{
+        Let #{n_1 : D^\omega \to D^\omega} be the map which rewrites the first coordinate to be in normal form, modifying only a finite prefix. Then clearly #{s n_1 = s}, as this can be verified by finitary means (decomposing #{D^\omega} as the coproduct of those items where this modification involves only the first coordinate, the first 2, etc). Now clearly #{s \operatorname{nm} = 1/2 s_D \pi_1 n_1 + 1/2 x}, where #{s_D: D \to \omega} is that sampling map, and #{x} is sampling from the normal form of the tail. But also #{s = s n_1 = 1/2 \pi_1 n_1}. By iterating this argument, this proves that both #{s} and #{s \operatorname{nm}} are equal to the same series expansion, finishing the proof.
       }
     }
   }
   \p{
+    Note that #{\Delta_\omega(\omega)} has a deterministic midpoint algebra structure coming from #{\Borel}, in addition to the given one in #{\cC}. By construction the sampling map is a homomorphism (when #{\omega} has the canonical one coming from #{\cC}), in the sense that given #{f,g: A \to \Delta_\omega(\omega)}, if #{(f+g)/2} is their convex combination in #{\Delta_\omega}, then #{s(f+g/2) = m(sf,sg)} (which is always equal to #{s m(f,g)}).
+  }
+  \p{
     This canonical morphism #{A^\omega \times \Delta_\omega(\omega) \to A} identifies any two points which are equal according to the equations of #{\Delta_\omega} algebras. (For example, permuting two indexes which have the same coefficient does not change the value). When #{\cC = \Borel}, this is equivalent to the claim that it factors over #{A^\omega \times \Delta_\omega(\omega) \to \Delta_\omega(A)}. We now show that, when #{A = F(X)} is the image of a standard Borel space, this equivalence still holds.
   }
-  \subtree{
-    \taxon{Lemma}
-    \p{
-      Let #{X \in \Borel} and let #{F(X)^\omega \times \Delta_\omega(\omega) \to F(X)} be a map. This factors over #{F(X)^\omega \times \Delta_\omega(\omega) \to F(\Delta_\omega X)} if and only if it identifies equivalent convex combinations.
-    }
-    \proof{
-      \p{
-        Note that the map #{F(X)^\omega \times \Delta_\omega(\omega) \to F(\Delta_\omega X)} is simply #{F} applied to the same map in #{\Borel}. Identifying equivalent convex combinations is the same as equalizing the kernel pair of this map (which is preserved since #{F} preserves finite deterministic limits). We will now show that in #{\BorelStoch} it splits - since any functor preserves split epimorphisms, this suffices.
-      }
-      \p{
-        To construct the splitting, first note that if #{A} is empty both sides are empty, and so this is trivial. Otherwise choose some #{a^* \in A}, and choose a total ordering on #{A} (if #{A} is countable this is trivial, otherwise it is up to isomorphism #{2^\omega} which can be ordered lexically). Considering a formal sum #{\sum_i \epsilon_i a_i}, do the following:
-      }
-      \ol{
-        \li{
-          If it is a finite sum ending at #{N}, extend it to be infinite by setting #{a_i = a^*, \epsilon_i = 0} for #{i > N}.
-        }
-        \li{
-          Order it by descending #{\epsilon_i}
-        }
-        \li{
-          If there are multiple equal #{\epsilon_i}, order them according to the ordering on their #{a_i}.
-        }
-      }
-      \p{
-        This gives a well-defined splitting which is easily seen to be measurable.
-      }
-    }
-  }
-
 
   \transclude{efr-VH33}
   \p{
@@ -178,5 +169,10 @@
   
   \transclude{efr-D3QE}
 }
-
+\subtree{
+  \taxon{Corollary}
+  \p{
+    Let #{T} be a bicommutative, affine monad on #{\Borel} so that #{T(2)} contains a fair coinflip, #{T} preserves countable cofiltered limits, and the induced midpoint algebras on #{TX} are all iterable. Then there is a unique monoidal monad homomorphism #{G \to T}, where #{G} is the Giry monad.
+  }
+}
 \transclude{efr-4LCO}
