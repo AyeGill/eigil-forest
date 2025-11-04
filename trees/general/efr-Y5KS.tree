@@ -19,9 +19,22 @@
     So #{r_0c^\omega, r_1c^\omega} are both equal to #{0 : I \to 2}. It follows that #{c^\omega} factors over the subobject #{2^\omega \setminus \{0\}^\omega \into 2^\omega} (since any sequence with finitely many zeroes certainly has at least one #{1}).
   }
   \p{
-    Now let #{X \to A \otimes X} and consider the induced map #{X \to A^\omega}. By pairing this with the factorization #{u : I \to 2^\omega \setminus \{0\}^\omega}, and applying the map which selects #{a_i} where #{i} is the index of the first #{1}, we obtain an iteration operator (it is straightforward to check that this is an iteration operator).
+    Now let #{s: X \to A \otimes X} and consider the induced map #{X \to A^\omega}. By pairing this with the factorization #{u : I \to 2^\omega \setminus \{0\}^\omega}, and applying the map which selects #{a_i} where #{i} is the index of the first #{1}, we obtain a map #{X \to A} which satisfies the defining equation.
   }
   \p{
-    TODO: Use the indicator only finitely many 1s instead, same argument. To show uniqueness, for #{X \to A \otimes X}, factor over #{X \otimes A^\omega \otimes 2^\omega} (by the map #{c_N} which only inspects the first #{N} things, for every #{N}). Use the fact that these agree with #{c_\infty}, the "correct" iteration guy, on the component where #{1} occurs before #{N}, and that union of these is the right thing, so must agree everywhere. 
+    Let now #{u: X \to A} be another map which solves this iteration problem.
+    Consider the map #{f: X \to X \otimes A^\omega \otimes (2^\omega 
+    setmminus 0)} which couples the identity, the map #{X \to A^\omega} from above, and the uniform distribution. For each #{N}, let #{h_N: X \otimes A^\omega \otimes (2^\omega \setminus 0) \to A} be the map defined as follows: inspect the first #{N} bits, and if any of them are #{1}, select that coordinate of #{A^\omega}. Otherwise, apply #{u (\pi_X s)^{N-1} : X \to A} to that coordinate. For all #{N}, by induction, we see that #{h_N f = u}
+  }
+  \p{
+    But #{2^\omega \setminus 0} decomposes as the coproduct of #{1 . 2^\omega, 01 . 2^\omega, \dots}. On each of these, #{h_N} is equal, for sufficiently high #{N}, to the map #{h_\infty} which simply selects the #{A}-factor corresponding to the first #{1}. 
+  }
+
+  \todo{
+    I now think this conjecture is not true - to finish the argument above, we need a kind of convergence which doesn't hold in general. Some ideas that can work:
+    either require an enrichment in Hausdorff spaces so that the limits (and coproducts) are limits in the enriched category. This should suffice. Or require some sort of \em{approximately compactly generated}, where "approximately compact" means maps out of you into a filtered colimit factor "approximately" over a subobject, in the sense necessary for this convergence argument.
+  }
+  \todo{
+    In any case it would be very neat to prove that BorelStoch is initial among topological Markov categories with the above structure! The argument would be sth like every convergent sequence of kernels factors as kernel into #{2^\omega} where each coordinate is eventually constant followed by a fixed map. (I don't know if this is true or not).
   }
 }
