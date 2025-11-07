@@ -1,0 +1,8 @@
+\date{2025-11-05T16:22:16Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Remark}
+\p{
+  Let a set equipped with an operation #{M: A^\omega \to A} be called an \em{\omega}-midpoint algebra. Note that this is equivalent to an algebra of #{\Delta_\omega}.
+  We observe that #{\omega}-coinflip structures on countably distributive and countably complete Markov categories must be unique if they exist, even though the individual extensions of the coinflip structures are not unique. We also observe that every ... coinflip Markov category is an #{\omega}-coinflip Markov category, by using the factorization #{I \to 2^omega \setminus 0 \to \omega}. It follows that the free coinflip .. markov category is equivalent to the free #{\omega}-coinflip such.
+}

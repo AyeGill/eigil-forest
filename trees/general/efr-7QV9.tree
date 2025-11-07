@@ -1,0 +1,7 @@
+\date{2025-11-05T10:50:12Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Corollary}
+\p{
+  Let #{\cC, \cD} be distributive coinflip Markov categories, and suppose #{F: \cC \to \cD} is a Markov functor which preserves coproducts and the monoidal unit. Then #{F} also preserves the coinflip structure.
+}

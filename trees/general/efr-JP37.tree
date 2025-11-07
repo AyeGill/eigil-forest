@@ -1,0 +1,13 @@
+\date{2025-11-05T10:13:16Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\p{
+  A [midpoint algebra](efr-6W7X) #{(A,m)} in #{\cC} is \em{iterable} if, for each #{s: X \to X \times A \in \cC}, there is a unique #{u : X \to A} so that the diagram
+  \quiver{
+    \begin{tikzcd}
+    X \ar[d, "u"] \ar[r, "s"] & X \times A \ar[d, "u \times A"] \\
+    A & A \times A \ar[l, "m"]
+    \end{tikzcd}
+  } 
+}

@@ -1,0 +1,8 @@
+\date{2025-11-05T10:57:26Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\title{Internal midpoint algebra}
+\p{
+  Let #{\cC} be any category. An \em{internal midpoint algebra} structure on an object #{A \in \cC} is a family of midpoint algebra structures on each #{\cC(X,A)}, so that precomposition is a midpoint homomorphism for every #{f: Y \to X}.
+}

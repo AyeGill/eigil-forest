@@ -3,6 +3,5 @@
 \import{macros}
 \taxon{Theorem}
 \p{
-  #{\BorelStoch} is biinitial in #{\Mark^\flip_{\bool,\omega}}
+  #{\BorelStoch} is the initial Markov-extensive, Boolean, iterable coinflip Markov category which admits countable Kolmogorov products, with respect to strong Markov functors which preserve coproducts, pullbacks and the Kolmogorov products.
 }
-\transclude{efr-D3QE}

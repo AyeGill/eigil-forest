@@ -54,22 +54,35 @@
   \p{
     We will not have any hope of giving a universal property for #{\BorelStoch}, or any interesting Markov category, without some property that forces certain maps to be nondeterministic. We now give such a structure.
   }
-  \transclude{efr-0XH9}
-  \p{In fact, we have the following:}
-  \transclude{efr-V3JG}
-
-  \transclude{efr-Z9IU}
   \transclude{efr-6W7X}
+  \transclude{efr-1XB5}
   \transclude{efr-QBVU}
   \transclude{efr-OX26}
   \p{
-    Note that any coinflip #{I \to I + I} in a distributive Markov category induces a coinflip structure, and vice versa. Since both notions are unique, this is obviously a 1-1 correspondence.
+    Note that any coinflip structure is determined by the family of maps #{m(\pi_0,\pi_1) : A \otimes A \to A}. To define a coinflip structure, such a family #{\mu_A} must satisfy the equations of a midpoint algebra, be natural in #{A}, and have the further property that #{\mu_A f = \mu_A (\pi_0 f, \pi_1 f)} (that is, the composite depends only on the projections of #{f}).
+  }
+  \p{
+    It is not clear that coinflip structures are preserved by all Markov functors, since #{F(\mu_A)} only has to enjoy the above property with respect to maps in the image of #{F}. However, as we now show, this is true in the distributive case.
   }
 
-  \p{A Markov category is called a \em{coinflip Markov category} if it admits a coinflip structure. An argument analogous to \ref{efr-OX26} proves any Markov functor between coinflip Markov categories preserves the coinflip structure (in the distributive case, this is trivial since it clearly must preserve the coinflip #{I \to I + I}).
-  }
+  \transclude{efr-0XH9}
+  \transclude{efr-V3JG}
 
-  \transclude{efr-6WNL}
+  \p{
+    Note that any coinflip #{I \to I + I} in a distributive Markov category induces a coinflip structure, and vice versa. Since both notions are unique, this is obviously a 1-1 correspondence. From this we easily derive the following:
+  }
+  
+  \transclude{efr-7QV9}
+
+  
+  \transclude{efr-JP37}
+  \transclude{efr-87W1}
+  \p{
+    In this case we might call #{u} an \em{iteration operator} for #{s}.
+  }
+  \transclude{efr-Z9IU}
+  
+
   \transclude{efr-CZUI}
 
   \transclude{efr-JB06}
@@ -83,9 +96,6 @@
 
   \transclude{efr-E4WU}
   \transclude{efr-60YW}
-  \todo{
-    Restate these as being about internal midpoint algebras. Start with internal midpoint algebras instead.
-  }
 }
 \subtree{
   \title{The universal property of discrete probability}
@@ -117,12 +127,10 @@
 
 \subtree{
   \title{The universal property of #{\BorelStoch}}
-  \transclude{efr-3B2L}
   \transclude{efr-TVLB}
   \p{
     We first add another tool to our theory of coinflips. One view of the iterability hypothesis is that the weighted convex combination #{\sum_i 1/2^i a_i} is "convergent" in a certain sense. A similar convergence property is reflect in the fact that, in #{\BorelStoch}, the uniform pairing of countably many coinflips #{I \to 2^\omega} factors over the subspace #{2^\omega \setminus \{0\}^\omega} of sequences with at least one #{1}---or, in other words, the identical zero sequence has probability #{0}. It turns out that our hypotheses suffice to prove this fact about a generic coinflip, and thus prove that every coinflip (in a category with this structure) is iterable. The key ingredient of the proof is the \em{Abstract Kolmogorov zero-one law} of Fritz and Rischel (\ref{rischel-fritz-infinite-products}).
   }
-  \transclude{efr-Y5KS}
 
   \p{
     The next step in the proof is the analogue of \ref{efr-FTTL} for #{\Borel}. Since coproducts do not generate #{\Borel}, we need a more sophisticated argument here.
@@ -148,7 +156,7 @@
         }
       }
       \p{
-        It's clear that this indeed forms a section, and is measurable. We will now show that the map #{s: D^\omega \to \omega} factors over this split epimorphism. Let #{\operatorname{nm}: D^\omega \tp D^\omega} be the map which replaces each sequence with its normal form in the above sense. It suffices to show that #{sn\operatorname{nm}= s}. Note that by construction, the first component of the normal form of a given distribution is \em{strictly} less than the final probability. Thus there exists some finite index so that the sum #{\sum_{i=0}^N 1/2^i d_i} is greater than half the first component of the normal form.
+        It's clear that this indeed forms a section, and is measurable. We will now show that the map #{s: D^\omega \to \omega} factors over this split epimorphism. Let #{\operatorname{nm}: D^\omega \to D^\omega} be the map which replaces each sequence with its normal form in the above sense. It suffices to show that #{sn\operatorname{nm}= s}. Note that by construction, the first component of the normal form of a given distribution is \em{strictly} less than the final probability. Thus there exists some finite index so that the sum #{\sum_{i=0}^N 1/2^i d_i} is greater than half the first component of the normal form.
       }
       \p{
         Let #{n_1 : D^\omega \to D^\omega} be the map which rewrites the first coordinate to be in normal form, modifying only a finite prefix. Then clearly #{s n_1 = s}, as this can be verified by finitary means (decomposing #{D^\omega} as the coproduct of those items where this modification involves only the first coordinate, the first 2, etc). Now clearly #{s \operatorname{nm} = 1/2 s_D \pi_1 n_1 + 1/2 x}, where #{s_D: D \to \omega} is that sampling map, and #{x} is sampling from the normal form of the tail. But also #{s = s n_1 = 1/2 \pi_1 n_1}. By iterating this argument, this proves that both #{s} and #{s \operatorname{nm}} are equal to the same series expansion, finishing the proof.
@@ -176,3 +184,24 @@
   }
 }
 \transclude{efr-4LCO}
+\transclude{efr-Y5KS}
+\p{
+  We do not presently know of a counterexample—that is, a coinflip Markov category which is extensive, Boolean, and has countable Kolmogorov products, but is not iterable. The category of topological 
+}
+
+\subtree{
+  \title{Topology}
+  \transclude{efr-Y5KS}
+\p{
+  We do not presently know of a counterexample—that is, a coinflip Markov category which is extensive, Boolean, and has countable Kolmogorov products, but is not iterable. The category of topological 
+}
+  \subtree{
+    \taxon{Proposition}
+    \p{
+      Suppose #{\cC} is Markov-extensive, coinflip, and admits countable Kolmogorov products. Suppose further #{\cC} admits an enrichment in Hausdorff topological spaces, so that the canonical iteration operator #{M: \cC(X,Y)^\omega \to \cC(X,Y)} is continuous. Then #{\cC} is iterable, and moreover the induced functor #{\BorelStoch \to \cC} is continuous on each homset when #{\BorelStoch} is equipped with the topology induced by #{d(f,g) = \sup_x \operatorname{MV}(f(x),g(x))}, where #{\operatorname{MV}} denotes the maximum variation metric.
+    }
+  }
+  \p{
+    If the coinflip structure is 
+  }
+}

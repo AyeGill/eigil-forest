@@ -4,5 +4,5 @@
 \title{Coinflip structure}
 \taxon{Definition}
 \p{
-  Let #{\cC} be a Markov category. A \em{coinflip structure} is a [[efr-6W7X]] structure on each homset #{\cC(X,Y)}, natural in both #{X} and #{Y}.
+  Let #{\cC} be a Markov category. A \em{coinflip structure} is a [internal midpoint algebra](efr-1XB5) structure on each #{A \in \cC}, which is natural in #{A}. In other words, it is a [midpoint algebra](efr-6W7X) structure on each homset #{\cC(X,Y)} so that both pre- and postcomposition are midpoint homomorphisms.
 }
