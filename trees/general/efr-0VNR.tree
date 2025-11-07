@@ -1,0 +1,27 @@
+\date{2025-11-06T16:00:48Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\def\nm{#{\operatorname{nm}}}
+\p{
+  Let #{\cC} be a countably distributive coinflip Markov category with countable Kolmogorov products, and let #{u: I \to 2^\omega} be the uniform distribution.
+  Let #{F: A^\omega \times 2^\omega \to B} be a map. Suppose there exists a sequence #{\nm_i : A^\omega \to A^\omega} and #{\sigma_i: A^\omega \times 2^\omega \to 2^\omega} of deterministic maps, so that
+  \ol{
+    \li{
+      #{A^\omega \xto{\nm_i} A^\omega \xto{\pi_i} A^i} is a compatible family (that is, all #{\nm_i} agree about the first coordinate, all after the first agree about the second cordinate, etc), so that there exists a limit #{\nm_\infty : A^\omega \to A^\omega}.
+    }
+    \li{
+      For each #{i}, #{F(\nm_i a, \sigma_i (a,b)) = F(a,b)}.
+    }
+    \li{
+      For each #{i}, #{A} decomposes as a countable coproduct so that, on each component, both #{\nm_i} and #{\sigma_i} modify only some finite prefix #{A^N} and #{2^N}. Moreover on this prefix, #{\sigma_i} is a permutation.
+    }
+  }
+}
+\p{
+  Then the kernel #{F(-,u) : A^\omega \to B} equals #{F(\nm_\infty(-),u)}.
+}
+
+\p{
+  \todo{Only needs the case where we're using an independent subset of the bits to choose a thing to project out of. In this case it follows because #{F(a,b)} is equal to normalizing up to that point, then drawing (by the finite cases), which is equal to normalizing the whole thing. I guess this even obviates the need for the permutation statement.}
+}
