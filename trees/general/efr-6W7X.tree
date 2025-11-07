@@ -1,6 +1,7 @@
 \date{2025-10-23T09:38:19Z}
 \author{eigil-rischel}
 \import{macros}
+\taxon{Definition}
 \title{Midpoint algebra}
 \p{
   Let #{\cC} be a Cartesian category. Then a \em{midpoint algebra} is an object #{A} equipped with #{m: A \times A \to A}, so that:

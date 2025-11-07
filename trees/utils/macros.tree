@@ -350,8 +350,8 @@
 \def\arena[E][B]{#{{\E \choose \B}}}
 
 % Probability
-
-
+\def\bool{#{\mathrm{bool}}}
+\def\flip{#{\mathrm{flip}}}
 \def\indep{#{\bot}}
 \def\expect{#{\EE}}
 \def\Stoch{#{\cat{Stoch}}}

@@ -10,7 +10,7 @@
     Let #{r_1: 2^\omega \to 2} be the indicator of the subset consisting of those streams which have only finitely many #{1}s. Consider the uniform distribution #{c^\omega : I \to 2^\omega}, where #{c: I \to 2} is the coinflip. Observe that for any finite #{N}, #{r_1} factors over the second coordinate of the decomposition #{2^\omega \to 2^N \times 2^\omega}. 
   }
   \p{
-    As a resulti, if we form the joint #{I \to 2^\omega \otimes 2} given by sampling the uniform distribution and computing #{r_1}, the second coordinate is independent of any finite prefix of the first. Hence, by the abstract Kolmgorov zero-one law, the composite #{r_1 c^\omega : I \to I+I} is deterministic.
+    As a result, if we form the joint #{I \to 2^\omega \otimes 2} given by sampling the uniform distribution and computing #{r_1}, the second coordinate is independent of any finite prefix of the first. Hence, by the abstract Kolmgorov zero-one law, the composite #{r_1 c^\omega : I \to I+I} is deterministic.
   }
   \p{
     Hence it classifies some subterminal object #{q}. By symmetry, #{r_0 c^\omega} is the indicator of #{q} as well, where #{r_0} is the indicator of sequences with only finite many #{0}s. But these two subterminal objects must be disjoint, hence they must both be empty.

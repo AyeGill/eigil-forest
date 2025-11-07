@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a Markov category. Then #{\cC} admits Kolmogorov products of a given cardinality #{J} if and only if #{\cC_\det} admits Cartesian products of the same cardinality, and the opfiltered limits of \ref{efr-SIKM} are preserved by the inclusion #{\cC_\det \to \cC}
+  Let #{\cC} be a Markov category. Then #{\cC} admits Kolmogorov products of a given cardinality #{\kappa} if and only if #{\cC_\det} admits Cartesian products of the same cardinality, and the opfiltered limits of \ref{efr-SIKM} are preserved by the inclusion #{\cC_\det \to \cC}
 }

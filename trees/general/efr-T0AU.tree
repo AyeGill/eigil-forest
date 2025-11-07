@@ -1,7 +1,7 @@
 \date{2025-10-31T17:40:36Z}
 \author{eigil-rischel}
 \import{macros}
-\taxon{Defintion}
+\taxon{Definition}
 \p{
   A Markov category is \em{distributive} (or #{\kappa}-distributive) if #{\cC_\det} admits (#{\kappa}-small coproducts), these are preserved by the inclusion #{\cC_\det \into \cC}, and by the tensors #{A \otimes -}.
 }

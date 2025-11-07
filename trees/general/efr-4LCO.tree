@@ -9,7 +9,7 @@
       Markov
     }
     \li{
-      Finite coproducts and #{\tensor} distributes
+      Finite coproducts and #{\otimes} distributes
     }
     \li{
       A natural transformation #{A \otimes A \to A}

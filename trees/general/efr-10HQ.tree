@@ -5,7 +5,7 @@
 \p{
   Let #{\cC} be a monoidal category. 
   \ol{
-    \li{Given a premarkov structure #{\cC' \subseteq \cC}, there is a unique Markov structure on #{\cC} so that each morphism in #{\cC'} is deterministic.}
+    \li{Given a [premarkov structure](efr-5B0J) #{\cC' \subseteq \cC}, there is a unique Markov structure on #{\cC} so that each morphism in #{\cC'} is deterministic.}
     \li{Given a Markov structure, #{\cC_\det \subseteq \cC} is a premarkov structure.}
     \li{A premarkov structure has the form #{\cC_\det} for some Markov structure if and only if it is maximal.}
   }
