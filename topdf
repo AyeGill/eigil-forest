@@ -30,6 +30,8 @@ if [ "$TREE" == "" ]; then
   exit 1
 fi
 
+./forester build
+
 echo "Compiling tree $TREE to pdf via style $STYLE"
 
 xsltproc -o "output/$TREE.tex" "texstyles/$STYLE.xsl" "output/$TREE/index.xml"

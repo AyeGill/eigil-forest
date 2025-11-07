@@ -55,6 +55,7 @@
     <xsl:text>\newtheorem{acknowledgements}{Acknowledgements}%&#xa;</xsl:text>
     <xsl:text>\newtheorem{definitionexample}[theorem]{Definition-Example}%&#xa;</xsl:text>
     <xsl:text>\newtheorem{constructionexample}[theorem]{Construction-Example}%&#xa;</xsl:text>
+    <xsl:text>\newtheorem{conjecture}[theorem]{Conjecture}%&#xa;</xsl:text>
   </xsl:template>
 
   <xsl:template match="f:taxon[text()='Definition']">
@@ -151,6 +152,11 @@
 
   <xsl:template match="f:taxon[text()='Acknowledgements']">
     <xsl:text>acknowledgements</xsl:text>
+  </xsl:template>
+
+
+  <xsl:template match="f:taxon[text()='Conjecture']">
+    <xsl:text>conjecture</xsl:text>
   </xsl:template>
 
   <xsl:template match="f:tree[f:frontmatter/f:taxon[text()='Proof']]">
