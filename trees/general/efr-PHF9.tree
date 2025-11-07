@@ -1,0 +1,24 @@
+\date{2025-11-06T19:21:34Z}
+\author{eigil-rischel}
+\import{macros}
+\title{A Simplified Definition of Markov Category}
+\subtree{
+  \title{Introduction}
+
+}
+\subtree{
+  \title{Markov Categories}
+  \transclude{efr-5B0J}
+  \transclude{efr-10HQ}
+  \p{
+    Thus we have the following alternative definition of Markov category:
+  }
+  \transclude{efr-O4HF}
+  \p{
+    This is equivalent to Fritz' definition, in the sense that on a given symmetric monoidal category #{\cC}, each Markov structure in the classical sense determines uniquely and is uniquely determined by a Markov structure in this sense.
+  }
+}
+\subtree{
+  \title{Markov functors}
+  \transclude{efr-7F33}
+}

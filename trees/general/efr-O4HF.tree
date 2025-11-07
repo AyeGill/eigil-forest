@@ -1,0 +1,8 @@
+\date{2025-11-06T19:24:17Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\title{Markov Category (simplified)}
+\p{
+  A Markov category is a semiCartesian symmetric monoidal category #{\cC} equipped with a maximal symmetric monoidal wide subcategory #{\cC_\det \into \cC}.
+}
