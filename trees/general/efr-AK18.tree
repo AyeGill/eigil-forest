@@ -7,13 +7,39 @@
 
 \subtree{
   \title{Introduction}
+
+  \p{
+    It has been a subject of much speculation whether the "canonical" Markov categories can be described in terms of category theory directly, as a universal object of some kind. Fritz (cite!) has given a presentation of #{\FinStoch} by generators and relations, but this simply encodes the set of real numbers into the set of generators. Chen \ref{chen-universal-stdborel-2019} has given a universal characterization of the Cartesian category of standard Borel spaces---thus leaving the question of characterizing the class of Markov kernels on top of this.
+  }
+  \p{
+    Chen's theorem is that the category of standard Borel spaces is initial among extensive, Boolean, countably complete categories (and functors which preserve finite coproducts and countable limits). Clearly #{\BorelStoch} (or any other interesting Markov category) does not have countable limits, since it lacks products. The right notion of "countable completeness" for Markov categories is given by replacing the infinite products with \em{Kolmogorov products}, a notion introduced in \ref{rischel-fritz-infinite-products}. Similarly, the "extensive" and "Boolean" parts have to be modified (since we only expect \em{deterministic} maps into a coproduct to factor over a coproduct decomposition of the domain).
+  }
+  \p{
+    Beyond these modifications, we clearly need some extra structure to produce any nondeterministic morphisms at all. Perhaps the simplest such axiom would be to require the existence of a morphism #{I \to I + I}, corresponding to a fair coinflip, subject to some equations describing its fairness. It turns out that such a morphism is necessarily unique if it exists, and thus this really becomes a property of, not additional structure on, a Markov category. This property, which we call \em{#{\cC} admits coinflips}, seems to be about the minimal axiom you could expect to produce a reasonable probability theory.
+  }
+  \p{
+    With these ingredients, we can state our first theorem:
+  }
+  \scope{
+  \transclude{efr-TVLB}
+  }
+  \p{
+    Escardo and Simpson \ref{escardo-simpson-universal-interval-2001} have given a characterization of the closed interval in terms of the midpoint operation #{\frac{x+y}{2}}. By using their \em{iterability} axiom, we can also give universal properties to the "discrete" Markov categories like #{\FinStoch}.
+  }
+
+  \transclude{efr-FTTL}
+
+  \p{
+    In the presence of countable Kolmogorov products, this is not necessary.
+  }
+
 }
 
 \subtree{
   \title{Markov Categories}
   
   \p{
-    We will need to impose several different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The typical pattern is to demand that #{\cC_\det} has some property, and that this is "preserved" by the inclusion into #{\cC}. We list these now.
+    We will need to impose several different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The usual pattern is to demand that #{\cC_\det} has some property, and that this is "preserved" by the inclusion into #{\cC}. We list these now.
   }
 
   \p{
@@ -49,59 +75,10 @@
 }
 
 
-\subtree{
-  \title{Coinflips and midpoint algebras}
-  \p{
-    We will not have any hope of giving a universal property for #{\BorelStoch}, or any interesting Markov category, without some property that forces certain maps to be nondeterministic. We now give such a structure.
-  }
-  \transclude{efr-6W7X}
-  \transclude{efr-1XB5}
-  \transclude{efr-QBVU}
-  \transclude{efr-OX26}
-  \p{
-    Note that any coinflip structure is determined by the family of maps #{m(\pi_0,\pi_1) : A \otimes A \to A}. To define a coinflip structure, such a family #{\mu_A} must satisfy the equations of a midpoint algebra, be natural in #{A}, and have the further property that #{\mu_A f = \mu_A (\pi_0 f, \pi_1 f)} (that is, the composite depends only on the projections of #{f}).
-  }
-  \p{
-    It is not clear that coinflip structures are preserved by all Markov functors, since #{F(\mu_A)} only has to enjoy the above property with respect to maps in the image of #{F}. However, as we now show, this is true in the distributive case.
-  }
+\transclude{efr-AHFX}
 
-  \transclude{efr-0XH9}
-  \transclude{efr-V3JG}
-
-  \p{
-    Note that any coinflip #{I \to I + I} in a distributive Markov category induces a coinflip structure, and vice versa. Since both notions are unique, this is obviously a 1-1 correspondence. From this we easily derive the following:
-  }
-  
-  \transclude{efr-7QV9}
-
-  
-  \transclude{efr-JP37}
-  \transclude{efr-87W1}
-  \p{
-    In this case we might call #{u} an \em{iteration operator} for #{s}.
-  }
-  \transclude{efr-Z9IU}
-  
-
-  \transclude{efr-CZUI}
-
-  \transclude{efr-JB06}
-
-  \transclude{efr-REOY}
-
-  \p{
-    The situation with coinflip Markov categories is similar to the situation of preadditive categories, known for example from the study of homological algebra. Under mild conditions on a category (admitting finite products and coproducts is sufficient), an enrichment over commutative monoids is unique if it exists.
-  }
-
-
-  \transclude{efr-E4WU}
-  \transclude{efr-60YW}
-}
 \subtree{
   \title{The universal property of discrete probability}
-
-  \transclude{efr-FTTL}
-
   \subtree{
     \taxon{Proposition}
     \p{

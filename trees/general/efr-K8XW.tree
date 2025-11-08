@@ -1,0 +1,8 @@
+\date{2025-11-08T12:30:41Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Proof of \ref{efr-FTTL}}
+\taxon{Proof}
+\p{
+    Let #{\cC} be a #{\kappa}-distributive externally iterable coinflip Markov category. There is an essentially unique #{\kappa}-coproduct preserving Markov functor #{F: \Set^{< \kappa} \to \cC} (since #{\cC_\det} is #{\kappa}-distributive and #{\Set^{< \kappa}} is initial such). Any extension to the stochastic morphisms is determined by its action on the homsets #{\Set_{\Delta_\omega}^{< \kappa}(*,X) = \Delta_\omega(X)}, by the coproduct universal property. On these its action must be given by taking a convex combination #{\sum_i \epsilon_i x_i} to the convex combination #{\sum_i \epsilon_i F(x_i)}. This is functorial by \ref{efr-REOY}, finishing the proof.
+}

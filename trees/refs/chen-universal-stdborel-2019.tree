@@ -1,0 +1,10 @@
+\title{A Universal Characterization of Standard Borel Spaces}
+\date{2022-12-14}
+\taxon{reference}
+\meta{doi}{10.1017/jsl.2022.85}
+\author/literal{Ruiyuan Chen}
+\meta{bibtex}{\startverb
+ @article
+{CHEN_2022, title={A Universal Characterization of Standard Borel Spaces}, volume={88}, DOI={10.1017/jsl.2022.85}, number={2}, journal={The Journal of Symbolic Logic}, author={Chen, Ruiyuan}, year={2022}, month={Dec}, pages={510–539} }
+\stopverb}
+

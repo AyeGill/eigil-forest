@@ -1,0 +1,50 @@
+\date{2025-11-08T11:11:15Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Midpoint algebra and Coinflips}
+
+\p{
+    We will not have any hope of giving a universal property for #{\BorelStoch}, or any interesting Markov category, without some property that forces certain maps to be nondeterministic. We now give such a structure.
+  }
+  \transclude{efr-6W7X}
+  \transclude{efr-1XB5}
+  \transclude{efr-QBVU}
+  \transclude{efr-OX26}
+  \p{
+    Note that any coinflip structure is determined by the family of maps #{m(\pi_0,\pi_1) : A \otimes A \to A}. To define a coinflip structure, such a family #{\mu_A} must satisfy the equations of a midpoint algebra, be natural in #{A}, and have the further property that #{\mu_A f = \mu_A (\pi_0 f, \pi_1 f)} (that is, the composite depends only on the projections of #{f}).
+  }
+  \p{
+    It is not clear that coinflip structures are preserved by all Markov functors, since #{F(\mu_A)} only has to enjoy the above property with respect to maps in the image of #{F}. However, as we now show, this is true in the distributive case.
+  }
+
+  \transclude{efr-0XH9}
+  \transclude{efr-V3JG}
+
+  \p{
+    Note that any coinflip #{I \to I + I} in a distributive Markov category induces a coinflip structure, and vice versa. Since both notions are unique, this is obviously a 1-1 correspondence. From this we easily derive the following:
+  }
+  
+  \transclude{efr-7QV9}
+
+  
+  \transclude{efr-JP37}
+  \transclude{efr-87W1}
+  \p{
+    In this case we might call #{u} an \em{iteration operator} for #{s}.
+  }
+  \transclude{efr-Z9IU}
+  
+
+  \transclude{efr-CZUI}
+
+  \transclude{efr-JB06}
+
+  \transclude{efr-REOY}
+
+  \p{
+    The situation with coinflip Markov categories is similar to the situation of preadditive categories, known for example from the study of homological algebra. Under mild conditions on a category (admitting finite products and coproducts is sufficient), an enrichment over commutative monoids is unique if it exists.
+  }
+
+
+  \transclude{efr-E4WU}
+  \transclude{efr-60YW}
