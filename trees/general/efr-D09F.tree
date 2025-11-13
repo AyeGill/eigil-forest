@@ -42,3 +42,18 @@
 
 
   \transclude{efr-D3QE}
+
+\p{
+  Instead of studying Markov categories, one could study probability monads. The relevant question would then have been to give a universal property for the Giry monad. Our theorem implies this immediately:
+}
+
+\subtree{
+  \taxon{Corollary}
+  \p{
+    Let #{T} be a bicommutative, affine monad on #{\Borel} so that #{T(2)} contains a fair coinflip, #{T} preserves countable cofiltered limits, and the induced midpoint algebras on #{TX} are all iterable. Then there is a unique monoidal monad homomorphism #{G \to T}, where #{G} is the Giry monad.
+  }
+}
+
+\p{
+  This resolves a conjecture of Fritz positively.
+}
