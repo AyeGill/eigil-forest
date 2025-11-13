@@ -2,10 +2,10 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{Proof}
-\parent{efr-TVLB}
+\title{Proof of \ref{efr-TVLB}}
 \p{
-  Using \ref{efr-VH33}, there is a unique functor #{F: \Borel_{\Delta_\omega} \to \cC}.
-  There is a faithful (identity on objects) functor #{\Borel_{\Delta_\Omega} \to \BorelStoch} - the only case where this is not full is #{\Hom(A,2^\omega)}.
+  Using \ref{efr-VH33}, there is a unique functor #{F: \Borel_{\bar{\Delta}} \to \cC}.
+  There is a faithful (identity on objects) functor #{\Borel_{\bar{\Delta}} \to \BorelStoch} - the only case where this is not full is #{\Hom(A,2^\omega)}.
 }
 \p{
   It is apparent that we must extend this functor by defining #{\bar{F}(\phi: A \to 2^\omega) = \lim_n F(\pi_{2^n}\phi)}, using the universal property of #{F(2^\omega) = F(2)^\omega}. The only question is whether this extension is actually functorial. By the limit property it suffices to prove that it is functorial for any composable pair
@@ -47,5 +47,7 @@
   Now let #{\phi: A \to (2^\omega)^k} be some kernel. Write #{A = A_0 + A_1}, where #{A_0} is the subset where the probability of only zeroes in the first stream is at least #{1/2}, and #{A_1} is the complement, where the probability of at least one #{1} in the first stream is #{>1/2}. Observe that by #{\sigma}-continuity, for each #{a} there must be some #{N} so that the probability of at least one #{1} in the first #{N} elements of the first stream is at least #{1/2}. Decompose #{A_1} into #{A_1^1 +  A_1^2 +  \cdots,} where for #{a \in A_1^N} there is at least a #{1/2} probability of the first #{1} being before #{N}. Let #{\psi_1 : A \to (2^\omega)^k} be a kernel which on #{A_0} is given by #{(0, \otimes \mu_{2\dots k})} where #{\mu_{2,\dots k}} is the kernel giving the conditional distribution of the remaining streams if the first stream is #{0}. On #{A_1^N}, it is given by a linear combination #{\sum_{s \in 2^N \setminus 0} \delta_{s} \otimes \mu_s}, where #{\mu_s} is the conditional distribution of the rest of the stream and the remaining streams - we choose this linear combination so that #{1/2} of it is #{\leq} the actual probability of each of those prefixes.
 }
 \p{
-  Then by construction for some kernel #{\xi_1}, we have #{\phi = \frac{1}{2}(\phi_1, \xi_1)}. By construction, the pushforward of #{\phi_1} is equal to #{(0, \vee^{k-1}\mu_0)} on #{A_0} and #{(1, \sum_{s \in 2^N} \vee^{k-1}\nu_s)} on each of the #{A_1^N}. By the induction hypothesis all of these normalize. Since pushforward is a midpoint homomorphism we have #{(\vee^k)(\phi) = m((\vee)^k \phi_1, (\vee)^k \xi_1)}. By iteration we obtain a decomposition #{\vee^k \phi = \sum_i \frac{1}{2^i} \vee^k \phi_i} of measures that normalize. By iterability this determines the pushforward uniquely. Hence #{\vee^k} is good. This concludes the proof.
+  Then by construction for some kernel #{\xi_1}, we have #{\phi = \frac{1}{2}(\phi_1, \xi_1)}. By construction, the pushforward of #{\phi_1} is equal to #{(0, \vee^{k-1}\mu_0)} on #{A_0} and #{(1, \sum_{s \in 2^N} \vee^{k-1}\nu_s)} on each of the #{A_1^N}. By the induction hypothesis all of these are good. Since pushforward is a midpoint homomorphism we have #{(\vee^k)(\phi) = m((\vee)^k \phi_1, (\vee)^k \xi_1)}. By iteration we obtain a decomposition #{\vee^k \phi = \sum_i \frac{1}{2^i} \vee^k \phi_i} of measures that are good. But this determines #{\vee^k \phi} uniquely, so it must be good as well. Hence we are done.
 }
+\todo{Put an argument why it suffices to check measurable functions, not kernels}
+\todo{Clarify the argument at the end}
