@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a Boolean, extensive, coinflip Markov category with countable Kolmogorov products. Let #{O \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones (this is definable by Chen's theorem). Then the map #{c^\omega : I \to 2^\omega} factors over #{Z}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
+  Let #{\cC} be a Boolean, extensive, coinflip Markov category with countable Kolmogorov products. Let #{O \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones (this is definable by Chen's theorem). Then the map #{c^\omega : I \to 2^\omega} factors over #{O}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
 }
 \proof{
   \p{
