@@ -5,8 +5,3 @@
 \p{
   Let #{\kappa} be a regular cardinal. Let #{\Set_{\Delta_\omega}^{< \kappa}} denote the subcategory of #{\Set_{\Delta_\omega}} consisting of the sets of cardinality less than #{\kappa}. Then #{\Set_{\Delta_\omega}^{< \kappa}} is the initial #{\kappa}-distributive externally iterable coinflip category.
 }
-\proof{
-  \p{
-    Let #{\cC} be a #{\kappa}-distributive externally iterable coinflip Markov category. There is an essentially unique #{\kappa}-coproduct preserving Markov functor #{F: \Set^{< \kappa} \to \cC} (since #{\cC_\det} is #{\kappa}-distributive and #{\Set^{< \kappa}} is initial such). Any extension to the stochastic morphisms is determined by its action on the homsets #{\Set_{\Delta_\omega}^{< \kappa}(*,X) = \Delta_\omega(X)}, by the coproduct universal property. On these its action must be given by taking a convex combination #{\sum_i \epsilon_i x_i} to the convex combination #{\sum_i \epsilon_i F(x_i)}. This is functorial by \ref{efr-REOY}, finishing the proof.
-  }
-}

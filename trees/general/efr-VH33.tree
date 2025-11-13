@@ -63,6 +63,7 @@
     Now consider the left side. The map labeled #{\mu'} is given by forming the joint distribution on #{\omega \times \omega} obtained by ... The top left cell is simply #{F} applied to a map in #{\Borel}, which is easily seen to commute. 
   }
   \p{
-    Thus it suffices to show that the two maps #{F(\Delta_\omega(\omega)^\omega \times \Delta_\omega(\omega)) \to F(\omega \times \omega)} given either by using this mutiplication in #{\Borel}, then sampling, or by sampling from everything and combining, agree. By the construction of the sampling map, and using iterability, it suffices to show this for cases where the first distribution is a finite dyadic combination. But in this case it follows because the sampling map is a midpoint homomorphism.
+    Thus it suffices to show that the two maps #{F(\Delta_\omega(\omega)^\omega \times \Delta_\omega(\omega)) \to F(\omega \times \omega)} given either by using this mutiplication in #{\Borel}, then sampling, or by sampling from everything and combining, agree. But this is essentially the claim that the sampling map is a (infinitary) midpoint homomorphism.
   }
+  \todo{Either here or elsewhere, need to insert this}
 }

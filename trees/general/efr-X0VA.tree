@@ -1,0 +1,32 @@
+\date{2025-11-12T19:31:38Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\p{
+  Let #{\cC} be an extensive, Boolean coinflip Markov category with countable Kolmogorov products, let #{A = i(A)} be the image of a standard Borel space, and consider the map #{\lambda: (D(A)^\omega)^\omega \to A} given by sampling two natural numbers according to #{c^\infty: I \to 2^\omega \setminus 0 \to \omega} and indexign with them, then using the canonical sampling map. There exists a map #{D(A)^{\omega \times \omega} \to D(A)^\omega} which preserves the sampling map. Moreover this map also preserves the map into #{\Delta(A)}.
+}
+\proof{
+  \p{
+    Let #{F: D(A)^{\omega \times \omega} \times (2^\omega \setminus 0)^3 \to A} be the parametrization of the sampling map.
+  }
+  \p{
+    Given a sequence #{d_{ij} \ in D(A)^{\omega \times \omega}}, constuct #{r_1(d)_{ij}} as follows:
+  }
+  \ol{
+    \li{
+      #{r_1(d)_1j = \frac{1}{2}d_{11} + \frac{1}{4}d_{12} + \frac{1}{4}d_{21}}
+    }
+    \li{
+      #{r_1(d)_2j = \frac{1}{2}(d_{1(j+2)} + d_{2(j+1)})}
+    }
+    \li{
+      #{r_1(d)_ij = d_ij} for #{i \geq 3} 
+    }
+  }
+  \p{
+    First note that clearly #{r_1(d)} has the same image in #{\Delta(A)} as #{d}. Also note that there exists a permutation #{\rho_1 : (2^\omega)^3 \to (2^\omega)^3} so that #{F(r_1(d),\rho_1(b)) = F(d,b)}. Now we can iterate this construction to obtain a map which flattens the first #{N} rows (i.e for #{i \leq N}), for any #{N}. Call this #{r_N}, and call the corresponding permutation #{\rho_N}. Let #{r_\infty} be the map which flattens the whole sequence (which exists by the universal property of the limit), and similarly let #{\rho_\infty} be the limiting permutation. Then when the first #{1} in the part of #{\rho_\infty(b)} which selects the #{i} appears before index #{N}, #{F(r_\infty(d),\rho_\infty(b))} depends only on the first #{N} rows, hence is equal to #{F(r_N(d),\rho_\infty(b))}, which is then equal to #{F(d,b)}. Since #{\rho_\infty} is the limit of permutations, it preserves the uniform measure, and so the composite #{F(d,c^\infty) = F(r_\infty(d), \rho_\infty(c^\infty)) = F(r_\infty(d), c^\infty)}.
+  }
+  \p{
+    This proves that #{r_\infty} preserves the sampling map. But clearly #{r_\infty} factors over the inclusion of #{D(A)^\omega \into D(A)^{\omega \times \omega}} as the "flat" sequences of sequences, and equally cleary this inclusion preserves the sampling map. This concludes the proof.
+  }
+}
