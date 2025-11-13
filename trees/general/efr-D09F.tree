@@ -1,0 +1,44 @@
+\date{2025-11-10T13:40:12Z}
+\author{eigil-rischel}
+\import{macros}
+\title{The universal property of #{\BorelStoch}}
+
+  \p{
+    We are now ready to prove \ref{efr-TVLB}. The basic point is that any Markov kernel between standard Borel spaces can be written as the compsite of a measurable function #{f: A \times 2^\omega \to B} with the uniform measure on #{c^\omega: I \to 2^\omega}. By Chen's theorem, the image of #{f} is uniquely determined, and by \ref{efr-V3JG}, so is the image of #{c^\omega}. Hence there is at most one such functor---what we need to prove is that the above is well-defined (that is, choosing different factorizations gives the same kernel in the image) and actually forms a Markov functor.
+  }
+  \p{
+    The strategy for the proof is as follows:
+  }
+  \ol{
+    \li{
+      Observe that for any #{\cC}, there is an essentially unique functor #{\Borel \to \cC} (which lands in #{\cC_\det}), by Chen's theorem.
+    }
+    \li{
+      Prove that there is a (Markov) extension to the category of finitary kernels, #{\Borel_{\Delta}}.
+    }
+    \li{
+      Finally prove that there is a further Markov extension to #{\BorelStoch}
+    }
+  }
+
+  \p{
+    Let's now see the details of part 2. We begin with the following lemma, which is what allows us to use infinitary sampling without the iterability assumption.
+  }
+
+  \transclude{efr-K4NK}
+  \p{
+    Thus we can define a countable-arity operator #{M_A: A^\omega \to A} in any of these categories by drawing a sample from #{c^\omega \in 2^\omega} and projecting onto the coordinate of the first #{1} (which necessarily exists).
+  }
+
+  \p{
+    Note that we have not proven that #{M_A} is uniquely determined by the coinductive definition #{M_A(a_1, \dots) = m(a_1, M(a_2, \dots))}, merely constructed a canonical such operation. We have not been able to prove uniqueness in general (which would imply that any extensive, boolean, countably complete coinflip Markov category is iterable), but neither do we know of a counterexample.
+  }
+  \transclude{efr-X0VA}
+  \transclude{efr-HYFI}
+
+  \p{
+    Now we are ready to conclude the proof.
+  }
+
+
+  \transclude{efr-D3QE}
