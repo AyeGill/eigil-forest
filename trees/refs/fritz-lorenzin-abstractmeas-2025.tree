@@ -1,0 +1,16 @@
+\title{Categories of abstract and noncommutative measurable spaces}
+\date{2025-04-21}
+\taxon{Reference}
+\meta{doi}{10.48550/arXiv.2504.13708}
+\meta{external}{http://arxiv.org/abs/2504.13708}
+\author{Tobias Fritz}
+\author{Antonio Lorenzin}
+\meta{bibtex}{\startverb
+ @article
+{Fritz_Lorenzin_2025, title={Categories of abstract and noncommutative measurable spaces}, url={http://arxiv.org/abs/2504.13708}, DOI={10.48550/arXiv.2504.13708}, note={arXiv:2504.13708 [math]}, number={arXiv:2504.13708}, publisher={arXiv}, author={Fritz, Tobias and Lorenzin, Antonio}, year={2025}, month={Apr} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Gelfand duality is a fundamental result that justifies thinking of general unital $C^*$-algebras as noncommutative versions of compact Hausdorff spaces. Inspired by this perspective, we investigate what noncommutative measurable spaces should be. This leads us to consider categories of monotone $σ$-complete $C^*$-algebras as well as categories of Boolean $σ$-algebras, which can be thought of as abstract measurable spaces. Motivated by the search for a good notion of noncommutative measurable space, we provide a unified overview of these categories, alongside those of measurable spaces, and formalize their relationships through functors, adjunctions and equivalences. This includes an equivalence between Boolean $σ$-algebras and commutative monotone $σ$-complete $C^*$-algebras, as well as a Gelfand-type duality adjunction between the latter category and the category of measurable spaces. This duality restricts to two equivalences: one involving standard Borel spaces, which are widely used in probability theory, and another involving the more general Baire measurable spaces. Moreover, this result admits a probabilistic version, where the morphisms are $σ$-normal cpu maps and Markov kernels, respectively. We hope that these developments can also contribute to the ongoing search for a well-behaved Markov category for measure-theoretic probability beyond the standard Borel setting - an open problem in the current state of the art.
+}}
+

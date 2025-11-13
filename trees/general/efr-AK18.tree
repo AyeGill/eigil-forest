@@ -89,8 +89,22 @@
 \transclude{efr-D09F} %UNIV PROPERTY OF BORELSTOCH
 
 
+\subtree{
+  \title{Further work}
+  \p{
+    Not all interesting measurable spaces are standard Borel. A simple example is the uncountable product #{\prod_{t \in \RR} \RR}, classifying general stochastic processes valued in #{\RR} (although note that many important subsets of this, such as the space of \em{continuous} stochastic processes, are standard Borel). It would be interesting to look for a generalization of this work to a larger class of measurable spaces, or alternatively to describe in some other terms the initial coinflip Markov category which is #{\kappa}-extensive, Boolean and admits #{\kappa}-small Kolmogorov products for larger #{\kappa}.
+  }
+  \p{
+    Chen's work actually provides the deterministic version of this for all #{\kappa}: the initial #{\kappa}-complete, (#{\kappa}-)extensive, Boolean category is given by the opposite of the category of #{\kappa}-generated, #{\kappa}-complete Boolean algebras and the #{\kappa}-continuous homomorphisms between them.
+  }
+  \p{
+    It is not clear how to define a good probability theory on top of this—having continuum-sized unions seems to rule out many important measures like the Lebesgue measure.
+  }
+  \p{
+    Fritz and Lorenzin (\ref{fritz-lorenzin-abstractmeas-2025}) have recently described a category #{\mathsf{BaireMeas}} of \em{Baire measurable spaces} (those arising as the Baire #{\sigma}-algebra on a compact Hausdorff space #{X}), as well as an associated Markov category of kernels, which admits \em{all} (small) Kolmogorov products, and which contains #{\BorelStoch} as a full subcategory. However, since the category of Baire measurable spaces is not Boolean (there are measurable injections which are not the inclusion of a measurable subset), one would have to find a replacement for this assumption.
+  }
+}
+
+
 \transclude{efr-4LCO}
 \transclude{efr-Y5KS}
-\p{
-  We do not presently know of a counterexample—that is, a coinflip Markov category which is extensive, Boolean, and has countable Kolmogorov products, but is not iterable. The category of topological 
-}
