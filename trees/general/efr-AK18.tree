@@ -121,13 +121,17 @@
 
 \subtree{
   \title{The universal property of discrete probability}
-  \proof{
-  \title{Proof of \ref{efr-FTTL}}
+
   \p{
-    Let #{\cC} be a #{\kappa}-distributive externally iterable coinflip Markov category. There is an essentially unique #{\kappa}-coproduct preserving Markov functor #{F: \Set^{< \kappa} \to \cC} (since #{\cC_\det} is #{\kappa}-distributive and #{\Set^{< \kappa}} is initial such). Any extension to the stochastic morphisms is determined by its action on the homsets #{\Set_{\Delta_\omega}^{< \kappa}(*,X) = \Delta_\omega(X)}, by the coproduct universal property. On these its action must be given by taking a convex combination #{\sum_i \epsilon_i x_i} to the convex combination #{\sum_i \epsilon_i F(x_i)}. This is functorial by \ref{efr-REOY}, finishing the proof.
-  }
+    Using our description of the free iterable midpoint algebras, we can now prove \ref{efr-FTTL}.
   }
 
+  \transclude{efr-T2PU}
+
+  \p{
+    We can also describe the free iterable coinflip Markov category on a generic Cartesian category, as follows:
+  }
+  \todo{The subtlety is that not all functors preserve the coinflip. So even if C is coinflip, freely adjoining a coinflip may not be equal to the thing itself. Thus the formula below probably works for everything.}
   \subtree{
     \taxon{Proposition}
     \p{
