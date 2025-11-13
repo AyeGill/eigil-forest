@@ -142,33 +142,11 @@
 
 
 
-\transclude{efr-D09F}
+\transclude{efr-D09F} %UNIV PROPERTY OF BORELSTOCH
 
-\subtree{
-  \taxon{Corollary}
-  \p{
-    Let #{T} be a bicommutative, affine monad on #{\Borel} so that #{T(2)} contains a fair coinflip, #{T} preserves countable cofiltered limits, and the induced midpoint algebras on #{TX} are all iterable. Then there is a unique monoidal monad homomorphism #{G \to T}, where #{G} is the Giry monad.
-  }
-}
+
 \transclude{efr-4LCO}
 \transclude{efr-Y5KS}
 \p{
   We do not presently know of a counterexample—that is, a coinflip Markov category which is extensive, Boolean, and has countable Kolmogorov products, but is not iterable. The category of topological 
-}
-
-\subtree{
-  \title{Topology}
-  \transclude{efr-Y5KS}
-\p{
-  We do not presently know of a counterexample—that is, a coinflip Markov category which is extensive, Boolean, and has countable Kolmogorov products, but is not iterable. The category of topological 
-}
-  \subtree{
-    \taxon{Proposition}
-    \p{
-      Suppose #{\cC} is Markov-extensive, coinflip, and admits countable Kolmogorov products. Suppose further #{\cC} admits an enrichment in Hausdorff topological spaces, so that the canonical iteration operator #{M: \cC(X,Y)^\omega \to \cC(X,Y)} is continuous. Then #{\cC} is iterable, and moreover the induced functor #{\BorelStoch \to \cC} is continuous on each homset when #{\BorelStoch} is equipped with the topology induced by #{d(f,g) = \sup_x \operatorname{MV}(f(x),g(x))}, where #{\operatorname{MV}} denotes the maximum variation metric.
-    }
-  }
-  \p{
-    If the coinflip structure is 
-  }
 }
