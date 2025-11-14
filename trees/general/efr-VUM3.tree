@@ -1,0 +1,15 @@
+\date{2025-11-14T15:36:47Z}
+\author{eigil-rischel}
+\import{macros}
+\title{A Simple De Finetti Theorem for Markov Categories}
+\subtree{
+  \title{Theorem}
+  \p{
+    Let #{\cC} be a positive Markov category and let #{A} be an object. Let #{\Fin_\inj} be the category of finite sets and injections, and let #{A^{\otimes -} : \Fin_\inj^\op \to \cC} be the functor which carries #{F} to #{\bigotimes_{i \in F} A =: A^{\otimes F}}, and each injection #{F \to F'} to the resulting reindexing map #{A^{\otimes F'} \to A^{\otimes F}} (using the deletion map for elements not in the image). Suppoe #{\lim_F A^{\otimes F}} exists and is preserved by the tensor product in #{\cC}. Then this limit is a distribution object for #{A}.
+  }
+}
+\proof{
+  \p{
+    For abstract reasons such a limit is a cofree comonoid on #{A}. But for a positive Markov category the category of comonoids is isomorphically #{\cC_\det} (every object admits a unique comonoid structure). Hence the definitions of distribution object and cofree comonoid coincide.
+  }
+}
