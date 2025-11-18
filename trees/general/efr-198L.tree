@@ -1,0 +1,18 @@
+\date{2025-11-18T12:03:08Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{lemma}
+\p{
+    Let #{\cC} be a \em{representable} Markov category, and let #{P} be the associated distribution monad. Then
+}
+  \ol{
+    \li{
+      If #{\cC_\det} is #{\kappa}-extensive and #{P: \cC_\det \to \cC_\det} preserves pullbacks along coproduct inclusions, then #{\cC} is #{\kappa}-extensive.
+    }
+    \li{
+      If #{\cC_\det} is Boolean, then #{\cC} is Boolean.
+    }
+    \li{
+      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves countable intersections, and the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
+    }
+  }

@@ -29,7 +29,7 @@
   \taxon{Remark}
   \ol{
   \li{
-    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can of course apply the preceding lemma.
+    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can apply \ref{efr-198L}.
   }
 
   \li{
@@ -61,22 +61,7 @@
   In the common case that #{\cC} is the Kleisli category of a monad on #{\cC_\det}, the inclusion #{\cC_\det \into \cC} automatically preserves all colimits, which makes many of the above things automatic.
 }
 
-\subtree{
-  \taxon{Lemma}
-  \p{
-    Let #{\cC} be a \em{representable} Markov category, and let #{P} be the associated distribution monad. Then
-  }
-  \ol{
-    \li{
-      If #{\cC_\det} is #{\kappa}-extensive and #{P: \cC_\det \to \cC_\det} preserves pullbacks along coproduct inclusions, then #{\cC} is #{\kappa}-extensive.
-    }
-    \li{
-      If #{\cC_\det} is Boolean, then #{\cC} is Boolean.
-    }
-    \li{
-      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves countable intersections, and the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
-    }
-  }
-}
+\transclude{efr-198L}
+
 
 \transclude{efr-GZCD}
