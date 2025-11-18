@@ -3,8 +3,8 @@
 \taxon{Reference}
 \meta{doi}{10.48550/arXiv.2504.13708}
 \meta{external}{http://arxiv.org/abs/2504.13708}
-\author{Tobias Fritz}
-\author{Antonio Lorenzin}
+\author/literal{Tobias Fritz}
+\author/literal{Antonio Lorenzin}
 \meta{bibtex}{\startverb
  @article
 {Fritz_Lorenzin_2025, title={Categories of abstract and noncommutative measurable spaces}, url={http://arxiv.org/abs/2504.13708}, DOI={10.48550/arXiv.2504.13708}, note={arXiv:2504.13708 [math]}, number={arXiv:2504.13708}, publisher={arXiv}, author={Fritz, Tobias and Lorenzin, Antonio}, year={2025}, month={Apr} }
