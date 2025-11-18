@@ -7,10 +7,10 @@
 }
 \proof{
   \p{
-    Let #{F: D(A)^{\omega \times \omega} \times (2^\omega \setminus 0)^3 \to A} be the parametrization of the sampling map.
+    Let #{F: D(A)^{\omega \times \omega} \times (2^\omega \setminus 0)^2 \times (2^\omega \setminus 0)^\omega \to A} be a parametrization of the sampling map. Specifically, the first two bitstreams select the indexes #{(i,j)} into the matrix of finitary distributions, after which the #{i}th of the remaining bitstreams is used to sample from the given distribution.
   }
   \p{
-    Given a sequence #{d_{ij} \ in D(A)^{\omega \times \omega}}, constuct #{r_1(d)_{ij}} as follows:
+    Given a sequence #{(d_{ij}) \in D(A)^{\omega \times \omega}}, constuct #{r_1(d)_{ij}} as follows:
   }
   \ol{
     \li{
@@ -24,8 +24,15 @@
     }
   }
   \p{
-    First note that clearly #{r_1(d)} has the same image in #{\Delta(A)} as #{d}. Also note that there exists a permutation #{\rho_1 : (2^\omega)^3 \to (2^\omega)^3} so that #{F(r_1(d),\rho_1(b)) = F(d,b)}. Now we can iterate this construction to obtain a map which flattens the first #{N} rows (i.e for #{i \leq N}), for any #{N}. Call this #{r_N}, and call the corresponding permutation #{\rho_N}. Let #{r_\infty} be the map which flattens the whole sequence (which exists by the universal property of the limit), and similarly let #{\rho_\infty} be the limiting permutation. Then when the first #{1} in the part of #{\rho_\infty(b)} which selects the #{i} appears before index #{N}, #{F(r_\infty(d),\rho_\infty(b))} depends only on the first #{N} rows, hence is equal to #{F(r_N(d),\rho_\infty(b))}, which is then equal to #{F(d,b)}. Since #{\rho_\infty} is the limit of permutations, it preserves the uniform measure, and so the composite #{F(d,c^\infty) = F(r_\infty(d), \rho_\infty(c^\infty)) = F(r_\infty(d), c^\infty)}.
+    First note that clearly #{r_1(d)} has the same image in #{\Delta(A)} as #{d}. Also note that there exists a permutation #{\rho_1 : (2^\omega \setminus)^2 \times (2^\omega \setminus 0)^omega  \to  (2^\omega \setminus)^2 \times (2^\omega \setminus 0)^omega } so that #{F(r_1(d),\rho_1(b)) = F(d,b)}, which can be chosen so that it only modifies the first three sequences. Now we can iterate this construction to obtain a map which flattens the first #{N} rows (i.e for #{i \leq N}), for any #{N}. Call this #{r_N}, and call the corresponding permutation #{\rho_N} (which again only modifies the first #{N} sequences). Let #{r_\infty} be the map which flattens the whole sequence (which exists by the universal property of the limit).
   }
+  \p{
+    Note that each coordinate of #{\rho_N} is stable from a certain #{N}. For the first two streams, this is more or less immediate. For the rest, note that the #{i}th of them is not modified after step #{i}. Let #{\rho_\infty} be the limiting map. Note that #{\rho_\infty c^\infty = c^\infty} because this is true for every finite truncation.
+  }
+  \p{
+    Then when the first #{1} in the part of #{\rho_\infty(b)} which selects the #{i} appears before index #{N}, #{F(r_\infty(d),\rho_\infty(b))} depends only on the first #{N} rows, hence is equal to #{F(r_N(d),\rho_\infty(b))}, which is then equal to #{F(d,b)}. Since #{\rho_\infty} is the limit of permutations, it preserves the uniform measure, and so the composite #{F(d,c^\infty) = F(r_\infty(d), \rho_\infty(c^\infty)) = F(r_\infty(d), c^\infty)}.
+  }
+
   \p{
     This proves that #{r_\infty} preserves the sampling map. But clearly #{r_\infty} factors over the inclusion of #{D(A)^\omega \into D(A)^{\omega \times \omega}} as the "flat" sequences of sequences, and equally cleary this inclusion preserves the sampling map. This concludes the proof.
   }
