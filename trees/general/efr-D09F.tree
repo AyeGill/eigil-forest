@@ -14,7 +14,7 @@
       Observe that for any #{\cC}, there is an essentially unique functor #{\Borel \to \cC} (which lands in #{\cC_\det}), by Chen's theorem.
     }
     \li{
-      Prove that there is a (Markov) extension to the category of finitary kernels, #{\Borel_{\Delta}}.
+      Prove that there is a (Markov) extension to the category of discrete kernels, #{\Borel_{\bar{\Delta}}}.
     }
     \li{
       Finally prove that there is a further Markov extension to #{\BorelStoch}
@@ -43,7 +43,7 @@
   \transclude{efr-HYFI}
 
   \p{
-    Now we are ready to conclude the proof.
+    We are now ready for the final step, to construct the extension of the functor #{\Borel_{\bar{\Delta}} \to \cC} over #{\Borel_{\bar{\Delta}} \into \BorelStoch}
   }
 
   \transclude{efr-JK8U}

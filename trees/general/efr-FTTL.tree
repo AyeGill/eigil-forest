@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Theorem}
 \p{
-  Let #{\kappa} be a regular cardinal. Let #{\Set_{\Delta_\omega}^{< \kappa}} denote the subcategory of #{\Set_{\Delta_\omega}} consisting of the sets of cardinality less than #{\kappa}. Then #{\Set_{\Delta_\omega}^{< \kappa}} is the initial #{\kappa}-distributive externally iterable coinflip category.
+  Let #{\kappa} be a regular cardinal. Let #{\Set_{\bar{\Delta}}^{< \kappa}} denote the subcategory of #{\Set_{\bar{\Delta}}} consisting of the sets of cardinality less than #{\kappa}. Then #{\Set_{\bar{\Delta}}^{< \kappa}} is the initial #{\kappa}-distributive externally iterable coinflip category.
 }
