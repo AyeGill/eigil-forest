@@ -37,7 +37,7 @@
 \p{
   Let #{\AA} be a good algebra. Let us identify sets by their indicators #{2^\omega \to 2}. Then we can write any set in #{\AA^+} as
   ##{g(\vee(f_1^i(-)), \vee f_2^i(-), \dots , \vee f_k^i(-)),}
-  where #{g: 2^k \to 2} is some function, #{\vee : 2^omega \to 2} is the indicator of the sequences with at least one #{1}, and #{f_j^i, 0 \leq j \leq k, 0 \leq i < \infty} are a bunch of #{\AA}-measurable functions.
+  where #{g: 2^k \to 2} is some function, #{\vee : 2^\omega \to 2} is the indicator of the sequences with at least one #{1}, and #{f_j^i, 0 \leq j \leq k, 0 \leq i < \infty} are a bunch of #{\AA}-measurable functions.
 }
 \p{
   By assumption the pairing of all the #{f}'s, #{2^\omega \to (2^\omega)^k} is good, and so it suffices to show that the mapping #{(\vee)^k : (2^\omega)^k \to 2^k} is good.
@@ -47,7 +47,9 @@
   Now let #{\phi: A \to (2^\omega)^k} be some kernel. Write #{A = A_0 + A_1}, where #{A_0} is the subset where the probability of only zeroes in the first stream is at least #{1/2}, and #{A_1} is the complement, where the probability of at least one #{1} in the first stream is #{>1/2}. Observe that by #{\sigma}-continuity, for each #{a} there must be some #{N} so that the probability of at least one #{1} in the first #{N} elements of the first stream is at least #{1/2}. Decompose #{A_1} into #{A_1^1 +  A_1^2 +  \cdots,} where for #{a \in A_1^N} there is at least a #{1/2} probability of the first #{1} being before #{N}. Let #{\psi_1 : A \to (2^\omega)^k} be a kernel which on #{A_0} is given by #{(0, \otimes \mu_{2\dots k})} where #{\mu_{2,\dots k}} is the kernel giving the conditional distribution of the remaining streams if the first stream is #{0}. On #{A_1^N}, it is given by a linear combination #{\sum_{s \in 2^N \setminus 0} \delta_{s} \otimes \mu_s}, where #{\mu_s} is the conditional distribution of the rest of the stream and the remaining streams - we choose this linear combination so that #{1/2} of it is #{\leq} the actual probability of each of those prefixes.
 }
 \p{
-  Then by construction for some kernel #{\xi_1}, we have #{\phi = \frac{1}{2}(\phi_1, \xi_1)}. By construction, the pushforward of #{\phi_1} is equal to #{(0, \vee^{k-1}\mu_0)} on #{A_0} and #{(1, \sum_{s \in 2^N} \vee^{k-1}\nu_s)} on each of the #{A_1^N}. By the induction hypothesis all of these are good. Since pushforward is a midpoint homomorphism we have #{(\vee^k)(\phi) = m((\vee)^k \phi_1, (\vee)^k \xi_1)}. By iteration we obtain a decomposition #{\vee^k \phi = \sum_i \frac{1}{2^i} \vee^k \phi_i} of measures that are good. But this determines #{\vee^k \phi} uniquely, so it must be good as well. Hence we are done.
+  Thus we obtain a decomposition of #{\phi} as #{\sum_i \frac{1}{2^i} \phi_i} where for each #{\phi_i}, the distribution on the first coordinate is either concentrated on #{0 \in 2^\omega}, or concentrated away from #{0} on some finite prefix. Each of these satisfy #{F(\vee^k)\bar{F}(\phi_i) = F(\vee^k \phi_i)}. Hence, since #{F(\vee^k)} must preserve the infinite linear combination, #{\vee^k} must be good as desired.
 }
-\todo{Put an argument why it suffices to check measurable functions, not kernels}
-\todo{Clarify the argument at the end}
+
+
+\todo{Why does it suffice to check measurable functions? I think this has something to do with randomness pushback.}
+\todo{Exactly how does the induction on k work?}

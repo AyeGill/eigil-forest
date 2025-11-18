@@ -3,6 +3,6 @@
 \import{macros}
 \taxon{Corollary}
 \p{
-  Any iterable midpoint algebra carries the structure of an algebra of #{\Delta_\omega}.
-  Moreover any midpoint homomorphism between iterable midpoint algebras is a #{\Delta_\omega}-homomorphism. In particular, if #{\cC} is an extenally iterable coinflip Markov category, each homset #{\cC(X,Y)} is a #{\Delta_\omega}-algebra, and composition is biconvex (i.e convex in each variable separately). If #{\cC \to \cD} is a functor between externally iterable coinflip Markov categories, it automatically preserves this structure.
+  Any iterable midpoint algebra carries the structure of an algebra of #{\bar{\Delta}}.
+  Moreover any midpoint homomorphism between iterable midpoint algebras is a #{\bar{\Delta}}-homomorphism. In particular, if #{\cC} is an extenally iterable coinflip Markov category, each homset #{\cC(X,Y)} is a #{\bar{\Delta}}-algebra, and composition is biconvex (i.e convex in each variable separately). If #{\cC \to \cD} is a functor between externally iterable coinflip Markov categories, it automatically preserves this structure.
 }

@@ -3,11 +3,11 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{X} be a possibly infinite set. Then the infinitary simplex #{\Delta_\omega X(a_x \geq 0)_{x \in X} \mid \sum a_x = 1} is the free iterable midpoint algebra on #{X}.
+  Let #{X} be a possibly infinite set. Then the infinitary simplex #{\bar{\Delta}(X) =  \{ (a_x \geq 0)_{x \in X} \mid \sum a_x = 1 \}} is the free iterable midpoint algebra on #{X}.
 }
 \proof{
   \p{
-    Observe that #{\Delta_\omega X} is an iterable midpoint algebra (with the infinitary choice operation given by the sum #{\sum_i 1/2^i a_i}).
+    Observe that #{\bar{\Delta} X} is an iterable midpoint algebra (with the infinitary choice operation given by the sum #{\sum_i 1/2^i a_i}).
   }
   \p{
     Note first that if #{X} is finite, then this is just the ordinary simplex. This is the free convex space on #{X}, which is iterable, hence we are done. Now suppose #{X = \NN}. Given an element of the simplex #{a = (a_i)}, there exists a partial sum #{\sum_i^N a_i > 1/2}. Then we can write #{a = p_1 + r_1}, where #{p_1} is the given prefix, minus some elements to make the total probability exactly #{1/2}, and #{r_1} is just the remainder. Then #{a = m(2 p_1, 2 r_1)}. By induction we see that #{a = M(2p_1, 2p_2, \dots)}, where each element is a finitely-supported probability measure. A similar argument shows every equation between infinitely-supported probability measures follows from the equations of an iterable midpoint algebra. This concludes the proof.    

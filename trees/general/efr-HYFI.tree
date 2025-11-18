@@ -7,7 +7,7 @@
 }
 \ol{
   \li{
-    For every #{n}, the iterated choice operator #{D(A)^{\omega^n} \to A} factors over the map #{D(A)^{\omega^n} \to \bar{Delta}(A)}.
+    For every #{n}, the iterated choice operator #{D(A)^{\omega^n} \to A} factors over the map #{D(A)^{\omega^n} \to \bar{\Delta}(A)}.
   }
   \li{
     The composite map #{\coprod_n D(A)^{\omega^n} \to \Delta(A)} is a split epimorphism, and thus the factorization is unique, giving a well-defined sampling map #{s_A: \Delta(A) \to A} for every standard Borel space #{A}.
@@ -49,10 +49,10 @@
   }
   \ol{
     \li{
-      Let #{F: D(A)^\omega \times (2^{\omega} \setminus 0)^2 to A} be the sampling map, which uses the first bitstream to index into the sequence, then the second to sample from the given dyadic measure.
+      Let #{F: D(A)^\omega \times (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to A} be the sampling map, which uses the first bitstream to choose the index #{i} from the sequence, then the #{i}th one of the remaining streams to sample from the given dyadic measure.
     }
     \li{
-      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of dyadic measures so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: D(A)^\omega \to D(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : D(A)^\omega \times (2^\omega \setminus 0)^2 \to (2^\omega \setminus 0)^2} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
+      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of dyadic measures so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: D(A)^\omega \to D(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : D(A)^\omega \times  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
     }
     \li{
       Let #{\nm_\infty} and #{\sigma_\infty} be the limiting maps.

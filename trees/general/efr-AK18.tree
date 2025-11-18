@@ -1,9 +1,7 @@
 \date{2025-10-28T09:37:02Z}
 \author{eigil-rischel}
 \import{macros}
-\title{
-  The universal property of measure-theoretic probability theory
-}
+\title{The Universal Property of Measure-Theoretic Probability}
 
 \subtree{
   \title{Introduction}
@@ -54,6 +52,9 @@
   \p{
     If #{\bigotimes_{i \in J} X_i} is a Kolmogorov product and #{f_i: A \to X_i} is a collection of kernels, there is a canonical independent coupling #{(f_i): A \to \bigotimes_i X_i}, given as the limit of the finite independent couplings #{A \to \bigotimes_{i \in F} X_i}. In the case where all #{f_i} (and all the #{X_i}) are equal, we will denote this simply as #{f^J : A \to X^J}.
   }
+  \p{
+    The Kolmogorov product #{(I + I)^\omega = 2^\omega} will play an important role in this paper. We generally write #{0,1 : I \to 2} for the two canonical points in #{2}. If #{b \in 2^\omega} is an element, #{0.b, 1.b, 001101.b \in 2^\omega} denote the result of prepending the given string to #{b}. We may also write #{0.2^\omega} instead of #{\{0\} \otimes 2^\omega} for the subobject given by those streams starting with a #{0}, and so on.
+  }
 }
 
 \transclude{efr-AHFX}
@@ -86,7 +87,7 @@
 
 
 
-\transclude{efr-D09F} %UNIV PROPERTY OF BORELSTOCH
+\transclude{efr-D09F}
 
 
 \subtree{
@@ -104,7 +105,6 @@
     Fritz and Lorenzin (\ref{fritz-lorenzin-abstractmeas-2025}) have recently described a category #{\mathsf{BaireMeas}} of \em{Baire measurable spaces} (those arising as the Baire #{\sigma}-algebra on a compact Hausdorff space #{X}), as well as an associated Markov category of kernels, which admits \em{all} (small) Kolmogorov products, and which contains #{\BorelStoch} as a full subcategory. However, since the category of Baire measurable spaces is not Boolean (there are measurable injections which are not the inclusion of a measurable subset), one would have to find a replacement for this assumption.
   }
 }
-
 
 \transclude{efr-4LCO}
 \transclude{efr-Y5KS}
