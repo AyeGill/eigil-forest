@@ -13,16 +13,30 @@
   The list of hypotheses we will chiefly be interested in is the following:
   \ol{
     \li{
-      #{\cC} has countable Kolmogorov products.
+      #{\cC_\det} is Boolean, countably complete and (countably) extensive (so that it receives a unique functor from #{\Borel} by Chen's theorem).
     }
     \li{
-      #{\cC_\det} is countably extensive, and countable coproducts and pullbacks along finite coproduct inclusions are preserved by #{\cC_\det \into \cC}.
-    }
-    \li{
-      Every deterministic monomorphism is a coproduct inclusion.
+      The inclusion #{\cC_\det \into \cC} preserves the countable coproducts, the pullbacks along coproduct inclusions (hence all monomorphisms), and carries the countable products to Kolmogorov products.
     }
   }
 }
+
+\subtree{
+  \taxon{Remark}
+  \ol{
+  \li{
+    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can of course apply the preceding lemma.
+  }
+
+  \li{
+    If #{\cC} is positive, #{\cC_\det \cong \mathsf{CoMon}(\cC)}. As a consequence, all coproducts that exist in #{\cC} also exist in #{\cC_\det} and are preserved by the inclusion. Hence in this case, it suffices that #{\cC_\det} is extensive, countably complete and Boolean, and that the inclusion #{\cC_\det \into \cC} preserves pullbacks along monomorphisms and carries countable products to Kolmogorov products.
+  }
+  \li{
+    Let #{\cC, \cD} are Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusons preserve this functor, and let #{F: \cC \to \cD} is a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are the same as the countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
+  }
+  }
+} 
+
 
 \transclude{efr-B2P7}%extensive
 \transclude{efr-T0AU}%distributive
@@ -34,6 +48,11 @@
 }
 
 \transclude{efr-8971}
+
+\p{
+  In the common case that #{\cC} is the Kleisli category of a monad on #{\cC_\det}, the inclusion #{\cC_\det \into \cC} automatically preserves all colimits, which makes many of the above things automatic.
+}
+
 \subtree{
   \taxon{Lemma}
   \p{
@@ -41,21 +60,23 @@
   }
   \ol{
     \li{
-      If #{\cC_\det} is #{\kappa}-extensive and #{P: \cC_\det \to \cC_\det} preserves #{\kappa}-small coproducts and pullbacks along coproduct inclusions, then #{\cC} is #{\kappa}-extensive
+      If #{\cC_\det} is #{\kappa}-extensive and #{P: \cC_\det \to \cC_\det} preserves pullbacks along coproduct inclusions, then #{\cC} is #{\kappa}-extensive.
     }
     \li{
-      If #{\cC_\det} is Boolean and #{P} preserves finite coproducts, then #{\cC} is Boolean.
+      If #{\cC_\det} is Boolean, then #{\cC} is Boolean.
     }
     \li{
-      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves finite coproducts, countable intersections, and the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
+      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves countable intersections, and the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
     }
   }
 }
+
 \subtree{
   \taxon{Remark}
   \p{
-    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can of course apply the preceding lemma.
+    If #{\cC} has countable Kolmogorov products, in particular, #{\cC_det} has countable products. If it also has pullbacks along split monomorphisms, it admits all countable limits (since an equalizer can be build as a pullback along the diagonal #{A \to A \times A}, which always splits). Thus any Boolean, extensive Markov category with countable Kolmogorov products automatically has all countable limits.
   }
 }
+
 
 
