@@ -1,0 +1,16 @@
+\date{2025-11-18T11:46:37Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Remark}
+\p{
+  We will characterize #{\BorelStoch} as the initial Markov category which is countably extensive, Boolean, admits countable Kolmogorov products, and a [coinflip](efr-0XH9). Let us say a few words justifying these axioms as natural. Extensivity is a property of most categories of "spaces", and the requirement that #{\cC_\det \into \cC} preserves coproducts and pullbacks along monomorphisms holds in essentially every Markov category of interest.
+}
+\p{
+  However, Boolean categories are a bit more uncommon. In the presence of extensivity, Boolean-ness is equivalent to #{I + I} being a subobject classifier - the obstruction to this typically being that "the" indicator of many subobjects are discontinuous.
+}
+\p{
+  A common assumption about Markov categories is the presence of \em{conditionals} (\ref{fritz-synthetic-markov-cats} 11.5). If #{V \into X} is a subobject, and #{I \to I + I, I \to V, I \to X} are distributions of full support, then a Bayesian inverse of their pairing #{I + I \to X} is forced to have a discontinuity at the boundary of #{V}.
+}
+\p{
+  While this does not rise to the level of a formal argument that conditionals imply Boolean (it seems very hard to imagine such an argument, since conditionals are only defined up to almost sure equality, and measures with full support don't always exist, for example, in #{\BorelStoch}), it does demonstrate the difficulties involved in admitting conditionals without being Boolean.
+}

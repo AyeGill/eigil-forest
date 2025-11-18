@@ -21,6 +21,10 @@
   }
 }
 
+\p{
+  There are various ways we can break this up into sub-assumptions. For example, if #{\cC} admits Kolmogorov products of a given cardinality, #{\cC_\det} admits products of that cardinality. So if #{\cC} has countable Kolmogorov products and #{\cC_\det} has pullbacks along monomorphisms, #{\cC_\det} has all limits.
+}
+
 \subtree{
   \taxon{Remark}
   \ol{
@@ -29,7 +33,7 @@
   }
 
   \li{
-    If #{\cC} is positive, #{\cC_\det \cong \mathsf{CoMon}(\cC)}. As a consequence, all coproducts that exist in #{\cC} also exist in #{\cC_\det} and are preserved by the inclusion. Hence in this case, it suffices that #{\cC_\det} is extensive, countably complete and Boolean, and that the inclusion #{\cC_\det \into \cC} preserves pullbacks along monomorphisms and carries countable products to Kolmogorov products.
+    If #{\cC} is distributive in the 
   }
   \li{
     Let #{\cC, \cD} are Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusons preserve this functor, and let #{F: \cC \to \cD} is a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are the same as the countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
@@ -37,15 +41,19 @@
   }
 } 
 
+\transclude{efr-T0AU}%distributive
+\p{
+  There is a subtlety involved in working with limits and colimits in Markov categories. This is that the right notion of identity between objects is not isomorphism, but \em{deterministic isomorphism}. In a generic Markov category, there may be isomorphic objects whose distinguished comonoid structures are not related by this isomorphism. Thus for a distributive Markov category, beyond coproducts in #{\cC}, there are coproducts in #{\cC_\det}, which are of course characterized up to deterministic isomorphism. 
+}
 
 \transclude{efr-B2P7}%extensive
-\transclude{efr-T0AU}%distributive
 \p{
   Note that any extensive Markov category is automatically distributive.
 }
 \p{
   Recall that a category is \em{Boolean} if every monomorphism is a coproduct inclusion. This definition is usually only used when the category has at least finite intersections, in which case the subobject lattices become Boolean algebras. We will also only use it in this situation.
 }
+
 
 \transclude{efr-8971}
 
@@ -71,12 +79,4 @@
   }
 }
 
-\subtree{
-  \taxon{Remark}
-  \p{
-    If #{\cC} has countable Kolmogorov products, in particular, #{\cC_det} has countable products. If it also has pullbacks along split monomorphisms, it admits all countable limits (since an equalizer can be build as a pullback along the diagonal #{A \to A \times A}, which always splits). Thus any Boolean, extensive Markov category with countable Kolmogorov products automatically has all countable limits.
-  }
-}
-
-
-
+\transclude{efr-GZCD}
