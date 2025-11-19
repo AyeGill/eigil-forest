@@ -18,9 +18,7 @@
   \p{
     With these ingredients, we can state our first theorem:
   }
-  \scope{
   \transclude{efr-TVLB}
-  }
   \p{
     Escardo and Simpson \ref{escardo-simpson-universal-interval-2001} have given a characterization of the closed interval in terms of the midpoint operation #{\frac{x+y}{2}}. By using their \em{iterability} axiom, we can also give universal properties to the "discrete" Markov categories like #{\FinStoch}.
   }
@@ -33,6 +31,8 @@
 
 }
 
+
+\transclude{efr-AHFX}
 
 \subtree{
   \title{Kolmogorov products}
@@ -53,15 +53,10 @@
   }
 }
 
-\transclude{efr-AHFX}
-
-
-\transclude{efr-ALKX}
-
-
-
 
 \transclude{efr-MGSE}
+
+\transclude{efr-ALKX}
 
 
 \transclude{efr-D09F}
@@ -82,6 +77,3 @@
     Fritz and Lorenzin (\ref{fritz-lorenzin-abstractmeas-2025}) have recently described a category #{\mathsf{BaireMeas}} of \em{Baire measurable spaces} (those arising as the Baire #{\sigma}-algebra on a compact Hausdorff space #{X}), as well as an associated Markov category of kernels, which admits \em{all} (small) Kolmogorov products, and which contains #{\BorelStoch} as a full subcategory. However, since the category of Baire measurable spaces is not Boolean (there are measurable injections which are not the inclusion of a measurable subset), one would have to find a replacement for this assumption.
   }
 }
-
-\transclude{efr-4LCO}
-\transclude{efr-Y5KS}
