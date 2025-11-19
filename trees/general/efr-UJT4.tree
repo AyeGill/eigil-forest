@@ -11,3 +11,20 @@
     Chris Heunen's work on the category of Hilbert spaces.
   }
 }
+\subtree{
+  \title{Is there a good account of petri net gluing and the like as a tangency?}
+}
+\subtree{
+  \title{Is there a good tangency-type theory of \em{hybrid} systems, i.e those that have jumps at specific \em{deterministic} places?}
+}
+\subtree{
+  \title{
+    Are the real numbers a \em{limit} of finite approximations (not colimit!) in some sense?
+  }
+}
+\subtree{
+  \title{Assume-guarantee vs Nash}
+  \p{
+    Is there a connection between assume-guarantee reasoning (satisfies #{x \star q \leq p \star q, p \star y \leq p \star q \Rightarrow x \star y \leq p \star q}) and the Nash composition for open games #{x \star y \leq x \star q, x \star y \leq p \star y \Rightarrow x \star y \leq p \star q}? They are "duals" to one another, is that anything?
+  }
+}
