@@ -33,7 +33,7 @@
   }
 
   \li{
-    If #{\cC} is distributive in the 
+    If #{\cC} is distributive in the \todo{what?}
   }
   \li{
     Let #{\cC, \cD} are Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusons preserve this functor, and let #{F: \cC \to \cD} is a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are the same as the countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
@@ -43,7 +43,9 @@
 
 \transclude{efr-T0AU}%distributive
 \p{
-  There is a subtlety involved in working with limits and colimits in Markov categories. This is that the right notion of identity between objects is not isomorphism, but \em{deterministic isomorphism}. In a generic Markov category, there may be isomorphic objects whose distinguished comonoid structures are not related by this isomorphism. Thus for a distributive Markov category, beyond coproducts in #{\cC}, there are coproducts in #{\cC_\det}, which are of course characterized up to deterministic isomorphism. 
+  In a distributive monoidal category, if #{A,B} are each comonoids, then #{A+B} acquires an induced comonoid structure given by
+  ##{A + B \to A \otimes A + B \otimes B \into (A+B)\otimes (A+B)}
+  If #{\cC} is a Markov category, each of these objects has furthermore a \em{canonical} given comonoid structure. #{\cC} is distributive \em{as a Markov category} if and only if the coproducts can be chosen so that the canonical comonoid structure coincides with the induced one.
 }
 
 \transclude{efr-B2P7}%extensive
@@ -51,8 +53,9 @@
   Note that any extensive Markov category is automatically distributive.
 }
 \p{
-  Recall that a category is \em{Boolean} if every monomorphism is a coproduct inclusion. This definition is usually only used when the category has at least finite intersections, in which case the subobject lattices become Boolean algebras. We will also only use it in this situation.
+  Recall that a coherent category is \em{Boolean} if every monomorphism is a coproduct inclusion. Given this hypothesis, a category is coherent as soon as it admits finite limits (since the required unions can be computed as the negations of intersections), and moreover extensive if it admits finite coproducts. Thus we will call a category \em{Markov-Boolean} only if it satisfies the modified version of these assumotions.
 }
+\transclude{efr-7JNJ}
 
 
 \transclude{efr-8971}
