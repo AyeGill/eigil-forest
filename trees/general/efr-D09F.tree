@@ -30,7 +30,7 @@
     Thus we can define a countable-arity operator #{M_A: A^\omega \to A} in any of these categories by drawing a sample from #{c^\omega \in 2^\omega} and projecting onto the coordinate of the first #{1} (which necessarily exists).
   }
   \p{
-    For any measurable space #{A}, there is a measurable space #{D(A)} of finitary dyadic measures in #{A} (i.e those given as a finite sum #{\frac{k_1}{2^N} \delta_{a_1} + \cdots + \frac{k_n}{2^N} \delta_{a_n}}). This is clearly an internal midpoint algebra, and there is a unique sampling homomorphism #{D(A) \to A} in any countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, which is a midpoint homomorphism.
+      For any measurable space #{A}, there is a measurable space #{D(A)} of finitary dyadic measures in #{A} (i.e those given as a finite sum #{\frac{k_1}{2^N} \delta_{a_1} + \cdots + \frac{k_n}{2^N} \delta_{a_n}}). This is clearly an internal midpoint algebra, and there is a unique sampling homomorphism #{D(A) \to A} in any countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, which is a midpoint homomorphism.
   }
   \p{
     Given anything like #{(D(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{D(A)^{\omega^N} \to A}.
@@ -48,6 +48,11 @@
 
   \transclude{efr-JK8U}
   \transclude{efr-D3QE}
+
+
+\p{
+  Note that the proof mainly uses the fact that #{\cC_\det} is Boolean, distributive and countably complete, and thus receives a unique functor from #{\Borel} by Chen's theorem. We use the assumption that the infinite product is a Kolmogorov product to pin down the maps into it. We use the fact that countable coproducts are preserved to show that it is enough to identify a map on a countable decomposition. And we use the preservation of pullbacks along monos in \ref{efr-X0VA}. Hence these assumptions are exactly the necessary ones.
+}
 
 \p{
   Instead of studying Markov categories, one could study probability monads. The relevant question would then have been to give a universal property for the Giry monad. Our theorem implies this immediately:
