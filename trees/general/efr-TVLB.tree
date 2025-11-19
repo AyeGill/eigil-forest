@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Theorem}
 \p{
-  #{\BorelStoch} is the initial Markov-extensive, Boolean, iterable coinflip Markov category which admits countable Kolmogorov products, with respect to strong Markov functors which preserve coproducts, pullbacks and the Kolmogorov products.
+  #{\BorelStoch} is the initial Markov-Boolean coinflip Markov category with countable Kolmogorov products, with respect to strong Markov functors that preserve deterministic finite coproducts, deterministic pullbacks, and the Kolmogorov products.
 }
