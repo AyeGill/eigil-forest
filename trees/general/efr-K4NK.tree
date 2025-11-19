@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a Boolean, extensive, coinflip Markov category with countable Kolmogorov products. Let #{O \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones (this is definable by Chen's theorem). Then the map #{c^\omega : I \to 2^\omega} factors over #{O}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
+  Let #{\cC} be a Boolean, countably distributive, coinflip Markov category with countable Kolmogorov products. Let #{V_1 \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones (this is definable by Chen's theorem). Then the map #{c^\omega : I \to 2^\omega} factors over #{V_1}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
 }
 \proof{
   \p{
@@ -13,7 +13,7 @@
     As a result, if we form the joint #{I \to 2^\omega \otimes 2} given by sampling the uniform distribution and computing #{r_1}, the second coordinate is independent of any finite prefix of the first. Hence, by the abstract Kolmgorov zero-one law, the composite #{r_1 c^\omega : I \to I+I} is deterministic.
   }
   \p{
-    Hence it classifies some subterminal object #{q}. By symmetry, #{r_0 c^\omega} is the indicator of #{q} as well, where #{r_0} is the indicator of sequences with only finite many #{0}s. But these two subterminal objects must be disjoint, hence they must both be empty.
+    Hence it classifies some subterminal object #{q}. By symmetry, #{r_0 c^\omega} is the indicator of #{q} as well, where #{r_0} is the indicator of sequences with only finite many #{0}s. But these two subterminal objects must be disjoint, hence they must both be empty. (This step uses the fact that pullbacks along monomorphisms in #{\cC_\det} are still pullbacks in #{\cC})
   }
   \p{
     So #{r_0c^\omega, r_1c^\omega} are both equal to #{0 : I \to 2}. It follows that #{c^\omega} factors over the subobject #{2^\omega \setminus \{0\}^\omega \into 2^\omega} (since any sequence with finitely many zeroes certainly has at least one #{1}).

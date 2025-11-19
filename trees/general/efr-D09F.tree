@@ -30,14 +30,14 @@
     Thus we can define a countable-arity operator #{M_A: A^\omega \to A} in any of these categories by drawing a sample from #{c^\omega \in 2^\omega} and projecting onto the coordinate of the first #{1} (which necessarily exists).
   }
   \p{
-    For any measurable space #{A}, there is a measurable space #{D(A)} of finitary dyadic measures in #{A} (i.e those given as a finite sum #{\frac{k_1}{2^N} \delta_{a_1} + \cdots + \frac{k_n}{2^N} \delta_{a_n}}). This is clearly an internal midpoint algebra, and there is a unique sampling homomorphism #{D(A) \to A} in any countably extensive, Boolean coinflip Markov category with countable Kolmogorov products, which is a midpoint homomorphism.
+    For any measurable space #{A}, there is a measurable space #{D(A)} of finitary dyadic measures in #{A} (i.e those given as a finite sum #{\frac{k_1}{2^N} \delta_{a_1} + \cdots + \frac{k_n}{2^N} \delta_{a_n}}). This is clearly an internal midpoint algebra, and there is a unique sampling homomorphism #{D(A) \to A} in any countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, which is a midpoint homomorphism.
   }
   \p{
     Given anything like #{(D(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{D(A)^{\omega^N} \to A}.
   }
 
   \p{
-    Note that we have not proven that #{M_A} is uniquely determined by the coinductive definition #{M_A(a_1, \dots) = m(a_1, M(a_2, \dots))}, merely constructed a canonical such operation. We have not been able to prove uniqueness in general (which would imply that any extensive, boolean, countably complete coinflip Markov category is iterable), but neither do we know of a counterexample.
+    Note that we have not proven that #{M_A} is uniquely determined by the coinductive definition #{M_A(a_1, \dots) = m(a_1, M(a_2, \dots))}, merely constructed a canonical such operation. We have not been able to prove uniqueness in general (which would imply that any countably distributive, boolean, countably complete coinflip Markov category is iterable), but neither do we know of a counterexample.
   }
   \transclude{efr-X0VA}
   \transclude{efr-HYFI}
