@@ -1,0 +1,16 @@
+\title{Approaching the Continuous from the Discrete: an Infinite Tensor Product Construction}
+\date{2025-10-16}
+\taxon{reference}
+\meta{doi}{10.48550/arXiv.2510.14716}
+\meta{external}{http://arxiv.org/abs/2510.14716}
+\author/literal{Antonio Lorenzin}
+\author/literal{Fabio Zanasi}
+\meta{bibtex}{\startverb
+ @article
+{Lorenzin_Zanasi_2025, title={Approaching the Continuous from the Discrete: an Infinite Tensor Product Construction}, url={http://arxiv.org/abs/2510.14716}, DOI={10.48550/arXiv.2510.14716}, note={arXiv:2510.14716 [math]}, number={arXiv:2510.14716}, publisher={arXiv}, author={Lorenzin, Antonio and Zanasi, Fabio}, year={2025}, month={Oct} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+Increasingly in recent years, probabilistic computation has been investigated through the lenses of categorical algebra, especially via string diagrammatic calculi. Whereas categories of discrete and Gaussian probabilistic processes have been thoroughly studied, with various axiomatisation results, more expressive classes of continuous probability are less understood, because of the intrinsic difficulty of describing infinite behaviour by algebraic means. In this work, we establish a universal construction that adjoins infinite tensor products, allowing continuous probability to be investigated from discrete settings. Our main result applies this construction to $mathsf{FinStoch}$, the category of finite sets and stochastic matrices, obtaining a category of locally constant Markov kernels, where the objects are finite sets plus the Cantor space $2^{mathbb{N}}$. Any probability measure on the reals can be reasoned about in this category. Furthermore, we show how to lift axiomatisation results through the infinite tensor product construction. This way we obtain an axiomatic presentation of continuous probability over countable powers of $2=lbrace 0,1rbrace$.
+}}
+
