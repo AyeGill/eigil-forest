@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be an extensive, Boolean coinflip Markov category with countable Kolmogorov products. Then
+  Let #{\cC} be a countably distributive, Boolean coinflip Markov category with countable Kolmogorov products. Then
 }
 \ol{
   \li{
