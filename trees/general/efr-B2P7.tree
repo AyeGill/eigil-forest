@@ -11,5 +11,5 @@
   \li{#{\cC_\det} is an extensive category in the usual sense and the inclusion #{\cC_\det \to \cC} preserves pullbacks along coproduct inclusions.}
 }
 \p{
-  More generally, for an infinite regular cardinal #{\kappa}, we say that #{\cC} is #{\kappa}-extensive if #{\cC_\det} is a #{\kappa}-extensive category in the ordinary sense and both coproduct inclusions and pullbacks along them are preserves by the functor #{\cC_\det \to \cC}.
+  More generally, for an infinite regular cardinal #{\kappa}, we say that #{\cC} is #{\kappa}-extensive if #{\cC_\det} is a #{\kappa}-extensive category in the ordinary sense and both coproduct inclusions and pullbacks along them are preserved by the functor #{\cC_\det \to \cC}.
 }
