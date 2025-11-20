@@ -4,7 +4,7 @@
 \title{The universal property of #{\BorelStoch}}
 
   \p{
-    We are now ready to prove \ref{efr-TVLB}. The basic point is that any Markov kernel between standard Borel spaces can be written as the compsite of a measurable function #{f: A \times 2^\omega \to B} with the uniform measure on #{c^\omega: I \to 2^\omega}. By Chen's theorem, the image of #{f} is uniquely determined, and by \ref{efr-V3JG}, so is the image of #{c^\omega}. Hence there is at most one such functor---what we need to prove is that the above is well-defined (that is, choosing different factorizations gives the same kernel in the image) and actually forms a Markov functor.
+    We are now ready to prove \ref{efr-TVLB}. The basic point is that any Markov kernel between standard Borel spaces can be written as the composite of a measurable function #{f: A \times 2^\omega \to B} with the uniform measure on #{c^\omega: I \to 2^\omega}. By Chen's theorem, the image of #{f} is uniquely determined, and by \ref{efr-V3JG}, so is the image of #{c^\omega}. Hence there is at most one such functor---what we need to prove is that the above is well-defined (that is, choosing different factorizations gives the same kernel in the image) and actually forms a Markov functor.
   }
   \p{
     The strategy for the proof is as follows:

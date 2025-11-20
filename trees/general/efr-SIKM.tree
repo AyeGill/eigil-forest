@@ -5,7 +5,7 @@
 \taxon{Definition}
 \p{
   Let #{\cC} be a semiCartesian symmetric monoidal category and let #{\{X_j\}_{j \in J}} be a family of objects.
-  Then if #{P_f(J)} denotes the set of finite subsets of #{J} (ordered by incluson), we obtain a diagram #{P_f(J)^\op \to \cC}, where #{F \mapsto \otimes_{j \in F} X_j}, and the inclusion #{F \to F'} is mapped to the which applies the deletion #{X_j \to I} for every #{j} not in #{F}. 
+  Then if #{P_f(J)} denotes the set of finite subsets of #{J} (ordered by inclusion), we obtain a diagram #{P_f(J)^\op \to \cC}, where #{F \mapsto \otimes_{j \in F} X_j}, and the inclusion #{F \to F'} is mapped to the which applies the deletion #{X_j \to I} for every #{j} not in #{F}. 
 }
 \p{
   An \em{infinite tensor product} of the collection #{\{X_j\}} is a limit of the cofiltered diagram #{F \mapsto \otimes_{j \in F} X_j}, if it exists and is preserved by the tensor #{Y \otimes -} for every #{Y}.

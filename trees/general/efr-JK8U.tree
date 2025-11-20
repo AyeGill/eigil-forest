@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\cC} be an countably distributive, Boolean, coinflip Markov category with countable Kolmogorov products. Let #{F: \Borel_{\bar{\Delta}} \to \cC} be the functor of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
+  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\cC} be a countably distributive, Boolean, coinflip Markov category with countable Kolmogorov products. Let #{F: \Borel_{\bar{\Delta}} \to \cC} be the functor of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
 }
 \proof{
   \p{
@@ -30,7 +30,7 @@
         On #{A_0}, it is deterministically #{0} in the first coordinate, and given by the conditional distribution given this in the last #{k} coordinates.
       }
       \li{
-        For #{a \in A_1^N}, choose some distribution #{\nu} on #{2^N} so that #{\nu / 2} is less than the marginals of #{\phi}, and so that #{\nu} is concentrated away from #{0} (this is possibly by construction of #{A_1^N}). Then for each #{b \in 2^N}, let #{\xi_b} be the measure which is concentrated on that bitstring on the first #{N} bits, and given by the conditional distribution according to #{\phi} everywhere else. Let #{\mu_1(a) = \sum_{b\in 2^N} \nu(b) \xi_b}
+        For #{a \in A_1^N}, choose some distribution #{\nu} on #{2^N} so that #{\nu / 2} is less than the marginals of #{\phi}, and so that #{\nu} is concentrated away from #{0} (this is possible by construction of #{A_1^N}). Then for each #{b \in 2^N}, let #{\xi_b} be the measure which is concentrated on that bitstring on the first #{N} bits, and given by the conditional distribution according to #{\phi} everywhere else. Let #{\mu_1(a) = \sum_{b\in 2^N} \nu(b) \xi_b}
       }
     }
     \p{
