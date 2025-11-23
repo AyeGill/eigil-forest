@@ -11,12 +11,12 @@ This project contains a vast number of source files (.tree files) which are not 
 
 ## About Forester
 
-**Forester** is a tool for creating mathematical "forests" - interconnected hypertext documentation with first-class support for mathematics and LaTeX. It was created by Jon Sterling and is particularly well-suited for Zettelkasten-style note-taking in mathematics.
+**Forester** is a tool for creating mathematical "forests" - interconnected hypertext documentation with first-class support for mathematics and LaTeX.
 
 - **Official repository**: https://git.sr.ht/~jonsterling/ocaml-forester
 - **Installation**: `opam install forester`
 - **Build this forest**: Run `./build.sh` (requires LaTeX and forester)
-- **Output**: Browser-viewable HTML at `output/index.xml`
+- **Output**: Browser-viewable HTML in `output/`
 
 ---
 
@@ -58,6 +58,7 @@ Forester uses **`.tree` files** with a custom markup language. Each tree has a u
 - `\em{...}` - Emphasis (italic)
 - `\strong{...}` - Bold
 - `\code{...}` - Inline code
+- `[text](link)` - Link, either external link or link to other tree in forest.
 
 #### Mathematics
 - `#{...}` - Inline math (LaTeX)
@@ -140,7 +141,6 @@ output/             # Generated HTML (after build)
 
 Trees are identified by codes like:
 - `efr-0001`, `efr-0002`, ... (base-36 numbering)
-- `efr-HQ73`, `efr-ZRUZ` (more compact IDs for newer notes)
 
 ---
 
@@ -216,4 +216,4 @@ Use the template at `templates/efr-note.tree` which contains:
 3. **Follow transclusions** - organizational trees mainly point to other trees
 4. **Check macros.tree** if you see unfamiliar commands
 5. **References** are in `trees/refs/` with taxon "Reference"
-6. **IDs are case-sensitive** - efr-0001 ≠ efr-0001
+6. **IDs are case-sensitive** - efr-0001 ≠ EFR-0001
