@@ -31,10 +31,6 @@
   \li{
     In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can apply \ref{efr-198L}.
   }
-
-  \li{
-    If #{\cC} is distributive in the \todo{what?}
-  }
   \li{
     Let #{\cC, \cD} are Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusions preserve this functor, and let #{F: \cC \to \cD} is a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are the same as the countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
   }
@@ -57,6 +53,9 @@
 }
 \transclude{efr-7JNJ}
 
+\p{
+  Note that if #{\cC} is Boolean and distributive, it is automatically extensive. Moreover in this case #{2 = I + I} is a subobject classifier.
+}
 
 \transclude{efr-8971}
 
