@@ -1,6 +1,7 @@
 \date{2025-11-19T21:59:20Z}
 \author{eigil-rischel}
-\import{macros}\taxon{definition}
+\import{macros}
+\taxon{Definition}
 \title{Boolean Markov category}
 
 \p{
