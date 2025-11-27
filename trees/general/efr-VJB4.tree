@@ -1,0 +1,38 @@
+\date{2025-11-25T14:56:28Z}
+\author{eigil-rischel}
+\import{macros}\title{Projects}
+
+\p{
+  Some current projects:
+}
+\ol{
+  \li{
+    My PhD thesis [Markov Fibrations](efr-0001). I am working on a "journal version" of the main contribution, the eponymous theory of Markov fibrations/stochastic module fibrations. This will probably also be the home for some minor contributions to Markov category theory, especially the theory of [[efr-OKM1]].
+  }
+  \li{
+    Tangencies of commutative monoids. There should be a theory like this which interpolates between petri nets and DOTS-type dynamical systems (note that the state space of the dynamical system associated to a petri net is the free commutative monoid on the set of places). With Owen Lynch and David Jaz Myers.
+  }
+  \li{
+    Control theory/lyapunov functions for DOTS. There is a nice way to cook up a category of "systems equipped with invariant subspaces"/systems equipped with Lyapunov functions as an almost free enhancement to the theory of systems. Combining this idea with the triple category of "bisystems" has the potential to produce a very general approach to control theory. With Matteo Capucci.
+  }
+  \li{
+    Universal property of measure-theoretic probability theory. Nearly finished paper, [[efr-AK18]].
+  }
+  \li{
+    Lack's discrete or trivial model structure on a generic 2-category is self-dual (in the sense that the dual model structure on #{\cC^\op} is exactly the one associated to the 2-category #{\cC^\op}), something which simplifies a number of things in Lack's paper.
+  }
+  \li{
+    The tangency of martingale problems and representable dynamics for martingale problems. Almost done (written up on the safeguarded AI forest), should be made public soon.
+  }
+}
+
+\p{
+  Random crap:
+}
+\ol{
+  \li{[[efr-0001]]}
+  \li{[[efr-C3WA]]}
+  \li{[[efr-OKM1]]}
+  \li{[[efr-ECP8]]}
+  \li{[[efr-3NFX]]}
+}

@@ -4,13 +4,5 @@
 \import{macros}
 \put\transclude/numbered{true}
 
-\p{
-  Projects:
-}
-\ol{
-  \li{[[efr-0001]]}
-  \li{[[efr-C3WA]]}
-  \li{[[efr-OKM1]]}
-  \li{[[efr-ECP8]]}
-  \li{[[efr-3NFX]]}
-}
+\transclude{efr-VJB4}
+
