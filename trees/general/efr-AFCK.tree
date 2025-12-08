@@ -1,0 +1,13 @@
+\date{2025-12-08T13:28:38Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  Let #{\cC} be a Markov category which is [countably extensive](efr-B2P7), [Boolean](efr-7JNJ), [coinflip](efr-VTCS), and admits countable [Kolmogorov products](efr-EB3U). Then there is an essentially unique (strong) Markov functor #{i: \Borel \to \cC} which preserves pullbacks along monomorphisms and countable Kolmogorov products.
+}
+\proof{
+  \p{
+    Since #{\Borel} is Cartesian, any such Markov functor must factor over #{\cC_\det}. #{\cC_\det} has countable limits (by \ref{efr-9RDS}) and is countably extensive and Boolean by assumption. The assumptions on #{i} are equivalent to the factorization #{\Borel \to \cC_\det} preserving countable limits and countable coproducts. Hence this uniqueness is exactly \ref{chen-universal-stdborel-2019} theorem 1.1
+  }
+}
+

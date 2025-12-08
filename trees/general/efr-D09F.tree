@@ -22,6 +22,12 @@
   }
 
   \p{
+    We have essentially already given the proof of the first step in the introduction, but let us state it here for completeness.
+  }
+  \transclude{efr-AFCK}
+
+
+  \p{
     Let's now see the details of part 2. We begin with the following lemma, which is what allows us to use infinitary sampling without the iterability assumption.
   }
 
