@@ -1,0 +1,17 @@
+\title{De Finetti’s Theorem in Categorical Probability}
+\date{2021-11-04}
+\taxon{reference}
+\meta{doi}{10.31390/josa.2.4.06}
+\meta{external}{http://arxiv.org/abs/2105.02639}
+\author/literal{Tobias Fritz}
+\author/literal{Tomáš Gonda}
+\author/literal{Paolo Perrone}
+\meta{bibtex}{\startverb
+ @article
+{Fritz_Gonda_Perrone_2021, title={De Finetti’s Theorem in Categorical Probability}, volume={2}, ISSN={2689-6931}, url={http://arxiv.org/abs/2105.02639}, DOI={10.31390/josa.2.4.06}, note={arXiv:2105.02639 [math]}, number={4}, journal={Journal of Stochastic Analysis}, author={Fritz, Tobias and Gonda, Tomáš and Perrone, Paolo}, year={2021}, month={Nov} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+We present a novel proof of de Finetti’s Theorem characterizing permutation-invariant probability measures of infinite sequences of variables, so-called exchangeable measures. The proof is phrased in the language of Markov categories, which provide an abstract categorical framework for probability and information flow. The diagrammatic and abstract nature of the arguments makes the proof intuitive and easy to follow. We also show how the usual measure-theoretic version of de Finetti’s Theorem for standard Borel spaces is an instance of this result.
+}}
+

@@ -7,7 +7,7 @@
 \author/literal{Antonio Lorenzin}
 \meta{bibtex}{\startverb
  @article
-{Fritz_Lorenzin_2025, title={Categories of abstract and noncommutative measurable spaces}, url={http://arxiv.org/abs/2504.13708}, DOI={10.48550/arXiv.2504.13708}, note={arXiv:2504.13708 [math]}, number={arXiv:2504.13708}, publisher={arXiv}, author={Fritz, Tobias and Lorenzin, Antonio}, year={2025}, month={Apr} }
+{fritz-lorenzin-abstractmeas-2025, title={Categories of abstract and noncommutative measurable spaces}, url={http://arxiv.org/abs/2504.13708}, DOI={10.48550/arXiv.2504.13708}, note={arXiv:2504.13708 [math]}, number={arXiv:2504.13708}, publisher={arXiv}, author={Fritz, Tobias and Lorenzin, Antonio}, year={2025}, month={Apr} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

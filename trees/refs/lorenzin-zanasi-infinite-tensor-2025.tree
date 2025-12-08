@@ -1,13 +1,13 @@
 \title{Approaching the Continuous from the Discrete: an Infinite Tensor Product Construction}
 \date{2025-10-16}
-\taxon{reference}
+\taxon{Reference}
 \meta{doi}{10.48550/arXiv.2510.14716}
 \meta{external}{http://arxiv.org/abs/2510.14716}
 \author/literal{Antonio Lorenzin}
 \author/literal{Fabio Zanasi}
 \meta{bibtex}{\startverb
  @article
-{Lorenzin_Zanasi_2025, title={Approaching the Continuous from the Discrete: an Infinite Tensor Product Construction}, url={http://arxiv.org/abs/2510.14716}, DOI={10.48550/arXiv.2510.14716}, note={arXiv:2510.14716 [math]}, number={arXiv:2510.14716}, publisher={arXiv}, author={Lorenzin, Antonio and Zanasi, Fabio}, year={2025}, month={Oct} }
+{lorenzin-zanasi-infinite-tensor-2025, title={Approaching the Continuous from the Discrete: an Infinite Tensor Product Construction}, url={http://arxiv.org/abs/2510.14716}, DOI={10.48550/arXiv.2510.14716}, note={arXiv:2510.14716 [math]}, number={arXiv:2510.14716}, publisher={arXiv}, author={Lorenzin, Antonio and Zanasi, Fabio}, year={2025}, month={Oct} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{
