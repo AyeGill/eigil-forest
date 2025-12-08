@@ -21,11 +21,11 @@
 }
 \proof{
   \p{
-    By \ref{efr-X0VA}, we see that we can immediately flatten any nested sequence in #{BT(A)^{\omega^n}} into a sequence of dyadic distributions in #{BT(A)^\omega}, without altering either the sampling map or the represented distribution in #{\bar{\Delta(A)}}. Hence it suffices to prove that the sampling map #{BT(A)^\omega \to A} factors over #{\bar{\Delta(A)}}. 
+    By \ref{efr-X0VA}, we see that we can immediately flatten any nested sequence in #{BT(A)^{\omega^n}} into a sequence of dyadic binary trees in #{BT(A)^\omega}, without altering either the sampling map or the represented distribution in #{\bar{\Delta(A)}}. Hence it suffices to prove that the sampling map #{BT(A)^\omega \to A} factors over #{\bar{\Delta(A)}}. 
   }
 
   \p{
-    Let #{BT(A)} be the measurable space of \em{dyadic} distributions on #{A}, i.e those of the form #{\sum_i \frac{k_i}{2^N}a_i} for some #{N}. It is immediately apparent that there is a well-defined sampling map #{BT(A) \to A}. We will begin by constructing, for every finitary distribution #{\mu \in \Delta(A)}, a normal form in #{BT(A)^\omega}.
+    It is clear that the sum map #{BT(A)^\omega \to \bar{\Delta}(A)} is surjective. We will begin by choosing a particular splitting of this map, assigning to each countably supported measure a "normal form" in #{BT(A)^\omega}
   }
   \p{
     Fix an arbitrary total ordering on #{A}. If #{A} is countable there is no difficulty doing this, if #{A = 2^\omega}, we may use the lexical ordering.
@@ -49,17 +49,23 @@
   }
   \ol{
     \li{
-      Let #{F: BT(A)^\omega \times (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to A} be the sampling map, which uses the first bitstream to choose the index #{i} from the sequence, then the #{i}th one of the remaining streams to sample from the given dyadic measure.
+      Let #{S: BT(A)^\omega \times (2^{\omega} \setminus 0) \times (2^\omega)^\omega \to A} be the sampling map, which uses the first bitstream to choose the index #{i} from the sequence, then the #{i}th one of the remaining streams to sample from the given binary tree.
     }
     \li{
-      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of dyadic measures so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: BT(A)^\omega \to BT(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : BT(A)^\omega \times  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
+      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of binary trees so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: BT(A)^\omega \to BT(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : BT(A)^\omega \times  (2^{\omega} \setminus 0) \times (2^\omega)^\omega \to  (2^{\omega} \setminus 0) \times (2^\omega)^\omega} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
+    }
+    \li{
+      By construction the #{n}th coordinate of #{\nm_k(a)} is equal for all #{k > n}, and so there is a well-defined limiting map #{\nm_\infty : BT(A)^\omega \to BT(A)^\omega}, which (by construction) carries a sequence to its normal form.
+    }
+    \li{
+      For #{\sigma_k}, similarly note that the first #{n} bits (deciding the index into the sequence) are fixed for #{k > n}, and the same is true for the #{n} first streams used to sample from the given binary trees.
     }
     \li{
       Let #{\nm_\infty} and #{\sigma_\infty} be the limiting maps.
     }
   }
   \p{
-    Now observe that #{F(a,b) = F(\nm_\infty(a),\sigma_\infty(a,b))}, and that #{\sigma_\infty(a,b)} is pointwise a permutation. Hence just as before, this proves that the sampling map commutes with taking the normal form, as we wanted.
+    Now observe that #{F(a,b) = F(\nm_\infty(a),\sigma_\infty(a,b))}, and that #{\sigma_\infty(a,b)} for each #{a} preseves the uniform measure. Hence just as before, this proves that the sampling map commutes with taking the normal form, as we wanted.
   }
   \p{
     Observe that (for any monad), the Kleisli category is presented by adding morphisms #{s_A: TA \to A} for each #{A}, subject to the equations #{s_A\eta_A = 1_A} and #{s_A s_{TA} = s_A \mu_A}. We have just constructed the #{s_A}, so we now have to prove that they satisfy these equations. Unitality is clear. The multiplicativity condition follows by observing that any finitary distribution on #{\Delta(A)} can be decomposed as an iterated sum coming from #{\Delta(A)^{\omega^N}}, at which point this reduces to the mentioned #{\omega}-midpoint homomorphism property.
