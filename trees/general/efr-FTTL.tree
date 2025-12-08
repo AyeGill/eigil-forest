@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Theorem}
 \p{
-  Let #{\kappa} be a regular cardinal. Let #{\Set_{\bar{\Delta}}^{< \kappa}} denote the subcategory of #{\Set_{\bar{\Delta}}} consisting of the sets of cardinality less than #{\kappa}. Then #{\Set_{\bar{\Delta}}^{< \kappa}} is the initial #{\kappa}-distributive externally iterable coinflip category.
+  Let #{\kappa} be a regular cardinal. Let #{\Set_{\bar{\Delta}}^{< \kappa}} denote the subcategory of #{\Set_{\bar{\Delta}}} consisting of the sets of cardinality less than #{\kappa}. Then #{\Set_{\bar{\Delta}}^{< \kappa}} is the initial #{\kappa}-distributive, [externally iterable](efr-Z9IU), [coinflip](efr-VTCS) Markov category. In particular, #{\FinStoch} is the initial distributive, externally iterable, coinflip Markov category, and #{\Set_{\bar{\Delta}}} is the initial small-distributive, externally iterable, coinflip Markov category.
 }
