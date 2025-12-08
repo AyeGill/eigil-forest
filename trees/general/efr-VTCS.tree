@@ -1,0 +1,8 @@
+\date{2025-11-27T19:26:58Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\title{Coinflip Markov Category}
+\p{
+  A \em{coinflip Markov category} is a Markov category which admits a coinflip structure.
+}
