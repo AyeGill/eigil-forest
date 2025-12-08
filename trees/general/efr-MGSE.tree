@@ -2,11 +2,11 @@
 \author{eigil-rischel}
 \import{macros}
 
-\title{Limits and colimits in Markov Categories}
+\title{Distributive and extensive Markov Categories}
 \parent{efr-AK18}
 
 \p{
-  We will need to impose several different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The usual pattern is to demand that #{\cC_\det} has some property, and that this is "preserved" by the inclusion into #{\cC}. We list these now.
+  We will need to impose several different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The usual pattern is to demand that #{\cC_\det} has some property, and that this is preserved by the inclusion into #{\cC}. In this section we will describe these conditions.
 }
 
 \p{
@@ -29,10 +29,10 @@
   \taxon{Remark}
   \ol{
   \li{
-    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work. If the category is representable, we can apply \ref{efr-198L}.
+    In the Cartesian case, if #{\cC} is Boolean, countably complete and extensive, then it is also countably extensive (\ref{chen-universal-stdborel-2019}, Lemma 2.5). However, the proof of this relies on identifying morphisms #{X \to Y} with their graphs (subobjects of #{X \times Y}), and applying our knowledge about the subobject lattice. In the Markov context, we can not necessarily identify a morphism with a deterministic subobject of #{X}, hence this argument does not work—to be precise, #{\cC_\det} will have all countable coproducts but the inclusion will not necessarily preserve them. If #{\cC} is representable, the inclusion preserves all colimits and this limitation disappears.
   }
   \li{
-    Let #{\cC, \cD} are Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusions preserve this functor, and let #{F: \cC \to \cD} is a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are the same as the countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
+    Let #{\cC, \cD} be Markov categories with countable Kolmogorov products, so that #{\cC_\det, \cD_\det} is countably extensive and Boolean, and the inclusions preserve the countable coproducts, and let #{F: \cC \to \cD} be a strong Markov functor. Suppose #{F_\det : \cC_\det \to \cD_\det} preserves countable limits and finite coproducts. Then it automatically preserves countable coproducts as well (again, by Chen's argument). Since these are also countable coproducts in #{\cC, \cD}, it follows that #{F} preserves countable coproducts as well.
   }
   }
 } 
@@ -43,19 +43,20 @@
   ##{A + B \to A \otimes A + B \otimes B \into (A+B)\otimes (A+B)}
   If #{\cC} is a Markov category, each of these objects has furthermore a \em{canonical} given comonoid structure. #{\cC} is distributive \em{as a Markov category} if and only if the coproducts can be chosen so that the canonical comonoid structure coincides with the induced one.
 }
+\p{
+  This parametrization in a regular cardinal #{\kappa} will recur a few times in this paper.
+  We are chiefly interested in the cases #{\kappa = \omega}, corresponding to \em{finite} coproducts, and #{\kappa = \omega_1}, corresponding to \em{countable} coproducts (this case requires a weak form of the axiom of choice).
+}
+
 
 \transclude{efr-B2P7}%extensive
 \p{
-  Note that any extensive Markov category is automatically distributive.
+  Note that any extensive Markov category is automatically distributive (for the same #{\kappa}). Note also that if #{\cC} is extensive Markov, then #{\cC_\det} automatically admits all finite limits, since it has finite products just by virtue of being a Markov category.
 }
 \p{
-  Recall that a coherent category is \em{Boolean} if every monomorphism is a coproduct inclusion. Given this hypothesis, a category is coherent as soon as it admits finite limits (since the required unions can be computed as the negations of intersections), and moreover extensive if it admits finite coproducts. Thus we will call a category \em{Markov-Boolean} only if it satisfies the modified version of these assumptions.
+  Recall that a coherent category is called \em{Boolean} if every subobject lattice is a Boolean algebra. Also note that an extensive category is Boolean (and coherent) as soon as it satisfies the condition that every monomorphism #{V \into X} is a coproduct inclusion (the object #{V'} so that #{A = V + V'} is then the complement subobject of #{V}). We will not need to study any other case than this, and so we simply make the following definition.
 }
 \transclude{efr-7JNJ}
-
-\p{
-  Note that if #{\cC} is Boolean and distributive, it is automatically extensive. Moreover in this case #{2 = I + I} is a subobject classifier.
-}
 
 \transclude{efr-8971}
 

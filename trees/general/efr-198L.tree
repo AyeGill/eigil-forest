@@ -1,7 +1,7 @@
 \date{2025-11-18T12:03:08Z}
 \author{eigil-rischel}
 \import{macros}
-\taxon{lemma}
+\taxon{Lemma}
 \p{
     Let #{\cC} be a \em{representable} Markov category, and let #{P} be the associated distribution monad. Then
 }

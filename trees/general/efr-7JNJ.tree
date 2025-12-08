@@ -5,5 +5,5 @@
 \title{Boolean Markov category}
 
 \p{
-  A Markov category #{\cC} is \em{Boolean} if #{\cC_\det} is Boolean, i.e admits finite limits and every monomorphism is a coproduct inclusion, and moreover #{\cC_\det \into \cC} preserves binary coproducts and pullbacks along monomorphisms.
+  An extensive Markov category #{\cc} is \em{Boolean} (as a Markov category) if #{\cC_\det} is Boolean, i.e if every monomorphism in #{\cC_\det} is a coproduct inclusion.
 }
