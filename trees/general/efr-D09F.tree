@@ -30,10 +30,10 @@
     Thus we can define a countable-arity operator #{M_A: A^\omega \to A} in any of these categories by drawing a sample from #{c^\omega \in 2^\omega} and projecting onto the coordinate of the first #{1} (which necessarily exists).
   }
   \p{
-      For any measurable space #{A}, there is a measurable space #{D(A)} of finitary dyadic measures in #{A} (i.e those given as a finite sum #{\frac{k_1}{2^N} \delta_{a_1} + \cdots + \frac{k_n}{2^N} \delta_{a_n}}). This is clearly an internal midpoint algebra, and there is a unique sampling homomorphism #{D(A) \to A} in any countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, which is a midpoint homomorphism.
+      For any standard Borel space #{A}, let #{BT(A)} denote the (again standard Borel) space of balanced, finite binary trees with leaves labeled by #{A}. This can be identified with the coproduct #{\sum_{n \in \NN} A^{2^n}}. There is an obvious binary operation #{g: BT(A) \times BT(A) \to BT(A)} which glues two trees together. In #{\cC}, there is a unique kernel #{BT(A) \to A} which carries this operation to the midpoint operation in #{\cC}. Note that this can be factored as a map #{BT(A) \times 2^\omega \to A} which uses the first #{n} bits to choose a branch, composed with the uniform distribution.
   }
   \p{
-    Given anything like #{(D(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{D(A)^{\omega^N} \to A}.
+    Given anything like #{(BT(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{BT(A)^{\omega^N} \to A}.
   }
 
   \p{

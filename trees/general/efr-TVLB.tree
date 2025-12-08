@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Theorem}
 \p{
-  #{\BorelStoch} is (bi-)initial among countably distributive, Boolean, coinflip Markov categories with countable Kolmogorov products. (And Markov functors which preserve countable coproducts, countable Kolmogorov products and pullbacks along deterministic monomorphisms).
+  #{\BorelStoch} is (bi-)initial among countably extensive, Boolean, coinflip Markov categories with countable Kolmogorov products. (And Markov functors which preserve countable coproducts, countable Kolmogorov products and pullbacks along deterministic monomorphisms).
 }

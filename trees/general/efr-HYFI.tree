@@ -7,10 +7,10 @@
 }
 \ol{
   \li{
-    For every #{n}, the iterated choice operator #{D(A)^{\omega^n} \to A} factors over the map #{D(A)^{\omega^n} \to \bar{\Delta}(A)}.
+    For every #{n}, the iterated choice operator #{BT(A)^{\omega^n} \to A} factors over the map #{BT(A)^{\omega^n} \to \bar{\Delta}(A)}.
   }
   \li{
-    The composite map #{\coprod_n D(A)^{\omega^n} \to \Delta(A)} is a split epimorphism, and thus the factorization is unique, giving a well-defined sampling map #{s_A: \Delta(A) \to A} for every standard Borel space #{A}.
+    The composite map #{\coprod_n BT(A)^{\omega^n} \to \Delta(A)} is a split epimorphism, and thus the factorization is unique, giving a well-defined sampling map #{s_A: \Delta(A) \to A} for every standard Borel space #{A}.
   }
   \li{
     This sampling map is a #{\omega}-midpoint homomorphism, in the sense that #{s_A(\sum_i 1/2^i \mu_i) = M_A(s_A \mu_1, s_A \mu_2, \dots)}.
@@ -21,11 +21,11 @@
 }
 \proof{
   \p{
-    By \ref{efr-X0VA}, we see that we can immediately flatten any nested sequence in #{D(A)^{\omega^n}} into a sequence of dyadic distributions in #{D(A)^\omega}, without altering either the sampling map or the represented distribution in #{\bar{\Delta(A)}}. Hence it suffices to prove that the sampling map #{D(A)^\omega \to A} factors over #{\bar{\Delta(A)}}. 
+    By \ref{efr-X0VA}, we see that we can immediately flatten any nested sequence in #{BT(A)^{\omega^n}} into a sequence of dyadic distributions in #{BT(A)^\omega}, without altering either the sampling map or the represented distribution in #{\bar{\Delta(A)}}. Hence it suffices to prove that the sampling map #{BT(A)^\omega \to A} factors over #{\bar{\Delta(A)}}. 
   }
 
   \p{
-    Let #{D(A)} be the measurable space of \em{dyadic} distributions on #{A}, i.e those of the form #{\sum_i \frac{k_i}{2^N}a_i} for some #{N}. It is immediately apparent that there is a well-defined sampling map #{D(A) \to A}. We will begin by constructing, for every finitary distribution #{\mu \in \Delta(A)}, a normal form in #{D(A)^\omega}.
+    Let #{BT(A)} be the measurable space of \em{dyadic} distributions on #{A}, i.e those of the form #{\sum_i \frac{k_i}{2^N}a_i} for some #{N}. It is immediately apparent that there is a well-defined sampling map #{BT(A) \to A}. We will begin by constructing, for every finitary distribution #{\mu \in \Delta(A)}, a normal form in #{BT(A)^\omega}.
   }
   \p{
     Fix an arbitrary total ordering on #{A}. If #{A} is countable there is no difficulty doing this, if #{A = 2^\omega}, we may use the lexical ordering.
@@ -38,21 +38,21 @@
       Let #{N_0} be the smallest natural so that there exists a dyadic distribution #{\nu_0 = \sum_i \frac{k_i}{2^N} a_i} so that #{\frac{1}{2}\nu_0 < \mu} - that is, for every element of #{A}, the probability under #{\frac{1}{2}\nu_0} is \em{strictly} less than the probability under #{\mu}.
     }
     \li{
-      Let #{\nu_0} be a dyadic distribution as above, choosing the lowest possible #{a_i} according to the chosen ordering.
+      Let #{\nu_0} be a dyadic distribution as above, choosing the lowest possible #{a_i} according to the chosen ordering. Represent #{\nu_0} as a balanced binary tree of minimal depth, with the leaves increasing left to right.
     }
     \li{
       Repeat these steps with #{\mu - \frac{1}{2}\nu_0} to construct #{\nu_1, \nu_2, \dots}.
     }
   }
   \p{
-    It is clear that this defines a measurable map #{\Delta(A) \to D(A)^\omega}, and that this is a section of the map #{\sum_i 1/2^i \nu_i} in the other direction. 
+    It is clear that this defines a measurable map #{\Delta(A) \to BT(A)^\omega}, and that this is a section of the map #{\sum_i 1/2^i \nu_i} in the other direction. 
   }
   \ol{
     \li{
-      Let #{F: D(A)^\omega \times (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to A} be the sampling map, which uses the first bitstream to choose the index #{i} from the sequence, then the #{i}th one of the remaining streams to sample from the given dyadic measure.
+      Let #{F: BT(A)^\omega \times (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to A} be the sampling map, which uses the first bitstream to choose the index #{i} from the sequence, then the #{i}th one of the remaining streams to sample from the given dyadic measure.
     }
     \li{
-      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of dyadic measures so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: D(A)^\omega \to D(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : D(A)^\omega \times  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
+      Note that by construction, if #{\nu_1} is the first element in the normal form of #{\mu}, and #{\lambda_i} is another sequence of dyadic measures so that #{\sum_i 1/2^i \lambda_i} is equal to #{\mu}, then there exists some finite prefix so that #{1/2 \nu_0 < \sum_{i=0}^N 1/2^i \lambda_i}. Then there exists some rearrangement of this prefix #{\lambda_i'} so that #{\lambda_1' = \nu_1} (and #{\lambda'_i = \lambda_i} when #{i>N}). Let #{\nm_k: BT(A)^\omega \to BT(A)^\omega} be the map which puts the first #{k} elements into the normal form like this. Note that for each #{k} there exists some permutation #{\sigma_k : BT(A)^\omega \times  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega \to  (2^{\omega} \setminus 0) \times (2^\omega \setminus 0)^\omega} which, for each possible sequence, witnesses this rearrangement (in the same way as \ref{efr-X0VA}).
     }
     \li{
       Let #{\nm_\infty} and #{\sigma_\infty} be the limiting maps.
