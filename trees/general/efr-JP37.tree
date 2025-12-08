@@ -2,6 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \taxon{Definition}
+\title{Iterable midpoint algebra}
 \p{
   A [midpoint algebra](efr-6W7X) #{(A,m)} in #{\cC} is \em{iterable} if, for each #{s: X \to X \times A \in \cC}, there is a unique #{u : X \to A} so that the diagram
   \quiver{

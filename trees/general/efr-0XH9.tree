@@ -15,5 +15,5 @@
   }
 }
 \p{
-  Given a coinflip in a distributive Markov category, there is a canonical induced natural transformation #{A \otimes A \to A}, which makes every #{A \in \cC} into a midpoint algebra. We say the coinflip is \em{iterable} if all of these midpoint algebras are iterable.
+  Given a coinflip in a distributive Markov category, there is a canonical induced natural transformation #{A \otimes A \to A}, which makes every #{A \in \cC} into a midpoint algebra.
 }

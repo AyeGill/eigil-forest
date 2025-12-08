@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Definition}
 \p{
-  Let #{\cC} be a coinflip Markov category. This coinflip is said to be \em{externally iterable} if the midpoint algebras #{\cC(X,Y)} are all iterable in #{\Set}. It is said to be \em{internally iterable} if they are all internally iterable.
+  Let #{\cC} be a coinflip Markov category. Then it is called \em{externally iterable} if the midpoint algebras #{\cC(X,Y)} are all iterable in #{\Set}. It is said to be \em{internally iterable} if they are all internally iterable.
 }

@@ -4,5 +4,5 @@
 \taxon{Definition}
 \title{Internally iterable}
 \p{
-  Let #{\cC} be a Markov category, let #{A} be an object, and let #{m} be a midpoint algebra on #{A}, i.e a midpoint algebra structure on each #{\cC(X,A)}, natural in #{A}. Then #{A} is \em{internally iterable} if, for each #{X \to X \otimes A \in \cC}, there exists a unique map #{u: X \to A} satisfying #{u = m(u \pi_X, \pi_A)s}
+  Let #{\cC} be a Markov category, let #{A} be an object, and let #{m} be a midpoint algebra on #{A}, i.e a midpoint algebra structure on each #{\cC(X,A)}, natural in #{X}. Then #{A} is \em{internally iterable} if, for each #{X \to X \otimes A \in \cC}, there exists a unique map #{u: X \to A} satisfying #{u = m(u \pi_X, \pi_A)s}
 }
