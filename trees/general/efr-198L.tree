@@ -13,6 +13,6 @@
       If #{\cC_\det} is Boolean, then #{\cC} is Boolean.
     }
     \li{
-      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves countable intersections, and the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
+      If #{\cC_\det} is (finitely) extensive, Boolean, and #{\kappa}-complete, and #{P: \cC_\det \to \cC_\det} preserves the cofiltered limits #{\prod_{i \in J} A_i = \lim_{F \subseteq J \mathrm{ finite}} \prod_{i \in F} A_i} for #{\abs{J} < \kappa}, then #{\cC} is #{\kappa}-extensive (and Boolean and admits #{\kappa}-small Kolmogorov products).
     }
   }

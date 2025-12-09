@@ -51,6 +51,6 @@
 }
 
 \p{
-  Now let #{f: 2^\omega \to B} be a kernel, and let #{\phi: A \to 2^\omega} again be a kernel. We can factor #{f} as a measurable map #{\bar{f} : 2^\omega \times 2^\omega \to B}, composed with the uniform #{c^\omega : I \to 2^\omega}. By the above we have #{F(f) = F(\bar{f})\circ(F(c^\infty) \otimes 2^\omega)}. Since clearly the constructed #{\bar{F}} is monoidal, it follows that #{\bar{F}(f)\bar{F}(\phi) = F(f\phi)} as desired.
+  Now let #{f: 2^\omega \to B} be a kernel, and let #{\phi: A \to 2^\omega} again be a kernel. We can factor #{f} as a measurable map #{\bar{f} : 2^\omega \times 2^\omega \to B}, composed with the uniform #{c^\omega : I \to 2^\omega}. By the above we have #{F(f) = F(\bar{f})\circ(F(c^\omega) \otimes 2^\omega)}. Since clearly the constructed #{\bar{F}} is monoidal, it follows that #{\bar{F}(f)\bar{F}(\phi) = F(f\phi)} as desired.
 }
 \todo{Monoidality not immediate but should follow from representability here, i.e if not there would be point where they were not equal}

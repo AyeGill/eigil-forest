@@ -7,7 +7,7 @@
 }
 \ol{
   \li{
-    For every #{n}, the iterated choice operator #{BT(A)^{\omega^n} \to A} factors over the map #{BT(A)^{\omega^n} \to \bar{\Delta}(A)}.
+    For every #{n}, the iterated sampling operator #{BT(A)^{\omega^n} \to A} factors over the map #{BT(A)^{\omega^n} \to \bar{\Delta}(A)}.
   }
   \li{
     The composite map #{\coprod_n BT(A)^{\omega^n} \to \Delta(A)} is a split epimorphism, and thus the factorization is unique, giving a well-defined sampling map #{s_A: \Delta(A) \to A} for every standard Borel space #{A}.

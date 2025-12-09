@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\cC} be a countably distributive, Boolean, coinflip Markov category with countable Kolmogorov products. Let #{F: \Borel_{\bar{\Delta}} \to \cC} be the functor of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
+  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\cC} be a countably distributive, Boolean, coinflip Markov category with countable Kolmogorov products. Let #{F: \Borel_{\bar{\Delta}} \to \cC} be the functor of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((2^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
 }
 \proof{
   \p{
@@ -21,7 +21,7 @@
     By an analogous argument (without passing through the finite truncation), if #{\alpha} is concentrated on the string #{0 \in 2^\omega} in the first coordinate, again #{F(\vee^k)\bar{F}(\alpha) = F(\vee^k \alpha)}
   }
   \p{
-    Now consider the generic kernel #{\phi} of the lemma. Let #{A = A_0 \sqcup A_1}, where #{A_0} consists of those #{a} for which the probability that the first coordinate is zero is #{\geq 1/2}, and #{A_1} is the complement, consisting of those for which at least one #{1} has probability #{>1/2}. Note that by #{\sigma}-continuity, there exists for each #{a \in A_1} some #{N_a} so that there is a probability #{\geq 1/2} of an #{1} in the first #{N} coordinates. Note that the least such #{N} is a measurable function of #{a}, and so #{A_1} decomposes into a sum #{A_1 = A_1^1 \sqcup A_1^2 \dots}, where on #{A_1^N} there is a #{\geq 1/2} probability of an #{1} in the first #{N} coordinates. 
+    Now consider the generic kernel #{\phi} of the lemma. Let #{A = A_0 \sqcup A_1}, where #{A_0} consists of those #{a} for which the probability that the first coordinate is zero is #{\geq 1/2}, and #{A_1} is the complement, consisting of those for which at least one #{1} has probability #{>1/2}. Note that by #{\sigma}-continuity, there exists for each #{a \in A_1} some #{N_a} so that there is a probability #{\geq 1/2} of an #{1} in the first #{N_a} coordinates. Note that the least such #{N_a} is a measurable function of #{a}, and so #{A_1} decomposes into a sum #{A_1 = A_1^1 \sqcup A_1^2 \dots}, where on #{A_1^N} there is a #{\geq 1/2} probability of an #{1} in the first #{N} coordinates. 
    }
    \p{
     Now let #{\mu_1} be the kernel defined as follows:
@@ -34,7 +34,7 @@
       }
     }
     \p{
-      Observe that by construction, #{\mu_1/2 \leq \phi}. Now we can continue the recursion, defining #{\mu_2, \mu_3, \dots}, and we must necessarily have #{\sum_i 1/2^i \mu_i = \phi}. This sum must be preserved by #{\bar{F}} (where the meaning of this sum in #{\cC} is given by the canonical sampling morphism #{X^\omega \to X}, or equivalently by the dual #{I \to \omega}). Therefore we have ##{F(\vee^k)\bar{F}(\phi) = F(\vee^k)(\sum_i 1/2^i \bar{F}(\mu_i)) = \sum_i 1/2^i F(\vee^k) \bar{F}(\mu_i) = \sum_i 1/2^i F(\vee^k \mu_i) = F(\vee^k \phi),} finishing the proof.
+      Observe that by construction, #{\mu_{1/2} \leq \phi}. Now we can continue the recursion, defining #{\mu_2, \mu_3, \dots}, and we must necessarily have #{\sum_i 1/2^i \mu_i = \phi}. This sum must be preserved by #{\bar{F}} (where the meaning of this sum in #{\cC} is given by the canonical sampling morphism #{X^\omega \to X}, or equivalently by the dual #{I \to \omega}). Therefore we have ##{F(\vee^k)\bar{F}(\phi) = F(\vee^k)(\sum_i 1/2^i \bar{F}(\mu_i)) = \sum_i 1/2^i F(\vee^k) \bar{F}(\mu_i) = \sum_i 1/2^i F(\vee^k \mu_i) = F(\vee^k \phi),} finishing the proof.
     }
    }
 }

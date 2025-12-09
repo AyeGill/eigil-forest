@@ -2,6 +2,9 @@
 \author{eigil-rischel}
 \import{macros}
 \title{The Universal Property of Measure-Theoretic Probability}
+\todo{Markov cat. section}
+\todo{Redo last part assuming cat under Borel if possible}
+\todo{Monoidality/markov-ness at the end!}
 
 \subtree{
   \title{Introduction}
@@ -58,7 +61,7 @@
     Not all interesting measurable spaces are standard Borel. A simple example is the uncountable product #{\prod_{t \in \RR} \RR}, classifying general stochastic processes valued in #{\RR} (although note that many important subsets of this, such as the space of \em{continuous} stochastic processes, are standard Borel). It would be interesting to look for a generalization of this work to a larger class of measurable spaces, or alternatively to describe in some other terms the initial coinflip Markov category which is #{\kappa}-extensive, Boolean and admits #{\kappa}-small Kolmogorov products for larger #{\kappa}.
   }
   \p{
-    Chen's work actually provides the deterministic version of this for all #{\kappa}: the initial #{\kappa}-complete, (#{\kappa}-)extensive, Boolean category is given by the opposite of the category of #{\kappa}-generated, #{\kappa}-complete Boolean algebras and the #{\kappa}-continuous homomorphisms between them.
+    Chen's work actually provides the deterministic version of this for all #{\kappa}: the initial #{\kappa}-complete, (#{\kappa}-) extensive, Boolean category is given by the opposite of the category of #{\kappa}-generated, #{\kappa}-complete Boolean algebras and the #{\kappa}-continuous homomorphisms between them.
   }
   \p{
     It is not clear how to define a good probability theory on top of this—having continuum-sized unions seems to rule out many important measures like the Lebesgue measure.

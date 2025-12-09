@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, let #{A = i(A)} be the image of a standard Borel space, and consider the map #{\lambda: (BT(A)^\omega)^\omega \to A} given by sampling two natural numbers according to #{c^\infty: I \to 2^\omega \setminus 0 \to \omega} and indexing with them, then using the canonical sampling map. There exists a map #{BT(A)^{\omega \times \omega} \to BT(A)^\omega} which preserves the sampling map. Moreover this map also preserves the map into #{\Delta(A)}.
+  Let #{\cC} be a countably distributive, Boolean coinflip Markov category with countable Kolmogorov products, let #{A = i(A)} be the image of a standard Borel space, and consider the map #{\lambda: (BT(A)^\omega)^\omega \to A} given by sampling two natural numbers according to #{c^\omega: I \to 2^\omega \setminus 0 \to \omega} and indexing with them, then using the canonical sampling map. There exists a map #{BT(A)^{\omega \times \omega} \to BT(A)^\omega} which preserves the sampling map. Moreover this map also preserves the map into #{\Delta(A)}.
 }
 \proof{
   \p{
@@ -39,13 +39,13 @@
     ##{\rho_1(00.c,r,s^1,s^2) = (00.c,r,s^1,s&2)}
   }
   \p{
-    It is straightforward to verify that #{\rho_1} is well-defined, that #{F(r_1(d),\rho_1(b)) = F(d,b)} as required. Moreover we see that every finite projection of the output of #{\rho_1} factors over some finite prefix of the input, and that the resulting maps #{2^N \to 2^M} carry the uniform distribution to the uniform distribution. This implies that #{\rho_1 c^\infty = c^\infty}.
+    It is straightforward to verify that #{\rho_1} is well-defined, that #{F(r_1(d),\rho_1(b)) = F(d,b)} as required. Moreover we see that every finite projection of the output of #{\rho_1} factors over some finite prefix of the input, and that the resulting maps #{2^N \to 2^M} carry the uniform distribution to the uniform distribution. This implies that #{\rho_1 c^\omega = c^\omega}.
   }
   \p{
     #{r_1} "flattens" the first column of #{d}. Now we can apply #{r_1} again to the remaining columns to flatten the second column, and similarly apply #{\rho_1} ignoring the first bit of #{c} and #{s^1} to obtain a corresponding permutation. Let #{r_N, \rho_N} be the map an permutation that flatten the first #{N} columns. Note that by construction each output bit of #{r_N} is eventually stable for high #{N}, and the same is true for #{\rho_N}. Let #{r_\infty, \rho_\infty} be the limiting maps.
   }
   \p{
-    Then when the first #{1} in the part of #{\rho_\infty(b)} which selects the #{i} appears before index #{N}, #{F(r_\infty(d),\rho_\infty(b))} depends only on the first #{N} rows, hence is equal to #{F(r_N(d),\rho_\infty(b))}, which is then equal to #{F(d,b)}. Since #{\rho_\infty} is the limit of permutations, it preserves the uniform measure, and so the composite #{F(d,c^\infty) = F(r_\infty(d), \rho_\infty(c^\infty)) = F(r_\infty(d), c^\infty)}.
+    Then when the first #{1} in the part of #{\rho_\infty(b)} which selects the #{i} appears before index #{N}, #{F(r_\infty(d),\rho_\infty(b))} depends only on the first #{N} rows, hence is equal to #{F(r_N(d),\rho_\infty(b))}, which is then equal to #{F(d,b)}. Since #{\rho_\infty} is the limit of permutations, it preserves the uniform measure, and so the composite #{F(d,c^\omega) = F(r_\infty(d), \rho_\infty(c^\omega)) = F(r_\infty(d), c^\omega)}.
   }
 
   \p{

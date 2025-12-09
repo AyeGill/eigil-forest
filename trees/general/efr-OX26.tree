@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Proposition}
 \p{
-  Let #{\cC} be a Markov category. Every coinflip structure on #{\cC} is equal.
+  Let #{\cC} be a Markov category. Then every coinflip structure on #{\cC} is equal.
 }
 \proof{
   \p{

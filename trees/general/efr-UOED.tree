@@ -9,12 +9,11 @@
 \transclude{efr-SIKM}
 \transclude{efr-EB3U}
 
+\transclude{efr-OH6B}
 \p{
   Note that given any Markov functor #{F: \cC \to \cD}, and a family #{X_j} so that the Kolmogorov product #{\bigotimes_j X_j} exists, there is a family of (necessarily deterministic) maps #{F(\bigotimes_j X_j) \to \bigotimes_{j \in F} X_j} for every finite #{F \subset J}. As usual we say #{F} \em{preserves Kolmogorov products} if this collection exhibits #{F(\bigotimes_j X_j)} as the Kolmogorov product of the family #{F(X_j)}. If #{\cC, \cD} admit Kolmogorov products of a given cardinality, #{F} preserves them if and only if #{F_\det : \cC_\det \to \cD_\det} preserves products of this cardinality.
 }
 
-\transclude{efr-OH6B}
-\transclude{efr-9RDS}
 \p{
   When the family #{X} is constant, we will denote the Kolmogorov product #{\bigotimes_{i \in J} X} simply by #{X^J}.
 }

@@ -3,5 +3,5 @@
 \import{macros}
 \taxon{Definition}
 \p{
-  A Markov category is \em{distributive} (or #{\kappa}-distributive) if #{\cC_\det} admits (#{\kappa}-small) coproducts, these are preserved by the inclusion #{\cC_\det \into \cC}, and by the tensors #{A \otimes -}.
+  A Markov category is \em{distributive} (#{\kappa}-distributive) if #{\cC_\det} admits finite (#{\kappa}-small) coproducts, these are preserved by the inclusion #{\cC_\det \into \cC}, and by the tensors #{A \otimes -}.
 }
