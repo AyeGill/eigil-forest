@@ -13,7 +13,10 @@
   <xsl:template match="/">
     <xsl:text>\documentclass[oneside,a4paper]{article}%&#xa;</xsl:text>
     <xsl:text>\usepackage[final]{microtype}%&#xa;</xsl:text>
+
+    <xsl:text>\usepackage[colorlinks=true,linkcolor={blue!30!black}]{hyperref}%&#xa;</xsl:text>
     <xsl:text>\usepackage{amsthm,mathtools}%&#xa;</xsl:text>
+    <xsl:text>\usepackage{thmtools}%&#xa;</xsl:text>
     <xsl:text>\usepackage{xcolor}%&#xa;</xsl:text>
     <xsl:text>\usepackage{tikzit}%&#xa;</xsl:text>
     <xsl:text>\usepackage{float}%&#xa;</xsl:text>
@@ -48,10 +51,9 @@
 \tikzset{no body/.style={/tikz/dash pattern=on 0 off 1mm}}
     </xsl:text>
     <xsl:text>\usepackage{mathpartir}&#xa;</xsl:text>
-    <xsl:call-template name="environments" />
-    <xsl:text>\usepackage[colorlinks=true,linkcolor={blue!30!black}]{hyperref}%&#xa;</xsl:text>
     <xsl:text>\usepackage{newpxmath,newpxtext}%&#xa;</xsl:text>
     <xsl:text>\usepackage{cleveref}%&#xa;</xsl:text>
+    <xsl:call-template name="environments" />
     <xsl:text>\usepackage[mode=buildmissing]{standalone}%&#xa;</xsl:text>
     <xsl:text>\setcounter{tocdepth}{5}%&#xa;</xsl:text>
     <xsl:text>\setcounter{secnumdepth}{5}%&#xa;</xsl:text>
