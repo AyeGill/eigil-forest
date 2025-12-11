@@ -1,0 +1,22 @@
+\date{2025-12-11T20:40:32Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Proposition}
+\p{
+  #{\BorelStoch} is countably extensive and Boolean.
+}
+\proof{
+  \p{
+    Note first that #{\Borel} is countably extensive and Boolean, by \ref{chen-universal-stdborel-2019} theorem 1.1. Hence it suffices to observe that the Giry monad preserves pullbacks along coproduct inclusions. Consider #{X \to A + B}. The claim is that the square
+  }
+  \quiver{
+    \begin{tikzcd}
+    G(X_A) \ar[r] \ar[d] & G(A) \ar[d] \\
+    G(X) \ar[r] & G(A + B)
+    \end{tikzcd}
+  }
+  \p{
+    is a pullback, where #{X_A} is the preimage of #{A} inside #{X}. But this is clear: a probability measure on #{A} is exactly a probability measure on #{A + B} which happens to be concentrated on #{A}, and a probability measure on #{X} has an image in #{G(A + B)} of this form if and only if it is concentrated on #{X_A} (and is such equivalent to a measure on #{X_A}).
+  }
+}
+
