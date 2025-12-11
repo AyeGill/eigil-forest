@@ -74,17 +74,13 @@
   }
   \proof{
     \p{
-      It's straightforward to check that if #{F} admits any oplax Markov structure, then it preserves deterministic maps and this restricts to an oplax monoidal structure on #{F_\det}. But functors between Cartesian categories always admit a unique oplax monoidal structure. Hence any two oplax structures on #{F} agree. The only obstruction to this oplax functor extending to a full Markov structure is that it may not be natural with respect to nondeterministic morphisms. Given #{X \to X', Y \to Y'}, the tensor #{X \otimes Y \to X' \otimes Y'} is equal to the independent pairing of #{X \otimes Y \to X \to X'} and the analagous map to #{Y'}. Applying the assumptiong that #{F} preserves independent pairings to this gives naturality. The converse is clear. Finally #{F} is strong if #{F(X \otimes Y) \to F(X) \otimes F(Y)} is an isomorphism, but this is exactly the claim that #{F_\det} preserves products.
+      It's straightforward to check that if #{F} admits any oplax Markov structure, then it preserves deterministic maps and this restricts to an oplax monoidal structure on #{F_\det} (the fact that the oplaxator itself must be deterministic follows from the associativity). But functors between Cartesian categories always admit a unique oplax monoidal structure. Hence any two oplax structures on #{F} agree. The only obstruction to this oplax functor extending to a full Markov structure is that it may not be natural with respect to nondeterministic morphisms. Given #{X \to X', Y \to Y'}, the tensor #{X \otimes Y \to X' \otimes Y'} is equal to the independent pairing of #{X \otimes Y \to X \to X'} and the analagous map to #{Y'}. Applying the assumptiong that #{F} preserves independent pairings to this gives naturality. The converse is clear. Finally #{F} is strong if #{F(X \otimes Y) \to F(X) \otimes F(Y)} is an isomorphism, but this is exactly the claim that #{F_\det} preserves products.
     }
   }
 }
-\ol{
-  \li{
-    We denote by #{\BorelStoch} the category of standard Borel spaces and Markov kernels (\ref{fritz-synthetic-markov-cats}, Section 4). We denote by #{\Borel} the category of standard Borel spaces and measurable maps. Note that #{\Borel = \BorelStoch_\det}.
-  }
-  \li{
-    In any Markov category with finite coproducts, we write #{2 = I + I} for this coproduct. We denote the two points (that is, the coproduct inclusions) of this space by #{0,1}.
-  }
+
+\p{
+    We denote by #{\BorelStoch} the category of standard Borel spaces and Markov kernels (\ref{fritz-synthetic-markov-cats}, Section 4). We denote by #{\Borel} the category of standard Borel spaces and measurable maps. Note that #{\Borel = \BorelStoch_\det}. Recall that the standard Borel spaces are those measurable spaces arising as the Borel #{\sigma}-algebra on Polish spaces. By Kuratowski's theorem these are either discrete on a countable set, or isomorphic to the real numbers (in the Borel #{\sigma}-algebra).
 }
 
 \p{
