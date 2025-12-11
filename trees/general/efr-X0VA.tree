@@ -36,7 +36,7 @@
     ##{\rho_1(01.c,1.r,s^1,s^2) = (1.c,r,10.s^2, s^1)}
     ##{\rho_1(1.c, 00.r, s^1,s^2) = (01.c, r, s^2, 1.s^1)}
     ##{\rho_1(01.c, 0.r, s^1,s^2) = (01.c, r, s^1, 0.s^2)}
-    ##{\rho_1(00.c,r,s^1,s^2) = (00.c,r,s^1,s&2)}
+    ##{\rho_1(00.c,r,s^1,s^2) = (00.c,r,s^1,s^2)}
   }
   \p{
     It is straightforward to verify that #{\rho_1} is well-defined, that #{F(r_1(d),\rho_1(b)) = F(d,b)} as required. Moreover we see that every finite projection of the output of #{\rho_1} factors over some finite prefix of the input, and that the resulting maps #{2^N \to 2^M} carry the uniform distribution to the uniform distribution. This implies that #{\rho_1 c^\omega = c^\omega}.
