@@ -1,7 +1,7 @@
 \date{2025-11-08T11:11:15Z}
 \author{eigil-rischel}
 \import{macros}
-\title{Midpoint algebra and Coinflips}
+\title{Midpoint algebras and Coinflips}
 
 \p{
     We will not have any hope of giving a universal property for #{\BorelStoch}, or any interesting Markov category, without some property that forces certain maps to be nondeterministic. We now give such a structure. As mentioned, our basic idea will be to impose the existence of a "unbiased binary random choice". In a general Markov category, this choice forms a morphism #{A \otimes A \to A}. The axioms that such a choice must satisfy are essentially the axioms described by Escardo and Simpson in \ref{escardo-simpson-universal-interval-2001}, which they termed \em{midpoint algebras}. The main theorem of their paper is a characterization of the interval #{[0,1]} as the free iterable (\ref{efr-JP37}) midpoint algebra on two points—this will play a central role in this paper.
