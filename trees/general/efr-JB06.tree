@@ -7,12 +7,19 @@
 }
 \proof{
   \p{
-    Observe that #{\bar{\Delta} X} is an iterable midpoint algebra (with the infinitary choice operation given by the sum #{\sum_i 1/2^i a_i}).
-  }
-  \todo{
-    The proof here needs some elaboration. Any iterable midpoint alg clearly has binary convex combinations, but not obvious these satisfy the equations of a convex space.
+    We identify the elements of #{\bar{\Delta}(X)} with countably supported probability measures on #{X}. Observe that #{\bar{\Delta} X} is an iterable midpoint algebra (with the infinitary choice operation given by the sum #{M((a_i)) = \sum_i 1/2^i a_i}). By the preceding, every finitely supported measure can be obtained by iterating #{M}, and every countably supported measure can be obtained by applying #{M} to a sequence of these (half of the probability measure must be concentrated in some finite subset, then #{1/4} of the remainder again in some finite subset, and so on). Hence there is at most one midpoint homomorphism #{\bar{\Delta}X \to Y} extending any given function #{f: X \to Y}, for any iterable midpoint algebra #{Y}. 
   }
   \p{
-    Note first that if #{X} is finite, then this is just the ordinary simplex. This is the free convex space on #{X}, which is iterable, hence we are done. Now suppose #{X = \NN}. Given an element of the simplex #{a = (a_i)}, there exists a partial sum #{\sum_i^N a_i > 1/2}. Then we can write #{a = p_1 + r_1}, where #{p_1} is the given prefix, minus some elements to make the total probability exactly #{1/2}, and #{r_1} is just the remainder. Then #{a = m(2 p_1, 2 r_1)}. By induction we see that #{a = M(2p_1, 2p_2, \dots)}, where each element is a finitely-supported probability measure. A similar argument shows every equation between infinitely-supported probability measures follows from the equations of an iterable midpoint algebra. This concludes the proof.    
+    Now we must show that one exists. By a \em{finitary dyadic measure}, we mean one which is finitely supported and where each weight #{a_x} has the form #{k/2^n}. Note that these are exactly those that can be written using just the binary choice operator #{m(x,y)}. Also note that any two such terms are equal in a generic midpoint algebra if and only if they represent the same such measure. Hence given #{f: X \to Y}, there is a unique and well-defined #{f(a)} defined on the finitary dyadic measures, which is a midpoint homomorphism.
+  }
+  \p{
+    Now for any probability measure #{\mu}, we can write it as #{\mu = M(a_1,\dots)}, where each #{a_i} is a finitary dyadic measure. We define our operation as #{f(\mu) = M(f(a_1), \dots)}, with #{f(a_i)} defined as above. It suffices to show that this is well-defined, since 
+    ##{f(m(\mu^1,\mu^2)) = f(m(M(a_1^1,\dots),M(a_1^2,\dots))) = f(M(m(a^1_1,a^2_1), \dots)) = M(m(f(a_1^1),f(a_1^2)),\dots) = m(f(\mu^1),f(\mu^2))}
+  }
+  \p{
+    Now let #{M(a_1,\dots) = M(b_1,\dots) = \mu} be two representations in this form of the same measure. Then there exists some smallest #{N} so that there exists a finitary dyadic probability measure #{c_1 = \sum_i \frac{k_i}{2^N} \delta_{x_i}} so that #{k_i/2^N < 2 \mu(x_i)} whenever this is positive - that is, so that #{c/2} is \em{strictly} less than #{\mu} everywhere on the support.
+  }
+  \p{
+    Now in the sum #{\sum_i 1/2^i a_i} must exceed #{c/2} by some \em{finite} partial sum, say #{M}. Then #{\sum^M_{i=1} 1/2^i a_i} is a finitary dyadic measure. Hence a finite manipulation using the properties of midpoint algebras can rewrite the term #{M(a_1,\dots)} into #{M(c_1,a_2',\dots,a_M',a_{M+1})}. Iterating this we build #{c_2,\dots} so that #{M(a_1,\dots) = M(c_1,\dots)}. Since these only depended on the measure #{\mu}, we similarly find #{M(b_1,\dots) = M(c_1,\dots)}. Since this argument used only the axioms of an iterable midpoint algebra, it follows that #{f} is well-defined.
   }
 }

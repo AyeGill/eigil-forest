@@ -58,13 +58,10 @@
 }
 \transclude{efr-7JNJ}
 
-\transclude{efr-8971}
-
 \p{
   In the common case that #{\cC} is the Kleisli category of a monad on #{\cC_\det}, the inclusion #{\cC_\det \into \cC} automatically preserves all colimits, which makes many of the above things automatic.
 }
 
 \transclude{efr-198L}
-
 
 \transclude{efr-GZCD}

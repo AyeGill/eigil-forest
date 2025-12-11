@@ -26,6 +26,9 @@
   }
   \transclude{efr-AFCK}
 
+  \p{
+    To make our results slightly more broadly applicable, since there aren't many Boolean categories, we will instead take a suitable Markov functor #{\Borel \to \cC} as the input, and prove that given such, there is a unique extension of the above kind. In the below, we will generally abuse notation and identify a standard Borel space with its image under this functor.
+  }
 
   \p{
     Let's now see the details of part 2. We begin with the following lemma, which is what allows us to use infinitary sampling without the iterability assumption.
@@ -39,7 +42,7 @@
       For any standard Borel space #{A}, let #{BT(A)} denote the (again standard Borel) space of balanced, finite binary trees with leaves labeled by #{A}. This can be identified with the coproduct #{\sum_{n \in \NN} A^{2^n}}. There is an obvious binary operation #{g: BT(A) \times BT(A) \to BT(A)} which glues two trees together. In #{\cC}, there is a unique kernel #{BT(A) \to A} which carries this operation to the midpoint operation in #{\cC}. Note that this can be factored as a map #{BT(A) \times 2^\omega \to A} which uses the first #{n} bits to choose a branch, composed with the uniform distribution.
   }
   \p{
-    Given anything like #{(BT(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{BT(A)^{\omega^N} \to A}.
+    Given anything like #{(BT(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{BT(A)^{\omega^N} \to A}. Note that this is well-defined in any extensive, coinflip #{\cC} with countable Kolmogorov products equipped with #{\Borel \to \cC}.
   }
 
   \p{
@@ -55,10 +58,9 @@
   \transclude{efr-JK8U}
   \transclude{efr-D3QE}
 
-
-\p{
-  Note that the proof mainly uses the fact that #{\cC_\det} is Boolean, distributive and countably complete, and thus receives a unique functor from #{\Borel} by Chen's theorem. We use the assumption that the infinite product is a Kolmogorov product to pin down the maps into it. We use the fact that countable coproducts are preserved to show that it is enough to identify a map on a countable decomposition. And we use the preservation of pullbacks along monos in \ref{efr-X0VA}. Hence these assumptions are exactly the necessary ones.
-}
+  \p{
+    Now \ref{efr-TVLB} follows trivially from \ref{efr-AFCK}
+  }
 
 \p{
   Instead of studying Markov categories, one could study probability monads. The relevant question would then have been to give a universal property for the Giry monad. Our theorem implies this immediately:
@@ -67,7 +69,12 @@
 \subtree{
   \taxon{Corollary}
   \p{
-    Let #{T} be a bicommutative, affine monad on #{\Borel} so that #{T(2)} contains a fair coinflip, #{T} preserves countable cofiltered limits, and the induced midpoint algebras on #{TX} are all iterable. Then there is a unique monoidal monad homomorphism #{G \to T}, where #{G} is the Giry monad.
+    Let #{T} be a bicommutative, affine monad on #{\Borel} so that #{T(2)} contains a coinflip, #{T} preserves the limits #{\lim_{F \subset J \mathrm{ F finite}} \prod_{i \in F} X_i} and pullbacks along coproduct inclusions, and the induced midpoint algebras on #{TX} are all iterable. Then there is a unique monoidal monad homomorphism #{G \to T}, where #{G} is the Giry monad.
+  }
+  \proof{
+    \p{
+      Subject to these assumptions, #{\Borel_T} is a Markov category which satisfies the hypotheses of \ref{efr-TVLB}. Hence there is a strong monoidal, identity-on-objects functor #{\BorelStoch = \Borel_G \to \Borel_T}. Such functors correspond bijectively to morphisms of monads #{G \to T} (see eg \ref{barr-wells-triples-2005}, Theorem 3.6.3), finishing the proof.
+    }
   }
 }
 

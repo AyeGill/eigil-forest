@@ -1,0 +1,114 @@
+\date{2025-12-10T08:42:27Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Preliminaries}
+\parent{efr-AK18}
+\p{
+  The terminology \em{Markov category} was introduced by Fritz in \ref{fritz-synthetic-markov-cats}, although the idea goes back to the work of Golubtsov, \ref{golubtsov-kleisli}. They have been developed extensively as an abstract foundation for probability theory, see eg \ref{fritz-gonda-perrone-rischel-rep}, \ref{rischel-fritz-infinite-products}, \ref{law-large-nums-fritz-etal}, \ref{fritz-gonda-perrone-2021}. We now review the basics.
+}
+\subtree{
+  \taxon{Definition}
+  \title{Markov category}
+  \p{
+    A \em{Markov category} #{\cC} is a symmetric monoidal category in which every object is equipped with a comonoid structure #{(X, \copy_X, \del_X)}, which is compatible with the monoidal structure in the sense that
+    ##{
+      \del_{X \otimes Y} = \del_X \otimes \del_Y, \copy_{X \otimes Y} = (X \otimes \sigma_{X,Y} \otimes Y) \circ (\copy_X \otimes \copy_Y)
+    }
+    and so that #{\del_X} is a natural transformation.
+  }
+}
+\p{
+  There is a strictification result (\ref{fritz-synthetic-markov-cats}, Theorem 10.17) for Markov categories which allows us to freely elide the structural isomorphisms—we generally do so throughout this paper.
+}
+\p{
+  The morphisms of a Markov category are thought of as probability kernels, that is functions with values in probability measures (where these terms may be interpreted in a suitably abstract sense). The copy and delete maps are the non-stochastic maps which either copy or delete their input.
+}
+\p{
+  It is simple to verify that every Markov category is semiCartesian, and thus the only choice involved in equipping a symmetric monoidal category with a Markov structure is #{\copy_X}. A morphism #{f :X \to Y \in \cC} is called \em{deterministic} if it is a homomorphism for the given comonoid structure. The subcategory of deterministic morphisms is denoted #{\cC_\det \subseteq \cC}. It is always a symmetric monoidal subcategory, and Cartesian. Conversely, every Cartesian category carries a unique Markov structure.
+}
+\p{
+  We will often use the notation of Cartesian categories and denote by #{\pi_A} the map #{(A \otimes \del_B): A \otimes B \to A}. 
+}
+\p{
+  Given two maps #{f: X \to A, g: X \to B}, there is a distinguished pairing #{X \to A \otimes B}, given by #{(f \otimes g)\copy_X}. This is called the \em{independent pairing} of #{f} and #{g}. Note that by naturality of #{\del} and the comonoid equations, #{f} and #{g} can be recovered from this pairing by postcomposing with #{\pi_A} or #{\pi_B}. Thus "being independent" is a property of kernels with a tensor product as its codomain. We generalize this to higher tensor products in the obvious way.
+}
+\p{
+  The following class of examples captures almost all Markov categories of interest.
+}
+\subtree{
+  \taxon{Example}
+  \p{
+    If #{\cC} is Cartesian and #{P} is a monoidal monad on #{\cC}, then the Kleisli category (which we denote #{\cC_P}) is a Markov category, with #{\copy_X} being the diagonal in #{\cC}.
+  }
+}
+\subtree{
+  \taxon{Definition}
+  \p{
+    Let #{\cC,\cD} be Markov categories. An oplax Markov functor #{F: \cC \to \cD} is an oplax symmetric monoidal functor so that the following diagram commutes:
+  }
+  \quiver{
+    \begin{tikzcd}
+    F(X) \ar[r] \ar[rd] & F(X \otimes X) \ar[d] \\
+    & F(X) \otimes F(X)
+    \end{tikzcd}
+  }
+  \p{
+    An oplax Markov functor is strong if the underlying monoidal functor is strong.
+  }
+}
+\p{
+  The undecorated term \em{Markov functor} was defined in \ref{fritz-synthetic-markov-cats} to mean what we above called a \em{strong} Markov functor. From this point, "Markov functor" will always mean the strong notion.
+}
+\p{
+  Our goal in this paper is to construct certain functors between Markov categories. The following lemma is helpful in this regard.
+}
+\subtree{
+  \taxon{Lemma}
+  \p{
+    Let #{\cC, \cD} be Markov categories and let #{F: \cC \to \cD} be any functor. Then:
+  }
+  \ol{
+    \li{#{F} admits at most one oplax Markov structure, given by the independent pairing of the two projections #{F(\pi_X), F(\pi_Y): F(X \otimes Y) \to F(X), F(Y)}.}
+    \li{This is a genuine oplax Markov structure if and only if #{F} preserves deterministic and independent maps, in the sense that if #{X \to A \otimes B} is independent, then #{F(X) \to F(A \otimes B) \to F(A) \otimes F(B)} is independent.}
+    \li{This oplax Markov structure is strong if and only if the restricted functor #{F_\det : \cC_\det \to \cD_\det} preserves finite products.}
+  }
+  \proof{
+    \p{
+      It's straightforward to check that if #{F} admits any oplax Markov structure, then it preserves deterministic maps and this restricts to an oplax monoidal structure on #{F_\det}. But functors between Cartesian categories always admit a unique oplax monoidal structure. Hence any two oplax structures on #{F} agree. The only obstruction to this oplax functor extending to a full Markov structure is that it may not be natural with respect to nondeterministic morphisms. Given #{X \to X', Y \to Y'}, the tensor #{X \otimes Y \to X' \otimes Y'} is equal to the independent pairing of #{X \otimes Y \to X \to X'} and the analagous map to #{Y'}. Applying the assumptiong that #{F} preserves independent pairings to this gives naturality. The converse is clear. Finally #{F} is strong if #{F(X \otimes Y) \to F(X) \otimes F(Y)} is an isomorphism, but this is exactly the claim that #{F_\det} preserves products.
+    }
+  }
+}
+\ol{
+  \li{
+    We denote by #{\BorelStoch} the category of standard Borel spaces and Markov kernels (\ref{fritz-synthetic-markov-cats}, Section 4). We denote by #{\Borel} the category of standard Borel spaces and measurable maps. Note that #{\Borel = \BorelStoch_\det}.
+  }
+  \li{
+    In any Markov category with finite coproducts, we write #{2 = I + I} for this coproduct. We denote the two points (that is, the coproduct inclusions) of this space by #{0,1}.
+  }
+}
+
+\p{
+  The categorical notion of product extends obviously to define infinite products. Infinite products exist in many Markov categories of interest, such as those of measurable spaces and Markov kernels, but they clearly can't be characterized by their usual universal property. Instead, we can ask them to be \em{Kolmogorov} products, in the following sense:
+}
+
+\transclude{efr-SIKM}
+\transclude{efr-EB3U}
+
+\p{
+  These were introduced in \ref{rischel-fritz-infinite-products}, where it was also shown that #{\BorelStoch} admits countable Kolmogorov products (Example 3.6).
+}
+
+\transclude{efr-OH6B}
+\p{
+  Note that given any Markov functor #{F: \cC \to \cD}, and a family #{X_j} so that the Kolmogorov product #{\bigotimes_j X_j} exists, there is a family of (necessarily deterministic) maps #{F(\bigotimes_j X_j) \to \bigotimes_{j \in F} X_j} for every finite #{F \subset J}. As usual we say #{F} \em{preserves Kolmogorov products} if this collection exhibits #{F(\bigotimes_j X_j)} as the Kolmogorov product of the family #{F(X_j)}. If #{\cC, \cD} admit Kolmogorov products of a given cardinality, #{F} preserves them if and only if #{F_\det : \cC_\det \to \cD_\det} preserves products of this cardinality.
+}
+
+\p{
+  When the family #{X} is constant, we will denote the Kolmogorov product #{\bigotimes_{i \in J} X} simply by #{X^J}.
+}
+\p{
+  If #{\bigotimes_{i \in J} X_i} is a Kolmogorov product and #{f_i: A \to X_i} is a collection of kernels, there is a canonical independent coupling #{(f_i): A \to \bigotimes_i X_i}, given as the limit of the finite independent couplings #{A \to \bigotimes_{i \in F} X_i}. In the case where all #{f_i} (and all the #{X_i}) are equal, we will denote this simply as #{f^J : A \to X^J}.
+}
+\p{
+  The Kolmogorov product #{(I + I)^\omega = 2^\omega} will play an important role in this paper. We generally write #{0,1 : I \to 2} for the two canonical points in #{2}. If #{b \in 2^\omega} is an element, #{0.b, 1.b, 001101.b \in 2^\omega} denote the result of prepending the given string to #{b}. We may also write #{0.2^\omega} instead of #{\{0\} \otimes 2^\omega} for the subobject given by those streams starting with a #{0}, and so on.
+}

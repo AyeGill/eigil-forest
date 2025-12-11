@@ -2,9 +2,6 @@
 \author{eigil-rischel}
 \import{macros}
 \title{The Universal Property of Measure-Theoretic Probability}
-\todo{Markov cat. section}
-\todo{Redo last part assuming cat under Borel if possible}
-\todo{Monoidality/markov-ness at the end!}
 
 \subtree{
   \title{Introduction}
@@ -41,11 +38,9 @@
 
 }
 
+\transclude{efr-8P2U}
 
 \transclude{efr-AHFX}
-
-\transclude{efr-UOED}
-
 
 \transclude{efr-MGSE}
 
@@ -67,6 +62,21 @@
     It is not clear how to define a good probability theory on top of this—having continuum-sized unions seems to rule out many important measures like the Lebesgue measure.
   }
   \p{
-    Fritz and Lorenzin (\ref{fritz-lorenzin-abstractmeas-2025}) have recently described a category #{\mathsf{BaireMeas}} of \em{Baire measurable spaces} (those arising as the Baire #{\sigma}-algebra on a compact Hausdorff space #{X}), as well as an associated Markov category of kernels, which admits \em{all} (small) Kolmogorov products, and which contains #{\BorelStoch} as a full subcategory. However, since the category of Baire measurable spaces is not Boolean (there are measurable injections which are not the inclusion of a measurable subset), one would have to find a replacement for this assumption.
+    Fritz and Lorenzin (\ref{fritz-lorenzin-abstractmeas-2025}) have recently described a category #{\mathsf{BaireMeas}} of \em{Baire measurable spaces} (those arising as the Baire #{\sigma}-algebra on a compact Hausdorff space #{X}), as well as an associated Markov category of kernels #{\mathsf{BaireStoch}}, which admits \em{all} (small) Kolmogorov products, and which contains #{\BorelStoch} as a full subcategory. 
+  }
+  \subtree{
+    \taxon{Conjecture}
+    \p{
+      #{\mathsf{BaireMeas} \into \mathsf{BaireStoch}} is the initial Markov functor from #{\mathsf{BaireMeas}} into a coinflip Markov category which preserves countable coproducts, pullbacks along coproduct inclusions, and all Kolmogorov products.
+    }
+  }
+  \p{
+    This seems amenable to the methods of this paper—what is missing is a concrete description of the general objects of #{\mathsf{BaireMeas}} as limits of finite ones. However, a universal description of #{\mathsf{BaireMeas}} itself seems elusive, since it is not Boolean—not every measurable injection between such spaces has a measurable image. 
+  }
+  \p{
+    A general measurable map is difficult to represent computationally. It is therefore interesting to consider variations of this theorem which describe more computationally tractable situations. Note that many interesting measures (including the continuous ones on #{\RR}) are continuous images of the uniform measure on the Cantor space #{2^\omega}, and so it is plausible to describe a good amount of probability in this way.
+  }
+  \p{
+    Following the discussion above, the right question to ask seems to be, given a countably extensive Cartesian category #{\cC} (for example of topological spaces, or #{\omega}-dcpos) with products up to a given size, for the free coinflip Markov category #{\overline{\cC}} so that the inclusion preserves countable coproducts, pullbacks along their inclusions and the given Kolmogorov products. It would be interesting to compare this with existing models of continuous probability, such as the category #{\mathsf{TychStoch}} of Tychonoff spaces and continuous kernels introduced in \ref{markov-supports}, and the category of #{\omega \mathrm{qbs}}s and kernels introduced in \ref{vakar-kammar-staton-omega-qbs}.
   }
 }

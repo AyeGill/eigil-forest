@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a Boolean, countably distributive, coinflip Markov category with countable Kolmogorov products. Let #{V_1 \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones (this is definable by Chen's theorem). Then the map #{c^\omega : I \to 2^\omega} factors over #{V_1}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
+  Let #{\cC} be an extensive coinflip Markov category with countable Kolmogorov products, and let #{\Borel \to \cC} be a strong Markov functor which preserves pullbacks along coproduct inclusions and countable Kolmogorov products. Let #{V_1 \subseteq 2^\omega} be the subobject consisting of those sequences containing infinitely many ones. Then the map #{c^\omega : I \to 2^\omega} factors over #{V_1}. In particular, it factors over the inclusion #{1 . 2^\omega \sqcup 01.2^\omega \sqcup \cdots \into 2^\omega} of the subobject of sequences with at least one #{1}.
 }
 \proof{
   \p{

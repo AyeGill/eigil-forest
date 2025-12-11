@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\cC} be a countably distributive, Boolean, coinflip Markov category with countable Kolmogorov products. Let #{F: \Borel_{\bar{\Delta}} \to \cC} be the functor of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((2^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
+  Let #{\phi: A \to (2^\omega)^k} be a kernel in #{\BorelStoch}, and let #{\vee^k : (2^\omega)^k \to 2^k} be the map which is #{1} in each coordinate if the corresponding sequence contains at least one #{1} (and zero else). Let #{\Borel \to \cC} be as above, and let #{F: \Borel_{\bar{\Delta}} \to \cC} be the unique extensions of \ref{efr-HYFI}. Write #{\bar{F}(\phi)} for the unique map #{F(A) \to F((2^\omega)^k)} given as the limit of #{F} applied to the finite truncations. Then #{F(\vee^k)\bar{F}(\phi) = F(\vee^k \phi)}
 }
 \proof{
   \p{

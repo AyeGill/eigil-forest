@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Lemma}
 \p{
-  Let #{\cC} be a countably distributive, Boolean coinflip Markov category with countable Kolmogorov products. Then
+  Let #{\cC} be an extensive Markov category with countable Kolmogorov products. Let #{\Borel \to \cC} be a Markov functor which preserves countable coproducts, countable Kolmogorov products and pullbacks along coproduct inclusions. Then:
 }
 \ol{
   \li{
