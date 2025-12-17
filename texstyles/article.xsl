@@ -16,6 +16,7 @@
 
     <xsl:text>\usepackage[colorlinks=true,linkcolor={blue!30!black}]{hyperref}%&#xa;</xsl:text>
     <xsl:text>\usepackage{amsthm,mathtools}%&#xa;</xsl:text>
+    <xsl:text>\usepackage{autonum}%&#xa;</xsl:text>
     <xsl:text>\usepackage{thmtools}%&#xa;</xsl:text>
     <xsl:text>\usepackage{xcolor}%&#xa;</xsl:text>
     <xsl:text>\usepackage{tikzit}%&#xa;</xsl:text>
