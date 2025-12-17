@@ -7,7 +7,7 @@
 }
 \proof{
   \p{
-    Since #{\Borel} is Cartesian, any such Markov functor must factor over #{\cC_\det}. #{\cC_\det} has countable limits (by \ref{efr-9RDS}) and is countably extensive and Boolean by assumption. The assumptions on #{i} are equivalent to the factorization #{\Borel \to \cC_\det} preserving countable limits and countable coproducts. Hence this uniqueness is exactly \ref{chen-universal-stdborel-2019} theorem 1.1
+    Since #{\Borel} is Cartesian, any such Markov functor must factor over #{\cC_\det}. #{\cC_\det} has countable limits (it has countable products by \ref{efr-OH6B} and pullbacks along monomorphisms, which along with finite products suffices to build equalizers) and is countably extensive and Boolean by assumption. The assumptions on #{i} are equivalent to the factorization #{\Borel \to \cC_\det} preserving countable limits and countable coproducts. Hence this uniqueness is exactly \ref{chen-universal-stdborel-2019} theorem 1.1
   }
 }
 

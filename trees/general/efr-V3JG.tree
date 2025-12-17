@@ -3,7 +3,7 @@
 \import{macros}
 \taxon{Proposition}
 \p{
-  Let #{\cC} be a Markov category with finite coproducts of the unit. Any two coinflips in #{\cC} coincide. In particular, any Markov functor #{\cC \to \cD} which preserves these finite coproducts also preserves the coinflip.
+  Let #{\cC} be a distributive Markov category. Any two coinflips in #{\cC} coincide. In particular, any Markov functor #{\cC \to \cD} which preserves these finite coproducts also preserves the coinflip.
 }
 \proof{
   \p{

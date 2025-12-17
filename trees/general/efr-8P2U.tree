@@ -80,7 +80,7 @@
 }
 
 \p{
-    We denote by #{\BorelStoch} the category of standard Borel spaces and Markov kernels (\ref{fritz-synthetic-markov-cats}, Section 4). We denote by #{\Borel} the category of standard Borel spaces and measurable maps. Note that #{\Borel = \BorelStoch_\det}. Recall that the standard Borel spaces are those measurable spaces arising as the Borel #{\sigma}-algebra on Polish spaces. By Kuratowski's theorem these are either discrete on a countable set, or isomorphic to the real numbers (in the Borel #{\sigma}-algebra).
+    We denote by #{\BorelStoch} the category of standard Borel spaces and Markov kernels (\ref{fritz-synthetic-markov-cats}, Section 4). We denote by #{\Borel} the category of standard Borel spaces and measurable maps. Note that #{\Borel = \BorelStoch_\det}. Recall that the standard Borel spaces are those measurable spaces arising as the Borel #{\sigma}-algebra on Polish spaces. By Kuratowski's theorem these are either discrete on a countable set, or isomorphic to the real numbers (in the Borel #{\sigma}-algebra). Recall also that #{\BorelStoch} is the Kleisli category of a monad on #{\Borel} called the \em{Giry monad}, see \ref{giry-1982} (see also \ref{fritz-synthetic-markov-cats} section 4 for a review of the history of this concept).
 }
 
 \p{

@@ -1,0 +1,10 @@
+\title{A categorical approach to probability theory}
+\date{1982}
+\taxon{Reference}
+\meta{doi}{10.1007/BFb0092872}
+\author{Michèle Giry}
+\meta{bibtex}{\startverb
+ @inproceedings
+{giry-1982, address={Berlin, Heidelberg}, title={A categorical approach to probability theory}, ISBN={978-3-540-39041-1}, DOI={10.1007/BFb0092872}, booktitle={Categorical Aspects of Topology and Analysis}, publisher={Springer}, author={Giry, Michèle}, editor={Banaschewski, B.}, year={1982}, pages={68–85},language={en} }
+\stopverb}
+

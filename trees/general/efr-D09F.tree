@@ -39,14 +39,14 @@
     Thus we can define a countable-arity operator #{M_A: A^\omega \to A} in any of these categories by drawing a sample from #{c^\omega \in 2^\omega} and projecting onto the coordinate of the first #{1} (which necessarily exists).
   }
   \p{
-      For any standard Borel space #{A}, let #{BT(A)} denote the (again standard Borel) space of balanced, finite binary trees with leaves labeled by #{A}. This can be identified with the coproduct #{\sum_{n \in \NN} A^{2^n}}. There is an obvious binary operation #{g: BT(A) \times BT(A) \to BT(A)} which glues two trees together. In #{\cC}, there is a unique kernel #{BT(A) \to A} which carries this operation to the midpoint operation in #{\cC}. Note that this can be factored as a map #{BT(A) \times 2^\omega \to A} which uses the first #{n} bits to choose a branch, composed with the uniform distribution.
+      For any standard Borel space #{A}, let #{BT(A)} denote the (again standard Borel) space of balanced, finite binary trees with leaves labeled by #{A}. This can be identified with the coproduct #{\sum_{n \in \NN} A^{2^n}}. Let #{g : BT(A) \times BT(A) \to BT(A)} glue two trees together, duplicating the shallower one so that they have the same depth. In #{\cC}, there is a unique kernel #{BT(A) \to A} which carries this operation to the midpoint operation in #{\cC}. Note that this can be factored as a map #{BT(A) \times 2^\omega \to A} which uses the first #{n} bits to choose a branch, composed with the uniform distribution.
   }
   \p{
     Given anything like #{(BT(A)^{\omega \times \omega})^{\omega}}, we can build a well-defined map into #{A} by composing these sampling homomorphisms. This is what we mean below by a sentence like "the sampling homomorphism #{BT(A)^{\omega^N} \to A}. Note that this is well-defined in any extensive, coinflip #{\cC} with countable Kolmogorov products equipped with #{\Borel \to \cC}.
   }
 
   \p{
-    Note that we have not proven that #{M_A} is uniquely determined by the coinductive definition #{M_A(a_1, \dots) = m(a_1, M(a_2, \dots))}, merely constructed a canonical such operation. We have not been able to prove uniqueness in general (which would imply that any countably distributive, boolean, countably complete coinflip Markov category is iterable), but neither do we know of a counterexample.
+    Note that we have not proven that #{M_A} is uniquely determined by the coinductive definition #{M_A(a_1, \dots) = m(a_1, M(a_2, \dots))}, merely constructed a canonical such operation. We have not been able to prove uniqueness in general (which would imply that any countably distributive, Boolean, countably complete coinflip Markov category is iterable), but neither do we know of a counterexample.
   }
   \transclude{efr-X0VA}
   \transclude{efr-HYFI}
@@ -79,5 +79,5 @@
 }
 
 \p{
-  This confirms a conjecture of Fritz
+  This settles an unpublished 
 }

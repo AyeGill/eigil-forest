@@ -40,9 +40,9 @@
 
 \transclude{efr-8P2U}
 
-\transclude{efr-AHFX}
-
 \transclude{efr-MGSE}
+
+\transclude{efr-AHFX}
 
 \transclude{efr-ALKX}
 
@@ -74,7 +74,7 @@
     This seems amenable to the methods of this paper—what is missing is a concrete description of the general objects of #{\mathsf{BaireMeas}} as limits of finite ones. However, a universal description of #{\mathsf{BaireMeas}} itself seems elusive, since it is not Boolean—not every measurable injection between such spaces has a measurable image. 
   }
   \p{
-    A general measurable map is difficult to represent computationally. It is therefore interesting to consider variations of this theorem which describe more computationally tractable situations. Note that many interesting measures (including the continuous ones on #{\RR}) are continuous images of the uniform measure on the Cantor space #{2^\omega}, and so it is plausible to describe a good amount of probability in this way.
+    A general measurable map is difficult to represent computationally. It is therefore interesting to consider variations of this theorem which describe more computationally tractable situations. Note that every compactly supported measure on #{\RR^k} is the image of the uniform measure on #{2^\omega} under a continuous function, so many measures of interest can be represented in this way (if we work with the extended real line #{[-\infty, \infty]} instead, every probability measure can be represented).
   }
   \p{
     Following the discussion above, the right question to ask seems to be, given a countably extensive Cartesian category #{\cC} (for example of topological spaces, or #{\omega}-dcpos) with products up to a given size, for the free coinflip Markov category #{\overline{\cC}} so that the inclusion preserves countable coproducts, pullbacks along their inclusions and the given Kolmogorov products. It would be interesting to compare this with existing models of continuous probability, such as the category #{\mathsf{TychStoch}} of Tychonoff spaces and continuous kernels introduced in \ref{markov-supports}, and the category of #{\omega \mathrm{qbs}}s and kernels introduced in \ref{vakar-kammar-staton-omega-qbs}.

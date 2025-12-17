@@ -14,7 +14,8 @@
   }
   \p{
     Now for any probability measure #{\mu}, we can write it as #{\mu = M(a_1,\dots)}, where each #{a_i} is a finitary dyadic measure. We define our operation as #{f(\mu) = M(f(a_1), \dots)}, with #{f(a_i)} defined as above. It suffices to show that this is well-defined, since 
-    ##{f(m(\mu^1,\mu^2)) = f(m(M(a_1^1,\dots),M(a_1^2,\dots))) = f(M(m(a^1_1,a^2_1), \dots)) = M(m(f(a_1^1),f(a_1^2)),\dots) = m(f(\mu^1),f(\mu^2))}
+    ##{f(m(\mu^1,\mu^2)) = f(m(M(a_1^1,\dots),M(a_1^2,\dots))) =}
+    ##{f(M(m(a^1_1,a^2_1), \dots)) = M(m(f(a_1^1),f(a_1^2)),\dots) = m(f(\mu^1),f(\mu^2))}
   }
   \p{
     Now let #{M(a_1,\dots) = M(b_1,\dots) = \mu} be two representations in this form of the same measure. Then there exists some smallest #{N} so that there exists a finitary dyadic probability measure #{c_1 = \sum_i \frac{k_i}{2^N} \delta_{x_i}} so that #{k_i/2^N < 2 \mu(x_i)} whenever this is positive - that is, so that #{c/2} is \em{strictly} less than #{\mu} everywhere on the support.

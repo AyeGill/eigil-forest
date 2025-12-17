@@ -21,7 +21,7 @@
     Note that any coinflip structure is determined by the family of maps #{m(\pi_0,\pi_1) : A \otimes A \to A}. To define a coinflip structure, such a family #{\mu_A} must satisfy the equations of a midpoint algebra, be natural in #{A}, and have the further property that #{\mu_A f = \mu_A (\pi_0 f, \pi_1 f)} (that is, the composite depends only on the projections of #{f}).
   }
   \p{
-    It is not clear that coinflip structures are preserved by all Markov functors, since #{F(\mu_A)} only has to enjoy the above property with respect to maps in the image of #{F}. However, as we now show, this is true in the distributive case.
+    Coinflip structures are not preserved by all Markov functors, since #{F(\mu_A)} only has to enjoy the above property with respect to maps in the image of #{F}. However, as we now show, this is true in the distributive case.
   }
 
   \transclude{efr-0XH9}

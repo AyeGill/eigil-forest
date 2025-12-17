@@ -1,0 +1,16 @@
+\title{Introduction to extensive and distributive categories}
+\date{1993-02-03}
+\taxon{Reference}
+\meta{doi}{10.1016/0022-4049(93)90035-R}
+\author/literal{Aurelio Carboni}
+\author/literal{Stephen Lack}
+\author/literal{R. F. C. Walters}
+\meta{bibtex}{\startverb
+ @article
+{Carboni_Lack_Walters_1993, title={Introduction to extensive and distributive categories}, volume={84}, ISSN={0022-4049}, DOI={10.1016/0022-4049(93)90035-R}, number={2}, journal={Journal of Pure and Applied Algebra}, author={Carboni, Aurelio and Lack, Stephen and Walters, R. F. C.}, year={1993}, month={Feb}, pages={145–158} }
+\stopverb}
+\subtree{\title{Abstract}
+\p{
+In recent years, there has been considerable discussion as to the appropriate definition of distributive categories. Three definitions which have had some support are: (1) A category with finite sums and products such that the canonical map δ:A×B+ A×C→A×(B+C) is an isomorphism (Walters). (2) A category with finite sums and products such that the canonical functor +:A/A× A/B→A/(A+B) is an equivalence (Monro). (3) A category with finite sums and finite limits such that the canonical functor + of (2) is an equivalence (Lawvere and Schanuel). There has been some confusion as to which of these was the natural notion to consider. This resulted from the fact that there are actually two elementary notions being combined in the above three definitions. The first, to which we give the name distributivity, is exactly that of (1). The second notion, which we shall call extensivity, is that of a category with finite sums for which the canonical functor + of definitions (2) and (3) is an equivalence. Extensivity, although it implies the existence of certain pullbacks, is essentially a property of having well-behaved sums. It is the existence of these pullbacks which has caused the confusion. The connections between definition (1) and definitions (2) and (3) are that any extensive category with products is distributive in the first sense, and that any category satisfying (3) satisfies (1) locally. The purpose of this paper is to present some basic facts about extensive and distributive categories, and to discuss the relationships between the two notions.
+}}
+
