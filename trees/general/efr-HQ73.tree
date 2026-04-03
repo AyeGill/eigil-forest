@@ -14,7 +14,7 @@
   We will apply our theory chiefly to two problems. First, we will use them to generalize \em{open games} (Hedges, \ref{hedges-towards-compositional-thesis}) to a larger class of interfaces (namely, indexed families of sets) while at the same time considering possibly-stochastic maps. This will allow us to construct the so-called \em{external choice} operator on open games, which describes branching.
 }
 \p{
-  Secondly, we will generalize Myers' categorical dynamical systems theory to allow for stochastic maps in the base. When combined with another generalization of these systems, to general parametrized lenses, this gives a more natural way of modeling certain stochastic dynamical systems, such as those associated to the training dynamics of machine learning models, see eg \ref{efr-RUTY}.
+  Secondly, we will generalize Myers' categorical dynamical systems theory to allow for stochastic maps in the base. When combined with another generalization of these systems, to general parametrized lenses, this gives a more natural way of modeling certain stochastic dynamical systems, such as those associated to the training dynamics of machine learning models, see eg \ref{efr-IMZ3}.
 }
 \subtree{
   \title{A brief introduction to lenses}

@@ -1,0 +1,25 @@
+\date{2026-04-02T12:09:33Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Lemma}
+\title{The Archimedean Probability Lemma}
+\p{
+  Let #{\cC} be a distributive coinflip Markov category where the Kolmogorov product #{2^\omega} exists, let #{\chi: 2^\omega \to A} be a deterministic map. Suppose there exist maps #{d: A \otimes A \to A} and #{s: 2^\omega \to 2^\omega} satisfying:
+  \ol{
+    \li{
+      For every finite #{N}, #{\pi_{2^N}s : 2^\omega \to 2^\omega \to 2^N} factors over some finite projection #{2^\omega \to 2^M}. Moreover each of these factorizations
+      #{2^M \to 2^N} is given by a map of finite sets which has fibers of uniform size.
+    }
+    \li{
+      #{\chi} factors over every cofinite projection #{2^\omega \to 2^{\omega_{>N}}}.
+    }
+    \li{
+      #{d(\chi(x), \chi(s(x))) = 1} as maps #{2^\omega \to 2}.
+    }
+    \li{
+      #{d(x,x) = x}.
+    }
+  }
+  Then #{\chi \circ f^\omega = 1}, where #{f^\omega: I \to 2^\omega} is the independent pairing of #{\omega}-many coinflips.
+}
+

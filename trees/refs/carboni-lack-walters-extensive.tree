@@ -7,7 +7,7 @@
 \author/literal{R. F. C. Walters}
 \meta{bibtex}{\startverb
  @article
-{Carboni_Lack_Walters_1993, title={Introduction to extensive and distributive categories}, volume={84}, ISSN={0022-4049}, DOI={10.1016/0022-4049(93)90035-R}, number={2}, journal={Journal of Pure and Applied Algebra}, author={Carboni, Aurelio and Lack, Stephen and Walters, R. F. C.}, year={1993}, month={Feb}, pages={145–158} }
+{carboni-lack-walters-extensive, title={Introduction to extensive and distributive categories}, volume={84}, ISSN={0022-4049}, DOI={10.1016/0022-4049(93)90035-R}, number={2}, journal={Journal of Pure and Applied Algebra}, author={Carboni, Aurelio and Lack, Stephen and Walters, R. F. C.}, year={1993}, month={Feb}, pages={145–158} }
 \stopverb}
 \subtree{\title{Abstract}
 \p{

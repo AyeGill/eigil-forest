@@ -1,0 +1,12 @@
+\date{2026-04-02T13:39:04Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Conjecture}
+\title{Description of Coinflip Completion}
+\p{
+  Let #{\cC} be a distributive Cartesian category with countable products.
+  Then the morphisms #{A \to B} of the coinflip completion with countable Kolmogorov products are given by equivalence classes of deterministic maps #{f: 2^\omega \otimes A \to B} (which are morally identified with the map given by composing this with infinite independent coinflips).
+}
+\p{
+  The only nontrivial part is to show that these are stable under forming limiting maps into Kolmogorov products.
+}

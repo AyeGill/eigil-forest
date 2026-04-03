@@ -9,7 +9,7 @@
   We will need to impose a few different categorical properties on our Markov categories. These are analogues of preexisting properties of ordinary categories, but will typically need to be modified somewhat to suit Markov categories. The usual pattern is to demand that #{\cC_\det} has some property, and that this is preserved by the inclusion into #{\cC}. In this section we will describe these conditions.
 }
 \p{
-  For background on extensive and distributive categories, see \ref{carboni-lack-walters-extensive}. For background on Boolean categories, see \ref{jonhstone-elephant-vol1}, section A1.4. \ref{chen-universal-stdborel-2019} also contains a review of these terms and the relations between them that suffices for this paper.
+  For background on extensive and distributive categories, see \ref{carboni-lack-walters-extensive}. For background on Boolean categories, see \ref{johnstone-elephant-vol1}, section A1.4. \ref{chen-universal-stdborel-2019} also contains a review of these terms and the relations between them that suffices for this paper.
 }
 
 \p{

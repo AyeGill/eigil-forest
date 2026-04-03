@@ -1,0 +1,16 @@
+\date{2026-04-02T12:48:47Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Conjecture}
+\title{Preservation of Causality}
+\p{
+  Let #{\cC} be a Cartesian distributive category with countable products and let #{\cC \to \bar{\cC}} be a (the) coinflip completion as a Markov category with countable Kolmogorov products.
+  Then #{\bar{\cC}} is a causal Markov category.
+}
+\subtree{
+  \taxon{Remark}
+  \p{
+    I believe this is true without the Kolmogorov products, proven by characterizing the homset in terms of dyadic (finitary) distributions on maps.
+  }
+}
+

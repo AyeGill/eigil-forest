@@ -16,7 +16,7 @@
     This sampling map is a #{\omega}-midpoint homomorphism, in the sense that #{s_A(\sum_i 1/2^i \mu_i) = M_A(s_A \mu_1, s_A \mu_2, \dots)}.
   }
   \li{
-    These maps assemble into a functor #{\Borel_{\Delta} \to \cC} which extends the unique #{\Borel \to \cC}.
+    These maps assemble into a functor #{\Borel_{\bar{\Delta}} \to \cC} which extends the unique #{\Borel \to \cC}.
   }
 }
 \proof{
