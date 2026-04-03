@@ -58,3 +58,5 @@
 \p{
   From a programming/type theory point of view, the sensible thing is not to talk about deterministic morphisms, but to have a subsyntax for "pure" morphisms and speak of this category. And then have a statement that in the initial models all the deterministic maps are pure. This would necessitate modifying/rethinking the proof that #{\vee f^\omega = 1}.
 }
+
+  \transclude{efr-A1R8}

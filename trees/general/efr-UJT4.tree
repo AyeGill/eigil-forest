@@ -28,3 +28,56 @@
     Is there a connection between assume-guarantee reasoning (satisfies #{x \star q \leq p \star q, p \star y \leq p \star q \Rightarrow x \star y \leq p \star q}) and the Nash composition for open games #{x \star y \leq x \star q, x \star y \leq p \star y \Rightarrow x \star y \leq p \star q}? They are "duals" to one another, is that anything?
   }
 }
+\subtree{
+  \title{
+    Comparison of teleology
+  }
+  \p{
+    When talking about evolution, people often use what might be called "teleological reasoning". That is, an organism evolved to do X for purpose Y. This makes some amount of sense, but of course evolution is a particular dynamical system, which doesn't always follow naive game-theoretic logic. Can we say something formal about this, in the generality of mapping from dynamical systems to solution concepts in game theory? It would be interesting to say something like "evolution corresponds to X type of local optimimum composed according to tensor product Y (the Nash product or something else), given some abstract model of evolution as a dynamical system.
+  }
+}
+\subtree{
+  \title{
+    Stochastic type theory using Markov fibrations
+  }
+  \p{
+    There might also be space for Kolmogorov products here? Unclear. "Kolmogorov inductive types"
+  }
+  \ol{
+    \li{
+      Consider initial "Markov Comprehension Categories" of some sort as the syntactical models of this type theory.
+    }
+    \li{
+      Figure out what sort of normalization proof would be desirable or necessary here.
+    }
+    \li{
+      Distributive to get Bool and so on.
+    }
+    \li{
+      Question is what are some actually interesting dependent types? Can add equality types with pullbacks and stuff.
+    }
+    \li{
+      How does "the initial Markov etc etc" compare with a list of judgments?
+    }
+    \li{
+      Can we expect any sort of normalization theorem here? Surely not in high generality.
+    }
+  }
+}
+\subtree{
+  \title{Probabilistic programming with recursion in terms of initial Markov categories}
+  \p{
+    Without the assumption of Boolean-ness, we can't define the map #{2^\omega \to \NN} which takes the index of the first #{1}, hence we can't use this and the fact that an infinite set of coinflips always has a one to build up the rest of the measures, as in \ref{efr-AK18}. However, in a programming with recursion, this map is definable as a partial map. Can we use this to really build a minimal probability theory?
+  }
+  \p{
+    Probably important:
+    \ref{vakar-kammar-staton-omega-qbs}
+  }
+  \p{
+    If we try working in these categories, we find we can't do the proof, since "infinitely many 1s" is not a continuous map (even if it's allowed to "not terminate" on the complement), but "at least one 1" is not independent of the prefix.
+  }
+  \p{
+    Can we do something with "CD category(partial markov), initial extensive and countably complete, plus traced for the coproduct"? This at least allows us to express the map that fails on all zeroes and else gives the index of the first 1.
+  }
+  \transclude{efr-RI1E}
+}
