@@ -60,3 +60,8 @@
 }
 
   \transclude{efr-A1R8}
+
+\p{
+  A meta-principle, which you can hope to be true, is this:
+  Given #{\hat{f}: 2^\omega \times A \to B} in a Cartesian category representing #{f: A \to B} in a coinflip completion, if #{f} is deterministic, then there exists (at least one, but probably a set of full measure) #{b \in \{0,1\}^\omega} (an actual bitstream, not in #{\cC}) so that #{\hat{f}(b,A) = f} (and in particular #{f} is already in the Cartesian category under consideration).
+}
