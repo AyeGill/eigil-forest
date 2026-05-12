@@ -65,3 +65,210 @@
   A meta-principle, which you can hope to be true, is this:
   Given #{\hat{f}: 2^\omega \times A \to B} in a Cartesian category representing #{f: A \to B} in a coinflip completion, if #{f} is deterministic, then there exists (at least one, but probably a set of full measure) #{b \in \{0,1\}^\omega} (an actual bitstream, not in #{\cC}) so that #{\hat{f}(b,A) = f} (and in particular #{f} is already in the Cartesian category under consideration).
 }
+
+\subtree{
+  \taxon{Lemma}
+  \p{
+    Let #{\sigma_n : A \to \bigotimes B_i} be a family of maps. Suppose for each finite subproduct, the marginal #{A \to \prod_{i \leq M} B_i} is eventually constant, for #{n \geq n_M} say. Suppose there is a (parameterized) measure #{P \to A} so that #{\sigma_n \mu = \sigma_1 \mu} for all #{n}. Then #{\sigma_\infty \mu = \sigma_1 \mu} also.
+  }
+}
+
+\p{
+  This is essentially the key part of my proofs in the universal property paper. The hard part in applying this obviously is proving that these maps exist, but also in proving that the limiting map actually exhibits the identity that you want. There we usually have to observe that it does on some measure-1 subset of the sample space, which is enough.
+}
+
+\p{
+  The specific pullbacks that have to be preserved is a bit unclear. It would be nice if they could all be deduced from the Kolmogorov property along with the assumption that decidable subsets/coproduct inclusions have this property.
+}
+
+\subtree{
+  \title{On limits that are preserved by distribution monads}
+  \p{
+    The property of \em{Kolmgorov products} is essentially that the cofiltered limit #{\prod_{i \in \NN} X_i \cong \lim_{N} \prod_{i < N}X_i} is preserved by the probability monad #{P}, (or equivalently that it is preserved by the inclusion into the Kleisli category - this formulation has the advantage of making sense for Markov categories that are not monadic).
+  }
+  \p{
+    (Note that this does make sense for uncountable products also, quantifying instead over the poset of finite subsets of the indexing set). We can ask whether a general cofiltered limit is also preserved. Note that this cannot be true of \em{all} cofiltered limits, because an uncountable intersection of full-measure sets may be \em{empty}.
+  }
+  \p{
+    Let #{\lim_i A_i} be a cofiltered limit. We can express it in terms of products and pullbacks, as the pullback of the diagram
+    \quiver{
+      \begin{tikzcd}
+      {\lim_i A_i} \ar[d] \ar[r] & {\prod_i A_i} \ar[d]\\
+      {\prod_i A_i} \ar[r] & \prod_{i \to j} (A_i \times A_j)
+      \end{tikzcd}
+    }
+    (Here the bottom map is the diagonal, and the top carries #{(a_i)} to #{(a_i, p^i_j(a_i))}, where #{p} are the maps in the diagram we are taking the colimit of). If this pullback is preserved by the probability monad, and the products here are carried to Kolmogorov products, one can show that the inverse limit is also preserved. (This pullback just expressed the limit as an equalizer - the point is that we can expect pullbacks like this to be preserved at least some of the time).
+  }
+  \p{
+    Thus we can not demand all Kolmogorov products (of all cardinalities) and that all pullbacks along monos (even split ones) are preserved by the functor. On the other hand, this also shows that, as soon as we have countable Kolmogorov products, we are pretty close to having #{T} preserve all sequential cofiltered limits. This may be considered as an alternative axiom.
+  }
+  \p{
+    Note that we will usually demand that it preserve every pullback along a \em{decidable} subobject (that is, a coproduct inclusion). The class of subobjects whose classifying pullback (over #{* \xto{\top} \Omega}) is preserved by the probability monad is of great interest - this assumption implies it contains all the decidable subobjects. If we assume that countable cofiltered limits are preserved, we also get all the "co-semidecidable" ones, i.e those of the form #{\forall n. p(n)} where #{p: \NN \to 2} is a sequence of decidable propositions.
+  }
+}
+\p{
+  Is there a subobject version of the Kolmogorov or Hewitt-Savage 0-1 laws?
+  It would state something like "given a subobject #{V \subseteq X^{\otimes \NN}} which is invariant under finite permutations, and an IID measure #{\mu: P \to X^\NN}, dots". Unclear what the statement should be - can't expect "either factors or factors over complement", since that requires decidability kind of.
+}
+\p{
+  There may be some way of stating this, in terms of whether two independent copies of the measure belong to the set or not.
+  What I really want is: if two sets both have this property, then any measure which is concentrated on their union is also concentrated in one of them(??). 
+}
+\p{
+  Possibly something like this would work for \em{split monos}, (maybe just by applying the splitting to the existing theorem). However the inclusion of streams with one 1 in all streams is not split (?).
+}
+\p{
+  But I think the map #{\sum_n \{b \in 2^\NN \mid b_n = 1\} \to \{b \in 2^\NN \mid \exists n: b_n=1\}} does split (it's an epi) (under very mild assumptions, weaker than elementary topos+NNO). And I think this gives us a chance, since the former is a decidable subset of #{\NN \times 2^\NN}.
+}
+\subtree{
+  \title{Claude's proof that Giry on standard Borel spaces preserves all pullbacks}
+
+  \p{
+  Here's the full writeup. The key structural insight is that the reduction is almost entirely formal — the only non-categorical input is disintegration of measures, used in one place at the end.
+  }
+
+\subtree{
+  \title{Setup}
+\p{
+Let #{C} = standard Borel spaces and Borel-measurable maps; equip it with the topology #{J} generated by countable Borel partitions. Write #{\mathrm{Sh}(C,J)} for the resulting topos; #{J} is subcanonical, so representables are sheaves. Let #{P:C\to C} be the Giry functor: #{PX} is the standard Borel space of probability measures on #{X}, and #{P(f)=f_*} on a Borel map #{f}. Let #{\tilde P:\mathrm{Sh}(C,J)\to\mathrm{Sh}(C,J)} be the left Kan extension of #{ay\circ P} along #{ay:C\to\mathrm{Sh}(C,J)}. Equivalently, #{\tilde P} is the unique cocontinuous endofunctor of #{\mathrm{Sh}(C,J)} whose value on representables is #{\tilde P(yX)=yPX}.
+
+The single fact about #{P} we use is:
+
+**(D) — Measurable disintegration.** For every Borel #{g:W\to T} between standard Borel spaces, every #{T'\in C}, and every kernel #{k_W:T'\to PW}, the pushforward #{g_*k_W:T'\to PT} admits a Borel-measurable disintegration: a family #{(k_W^{(t',x)}\in P(g^{-1}(x)))_{(t',x)\in T'\times T}}, jointly Borel in #{(t',x)}, with
+##{k_W(t')=\int_T k_W^{(t',x)}\,d(g_*k_W(t'))(x)\quad\text{for every }t'.}
+
+This is standard for standard Borel spaces (Kallenberg, *Foundations of Modern Probability*, Thm. 6.3 and surrounding).
+}
+}
+\subtree{
+  \taxon{Proposition}
+
+\p{
+  #{\tilde P} preserves pullbacks along monomorphisms in #{\mathrm{Sh}(C,J)}: for every mono #{m:A\hookrightarrow B} and every #{f:F\to B}, the comparison
+  ##{\tilde P(F\times_B A)\longrightarrow \tilde P F\times_{\tilde P B}\tilde P A}
+is an isomorphism.
+}
+\subtree{
+
+  \taxon{Proof}
+  \p{
+Step 1 — Reduction to pullbacks of #{\mathrm{true}}
+
+Every mono in a topos is the pullback of #{\mathrm{true}:1\to\Omega}. Given #{m:A\hookrightarrow B} classified by #{\chi:B\to\Omega} and any #{f:F\to B}, pullback pasting along #{\chi\circ f:F\to\Omega} gives
+##{F\times_B A\;=\;F\times_B(B\times_\Omega 1)\;=\;F\times_\Omega 1.}
+Suppose we have shown that #{\tilde P} preserves the pullback #{X\times_\Omega 1\to X} for every #{\chi:X\to\Omega}. Note #{\tilde P 1=1} because #{1=y(*)} is representable and #{P(*)=*}. Then, applying the hypothesis to both #{B\to\Omega} and #{F\to\Omega} and pasting,
+##{\tilde P(F\times_B A)=\tilde P(F\times_\Omega 1)=\tilde P F\times_{\tilde P\Omega}1=\tilde P F\times_{\tilde P B}(\tilde P B\times_{\tilde P\Omega}1)=\tilde P F\times_{\tilde P B}\tilde P A.}
+So it suffices to prove: for every #{\chi:X\to\Omega}, #{\tilde P} preserves the pullback #{\chi^{-1}(1)\to X}.
+
+Step 2 — Reduction to mono into representable
+
+Write #{X=\mathrm{colim}_{(yT,b)\in\int X}yT} as a colimit over its category of elements. Setting #{V:=\chi^{-1}(1)\hookrightarrow X}, universality of colimits in the topos gives #{V=\mathrm{colim}_T V_T}, where #{V_T:=b^{-1}V\hookrightarrow yT}.
+
+Suppose for every #{T\in C} and every subsheaf #{U\hookrightarrow yT} we have #{\tilde P U=\tilde P yT\times_{\tilde P\Omega}1}. Then, using cocontinuity of #{\tilde P} and universality of colimits in #{\mathrm{Sh}(C,J)} (which lets us pull the pullback past the colimit),
+##{\tilde P V=\mathrm{colim}_T\tilde P V_T=\mathrm{colim}_T(\tilde P yT\times_{\tilde P\Omega}1)=(\mathrm{colim}_T\tilde P yT)\times_{\tilde P\Omega}1=\tilde P X\times_{\tilde P\Omega}1.}
+So it suffices to prove the proposition when #{X=yT}.
+
+Step 3 — The case #{U\hookrightarrow yT}
+
+Fix #{T\in C} and a subsheaf #{U\hookrightarrow yT}, classified by #{\chi_U:yT\to\Omega}. Then #{U(W)\subseteq C(W,T)} is the set of #{g:W\to T} such that #{g^*\chi_U=\mathrm{max}_W} (the maximal sieve on #{W}); equivalently, those #{g} that factor through #{U} as a sheaf map.
+
+The presheaf-level coend computing #{\tilde P}:
+##{\tilde P F\;=\;a_!\left(\,\int^{W\in C}F(W)\cdot yPW\,\right).}
+Sections of the presheaf coend at #{T'} are equivalence classes of triples #{(W,\eta\in F(W),k\in C(T',PW))}, where the equivalence is generated by basic moves: for each #{h:W_1\to W_2} in #{C},
+##{(W_1,F(h)\eta_2,k_1)\;\sim\;(W_2,\eta_2,P(h)_*k_1)\qquad(\eta_2\in F(W_2),\;k_1\in C(T',PW_1)).}
+After sheafification, sections of #{\tilde P F} at #{T'} are presented by such triples, locally on a Borel partition of #{T'}, modulo local coend-equivalence.
+
+Specializing:
+
+- #{\tilde P yT(T')=yPT(T')=C(T',PT)} — kernels.
+- #{\tilde P U(T')} — locally, triples #{(W,g\in U(W),k_W:T'\to PW)}.
+- #{\tilde P\Omega(T')} — locally, triples #{(W,\sigma\in\Omega(W),k_W)}.
+- #{\tilde P 1(T')=*}.
+
+The map #{1\to\tilde P\Omega} sends #{*} to the class #{[(W,\mathrm{max}_W,k_W)]} for any choice of #{W} and #{k_W} (all such classes coincide via the unique map #{W\to *}).
+
+The map #{\tilde P\chi_U:\tilde P yT\to\tilde P\Omega} sends #{k\in C(T',PT)} to #{[(T,\chi_U,k)]}.
+
+The canonical comparison
+##{\Phi:\tilde P U\longrightarrow\tilde P yT\times_{\tilde P\Omega}1}
+sends #{(W,g,k_W)} to #{g_*k_W\in C(T',PT)}. (Use the basic move along #{g:W\to T}: #{(W,g,k_W)\sim(T,\mathrm{id}_T,g_*k_W)}, image #{g_*k_W}.) The image lies in the pullback because #{g\in U(W)} gives #{g^*\chi_U=\mathrm{max}_W}, hence #{[(T,\chi_U,g_*k_W)]=[(W,\mathrm{max}_W,k_W)]} which is the true class.
+
+We show #{\Phi} is an isomorphism.
+
+Surjectivity of #{\Phi}
+
+Let #{k\in C(T',PT)} be a section of the pullback at #{T'}. By definition this means: locally on #{T'} (i.e., after passing to a Borel partition #{T'=\sqcup_i T'_i}), the class #{[(T,\chi_U,k|_{T'_i})]} in the presheaf coend equals the class of the true section.
+
+A *single span* witness for this equality is data #{(W,g:W\to T,k_W:T'_i\to PW)} with #{g\in U(W)} and #{g_*k_W=k|_{T'_i}}: it gives #{(T,\chi_U,k|_{T'_i})\sim(W,g^*\chi_U=\mathrm{max}_W,k_W)\sim(*,\mathrm{max}_*,!)} via the moves along #{g:W\to T} (reverse) and #{W\to *} (forward).
+
+A general witness is a finite zigzag of basic moves; we claim it can always be replaced by a single span. Inductively, two adjacent moves
+##{(W_1,\eta_1,k_1)\sim(W_3,\eta_3,k_3)\sim(W_2,\eta_2,k_2)}
+along #{h_1:W_1\to W_3}, #{h_2:W_2\to W_3} are replaced by a single span #{W_1\xleftarrow{p_1}W_1\times_{W_3}W_2\xrightarrow{p_2}W_2}. The pullback exists in #{C} (standard Borel is finitely complete). Setting #{\zeta:=F(p_1)\eta_1=F(p_2)\eta_2} (these agree because both equal #{F(h_1p_1)\eta_3=F(h_2p_2)\eta_3}), we need a kernel #{\rho:T'_i\to P(W_1\times_{W_3}W_2)} with #{(p_1)_*\rho=k_1} and #{(p_2)_*\rho=k_2} — given #{(h_1)_*k_1=k_3=(h_2)_*k_2}. This is the coupling problem solved by (D); see the construction below.
+
+So locally on #{T'}, #{k} admits a single-span presentation #{(W,g,k_W)} with #{g\in U(W)} and #{g_*k_W=k}. The triple defines a local section of #{\tilde P U}, and these glue (by sheafification) to a global section of #{\tilde P U} mapping to #{k} under #{\Phi}.
+
+Injectivity of #{\Phi}
+
+Suppose two local sections #{(W,g,k_W)} and #{(W',g',k_{W'})} of #{\tilde P U} at #{T'} — both with #{g\in U(W)}, #{g'\in U(W')} — satisfy #{g_*k_W=g'_*k_{W'}=k} as kernels #{T'\to PT}. We exhibit a single span witnessing their equality in #{\tilde P U(T')}.
+
+Form #{W\times_T W'\in C} (standard Borel as a closed Borel subset of #{W\times W'}), with projections #{p:W\times_T W'\to W} and #{p':W\times_T W'\to W'}. We construct #{\rho:T'\to P(W\times_T W')} with #{p_*\rho=k_W} and #{p'_*\rho=k_{W'}}.
+
+For each #{t'\in T'}, the measure #{\mu_{t'}:=g_*k_W(t')=g'_*k_{W'}(t')\in PT} is well-defined. By (D), choose Borel-measurable disintegrations
+##{k_W(t')=\int_T k_W^{(t',x)}\,d\mu_{t'}(x),\qquad k_{W'}(t')=\int_T k_{W'}^{(t',x)}\,d\mu_{t'}(x),}
+with #{k_W^{(t',x)}\in P(g^{-1}(x))} and #{k_{W'}^{(t',x)}\in P(g'^{-1}(x))}. Set
+##{\rho(t')\;:=\;\int_T \bigl(k_W^{(t',x)}\otimes k_{W'}^{(t',x)}\bigr)\,d\mu_{t'}(x)\;\in\;P(W\times W').}
+The integrand at #{x} is supported on #{g^{-1}(x)\times g'^{-1}(x)\subseteq W\times_T W'}, so #{\rho(t')} is supported on #{W\times_T W'} — view it as an element of #{P(W\times_T W')}. Joint measurability of disintegrations gives Borel-measurability of #{\rho} in #{t'}.
+
+Verification of the projections:
+##{p_*\rho(t')=\int_T p_*\bigl(k_W^{(t',x)}\otimes k_{W'}^{(t',x)}\bigr)\,d\mu_{t'}(x)=\int_T k_W^{(t',x)}\,d\mu_{t'}(x)=k_W(t'),}
+and symmetrically #{p'_*\rho=k_{W'}}.
+
+Now apply basic moves. Along #{p:W\times_T W'\to W}, with #{\eta_2=g}:
+##{(W\times_T W',\;U(p)(g)=g\circ p,\;\rho)\;\sim\;(W,\;g,\;p_*\rho=k_W).}
+Note #{g\circ p\in U(W\times_T W')} because #{U} is a sieve on #{T} (closed under precomposition) and #{g\in U(W)}. Symmetrically along #{p'}:
+##{(W\times_T W',\;g'\circ p',\;\rho)\;\sim\;(W',\;g',\;k_{W'}).}
+By the universal property of the pullback, #{g\circ p=g'\circ p'} as maps #{W\times_T W'\to T}, so the two left-hand triples coincide. Therefore #{(W,g,k_W)} and #{(W',g',k_{W'})} represent the same local section of #{\tilde P U}. #{\blacksquare}}
+}
+}
+\p{
+A couple of remarks worth flagging.
+
+The proof uses essentially nothing about the Giry monad beyond (D). Any functor #{F:C\to C} on a finitely complete category, equipped with a "measurable disintegration" property of the same shape, will give an extension #{\tilde F} preserving pullbacks along monos by exactly this argument. The structural ingredients are: (i) finite limits in #{C} for forming #{W\times_T W'}, (ii) cocontinuity of #{\tilde F} from the LKE construction, (iii) universality of colimits in the topos, (iv) (D) as the one analytic input.
+
+The mono-pullback hypothesis on #{P} that we discussed earlier (#{P} preserves #{g'^{-1}(W)} for #{W\hookrightarrow T} Borel) is the trivial special case of (D) where #{g} is an inclusion: the disintegration is trivial because each fiber #{g^{-1}(x)} is either empty or a single point. The general (D) is strictly stronger and is what's actually doing the work. The category-of-elements decomposition in Step 2 forces us to handle subsheaves #{U\hookrightarrow yT} where #{U} may be wildly non-Borel (Vitali, Bernstein, etc.), and the witnessing #{g:W\to T} in the coend is then far from being a mono — disintegration over arbitrary #{g} is unavoidable.
+}
+}
+
+\p{
+  If we believe this theorem, then this is a sheaf topos model of probability where all pullbacks are preserved. 
+}
+\subtree{
+  \title{The Giry monad on sheaves on Borel preserves countable Kolmogorov products}
+  \p{
+    To see this, recall the coend construction of Kan extensions: #{\tilde{P}(X)(T) = \int^K X(K) \times \Hom(T, PK)}.
+    Let #{(X_i)} be a sequential inverse limit of sheaves and write out:
+    ##{\int^K \lim_i X_i(K) \times \Hom(T, PK) \to  \lim_i \int^K X_i(K) \times \Hom(T, PK)}
+  }
+  \p{
+    An element of these coends consists of a (standard Borel) space #{K}, a parameterized distrbution #{\mu : T \to PK}, and a map #{\alpha: K \to X_i} (that is, an element of #{X_i(K)}). The equivalence relation identifies two elements if there exists a map #{f: K \to K'} so that #{\alpha = f^*\alpha'} and #{\mu' = P(f)\mu}. A priori we have to take the reflective-transitive closure, i.e zigzags, but because of disintegrations, it suffices to consider spans. (Given kernels #{T \to PK, PK'} that agree under two maps #{K,K' \to L}, there exists at least one common lift of these measures to the pullback). 
+  }
+  \p{
+    Thus if two elements are identified by the comparison map above, it means there exist spans #{K \leftarrow L_i \to K'} witnessing the equality of their restriction to #{X_i} for each #{i}. Using Kolmogorov products in Borel, we can construct the product of all these #{L_i}, then pull this back along the diagonal to #{K \times K'}, and use disintegration to construct a common lifting to all these #{L_i} of the measures. This proves injectivity.
+  }
+  \p{
+    Conversely, let #{(K_i, \alpha_i, \mu_i)} be a family on the right-hand side. At each step, let #{p_i: X_{i+1} \to X_i} be the diagram maps. We have some equation between #{(K_i,\alpha_i,\mu_i)} and #{(K_{i+1}, \alpha_{i+1}, \mu_{i+1})}. Let it be witnessed by a span with apex #{M_{i+1}, \beta_{i+1}, \rho_{i+1}}. Then we can just replace #{K_{i+1}} with this - doing this inductively, we obtain a sequence #{M_{n+1} \to M_n \to \dots} of equality witnesses. Taking the inverse limit of this (and analogously constructing the lift of the measures, again using the representable case) gives injectivity.
+  }
+}
+\p{
+  Instead of the Kolmogorov products axiom, we can consider the axiom that if a random truth value #{\phi} satisfies #{\phi \leq \phi / 2} (defined in the obvious way in terms of the coinflip) then #{\not \phi} (this should probably be a positive statement instead, although at the moment the right formulation escapes me). This relies on there \em{existing} a reasonable ordering on random truth values obviously. I'm attracted to this formulation because it's more finitary, and because it is reminiscent of the axiomatics for synthetic guarded domain theory.
+}
+\p{
+  I think this, like a lot of other stuff, is not a consequence of the Kolmogorov axiom but only \em{admissible}, that is it is true when #{\phi} can be constructed inductively from the clopens in #{2^\omega} but not in full generality. However I don't know of any counterexample proving this, and as I've noted before, the combination of Kolmogorov products with any amount of nondeterminism seems to rule out certain types of "discontinuous maps".
+}
+\p{
+  Tao's old blog post on "probability sheaves" may be interesting. My old problem with that is that it only depends on which sets have probability one or zero. But the ideas developed here shows you can do a lot once you can prove that certain sets must have probability 1!
+}
+
+\p{
+  I have previously thought that "synthetic probability theory", unlike SDG (for example), doesn't involve any "exotic stuff" in the models (like the infinitesimals in SDG). (That is, we can construct models that have some exotic stuff if we want to, but we have no need of them or advantages in them). I think I have discovered at least one "exotic gadget" of this type. That is, take the sheaes on Borel spaces model above. Then "the union of all Lebesgue measure zero subsets of #{[0,1]}" is an object which itself has measure zero in a relevant sense (maybe. Or at least, it has no positive measure..), which you could not construct classically.
+}

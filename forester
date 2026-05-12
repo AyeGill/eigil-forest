@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+TEXINPUTS=.:~eigil-forest/assets/:
 VERSION=5.0-6e68237
 
 OS_NAME=$(uname)

@@ -1,0 +1,41 @@
+\date{2026-05-12T09:42:43Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Theorem}
+\title{Decidable Sampling}
+\p{
+  Let #{\cC} be an elementary topos with natural numbers object, and let #{\cC \to \cC_s} be a Markov promonad which is compatible with the natural numbers object, pullbacks along monomorphisms and (internal) sequential inverse limits, and which has a fair coinflip #{\operatorname{cf}}. Let #{[0,1]} denote the interval in the Dedekind reals in #{\cc}. Let #{\operatorname{cf}^\NN : * \to 2^\NN} be as usual the IID coupling of fair coinflips, and consider the map in #{\cC_s}.
+}
+##{[0,1] \xto{[0,1] \otimes \operatorname{cf}^\NN} [0,1] \otimes 2^\NN \xto{[0,1] \otimes p} [0,1] \otimes [0,1] \xto{>} \Omega}
+\p{
+  which first draws an IID sample, then interprets the sequence as a real, then compares it with the given value. Then this map factors over the inclusion #{2 \to \Omega}.
+}
+\proof{
+  \p{
+    In the below we write some arguments internally. It should be relatively straightforward to see that this argument is fully constructive and thus valid in the internal logic of #{\cC}.
+  }
+  \p{
+    Consider for a real #{a} the subset #{D_a = \{x \in [0,1] \mid x < a \vee x >a\}}. It is clear that the comparison map lands in #{2} when restricted to #{\sum_a D_a}. Hence it suffices to prove that the sampling map #{[0,1] \to [0,1] \otimes [0,1]} factors over this subset.
+  }
+  \p{
+    Hence consider the subset of #{2^\NN} given by those bitstrings which represent a real which is in #{D_a} (that is, #{p^{-1}(D_a)}).
+    For every natural #{k}, define #{E_a^k} to consist of those bitstrings #{(b_i)} so that, if #{(b'_i)} is a bitstring with #{b'_{2k} = b_{2k}, b'_{2k+1} = b_{2k+1}}, then #{p(b'_i)} is in #{D_a}. Clearly #{E_a^k \subseteq p^{-1}(D_a)} for all #{k}. We now claim that #{\operatorname{cf}^\NN : [0,1] \to [0,1] \times 2^\NN} factors over #{\sum_a \cup_k E_a^k \subseteq [0,1] \times 2^\NN}
+  }
+  \p{
+    We prove this by proving that for every #{(b_i)} and for every #{k}, either #{(b_i) \in E_a^k}, or one of the three bitstrings given by negating #{b_{2k}, b_{2k+1}}, or both, is in #{E_a^k}. First let us see how this would imply the theorem. Let #{n_1: 2^\NN \to 2^\NN} be given by negating every odd-indexed bit, #{n_2} by negating the even-indexed, and #{n_3} by negating all. Then clearly one of #{(b_i), n_1(b_i), n_2(b_i), n_3(b_i)} is in #{\cup_k E_a^k}. Since (the indicator of) #{\cup_k E_a^k} is independent of finite permutations when viewed as a function of #{(2 \times 2)^\NN}, by the Hewitt-Savage 0-1 law, it is deterministic. Similarly the pairing of four independent copies of it is deterministic, and we follow the usual determination argument to prove that it is always true (since clearly each #{n} preserves #{\operatorname{cf}^\NN}).
+  }
+  \p{
+    Now let #{b_i} be any bitstring and #{k} a natural number. We just have to prove there exists a pair of bits #{\alpha, \beta} so that any bistring with #{b_{2k} = \alpha, b_{2k+1} = \beta}. First consider the case #{k=0}.
+    Observe that for any Dedekind real #{a} we have either #{a < 1/2} or #{a > 1/4}, and also #{a > 1/2} or #{a < 3/4}.
+  }
+  \p{
+    Since #{a < 1/2 \wedge a > 1/2} is impossible, we have #{a < 1/2 \vee a > 1/2 \vee 1/4 < a < 3/4}. As soon as #{a < 3/4}, then #{\alpha = \beta = 1} would suffice, since then the expansion of #{\alpha \beta b_2 \dots} is at least #{3/4}. Similarly if #{a > 1/2} then #{\alpha = \beta = 0} is sufficient. Hence we're done with this case.
+  }
+  \p{
+    Now for a generic #{k}, we can consider all the possible length #{2k} prefixes before #{b_{2k}, b_{2k+1}}. Observe that, using an analogous argument \todo{maybe flesh this out}, we can show that #{a} is contained in at least one of the intervals #{(m/2^{2k}, m+2/{2^2k})}.
+    Let #{m} be such that #{a} is in this interval. Then if the prefix is not equal to the binary expansion of #{m} or #{m+1}, #{p(b_i)} is in #{D_a} regardless of the value of #{b_{2k}, b_{2k+1}}. Without changing the inquality between #{a} and #{p(b_i)}, we can subtract #{m/2^{2k}} and multiply by #{2^{2k-1}}. Thus we reduce to a situation where #{a \in (0,1)}, and we have to show that there exists #{\alpha, \beta} so that both #{0 \alpha \beta} and #{1 \alpha \beta} have the property that every continuation is in #{D_a}.
+  }
+  \p{
+    Now we again observe that we must have (at least) one of the following: #{a < 1/4, 1/8 < a < 3/8, 1/4 < a < 1/2, 3/8 < a < 5/8, 1/2 < a < 3/4, 5/8 < a < 7/8, 3/4 < a}. Since the first bit either proves #{a \geq 1/2} or #{a \leq 1/2}, the only nontrivial case is #{3/8 < a < 5/8}, but here it's easy to see that #{\alpha = 1, \beta = 0} has the desired property.
+  }
+}
