@@ -1,1 +1,19 @@
 \date{2026-05-12T11:08:48Z}
+\author{eigil-rischel}
+\title{Modified Abstract Hewitt-Savage}
+\taxon{Theorem}
+\import{macros}
+\p{
+  Let #{\cC \to \cC_s} be a Markov promonad, let #{p: \Theta \to A^{J}} be an IID map into a Kolmogorov power with #{J} an infinite set, and suppose #{f: A^J \to B} is a map from #{\cC} which is invariant under finite permutations. Suppose #{\cC \to \cC_s} preserves pullbacks along split monomorphisms. Then #{fp} is deterministic.
+}
+\proof{
+  \p{
+    The proof the the abstract Hewitt-Savage law relies on causality only to prove the following lemma: if #{f,g} are such that #{(f,g)\mu = (f,f)\mu} for some #{\mu: \Theta \to X} (here the parentheses denotes the independent pairing, i.e #{(f,g) = (f \otimes g)\copy}), then #{f =_{\mu} g}, that is they agree #{\mu}-almost surely. In fact it suffices to verify this in the case where #{f} is the #{f} from the theorem statement, and #{g = f A_\sigma} for some injection #{\sigma: J \into J} (with complement of the same cardinality as #{J}).
+  }
+  \p{
+    Hence it is sufficient to look at #{f,g \in \cC}. Then consider the equalizer of #{f} and #{g}, computed as the pullback of their pairing along the diagonal (which is preserved by the inclusion into #{\cC}). Clearly #{(f,f)\mu} factors over the diagonal (since #{f} deterministic), so #{(f,g)\mu} does as well, which means #{\mu} factors over the equalizer. But then it is clear that they are almost-surely equal.
+  }
+}
+\remark{
+  This argument should also work for internal Kolmogorov products.
+}
