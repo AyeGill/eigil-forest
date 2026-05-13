@@ -1,0 +1,25 @@
+\date{2026-05-13T08:17:50Z}
+\author{eigil-rischel}
+\import{macros}
+\title{
+  Idea for proof of "convexity" for generic probabilities
+}
+\p{
+  Consider the two ways of sampling one of three values:
+  \ol{
+    \li{Sample #{t \in [0,1]} uniformly, decide #{t < \lambda, \lambda < t < \lambda + \rho - \lambda\rho, \lambda + \rho - \lambda\rho < t}}
+    \li{Sample #{t_1, t_2} uniformly, decide #{t_1 < \lambda} (if yes return a), else decide #{t_2 < \rho} and return b or c}
+  }
+  \p{
+    The latter corresponds to the formal convex combination #{a +_\lambda (b +_\rho c)}, whereas the former is an "unbiased" representation of the same thing. It seems clear that if we can prove their equivalence, we can prove the equivalence with #{(a + b) + c} (whatever coefficients) also.
+  }
+  \p{
+    Now for dyadic rationals #{q,r}, let #{f^{q,r} : 2^\NN \to 3_\bot} be the function parameterizing the unbiased choice, and let #{g^{q,r}: (2^\NN)^2 \to 3_\bot} parameterize the "biased" choice. Note both of these are actually uniformly continuous and can be shown by finitary means to give the same distribution. Moreover we can construct a permutation #{\sigma^{q,r} : 2^\NN \to (2^\NN)^2} which witnesses this identity of probability.
+  }
+  \p{
+    Finally note that for generic reals, in both cases, we can write #{f^{\lambda,rho}(s) = \sup_{q<\lambda, r<\rho}f^{q,r}(s)} (choosing the ordering #{a > b > c} on our choice set), and similarly for #{g}. (This is because in both cases increasing #{\lambda} or #{\rho} can only move your choice #{c \to b} or #{b \to a}, not the other direction). Moreover (this is the nonobvious part) we can hopefully prove that there is a limiting permutation #{\sigma_{\lambda,\rho}}, which witnesses the identity between these limiting distributions (in the usual way, because we are with probability one in the fragment determined by some specific #{q,r}, hence the two maps are equal because equal at that point).
+  }
+  \p{
+    We may be able to arrange it so we can just take the supremum (or maybe infimum) of the maps (this will only land in #{\Omega^\NN}, but we can try to show that with probability one we actually land in #{2^\NN})
+  }
+}

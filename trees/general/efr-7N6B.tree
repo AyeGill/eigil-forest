@@ -1,0 +1,21 @@
+\date{2026-05-12T12:35:35Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Conjecture}
+\p{
+  Let #{\cC \to \cC_s} be a Markov promonad on an elementary topos which respects the natural numbers object, Kolmogorov products and pullbacks along monomorphisms. Then by [[efr-HII6]], there is a natural transformation #{X \otimes X \otimes [0,1] \to X} in #{\cC_s} (given by sampling from #{2} according to the given probability, and then applying the resulting marginal). 
+}
+\p{
+  Denote this operation #{(x,x',\lambda) \mapsto x +_\lambda x'}. This equips each object in #{\cC_s} with the structure of an internal convex space, in the sense that these operations satisfy the following equations:
+}
+##{x +_\lambda x = x}
+##{x +_\lambda y = y +_{1 - \lambda} x}
+##{(x +_\lambda y) +_\gamma z = x +_{\lambda \gamma} (y +_{\frac{\gamma (1 - \lambda)}{1 - \lambda \gamma}} z)}
+\proof{
+  \p{
+    The first one is trivial, and the second is fairly straightforward - it suffices to observe that for all bitstreams #{b_i} representing a real #{\alpha}, #{\neg b_i} is a representation of #{1-\alpha}.
+  }
+  \p{
+    The tricky seems to be impossible without some sort of hellish explicit representation.
+  }
+}

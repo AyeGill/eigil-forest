@@ -1,0 +1,10 @@
+\date{2026-05-12T12:58:09Z}
+\author{eigil-rischel}
+\import{macros}
+\taxon{Definition}
+\p{
+  Let #{\cC} be a Cartesian category. A \em{Markov promonad} is any symmetric monoidal affine promonad on #{\cC}, that is any bijective on objects strong symmetric monoidal functor #{\cC \to \cC_s} with #{\cC_s} semicartesian. (so named because #{\cC_s} automatically becomes a Markov category). Note that we do not assume this is faithful.
+}
+\p{
+  We say this \em{respects} some structure of #{\cC} (limits, colimits, power objects, etc) if they are preserved by the functor #{\cC \to \cC_s} (recall that if the promonad is representable by a monad, it respects all colimits).
+}
