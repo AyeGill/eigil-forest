@@ -1,7 +1,7 @@
 \date{2026-04-02T12:00:47Z}
 \author{eigil-rischel}
 \import{macros}
-\title{Universal Probability Theory}
+\title{Random thoughts on universal/synthetic probability theory}
 
 \p{
   The study of "probability theories with universal properties" (that is, Markov categories which are \em{initial} in some sense). There are two central types of questions:
@@ -271,4 +271,51 @@ The mono-pullback hypothesis on #{P} that we discussed earlier (#{P} preserves #
 
 \p{
   I have previously thought that "synthetic probability theory", unlike SDG (for example), doesn't involve any "exotic stuff" in the models (like the infinitesimals in SDG). (That is, we can construct models that have some exotic stuff if we want to, but we have no need of them or advantages in them). I think I have discovered at least one "exotic gadget" of this type. That is, take the sheaes on Borel spaces model above. Then "the union of all Lebesgue measure zero subsets of #{[0,1]}" is an object which itself has measure zero in a relevant sense (maybe. Or at least, it has no positive measure..), which you could not construct classically.
+}
+\transclude{efr-7N6B}
+\transclude{efr-9LPI}
+\p{
+  We would like to prove, for example, a metatheorem like this: in the initial model, given a collection of sets #{U_q} indexed by #{\QQ_{< \alpha}} for some Dedekind real #{\alpha}, so that their probabilities are #{p_q}, with #{q < r \Rightarrow U_q \subseteq U_r}, then the probability of #{\cup_q U_q} is #{\sup p_q}.
+}
+\p{
+  It would actually be fine to just prove that in the initial model, distributions on finite sets #{n} are represented by the internal Dedekind simplex #{\{t_1,\dots t_n \mid \sum_i t_i = 1\}}. (We have already constructed [I hope] the supposed sampling map #{\Delta^n \proto n} and shown it is "homomorphism" in a suitable sense, but not proven it is universal [which should only hold under some initiality assumption])
+}
+\p{
+  Let #{\mu: \Gamma \proto [0,1]} be a measure. Call #{e: \Gamma \to [0,1]} an \em{superexpected value of #{\mu}} if, for every finitary decomposition #{\mu = \sum t_i\mu_i, \sum_i t_i = 1, t_i: \Gamma \to [0,1], \mu_i : \Gamma \proto [0,1]}, and every set #{\alpha_i} so that #{\mu_i \geq \alpha_i} almost surely, we have #{e \geq \sum_i t_i \alpha_i}. Analogously define \em{subexpected values}. Say an \em{expected value} is a super- and subexpected value. Question: is there always a unique expected value? Idea: try to turn this into a Dedekind cut.
+}
+\p{
+  Consistency: is it clear there is no measure on the empty set? Yes because we have a model.
+}
+\p{
+  Idea: bring metrics into the induction hypothesis. Cook up a model where objects are types, a regularly complete convex metric space where every point has distance at most one (then the coproducts of points put things at distance one), and a map from (generalized) points in this space to distributions. The tensor product of these guys should give us the right thing.
+}
+\p{
+  Formally an object should be a type #{X}, a \em{internal, complete barycentric algebra} #{M} (that is, an internal convex space, which is a metric space, complete as such, and where the metric satisfies the equations of a barycentric algebra) satisfying further #{d \leq 1}, and for each context (that is, type) #{\Gamma} a function #{\cC(\Gamma, M) \to \cC_s(\Gamma, X)}. (Here if we are working with a model where distributions are a monad, rather than just a promonad, we should restrict distribution types from occuring in the context). Furthermore we should ask for these to be equipped with a coalgebra structure for the completed tensor product on these things (which we have to show exist constructively!), and consider coalgebra homomorphisms (so that the Cartesian product on the distribution part becomes the tensor product).
+}
+\p{
+  We can derive "sequential completeness", that is the ability to take well-defined infinite sums, just from the convexity and the inverse limit property (we get a well-defined map from #{\lim_\leftarrow \Delta^n} to #{P(n^\infty)}, distributions on the conats). I guess something similar would work for other profinite sets.
+}
+\p{
+  I guess the idea is we slowly build up a set of results like this, until algebras for this are "enough" that we can glue them to the space of distributions and get a model.
+}
+\p{
+  Let #{f,g} be as in [[efr-9LPI]]. Then the limiting permutation #{\sigma^{\alpha} : (2^\NN)^2 \to 2^\NN} can be written as the dyadic expansion of #{b : b < \alpha}, #{\alpha + (1-\alpha)b' : b > \alpha}, which exists because these numbers differ from every dyadic rational with probability 1. The challenge is to prove \em{constructively} that this dyadic expansion is uniform, i.e if the two input sequences are sampled uniformly, so is the output sequence. It is not even clear how to show that the first bit is fair, let alone that every prefix is fair. 
+}
+\p{
+  Suppose we can define some reasonable probability monad on some topological topos (maybe pyknotic sets).
+  Then we can attempt the following "glue model": an object is a type, a topological space and a map to the global sections (and maps must preserve this). (A map from the global points of the space to the global sections, or what?), and an analogous map from global points of #{PX} to distributions in the initial model. (Maybe this latter is all we need).
+}
+\p{
+  [nlab: locale of real numbers](https://ncatlab.org/nlab/show/locale+of+real+numbers) contains the following observation: if all reals are contstructible, then the interval has measure zero (since it can be covered by arbitrarily small unions of countable intervals). This can be avoided by working with the \em{locale} of reals, where even though every \em{point} can be covered, this cover doesn't necessarily cover the whole interval. This problem doesn't necessarily come up in minimal models as the one I've considered (since there this cover doesn't exist because it's not possible to construct it [every real is computable but this is not internally true]), but it still seems important to ponder what it means.
+}
+\p{
+  I have convinced myself that it is \em{not} possible to sample from Dedekind reals using only the sequential cofiltered limits axiom (and thus also the "strong iterability" property, that if two measures approximate each other arbitrarily well they must be equal, must fail). I think this can be seen by considering a model #{\Sh(\RR, \Sh(\Borel))}, where we recall that in sheaves on the reals, the \em{Cauchy} reals are the locally constant ones but the \em{Dedekind} reals are the continuous ones. I think this should carry a model where the distributions on a locally constant set themselves form a locally constant set. (Note that we add the measurable stuff to make it easier to construct any model at all, but I think this doesn't make a huge difference).
+}
+\p{
+  Thus the open questions are:
+  \ol{
+    \li{Is the \em{weak/sequential} form of iterability still admissible?}
+    \li{Does at least the proof of convexity for \em{Cauchy} reals go through (I think it does)}
+    \li{Is there a modified version of the Kolmogorov axiom which lets you sample Dedekind reals? I don't see how at this moment. (Of course, you can add the strong iterability condition as a further axiom.)}
+  }
 }
