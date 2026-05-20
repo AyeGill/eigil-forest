@@ -1,0 +1,8 @@
+\date{2026-05-20T12:19:20Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Markov Promonad}
+\taxon{Definition}
+\p{
+  Let #{\cC} be a Markov category. Recall that a \em{promonad} may be defined as an identity-on-objects functor #{\cC \to \cC_s}. If #{\cC_s} admits a symmetric monoidal structure which makes this a \em{strict} monoidal functor, and which is furthermore semicartesian, observe that the copy maps in #{\cC} push forward to copy maps in #{\cC_s}, so that #{\cC_s} acquires a unique Markov structure where this is a Markov functor. In this case we call this promonad a \em{Markov promonad}.
+}
