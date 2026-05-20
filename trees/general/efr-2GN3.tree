@@ -1,0 +1,39 @@
+\date{2026-05-18T20:54:50Z}
+\author{eigil-rischel}
+\import{macros}
+\title{gTLDs that would be funny to use for math purposes}
+\p{
+  Aaron Mazel-Gee hosts his personal website at [etale.site](https://etale.site). Ever since I learner about this I've found it incredibly funny and wanted to put something on a similar page relating to my own work, but I never found a pun I was totally happy with. Here are some of my attempts.
+}
+\ol{
+  \li{
+    .domains, because of domain theory.
+  }
+  \li{
+    .final - co.final, etc. Maybe a bit weak.
+  }
+  \li{
+    .fitness - as in optimization.
+  }
+  \li{
+    .free - obvious. Annoyingly you want "free algebra", not "algebra.free". But I guess you can put stuff at .free/algebra etc.
+  }
+  \li{
+    .fun - as in function, functor etc.
+  }
+  \li{
+    .game - open games, game comonads.
+  }
+  \li{
+    .group - obvious (fundamental.group, etc)
+  }
+  \li{
+    .space - classifying.space, etale.space, etc.
+  }
+  \li{
+    .map - classifying.map, etc.
+  }
+  \li{
+    .property - universal.property, mere.property, left-lifting.property.
+  }
+}
