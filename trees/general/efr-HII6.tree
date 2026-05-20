@@ -1,7 +1,7 @@
 \date{2026-05-12T09:42:43Z}
 \author{eigil-rischel}
 \import{macros}
-\taxon{Theorem}
+\taxon{Conjecture}
 \title{Decidable Sampling}
 \p{
   Let #{\cC} be an elementary topos with natural numbers object, and let #{\cC \to \cC_s} be a Markov promonad which is compatible with the natural numbers object, pullbacks along monomorphisms and (internal) sequential inverse limits, and which has a fair coinflip #{\operatorname{cf}}. Let #{[0,1]} denote the interval in the Dedekind reals in #{\cc}. Let #{\operatorname{cf}^\NN : * \to 2^\NN} be as usual the IID coupling of fair coinflips, and consider the map in #{\cC_s}.
@@ -10,7 +10,12 @@
 \p{
   which first draws an IID sample, then interprets the sequence as a real, then compares it with the given value. Then this map factors over the inclusion #{2 \to \Omega}.
 }
-\proof{
+\scope{
+  \put\transclude/expanded{false}
+\subtree{
+  \put\transclude/expanded{true}
+  \title{Proof attempt}
+  \remark{This proof does not work as written. This conjecture can (I think) be proven for \em{Cauchy} reals using "sampling plans" (the binary tree structures from [[efr-AK18]]), but I am no longer confident it is true for Dedekind reals.}
   \p{
     In the below we write some arguments internally. It should be relatively straightforward to see that this argument is fully constructive and thus valid in the internal logic of #{\cC}.
   }
@@ -38,4 +43,5 @@
   \p{
     Now we again observe that we must have (at least) one of the following: #{a < 1/4, 1/8 < a < 3/8, 1/4 < a < 1/2, 3/8 < a < 5/8, 1/2 < a < 3/4, 5/8 < a < 7/8, 3/4 < a}. Since the first bit either proves #{a \geq 1/2} or #{a \leq 1/2}, the only nontrivial case is #{3/8 < a < 5/8}, but here it's easy to see that #{\alpha = 1, \beta = 0} has the desired property.
   }
+}
 }
