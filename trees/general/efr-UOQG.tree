@@ -1,0 +1,10 @@
+\date{2026-05-20T12:17:43Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Internal Kolmogorov Limits}
+\p{
+  Let #{\cC \to \cC_s} be a [[efr-UVD1]] with #{\cC} itself Cartesian. Suppose #{\cC} admits a natural numbers object #{N}. Then we may view a map #{A \to N \in \cC} as an indexed family of objects over #{N}. Given such a family, if #{\cC} has finite coproducts, we can build a new family #{A' = A + 1 \to N + 1 \cong N}, which corresponds to #{A'_n = A_{n-1}, A'_0 = 1}. Suppose we have a map #{d: A \to A'} over #{N}. This corresponds to a family #{A_n \to A_{n-1}}. Since #{\Pi_n A'_n = \Pi_n A_n}, this induces a map #{d: \Pi_n A_n \to \Pi_n A_n} (here we abuse notation and call this also #{d}). Consider finally the equalizer #{\Eq(d,1)}. Its universal property is that a map into it is a map #{f: N \times X \to A (= \sum_n A_n)} over #{N}, with the property that #{df(n,x) = f(n-1,x)} for #{n > 0}. 
+}
+\p{
+  This is an \em{internal} formulation of the universal property of the cofiltered inverse limit #{\lim (A_0 \leftarrow A_1 \dots)}. We will say that #{\cC_s} \em{preserves internal sequential inverse limits} if it preserves this universal property (observe that this makes sense). As soon as #{\cC} has countable coproducts and is (countably) extensive, this is equivalent to an inverse limit in the external sense, where indeed we have many examples of preservation.
+}
