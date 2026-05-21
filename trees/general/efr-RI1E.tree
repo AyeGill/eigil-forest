@@ -2,7 +2,7 @@
 \author{eigil-rischel}
 \import{macros}
 \title{Random thoughts on universal/synthetic probability theory}
-
+\tag{braindump}
 \p{
   The study of "probability theories with universal properties" (that is, Markov categories which are \em{initial} in some sense). There are two central types of questions:
   \ol{
@@ -309,13 +309,37 @@ The mono-pullback hypothesis on #{P} that we discussed earlier (#{P} preserves #
   [nlab: locale of real numbers](https://ncatlab.org/nlab/show/locale+of+real+numbers) contains the following observation: if all reals are contstructible, then the interval has measure zero (since it can be covered by arbitrarily small unions of countable intervals). This can be avoided by working with the \em{locale} of reals, where even though every \em{point} can be covered, this cover doesn't necessarily cover the whole interval. This problem doesn't necessarily come up in minimal models as the one I've considered (since there this cover doesn't exist because it's not possible to construct it [every real is computable but this is not internally true]), but it still seems important to ponder what it means.
 }
 \p{
-  I have convinced myself that it is \em{not} possible to sample from Dedekind reals using only the sequential cofiltered limits axiom (and thus also the "strong iterability" property, that if two measures approximate each other arbitrarily well they must be equal, must fail). I think this can be seen by considering a model #{\Sh(\RR, \Sh(\Borel))}, where we recall that in sheaves on the reals, the \em{Cauchy} reals are the locally constant ones but the \em{Dedekind} reals are the continuous ones. I think this should carry a model where the distributions on a locally constant set themselves form a locally constant set. (Note that we add the measurable stuff to make it easier to construct any model at all, but I think this doesn't make a huge difference).
+  I have convinced myself that it is \em{not} possible to sample with Dedeking real probability using only the sequential cofiltered limits axiom (and thus also the "strong iterability" property, that if two measures approximate each other arbitrarily well they must be equal, must fail). I think this can be seen by considering a model #{\Sh(\RR, \Sh(\Borel))}, where we recall that in sheaves on the reals, the \em{Cauchy} reals are the locally constant ones but the \em{Dedekind} reals are the continuous ones. I think this should carry a model where the distributions on a locally constant set themselves form a locally constant set. (Note that we add the measurable stuff to make it easier to construct any model at all, but I think this doesn't make a huge difference).
 }
 \p{
   Thus the open questions are:
   \ol{
     \li{Is the \em{weak/sequential} form of iterability still admissible?}
-    \li{Does at least the proof of convexity for \em{Cauchy} reals go through (I think it does)}
+    \li{Does at least the proof of convexity for \em{Cauchy} reals go through (I think it does)? (And also sampling with Cauchy probability, for that matter)}
     \li{Is there a modified version of the Kolmogorov axiom which lets you sample Dedekind reals? I don't see how at this moment. (Of course, you can add the strong iterability condition as a further axiom.)}
+    \li{
+      Can you sample with \em{Escardo-Simpson} probability? Recall that these are the Cauchy closure of the rationals inside the Dedekind reals, i.e not just limits of rational sequences, but limits of sequences of such, iterated. This follows from iterability by the work of Escardo-Simpson.
+    }
+    \li{
+      If you can sample with probability #{p_i}, can you sample with probability #{\sum_i 2^i 1/p_i}? Note that there is an obvious way to do something that should be this, but I don't know if we can prove this is equal to the probability of being less that that number (without countable choice). And if yes, does this imply the previous? (In other words, given a Cauchy sequence of reals, can you write their limit as a sum of (say) rational combinations of them, \em{without} using countable choice?)
+    }
   }
+}
+\p{
+  For this last step, here's the loose argument that given a Cauchy sequence of rationals we can build a sampling plan:
+  \ol{
+    \li{
+      Let #{q_n} be the sequence, supposing #{q_n} within #{1/2^n} of the limit.
+    }
+    \li{
+      Consider #{q_3} (which is within #{1/8}). It's in either #{\lbracket 0, 3/8 \rparen, [3/8, 5/8], \lparen 5/8, 1 \rbracket}. Note that this is \em{decidable}. We can either choose the first thing in the sum to be #{0} (since it's definitely less than #{1/2}), #{1/2} (since it's at least #{1/4} and at most #{3/4} in the middle case) or #{1}.
+    }
+    \li{
+      Then we iterate this.
+    }
+  }
+  Note that the second step here fails if we have a Cauchy sequence of reals (even Cauchy reals). We can find a cover of intervals so that each one has a valid choice, but not a \em{disjoint decidable} cover like this, so we can't set up a unique decision for each possible case.
+}
+\p{
+  You can try to take #{(q_n - 1/2^n)} for some #{n} as the first term in the sum. The problem with this is that if it's less than zero, we just know the limit \em{might} be zero (so we can't put a positive number in the sum). If it's less than zero obviously we can just put zero (since the whole thing is less than #{1/2} then), but this is not decidable, and if there are multiple options we have to \em{choose} one.
 }
