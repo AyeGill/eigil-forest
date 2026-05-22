@@ -1,0 +1,22 @@
+\date{2026-05-21T14:59:34Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Iterability for probability (pro)monads}
+\p{
+  Let #{P} be an affine symmetric monoidal (pro)monad (i.e [[efr-UVD1]]). Suppose the underlying #{\cC} is distributive, it preserves finite coproducts (eg if it's a monad), and there is a [coinflip](efr-0XH9), so that each homset acquires the structure of a [midpoint algebra](efr-6W7X). If #{P} additionally has Kolmogorov products, under mild assumptions on #{\cC} we additionally get a countable-arity operation #{P(X)^n \to P(X)} (or the equivalent for promonads) which corresponds to the linear combination #{M(\mu_1, \dots) = \sum_{i=1} \mu_i /2^i} of distributions. This satisfies #{M(\mu_1, \dots) = m(\mu_1, M(\mu_2, \dots))} for obvious reasons.
+}
+\p{
+  If this equation characterizes it uniquely (in a pointwise sense), Escardo-Simpson would call this midpoint algebra \em{iterable}. We can add this as an axiom to our probability promonad.
+}
+\p{
+  This essentially says, if I have a sequence #{\mu_i} of distributions, then there is a unique sequence #{\nu_i} so that #{\nu_i = m(\mu_i, \nu_{i+1})}. In other words given two such sequences, they agree, and in particular their first elements agree.
+}
+\p{
+  We can also weaken this in a way which is equivalent given countable choice: Suppose #{\nu,\nu'} are such that for all #{N \in \NN}, there exists #{\nu = \nu_1, \nu_2, \dots \nu_N, \nu' = \nu'_1, \nu'_2, \dots \nu'_N} so that #{\nu_i = m(\mu_i, \nu_{i+1})} and the same for #{\nu'} (but only for #{i < N}). We can assert given this, #{\nu = \nu'}. This says "assuming for all #{n}, they are within #{1/2^n} of each other, then they are equal.
+}
+\p{
+  It seems that the latter is enough to prove that every Dedekind real corresponds to a (decidable) probability.
+}
+\p{
+  We might call this latter condition \em{strong iterability}, although note that this should certainly come with some other conditions (like the Kolmogorov axiom) ensuring that we can actually iterate probabilities.
+}
