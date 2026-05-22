@@ -1,0 +1,31 @@
+\date{2026-05-21T14:57:38Z}
+\author{eigil-rischel}
+\import{macros}
+\title{Open Questions in Synthetic Probability Theory}
+\p{
+  See also [[efr-RI1E]].
+}
+\p{
+  Does there exist a sensible [[efr-UVD1]] on the category of sheaves on the real line tensor (product of toposes) sheaves on standard Borel spaces, which satisfies the [strong version of iterability](efr-557J).
+}
+\p{
+  Is there an \em{initial} such model, and does it look something like "pointwise families of probability measures which vary continuously in a suitable sense".
+}
+\p{
+  Under what conditions on a topos can a "reasonable" model be constructed, and can we define this more sensibly?
+}
+\p{
+  Is there a "reasonable" model on a topos where \em{not} all pullbacks along monos are preserved, and if so, which are? Is there a good parallel to intrinsic topology (intrinsic sigma algebras).
+}
+\p{
+  Is the \em{weak} (that is, the usual) version of iterability a consequence of the standard assumptions?
+}
+\p{
+  If not, is it at least true that whenever #{a_i} are Cauchy reals, #{\sum_i 1/2^i b(a_i) = b(\sum_i 1/2^i a_i)} where #{b} is the Bernoulli distribution and this is respectively the canonical dyadic choice and the sum of Cauchy reals (which is not necessarily Cauchy itself). If this is also not true, what actually is the left-hand side? (This is certainly automatically true if the Cauchy reals are Cauchy closed, which is often true but not in every topos).
+}
+\p{
+  Under what hypotheses on the underlying topos does there exist an initial model (always?) and under what further conditions are the distributions on #{2} equal to the Cauchy (or Dedekind) reals?
+}
+\p{
+  Working from another direction, are there toposes where a "naive" version of the functional analysis approach to probability just works. (I.e just take the function object #{[0,1]^X} as our version of #{C(X)/L^\infty(X)} and go from there). Possibly requires us to characterize this as a locale. In particular, are there toposes where this functor (monad) of internally-defined measures satisfies the Kolmogorov property (internal or external, I guess).
+}
