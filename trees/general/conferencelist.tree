@@ -1,0 +1,41 @@
+\title{Conferences in theoretical computer science}
+\author{eigil-rischel}
+\import{macros}
+\p{
+  A list of recurring conferences and workshops of interest to me.
+}
+\ol{
+  \li{
+    GandALF (International Symposium on Games, Automata, Logics and Formal Verification) [[https://gandalfsymposium.github.io/2026/]]. Usually in the fall. Papers submitted in summer.
+  }
+  \li{
+    ICTAC (International Colloquium on Theoretical Aspects of Computing) [[https://ictac2026.github.io/]]. In late fall, paper submission in the summer.
+  }
+  \li{
+    CSL (Computer Science Logic) [[https://csl2027.github.io/]]. In the winter, paper submission in the summer.
+  }
+  \li{
+    TACL (Topology, Algebra, Categories in Logic) [[https://iphils.uj.edu.pl/tacl/]]. In the summer, submission in the late winter/spring.
+  }
+  \li{
+    MFPS (Mathematical Foundation of Programming Semantics) [[https://ul-fmf.github.io/mfps-sstt-2026/mfps/]]. In the early summer, submission in the spring.
+  }
+  \li{
+    ICALP [[https://icalppodcspaa2026.cs.rhul.ac.uk/icalp/]]. In summer, submission late winter. May have a lot of workshops associated.
+  }
+  \li{
+    ACT (International Conference on Applied Category Theory) [[https://www.appliedcategorytheory.org/]]. In summer, submission in spring.
+  }
+  \li{
+    LICS (ACM/IEEE Symposium on Logic in Computer Science) [[https://lics.siglog.org/]]. In summer, submission in winter.
+  }
+  \li{
+    FOCS (Foundations of Computer Science) [[https://sanjeevkhanna.org/FOCS2026_CFP.html]]. In late fall, submission in spring.
+  }
+  \li{
+    MFCS (Mathematical Foundations of Computer Science) [[https://mfcs2026.irif.fr/]]. In summer, submission in spring.
+  }
+  \li{
+    POPL (Principles of Programming Languages) [[https://conf.researchr.org/home/POPL-2027]]. In winter, submission in summer.
+  }
+}
