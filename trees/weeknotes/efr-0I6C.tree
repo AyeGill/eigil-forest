@@ -1,0 +1,27 @@
+\date{2026-05-22T11:15:47Z}
+\author{eigil-rischel}
+\import{macros}
+\tag{weeknotes}
+\subtree{
+  \title{Synthetic Probability Theory}
+  \p{
+    I have continued working on \em{universal} or \em{synthetic} probability theory. (See eg [[efr-RI1E]]). I finally realized that the strong version of Escardo-Simpson's \em{iterability} condition ([[efr-557J]]) is not admissible - that would imply that for every Dedekind real, the event #{u < x} is a decidable probability (i.e it lands in distributions on #{2}, as a subset of #{\Omega}) when #{u} is drawn from the uniform. But I'm fairly confident we can build a model of sheaves on #{\RR} (valued also in measurable spaces, maybe) where the sheaf of distributions on a locally constant sheaf is itself locally constant. In particular the distributions on #{1+1} would be the sheaf of \em{Cauchy} reals (which I do believe I can prove are all decidable probabilities in this sense), rather than Dedekind reals.
+  }
+  \p{
+    The question remains whether the ordinary iterability axiom is admissible, which would imply that the probabilities are Cauchy complete (it is not really clear how to prove this directly without countable choice).
+  }
+}
+\subtree{
+  \title{
+    Open infinitesimal generators
+  }
+  \p{
+    My other main current project is some work on an open (that is, parameterized) version of infinitesimal generators of dynamical systems. This is being written up on the internal forest for the Safeguarded AI program, so I can't link my notes here, but the basic idea is that a space "over #{X}" when #{X} is something like a compact Hausdorff space can be viewed as a #{C(X)}-module (for example given a map #{E \to X} we get a structure like this on #{C(E)}), and the infinitesimal generator of a system parameterized by #{E} is then a linear map #{C(X) \to C(E)} with certain properties. This was mostly all written up a while ago, but I'm putting the final touches on it this week.
+  }
+}
+\subtree{
+  \title{Enshittifying forester}
+  \p{
+    I've been experimenting with having Claude Code implement a bunch of features for forester in a personal fork. The main one I wanted was footnotes, which now seem to work pretty well. I probably won't be trying to add these back into the main version of forester, since I don't really want to spend a bunch of time reviewing the code and so on.
+  }
+}
