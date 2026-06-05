@@ -1,4 +1,4 @@
-./forester build forest.toml
+forester build forest.toml
 
 # mv output/efr-public.json ./efr-public.json
 
@@ -6,9 +6,9 @@
 
 #./forester build public-forest.toml
 
-echo "Adding public theme"
+# echo "Adding public theme"
 
-cp -f public-theme/* output/
+# cp -f public-theme/* output/
 
-rm efr-public.json
+# rm efr-public.json
 
