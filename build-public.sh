@@ -4,7 +4,7 @@ forester build forest.toml
 
 # rm -r output
 
-#./forester build public-forest.toml
+# ./forester build public-forest.toml
 
 # echo "Adding public theme"
 
